@@ -8,6 +8,8 @@ website:
     right:
       - href: index.qmd
         text: Home
+      - href: bookshelf.qmd
+        text: Bookshelf
       - text: "Teaching"
         menu: 
         - teaching-data_science_foundations.qmd

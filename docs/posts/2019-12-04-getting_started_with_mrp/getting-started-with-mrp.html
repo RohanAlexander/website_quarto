@@ -123,6 +123,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../bookshelf.html" rel="" target="">
+ <span class="menu-text">Bookshelf</span></a>
+  </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
  <span class="menu-text">Teaching</span>
@@ -171,10 +175,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="dropdown-item" href="../../events-tdw.html" rel="" target="">
  <span class="dropdown-text">Toronto Data Workshop</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../../events-llms_colloquium.html" rel="" target="">
- <span class="dropdown-text">Colloquium on Applications of LLMs</span></a>
-  </li>  
+        <li class="dropdown-header">events-llms_colloquium.qmd</li>
         <li>
     <a class="dropdown-item" href="../../events-reproducibility.html" rel="" target="">
  <span class="dropdown-text">Toronto Workshop on Reproducibility</span></a>
@@ -767,14 +768,14 @@ scale reduction factor on split chains (at convergence, Rhat = 1).</code></pre>
 <pre><code># A tibble: 8 × 4
   state  mean lower upper
   &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-1 ACT   0.524 0.245 0.791
-2 NSW   0.493 0.214 0.758
-3 NT    0.539 0.253 0.852
-4 QLD   0.497 0.215 0.762
-5 SA    0.475 0.201 0.752
-6 TAS   0.468 0.183 0.757
-7 VIC   0.498 0.224 0.760
-8 WA    0.503 0.219 0.765</code></pre>
+1 ACT   0.527 0.239 0.791
+2 NSW   0.494 0.214 0.759
+3 NT    0.537 0.203 0.852
+4 QLD   0.498 0.215 0.767
+5 SA    0.480 0.201 0.771
+6 TAS   0.466 0.183 0.757
+7 VIC   0.506 0.224 0.769
+8 WA    0.498 0.219 0.765</code></pre>
 </div>
 </div>
 <p>We now have post-stratified estimates for each division. Our new Bayesian approach will enable us to think more deeply about uncertainty. We could complicate this in a variety of ways including adding more coefficients (but remember that we’d need to get new cell counts), or adding some layers.</p>
