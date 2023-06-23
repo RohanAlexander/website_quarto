@@ -1,0 +1,42 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Rohan Alexander"
+  navbar:
+    right:
+      - href: index.qmd
+        text: Home
+      - text: "Teaching"
+        menu: 
+        - teaching-data_science_foundations.qmd
+        - teaching-ethics_and_ds.qmd
+        - teaching-inf2178.qmd
+        - teaching-history_of_statistics.qmd
+        - teaching-methods_of_data_analysis_i.qmd
+        - teaching-nlp.qmd
+        - teaching-sta304.qmd
+        - teaching-inf312.qmd
+      - text: "Events"
+        menu: 
+        - events-tdw.qmd
+        - events-llms_colloquium.qmd
+        - events-reproducibility.qmd
+        - events-software.qmd
+      - text: "Blog"
+        href: blog.html
+      - text: "CV"
+        href: pdfs/cv-academic-Rohan_Alexander.pdf
+      - icon: github
+        href: https://github.com/RohanAlexander
+      - icon: twitter
+        href: https://twitter.com/RohanAlexander
+      - icon: email
+        href: rohan.alexander@utoronto.ca
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true

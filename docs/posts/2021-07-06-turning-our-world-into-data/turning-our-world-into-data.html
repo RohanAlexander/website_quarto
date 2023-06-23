@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.266">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Rohan Alexander">
+<meta name="dcterms.date" content="2021-07-06">
+<meta name="description" content="A talk delivered at the Harvard Biostatistics Data Science in Action Summer Camp, 7 July 2021, organised by Jesse Gronsbell.">
+
+<title>Rohan Alexander - Turning our world into data</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Rohan Alexander</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Teaching</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
+        <li>
+    <a class="dropdown-item" href="../../teaching-data_science_foundations.html" rel="" target="">
+ <span class="dropdown-text">Data science foundations</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../teaching-ethics_and_ds.html" rel="" target="">
+ <span class="dropdown-text">Ethics and data science</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../teaching-inf2178.html" rel="" target="">
+ <span class="dropdown-text">Experimental design for data science</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../teaching-history_of_statistics.html" rel="" target="">
+ <span class="dropdown-text">History of statistics and data sciences</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../teaching-methods_of_data_analysis_i.html" rel="" target="">
+ <span class="dropdown-text">Methods of Data Analysis I</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../teaching-nlp.html" rel="" target="">
+ <span class="dropdown-text">Natural language processing</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../teaching-sta304.html" rel="" target="">
+ <span class="dropdown-text">Surveys, sampling, and observational data</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../teaching-inf312.html" rel="" target="">
+ <span class="dropdown-text">Worlds become data</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-events" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Events</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-events">    
+        <li>
+    <a class="dropdown-item" href="../../events-tdw.html" rel="" target="">
+ <span class="dropdown-text">Toronto Data Workshop</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../events-llms_colloquium.html" rel="" target="">
+ <span class="dropdown-text">Colloquium on Applications of LLMs</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../events-reproducibility.html" rel="" target="">
+ <span class="dropdown-text">Toronto Workshop on Reproducibility</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../events-software.html" rel="" target="">
+ <span class="dropdown-text">Conference on statistical software</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pdfs/cv-academic-Rohan_Alexander.pdf" rel="" target="">
+ <span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/RohanAlexander" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/RohanAlexander" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../rohan.alexander@utoronto.ca" rel="" target=""><i class="bi bi-email" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#my-path-to-data-science" id="toc-my-path-to-data-science" class="nav-link" data-scroll-target="#my-path-to-data-science">My path to data science</a></li>
+  <li><a href="#why-data-science-is-exciting" id="toc-why-data-science-is-exciting" class="nav-link" data-scroll-target="#why-data-science-is-exciting">Why data science is exciting</a></li>
+  <li><a href="#what-data-science-means-to-me" id="toc-what-data-science-means-to-me" class="nav-link" data-scroll-target="#what-data-science-means-to-me">What data science means to me</a></li>
+  <li><a href="#tips-for-students" id="toc-tips-for-students" class="nav-link" data-scroll-target="#tips-for-students">Tips for students</a></li>
+  
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Turning our world into data</h1>
+</div>
+
+<div>
+  <div class="description">
+    <p>A talk delivered at the Harvard Biostatistics Data Science in Action Summer Camp, 7 July 2021, organised by Jesse Gronsbell.</p>
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p><a href="true">Rohan Alexander</a> </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 6, 2021</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Hi, I’d like to thank Jesse Gronsbell for letting me talk today. My name is Rohan Alexander, and I’m an assistant professor in the Faculty of Information and the Department of Statistical Sciences at the University of Toronto.</p>
+<p>Professor Gronsbell is also a professor in Statistical Sciences, but that’s about where my comparison with Jesse ends. Jesse works on a wide range of biostatistics problems, using classical statistical techniques to solve new problems, especially with large observational health data sets such as electronic health records. It’s a privilege to get to call her a colleague in data science.</p>
+<p>I’m just someone who likes to play with data using the statistical programming language R <span class="citation" data-cites="citeR">(<a href="#ref-citeR" role="doc-biblioref">R Core Team 2020</a>)</span>. And the nice thing about what we now call data science is that there’s space for both of us. And there’s space for you as well.</p>
+</section>
+<section id="my-path-to-data-science" class="level2">
+<h2 class="anchored" data-anchor-id="my-path-to-data-science">My path to data science</h2>
+<p>I’m 34 and so I’m in the ‘data science didn’t exist when I was an undergrad’ generation. Most of you are about 17, or about half my age. When I was 17, I wasn’t thinking about data science summer camps nor self-driving cars, so it’s commendable that you’re already so advanced.</p>
+<p>When I was 17 I just went to uni and studied economics, because that’s what my friends were doing. Luckily, I had some terrific mentors including Rabee Tourkey, Flavio Menezes, and Leo Yanes, and what they did was give broad instructions then get out of the way and check in weekly. While I don’t think I delivered anything of value to them, that experience of working directly with professors was formative for me.</p>
+<p>One day I was in the library with a friend, and I wanted to go to the pub, but my friend insisted I wait until he’d applied for an internship at the Reserve Bank of Australia (RBA). I didn’t want to go to the pub without him, so I applied for that internship as well while I was waiting.</p>
+<p>Be careful who you make friends with because the result was that after uni I worked for a bit at the RBA, which is Australia’s central bank (think: Fed Reserve) and that was great because I learnt about just how vital communication—both written and speaking—is. (My friend didn’t get the internship, but he ended up at Goldman Sachs, so he’s doing just fine.) And also, about navigating a traditional workplace.</p>
+<p>After that I started a business with some friends because that was what I was doing when I wasn’t at work, and it seemed to make sense to make that my actual job. And that start-up was great because I learnt about strategy, tactics, execution, teamwork, and leadership; all the stuff that traditional workplaces don’t let junior analysts worry about</p>
+</section>
+<section id="why-data-science-is-exciting" class="level2">
+<h2 class="anchored" data-anchor-id="why-data-science-is-exciting">Why data science is exciting</h2>
+<p>I’d like to come back to that earlier point—that data science didn’t exist when I was 17—because it may imply that one should not just be making decisions that optimize for what data science looks like right now, but also what could happen. While that’s a little difficult, that’s also one of the things that makes data science so exciting. As a 17-year-old that might mean choices like:</p>
+<ol type="1">
+<li>taking courses on fundamentals, not just fashionable applications;</li>
+<li>reading books, not just whatever is trending on Hacker News; and</li>
+<li>trying to be at the intersection of at least a few different areas, rather than hyper-specialized.</li>
+</ol>
+<p>When that start-up finished, I started a PhD. My PhD is actually in economic history, so if I had my way, I’d spend my time in dusty, beautiful libraries reading old books and drinking coffee in the morning, and then writing code and drinking wine in the afternoon. Your library at Harvard is very nice, but not quite dusty enough for me, and you’re not allowed wine in there. The Faculty of Information, which is one of my appointments, originally existed to train librarians, so these days I get an office in a library, which is great, and my role is ‘human centered data science’, so it’s very much the best of both worlds. I get to turn our world into data, analyse it, and get paid to do it!</p>
+<p>I spent most of my PhD trying to deal with big text datasets. And when I say ‘dealing’ I mean using R to clean and tidy them, which was the work of years. My supervisors—John Tang, Tim Hatton, Martine Mariotti, and Zach Ward—gave me the freedom to do what I wanted, again with regular weekly meetings. It’s not a topic that traditionally would have been appropriate, and I’m grateful they gave me the space because traditional economics is not for me, but data science is. And I hope that you also consider that it could be for you.</p>
+</section>
+<section id="what-data-science-means-to-me" class="level2">
+<h2 class="anchored" data-anchor-id="what-data-science-means-to-me">What data science means to me</h2>
+<p>What is data science? There’s not one agreed on definition, but a lot of people have tried. My other appointment is in the Department of Statistical Sciences, and my boss there says <span class="citation" data-cites="Craiu2019Hiring">(<a href="#ref-Craiu2019Hiring" role="doc-biblioref">Craiu 2019</a>)</span>:</p>
+<blockquote class="blockquote">
+<p>This unsureness isn’t necessarily the weakness many consider it. After all, who can really say what makes someone a poet or a scientist? Even so, some things can be said. In broad strokes, … someone with a data driven research agenda, who adheres to or aspires to using a principled implementation of statistical methods and uses efficient computation skills.</p>
+</blockquote>
+<p>I like this definition, but I also think there’s value in having a simple definition, even if we lose a bit of specificity in the process. Probability, which is related to statistics, is often informally defined as ‘counting things’ <span class="citation" data-cites="mcelreath">(<a href="#ref-mcelreath" role="doc-biblioref">McElreath 2020, 10</a>)</span>. In a similar informal sense, I’m currently playing around with a definition of data science that is something like ‘measuring stuff and averaging it, with purpose’.</p>
+<p>One reason that I like this definition is that it doesn’t treat data as <em>terra nullius</em>, or nobody’s land. Statisticians tend to see data as the result of some data generating process, which we can never know, but that we try to use data to come to understand. I’m oversimplifying here, and many statisticians care deeply about data, but at the same time, there’s a lot of cases in statistics where the data kind of just appear; they belong to no one. But that’s just never the case.</p>
+<p>Data have to be gathered, cleaned, and prepared, and these decisions matter <span class="citation" data-cites="huntington2021influence">(<a href="#ref-huntington2021influence" role="doc-biblioref">Huntington-Klein et al. 2021</a>)</span>. I’ve come to believe that every dataset is <em>sui generis</em>, or in a class by itself, and so when you come to know one dataset really well, you just know one dataset, not all datasets.</p>
+<p>During this data science camp, you’re going to be exposed to an awful lot of ‘science’. I’d like to spend a little more time in defence of ‘data’. And that’s another reason that I like my definition. I argue that the most important word in ‘data science’ is ‘data’ and would love to convince you of it.</p>
+<p>I’ll take an example from <span class="citation" data-cites="Jordan2019Artificial">Jordan (<a href="#ref-Jordan2019Artificial" role="doc-biblioref">2019</a>)</span> where he talks about being in a medical office and being given some probability, based on prenatal screening, that his child, then a fetus, had Down syndrome. By way of background, you can decide to test to know for sure, but that test comes with the risk of the fetus not surviving, so this initial screening probability matters. <span class="citation" data-cites="Jordan2019Artificial">Jordan (<a href="#ref-Jordan2019Artificial" role="doc-biblioref">2019</a>)</span> describes how he found those probabilities were determined by a study done a decade earlier in the UK. The issue was that in the ensuing 10 years, imaging technology had improved so the test wasn’t expecting such high-resolution images and there had been a subsequent (false) increase in Down syndrome diagnoses when the images improved. There was no problem with the science here, it was the data that were the issue.</p>
+</section>
+<section id="tips-for-students" class="level2">
+<h2 class="anchored" data-anchor-id="tips-for-students">Tips for students</h2>
+<p>In my opinion, we are realising that it’s not just the ‘science’ bit that’s hard, it’s the ‘data’ bit as well. For instance, researchers went back and examined one of the most popular text datasets in computer science, and they found that around 30 per cent of the data were inappropriately duplicated <span class="citation" data-cites="bandy2021addressing">(<a href="#ref-bandy2021addressing" role="doc-biblioref">Bandy and Vincent 2021</a>)</span>. There’s a lot of people who could have told the computer scientists that those datasets would have big problems; there’s an entire field—linguistics—that specialises in this stuff. And this is one of the dangers of any one field being hegemonic, and why it’s important that you don’t specialise too early. Instead, pick at least two different areas, learn how the ‘insiders’ speak in each, and then be the person that translates between them.</p>
+<p>Data science needs diversity. And it’s one reason that I’m excited to see you all here with your variety of skills and backgrounds—we need you in our research labs. We need your intelligence and enthusiasm. We need you to be in the room making contributions. And I think, just like me, that working directly with professors would be formative and enjoyable for you. I hope you’re lucky enough, like me, to be given the space to find what types of projects you’re intrinsically interested in, because then everything just becomes a lot easier.</p>
+<p>How do you push down the door and work with professors? I was very lucky and it was a lot easier for me to get opportunities than it is for you, because there were fewer of us. But basically, what I think you should do is show a professor that you’ve got:</p>
+<ol type="a">
+<li>an interest; and</li>
+<li>some skills.</li>
+</ol>
+<p>One way to do this is through demonstrating your interest in coding and the data science skills that you’re developing at this camp. For instance, these days a lot of papers in the fields that I’m interested in need some type of R package to go alongside them, and it can be hard to find students who can do this. If a student emailed having made an R package, that would show a lot of interest and skills, and it would be clear how I could involve them. Another thing that is increasingly needed is a datasheet <span class="citation" data-cites="gebru2020datasheets">(<a href="#ref-gebru2020datasheets" role="doc-biblioref">Gebru et al. 2020</a>)</span>. So again, you could put together documentation for a dataset and email that. Again, it shows that you’ve got a genuine interest and that you’ve got a base of skills that would enable you to be useful.</p>
+<p>Thanks very much for letting me speak. I know that everyone says this to you, and with apologies to Olivia Rodrigo, but being 17 is just such an exciting time of one’s life, and I’m glad to see that you’re making the most of it. One seems to go straight from being the youngest in the room to being the oldest, without any middle. And, just so that you know, you kind of never work life out— everyone is just making it up as they go.</p>
+<p>I’d be happy to take any questions.</p>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="acknowledgments" class="level2 appendix"><h2 class="anchored quarto-appendix-heading">Acknowledgments</h2><div class="quarto-appendix-contents">
+
+<p>Thank you very much to Monica for reading a draft of this.</p>
+
+
+
+</div></section><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-bandy2021addressing" class="csl-entry" role="listitem">
+Bandy, Jack, and Nicholas Vincent. 2021. <span>“Addressing "Documentation Debt" in Machine Learning Research: A Retrospective Datasheet for BookCorpus.”</span> <a href="https://arxiv.org/abs/2105.05241">https://arxiv.org/abs/2105.05241</a>.
+</div>
+<div id="ref-Craiu2019Hiring" class="csl-entry" role="listitem">
+Craiu, Radu V. 2019. <span>“The Hiring Gambit: In Search of the Twofer Data Scientist.”</span> <em>Harvard Data Science Review</em> 1 (1). <a href="https://doi.org/10.1162/99608f92.440445cb">https://doi.org/10.1162/99608f92.440445cb</a>.
+</div>
+<div id="ref-gebru2020datasheets" class="csl-entry" role="listitem">
+Gebru, Timnit, Jamie Morgenstern, Briana Vecchione, Jennifer Wortman Vaughan, Hanna Wallach, Hal Daumé III au2, and Kate Crawford. 2020. <span>“Datasheets for Datasets.”</span> <a href="https://arxiv.org/abs/1803.09010">https://arxiv.org/abs/1803.09010</a>.
+</div>
+<div id="ref-huntington2021influence" class="csl-entry" role="listitem">
+Huntington-Klein, Nick, Andreu Arenas, Emily Beam, Marco Bertoni, Jeffrey R Bloem, Pralhad Burli, Naibin Chen, et al. 2021. <span>“The Influence of Hidden Researcher Decisions in Applied Microeconomics.”</span> <em>Economic Inquiry</em>.
+</div>
+<div id="ref-Jordan2019Artificial" class="csl-entry" role="listitem">
+Jordan, Michael I. 2019. <span>“Artificial Intelligence—the Revolution Hasn’t Happened Yet.”</span> <em>Harvard Data Science Review</em> 1 (1). <a href="https://doi.org/10.1162/99608f92.f06c6e61">https://doi.org/10.1162/99608f92.f06c6e61</a>.
+</div>
+<div id="ref-mcelreath" class="csl-entry" role="listitem">
+McElreath, Richard. 2020. <em>Statistical Rethinking</em>. CRC Press.
+</div>
+<div id="ref-citeR" class="csl-entry" role="listitem">
+R Core Team. 2020. <em>R: A Language and Environment for Statistical Computing</em>. Vienna, Austria: R Foundation for Statistical Computing. <a href="https://www.R-project.org/">https://www.R-project.org/</a>.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

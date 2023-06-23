@@ -1,0 +1,290 @@
+---
+title: "The Other Course"
+---
+
+## Preamble 
+
+### Overview
+
+This is a course that improves your skills in data science and gives you the space to write a paper within certain guardrails.
+
+The course will be an enormous amount of work and cause you a large amount of stress because it is likely your first opportunity to do unstructured original research. This is unfortunate, but there's little way around it. All I can tell you is that having done this course, it'll be easier in the future. And pressure makes diamonds.
+
+The purpose of this course is to write an original research paper, and in the process of that, to learn some useful skills. The paper will incorporate relevant literature, detailed data collection processes, be reproducible, use technically and statistically sound methodology, and present the outcomes in an informative manner. The work is divided into two parts, a report describing the relevant background and technical processes (an R Markdown produced pdf) and an interactive layer (either Shiny or an R Package).
+ 
+The purpose of this course is to explore the technical aspects required to design and complete an end-to-end data science project, similar to those that students are likely to encounter in a professional environment. This course will require students to:
+
+- Gather data through scraping and the use of APIs.
+- Design supporting architecture to allow the data to gather over time.
+- Develop machine learning models describing the statistical relationship between variables within the dataset.
+- Test the outcomes with new data to examine machine learning prediction veracity.
+- Present the outcomes of a highly specific concept in a meaningful manner to a non-technical audience.
+
+Essentially this course provides students with the freedom to conduct original research on a topic of interest to them within certain guidelines.
+
+
+### FAQ
+
+- Can I audit this course? No. It's a reading course so the concept of auditing doesn't make sense. 
+- Can I attend lectures? No. There are no lectures. Students update their GitHub repo on a weekly basis and we meet the next day to talk through things.
+
+### Course learning objectives
+
+- Collect real-world data and design systems to allow for the dataset to continuously grow.
+- Refine R skills.
+- Clean, manage, analyze, and make predictions with data towards the project goal.
+- Explore and implement modelling options and explore relevant assumptions.
+- Explore relationships within data
+- Design an interactive Shiny app or R Package for presentation of the results and to allow the model to be deployed and used by others.
+- Have a high-quality project to show the culmination of learning.
+
+### Pre-requisites
+
+You need to have taken 'The Course' or equivalent, such that you've taken courses such that you've covered everything through to (but not including) 'Enrichment' of *Telling Stories with Data*.
+
+
+### Acknowledgements
+
+Thanks to the following who helped develop this course: Thomas William Rosenthal.
+
+
+
+## Content
+
+### Week 1
+
+Tasks:
+
+- Create research plan.
+- Conduct initial literature review.
+- Address any weaknesses in version control.
+
+
+Readings:
+
+- King, Gary, 'How to Write a Publishable Paper as a Class Project', https://gking.harvard.edu/papers.
+- Shapiro, Jesse, 'Four Steps to an Applied Micro Paper', https://www.brown.edu/Research/Shapiro/pdfs/foursteps.pdf.
+- Riederer, Emily, 'RMarkdown Driven Development (RmdDD)', https://emilyriederer.netlify.com/post/rmarkdown-driven-development/.
+- Miyakawa, Tsuyoshi, 'No raw data, no science: another possible source of the reproducibility crisis', *Molecular Brain*, https://doi.org/10.1186/s13041-020-0552-2.
+- Bryan, Jenny, *Happy Git and GitHub for the useR*, https://happygitwithr.com.
+
+
+
+### Week 2
+
+Tasks:
+
+- Continue literature review.
+- Identify relevant data.
+- Make first Shiny app.
+- Setup GitHub Repo, with appropriate folder structure and README.
+
+Readings:
+
+- Wickham, Hadley, 2020, *Mastering Shiny*, Chapters 2-5.
+- Jesse Shapiro, 'Code and Data for the Social Sciences: A Practitioner's Guide', https://web.stanford.edu/~gentzkow/research/CodeAndData.xhtml
+
+
+
+### Week 3
+
+Tasks:
+
+- Gather data:
+  - Build initial webscrapers.
+  - Build simulated dataset.
+- Finalize literature review.
+- Begin automating.
+
+Readings:
+
+- Couch, Simon, 'Running R Scripts on a Schedule with GitHub Actions', https://blog.simonpcouch.com/blog/r-github-actions-commit/.
+- Wickham, Hadley, 2020, *Mastering Shiny*, Chapters 2-5
+
+
+
+### Week 4
+
+Tasks:
+
+- Develop basic infrastructure for housing data.
+- Set-up GitHub actions to automate gathering and cleaning.
+- Establish data pipeline to update analysis dataset.
+- Write tests against the simulated clean dataset.
+
+
+
+
+### Week 5
+
+Tasks:
+
+- Make second Shiny app.
+- Build first R package.
+- Begin cleaning dataset toward passing tests.
+- Continue automating data gathering.
+
+
+Readings:
+
+- Wickham, Hadley, 2020, *Mastering Shiny*, Chapters 8-9, https://mastering-shiny.org/action-feedback.html.
+- Wickham, Hadley and Jenny Bryan, *R Packages*, Chapter 2, https://r-pkgs.org/whole-game.html.
+
+
+
+
+### Week 6
+
+Tasks:
+
+- Finish any data pipeline/architecture development.
+- Prepare data for modelling:
+  - EDA.
+  - Fully incorporate all datasources.
+  - Further cleaning if necessary.
+- Determine features of interest.
+- Continue developing statistics skills.
+- Familiarize with `tidymodels`.
+
+
+Readings:
+
+- Kuhn, Max, and Julia Silge, 2021, *Tidy Modeling with R*, Chapters 1-5.
+- Wickham, Hadley, and Garrett Grolemund, 2017, *R for Data Science*, Chapters 2-8.
+- Gareth M. James, Daniela Witten, Trevor Hastie, and Robert Tibshirani, 2021, *An Introduction to Statistical Learning*, Second Edition, Chapters 1-4.
+
+
+
+### Week 7
+
+Tasks:
+
+- Build model with `tidymodels` or alternative approach.
+- Build a second R package that is more involved.
+- Continue developing statistics skills, including Bayesian methods.
+
+Readings:
+
+- Kuhn, Max and Julia Silge, 2021, *Tidy Modeling with R*, Chapters 6-7.
+- Wickham, Hadley, and Garrett Grolemund, 2017, *R for Data Science*, Chapters 22-25.
+- Gareth M. James, Daniela Witten, Trevor Hastie, and Robert Tibshirani, 2021, *An Introduction to Statistical Learning*, Second Edition, Chapters 5-7.
+- McElreath, Richard, 2020, *Statistical Rethinking*, Second edition, Chapters 1-4.
+
+
+
+### Week 8
+
+Tasks:
+
+- Continue machine learning development  
+- Explore, script, and compare different machine learning algorithm performance
+- Finalize model development and evaluate results.
+- Build third Shiny app.
+
+
+Readings:
+
+- Kuhn, Max and Julia Silge, 2021, *Tidy Modeling with R*, Chapters 8-9.
+- Wickham, Hadley, 2020, *Mastering Shiny*, Chapters 10-12.
+- McElreath, Richard, 2020, *Statistical Rethinking*, Second edition, Chapters 5-6.
+
+
+### Week 9
+
+Tasks:
+
+- Continue improving model and pipeline, especially model evaluation and refinement with data augmentation.
+- Continue developing statistics skills.
+
+Readings:
+
+- Kuhn, Max and Julia Silge, 2021, *Tidy Modeling with R*, Chapters 10-12.
+- McElreath, Richard, 2020, *Statistical Rethinking*, Second edition, Chapters 7-8.
+
+
+### Week 10
+
+Tasks:
+
+- Begin write-up of paper, especially data and model sections.
+- Begin developing R package or Shiny app
+
+Readings:
+
+- Kuhn, Max and Julia Silge, 2021, *Tidy Modeling with R*, Chapters 13-14.
+- McElreath, Richard, 2020, *Statistical Rethinking*, Second edition, Chapters 11-13.
+
+
+
+### Week 11
+
+Tasks:
+
+- Continue write-up, especially results and discussion sections.
+- Finish developing R package or Shiny app.
+
+Readings:
+
+- Wickham, Hadley, 2020, *Mastering Shiny*, Chapters 13-16.
+- McElreath, Richard, 2020, *Statistical Rethinking*, Second edition, Chapters 14-16.
+
+
+### Week 12
+
+Finalise all apsects.
+
+Tasks:
+
+- As needed.
+
+
+
+
+
+
+
+
+## Assessment
+
+### Learning diary
+
+Task: Each week you will read relevant papers and books, engaging with them by writing notes and completing exercises. You will use GitHub to manage these notes and exercises and email a link to me at the end of each week. Additionally, reflect on what went well, what has room for improvement, and consider 'lessons learned' during the week.
+
+Date: At the end of the week please send me a link to the GitHub repo that contains this diary. 
+
+Weight: 15 per cent.
+
+
+### Presentation I
+
+Task: 10-15-minute presentation on what you’ve learned about the literature and plans.
+
+Date: Roughly end of Week 4 (exact date determined by lab presentation cycle--- the last Friday of the month).
+
+Weight: 15 per cent.
+
+### Presentation II
+
+Task: 10-15-minute presentation on what you’ve learned about the data.
+
+Date: Roughly end of Week 8 (exact date determined by lab presentation cycle--- the last Friday of the month).
+
+Weight: 15 per cent.
+
+### Presentation III
+
+Task: 10-15-minute presentation on what you’ve learned about the model.
+
+Date: Roughly end of Week 12 (exact date determined by lab presentation cycle--- the last Friday of the month).
+
+Weight: 15 per cent.
+
+
+### Final Paper
+
+Task: A fully reproducible paper and associated Shiny app or R Package. Toward the mid-term break we will have a meeting to discuss the topic of your final paper. It will be due on the last day of the exam period. This will be marked by me and reviewed by another professor.
+
+Date: Second last day of exam period.
+
+Weight: 40 per cent.
+

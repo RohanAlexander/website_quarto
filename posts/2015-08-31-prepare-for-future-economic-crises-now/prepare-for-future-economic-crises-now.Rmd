@@ -1,0 +1,42 @@
+---
+title: "Prepare For Future Economic Crises Now"
+description: |
+  Few policymakers were prepared for the financial crisis of 2007-08. Until it hit, their focus was on more obvious threats to the economy, instead of such an unexpected event. Could this be because planning for unexpected economic events is not the explicit responsibility of any particular policy-maker? If so, this has to change.
+author:
+  - name: Rohan Alexander
+date: 2015-08-31
+output:
+  distill::distill_article:
+    self_contained: false
+preview: images/DSCF1945.jpg
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+*Originally published in the Canberra Times.*
+
+Few policymakers were prepared for the financial crisis of 2007-08. Until it hit, their focus was on more obvious threats to the economy, instead of such an unexpected event. Could this be because planning for unexpected economic events is not the explicit responsibility of any particular policy-maker? If so, this has to change.
+
+```{r fig.cap="Always better to buy a helmet before you fall off the bike."}
+knitr::include_graphics("images/DSCF1945.jpg")
+```
+
+After the collapse of the US housing market, Lehman Brothers' bankruptcy became an economic Rorschach test. Policymakers at the Reserve Bank of Australia and the Australian Treasury saw it as evidence that some banks cannot be allowed to fail. In response, the RBA reduced the cash rate and the Treasury implemented a stimulus package.
+
+With the benefit of hindsight, some (such as Nobel Laureate Paul Krugman) argue that we should have anticipated the collapse. This is more than just wishful thinking. We now know there were those (for instance Raghuram Rajan, now the Governor of the Reserve Bank of India) whose warnings were more or less spot-on. Unfortunately, they were mostly ignored. It just seemed too unlikely that trouble in the US housing market could cause widespread recessions.
+
+In an effort to prevent a repeat of the financial crisis, policymakers at the RBA, Treasury and elsewhere have taken steps to mitigate the weaknesses of the financial sector. And they have studied how those weaknesses could affect the broader economy. But there is a danger that they will overlook economic threats that do not originate in the financial sector.
+Like a general who trains troops to fight past wars, we may again be caught unprepared.
+
+The financial crisis taught us that even infallible elements of an economy can fail. But because such failure is difficult to imagine ex ante, there appears to have been little attempt to act on this lesson. One way would be to practise dealing with unfamiliar -- and less obvious -- economic threats.
+
+The process should begin by systematically examining the economy for weaknesses beyond the financial sector. Policymakers need to identify which elements of the economy pose systemic risks. We now know about the financial sector and there are many initiatives to deal with its risks, but we need to search for others.
+
+Policymakers need to stress-test elements of the economy that appear robust and unfaltering, not just the financial sector. And they should conduct scenario analysis to practise responding if those elements were to fail. Just as the possibility that the US sub-prime housing market could cause recessions was almost unfathomable in 2006, the cause of the next economic crisis could seem unlikely to us now. Policymakers need to search broadly for possibilities.
+
+Of course most of the scenarios that are considered will never occur, and policymakers should not be given carte blanche to make legislative changes. What is needed is less heavy-handed but more useful: policymakers need to publicly consider and practise reacting to, unexpected events. This makes it more likely that they will react well when an unexpected crisis hits.
+
+The financial crisis made it clear that unexpected elements of an economy can fail. Policymakers should be better prepared for this. They must fix the weaknesses identified by the financial crisis and deal with current threats. But importantly, policymakers must also give consideration to more obscure risks. It is only through this effort that we can hope to build an economy that is more resilient to future crises.

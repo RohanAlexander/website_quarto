@@ -1,0 +1,44 @@
+---
+title: "Cleaning Hansard: The pay's not great but the work is hard"
+description: |
+  Cleaning the Australian Hansard is mind-numbing, annoying and time-consuming, but someone has to do it.
+author:
+  - name: Rohan Alexander
+date: 2018-08-13
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+*Thanks to Monica for the title.*
+
+After getting an email along the lines of 'hey aren't you doing something with Australia's Hansard?' I realised that I've been a bit remiss about sharing my Australian Hansard progress. This is the first of a series of posts to fix that.
+
+{{< tweet 926509282874585089 >}}
+
+I haven't written about what I've been doing with Australian Hansard to this point because: 1) my knowledge of the political science literature is piecemeal and I'm sure someone must have already done all this and I just can't find it; and 2) my coding knowledge is also piecemeal and there's no doubt a million ways to better do what I've done so far. If anyone has advice on either aspect (or anything really!) I'd be keen to hear it - please email.
+
+Best I can tell, Australian Hansard is a treasure-trove of data and it's hard to believe it hasn't been more analysed. I'm probably missing a whole bunch of literature (insert standard joke about economists here) but so far I can really only find a handful of papers using Australia's Hansard.[^1] There's plenty of work using the parliamentary records of other Commonwealth countries such as Canada[^2], NZ[^3] and the UK[^4]. I think that in Australia it's really only Patrick Leslie who may be using it at the moment (big thank you to Jill Sheppard for pointing this out), but I'll update this if I find others.
+
+The good news is that Australia's Hansard has been digitised and is available on the parliament's website, so a figurative pseudo-Manhattan-project isn't required (cf. what was needed in Canada, see: https://www.lipad.ca/). If you just want short, specific, sections then the situation is fine - for pre-1981 go to Tim Sherratt's brilliant Historic Hansard website (http://historichansard.net); for 1981 to 2006 just use the parliament's website; and for 2006 onward just use Open Australia. The bad news is that Hansard isn't really available as a nice corpus for larger scale analysis. Making this nice corpus has been keeping me busy, and will be the subject of this series of posts.
+
+Helpfully, various people/organisations have gone to the Hansard website to get the XML files they provide and made them available as an easy download (note that these tend to have been posted as they were provided by the parliament, so they're full of typos, transcription errors, and a bunch of other mistakes):
+
+- 1901-1980 Hansard is available as XML from Tim Sherratt's Historic Hansard Github - https://github.com/wragge/hansard-xml.
+- 1998-2014 Hansard is available from Andrew Turpin's website at University of Melbourne (https://people.eng.unimelb.edu.au/aturpin/qtCorpus/index.html).
+- 2006-current is available from Open Australia's website (http://data.openaustralia.org.au/origxml/).
+
+These helpful people/organisations were able to get those dates (1901-1980 and 1998-current) because the Hansard provides the XML for those years on their website. The problem is the 1980s and the early/mid 1990s because they don't have the XML available on the website (and from emails with them - it seems as though they simply don't have it) - the only choice seems to be either to scrape it manually from the Hansard website or to grab all the PDFs, convert them, and then fix the mistakes. I've started on the second option - unsure how wise it is but I don't know of any alternative.
+
+Future posts:
+
+- Who has been elected to parliament?
+- What divisions are relevant?
+- What parties are relevant?
+- Hansard pre-1981
+- Hansard post-1980
+
+[^1]: For instance: Turpin 'An Attempt to Measure the Quality of Questions in Question Time of the Australian Federal Parliament'.
+[^2]: For instance: Beelen, Thijm, Cochrane, Halvemaan, Hirst, Kimmins, Lijbrink, Marx, Naderi, Rheault, Polyanovsky, Whyte 'Digitization of the Canadian Parliamentary Debates'.
+[^3]: For instance: Curran, Higham, Ortiz, Vasques Filho 'Look Who’s Talking: Bipartite Networks as Representations of a Topic Model of New Zealand Parliamentary Speeches'.
+[^4]: For instance: Abercrombie, Batista-Navarro 'Aye or No? Speech-level Sentiment Analysis of Hansard UK Parliamentary Debate Transcripts'

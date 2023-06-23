@@ -1,0 +1,44 @@
+---
+title: "Final Shot At Ending Industrial Disputes"
+description: |
+  The industrial relations disputes that culminated in the shutdown of Qantas last year took more than nine months to make it through arbitration. Such lengthy delays have left many wondering if changes should be made to the processes that underpin this form of dispute resolution. The use of ‘final offer’ arbitration could be the small change that has a big effect, saving conflicted parties time, money and reputation.
+author:
+  - name: Rohan Alexander
+  - name: Ben O'Neill
+date: 2012-11-28
+output:
+  distill::distill_article:
+    self_contained: false
+preview: images/DSC3132.jpg
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+*Written with Ben O'Neill and originally published in the Canberra Times.*
+
+The industrial relations disputes that culminated in the shutdown of Qantas last year took more than nine months to make it through arbitration. Such lengthy delays have left many wondering if changes should be made to the processes that underpin this form of dispute resolution. The use of ‘final offer’ arbitration could be the small change that has a big effect, saving conflicted parties time, money and reputation.
+
+```{r fig.cap="Qantas negotiates with a lot of other parties. Final offer arbitration may have helped reduce the length of the shutdown. Photo by Monica Alexander."}
+knitr::include_graphics("images/DSC3132.jpg")
+```
+
+Arbitration is an alternative to a formal litigation. Unless the parties agree otherwise, arbitration is conducted as an adversarial process, but it has looser rules of evidence than standard litigation. An arbitrator, often an experienced lawyer or a highly regarded expert in the field of the dispute, guides the process and makes a binding determination if the parties fail to agree on a solution.
+
+Despite its benefits, the traditional arbitration process encourages par- ties to begin with an extreme position. This is because the parties know that during the process, they are likely to compromise from that position, and unlike in a formal litigation, it is unlikely they will suffer cost penalties for making spurious claims or arguments.
+
+Ultimately the arbitrator is required to make a determination according to law, but finding the proper legal solution is made more difficult when the parties have an incentive to exaggerate their true position. As an analogy, imagine a real-estate agent who inflates the asking price of a house, knowing that people will try to talk the price down, and a buyer who feigns low interest in the house in order to bargain more effectively — both have an incentive to exaggerate their true position.
+
+Final offer arbitration removes this perverse incentive problem. In FOA, the two parties submit their position on the proper legal outcome to the arbitrator and these positions are revealed simultaneously to both parties. A negotiation period ensues, and if the parties cannot agree to an outcome, the arbitrator makes a determination.
+
+However, the arbitrator must choose one of the submitted positions in its entirety — there is no alternative outcome allowed.
+
+Although this may seem restrictive, or even unfair, it creates strong in- centives for the parties to be reasonable in their submission to the arbitrator. The more extreme their submitted position (relative to the arbitrator’s view of the proper legal outcome), the less likely it is to be chosen. Moreover, if the parties are being reasonable in their submission, it is more likely that they will be able to find common ground in negotiation. Final offer ar- bitration encourages the parties to make a bona fide attempt to strive for impartiality in their own claim.
+
+Nonetheless, FOA is not without its weaknesses. For instance, it assumes sufficient mastery of the law and the facts to prepare a ‘winning’ final offer. As such, it is best used in situations where the parties, their lawyers and their experts are experienced and understand the possible outcomes. This would usually be the case in commercial disputes and some labour disputes.
+
+The 'final offer' restriction on the arbitrator’s decision means that, if a settlement is not reached, there will be a total acceptance of one party’s claim. This might lead some to worry about the arbitrator’s impartiality, though this is a consideration in any form of arbitration. In any case, this matter is already well provided for in law. For instance, arbitrators are under a legal obligation to be impartial and fair, and to resolve the dispute according to law. Additionally, parties can challenge the nomination of an arbitrator and apply to court to set aside an award on the basis of arbitrator misconduct.
+
+Arbitration mechanisms in Australia are provided for under contract law and in various commercial arbitration acts. These could easily facilitate the use of FOA. Ultimately, the form of arbitration is best selected by the parties prior to a dispute, but it is not unthinkable that final offer arbitration could be useful during dispute resolution. It could save time and money, and could also foster more fruitful negotiation. If Qantas and their workers can achieve the miracle of human flight, efficient dispute resolution might also be possible.

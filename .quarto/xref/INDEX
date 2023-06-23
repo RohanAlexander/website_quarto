@@ -1,0 +1,203 @@
+{
+  "index.qmd": {
+    "index.html": "e01bdb49"
+  },
+  "about.qmd": {
+    "about.html": "644ad90b"
+  },
+  "teaching.qmd": {
+    "teaching.html": "b66ebe75"
+  },
+  "course-inf2178.qmd": {
+    "course-inf2178.html": "e02ceb4e"
+  },
+  "course-ethics_and_ds.qmd": {
+    "course-ethics_and_ds.html": "18bff6a1"
+  },
+  "events.qmd": {
+    "events.html": "b2db83ea"
+  },
+  "course-sta304.qmd": {
+    "course-sta304.html": "06648e33"
+  },
+  "reproducibility.qmd": {
+    "reproducibility.html": "4198c251"
+  },
+  "course-data_science_foundations.qmd": {
+    "course-data_science_foundations.html": "5cc3845f"
+  },
+  "course-history_of_statistics.qmd": {
+    "course-history_of_statistics.html": "9c7d7386"
+  },
+  "course-nlp.qmd": {
+    "course-nlp.html": "c051ecfe"
+  },
+  "students.qmd": {
+    "students.html": "66c0d985"
+  },
+  "tdw.qmd": {
+    "tdw.html": "f6d2231d"
+  },
+  "software.qmd": {
+    "software.html": "03e47eec"
+  },
+  "course-inf312.qmd": {
+    "course-inf312.html": "2c336051"
+  },
+  "the_other_course.qmd": {
+    "the_other_course.html": "e79e4134"
+  },
+  "llms_colloquium.qmd": {
+    "llms_colloquium.html": "de15688a"
+  },
+  "teaching-inf312.qmd": {
+    "teaching-inf312.html": "edd144ec"
+  },
+  "events-reproducibility.qmd": {
+    "events-reproducibility.html": "98305750"
+  },
+  "events-llms_colloquium.qmd": {
+    "events-llms_colloquium.html": "c4373420"
+  },
+  "events-tdw.qmd": {
+    "events-tdw.html": "af499e46"
+  },
+  "events-software.qmd": {
+    "events-software.html": "1ea111ad"
+  },
+  "teaching-nlp.qmd": {
+    "teaching-nlp.html": "027f8e56"
+  },
+  "teaching-inf2178.qmd": {
+    "teaching-inf2178.html": "b67669bf"
+  },
+  "teaching-history_of_statistics.qmd": {
+    "teaching-history_of_statistics.html": "8e510ac0"
+  },
+  "teaching-ethics_and_ds.qmd": {
+    "teaching-ethics_and_ds.html": "a363d6c2"
+  },
+  "teaching-data_science_foundations.qmd": {
+    "teaching-data_science_foundations.html": "3e033dc9"
+  },
+  "teaching-sta304.qmd": {
+    "teaching-sta304.html": "4e44f195"
+  },
+  "blog.qmd": {
+    "blog.html": "057137f6"
+  },
+  "posts/2017-07-21-getting-started-with-blogdown/getting-started-with-blogdown.Rmd": {
+    "getting-started-with-blogdown.html": "43457055"
+  },
+  "posts/2019-12-04-getting_started_with_mrp/getting-started-with-mrp.Rmd": {
+    "getting-started-with-mrp.html": "32c22b0d"
+  },
+  "posts/2021-03-14-greg-wilson/in-appreciation-of-greg-wilson.Rmd": {
+    "in-appreciation-of-greg-wilson.html": "c38d7ab6"
+  },
+  "posts/2021-03-01-abc-easy-as-123/abc-easy-as-123.Rmd": {
+    "abc-easy-as-123.html": "59a38547"
+  },
+  "posts/2021-12-02-average_age_of_australian_politicians/average_age_of_parliaments.Rmd": {
+    "average_age_of_parliaments.html": "1c097ccd"
+  },
+  "posts/2017-07-18-mapping-the-2016-australian-election-polling-place-results/mapping-the-2016-australian-election-polling-place-results.Rmd": {
+    "mapping-the-2016-australian-election-polling-place-results.html": "7784ed13"
+  },
+  "posts/2018-07-28-the-sql-is-never-as-good-as-the-original/the-sql-is-never-as-good-as-the-original.Rmd": {
+    "the-sql-is-never-as-good-as-the-original.html": "a9090a0b"
+  },
+  "posts/2021-11-30-review_of_timbers/timbers_review.Rmd": {
+    "timbers_review.html": "9eb04f56"
+  },
+  "posts/2011-05-17-tournaments-could-drive-r-d-effort/tournaments-could-drive-r-d-effort.Rmd": {
+    "tournaments-could-drive-r-d-effort.html": "6b4c698f"
+  },
+  "posts/2021-10-19-trinity_remarks/trinity_remarks.Rmd": {
+    "trinity_remarks.html": "bccfd610"
+  },
+  "posts/2018-06-29-getting_started_with_topic_modelling-theory/topic_modelling-theory.Rmd": {
+    "topic_modelling-theory.html": "6fa62d9a"
+  },
+  "posts/2015-08-31-prepare-for-future-economic-crises-now/prepare-for-future-economic-crises-now.Rmd": {
+    "prepare-for-future-economic-crises-now.html": "367c9922"
+  },
+  "posts/2021-07-06-turning-our-world-into-data/turning-our-world-into-data.Rmd": {
+    "turning-our-world-into-data.html": "879c3216"
+  },
+  "posts/2021-05-22-baby-steps/baby-steps.Rmd": {
+    "baby-steps.html": "ed152556"
+  },
+  "posts/2014-12-24-i-ll-have-what-they-re-having/i-ll-have-what-they-re-having.Rmd": {
+    "i-ll-have-what-they-re-having.html": "1cb1095e"
+  },
+  "posts/2019-01-03-gathering-and-analysing-text-data/gathering-and-analysing-text-data.Rmd": {
+    "gathering-and-analysing-text-data.html": "382ec568"
+  },
+  "posts/2021-05-04-work-life-balance/work-life-balance.Rmd": {
+    "work-life-balance.html": "292ed18e"
+  },
+  "posts/2021-03-13-grad-school-applications/grad-school-applications.Rmd": {
+    "grad-school-applications.html": "c3178b74"
+  },
+  "posts/2017-09-14-getting-started-with-latex/getting-started-with-latex.Rmd": {
+    "getting-started-with-latex.html": "4b22cb6e"
+  },
+  "posts/2017-08-11-reproducing-a-grattan-map/reproducing-a-grattan-map.Rmd": {
+    "reproducing-a-grattan-map.html": "477f3e3b"
+  },
+  "posts/2009-05-25-plastic-policies/plastic-policies.Rmd": {
+    "plastic-policies.html": "76026de2"
+  },
+  "posts/2014-12-24-in-appreciation-of-ronald-coase/in-appreciation-of-ronald-coase.Rmd": {
+    "in-appreciation-of-ronald-coase.html": "ce7e93fa"
+  },
+  "posts/2021-02-28-the-toronto-workshop-on-reproducibility/the-toronto-workshop-on-reproducibility.Rmd": {
+    "the-toronto-workshop-on-reproducibility.html": "44615d8c"
+  },
+  "posts/2016-10-15-greitens-reports-for-duty/greitens-reports-for-duty.Rmd": {
+    "greitens-reports-for-duty.html": "b4cba972"
+  },
+  "posts/2016-02-03-broader-thinking-needed-on-the-australian-budget/broader-thinking-needed-on-the-australian-budget.Rmd": {
+    "broader-thinking-needed-on-the-australian-budget.html": "4cbf4a4d"
+  },
+  "posts/2021-01-24-shelter-usage-in-toronto-2017-2021/toronto-shelter-usage.Rmd": {
+    "toronto-shelter-usage.html": "6a222771"
+  },
+  "posts/2021-12-17-james_webb_space_telescope/james_webb_space_telescope.Rmd": {
+    "james_webb_space_telescope.html": "e99eb5a0"
+  },
+  "posts/2021-12-16-on_the_privilege_of_turning_our_world_into_data/on_the_privilege_of_turning_our_world_into_data.Rmd": {
+    "on_the_privilege_of_turning_our_world_into_data.html": "5add243f"
+  },
+  "posts/2014-03-19-the-human-equation-an-interview-with-george-zachary/the-human-equation-an-interview-with-george-zachary.Rmd": {
+    "the-human-equation-an-interview-with-george-zachary.html": "8b08bc3e"
+  },
+  "posts/2018-08-13-cleaning-hansard/cleaning-hansard.Rmd": {
+    "cleaning-hansard.html": "0ddec64e"
+  },
+  "posts/2020-02-11-a-review-of-forecasting-elections-with-non-representative-polls/a-review-of-forecasting-elections-with-non-representative-polls.Rmd": {
+    "a-review-of-forecasting-elections-with-non-representative-polls.html": "5cc19875"
+  },
+  "posts/2016-01-14-notes-and-photos-from-iowa/notes-and-photos-from-iowa.Rmd": {
+    "notes-and-photos-from-iowa.html": "1287913f"
+  },
+  "posts/2021-09-17-andrew-gelman-dsi-intro/andrew_gelman_intro.Rmd": {
+    "andrew_gelman_intro.html": "8169e728"
+  },
+  "posts/2008-05-08-home-buyers-will-be-hurt-by-aid-plan/home-buyers-will-be-hurt-by-aid-plan.Rmd": {
+    "home-buyers-will-be-hurt-by-aid-plan.html": "9b406454"
+  },
+  "posts/2016-07-17-trump-revisited/trump-revisited.Rmd": {
+    "trump-revisited.html": "01576de2"
+  },
+  "posts/2016-09-08-professional-amateurs/professional-amateurs.Rmd": {
+    "professional-amateurs.html": "1e919584"
+  },
+  "posts/2012-11-28-final-shot-at-ending-industrial-disputes/final-shot-at-ending-industrial-disputes.md.Rmd": {
+    "final-shot-at-ending-industrial-disputes.md.html": "a520a9b7"
+  },
+  "teaching-methods_of_data_analysis_i.qmd": {
+    "teaching-methods_of_data_analysis_i.html": "27d8c81d"
+  }
+}

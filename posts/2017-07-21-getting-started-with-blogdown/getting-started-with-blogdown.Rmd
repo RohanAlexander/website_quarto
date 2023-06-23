@@ -1,0 +1,176 @@
+---
+title: "Getting started with Blogdown"
+description: |
+  Blogdown is a package that allows you to make websites (not just blogs, notwithstanding its name) largely within R Studio. It builds on Hugo, which is a popular tool for making websites.
+author:
+  - name: Rohan Alexander
+date: 2017-07-21
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+*Thank you to Minhee Chae and Peter Gibbard for helpful comments.*
+
+# Introduction
+Blogdown is a package that allows you to make websites (not just blogs, notwithstanding its name) largely within R Studio. It builds on Hugo, which is a popular tool for making websites.
+
+Blogdown lets you freely and quickly get a website up-and-running. It is easy to add content from time-to-time. It integrates with R Markdown which lets you easily share your work. And the separation of content and styling allows you to relatively quickly change your website's design.
+
+That said, using Blogdown is more work than Google sites or Squarespace. It requires a little more knowledge than using a basic Wordpress site. And if you want to customise many aspects of your website, or need everything to be 'just so' then Blogdown may not be for you.
+
+Blogdown is still under active development and various aspects may break in future releases. That said, the investment of time required to set up a Blogdown website is unlikely to be wasted. Even if Blogdown were shuttered tomorrow most of the content could be repurposed for a regular Hugo website.
+
+A Blogdown user-guide is being written by Yihui Xie, Amber Thomas, and Alison Presmanes Hill. The current draft can be viewed here: https://bookdown.org/yihui/blogdown/. Alison Presmanes Hill also has a very helpful post on getting started: https://apreshill.rbind.io/post/up-and-running-with-blogdown/. 
+
+This post is a simplified version of those two resources. It sticks to the basics and doesn't require much decision-making. The purpose is to allow someone without much experience to use Blogdown to get a website up-and-running. Head to those two resources once you've got a website working and want to dive a bit deeper.
+
+# Software installation
+## Software
+To use Blogdown you need R and R Studio.
+
+* To download R go to https://cran.csiro.au/ and download the version of R for your operating system. Follow the instructions to install R.
+* To download R Studio go to https://www.rstudio.com/products/rstudio/download/, scroll down to 'Installers for Supported Platform' and download the version of R Studio for your operating system (likely one of the first two links: Windows or Mac). Follow the instructions to install R Studio.
+
+## Packages
+You need to install the following packages: devtools, blogdown. To do this open R Studio and type the following into the console, hitting enter at the end of each line to run the command:
+
+```{r, eval=FALSE, echo=TRUE}
+install.packages("devtools")
+devtools::install_github("rstudio/blogdown")
+```
+
+# Folder management
+This section follows Alison Presmanes Hill's [post]( https://apreshill.rbind.io/post/up-and-running-with-blogdown/) closely. Go there for more information.
+
+## GitHub
+It will be easier to put your website on the internet if you have a GitHub account. To create a GitHub account, go to https://github.com/ and sign-up for a free account. This restricts you to making everything public, but as we are using GitHub for a public website that's fine. Once you have an account, create a new repository by clicking on the plus and call it 'my_website'.
+
+```{r}
+knitr::include_graphics("images/blogdown_github_1.png")
+```
+
+Don't worry about including a readme or gitignore. Once you get to the 'Quick setup' page, copy the website address.
+
+```{r}
+knitr::include_graphics("images/blogdown_github_2.png")
+```
+
+## Terminal
+Open Terminal (either <tt>cmd + space</tt> then search for 'Terminal' or find it in your Applications). Use a combination of typing <tt>ls</tt> followed by 'return' and typing <tt>cd</tt> followed by 'return', to navigate to your 'Documents' folder. This is where your website will live for now. 
+
+Type <tt>git clone</tt> and paste the address you copied earlier and follow by 'return'. This links that folder to your GitHub account.
+
+
+# Website building
+## Creation
+Open R Studio and install Hugo via the blogdown package with the following code:
+
+```{r, eval=FALSE, echo=TRUE}
+blogdown::install_hugo()
+```
+
+In R Studio create a new project in the folder that you just created 'my_website'. To do this click on: <tt>File -> New Project -> Existing Directory</tt>. Then navigate to the folder 'my_website'. This will open a new R Studio session. Creating a project just adds a .proj file in the folder that makes it easier to come back to your website later.
+
+Using that new R Studio session create your website with the following code:
+
+```{r, eval=FALSE, echo=TRUE}
+blogdown::new_site(theme = "gcushen/hugo-academic", theme_example = TRUE)
+```
+
+This will: 
+
+* download files into your 'my_website' folder; 
+* open a R Markdown file that you can close for now; and
+* begin serving the site in your R Studio viewer.
+
+The console and viewer of your R Studio session should look like this:
+
+```{r}
+knitr::include_graphics("images/blogdown_serve_site.png")
+```
+
+## Initial editing
+At this point, the default website is being 'served' locally. This means that changes you make will be reflected in the website that you see in your R Studio Viewer. To see the website in a web browser click the 'show in new window' button on the top left of the Viewer. This is circled in the above image. That will open the website using the address that the R Studio also tells you.
+
+### Headshot
+The first change to make is to update the headshot. In your folder, go to my_website -> static -> img. Replace 'portrait.jpg' with your own square headshot jpg. If you do this correctly then when you go back to your website the image will have updated.
+
+### Personal details, contacts, and main menu
+To update the biography and other details in that first pane, go to <tt>File -> Open File</tt> in the R Studio menu and open <tt>config.toml</tt> which is in <tt>my_website -> config.toml</tt>. This file will either open in a text editor or in R Studio -- it doesn't matter which. When you save the file the changes will be reflected in the website.
+
+Search for 'title' or go to line 2. It should say:
+
+```{r, eval=FALSE, echo=TRUE}
+'title = "Academic"'
+```
+
+Change that to:
+
+```{r, eval=FALSE, echo=TRUE}
+'title = "Your Name"'
+```
+
+Search for '[params]' or go to line 21. There you can update parameters such as name, role, and contact details. If you don't want a particular parameter to show up on your website then set it equal to "". (An example of this is on line 33.)
+
+Once you've updated these parameters, search for '[[params.social]]' or go to line 126. There you can update your contact details, such as email, twitter, etc. Just delete or comment out the full four lines if you don't want a particular contact type displayed on your website. You can always add more later.
+
+Finally, search for '[[menu.main]]' or go to line 152. There you can change the menu items that are displayed on the top right of your website. For instance if you don't want a blog then delete or comment out the four lines:
+
+```{r, eval=FALSE, echo=TRUE}
+[[menu.main]]
+  name = "Posts"
+  url = "#posts"
+  weight = 3
+```
+
+If you want to change the order of the items then change the 'weight'. Ascending values from left to right.
+
+### Biography
+In your folder, go to <tt>my_website -> content -> home -> about.md</tt>. That should open in R Studio or your text editor. Any changes that you save should immediately show up in your website.
+
+Search for '# List your academic interests.' or go to line 12. There you can change your academic interests. If you don't want this to show up on your website then you can just delete or comment out lines 12-18.
+
+Search for '# List your qualifications (such as academic degrees).' or go to line 20. There you can change your academic qualification. If you don't want this to show up on your website then you can just delete or comment out these lines. 
+
+The 'year' is a numeric field. If you'd prefer to include duration (e.g. 2013 -- 2017), then replace the '2012' with '"2013 -- 2017"' (the "" are important). Or similarly, if you are expecting a degree then you could replace the 'year' with '"Expected month year"'.
+
+Search for '# Biography' or go to line 43. There you can add a brief biography.
+
+### Teaching
+Most of the other files in <tt>my_website -> content -> home</tt> just display content from elsewhere. This is because of the setup of the website. The exception is teaching.md. Open that and edit everything after line 15.
+
+### Publications
+In your folder, go to <tt>my_website -> content -> publication</tt>. There are two default publications added there. You can edit those and then copy them to add extra publications.
+
+### Posts
+If you want a blog in your website then the content is saved in: <tt>my_website -> content -> post</tt>. If you don't want a blog then just delete this folder and comment out the posts menu item from <tt>my_website -> config.toml</tt> file so it doesn't show up in the menu.
+
+Once your website is working, if you want a new blog post, then you can simply use the R Studio menu bar: <tt>Tools -> Addins -> New Post</tt>.
+
+### Etc
+Go through the different parts and change it as you need.
+
+## Subsequent editing
+To come back to editing your website once you've closed R Studio, go to the 'my_website' folder and then double-click on the Rproj file, 'blogdown_test.Rproj'. That will open a new instance of R Studio. 
+
+From there you can type 'blogdown:::serve_site()' into the console to serve your site and then continue editing, or you could use the R Studio menu bar: 
+<tt>Tools -> Addins -> Serve Site.</tt> 
+
+# Making your website public
+## Commit
+So far everything has happened on your own computer. The first step to making your website public is to commit these changes to GitHub. To do this open Terminal again and as before use <tt>cd</tt> and <tt>ls</tt> to navigate to 'my_website'.
+
+Once there, type each of the following lines (adding your own description) and follow each by 'return'
+
+```{r, eval=FALSE, echo=TRUE}
+git add -A
+git commit -m "DESCRIBE THE CHANGE YOU ARE ADDING"
+git push
+```
+
+(You may be asked for your GitHub password. Terminal is a bit tricky to type passwords into because you don't know how many characters you've typed, but have a go and follow it by 'return'.)
+
+## your_domain.netlify.com
+There are many ways to make your website public, but the best at the moment is to use Netlify. I don't have anything to change from the instructions of Alison Presmanes Hill and you can follow those here: https://apreshill.rbind.io/post/up-and-running-with-blogdown/#deploy-in-netlify.
+
