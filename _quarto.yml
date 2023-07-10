@@ -21,6 +21,7 @@ website:
         - teaching-inf2178.qmd
         - teaching-history_of_statistics.qmd
         - teaching-sta302.qmd
+        - teaching-modeling.qmd
         - teaching-nlp.qmd
         - teaching-sta304.qmd
         - teaching-inf312.qmd
