@@ -141,7 +141,7 @@ Inspired by Patrick Collison's [version](https://patrickcollison.com/bookshelf),
 - Winton, Tim, 'The Shepherd's Hut'. *Present from Helen.*
 
 
-## Cookbooks
+## Food and drink
 
 - Alexander, Stephanie, 'The Cook's Companion'. *Again, all Australians own this.*
 - Country Women's Association of Tasmania, 'The 21st Birthday Cookery Book'. *My understanding, based on Helen, is that all Tasmanian women own this.*
@@ -154,22 +154,12 @@ Inspired by Patrick Collison's [version](https://patrickcollison.com/bookshelf),
 - Women's Weekly, 'Children's Birthday Cake Book'.
 
 
-## Want to buy
-
-- Carreyrou, John, 'Bad Blood: Secrets and Lies in a Silicon Valley Startup'. *About Theranos, a company that faked blood test results.*
-- Chozick, Amy, 'Chasing Hillary'. *Extended 2016 Clinton campaign diary. Many (most?) campaign  dairies are terrible but this is worthwhile reading in and of itself and the interaction with 'Devil's Bargain' was especially good. See notes for 'Devil's Bargain'.*
-- Green, Joshua, 'Devil's Bargain'. *About Bannon and his relationship with Trump. Worthwhile reading in and of itself, but the interaction with 'Chasing Hillary' was especially good. Neither is quantitative, but both help to understand 2016 e.g. how could the Comey reopening have a statistical effect? Green shows Bannon spent years creating specific mainstream doubts re Clinton. Chozick shows how/why Clinton campaign decisions accentuated them. I'm as keen on quant political analysis as anyone (shout out to @petitpoll if you want Australian polling!), but the snippets (and there was not much unfortunately) about each campaign's quant groups made me wonder if we have a cohort issue ATM. Specifically, do those in charge of political campaigns (or for that matter many businesses) know enough quant to know it's important, but not enough to appreciate, and hence be able to compensate for, it's weaknesses?*
-- Ignatieff, Michael, 'Fire and Ashes: Success and Failure in Politics'. *Changed the way that I  thought about politics. Gave my copy to Amir.*
-- Petzinger, Thomas, 'Hard Landing'. *About the deregulation of the US airline market.*
-- Price A, David, 'The Pixar Touch'. *Incredible details about their overnight success, 23 years in the making.*
-- Thiel, Peter, 'Zero to One'. *Maybe it's the jet-lag, but is this a business book that's actually not terrible? A few weak chapters, but enough interesting ones to outweigh them.*
-- Yanighara, Hanya, 'A Little Life'. *Recommended by Lauren.*
-
-
 ## Best books that I read in:
 
+* 2023
+    - Bouk, Dan, "Democracy's Data" (🙏 Emily)
 * 2022
-    - Kuang, R. F., 'Babel, or the Necessity of Violence'
+    - Kuang, R. F., "Babel, or the Necessity of Violence"
     - Efron & Hastie, "Computer Age Statistical Inference" (🙏 Monica)
     - Light, Singer & Willett, "By Design"
     - Mindell, "Digital Apollo" (🙏 Dan)

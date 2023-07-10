@@ -8,9 +8,9 @@ title: "The Other Course"
 
 This is a course that improves your skills in data science and gives you the space to write a paper within certain guardrails.
 
-The course will be an enormous amount of work and cause you a large amount of stress because it is likely your first opportunity to do unstructured original research. This is unfortunate, but there's little way around it. All I can tell you is that having done this course, it'll be easier in the future. And pressure makes diamonds.
+The course will be an enormous amount of work and cause you a large amount of stress because it is likely your first opportunity to do unstructured original research. This is unfortunate, but there's little way around it. All I can tell you is that having done this course, it'll be easier in the future. Pressure makes diamonds.
 
-The purpose of this course is to write an original research paper, and in the process of that, to learn some useful skills. The paper will incorporate relevant literature, detailed data collection processes, be reproducible, use technically and statistically sound methodology, and present the outcomes in an informative manner. The work is divided into two parts, a report describing the relevant background and technical processes (an R Markdown produced pdf) and an interactive layer (either Shiny or an R Package).
+The purpose of this course is to write an original research paper, and in the process of that, to learn some useful skills. The paper will incorporate relevant literature, detailed data collection processes, be reproducible, use technically and statistically sound methodology, and present the outcomes in an informative manner. 
  
 The purpose of this course is to explore the technical aspects required to design and complete an end-to-end data science project, similar to those that students are likely to encounter in a professional environment. This course will require students to:
 

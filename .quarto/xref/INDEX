@@ -202,5 +202,14 @@
   },
   "bookshelf.qmd": {
     "bookshelf.html": "9396c95b"
+  },
+  "teaching-sta302.qmd": {
+    "teaching-sta302.html": "e5937ceb"
+  },
+  "recs.qmd": {
+    "recs.html": "95938187"
+  },
+  "teaching-modeling.qmd": {
+    "teaching-modeling.html": "1e6705cd"
   }
 }

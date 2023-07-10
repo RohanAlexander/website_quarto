@@ -84,10 +84,29 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./bookshelf.html" rel="" target="">
- <span class="menu-text">Bookshelf</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-events" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Events</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-events">    
+        <li>
+    <a class="dropdown-item" href="./events-tdw.html" rel="" target="">
+ <span class="dropdown-text">Toronto Data Workshop</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./events-llms_colloquium.html" rel="" target="">
+ <span class="dropdown-text">Colloquium on Applications of LLMs</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./events-reproducibility.html" rel="" target="">
+ <span class="dropdown-text">Toronto Workshop on Reproducibility</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./events-software.html" rel="" target="">
+ <span class="dropdown-text">Conference on statistical software</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
  <span class="menu-text">Teaching</span>
@@ -110,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">History of statistics and data sciences</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-methods_of_data_analysis_i.html" rel="" target="">
+    <a class="dropdown-item" href="./teaching-sta302.html" rel="" target="">
  <span class="dropdown-text">Methods of Data Analysis I</span></a>
   </li>  
         <li>
@@ -128,29 +147,24 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-events" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Events</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-misc" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Misc</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-events">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-misc">    
         <li>
-    <a class="dropdown-item" href="./events-tdw.html" rel="" target="">
- <span class="dropdown-text">Toronto Data Workshop</span></a>
-  </li>  
-        <li class="dropdown-header">events-llms_colloquium.qmd</li>
-        <li>
-    <a class="dropdown-item" href="./events-reproducibility.html" rel="" target="">
- <span class="dropdown-text">Toronto Workshop on Reproducibility</span></a>
+    <a class="dropdown-item" href="./bookshelf.html" rel="" target="">
+ <span class="dropdown-text">Bookshelf</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./events-software.html" rel="" target="">
- <span class="dropdown-text">Conference on statistical software</span></a>
+    <a class="dropdown-item" href="./blog.html" rel="" target="">
+ <span class="dropdown-text">Blog</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./recs.html" rel="" target="">
+ <span class="dropdown-text">Recommendations</span></a>
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./blog.html" rel="" target="">
- <span class="menu-text">Blog</span></a>
-  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./pdfs/cv-academic-Rohan_Alexander.pdf" rel="" target="">
  <span class="menu-text">CV</span></a>
@@ -188,7 +202,13 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#content" id="toc-content" class="nav-link" data-scroll-target="#content">Content</a></li>
-  <li><a href="#assessment" id="toc-assessment" class="nav-link" data-scroll-target="#assessment">Assessment</a></li>
+  <li><a href="#assessment" id="toc-assessment" class="nav-link" data-scroll-target="#assessment">Assessment</a>
+  <ul class="collapse">
+  <li><a href="#notebook" id="toc-notebook" class="nav-link" data-scroll-target="#notebook">Notebook</a></li>
+  <li><a href="#paper-1" id="toc-paper-1" class="nav-link" data-scroll-target="#paper-1">Paper #1</a></li>
+  <li><a href="#paper-2" id="toc-paper-2" class="nav-link" data-scroll-target="#paper-2">Paper #2</a></li>
+  <li><a href="#final-paper" id="toc-final-paper" class="nav-link" data-scroll-target="#final-paper">Final Paper</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -284,6 +304,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Karpathy, Andrej, 2022, <em>Neural Networks: Zero to Hero</em>, Both of ‘The spelled-out intro…’ videos.</li>
 <li>Alammar, Jay, 2018, ‘The Illustrated Transformer’, http://jalammar.github.io/illustrated-transformer/.</li>
+<li>Boykis, Vicky, <em>What are embeddings?</em>, https://vickiboykis.com/what_are_embeddings/</li>
 <li>Manning, Vaswani and Huang, 2019, ‘Stanford CS224N: NLP with Deep Learning | Winter 2019 | Lecture 14 – Transformers and Self-Attention’, https://www.youtube.com/watch?v=5vcj8kSwBCY&amp;list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z&amp;index=14&amp;ab_channel=stanfordonline.</li>
 <li>Uszkoreit, Jakob, 2017, ‘Transformer: A Novel Neural Network Architecture for Language Understanding’, Google AI Blog, 31 August, https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html</li>
 </ul></li>
@@ -306,28 +327,40 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="assessment" class="level2">
 <h2 class="anchored" data-anchor-id="assessment">Assessment</h2>
+<section id="notebook" class="level3">
+<h3 class="anchored" data-anchor-id="notebook">Notebook</h3>
 <ul>
-<li>Learning Diary (20 per cent)
+<li>Due date: Try to keep this updated weekly, on average, over the course of the term.</li>
+<li>Task: Use Quarto to keep a notebook of what you read in the style of <a href="https://bayesf22-notebook.classes.andrewheiss.com/bayes-rules/02-chapter.html">this one</a> by Andrew Heiss.</li>
+<li>Weight: 25 per cent.</li>
+</ul>
+</section>
+<section id="paper-1" class="level3">
+<h3 class="anchored" data-anchor-id="paper-1">Paper #1</h3>
 <ul>
-<li>Date: Each week you will read relevant papers and books, engaging with them by writing notes and completing exercises. You will use GitHub to manage these notes and exercises and email a link to me at the end of each week.</li>
-</ul></li>
-<li>Paper 1 (10 per cent)
+<li>Due date: Thursday, noon, Week 1.</li>
+<li>Task: <a href="https://tellingstorieswithdata.com/23-assessment.html#sec-paper-one">Donaldson Paper</a></li>
+<li>Weight: 10 per cent.</li>
+</ul>
+</section>
+<section id="paper-2" class="level3">
+<h3 class="anchored" data-anchor-id="paper-2">Paper #2</h3>
 <ul>
-<li>Date: The Friday of Week 3</li>
-<li>Requirement: Complete Paper 1 from <em>Telling Stories with Data</em>.</li>
-</ul></li>
-<li>Mid-term paper (25 per cent)
+<li>Due date: Thursday, noon, Week 6.</li>
+<li>Task: Write a paper applying what you are learning.</li>
+<li>Weight: 25 per cent.</li>
+</ul>
+</section>
+<section id="final-paper" class="level3">
+<h3 class="anchored" data-anchor-id="final-paper">Final Paper</h3>
 <ul>
-<li>Date: The Friday before Reading Week.</li>
-<li>Requirement: Write an interesting paper.</li>
-</ul></li>
-<li>Final Paper (45 per cent)
-<ul>
-<li>Toward the mid-term break we will have a meeting to discuss the topic of your final paper. It will be due on the last day of the exam period.</li>
-</ul></li>
+<li>Due date: Thursday, noon, Week 12 + two weeks.</li>
+<li>Task: Write a paper that involves transformers.</li>
+<li>Weight: 40 per cent.</li>
 </ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

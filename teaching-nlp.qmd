@@ -55,6 +55,7 @@ Association for Computational Linguistics*, pp. 5185--5198, https://www.aclweb.o
 - Week 10: *Transformers I*
   - Karpathy, Andrej, 2022, *Neural Networks: Zero to Hero*, Both of 'The spelled-out intro...' videos.
   - Alammar, Jay, 2018, 'The Illustrated Transformer', http://jalammar.github.io/illustrated-transformer/. 
+  - Boykis, Vicky, *What are embeddings?*, https://vickiboykis.com/what_are_embeddings/
   - Manning, Vaswani and Huang, 2019, 'Stanford CS224N: NLP with Deep Learning | Winter 2019 | Lecture 14 – Transformers and Self-Attention', https://www.youtube.com/watch?v=5vcj8kSwBCY&list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z&index=14&ab_channel=stanfordonline.
   - Uszkoreit, Jakob, 2017, 'Transformer: A Novel Neural Network Architecture for Language Understanding', Google AI Blog, 31 August, https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html
 - Week 11: *Transformers II*
@@ -71,14 +72,28 @@ Association for Computational Linguistics*, pp. 5185--5198, https://www.aclweb.o
 
 
 ## Assessment
+
+### Notebook
+
+- Due date: Try to keep this updated weekly, on average, over the course of the term.
+- Task: Use Quarto to keep a notebook of what you read in the style of [this one](https://bayesf22-notebook.classes.andrewheiss.com/bayes-rules/02-chapter.html) by Andrew Heiss.
+- Weight: 25 per cent.
  
-- Learning Diary (20 per cent)
-  - Date: Each week you will read relevant papers and books, engaging with them by writing notes and completing exercises. You will use GitHub to manage these notes and exercises and email a link to me at the end of each week.
-- Paper 1 (10 per cent)
-  - Date: The Friday of Week 3
-  - Requirement: Complete Paper 1 from *Telling Stories with Data*.
-- Mid-term paper (25 per cent)
-  - Date: The Friday before Reading Week.
-  - Requirement: Write an interesting paper.
-- Final Paper (45 per cent)
-  - Toward the mid-term break we will have a meeting to discuss the topic of your final paper. It will be due on the last day of the exam period.
+### Paper #1
+
+- Due date: Thursday, noon, Week 1.
+- Task: [Donaldson Paper](https://tellingstorieswithdata.com/23-assessment.html#sec-paper-one)
+- Weight: 10 per cent.
+
+### Paper #2
+
+- Due date: Thursday, noon, Week 6.
+- Task: Write a paper applying what you are learning. 
+- Weight: 25 per cent.
+
+### Final Paper
+
+- Due date: Thursday, noon, Week 12 + two weeks.
+- Task: Write a paper that involves transformers.
+- Weight: 40 per cent.
+

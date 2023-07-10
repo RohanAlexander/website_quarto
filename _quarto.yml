@@ -8,26 +8,28 @@ website:
     right:
       - href: index.qmd
         text: Home
-      - href: bookshelf.qmd
-        text: Bookshelf
-      - text: "Teaching"
-        menu: 
-        - teaching-data_science_foundations.qmd
-        - teaching-ethics_and_ds.qmd
-        - teaching-inf2178.qmd
-        - teaching-history_of_statistics.qmd
-        - teaching-methods_of_data_analysis_i.qmd
-        - teaching-nlp.qmd
-        - teaching-sta304.qmd
-        - teaching-inf312.qmd
       - text: "Events"
         menu: 
         - events-tdw.qmd
         - events-llms_colloquium.qmd
         - events-reproducibility.qmd
         - events-software.qmd
-      - text: "Blog"
-        href: blog.html
+      - text: "Teaching"
+        menu: 
+        - teaching-data_science_foundations.qmd
+        - teaching-ethics_and_ds.qmd
+        - teaching-inf2178.qmd
+        - teaching-history_of_statistics.qmd
+        - teaching-sta302.qmd
+        - teaching-nlp.qmd
+        - teaching-sta304.qmd
+        - teaching-inf312.qmd
+      - text: "Misc"
+        menu: 
+        - href: bookshelf.qmd
+        - text: "Blog"
+          href: blog.html
+        - href: recs.qmd
       - text: "CV"
         href: pdfs/cv-academic-Rohan_Alexander.pdf
       - icon: github
