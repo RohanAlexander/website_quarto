@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Rohan Alexander - Modeling</title>
+<title>Rohan Alexander - Introduction to Modeling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -134,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="./teaching-modeling.html" rel="" target="">
- <span class="dropdown-text">Modeling</span></a>
+ <span class="dropdown-text">Introduction to Modeling</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./teaching-nlp.html" rel="" target="">
@@ -242,7 +242,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Modeling</h1>
+<h1 class="title">Introduction to Modeling</h1>
 </div>
 
 
@@ -261,24 +261,24 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="preamble">Preamble</h2>
 <section id="overview" class="level3">
 <h3 class="anchored" data-anchor-id="overview">Overview</h3>
-<p>Provides a crash-course in modeling for PhD students.</p>
+<p>After developing comfort with the idea of how our world becomes data and everything that goes into creating a nice, tidy, analysis dataset, we may be interested to model it. This course builds on “Data science foundations” by developing the modeling side of things. Many of the results that we will obtain from our models are determined well before we ever contemplate regression, and the credibility of any conclusions relies on a robust workflow. This course takes those skills as given, and focuses on doing a good job of the modeling. The typical person completing this course is a PhD student who is looking to apply statistics to some other discipline.</p>
 </section>
 <section id="pre-requisites" class="level3">
 <h3 class="anchored" data-anchor-id="pre-requisites">Pre-requisites</h3>
 <ul>
-<li>Data science foundations, or equivalent coverage of Chapters 1-13 of <a href="https://www.tellingstorieswithdata.com">Telling Stories with Data</a>.</li>
+<li>“Data science foundations”, or equivalent coverage of Chapters 1-13 of <a href="https://www.tellingstorieswithdata.com">Telling Stories with Data</a>.</li>
 </ul>
 </section>
 <section id="textbooks" class="level3">
 <h3 class="anchored" data-anchor-id="textbooks">Textbooks</h3>
 <ul>
-<li><em>Statistical Rethinking</em> - print copy needs to be purchased at about $70, (but McElreath provides free lectures).</li>
-<li><em>Bayes Rules!</em> - print copy can be purchased, but there’s a free version online.</li>
+<li>McElreath, 2020, <em>Statistical Rethinking</em>, 2nd edition, Chapman &amp; Hall/CRC. Please purchase a print copy, which will be about about $70. The author provides a free set of lectures that we will go through, which make purchasing the book not unreasonable.</li>
+<li>Johnson, Ott, and Dogucu, 2021, <em>Bayes Rules!</em>, Chapman &amp; Hall/CRC. You are welcome to purchase a print copy, but there is also a free version online.</li>
 </ul>
 </section>
 <section id="acknowledgements" class="level3">
 <h3 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h3>
-<p>This course is largely Andrew Heiss’ ‘Bayesian Statistics’ <a href="https://bayesf22.classes.andrewheiss.com">course</a>, with changed assessment, and I am grateful for his ideas and suggestions.</p>
+<p>This course—especially the key feature of combining the two books—is largely based on Andrew Heiss’ ‘Bayesian Statistics’ <a href="https://bayesf22.classes.andrewheiss.com">course</a>. I have tweaked the order of content a little, added articles, and changed assessment. I am grateful for Andrew’s ideas, suggestions, and generosity.</p>
 </section>
 </section>
 <section id="content" class="level2">
@@ -287,114 +287,114 @@ ul.task-list li input[type="checkbox"] {
 <section id="week-1" class="level3">
 <h3 class="anchored" data-anchor-id="week-1">Week 1</h3>
 <ul>
-<li>Read <em>Statistical Rethinking</em> Chapter 1: “The Golem of Prague”</li>
-<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 1: “The Golem of Prague”</li>
-<li>Read <em>Bayes Rules!</em> Chapter 1: “The (Big) Bayesian Picture”</li>
+<li>Read <em>Statistical Rethinking</em> Chapter 1, “The Golem of Prague”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 1, “The Golem of Prague”</li>
+<li>Read <em>Statistical Rethinking</em> Chapter 2, “Small Worlds and Large Worlds”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 1, “The (Big) Bayesian Picture”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 2, “Bayes’ Rule”</li>
 </ul>
 </section>
 <section id="week-2" class="level3">
 <h3 class="anchored" data-anchor-id="week-2">Week 2</h3>
 <ul>
-<li>Read <em>Statistical Rethinking</em> Chapter 2: “Small Worlds and Large Worlds”</li>
-<li>Read <em>Statistical Rethinking</em> Chapter 3: “Sampling the Imaginary”</li>
-<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 2: “The Garden of Forking Data”</li>
-<li>Read <em>Bayes Rules!</em> Chapter 2: “Bayes’ Rule”</li>
-<li>Read <em>Bayes Rules!</em> Chapter 3: “The Beta-Binomial Bayesian Model”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 2, “The Garden of Forking Data”</li>
+<li>Read <em>Statistical Rethinking</em> Chapter 3, “Sampling the Imaginary”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 3, “The Beta-Binomial Bayesian Model”</li>
 </ul>
 </section>
 <section id="week-3" class="level3">
 <h3 class="anchored" data-anchor-id="week-3">Week 3</h3>
 <ul>
-<li>Read <em>Statistical Rethinking</em> Chapter 4: “Geocentric Models”</li>
-<li>Read <em>Statistical Rethinking</em> Chapter 5: “The Many Variables &amp; The Spurious Waffles”</li>
-<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 3: “Geocentric Models”</li>
-<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 4: “Categories &amp; Curves”</li>
-<li>Read <em>Bayes Rules!</em> Chapter 4: “Balance and Sequentiality in Bayesian Analyses”</li>
-<li>Read <em>Bayes Rules!</em> Chapter 5: “Conjugate Families”</li>
+<li>Read <em>Statistical Rethinking</em> Chapter 4, “Geocentric Models”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 3, “Geocentric Models”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 4, “Categories &amp; Curves”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 4, “Balance and Sequentiality in Bayesian Analyses”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 5, “Conjugate Families”</li>
 </ul>
 </section>
 <section id="week-4" class="level3">
 <h3 class="anchored" data-anchor-id="week-4">Week 4</h3>
 <ul>
-<li>Read <em>Statistical Rethinking</em> Chapter 5: “The Many Variables &amp; The Spurious Waffles”</li>
-<li>Read <em>Statistical Rethinking</em> Chapter 6: “The Haunted DAG &amp; The Causal Terror”</li>
-<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 5: “Elemental Confounds”</li>
-<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 6: “Good and Bad Controls”</li>
+<li>Read <em>Statistical Rethinking</em> Chapter 5, “The Many Variables &amp; The Spurious Waffles”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 5, “Elemental Confounds”</li>
+<li>Read <em>Statistical Rethinking</em> Chapter 6, “The Haunted DAG &amp; The Causal Terror”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 6, “Good and Bad Controls”</li>
 </ul>
 </section>
 <section id="week-5" class="level3">
 <h3 class="anchored" data-anchor-id="week-5">Week 5</h3>
 <ul>
-<li>Read <em>Statistical Rethinking</em> Chapter 9: “Markov Chain Monte Carlo”</li>
-<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 8: “Markov Chain Monte Carlo”</li>
-<li>Read <em>Bayes Rules!</em> Chapter 6: “Approximating the Posterior”</li>
-<li>Read <em>Bayes Rules!</em> Chapter 7: “MCMC under the Hood”</li>
-<li>Read <em>Bayes Rules!</em> Chapter 8: “Posterior Inference &amp; Prediction”</li>
+<li>Read <em>Statistical Rethinking</em> Chapter 7, “Ulysses’ Compass”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 7, “Fitting over and under”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 9, “Simple Normal Regression”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 10, “Evaluating Regression Models”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 11, “Extending the Normal Regression Model”</li>
 </ul>
 </section>
 <section id="week-6" class="level3">
 <h3 class="anchored" data-anchor-id="week-6">Week 6</h3>
 <ul>
-<li>Read <em>Statistical Rethinking</em> Chapter 7: “Ulysses’ Compass”</li>
-<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 7: “Fitting over and under”</li>
-<li>Read <em>Bayes Rules!</em> Chapter 9: “Simple Normal Regression”</li>
-<li>Read <em>Bayes Rules!</em> Chapter 10: “Evaluating Regression Models”</li>
-<li>Read <em>Bayes Rules!</em> Chapter 11: “Extending the Normal Regression Model”</li>
+<li>Read <em>Statistical Rethinking</em> Chapter 9, “Markov Chain Monte Carlo”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 8, “Markov Chain Monte Carlo”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 6, “Approximating the Posterior”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 7, “MCMC under the Hood”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 8, “Posterior Inference &amp; Prediction”</li>
 </ul>
 </section>
 <section id="week-7" class="level3">
 <h3 class="anchored" data-anchor-id="week-7">Week 7</h3>
 <ul>
-<li>Read <em>Statistical Rethinking</em> Chapter 10: “Big Entropy and the Generalized Linear Model”</li>
-<li>Read <em>Statistical Rethinking</em> Chapter 11: “God Spiked the Integers”</li>
-<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 9: “Modeling events”</li>
-<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 10: “Counts and Hudden Confounds”</li>
-<li>Read <em>Bayes Rules!</em> Chapter 12: “Poisson &amp; Negative Binomial Regression”</li>
-<li>Read <em>Bayes Rules!</em> Chapter 13: “Logistic Regression”</li>
+<li>Read <em>Statistical Rethinking</em> Chapter 10, “Big Entropy and the Generalized Linear Model”</li>
+<li>Read <em>Statistical Rethinking</em> Chapter 11, “God Spiked the Integers”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 9, “Modeling events”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 10, “Counts and Hudden Confounds”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 12, “Poisson &amp; Negative Binomial Regression”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 13, “Logistic Regression”</li>
 </ul>
 </section>
 <section id="week-8" class="level3">
 <h3 class="anchored" data-anchor-id="week-8">Week 8</h3>
 <ul>
-<li>Read <em>Statistical Rethinking</em> Chapter 12: “Monsters and Mixtures”</li>
-<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 11: “Ordered Categories”</li>
+<li>Read <em>Statistical Rethinking</em> Chapter 12, “Monsters and Mixtures”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 11, “Ordered Categories”</li>
 </ul>
 </section>
 <section id="week-9" class="level3">
 <h3 class="anchored" data-anchor-id="week-9">Week 9</h3>
 <ul>
-<li>Read <em>Statistical Rethinking</em> Chapter 13: “Models with Memory”</li>
-<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 12: “Multilevel Models”</li>
-<li>Read <em>Bayes Rules!</em> Chapter 15: “Hierarchical Models are Exciting”</li>
-<li>Read <em>Bayes Rules!</em> Chapter 16: “(Normal) Hierarchical Models without Predictors”</li>
-<li>Read <em>Bayes Rules!</em> Chapter 17: “(Normal) Hierarchical Models with Predictors”</li>
+<li>Read <em>Statistical Rethinking</em> Chapter 13, “Models with Memory”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 12, “Multilevel Models”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 15, “Hierarchical Models are Exciting”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 16, “(Normal) Hierarchical Models without Predictors”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 17, “(Normal) Hierarchical Models with Predictors”</li>
 </ul>
 </section>
 <section id="week-10" class="level3">
 <h3 class="anchored" data-anchor-id="week-10">Week 10</h3>
 <ul>
-<li>Read <em>Statistical Rethinking</em> Chapter 14: “Adventures in Covariance”</li>
-<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 13: “Multilevel adventures”</li>
-<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 14: “Correlated features”</li>
-<li>Read <em>Bayes Rules!</em> Chapter 18: “Non-Normal Hierarchical Regression &amp; Classification”</li>
-<li>Read <em>Bayes Rules!</em> Chapter 19: “Adding More Layers”</li>
+<li>Read <em>Statistical Rethinking</em> Chapter 14, “Adventures in Covariance”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 13, “Multilevel adventures”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 14, “Correlated features”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 18, “Non-Normal Hierarchical Regression &amp; Classification”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 19, “Adding More Layers”</li>
 </ul>
 </section>
 <section id="week-11" class="level3">
 <h3 class="anchored" data-anchor-id="week-11">Week 11</h3>
 <ul>
-<li>Read <em>Statistical Rethinking</em> Chapter 15: “Missing Data and Other Opportunities”</li>
-<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 17: “Measurement and misclassification”</li>
-<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 18: “Missing Data”</li>
+<li>Read <em>Statistical Rethinking</em> Chapter 15, “Missing Data and Other Opportunities”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 17, “Measurement and misclassification”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 18, “Missing Data”</li>
+<li>Read Rubin, D, 1976, “Inference and missing data”, <em>Biometrika</em>.</li>
 </ul>
 </section>
 <section id="week-12" class="level3">
 <h3 class="anchored" data-anchor-id="week-12">Week 12</h3>
 <ul>
-<li>Read <em>Statistical Rethinking</em> Chapter 16: “Generalized Linear Madness”</li>
-<li>Read <em>Statistical Rethinking</em> Chapter 17: “Horoscopes”</li>
-<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 19: “Generalized Linear Madness”</li>
-<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 20: “Horoscopes”</li>
+<li>Read <em>Statistical Rethinking</em> Chapter 16, “Generalized Linear Madness”</li>
+<li>Read <em>Statistical Rethinking</em> Chapter 17, “Horoscopes”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 19, “Generalized Linear Madness”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 20, “Horoscopes”</li>
 </ul>
 </section>
 </section>
@@ -404,7 +404,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="notebook">Notebook</h3>
 <ul>
 <li>Due date: Try to keep this updated weekly, on average, over the course of the term.</li>
-<li>Task: Use Quarto to keep a notebook of what you read in the style of <a href="https://bayesf22-notebook.classes.andrewheiss.com/bayes-rules/02-chapter.html">this one</a> by Andrew Heiss.</li>
+<li>Task: Use Quarto to keep a notebook of what you read in the style of <a href="https://bayesf22-notebook.classes.andrewheiss.com/bayes-rules/02-chapter.html">this one</a> by Andrew Heiss. In particular, please add notes as you read/watch, and attempt at least half the exercises.</li>
 <li>Weight: 20 per cent.</li>
 </ul>
 </section>
@@ -417,6 +417,7 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 <li>Task: <a href="https://tellingstorieswithdata.com/23-assessment.html#sec-paper-one">Donaldson Paper</a></li>
 <li>Weight: 10 per cent.</li>
+<li>You do not need to do this again if you already did it as part of “Data science foundations”. In that case, the weight will be redistributed to Papers II and III.</li>
 </ul>
 </section>
 <section id="paper-ii" class="level3">
