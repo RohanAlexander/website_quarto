@@ -10,7 +10,7 @@ about:
       href: pdfs/cv-academic-Rohan_Alexander.pdf
     - icon: envelope
       text: "Email"
-      href: rohan.alexander@utoronto.ca
+      href: "mailto:rohan.alexander@utoronto.ca"
     - icon: github
       text: "GitHub"
       href: https://github.com/RohanAlexander
