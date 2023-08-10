@@ -16,7 +16,7 @@ This course takes those skills as given, and focuses on doing a good job of the 
 By the end of the course you should have three quantitative papers that can be submitted to a journal/conference. More generally you should be able to:
 
 1.  Engage critically with ideas and readings related to statistical modeling (demonstrated in all papers and the notebook).
-2.  Conduct quantitativee research in a high-quality, reproducible and ethical way (demonstrated in all papers).
+2.  Conduct quantitative research in a high-quality, reproducible and ethical way (demonstrated in all papers).
 3.  Clearly communicate what was done, what was found, and why in writing (demonstrated in all papers).
 4.  Respectfully identify strengths and weaknesses in the data science research conducted by others (demonstrated in quizzes, and the peer review).
 5.  Develop the ability to appropriately choose and apply statistical models to real-world situations (demonstrated in the final paper)
