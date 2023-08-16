@@ -25,11 +25,11 @@ The conference has three broad areas of focus:
 
 ## 2023
 
-### Wednesday, February 22, 2023.
+### Wednesday, 22 February
 
 Toronto Replication Games. Participants will be matched with other researchers working in the same field (e.g., economics, American Politics). Each team will work on replicating a recently published study in a leading econ/poli sci journal. 
 
-### Thursday, February 23, 2023.
+### Thursday, 23 February
 
 - **Mine Dogucu**, University College London & University of California Irvine. 
   - Title: ["Reproducible Teaching in Statistics and Data Science Curricula."](https://youtu.be/k40sErRImYU)
