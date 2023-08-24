@@ -48,6 +48,7 @@ Each week you should read the chapters, watch the relevant lecture, and attempt 
 - Read *Statistical Rethinking* Chapter 2, "Small Worlds and Large Worlds"
 - Read *Bayes Rules!* Chapter 1, "The (Big) Bayesian Picture"
 - Read *Bayes Rules!* Chapter 2, "Bayes' Rule"
+- Read Freedman, David, 1991, "Statistical Models and Shoe Leather" *Sociological Methodology*, Vol. 21, pp. 291-313.
 
 ### Week 2
 
@@ -94,7 +95,7 @@ Each week you should read the chapters, watch the relevant lecture, and attempt 
 - Watch *Statistical Rethinking* 2023 videos, Lecture 10, "Counts and Hudden Confounds"
 - Read *Bayes Rules!* Chapter 12, "Poisson & Negative Binomial Regression"
 - Read *Bayes Rules!* Chapter 13, "Logistic Regression"
-- Read Burch, Tyler James, 2023, "2023 NHL Playoff Predictions", April. https://tylerjamesburch.com/blog/misc/nhl-predictions as well as the journal article that the model is based on.
+- Read Burch, Tyler James, 2023, "[2023 NHL Playoff Predictions](https://tylerjamesburch.com/blog/misc/nhl-predictions)", April.
 
 ### Week 8
 
