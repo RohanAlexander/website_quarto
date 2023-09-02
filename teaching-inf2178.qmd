@@ -71,6 +71,14 @@ Successful past students have the following advice (completely unedited by me):
 Thanks to the following who helped develop this course: Monica Alexander, Kelly Lyons, Sharla Gelfand, Faria Khandaker, Hidaya Ismail, A Mahfouz, Paul Hodgetts, Thomas Rosenthal.
 
 
+### Past iterations
+
+- 2020
+  - [Student evals](pdfs/inf2178-2020-evals.pdf)
+- 2021
+  - [Syllabus](pdfs/inf2178-2021-syllabus.pdf)
+  - [Student evals](pdfs/inf2178-2021-evals.pdf)
+
 ## Content
 
 Each week you should go through the course notes and all compulsory materials. During the lecture I will live-code various aspects. I will also discuss a case study, typically a paper. During the lab, a TA will either lead small group discussions or similarly lead other work. The lecture will be recorded and posted here, but again, it's not enough to just watch that - you need to read and write yourself.

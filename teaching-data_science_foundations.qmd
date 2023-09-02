@@ -47,6 +47,12 @@ The purpose of the course is to develop the core skills of data science that are
 
 - None.
 
+### Past iterations
+
+- 2023
+  - [Syllabus](pdfs/inf3104-2023-syllabus.pdf)
+  - [Student evals](pdfs/inf3104-2023-evals.pdf)
+
 ### Textbook
 
 [Telling Stories with Data](https://www.tellingstorieswithdata.com)

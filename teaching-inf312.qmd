@@ -20,7 +20,7 @@ To a certain extent we are wasting our time. We have a perfect model of the worl
 
 - 2023
   - [Syllabus](pdfs/inf312-2023-syllabus.pdf)
-  - [Student evals](pdfs/inf312-2023-syllabus.pdf)
+  - [Student evals](pdfs/inf312-2023-evals.pdf)
 - 2022
   - [Syllabus](pdfs/inf312-2022-syllabus.pdf)
   - [Student evals](pdfs/inf312-2022-evals.pdf)

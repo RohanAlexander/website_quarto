@@ -90,12 +90,14 @@ Successful past students have the following advice (completely unedited by me):
 Thank you to the following people for generously providing comments, references, suggestions, and thoughts that directly contributed to this outline: Bethany White, Dan Simpson, Jesse Gronsbell, Kelly Lyons, Lauren Kennedy, Monica Alexander and Uzair Mirza. Thank you especially to Samantha-Jo Caetano who influenced all aspects of this and co-taught the first version in Fall 2020. 
 
 
-### Syllabus
+### Past iterations
 
-- [2020](https://rohanalexander.com/pdfs/2020-STA304.pdf).
-- [2022](https://rohanalexander.com/pdfs/2022-STA304.pdf). 
-
-
+- 2020
+  - [Syllabus](pdfs/sta304-2020-syllabus.pdf)
+  - [Student evals](pdfs/sta304-2020-evals.pdf)
+- 2022
+  - [Syllabus](pdfs/sta304-2022-syllabus.pdf)
+  - [Student evals](pdfs/sta304-2022-evals.pdf)
 
 
 ## Content
