@@ -22,10 +22,6 @@ The TDW is a joint initiative between the Faculty of Information and the Departm
 
 ## Fall 2023
 
-- Friday 15 September 2023, noon - 1pm
-  - **Rohan Alexander**, University of Toronto
-  - *Making data science more trustworthy by adding code and data tests*
-  - Rohan Alexander is an assistant professor at the University of Toronto, jointly appointed in the Faculty of Information and the Department of Statistical Sciences. His research investigates how we can develop workflows that improve the trustworthiness of data science and he is particularly interested in the role of testing in data science.
 - Friday 22 September 2023, noon - 1pm
 	- **Saloni Dattani**, Our World in Data
 	- *Missing data in global health*
@@ -51,12 +47,8 @@ The TDW is a joint initiative between the Faculty of Information and the Departm
 	- **Apoorva Lal**, Netflix
 	- *Modern balancing methods for causal inference*
 	- Data scientist on the experimentation team at Netflix working on observational causal inference with spatial and panel data
-- Friday 10 November 2023, all day
-	- **Conference on Statistical Software**
 - Friday 17 November 2023, noon - 1pm
-	- **Kevin Wilson**
-- Friday 24 November 2023, noon - 1pm
-	- TBD
+	- **Kevin Wilson**, Borealis AI
 
 
 
