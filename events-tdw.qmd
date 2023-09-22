@@ -4,7 +4,7 @@ title: "Toronto Data Workshop"
 
 ## Overview
 
-The Toronto Data Workshop (TDW) brings together academia and industry to share data science best practice. We are broadly interested, but especially in the data-centric aspects of a data science project. We meet weekly for an hour, typically Fridays at noon (Toronto time), hybrid (in-person at the Department of Statistics and online via Zoom), with most talks recorded and shared. For an invitation please sign up [here](https://forms.gle/sXbEixoa1iJR4Q7A8). Anyone is welcome to attend---it is free and you don't need to be affiliated with the university.
+The Toronto Data Workshop (TDW) brings together academia and industry to share data science best practice. We are broadly interested, but especially in the data-centric aspects of a data science project. We meet weekly for an hour, typically Fridays at noon (Toronto time), hybrid (in-person at the Faculty of Information and online via Zoom), with most talks recorded and shared. For an invitation please sign up [here](https://forms.gle/sXbEixoa1iJR4Q7A8). Anyone is welcome to attend---it is free and you don't need to be affiliated with the university.
 
 Current organizing committee:
 
@@ -24,7 +24,7 @@ The TDW is a joint initiative between the Faculty of Information and the Departm
 
 - Friday 22 September 2023, noon - 1pm
 	- **Saloni Dattani**, Our World in Data
-	- *Missing data in global health*
+	- [*Missing data in global health*](https://youtu.be/cmm3Dw3dYBU)
 	- Saloni Dattani is a researcher on global health at Our World in Data, and an editor at *Works in Progress*. She's interested in everything related to global health, epidemiology and meta-science.
 - Friday 29 September 2023, noon - 1pm
 	- **Nima Sarajpoor**, Manulife 	
