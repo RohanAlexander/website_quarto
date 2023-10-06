@@ -36,11 +36,15 @@ The TDW is a joint initiative between the Faculty of Information and the Departm
 	- Fabrizio Dell'Acqua is a postdoctoral research fellow and teaching fellow at Harvard Business School and the Laboratory for Innovation Science at Harvard (LISH). He received a Ph.D. in Management from Columbia Business School. His research focuses on the areas of automation, human/AI collaboration, and business ethics. 
 - Friday 13 October 2023, noon - 1pm
 	- **Tom Cardoso**, The Globe and Mail
-	- *Secret Canada*
+	- *Secret Canada: An investigation into Canada’s freedom of information systems*
 	- Tom Cardoso is a member of *The Globe and Mail's* investigations team based in Toronto. Since the fall of 2021, he has been investigating Canada's broken freedom of information systems.
-- Friday 20 October 2023, noon - 1pm
-	- **Marzieh Fadaee**, Cohere for AI
-	- *Aya: An Open Science Initiative to Accelerate Multilingual AI Progress*	
+- Friday 20 October 2023, *Second Colloquium on Applications of LLMs*
+  - 11am - noon
+    - **Yangjun Ruan**, University of Toronto
+    - *Identifying the Risks of LM Agents with an LM-Emulated Sandbox*
+  - Noon - 1pm
+  	- **Marzieh Fadaee**, Cohere for AI
+  	- *Aya: An Open Science Initiative to Accelerate Multilingual AI Progress*	
 - Friday 27 October 2023, noon - 1pm
 	- **Wendy Foster**, Shopify	
 	- *Socio-technical processes for data integrity*	
