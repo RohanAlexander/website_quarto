@@ -36,7 +36,7 @@ The TDW is a joint initiative between the Faculty of Information and the Departm
 	- Fabrizio Dell'Acqua is a postdoctoral research fellow and teaching fellow at Harvard Business School and the Laboratory for Innovation Science at Harvard (LISH). He received a Ph.D. in Management from Columbia Business School. His research focuses on the areas of automation, human/AI collaboration, and business ethics. 
 - Friday 13 October 2023, noon - 1pm
 	- **Tom Cardoso**, The Globe and Mail
-	- *Secret Canada: An investigation into Canada’s freedom of information systems*
+	- [*Secret Canada: An investigation into Canada’s freedom of information systems*](https://youtu.be/ZJbiPG-s8Fs)
 	- Tom Cardoso is a member of *The Globe and Mail's* investigations team based in Toronto. Since the fall of 2021, he has been investigating Canada's broken freedom of information systems.
 - Friday 20 October 2023
   - 11am - noon
@@ -47,10 +47,15 @@ The TDW is a joint initiative between the Faculty of Information and the Departm
   	- **Marzieh Fadaee**, Cohere for AI
   	- *Aya: An Open Science Initiative to Accelerate Multilingual AI Progress*	
   	- Marzieh Fadaee is a Senior Research Scientist @ Cohere For AI. She holds a PhD from the Language Technology Lab at the University of Amsterdam, where she developed models to understand and utilize interesting phenomena in data, and was advised by Christof Monz and Arianna Bisazza. She received a B.Sc. from Sharif University majoring in Computer Engineering and M.Sc. from University of Tehran majoring in Artificial Intelligence.
-- Friday 27 October 2023, noon - 1pm
-	- **Wendy Foster**, Shopify	
-	- *Socio-technical processes for data integrity*	
-	- Wendy Foster is Director of Engineering and Data, Optimize, at Shopify
+- Friday 27 October 2023
+  - 11am - noon
+    - **James Zou**, Stanford University
+    - *Can large language models provide useful feedback on research papers? A large-scale empirical analysis*
+    - James Zou is an Assistant Professor of Biomedical Data Science and, by courtesy, of Computer Science and Electrical Engineering at Stanford University. He works on making machine learning more reliable, human-compatible and statistically rigorous, and am especially interested in applications in human disease and health. He is a two-time Chan-Zuckerberg Investigator and the faculty director of the university-wide Stanford Data4Health hub. His research is supported by the Sloan Fellowship, the NSF CAREER Award, and Google, Amazon and Adobe AI awards. 
+  - Noon - 1pm
+  	- **Wendy Foster**, Shopify	
+  	- *Socio-technical processes for data integrity*	
+  	- Wendy Foster is Director of Engineering and Data, Optimize, at Shopify
 - Friday 3 November 2023, noon - 1pm
 	- **Apoorva Lal**, Netflix
 	- *Modern balancing methods for causal inference*
