@@ -56,10 +56,15 @@ The TDW is a joint initiative between the Faculty of Information and the Departm
   	- **Wendy Foster**, Shopify	
   	- *Socio-technical processes for data integrity*	
   	- Wendy Foster is Director of Engineering and Data, Optimize, at Shopify
-- Friday 3 November 2023, noon - 1pm
-	- **Apoorva Lal**, Netflix
-	- *Modern balancing methods for causal inference*
-	- Data scientist on the experimentation team at Netflix working on observational causal inference with spatial and panel data
+- Friday 3 November 2023
+  - 11am - noon
+    - **Carlos Jimenez** and **John Yang**, Princeton University
+    - *SWE-bench: Can Language Models Resolve Real-World GitHub Issues?*
+    - Carlos E. Jimenez is a PhD student at Princeton University, advised by Prof. Karthik Narasimhan. He studies AI and ML for natural language processing and his research interests include language models for code, task-oriented dialogue, and AI safety. John Yang is a research assistant working at Princeton University, advised by Professor Karthik Narasimhan. He is interested in Language Grounding & Interaction, Benchmarks for LLMs, Software Engineering, and Code Generation. 
+  - Noon - 1pm
+  	- **Apoorva Lal**, Netflix
+  	- *Modern balancing methods for causal inference*
+  	- Data scientist on the experimentation team at Netflix working on observational causal inference with spatial and panel data
 - Friday 17 November 2023, noon - 1pm
 	- **Kevin Wilson**, Borealis AI
 
