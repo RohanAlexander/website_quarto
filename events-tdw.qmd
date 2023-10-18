@@ -53,9 +53,7 @@ The TDW is a joint initiative between the Faculty of Information and the Departm
     - *Can large language models provide useful feedback on research papers? A large-scale empirical analysis*
     - James Zou is an Assistant Professor of Biomedical Data Science and, by courtesy, of Computer Science and Electrical Engineering at Stanford University. He works on making machine learning more reliable, human-compatible and statistically rigorous, and am especially interested in applications in human disease and health. He is a two-time Chan-Zuckerberg Investigator and the faculty director of the university-wide Stanford Data4Health hub. His research is supported by the Sloan Fellowship, the NSF CAREER Award, and Google, Amazon and Adobe AI awards. 
   - Noon - 1pm
-  	- **Wendy Foster**, Shopify	
-  	- *Socio-technical processes for data integrity*	
-  	- Wendy Foster is Director of Engineering and Data, Optimize, at Shopify
+  	- TBD
 - Friday 3 November 2023
   - 11am - noon
     - **Carlos Jimenez** and **John Yang**, Princeton University
@@ -67,7 +65,11 @@ The TDW is a joint initiative between the Faculty of Information and the Departm
   	- Data scientist on the experimentation team at Netflix working on observational causal inference with spatial and panel data
 - Friday 17 November 2023, noon - 1pm
 	- **Kevin Wilson**, Borealis AI
-
+	- Kevin Wilson is ML Research Team Lead.
+- Friday 24 November 2023, noon - 1pm
+	- **Wendy Foster**, Shopify	
+	- *Socio-technical processes for data integrity*	
+	- Wendy Foster is Director of Engineering and Data, Optimize, at Shopify.
 
 
 ## Past talks
