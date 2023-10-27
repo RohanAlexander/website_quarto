@@ -47,25 +47,31 @@ The TDW is a joint initiative between the Faculty of Information and the Departm
   	- **Marzieh Fadaee**, Cohere for AI
   	- [*Aya: An Open Science Initiative to Accelerate Multilingual AI Progress*](https://youtu.be/kVOKtJ8ZTgI)	
   	- Marzieh Fadaee is a Senior Research Scientist @ Cohere For AI. She holds a PhD from the Language Technology Lab at the University of Amsterdam, where she developed models to understand and utilize interesting phenomena in data, and was advised by Christof Monz and Arianna Bisazza. She received a B.Sc. from Sharif University majoring in Computer Engineering and M.Sc. from University of Tehran majoring in Artificial Intelligence.
-- Friday 27 October 2023
-  - 11am - noon
-    - **James Zou**, Stanford University
-    - *Can large language models provide useful feedback on research papers? A large-scale empirical analysis*
-    - James Zou is an Assistant Professor of Biomedical Data Science and, by courtesy, of Computer Science and Electrical Engineering at Stanford University. He works on making machine learning more reliable, human-compatible and statistically rigorous, and am especially interested in applications in human disease and health. He is a two-time Chan-Zuckerberg Investigator and the faculty director of the university-wide Stanford Data4Health hub. His research is supported by the Sloan Fellowship, the NSF CAREER Award, and Google, Amazon and Adobe AI awards. 
-  - Noon - 1pm
-  	- TBD
+- Friday 27 October 2023, 11am - noon
+  - **James Zou**, Stanford University
+  - *Can large language models provide useful feedback on research papers? A large-scale empirical analysis*
+  - James Zou is an Assistant Professor of Biomedical Data Science and, by courtesy, of Computer Science and Electrical Engineering at Stanford University. He works on making machine learning more reliable, human-compatible and statistically rigorous, and am especially interested in applications in human disease and health. He is a two-time Chan-Zuckerberg Investigator and the faculty director of the university-wide Stanford Data4Health hub. His research is supported by the Sloan Fellowship, the NSF CAREER Award, and Google, Amazon and Adobe AI awards. 
 - Friday 3 November 2023
   - 11am - noon
-    - **Carlos Jimenez** and **John Yang**, Princeton University
+    - **John Yang**, Princeton University
     - *SWE-bench: Can Language Models Resolve Real-World GitHub Issues?*
-    - Carlos E. Jimenez is a PhD student at Princeton University, advised by Prof. Karthik Narasimhan. He studies AI and ML for natural language processing and his research interests include language models for code, task-oriented dialogue, and AI safety. John Yang is a research assistant working at Princeton University, advised by Professor Karthik Narasimhan. He is interested in Language Grounding & Interaction, Benchmarks for LLMs, Software Engineering, and Code Generation. 
+    - John Yang is a research assistant working at Princeton University, advised by Professor Karthik Narasimhan. He is interested in Language Grounding & Interaction, Benchmarks for LLMs, Software Engineering, and Code Generation. 
   - Noon - 1pm
   	- **Apoorva Lal**, Netflix
   	- *Modern balancing methods for causal inference*
   	- Data scientist on the experimentation team at Netflix working on observational causal inference with spatial and panel data
+- Friday 10 November 2023, noon - 1pm
+  - **Alexander Coppock**, Yale University
+  - Alex Coppock is an Associate Professor (on term) of Political Science at Yale University. He is the author of *Persuasion in Parallel: How Information Changes Minds about Politics* and a member of the DeclareDesign team. He is a co-author of the recently published book *Research Design in the Social Sciences: Declaration, Diagnosis, and Redesign*.
+  - Alex will talk about research design in the social sciences.
 - Friday 17 November 2023, noon - 1pm
-	- **Kevin Wilson**, Borealis AI
-	- Kevin Wilson is ML Research Team Lead.
+  - Noon - 1pm
+    - **Cat Hicks**, Pluralsight Flow
+    - Cat Hicks, PhD, is the VP of Research Insights at Pluralsight Flow, where she studies how innovative Developer teams learn and thrive and leads the Developer Success Lab. She holds a Ph.D. in Quantitative Experimental Psychology from UC San Diego, was an inaugural Fellow in the UC San Diego Design Lab, and has led research at organizations such as Google and Khan Academy.
+    - The New Developer: AI Skill Threat, Identity Change & Developer Thriving in the Transition to AI-Assisted Software Development
+  - 1pm - 2pm
+  	- **Kevin Wilson**, Borealis AI
+  	- Kevin Wilson is ML Research Team Lead.
 - Friday 24 November 2023, noon - 1pm
 	- **Wendy Foster**, Shopify	
 	- *Socio-technical processes for data integrity*	
