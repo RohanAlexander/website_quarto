@@ -62,13 +62,13 @@ The TDW is a joint initiative between the Faculty of Information and the Departm
   	- Data scientist on the experimentation team at Netflix working on observational causal inference with spatial and panel data
 - Friday 10 November 2023, noon - 1pm
   - **Alexander Coppock**, Yale University
+  - *Research design in the social sciences*
   - Alex Coppock is an Associate Professor (on term) of Political Science at Yale University. He is the author of *Persuasion in Parallel: How Information Changes Minds about Politics* and a member of the DeclareDesign team. He is a co-author of the recently published book *Research Design in the Social Sciences: Declaration, Diagnosis, and Redesign*.
-  - Alex will talk about research design in the social sciences.
 - Friday 17 November 2023, noon - 1pm
   - Noon - 1pm
     - **Cat Hicks**, Pluralsight Flow
+    - *The New Developer: AI Skill Threat, Identity Change & Developer Thriving in the Transition to AI-Assisted Software Development*
     - Cat Hicks, PhD, is the VP of Research Insights at Pluralsight Flow, where she studies how innovative Developer teams learn and thrive and leads the Developer Success Lab. She holds a Ph.D. in Quantitative Experimental Psychology from UC San Diego, was an inaugural Fellow in the UC San Diego Design Lab, and has led research at organizations such as Google and Khan Academy.
-    - The New Developer: AI Skill Threat, Identity Change & Developer Thriving in the Transition to AI-Assisted Software Development
   - 1pm - 2pm
   	- **Kevin Wilson**, Borealis AI
   	- Kevin Wilson is ML Research Team Lead.
