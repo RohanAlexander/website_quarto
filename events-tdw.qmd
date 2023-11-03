@@ -54,12 +54,12 @@ The TDW is a joint initiative between the Faculty of Information and the Departm
 - Friday 3 November 2023
   - 11am - noon
     - **John Yang**, Princeton University
-    - *SWE-bench: Can Language Models Resolve Real-World GitHub Issues?*
+    - [*SWE-bench: Can Language Models Resolve Real-World GitHub Issues?*](https://youtu.be/DrLdvbkgmeA)
     - John Yang is a research assistant working at Princeton University, advised by Professor Karthik Narasimhan. He is interested in Language Grounding & Interaction, Benchmarks for LLMs, Software Engineering, and Code Generation. 
   - Noon - 1pm
   	- **Apoorva Lal**, Netflix
-  	- *Modern balancing methods for causal inference*
-  	- Data scientist on the experimentation team at Netflix working on observational causal inference with spatial and panel data
+  	- [*Modern balancing methods for causal inference*](https://youtu.be/CO9VnGy3esI)
+  	- Data scientist on the experimentation team at Netflix working on observational causal inference with spatial and panel data.
 - Friday 10 November 2023, noon - 1pm
   - **Alexander Coppock**, Yale University
   - *Research design in the social sciences*
@@ -76,6 +76,10 @@ The TDW is a joint initiative between the Faculty of Information and the Departm
 	- **Wendy Foster**, Shopify	
 	- *Socio-technical processes for data integrity*	
 	- Wendy Foster is Director of Engineering and Data, Optimize, at Shopify.
+- Friday 1 December 2023, noon - 1pm
+	- **Thomas Davidson**, Rutgers University	
+	- *Start Generating: Harnessing Generative Artificial Intelligence for Sociological Research*	
+	- Thomas Davidson is an Assistant Professor in the Department of Sociology at Rutgers University. He received his Ph.D. in Sociology from Cornell University in 2020. His research interests include political sociology, social movements, and the sociology of culture. His research uses digital trace data from social media and other websites combined with statistical analysis and computational methods, including natural language processing and machine learning.
 
 
 ## Past talks
