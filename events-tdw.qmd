@@ -62,16 +62,13 @@ The TDW is a joint initiative between the Faculty of Information and the Departm
   	- Data scientist on the experimentation team at Netflix working on observational causal inference with spatial and panel data.
 - Friday 10 November 2023, noon - 1pm
   - **Alexander Coppock**, Yale University
-  - *Research design in the social sciences*
+  - [*Research design in the social sciences*](https://youtu.be/ecuIVCB_TqQ)
   - Alex Coppock is an Associate Professor (on term) of Political Science at Yale University. He is the author of *Persuasion in Parallel: How Information Changes Minds about Politics* and a member of the DeclareDesign team. He is a co-author of the recently published book *Research Design in the Social Sciences: Declaration, Diagnosis, and Redesign*.
-- Friday 17 November 2023, noon - 1pm
-  - Noon - 1pm
-    - **Cat Hicks**, Pluralsight Flow
-    - *The New Developer: AI Skill Threat, Identity Change & Developer Thriving in the Transition to AI-Assisted Software Development*
-    - Cat Hicks, PhD, is the VP of Research Insights at Pluralsight Flow, where she studies how innovative Developer teams learn and thrive and leads the Developer Success Lab. She holds a Ph.D. in Quantitative Experimental Psychology from UC San Diego, was an inaugural Fellow in the UC San Diego Design Lab, and has led research at organizations such as Google and Khan Academy.
-  - 1pm - 2pm
-  	- **Kevin Wilson**, Borealis AI
-  	- Kevin Wilson is ML Research Team Lead.
+- Friday 17 November 2023, 1pm - 2pm
+	- **Chiara Alcantara, Franklin Ramirez, Helena Xu**, University of Waterloo
+	- *Exploring Alternatives to REST for Accessing Public Data Sets*
+	- In the past decade, governments, non-profits, and other civic institutions have increasingly been sharing data on a wide range of topics, supporting various sectors of society from private enterprise to academic research. However, using this data in a programmatic and reproducible fashion is hampered by the myriad nature of the APIs provided to access it. In this talk, we explore one potential alternative to the predominant REST paradigm: storing tabular data in the open Parquet file format on publicly accessible endpoints. By using this standardized file format and a simple backing infrastructure, new tools based on Apache Arrow, such as DuckDB and Polars, can be used to build reusable front ends and other cost-effective solutions. We present a case study based on Statistics Canada’s library of public data sets, showcasing how such a system can simplify initial selection and filtering through common SQL queries.
+	- Chiara, Franklin, and Helena are second-year computer science students at the University of Waterloo who are interested in applying new software and data engineering tooling to increase the accessibility of public data sets.
 - Friday 24 November 2023, noon - 1pm
 	- **Wendy Foster**, Shopify	
 	- *Socio-technical processes for data integrity*	

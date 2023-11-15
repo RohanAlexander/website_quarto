@@ -9,7 +9,7 @@
 <link>https://rohanalexander.com/blog.html</link>
 <atom:link href="https://rohanalexander.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.3.266</generator>
+<generator>quarto-1.3.450</generator>
 <lastBuildDate>Fri, 17 Dec 2021 05:00:00 GMT</lastBuildDate>
 <item>
   <title>What data science can learn from the James Webb Space Telescope</title>
@@ -55,8 +55,8 @@
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://rohanalexander.com/posts/2021-12-17-james_webb_space_telescope/stigler.png" class="quarto-discovered-preview-image img-fluid figure-img" style="width:85.0%"></p>
-<p></p><figcaption class="figure-caption">Example of Mayer from Stigler, 1986</figcaption><p></p>
+<p><img src="https://rohanalexander.com/posts/2021-12-17-james_webb_space_telescope/stigler.png" class="img-fluid figure-img" style="width:85.0%"></p>
+<figcaption class="figure-caption">Example of Mayer from Stigler, 1986</figcaption>
 </figure>
 </div>
 </div>
@@ -245,8 +245,8 @@ Wickham, Hadley, and Garrett Grolemund. 2016. <em>R for Data Science</em>. O’R
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://rohanalexander.com/posts/2021-12-16-on_the_privilege_of_turning_our_world_into_data/extract.png" class="quarto-discovered-preview-image img-fluid figure-img" style="width:85.0%"></p>
-<p></p><figcaption class="figure-caption">Extract of the survey</figcaption><p></p>
+<p><img src="https://rohanalexander.com/posts/2021-12-16-on_the_privilege_of_turning_our_world_into_data/extract.png" class="img-fluid figure-img" style="width:85.0%"></p>
+<figcaption class="figure-caption">Extract of the survey</figcaption>
 </figure>
 </div>
 </div>
@@ -1373,8 +1373,8 @@ font-style: inherit;">"Set1"</span>) </span></code></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://rohanalexander.com/posts/2021-12-02-average_age_of_australian_politicians/average_age_of_parliaments_files/figure-html/maingraph-1.png" class="quarto-discovered-preview-image img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Average age in the Australian Federal Parliament on a daily basis</figcaption><p></p>
+<p><img src="https://rohanalexander.com/posts/2021-12-02-average_age_of_australian_politicians/average_age_of_parliaments_files/figure-html/maingraph-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Average age in the Australian Federal Parliament on a daily basis</figcaption>
 </figure>
 </div>
 </div>
@@ -1447,7 +1447,7 @@ font-style: inherit;">"Set1"</span>) </span></code></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2021-12-02-average_age_of_australian_politicians/average_age_of_parliaments_files/figure-html/justrepsthings-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Average age in the lower house on a daily basis</figcaption><p></p>
+<figcaption class="figure-caption">Average age in the lower house on a daily basis</figcaption>
 </figure>
 </div>
 </div>
@@ -1519,7 +1519,7 @@ font-style: inherit;">"Set1"</span>) </span></code></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2021-12-02-average_age_of_australian_politicians/average_age_of_parliaments_files/figure-html/justsenatethigns-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Average age in the upper house on a daily basis</figcaption><p></p>
+<figcaption class="figure-caption">Average age in the upper house on a daily basis</figcaption>
 </figure>
 </div>
 </div>
@@ -1588,7 +1588,7 @@ font-style: inherit;">booktabs =</span> <span class="cn" style="color: #8f5902;
 background-color: null;
 font-style: inherit;">TRUE</span>)</span></code></pre></div>
 <div class="cell-output-display">
-<table class="table table-sm table-striped">
+<table class="table table-sm table-striped small">
 <caption>Average age by for each period between lower house elections</caption>
 <thead>
 <tr class="header">
@@ -1882,7 +1882,7 @@ font-style: inherit;">"Set1"</span>) </span></code></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2021-12-02-average_age_of_australian_politicians/average_age_of_parliaments_files/figure-html/othergraph-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Average age in the Australian Federal Parliament, by election period</figcaption><p></p>
+<figcaption class="figure-caption">Average age in the Australian Federal Parliament, by election period</figcaption>
 </figure>
 </div>
 </div>
@@ -3380,7 +3380,7 @@ font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">kable_styling</span>()</span></code></pre></div>
 <div class="cell-output-display">
-<table class="table table-sm table-striped" data-quarto-postprocess="true">
+<table class="table table-sm table-striped small" data-quarto-postprocess="true">
 <caption>Count of entries by year for 2017-2019</caption>
 <thead>
 <tr class="header">
@@ -3457,7 +3457,7 @@ font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">kable_styling</span>()</span></code></pre></div>
 <div class="cell-output-display">
-<table class="table table-sm table-striped" data-quarto-postprocess="true">
+<table class="table table-sm table-striped small" data-quarto-postprocess="true">
 <caption>Count of entries by month for 2017-2019</caption>
 <thead>
 <tr class="header">
@@ -3580,8 +3580,8 @@ font-style: inherit;">"Number"</span>)</span></code></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://rohanalexander.com/posts/2021-01-24-shelter-usage-in-toronto-2017-2021/toronto-shelter-usage_files/figure-html/firstthreeyearsdistrib-1.png" class="quarto-discovered-preview-image img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Distribution of days for 2017-2019</figcaption><p></p>
+<p><img src="https://rohanalexander.com/posts/2021-01-24-shelter-usage-in-toronto-2017-2021/toronto-shelter-usage_files/figure-html/firstthreeyearsdistrib-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Distribution of days for 2017-2019</figcaption>
 </figure>
 </div>
 </div>
@@ -3631,7 +3631,7 @@ font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">kable_styling</span>()</span></code></pre></div>
 <div class="cell-output-display">
-<table class="table table-sm table-striped" data-quarto-postprocess="true">
+<table class="table table-sm table-striped small" data-quarto-postprocess="true">
 <caption>Count of entries by month for 2020</caption>
 <thead>
 <tr class="header">
@@ -3749,7 +3749,7 @@ font-style: inherit;">"Number"</span>)</span></code></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2021-01-24-shelter-usage-in-toronto-2017-2021/toronto-shelter-usage_files/figure-html/yearsdistribfor2020-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Distribution of days for 2020</figcaption><p></p>
+<figcaption class="figure-caption">Distribution of days for 2020</figcaption>
 </figure>
 </div>
 </div>
@@ -3798,7 +3798,7 @@ font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">kable_styling</span>()</span></code></pre></div>
 <div class="cell-output-display">
-<table class="table table-sm table-striped" data-quarto-postprocess="true">
+<table class="table table-sm table-striped small" data-quarto-postprocess="true">
 <caption>Count of entries by year for 2020</caption>
 <thead>
 <tr class="header">
@@ -3940,7 +3940,7 @@ font-style: inherit;">"Date"</span>)</span></code></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2021-01-24-shelter-usage-in-toronto-2017-2021/toronto-shelter-usage_files/figure-html/plotorder-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Comparison of row number with date</figcaption><p></p>
+<figcaption class="figure-caption">Comparison of row number with date</figcaption>
 </figure>
 </div>
 </div>
@@ -4108,7 +4108,7 @@ font-style: inherit;">"Set1"</span>)</span></code></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2021-01-24-shelter-usage-in-toronto-2017-2021/toronto-shelter-usage_files/figure-html/plotoccupancyrate-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Occupancy rate per day in Toronto shelters</figcaption><p></p>
+<figcaption class="figure-caption">Occupancy rate per day in Toronto shelters</figcaption>
 </figure>
 </div>
 </div>
@@ -4192,7 +4192,7 @@ font-style: inherit;">"Set1"</span>)</span></code></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2021-01-24-shelter-usage-in-toronto-2017-2021/toronto-shelter-usage_files/figure-html/plotoccupancy-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Occupancy per day in Toronto shelters</figcaption><p></p>
+<figcaption class="figure-caption">Occupancy per day in Toronto shelters</figcaption>
 </figure>
 </div>
 </div>
@@ -4317,7 +4317,7 @@ font-style: inherit;">"Set1"</span>)</span></code></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2021-01-24-shelter-usage-in-toronto-2017-2021/toronto-shelter-usage_files/figure-html/sheltersin2017-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Occupancy in Toronto shelters in 2017</figcaption><p></p>
+<figcaption class="figure-caption">Occupancy in Toronto shelters in 2017</figcaption>
 </figure>
 </div>
 </div>
@@ -4432,7 +4432,7 @@ font-style: inherit;">"Dark2"</span>)</span></code></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2021-01-24-shelter-usage-in-toronto-2017-2021/toronto-shelter-usage_files/figure-html/sheltersin2018-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Daily occupancy in Toronto shelters in 2018</figcaption><p></p>
+<figcaption class="figure-caption">Daily occupancy in Toronto shelters in 2018</figcaption>
 </figure>
 </div>
 </div>
@@ -4536,7 +4536,7 @@ font-style: inherit;">"Set1"</span>)</span></code></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2021-01-24-shelter-usage-in-toronto-2017-2021/toronto-shelter-usage_files/figure-html/sheltersinjan2017-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Daily occupancy in Toronto shelters in January 2017</figcaption><p></p>
+<figcaption class="figure-caption">Daily occupancy in Toronto shelters in January 2017</figcaption>
 </figure>
 </div>
 </div>
@@ -4640,7 +4640,7 @@ font-style: inherit;">"Set1"</span>)</span></code></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2021-01-24-shelter-usage-in-toronto-2017-2021/toronto-shelter-usage_files/figure-html/sheltersinfeb2017-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Daily occupancy in Toronto shelters in February 2017</figcaption><p></p>
+<figcaption class="figure-caption">Daily occupancy in Toronto shelters in February 2017</figcaption>
 </figure>
 </div>
 </div>
@@ -4715,7 +4715,7 @@ font-style: inherit;">theme_minimal</span>()</span></code></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2021-01-24-shelter-usage-in-toronto-2017-2021/toronto-shelter-usage_files/figure-html/sheltersin2017byrow-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Date of each row in order in 2017</figcaption><p></p>
+<figcaption class="figure-caption">Date of each row in order in 2017</figcaption>
 </figure>
 </div>
 </div>
@@ -4793,7 +4793,7 @@ font-style: inherit;">theme_minimal</span>()</span></code></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2021-01-24-shelter-usage-in-toronto-2017-2021/toronto-shelter-usage_files/figure-html/sheltersdatebyrow-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Date of each row in order (2017-2020)</figcaption><p></p>
+<figcaption class="figure-caption">Date of each row in order (2017-2020)</figcaption>
 </figure>
 </div>
 </div>
@@ -5233,7 +5233,7 @@ font-style: inherit;">theme_minimal</span>()</span></code></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2021-01-24-shelter-usage-in-toronto-2017-2021/toronto-shelter-usage_files/figure-html/sheltersdatebyrowadj-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Date of each row in order in 2017 after adjustment</figcaption><p></p>
+<figcaption class="figure-caption">Date of each row in order in 2017 after adjustment</figcaption>
 </figure>
 </div>
 </div>
@@ -5384,7 +5384,7 @@ font-style: inherit;">"Set1"</span>)</span></code></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2021-01-24-shelter-usage-in-toronto-2017-2021/toronto-shelter-usage_files/figure-html/sheltersdatebyrowadj2017-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Toronto shelters daily occupancy in 2017 after adjustment</figcaption><p></p>
+<figcaption class="figure-caption">Toronto shelters daily occupancy in 2017 after adjustment</figcaption>
 </figure>
 </div>
 </div>
@@ -5503,7 +5503,7 @@ font-style: inherit;">"Set1"</span>)</span></code></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2021-01-24-shelter-usage-in-toronto-2017-2021/toronto-shelter-usage_files/figure-html/focuson2020-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Shelter usage in 2020</figcaption><p></p>
+<figcaption class="figure-caption">Shelter usage in 2020</figcaption>
 </figure>
 </div>
 </div>
@@ -5896,7 +5896,7 @@ font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">kable_styling</span>()</span></code></pre></div>
 <div class="cell-output-display">
-<table class="table table-sm table-striped" data-quarto-postprocess="true">
+<table class="table table-sm table-striped small" data-quarto-postprocess="true">
 <caption>Comparison of shelter usage in January 2021 with January 2020 by day</caption>
 <thead>
 <tr class="header">
@@ -6785,7 +6785,7 @@ font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">kable_styling</span>()</span></code></pre></div>
 <div class="cell-output-display">
-<table class="table table-sm table-striped" data-quarto-postprocess="true">
+<table class="table table-sm table-striped small" data-quarto-postprocess="true">
 <caption>Overall comparison of shelter usage in January 2021 with January 2020</caption>
 <thead>
 <tr class="header">
@@ -6933,7 +6933,7 @@ font-style: inherit;">"Set1"</span>)</span></code></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2021-01-24-shelter-usage-in-toronto-2017-2021/toronto-shelter-usage_files/figure-html/finalgraph-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Comparison of shelter usage in January 2021 with January 2020</figcaption><p></p>
+<figcaption class="figure-caption">Comparison of shelter usage in January 2021 with January 2020</figcaption>
 </figure>
 </div>
 </div>
@@ -7042,7 +7042,7 @@ Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy D’Agostino 
 <p>Given the US electorate, they use a two-stage modelling approach. The details don’t really matter too much, and essentially they model how likely a respondent is to vote for Obama, given various information such as state, education, sex, etc: <img src="https://latex.codecogs.com/png.latex?%0APr%5Cleft(Y_i%20=%20%5Cmbox%7BObama%7D%20%7C%20Y_i%5Cin%5C%7B%5Cmbox%7BObama,%20Romney%7D%5C%7D%5Cright)%20=%20%5Cmbox%7Blogit%7D%5E%7B-1%7D(%5Calpha_0%20+%20%5Calpha_1(%5Cmbox%7Bstate%20last%20vote%20share%7D)%0A+%20%5Calpha_%7Bj%5Bi%5D%7D%5E%7B%5Cmbox%7Bstate%7D%7D%20+%20%5Calpha_%7Bj%5Bi%5D%7D%5E%7B%5Cmbox%7Bedu%7D%7D%20+%20%5Calpha_%7Bj%5Bi%5D%7D%5E%7B%5Cmbox%7Bsex%7D%7D...%0A)%0A"> They run this in R using glmer() from lme4.</p>
 <p>Having a trained model that considers the effect of these various independent variables on support for the candidates, they now post-stratify, where each of these “cell-level estimates are weighted by the proportion of the electorate in each cell and aggregated to the appropriate level (i.e., state or national).”</p>
 <p>This means that they need cross-tabulated population data. In general, the census would have worked, or one of the other large surveys available in the US, but the difficulty is that the variables need to be available on a cross-tab basis. As such, they use exit polls (not an option for Australia in general).</p>
-<p>They make state-specific estimates by post-stratifying to the features of each state. <img src="https://rohanalexander.com/posts/2019-12-04-getting_started_with_mrp/inputs/figures/states.png" class="quarto-discovered-preview-image img-fluid" alt="State estimates from the Xbox paper."></p>
+<p>They make state-specific estimates by post-stratifying to the features of each state. <img src="https://rohanalexander.com/posts/2019-12-04-getting_started_with_mrp/inputs/figures/states.png" class="img-fluid" alt="State estimates from the Xbox paper."></p>
 <p>Similarly, they can examine demographic-differences. <img src="https://rohanalexander.com/posts/2019-12-04-getting_started_with_mrp/inputs/figures/demographics.png" class="img-fluid" alt="Demographic differences from the Xbox paper."></p>
 <p>Finally, they convert their estimates into electoral college estimates. <img src="https://rohanalexander.com/posts/2019-12-04-getting_started_with_mrp/inputs/figures/electoral_college.png" class="img-fluid" alt="Electoral College estimates from the Xbox paper."></p>
 </section>
@@ -7146,7 +7146,7 @@ font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">skim</span>(example_poll)</span></code></pre></div>
 <div class="cell-output-display">
-<table class="table table-sm table-striped">
+<table class="table table-sm table-striped small">
 <caption>Data summary</caption>
 <tbody>
 <tr class="odd">
@@ -7188,7 +7188,7 @@ font-style: inherit;">skim</span>(example_poll)</span></code></pre></div>
 </tbody>
 </table>
 <p><strong>Variable type: character</strong></p>
-<table class="table table-sm table-striped">
+<table class="table table-sm table-striped small">
 <colgroup>
 <col style="width: 19%">
 <col style="width: 13%">
@@ -7245,7 +7245,7 @@ font-style: inherit;">skim</span>(example_poll)</span></code></pre></div>
 </tbody>
 </table>
 <p><strong>Variable type: numeric</strong></p>
-<table class="table table-sm table-striped">
+<table class="table table-sm table-striped small">
 <colgroup>
 <col style="width: 19%">
 <col style="width: 13%">
@@ -7900,42 +7900,42 @@ font-style: inherit;">count</span>(state)</span></code></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2019-12-04-getting_started_with_mrp/inputs/figures/tablebuilder.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">TableBuilder front page.</figcaption><p></p>
+<figcaption class="figure-caption">TableBuilder front page.</figcaption>
 </figure>
 </div>
 <p>Once you create an account then you can access census data for 2006, 2011, and 2016. (The ABS have relatively recently done some linking between censuses so there is actually some linked data, which is exciting).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2019-12-04-getting_started_with_mrp/inputs/figures/census_select_type.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">TableBuilder after logging in.</figcaption><p></p>
+<figcaption class="figure-caption">TableBuilder after logging in.</figcaption>
 </figure>
 </div>
 <p>The website is a bit cumbersome, but considering what they provide it is worth sticking with it. I usually use ‘Counting Persons, Place of Usual Residence’, but sometimes ‘Counting Persons, Place of Enumeration’ is also handy.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2019-12-04-getting_started_with_mrp/inputs/figures/census_type.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">TableBuilder selecting which census.</figcaption><p></p>
+<figcaption class="figure-caption">TableBuilder selecting which census.</figcaption>
 </figure>
 </div>
 <p>We want to create a new table, and we do this by specifying the columns and rows.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2019-12-04-getting_started_with_mrp/inputs/figures/census_cols.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">TableBuilder selecting columns.</figcaption><p></p>
+<figcaption class="figure-caption">TableBuilder selecting columns.</figcaption>
 </figure>
 </div>
 <p>Once you have the set-up that you want then you can retrieve the data.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2019-12-04-getting_started_with_mrp/inputs/figures/census_rows.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">TableBuilder selecting rows.</figcaption><p></p>
+<figcaption class="figure-caption">TableBuilder selecting rows.</figcaption>
 </figure>
 </div>
 <p>You can download the data in various Excel, CSV, and other formats. If your dataset is large then you may need to submit for it to be built, which can take a day or two. Finally, if your sub-cell counts are especially small, then they will be blown around by the randomness that the ABS adds.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2019-12-04-getting_started_with_mrp/inputs/figures/census_download.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">TableBuilder downloading data and creating custom groups.</figcaption><p></p>
+<figcaption class="figure-caption">TableBuilder downloading data and creating custom groups.</figcaption>
 </figure>
 </div>
 <p>Helpfully you can create custom groupings for geography, say to load specific electorates, and other aspects, such as age-groups. To get started with this, select ‘Custom data’.</p>
@@ -8489,7 +8489,7 @@ font-style: inherit;">visit_address_and_save_content</span>(.x, .y)) </span></co
 <p>The CSV with the addresses and save names that we use looks something like this:</p>
 <div class="cell">
 <div class="cell-output-display">
-<table class="table table-sm table-striped">
+<table class="table table-sm table-striped small">
 <colgroup>
 <col style="width: 72%">
 <col style="width: 27%">
@@ -9485,7 +9485,7 @@ font-style: inherit;">+</span></span>
 background-color: null;
 font-style: inherit;">theme_minimal</span>()</span></code></pre></div>
 <div class="cell-output-display">
-<p><img src="https://rohanalexander.com/posts/2019-01-03-gathering-and-analysing-text-data/gathering-and-analysing-text-data_files/figure-html/diagnosticmeasuregraphs-1.png" class="quarto-discovered-preview-image img-fluid" width="672"></p>
+<p><img src="https://rohanalexander.com/posts/2019-01-03-gathering-and-analysing-text-data/gathering-and-analysing-text-data_files/figure-html/diagnosticmeasuregraphs-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <p>In general we are looking for the max/min of parabolas, so our results suggest we may be best with some more topics (go to Julia’s post for to see another example: https://juliasilge.com/blog/evaluating-stm/.</p>
@@ -9691,7 +9691,7 @@ font-style: inherit;">rownames</span>(rba_minutes))</span></code></pre></div>
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
 <p>SQL is a popular way of working with data. Advanced users probably do a lot with it alone, but even just having a working knowledge of SQL has increased the number of datasets that I can get data from to then analyse with other tools such as R or Python. You can use SQL within RStudio if you want. The following are a few notes to help future-Rohan when he needs to use SQL. A worked example with a sample of the Hansard data will be included in a future post.</p>
-<p><img src="https://rohanalexander.com/posts/2018-07-28-the-sql-is-never-as-good-as-the-original/https:/imgs.xkcd.com/comics/query.png" class="quarto-discovered-preview-image img-fluid"></p>
+<p><img src="https://rohanalexander.com/posts/2018-07-28-the-sql-is-never-as-good-as-the-original/https:/imgs.xkcd.com/comics/query.png" class="img-fluid"></p>
 <p>SQL is fairly straightforward if you’ve used mutate, filter and join in the R tidyverse as the concepts (and sometimes even the verb) are the same. In that case, half the battle is getting used to the terminology, and the other half is getting on top of the order of operations because SQL can be a tad pedantic.</p>
 <p>SQL (“see-quell” or “S.Q.L.” - both camps seem fairly insistent on their way…) is used with relational databases. A relational database is just a collection of at least one table, and a table is just some data organized into rows and columns. If there’s more than one table in the database, then there should be some column that links them. Using it feels a bit like HTML/CSS in terms of being halfway between markup and programming. One fun aspect is that line spaces mean nothing: include them or don’t, but always end a SQL command in a semicolon;</p>
 </section>
@@ -10187,8 +10187,8 @@ font-style: inherit;">=</span> table2_name.column1;</span></code></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://rohanalexander.com/posts/2018-06-29-getting_started_with_topic_modelling-theory/topic_modelling-theory_files/figure-html/topicsoverdocuments-1.png" class="quarto-discovered-preview-image img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Probability distributions over topics</figcaption><p></p>
+<p><img src="https://rohanalexander.com/posts/2018-06-29-getting_started_with_topic_modelling-theory/topic_modelling-theory_files/figure-html/topicsoverdocuments-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Probability distributions over topics</figcaption>
 </figure>
 </div>
 </div>
@@ -10196,7 +10196,7 @@ font-style: inherit;">=</span> table2_name.column1;</span></code></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2018-06-29-getting_started_with_topic_modelling-theory/topic_modelling-theory_files/figure-html/topicsoverdocuments-2.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Probability distributions over topics</figcaption><p></p>
+<figcaption class="figure-caption">Probability distributions over topics</figcaption>
 </figure>
 </div>
 </div>
@@ -10207,7 +10207,7 @@ font-style: inherit;">=</span> table2_name.column1;</span></code></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2018-06-29-getting_started_with_topic_modelling-theory/topic_modelling-theory_files/figure-html/topicsoverterms-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Probability distributions over terms</figcaption><p></p>
+<figcaption class="figure-caption">Probability distributions over terms</figcaption>
 </figure>
 </div>
 </div>
@@ -10215,7 +10215,7 @@ font-style: inherit;">=</span> table2_name.column1;</span></code></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2018-06-29-getting_started_with_topic_modelling-theory/topic_modelling-theory_files/figure-html/topicsoverterms-2.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Probability distributions over terms</figcaption><p></p>
+<figcaption class="figure-caption">Probability distributions over terms</figcaption>
 </figure>
 </div>
 </div>
@@ -10307,7 +10307,7 @@ font-style: inherit;">include_graphics</span>(<span class="st" style="color: #20
 background-color: null;
 font-style: inherit;">"images/LaTeX_first_example.png"</span>)</span></code></pre></div>
 <div class="cell-output-display">
-<p><img src="https://rohanalexander.com/posts/2017-09-14-getting-started-with-latex/images/LaTeX_first_example.png" class="quarto-discovered-preview-image img-fluid" width="507"></p>
+<p><img src="https://rohanalexander.com/posts/2017-09-14-getting-started-with-latex/images/LaTeX_first_example.png" class="img-fluid" width="507"></p>
 </div>
 </div>
 <p>It is best to type everything out yourself, but you can download the tex file from here: https://github.com/RohanAlexander/blogdown_website/blob/master/static/img/paper.tex</p>
@@ -11562,8 +11562,8 @@ font-style: inherit;"># Call the map</span></span>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://rohanalexander.com/posts/2017-08-11-reproducing-a-grattan-map/images/grattan.png" class="quarto-discovered-preview-image img-fluid figure-img" width="944"></p>
-<p></p><figcaption class="figure-caption">Grattan’s map</figcaption><p></p>
+<p><img src="https://rohanalexander.com/posts/2017-08-11-reproducing-a-grattan-map/images/grattan.png" class="img-fluid figure-img" width="944"></p>
+<figcaption class="figure-caption">Grattan’s map</figcaption>
 </figure>
 </div>
 </div>
@@ -11573,7 +11573,7 @@ font-style: inherit;"># Call the map</span></span>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2017-08-11-reproducing-a-grattan-map/images/me.png" class="img-fluid figure-img" width="1135"></p>
-<p></p><figcaption class="figure-caption">My map</figcaption><p></p>
+<figcaption class="figure-caption">My map</figcaption>
 </figure>
 </div>
 </div>
@@ -12252,7 +12252,7 @@ font-style: inherit;">#head(sa3_data, n = 20)</span></span></code></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rohanalexander.com/posts/2017-08-11-reproducing-a-grattan-map/https:/imgs.xkcd.com/comics/duty_calls.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">I regret nothing :)</figcaption><p></p>
+<figcaption class="figure-caption">I regret nothing :)</figcaption>
 </figure>
 </div>
 <p><em>Disclosures: In the interest of transparency I’ll point out that I applied unsuccessfully for a job at the Grattan Institute about five years ago. One friend works as a research assistant for them on a casual basis; and there are a few friends-of-friends who work there full time, but I haven’t talked about this post with any of them.</em></p>
@@ -12326,7 +12326,7 @@ font-style: inherit;">include_graphics</span>(<span class="st" style="color: #20
 background-color: null;
 font-style: inherit;">"images/blogdown_github_1.png"</span>)</span></code></pre></div>
 <div class="cell-output-display">
-<p><img src="https://rohanalexander.com/posts/2017-07-21-getting-started-with-blogdown/images/blogdown_github_1.png" class="quarto-discovered-preview-image img-fluid" width="1076"></p>
+<p><img src="https://rohanalexander.com/posts/2017-07-21-getting-started-with-blogdown/images/blogdown_github_1.png" class="img-fluid" width="1076"></p>
 </div>
 </div>
 <p>Don’t worry about including a readme or gitignore. Once you get to the ‘Quick setup’ page, copy the website address.</p>
