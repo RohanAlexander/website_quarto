@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Rohan Alexander - Natural language processing</title>
+<title>Rohan Alexander - Natural Language Processing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -139,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="./teaching-nlp.html" rel="" target="">
- <span class="dropdown-text">Natural language processing</span></a>
+ <span class="dropdown-text">Natural Language Processing</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./teaching-sta304.html" rel="" target="">
@@ -206,7 +206,22 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#content" id="toc-content" class="nav-link" data-scroll-target="#content">Content</a></li>
+  <li><a href="#pre-requisites" id="toc-pre-requisites" class="nav-link" data-scroll-target="#pre-requisites">Pre-requisites</a></li>
+  <li><a href="#content" id="toc-content" class="nav-link" data-scroll-target="#content">Content</a>
+  <ul class="collapse">
+  <li><a href="#week-1-essentials-i" id="toc-week-1-essentials-i" class="nav-link" data-scroll-target="#week-1-essentials-i">Week 1: <em>Essentials I</em></a></li>
+  <li><a href="#week-2-essentials-ii" id="toc-week-2-essentials-ii" class="nav-link" data-scroll-target="#week-2-essentials-ii">Week 2: <em>Essentials II</em></a></li>
+  <li><a href="#week-3-essentials-iii" id="toc-week-3-essentials-iii" class="nav-link" data-scroll-target="#week-3-essentials-iii">Week 3: <em>Essentials III</em></a></li>
+  <li><a href="#week-4-nlp-intermediate-i" id="toc-week-4-nlp-intermediate-i" class="nav-link" data-scroll-target="#week-4-nlp-intermediate-i">Week 4: <em>NLP intermediate I</em></a></li>
+  <li><a href="#week-5-nlp-intermediate-ii" id="toc-week-5-nlp-intermediate-ii" class="nav-link" data-scroll-target="#week-5-nlp-intermediate-ii">Week 5: <em>NLP intermediate II</em></a></li>
+  <li><a href="#week-6-nlp-intermediate-iii" id="toc-week-6-nlp-intermediate-iii" class="nav-link" data-scroll-target="#week-6-nlp-intermediate-iii">Week 6: <em>NLP intermediate III</em></a></li>
+  <li><a href="#week-7-deep-learning-i" id="toc-week-7-deep-learning-i" class="nav-link" data-scroll-target="#week-7-deep-learning-i">Week 7: <em>Deep learning I</em></a></li>
+  <li><a href="#week-8-deep-learning-ii" id="toc-week-8-deep-learning-ii" class="nav-link" data-scroll-target="#week-8-deep-learning-ii">Week 8: <em>Deep learning II</em></a></li>
+  <li><a href="#week-9-deep-learning-iii" id="toc-week-9-deep-learning-iii" class="nav-link" data-scroll-target="#week-9-deep-learning-iii">Week 9: <em>Deep learning III</em></a></li>
+  <li><a href="#week-10-transformers-i" id="toc-week-10-transformers-i" class="nav-link" data-scroll-target="#week-10-transformers-i">Week 10: <em>Transformers I</em></a></li>
+  <li><a href="#week-11-transformers-ii" id="toc-week-11-transformers-ii" class="nav-link" data-scroll-target="#week-11-transformers-ii">Week 11: <em>Transformers II</em></a></li>
+  <li><a href="#week-12-transformers-iii" id="toc-week-12-transformers-iii" class="nav-link" data-scroll-target="#week-12-transformers-iii">Week 12: <em>Transformers III</em></a></li>
+  </ul></li>
   <li><a href="#assessment" id="toc-assessment" class="nav-link" data-scroll-target="#assessment">Assessment</a>
   <ul class="collapse">
   <li><a href="#notebook" id="toc-notebook" class="nav-link" data-scroll-target="#notebook">Notebook</a></li>
@@ -222,7 +237,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Natural language processing</h1>
+<h1 class="title">Natural Language Processing</h1>
 </div>
 
 
@@ -241,79 +256,104 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>The purpose of this course is to develop students who can:</p>
 <ul>
-<li>engage in thoughtful, ethical, critique of Natural Language Processing (NLP);</li>
-<li>work productively to implement existing NLP methods; and</li>
-<li>use NLP to contribute to our understanding of the world.</li>
+<li>engage in thoughtful, ethical, critique of Natural Language Processing (NLP), especially Large Language Models (LLMs);</li>
+<li>work productively to implement existing NLP methods, especially LLMs; and</li>
+<li>use NLP, and especially LLMs, to contribute to our understanding of the world.</li>
 </ul>
 <p>Students are expected to develop:</p>
 <ul>
-<li>an understanding of NLP and its place in the world;</li>
+<li>an understanding of NLP, especially LLMs, and its place in the world;</li>
 <li>exceptional written and verbal communication skills; and</li>
-<li>contribute in some small way to our understanding of something related to NLP.</li>
+<li>contribute in some small way to our understanding of something related to NLP, ideally LLMs.</li>
+</ul>
+</section>
+<section id="pre-requisites" class="level2">
+<h2 class="anchored" data-anchor-id="pre-requisites">Pre-requisites</h2>
+<ul>
+<li>Comfortable coding in R and Python and using GitHub.</li>
+<li>Go through Silge, Julia &amp; David Robinson, 2020, <em>Text Mining with R</em>, https://www.tidytextmining.com.</li>
 </ul>
 </section>
 <section id="content" class="level2">
 <h2 class="anchored" data-anchor-id="content">Content</h2>
+<section id="week-1-essentials-i" class="level3">
+<h3 class="anchored" data-anchor-id="week-1-essentials-i">Week 1: <em>Essentials I</em></h3>
 <ul>
-<li>Week 1: <em>Essentials I</em>
-<ul>
-<li>Silge, Julia &amp; David Robinson, 2020, <em>Text Mining with R</em>, Chapters 1-4: https://www.tidytextmining.com.</li>
-<li>Hovy, Dirk and Shannon L. Spruit, 2016, ‘The Social Impact of Natural Language Processing’, <em>Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics</em>, pp.&nbsp;591–598,https://aclweb.org/anthology/P16-2096.pdf.</li>
-<li>Prabhumoye, Shrimai, Elijah Mayfield, and Alan W Black, 2019, ‘Principled Frameworks for Evaluating Ethics in NLP Systems’, <em>Proceedings of the 2019 Workshop on Widening NLP</em>, https://aclweb.org/anthology/W19-3637/.</li>
-</ul></li>
-<li>Week 2: <em>Essentials II</em>
-<ul>
-<li>Silge, Julia &amp; David Robinson, 2020, <em>Text Mining with R</em>, Chapters 5-7: https://www.tidytextmining.com.</li>
-<li>Bolukbasi, Tolga, Kai-Wei Chang, James Y. Zou, Venkatesh Saligrama and Adam T. Kalai, 2016, ‘Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings’, <em>Advances in Neural Information Processing Systems</em>, 29 (NIPS 2016), http://papers.nips.cc/paper/6228-man-is-to-computer-programmer-as-woman-is-to-homemaker-d.</li>
-<li>Chang, Kai-Wei, Vinod Prabhakaran, and Vicente Ordonez, 2019, ‘Bias and Fairness in Natural Language Processing’, <em>Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)</em>: Tutorial Abstracts, https://aclweb.org/anthology/D19-2004/.</li>
-</ul></li>
-<li>Week 3: <em>Essentials III</em>
-<ul>
-<li>Silge, Julia &amp; David Robinson, 2020, <em>Text Mining with R</em>, Chapters 8-9: https://www.tidytextmining.com.</li>
-<li>Hutchinson, Ben, Vinodkumar Prabhakaran, Emily Denton, Kellie Webster, Yu Zhong, and Stephen Denuyl, 2020, ‘Social Biases in NLP Models as Barriers forPersons with Disabilities’, <em>arXiv</em>, https://arxiv.org/abs/2005.00813.</li>
-</ul></li>
-<li>Week 4: <em>NLP intermediate I</em>
-<ul>
+<li>(Motivation) Karpathy, Andrej, 2013, “Intro to Large Language Models”, YouTube, 22 November, https://youtu.be/zjkBMFhNj_g.</li>
 <li>Hvitfeldt, Emil &amp; Julia Silge, 2020, <em>Supervised Machine Learning for Text Analysis in R</em>, Chapters 1-3, https://smltar.com.</li>
 <li>Jurafsky, Dan, and James H. Martin, 2020, <em>Speech and Language Processing</em>, 3rd ed., Chapter 3, https://web.stanford.edu/~jurafsky/slp3/.</li>
-<li>Solaiman, Irene, Miles Brundage, Jack Clark, Amanda Askell, ArielHerbert-Voss, Jeff Wu, Alec Radford, Gretchen Krueger, Jong Wook Kim, SarahKreps, Miles McCain, Alex Newhouse, Jason Blazakis, Kris McGuffie, Jasmine Wang, 2019, ‘Release Strategies and the Social Impacts of Language Models’,<em>arXiv</em>, https://arxiv.org/abs/1908.09203.</li>
-</ul></li>
-<li>Week 5: <em>NLP intermediate II</em>
+<li>Hovy, Dirk and Shannon L. Spruit, 2016, ‘The Social Impact of Natural Language Processing’, <em>Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics</em>, pp.&nbsp;591–598,https://aclweb.org/anthology/P16-2096.pdf.</li>
+<li>Prabhumoye, Shrimai, Elijah Mayfield, and Alan W Black, 2019, ‘Principled Frameworks for Evaluating Ethics in NLP Systems’, <em>Proceedings of the 2019 Workshop on Widening NLP</em>, https://aclweb.org/anthology/W19-3637/.</li>
+</ul>
+</section>
+<section id="week-2-essentials-ii" class="level3">
+<h3 class="anchored" data-anchor-id="week-2-essentials-ii">Week 2: <em>Essentials II</em></h3>
 <ul>
 <li>Hvitfeldt, Emil &amp; Julia Silge, 2020, <em>Supervised Machine Learning for Text Analysis in R</em>, Chapters 4-6, https://smltar.com.</li>
-<li>Jurafsky, Dan, and James H. Martin, 2020, <em>Speech and Language Processing</em>, 3rd ed., Chapters 4 and 5, https://web.stanford.edu/~jurafsky/slp3/.</li>
-<li>Tatman, Rachel, 2020, ‘What I Won’t Build’, <em>Widening NLP Workshop 2020</em>, Keynote address, 5 July, https://slideslive.com/38929585/what-i-wont-build and http://www.rctatman.com/talks/what-i-wont-build.</li>
-</ul></li>
-<li>Week 6: <em>NLP intermediate III</em>
+<li>Bolukbasi, Tolga, Kai-Wei Chang, James Y. Zou, Venkatesh Saligrama and Adam T. Kalai, 2016, ‘Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings’, <em>Advances in Neural Information Processing Systems</em>, 29 (NIPS 2016), http://papers.nips.cc/paper/6228-man-is-to-computer-programmer-as-woman-is-to-homemaker-d.</li>
+<li>Chang, Kai-Wei, Vinod Prabhakaran, and Vicente Ordonez, 2019, ‘Bias and Fairness in Natural Language Processing’, <em>Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)</em>: Tutorial Abstracts, https://aclweb.org/anthology/D19-2004/.</li>
+</ul>
+</section>
+<section id="week-3-essentials-iii" class="level3">
+<h3 class="anchored" data-anchor-id="week-3-essentials-iii">Week 3: <em>Essentials III</em></h3>
 <ul>
-<li>(Read this one first) Jurafsky, Dan, and James H. Martin, 2020, <em>Speech and Language Processing</em>, 3rd ed., Chapters 6 and 7, https://web.stanford.edu/~jurafsky/slp3/.</li>
+<li>Jurafsky, Dan, and James H. Martin, 2020, <em>Speech and Language Processing</em>, 3rd ed., Chapters 4 and 5, https://web.stanford.edu/~jurafsky/slp3/.</li>
+<li>Hutchinson, Ben, Vinodkumar Prabhakaran, Emily Denton, Kellie Webster, Yu Zhong, and Stephen Denuyl, 2020, ‘Social Biases in NLP Models as Barriers forPersons with Disabilities’, <em>arXiv</em>, https://arxiv.org/abs/2005.00813.</li>
+</ul>
+</section>
+<section id="week-4-nlp-intermediate-i" class="level3">
+<h3 class="anchored" data-anchor-id="week-4-nlp-intermediate-i">Week 4: <em>NLP intermediate I</em></h3>
+<ul>
+<li>Jurafsky, Dan, and James H. Martin, 2020, <em>Speech and Language Processing</em>, 3rd ed., Chapters 6 and 7, https://web.stanford.edu/~jurafsky/slp3/.</li>
+<li>Solaiman, Irene, Miles Brundage, Jack Clark, Amanda Askell, ArielHerbert-Voss, Jeff Wu, Alec Radford, Gretchen Krueger, Jong Wook Kim, SarahKreps, Miles McCain, Alex Newhouse, Jason Blazakis, Kris McGuffie, Jasmine Wang, 2019, ‘Release Strategies and the Social Impacts of Language Models’,<em>arXiv</em>, https://arxiv.org/abs/1908.09203.</li>
+</ul>
+</section>
+<section id="week-5-nlp-intermediate-ii" class="level3">
+<h3 class="anchored" data-anchor-id="week-5-nlp-intermediate-ii">Week 5: <em>NLP intermediate II</em></h3>
+<ul>
 <li>Hvitfeldt, Emil &amp; Julia Silge, 2020, <em>Supervised Machine Learning for Text Analysis in R</em>, Chapters 7-9, https://smltar.com.</li>
-<li>Zhao, Jieyu, Tianlu Wang, Mark Yatskar, Vicente Ordonez and Kai-Wei Chang,2017, ‘Men Also Like Shopping: Reducing Gender Bias Amplification using Corpus-level Constraints’, <em>Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing</em>, pp.&nbsp;2979–2989, https://aclweb.org/anthology/D17-1323.pdf.</li>
-</ul></li>
-<li>Week 7: <em>Deep learning I</em>
+<li>Tatman, Rachel, 2020, ‘What I Won’t Build’, <em>Widening NLP Workshop 2020</em>, Keynote address, 5 July, https://slideslive.com/38929585/what-i-wont-build and http://www.rctatman.com/talks/what-i-wont-build.</li>
+</ul>
+</section>
+<section id="week-6-nlp-intermediate-iii" class="level3">
+<h3 class="anchored" data-anchor-id="week-6-nlp-intermediate-iii">Week 6: <em>NLP intermediate III</em></h3>
 <ul>
 <li>François Chollet, 2021, <em>Deep Learning with Python</em>, Chapters 1-4.</li>
-</ul></li>
-<li>Week 8: <em>Deep learning II</em>
+<li>Zhao, Jieyu, Tianlu Wang, Mark Yatskar, Vicente Ordonez and Kai-Wei Chang,2017, ‘Men Also Like Shopping: Reducing Gender Bias Amplification using Corpus-level Constraints’, <em>Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing</em>, pp.&nbsp;2979–2989, https://aclweb.org/anthology/D17-1323.pdf.</li>
+</ul>
+</section>
+<section id="week-7-deep-learning-i" class="level3">
+<h3 class="anchored" data-anchor-id="week-7-deep-learning-i">Week 7: <em>Deep learning I</em></h3>
 <ul>
 <li>François Chollet, 2021, <em>Deep Learning with Python</em>, Chapters 5-7.</li>
-<li>Bender, Emily M. and Koller, Alexander, 2020, ‘Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data’, *Proceedings of the 58th Annual Meeting of the</li>
-</ul></li>
-<li>Week 9: <em>Deep learning III</em>
+</ul>
+</section>
+<section id="week-8-deep-learning-ii" class="level3">
+<h3 class="anchored" data-anchor-id="week-8-deep-learning-ii">Week 8: <em>Deep learning II</em></h3>
 <ul>
 <li>François Chollet, 2021, <em>Deep Learning with Python</em>, Chapters 11 and 12.</li>
-<li>Anna Rogers, Isabelle Augenstein, 2020, ‘What Can We Do to Improve Peer Review in NLP?’, <em>arXiv</em>, 8 October, https://arxiv.org/abs/2010.03863.</li>
+<li>Bender, Emily M. and Koller, Alexander, 2020, ‘Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data’, *Proceedings of the 58th Annual Meeting of the</li>
+</ul>
+</section>
+<section id="week-9-deep-learning-iii" class="level3">
+<h3 class="anchored" data-anchor-id="week-9-deep-learning-iii">Week 9: <em>Deep learning III</em></h3>
+<ul>
 <li>Jurafsky, Dan, and James H. Martin, 2020, <em>Speech and Language Processing</em>, 3rd ed., Chapters 8 and 9, https://web.stanford.edu/~jurafsky/slp3/. Association for Computational Linguistics*, pp.&nbsp;5185–5198, https://www.aclweb.org/anthology/2020.acl-main.463</li>
-</ul></li>
-<li>Week 10: <em>Transformers I</em>
+<li>Anna Rogers, Isabelle Augenstein, 2020, ‘What Can We Do to Improve Peer Review in NLP?’, <em>arXiv</em>, 8 October, https://arxiv.org/abs/2010.03863.</li>
+</ul>
+</section>
+<section id="week-10-transformers-i" class="level3">
+<h3 class="anchored" data-anchor-id="week-10-transformers-i">Week 10: <em>Transformers I</em></h3>
 <ul>
 <li>Karpathy, Andrej, 2022, <em>Neural Networks: Zero to Hero</em>, Both of ‘The spelled-out intro…’ videos.</li>
 <li>Alammar, Jay, 2018, ‘The Illustrated Transformer’, http://jalammar.github.io/illustrated-transformer/.</li>
 <li>Boykis, Vicky, <em>What are embeddings?</em>, https://vickiboykis.com/what_are_embeddings/</li>
 <li>Manning, Vaswani and Huang, 2019, ‘Stanford CS224N: NLP with Deep Learning | Winter 2019 | Lecture 14 – Transformers and Self-Attention’, https://www.youtube.com/watch?v=5vcj8kSwBCY&amp;list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z&amp;index=14&amp;ab_channel=stanfordonline.</li>
 <li>Uszkoreit, Jakob, 2017, ‘Transformer: A Novel Neural Network Architecture for Language Understanding’, Google AI Blog, 31 August, https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html</li>
-</ul></li>
-<li>Week 11: <em>Transformers II</em>
+</ul>
+</section>
+<section id="week-11-transformers-ii" class="level3">
+<h3 class="anchored" data-anchor-id="week-11-transformers-ii">Week 11: <em>Transformers II</em></h3>
 <ul>
 <li>Karpathy, Andrej, 2022, <em>Neural Networks: Zero to Hero</em>, The ‘Building makemore…’ videos</li>
 <li>Alammar, Jay, 2020, ‘How GPT3 Works - Visualizations and Animations’, 27 July, https://jalammar.github.io/how-gpt3-works-visualizations-animations/</li>
@@ -321,14 +361,16 @@ ul.task-list li input[type="checkbox"] {
 <li>Jacob Devlin and Ming-Wei Chang, 2018, ‘Open Sourcing BERT: State-of-the-Art Pre-training for Natural Language Processing’, 2 November, <em>Google AI Blog</em>, https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html.</li>
 <li>Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova, 2018, ‘BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding’, <em>arXiv</em>, https://arxiv.org/abs/1810.04805.</li>
 <li>Rush, Alexander, 2018, ‘The Annotated Transformer’, https://nlp.seas.harvard.edu/2018/04/03/attention.html</li>
-</ul></li>
-<li>Week 12: <em>Transformers III</em>
+</ul>
+</section>
+<section id="week-12-transformers-iii" class="level3">
+<h3 class="anchored" data-anchor-id="week-12-transformers-iii">Week 12: <em>Transformers III</em></h3>
 <ul>
 <li>Karpathy, Andrej, 2022, <em>Neural Networks: Zero to Hero</em>, The ‘Let’s build GPT: from scratch, in code, spelled out.’</li>
 <li>Tom B. Brown and Benjamin Mann and Nick Ryder and Melanie Subbiah and Jared Kaplan and Prafulla Dhariwal and Arvind Neelakantan and Pranav Shyam and Girish Sastry and Amanda Askell and Sandhini Agarwal and Ariel Herbert-Voss and Gretchen Krueger and Tom Henighan and Rewon Child and Aditya Ramesh and Daniel M. Ziegler and Jeffrey Wu and Clemens Winter and Christopher Hesse and Mark Chen and Eric Sigler and Mateusz Litwin and Scott Gray and Benjamin Chess and Jack Clark and Christopher Berner and Sam McCandlish and Alec Radford and Ilya Sutskever and Dario Amodei, 2020, ‘Language Models are Few-Shot Learners’, <em>arXiv</em>, https://arxiv.org/abs/2005.14165</li>
 <li>(Fun/horrifying) Hao, Karen, 2020, ‘The messy, secretive reality behind OpenAI’s bid to save the world’, <em>MIT Review</em>, 17 February, https://www.technologyreview.com/2020/02/17/844721/ai-openai-moonshot-elon-musk-sam-altman-greg-brockman-messy-secretive-reality/.</li>
-</ul></li>
 </ul>
+</section>
 </section>
 <section id="assessment" class="level2">
 <h2 class="anchored" data-anchor-id="assessment">Assessment</h2>
@@ -344,7 +386,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="paper-1">Paper #1</h3>
 <ul>
 <li>Due date: Thursday, noon, Week 1.</li>
-<li>Task: <a href="https://tellingstorieswithdata.com/23-assessment.html#sec-paper-one">Donaldson Paper</a></li>
+<li>Task: <a href="https://tellingstorieswithdata.com/23-assessment.html#sec-paper-one">Donaldson Paper</a> (although vary the dataset, so that it is something related to NLP).</li>
 <li>Weight: 10 per cent.</li>
 </ul>
 </section>
@@ -360,7 +402,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="final-paper">Final Paper</h3>
 <ul>
 <li>Due date: Thursday, noon, Week 12 + two weeks.</li>
-<li>Task: Write a paper that involves transformers.</li>
+<li>Task: Write a paper that involves doing original research.</li>
 <li>Weight: 40 per cent.</li>
 </ul>
 

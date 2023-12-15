@@ -10,7 +10,7 @@
 <atom:link href="https://rohanalexander.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Fri, 17 Dec 2021 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 16 Dec 2021 14:00:00 GMT</lastBuildDate>
 <item>
   <title>What data science can learn from the James Webb Space Telescope</title>
   <dc:creator>Rohan Alexander</dc:creator>
@@ -197,7 +197,7 @@ Wickham, Hadley, and Garrett Grolemund. 2016. <em>R for Data Science</em>. O’R
 </div>
 </div></section></div> ]]></description>
   <guid>https://rohanalexander.com/posts/2021-12-17-james_webb_space_telescope/james_webb_space_telescope.html</guid>
-  <pubDate>Fri, 17 Dec 2021 05:00:00 GMT</pubDate>
+  <pubDate>Thu, 16 Dec 2021 14:00:00 GMT</pubDate>
 </item>
 <item>
   <title>On the privilege of turning our world into data</title>
@@ -415,7 +415,7 @@ Wickham, Hadley, and Garrett Grolemund. 2016. <em>R for Data Science</em>. O’R
 </div>
 </div></section></div> ]]></description>
   <guid>https://rohanalexander.com/posts/2021-12-16-on_the_privilege_of_turning_our_world_into_data/on_the_privilege_of_turning_our_world_into_data.html</guid>
-  <pubDate>Thu, 16 Dec 2021 05:00:00 GMT</pubDate>
+  <pubDate>Wed, 15 Dec 2021 14:00:00 GMT</pubDate>
 </item>
 <item>
   <title>The average age of politicians in the Australian Federal Parliament (1901-2021)</title>
@@ -2328,7 +2328,7 @@ Xie, Yihui. 2020. <em>Knitr: A General-Purpose Package for Dynamic Report Genera
 </ol>
 </section></div> ]]></description>
   <guid>https://rohanalexander.com/posts/2021-12-02-average_age_of_australian_politicians/average_age_of_parliaments.html</guid>
-  <pubDate>Thu, 02 Dec 2021 05:00:00 GMT</pubDate>
+  <pubDate>Wed, 01 Dec 2021 14:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Review of ‘Data Science: A First Introduction’</title>
@@ -2358,7 +2358,7 @@ Xie, Yihui. 2020. <em>Knitr: A General-Purpose Package for Dynamic Report Genera
 
 </div></section></div> ]]></description>
   <guid>https://rohanalexander.com/posts/2021-11-30-review_of_timbers/timbers_review.html</guid>
-  <pubDate>Tue, 30 Nov 2021 05:00:00 GMT</pubDate>
+  <pubDate>Mon, 29 Nov 2021 14:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Remarks at Trinity College</title>
@@ -2413,7 +2413,7 @@ Xie, Yihui. 2020. <em>Knitr: A General-Purpose Package for Dynamic Report Genera
 
  ]]></description>
   <guid>https://rohanalexander.com/posts/2021-10-19-trinity_remarks/trinity_remarks.html</guid>
-  <pubDate>Tue, 19 Oct 2021 04:00:00 GMT</pubDate>
+  <pubDate>Mon, 18 Oct 2021 14:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Introduction to Andrew Gelman</title>
@@ -2511,7 +2511,7 @@ Xie, Yihui. 2020. <em>Knitr: A General-Purpose Package for Dynamic Report Genera
 
 </div></section></div> ]]></description>
   <guid>https://rohanalexander.com/posts/2021-09-17-andrew-gelman-dsi-intro/andrew_gelman_intro.html</guid>
-  <pubDate>Fri, 17 Sep 2021 04:00:00 GMT</pubDate>
+  <pubDate>Thu, 16 Sep 2021 14:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Turning our world into data</title>
@@ -2603,7 +2603,7 @@ R Core Team. 2020. <em>R: A Language and Environment for Statistical Computing</
 </div>
 </div></section></div> ]]></description>
   <guid>https://rohanalexander.com/posts/2021-07-06-turning-our-world-into-data/turning-our-world-into-data.html</guid>
-  <pubDate>Tue, 06 Jul 2021 04:00:00 GMT</pubDate>
+  <pubDate>Mon, 05 Jul 2021 14:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Opportunities Provided by Open Data and Reproducibility</title>
@@ -2761,7 +2761,7 @@ Wickham, Hadley, and Jenny Bryan. 2021. <em>R Packages</em>. <a href="https://r-
 </ol>
 </section></div> ]]></description>
   <guid>https://rohanalexander.com/posts/2021-05-22-baby-steps/baby-steps.html</guid>
-  <pubDate>Sun, 23 May 2021 04:00:00 GMT</pubDate>
+  <pubDate>Sat, 22 May 2021 14:00:00 GMT</pubDate>
 </item>
 <item>
   <title>On work-life balance</title>
@@ -2853,7 +2853,7 @@ Wickham, Hadley, and Jenny Bryan. 2021. <em>R Packages</em>. <a href="https://r-
 
 </div></section></div> ]]></description>
   <guid>https://rohanalexander.com/posts/2021-05-04-work-life-balance/work-life-balance.html</guid>
-  <pubDate>Tue, 04 May 2021 04:00:00 GMT</pubDate>
+  <pubDate>Mon, 03 May 2021 14:00:00 GMT</pubDate>
 </item>
 <item>
   <title>In Appreciation of Greg Wilson</title>
@@ -2891,7 +2891,7 @@ Wickham, Hadley, and Jenny Bryan. 2021. <em>R Packages</em>. <a href="https://r-
 
  ]]></description>
   <guid>https://rohanalexander.com/posts/2021-03-14-greg-wilson/in-appreciation-of-greg-wilson.html</guid>
-  <pubDate>Sun, 14 Mar 2021 05:00:00 GMT</pubDate>
+  <pubDate>Sat, 13 Mar 2021 14:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Saturday morning thoughts on grad school applications</title>
@@ -2973,7 +2973,7 @@ Wickham, Hadley, and Jenny Bryan. 2021. <em>R Packages</em>. <a href="https://r-
 
 </div></section></div> ]]></description>
   <guid>https://rohanalexander.com/posts/2021-03-13-grad-school-applications/grad-school-applications.html</guid>
-  <pubDate>Sat, 13 Mar 2021 05:00:00 GMT</pubDate>
+  <pubDate>Fri, 12 Mar 2021 14:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Shelter usage in Toronto (2017-2021)</title>
@@ -6964,7 +6964,7 @@ Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy D’Agostino 
 </div>
 </div></section></div> ]]></description>
   <guid>https://rohanalexander.com/posts/2021-01-24-shelter-usage-in-toronto-2017-2021/toronto-shelter-usage.html</guid>
-  <pubDate>Sun, 24 Jan 2021 05:00:00 GMT</pubDate>
+  <pubDate>Sat, 23 Jan 2021 14:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Getting started with MRP</title>
@@ -8330,7 +8330,7 @@ font-style: inherit;">"bottom"</span>)</span></code></pre></div>
 
  ]]></description>
   <guid>https://rohanalexander.com/posts/2019-12-04-getting_started_with_mrp/getting-started-with-mrp.html</guid>
-  <pubDate>Tue, 03 Dec 2019 05:00:00 GMT</pubDate>
+  <pubDate>Mon, 02 Dec 2019 14:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Gathering and analysing text data</title>
@@ -9632,7 +9632,7 @@ font-style: inherit;">rownames</span>(rba_minutes))</span></code></pre></div>
 
  ]]></description>
   <guid>https://rohanalexander.com/posts/2019-01-03-gathering-and-analysing-text-data/gathering-and-analysing-text-data.html</guid>
-  <pubDate>Thu, 03 Jan 2019 05:00:00 GMT</pubDate>
+  <pubDate>Wed, 02 Jan 2019 14:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Cleaning Hansard: The pay’s not great but the work is hard</title>
@@ -9677,7 +9677,7 @@ font-style: inherit;">rownames</span>(rba_minutes))</span></code></pre></div>
 </ol>
 </section></div> ]]></description>
   <guid>https://rohanalexander.com/posts/2018-08-13-cleaning-hansard/cleaning-hansard.html</guid>
-  <pubDate>Mon, 13 Aug 2018 04:00:00 GMT</pubDate>
+  <pubDate>Sun, 12 Aug 2018 14:00:00 GMT</pubDate>
 </item>
 <item>
   <title>The SQL Is Never As Good As The Original</title>
@@ -10163,7 +10163,7 @@ font-style: inherit;">=</span> table2_name.column1;</span></code></pre></div>
 
  ]]></description>
   <guid>https://rohanalexander.com/posts/2018-07-28-the-sql-is-never-as-good-as-the-original/the-sql-is-never-as-good-as-the-original.html</guid>
-  <pubDate>Sat, 28 Jul 2018 04:00:00 GMT</pubDate>
+  <pubDate>Fri, 27 Jul 2018 14:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Topic Modelling - Theory</title>
@@ -10283,7 +10283,7 @@ Steyvers, Mark, and Tom Griffiths. 2006. <span>“Probabilistic Topic Models.”
 </ol>
 </section></div> ]]></description>
   <guid>https://rohanalexander.com/posts/2018-06-29-getting_started_with_topic_modelling-theory/topic_modelling-theory.html</guid>
-  <pubDate>Fri, 29 Jun 2018 04:00:00 GMT</pubDate>
+  <pubDate>Thu, 28 Jun 2018 14:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Getting started with LaTeX</title>
@@ -11235,7 +11235,7 @@ font-style: inherit;">.</span></span>
 
  ]]></description>
   <guid>https://rohanalexander.com/posts/2017-09-14-getting-started-with-latex/getting-started-with-latex.html</guid>
-  <pubDate>Thu, 14 Sep 2017 04:00:00 GMT</pubDate>
+  <pubDate>Wed, 13 Sep 2017 14:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Reproducing a Grattan Institute map</title>
@@ -12262,7 +12262,7 @@ font-style: inherit;">#head(sa3_data, n = 20)</span></span></code></pre></div>
 
  ]]></description>
   <guid>https://rohanalexander.com/posts/2017-08-11-reproducing-a-grattan-map/reproducing-a-grattan-map.html</guid>
-  <pubDate>Fri, 11 Aug 2017 04:00:00 GMT</pubDate>
+  <pubDate>Thu, 10 Aug 2017 14:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Getting started with Blogdown</title>
@@ -12504,7 +12504,7 @@ font-style: inherit;">"DESCRIBE THE CHANGE YOU ARE ADDING"</span></span>
 
  ]]></description>
   <guid>https://rohanalexander.com/posts/2017-07-21-getting-started-with-blogdown/getting-started-with-blogdown.html</guid>
-  <pubDate>Fri, 21 Jul 2017 04:00:00 GMT</pubDate>
+  <pubDate>Thu, 20 Jul 2017 14:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

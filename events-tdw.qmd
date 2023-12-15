@@ -71,12 +71,9 @@ The TDW is a joint initiative between the Faculty of Information and the Departm
 	- Chiara, Franklin, and Helena are second-year computer science students at the University of Waterloo who are interested in applying new software and data engineering tooling to increase the accessibility of public data sets.
 - Friday 24 November 2023, noon - 1pm
 	- **Wendy Foster**, Shopify	
-	- *Socio-technical processes for data integrity*	
+	- [*Socio-technical processes for data integrity*](https://youtu.be/GQhLlGWMjRM)	
 	- Wendy Foster is Director of Engineering and Data, Optimize, at Shopify.
-- Friday 1 December 2023, noon - 1pm
-	- **Thomas Davidson**, Rutgers University	
-	- *Start Generating: Harnessing Generative Artificial Intelligence for Sociological Research*	
-	- Thomas Davidson is an Assistant Professor in the Department of Sociology at Rutgers University. He received his Ph.D. in Sociology from Cornell University in 2020. His research interests include political sociology, social movements, and the sociology of culture. His research uses digital trace data from social media and other websites combined with statistical analysis and computational methods, including natural language processing and machine learning.
+
 
 
 ## Past talks
