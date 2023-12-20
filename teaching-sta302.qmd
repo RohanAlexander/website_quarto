@@ -8,7 +8,7 @@ title: "Methods of Data Analysis I"
 
 "Methods", "Data", "Analysis"---we consider such loaded words in this course! What is data? What does it mean to do analysis? And what methods? The very core of statistical sciences!
 
-This course develops in students an appreciation for how our world becomes data, what to do in the face of overwhelming options, and how to do all this in a way that provides value to others.
+This course develops in students an appreciation for how our world becomes data, what to do in the face of overwhelming options for the analysis of that data, and how to do all this in a way that provides value to others.
 
 It is concerned with statistical modelling, but also everything that comes before and after modelling, and in doing so ensures modelling and analysis are placed on a firmer foundation. In assessment, students will conduct end-to-end data science projects using real-world data, enabling them to fully understand potential pitfalls, and build a portfolio.
 
@@ -31,24 +31,25 @@ Essentially this course provides students with everything that they need to know
 
 ### Learning objectives
 
-The purpose of the course is to develop the core skills of data science that are applicable across academia and industry. By the end of the course, you should be able to:
+The purpose of the course is to develop the core skills to do with methods of data analysis that are applicable across academia and industry. By the end of the course, you should be able to:
 
-1.  Engage critically with ideas and readings in data science (demonstrated in all papers but also tutorials and quizzes).
-2.  Conduct research in data science in a reproducible and ethical way (demonstrated in all papers).
+1.  Engage critically with ideas and readings in data analysis (demonstrated in all papers but also tutorials and quizzes).
+2.  Conduct data analysis research in a reproducible and ethical way (demonstrated in all papers).
 3.  Clearly communicate what was done, what was found, and why in writing (demonstrated in all papers).
-4.  Understand what constitutes ethical high-quality data science practice, especially reproducibility and respect for those that underpin our data (demonstrated in all papers and selected quizzes).
-5.  Respectfully identify strengths and weaknesses in the data science research conducted by others (demonstrated in quizzes, and the peer review).
+4.  Understand what constitutes ethical high-quality data analysis practice, especially reproducibility and respect for those that underpin our data (demonstrated in all papers and selected quizzes).
+5.  Respectfully identify strengths and weaknesses in the data analysis research conducted by others (demonstrated in quizzes, and the peer review).
 6.  Develop the ability to appropriately choose and apply statistical models to real-world situations (demonstrated in the final paper)
-7.  Conduct all aspects of the typical data science workflow (demonstrated in all papers).
+7.  Conduct all aspects of the typical data analysis workflow (demonstrated in all papers).
 8.  Reflect effectively on your own learning and professional development (demonstrated in some tutorials and quizzes).
 
-### Pre-requisites
-
--   None.
 
 ### Textbook
 
 [Telling Stories with Data](https://www.tellingstorieswithdata.com)
+
+### Languages
+
+In this course you will use R, Python, Git and GitHub, and a little bit of SQL.
 
 ## Content
 
@@ -68,13 +69,13 @@ Before class starts you should go through Chapter 1 "[Telling stories with data]
 ### Week 3
 
 -   [Static communication](https://tellingstorieswithdata.com/05-static_communication.html)
--   Guest: TBD
+
 
 ### Week 4
 
 -   [Farm data](https://tellingstorieswithdata.com/06-farm.html)
 -   [Gather data](https://tellingstorieswithdata.com/07-gather.html)
--   Guest: TBD
+-   Guest: Steven Coyne - "Who Owns This? The Ethics of Copyright"
 
 ### Week 5
 
@@ -238,3 +239,13 @@ Papers and reports should be well-written, well-organized, and easy to follow. T
 ### Minimum submission requirement
 
 If you are going to not be able to submit at least two term papers, and/or be unable to submit the final paper then it would be unfair on the other students to allow you to pass the course. But it is not a situation that I want to get into. Please ensure you and your college registrar or faculty/department advisor get in touch with me as early as possible if this may be the case for you so that we can work out a solution.
+
+
+### Use of Generative AI in assignments 
+
+In general, students are encouraged to use generative AI tools as a starting point. Specific course policies are: 
+
+- Code: Students may wish to use generative AI tools to aid in initial development and writing of code to answer assignment questions and carry out the research project analysis. If this is the case, the use of such tools should be explicitly acknowledged in the submitted work, and the relevant prompts and responses should be included in a text file in the repo. All code, regardless of how it is generated must be thoroughly commented and explained. Failure to do so may result in penalties. 
+- Written work: Using generative AI tools to generate written answers to assignment questions of text contained in the final research project is prohibited in this course. Representing as one's own an idea, or expression of an idea, that was AI-generated may be considered an academic offense in this course. However, you are welcome to use it to generate a first draft, which you then completely edit. Again, if you use such tools, it should be explicitly acknowledged in the submitted work, and the relevant prompts and responses should be included in a text file in the repo.  
+
+This course policy is designed to promote your learning and intellectual development and to help you reach course learning outcomes.

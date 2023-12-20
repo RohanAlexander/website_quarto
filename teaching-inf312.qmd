@@ -50,6 +50,7 @@ To a certain extent we are wasting our time. We have a perfect model of the worl
 ### Week 4
 
 - [Writing research](https://tellingstorieswithdata.com/04-writing_research.html)
+-   Guest: Steven Coyne - "Who Owns This? The Ethics of Copyright"
 
 ### Week 5
 
@@ -237,3 +238,12 @@ Papers and reports should be well-written, well-organized, and easy to follow. T
 ### Minimum submission requirement
 
 If you are going to not be able to submit at least two term papers, and/or be unable to submit the final paper then it would be unfair on the other students to allow you to pass the course. Please ensure you and your college registrar or faculty/department advisor get in touch with me as early as possible if this may be the case for you.
+
+### Use of Generative AI in assignments 
+
+In general, students are encouraged to use generative AI tools as a starting point. Specific course policies are: 
+
+- Code: Students may wish to use generative AI tools to aid in initial development and writing of code to answer assignment questions and carry out the research project analysis. If this is the case, the use of such tools should be explicitly acknowledged in the submitted work, and the relevant prompts and responses should be included in a text file in the repo. All code, regardless of how it is generated must be thoroughly commented and explained. Failure to do so may result in penalties. 
+- Written work: Using generative AI tools to generate written answers to assignment questions of text contained in the final research project is prohibited in this course. Representing as one's own an idea, or expression of an idea, that was AI-generated may be considered an academic offense in this course. However, you are welcome to use it to generate a first draft, which you then completely edit. Again, if you use such tools, it should be explicitly acknowledged in the submitted work, and the relevant prompts and responses should be included in a text file in the repo.  
+
+This course policy is designed to promote your learning and intellectual development and to help you reach course learning outcomes.
