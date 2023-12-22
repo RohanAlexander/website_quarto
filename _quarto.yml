@@ -17,6 +17,7 @@ website:
         - events-software.qmd
       - text: "Teaching"
         menu: 
+        - teaching-applications_of_llms.qmd
         - teaching-data_science_foundations.qmd
         - teaching-ethics_and_ds.qmd
         - teaching-inf2178.qmd

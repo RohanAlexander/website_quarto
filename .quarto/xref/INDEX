@@ -211,5 +211,8 @@
   },
   "teaching-modeling.qmd": {
     "teaching-modeling.html": "1e6705cd"
+  },
+  "teaching-applications_of_llms.qmd": {
+    "teaching-applications_of_llms.html": "b2f228cb"
   }
 }
