@@ -11,7 +11,7 @@ To a certain extent we are wasting our time. We have a perfect model of the worl
 ### FAQ
 
 - Can I audit this course? Sure, but it is pointless, because the only way to learn this stuff is to do the work.
-- What is a tutorial? You write a paper. Then you send it to your tutor. The next day you have a meeting, 'tutorial', where you discuss it with them.
+- What is a tutorial? You write a short paper. Then you submit it. The next day, during class, we'll discuss it.
 - Why is there so much assessment? The only way to learn this stuff is to actually do the work, and students only do the work when they are assessed. It is unfortunate, but there is no way around it.
 - How difficult is the course? The course is not difficult, but the hands-on-projects mean it is a lot of work. 
 - What is the format of the class? There are rarely old-school lectures because those are not effective. You should read the relevant chapter before class. During class we will focus on tutorials and discussion. We will also have industry guests discuss their experience.
@@ -88,162 +88,128 @@ To a certain extent we are wasting our time. We have a perfect model of the worl
 
 ### Summary
 
-| Item 								| Weight (%) | Due date |
-| -------- | -----:| -----:|
-| Quiz 						| 8 		 | Weekly, end of each week |
-| Personal website			| 1 		 | Friday, noon, Week 11 |
-| SQL quiz 						| 1 		 | Friday, noon, Week 11 |
-| Tutorial 						| 10 		 | Weekly, end of each week |
-| Paper 1 							| 25 		 | Friday, noon, Week 3 |
-| Paper 2 							| 25 		 | Friday, noon, Week 6 |
-| Paper 3 							| 25 		 | Friday, noon, Week 8 |
-| Paper 4 							| 25 		 | Friday, noon, Week 10 |
-| Final Paper (initial submission)  | 2 		 | Wednesday, noon, Week 12 |
-| Conduct peer review 		| 3 		 | Friday, noon, Week 12 |
-| Final Paper 						| 25 		 | Two weeks after that |
++------------------------------------------+------------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Item                                     | Weight (%) | Due date                              | Notes                                                                                                                                                                                                                                                                                                   |
++==========================================+===========:+======================================:+========================================================================================================================================================================================================================================================================================================:+
+| Quiz                                     | 7          | Tuesdays, noon, Weeks 1-12            | Only best seven out of twelve count.                                                                                                                                                                                                                                                                    |
++------------------------------------------+------------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| SQL quiz                                 | 1          | Tuesday, noon, Week 6                 | You cannot pass the course if you do not get at least 70 per cent in this quiz.                                                                                                                                                                                                                         |
++------------------------------------------+------------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Personal website                         | 1          | Tuesday, noon, Week 9                 | You cannot pass the course if you do not get at least 70 per cent on this assessment.                                                                                                                                                                                                                   |
+|                                          |            |                                       |                                                                                                                                                                                                                                                                                                         |
+|                                          |            |                                       | Create a personal website using Quarto and make it live via GitHub Pages. At a minimum, it must include a bio and a CV in PDF form.                                                                                                                                                                     |
++------------------------------------------+------------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Tutorials                                | 6          | Tuesdays, noon, Weeks 1-12            | Only best three out of twelve count.                                                                                                                                                                                                                                                                    |
++------------------------------------------+------------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Term papers                              | 48         | Tuesdays, noon, Weeks 3, 6, 9         | You must submit Term Paper I in order to pass the course.                                                                                                                                                                                                                                               |
+|                                          |            |                                       |                                                                                                                                                                                                                                                                                                         |
+|                                          |            | Term Paper I: 23 January 2024         | Only best two of three term papers count.                                                                                                                                                                                                                                                               |
+|                                          |            |                                       |                                                                                                                                                                                                                                                                                                         |
+|                                          |            | Term Paper II: 13 February 2024       | Marking starts, noon, on the Thursday after submission, and you can update until then i.e. submissions made by noon, Tuesday, Week 3 can be updated until noon, Thursday, Week 3 (this is to allow you to incorporate peer review comments). Please do not make any changes after marking starts.       |
+|                                          |            |                                       |                                                                                                                                                                                                                                                                                                         |
+|                                          |            | Term Paper III: 13 March 2024         | Term Paper I: [Donaldson Paper](https://tellingstorieswithdata.com/23-assessment.html#sec-paper-one)                                                                                                                                                                                                    |
+|                                          |            |                                       |                                                                                                                                                                                                                                                                                                         |
+|                                          |            |                                       | Term Paper II: [Mawson Paper](https://tellingstorieswithdata.com/23-assessment.html#sec-paper-two).                                                                                                                                                                                                     |
+|                                          |            |                                       |                                                                                                                                                                                                                                                                                                         |
+|                                          |            |                                       | Term paper III: Pick one of [Murrumbidgee Paper](https://tellingstorieswithdata.com/23-assessment.html#sec-paper-three), [Spadina Paper](https://tellingstorieswithdata.com/23-assessment.html#sec-spadina), or [Spofforth Paper](https://tellingstorieswithdata.com/23-assessment.html#sec-paper-five) |
++------------------------------------------+------------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Conduct peer review of Term/Final papers | 3          | Wednesdays, noon, Weeks 3, 6, 9, 12   | Conduct peer review for six other term/final papers, by creating a GitHub Issue or Pull Request. Papers will be distributed by a spreadsheet---add a link to the Issue/PR to a term paper that does not have four other entries. You will only have 24 hours to do this.                                |
++------------------------------------------+------------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Final paper                              | 34         | Tuesday, noon, Week 12 (3 April 2024) | You must submit this paper.                                                                                                                                                                                                                                                                             |
+|                                          |            |                                       |                                                                                                                                                                                                                                                                                                         |
+|                                          |            |                                       | Marking starts, noon, Friday 19 April and you can update update until then i.e. submissions made by noon, Tuesday, Week 12 can be updated until noon, Friday, 19 April (this is to allow you to incorporate peer review comments). Please do not make any changes after marking starts.                 |
+|                                          |            |                                       |                                                                                                                                                                                                                                                                                                         |
+|                                          |            |                                       | [Final paper](https://tellingstorieswithdata.com/23-assessment.html#sec-final-paper).                                                                                                                                                                                                                   |
++------------------------------------------+------------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**You must submit Paper 1. You must submit the Final Paper. You must submit and get at least 70 per cent on both the SQL quiz and the Personal website.**
+**You must submit Term Paper 1. You must submit the Final Paper. You must submit and get at least 70 per cent on both the SQL quiz and the Personal website.**
 
-Beyond that, you have scope to pick an assessment schedule that works for you. We will take your best three of the twelve tutorials for that 10 per cent, and your best five of twelve quizzes for that 10 per cent. And we will take your two best papers from Papers 1-4 for that 50 per cent (25 per cent for each). The remainder is made up of 2 per cent for submitting a draft of the Final Paper, 3 per cent for conducting peer review of other people's drafts of the Final Paper, and 25 per cent for the Final Paper.
+Beyond that, you have scope to pick an assessment schedule that works for you. I will take your best three of the twelve tutorials for that six per cent, and your best seven of twelve quizzes for that seven per cent. I take your two best papers from the three term papers for that 48 per cent (24 per cent for each). You get up to three percentage points for conducting peer review of other student papers, (half a percentage point per review). There is 34 per cent allocated for the Final Paper.
 
-Additional details: 
+Additional details:
 
-- Quiz questions are drawn from those in the Quiz section that follows each chapter of *Telling Stories with Data*. Some of them are multiple choice, and you should expect to know the mark within a few days of submission.
-- Tutorial questions are drawn from those in the Tutorial section that follows each chapter of *Telling Stories with Data*. The general expectation (although this differs from week to week) is about two pages of written content, which the tutor will read, discuss with you, and then provide a mark. You should expect to know the mark within a few days of the tutorial.
-- In general papers require a considerable amount of work, and are due after the material has been covered in quizzes and tutorials (i.e. you would draw on knowledge tested in the quizzes, and potentially material could be re-used from the tutorial material). In general, they require original work to some extent. Papers are taken from the Papers appendix of *Telling Stories with Data* and students have access to the grading rubrics before submission. 
-
-### Quiz
-
-- Due date: Friday, noon, weekly (with grace period through to Sunday, midnight, to submit without penalty).
-- Weight: 8 per cent. Only best five out of twelve count.
-- Task: Please complete a weekly quiz.
-
-### SQL quiz
-
-- Due date: Available from Week 1, but due Friday, noon, Week 11 (with grace period through to Sunday, midnight, to submit without penalty).
-- Weight: 1 per cent. You cannot pass the course if you do not get at least 70 per cent in this quiz.
-- Task: Please complete a quiz about SQL.
-
-### Personal website
-
-- Due date: Available from Week 1, but due Friday, noon, Week 11 (with grace period through to Sunday, midnight, to submit without penalty).
-- Weight: 1 per cent. You cannot pass the course if you do not get at least 70 per cent on this assessment.
-- Task: Please create a personal website using Quarto and make it live via GitHub Pages. At a minimum, it must include a bio and a CV in PDF form.
-
-### Tutorial
-
-- Due date: Friday, noon, weekly (with grace period through to Sunday, midnight, to submit without penalty).
-- Weight: 10 per cent. Only best three out of twelve count.
-- Task: Please complete a tutorial question.
-- Rubric: 
-  - 0 - Any typos, major grammatical errors, other table stakes issues for this level. Too short. 
-  - 0.25 - Grammatical errors, if relevant: tables/graphs not properly labeled, no references, other aspects that affect credibility. 
-  - 0.6 - Makes some interesting and relevant points, related to course material (including required materials), but lacking in terms of structure and story/argument. 
-  - 0.80 - Interesting paper that is well-structured, coherent, and credible. 
-  - 1 - As with 0.80, but exceptional in some way.
-
-### Paper #1
-
-- You must submit this paper.
-- Task: [Donaldson Paper](https://tellingstorieswithdata.com/23-assessment.html#sec-paper-one)
-- Due date: Friday, noon, Week 3 (with grace period through to Sunday, midnight, to submit without penalty).
-- Weight: 25 per cent (for Papers #1-#4 the best two of four count).
-
-### Paper #2
-
-- Due date: Friday, noon, Week 6 (with grace period through to Sunday, midnight, to submit without penalty).
-- Task: [Mawson Paper](https://tellingstorieswithdata.com/23-assessment.html#sec-paper-two)
-- Weight: 25 per cent (for Papers #1-#4 the best two of four counts).
-
-### Paper #3
-
-- Due date: Friday, noon, Week 8 (with grace period through to Sunday, midnight, to submit without penalty).
-- Task: [Howrah Paper](https://tellingstorieswithdata.com/23-assessment.html#sec-paper-three)
-- Weight: 25 per cent (for Papers #1-#4 the best two of four counts).
-
-### Paper #4
-
-- Due date: Friday, noon, Week 10 (with grace period through to Sunday, midnight, to submit without penalty).
-- Task: [Dysart Paper](https://tellingstorieswithdata.com/23-assessment.html#sec-paper-four) or [Spofforth Paper](https://tellingstorieswithdata.com/23-assessment.html#sec-paper-five)
-- Weight: 25 per cent (for Papers #1-#4 the best two of four counts).
-
-### Final Paper
-
-- Task: [Final Paper](https://tellingstorieswithdata.com/23-assessment.html#sec-final-paper)
-- You must submit this paper.
-- Due dates: 
-  - Initial submission: Wednesday, noon, Week 12 (no grace period and no late submissions accepted).
-  - Conduct peer review: Friday, noon, Week 12 (no grace period and no late submissions accepted).
-  - Final Paper: Two weeks after that (with grace period through to Sunday, midnight, to submit without penalty).
-- Weight: 30 per cent
-  - Initial submission: 2 per cent
-  - Conduct peer review: 3 per cent
-  - Final Paper: 25 per cent
-
-
-
+-   Quiz questions are drawn from those in the Quiz section that follows each chapter of *Telling Stories with Data*. Some of them are multiple choice, and you should expect to know the mark within a few days of submission. Please do them before coming to class.
+-   Tutorial questions are drawn from those in the Tutorial section that follows each chapter of *Telling Stories with Data*. The general expectation (although this differs from week to week) is about two pages of written content. You should expect to know the mark within a few days of the tutorial.
+-   In general term papers require a considerable amount of work, and are due after the material has been covered in quizzes and tutorials (i.e. you would draw on knowledge tested in the quizzes, and potentially material could be re-used from the tutorial material). In general, they require original work to some extent. Papers are taken from the Papers appendix of *Telling Stories with Data* and students have access to the grading rubrics before submission.
+-   If you already have a website, please communicate with me about this early in the term so that I can let you know whether it can be used for the purposes of this submission.
+-   Rubric for tutorial is:
+    -   0 - Any typos, major grammatical errors, other table stakes issues for this level. Too short.
+    -   0.25 - Grammatical errors, if relevant: tables/graphs not properly labeled, no references, other aspects that affect credibility.
+    -   0.6 - Makes some interesting and relevant points, related to course material (including required materials), but lacking in terms of structure and story/argument.
+    -   0.80 - Interesting paper that is well-structured, coherent, and credible.
+    -   1 - As with 0.80, but exceptional in some way.
+-   Only the best two of three term papers counts. This means each is worth 24 per cent.
+-   Peer review will occur for Term Paper I, but it is a just an optional 'practise'--students are typically not yet familiar enough with the expectations of the course so as to be able to provide valuable comments (other than noticing whether R has been cited!).
 
 ## Other
 
 ### Children in the classroom
 
-Babies (bottle-feeding, nursing, etc) are welcome in class as often as necessary. You are welcome to take breaks to feed your infant or express milk as needed, either in the classroom or elsewhere including [here](https://familycare.utoronto.ca/childcare/breastfeeding-at-u-of-t/). A list of baby change stations is also available [here](https://familycare.utoronto.ca/childcare/baby-change-stations-at-u-of-t/). Please communicate with me so that I can make sure that we have regular breaks to accommodate this. 
+Babies (bottle-feeding, nursing, etc) are welcome in class as often as necessary. You are welcome to take breaks to feed them or express milk as needed, either in the classroom or elsewhere including [here](https://familycare.utoronto.ca/childcare/breastfeeding-at-u-of-t/). A list of baby change stations is also available [here](https://familycare.utoronto.ca/childcare/baby-change-stations-at-u-of-t/). Please communicate with me so that I can make sure that we have regular breaks to accommodate this.
 
-For older children, I understand that unexpected disruptions in childcare can happen. You are welcome to bring your child to class in order to cover unforeseeable gaps in childcare.
+For toddlers and older children, I understand that unexpected disruptions in childcare/school can happen. You are welcome to bring your child to class in order to cover unforeseen gaps.
 
 ### Accommodations with regard to assessment
 
-Please do **not** reveal your personal or medical information to me. I understand that illness or personal emergencies can happen from time to time. The following accommodations to assessment requirements exist to provide for those situations. 
+Please do **not** reveal your personal or medical information to me. I understand that illness or personal emergencies can happen from time to time. The following accommodations to assessment requirements exist to provide for those situations.
 
-Straight-forward (will automatically apply to all students - there's no need to ask for these):
+Straight-forward (will automatically apply to all students---there is no need to ask for these):
 
-- Quiz: Only best five quizzes count.
-- Tutorial: Only best three tutorials count.
-- Papers #1-#4: Worst two are dropped.
+-   Quiz: Only your best seven quizzes count.
+-   Tutorial: Only your best three tutorials count.
+-   Term Papers: Only your best two term papers count.
 
-So for those (with the exception of Paper #1), if you have a situation, then just don't submit.
+So for those, if you have a situation, then just do not submit (or in the case of Term Paper I, just submit a blank page).
 
-Slightly more involved: 
+Slightly more involved:
 
-- Paper #1: You must submit something for Paper #1, even if it gets zero. If you have a medical reason that makes it impossible for you to submit Paper #1, then you are welcome to continue with the class, but then one of the remaining term papers (Papers #2 - #4), must be done individually to ensure fairness with the rest of the class.
-- Peer review: No accommodation or late submission is possible for this because it would hold up the rest of the class. If you cannot submit then email me before the deadline and the weight will be shifted to the final paper.
-- Final paper: The final paper is a critical piece of assessment. It is also up against deadlines for submission of grades. Extensions for valid reasons may be granted for a maximum of three days, however this isn't possible for all students (i.e. there are restrictions around graduating students). This means the exact extension needs to be at my discretion. To be considered, an extension request must be sent to rohan.alexander@utoronto.ca by the business day before the due date so there is time to get advice from a faculty/department/college advisor about your particular circumstance.
+-   Term Paper I: You must submit something for Term Paper I, even if it gets zero. If you have a medical emergency that makes it impossible for you to submit even a blank page for Term Paper I, then please email me. In that situation one of the remaining term papers must be done individually to ensure fairness with the rest of the class.
+-   Peer review: No accommodation or late submission is possible for this because it would hold up the rest of the class. That said, there are many opportunities to get the peer review marks, so if you cannot do any for a particular paper, then just do the others. If you have a medical emergency that makes this impossible, then please email me and cc your faculty/department/college advisor so that we can work out an alternative plan.
+-   Final paper: The final paper is a critical piece of assessment. It is also up against deadlines for submission of grades (especially for graduating students). If you have a medical emergency that makes it impossible for you to submit before marking begins, then I **may** be able to grant you an extension of up to three days. Email me and cc your faculty/department/college advisor so that we can work out a alternative plan.
 
 ### Re-grading
 
-Requests to have your work re-graded will not be accepted within 24 hours of the release of grades. This is to give you a chance to reflect. Similarly, requests to have your work re-graded more than seven days after the release of the grades will not be accepted. This is to ensure the course runs smoothly.
+Marking mistakes happen and I want to correct those. Requests to have your work re-graded will **not** be accepted within 24 hours of the release of grades. This is to give you a chance to reflect. Similarly, requests to have your work re-graded more than seven days after the release of the grades will not be accepted. This is to ensure the course runs smoothly.
 
-Inside that 1-7 day period if you would like to request a re-grade, please email rohan.alexander@utoronto.ca. Please specify where the marking error was made in relation to the marking guide. The entire assessment will be re-marked and it is possible that your grade could reduce.
+Inside that 1-7 day period if you would like to request a re-grade, please email rohan.alexander\@utoronto.ca and use the subject line "STA302: re-grade request". Please specify where the marking mistake was made in relation to the marking guide. The entire assessment will be re-marked and it is possible that your grade could reduce.
 
 Plenty of students get 0 on the first paper, but go on to get an A+ overall in the course. The nature of the work in this course requires students to adjust from what is expected in other courses, and the forgiving assessment weighting is designed to allow this.
 
 ### Plagiarism and integrity
 
-Please do not plagiarize. In particular, be careful to acknowledge the source of code - if it is extensive then through proper citation and if it is just a couple of lines from Stack Overflow then in a comment immediately next to the code.
+Please do not plagiarize. In particular, be careful to acknowledge the source of code---if it is extensive then through proper citation and if it is just a couple of lines from Stack Overflow then in a comment immediately next to the code.
 
-You are responsible for knowing the content of the University of Toronto's Code of Behaviour on Academic Matters. 
+You are responsible for knowing the content of the University of Toronto's Code of Behaviour on Academic Matters.
 
-Academic offenses includes (but is not limited to) plagiarism, cheating, copying R code, communication/extra resources during closed book assessments, purchasing labor for assessments (of any kind). Academic offenses will be taken seriously and dealt with accordingly. If you have any questions about what is or is not permitted in this course, please contact me.
+Academic offenses include (but are not limited to) plagiarism, cheating, copying code without acknowledgement, purchasing labor for assessments (of any kind). Academic offenses will be taken seriously and dealt with accordingly. If you have any questions about what is or is not permitted in this course, please just email me.
 
-Please consult the University's [site](http://academicintegrity.utoronto.ca/) on Academic Integrity. Please also see the definition of plagiarism in section B.I.1.(d) of the University's Code of Behaviour on Academic Matters available [here](http://www.governingcouncil.utoronto.ca/Assets/Governing+Council+Digital+Assets/Policies/PDF/ppjun011995.pdf). Please read the Code. Please review Cite it Right and if you require further clarification, consult the site [How Not to Plagiarize](http://advice.writing.utoronto.ca/wp-content/uploads/sites/2/how-not-to-plagiarize.pdf). 
+Please consult the University's [site](http://academicintegrity.utoronto.ca/) on Academic Integrity. Please also see the definition of plagiarism in section B.I.1.(d) of the University's Code of Behaviour on Academic Matters available [here](http://www.governingcouncil.utoronto.ca/Assets/Governing+Council+Digital+Assets/Policies/PDF/ppjun011995.pdf). Please read the Code. Please review Cite it Right and if you require further clarification, consult the site [How Not to Plagiarize](http://advice.writing.utoronto.ca/wp-content/uploads/sites/2/how-not-to-plagiarize.pdf).
 
 ### Late policy
 
-You are expected to manage your time effectively. If no extension has been granted and no accommodation applies, then the late submission of an assessment item carries a penalty of 10 percentage points per day to a maximum of one week after which it will no longer be accepted, e.g. a problem set submitted a day late that would have otherwise received 8/10 will receive 7/10, if that same problem set was submitted two days late then it would receive 6/10. 
+I am trying to develop you to be able to get a job as a professional data scientist. Part of that is learning to manage your time effectively.
+
+If no extension has been granted and no accommodation applies, then the late submission of an assessment item carries a penalty of 10 percentage points per day to a maximum of one week after which it will no longer be accepted, e.g. a problem set submitted a day late that would have otherwise received 8/10 will receive 7/10, if that same problem set was submitted two days late then it would receive 6/10.
+
+Term papers and the final paper cannot be accepted after marking has started.
 
 ### Writing
 
-Papers and reports should be well-written, well-organized, and easy to follow. They should flow easily from one point to the next. They should have proper sentence structure, spelling, vocabulary, and grammar. Each point should be articulated clearly and completely without being overly verbose. Papers should demonstrate your understanding of the topics you are studying in the course and your confidence in using the terms, techniques and issues you have learned. As always, references must be properly included and cited. If you have concerns about your ability to do any of this then please make use of the writing support provided to the faculty, colleges and the SGS Graduate Centre for Academic Communication. 
+Papers and reports should be well-written, well-organized, and easy to follow. They should flow easily from one point to the next. They should have proper sentence structure, spelling, vocabulary, and grammar. Each point should be articulated clearly and completely without being overly verbose. Papers should demonstrate your understanding of the topics you are studying in the course and your confidence in using the terms, techniques and issues you have learned. As always, references must be properly included and cited. If you have concerns about your ability to do any of this then please make use of the writing support provided to the faculty, colleges and the SGS Graduate Centre for Academic Communication.
 
 ### Minimum submission requirement
 
-If you are going to not be able to submit at least two term papers, and/or be unable to submit the final paper then it would be unfair on the other students to allow you to pass the course. Please ensure you and your college registrar or faculty/department advisor get in touch with me as early as possible if this may be the case for you.
+If you are going to not be able to submit at least two term papers, and/or be unable to submit the final paper then it would be unfair on the other students to allow you to pass the course. But it is not a situation that I want to get into. Please ensure you and your college registrar or faculty/department advisor get in touch with me as early as possible if this may be the case for you so that we can work out a solution.
 
-### Use of Generative AI in assignments 
+### Letters of recommendation
 
-In general, students are encouraged to use generative AI tools as a starting point. Specific course policies are: 
+I am happy to write letters for students who get both an A+ overall and an A+ in the final paper. This allows me to write a strong letter. If you are in this position after the class ends and want me to write a letter, please send me a request early.
 
-- Code: Students may wish to use generative AI tools to aid in initial development and writing of code to answer assignment questions and carry out the research project analysis. If this is the case, the use of such tools should be explicitly acknowledged in the submitted work, and the relevant prompts and responses should be included in a text file in the repo. All code, regardless of how it is generated must be thoroughly commented and explained. Failure to do so may result in penalties. 
-- Written work: Using generative AI tools to generate written answers to assignment questions of text contained in the final research project is prohibited in this course. Representing as one's own an idea, or expression of an idea, that was AI-generated may be considered an academic offense in this course. However, you are welcome to use it to generate a first draft, which you then completely edit. Again, if you use such tools, it should be explicitly acknowledged in the submitted work, and the relevant prompts and responses should be included in a text file in the repo.  
+### Use of Generative AI in assignments
+
+In general, students are encouraged to use generative AI tools as a starting point. Specific course policies are:
+
+-   Code: Students may wish to use generative AI tools to aid in initial development and writing of code to answer assignment questions and carry out the research project analysis. If this is the case, the use of such tools should be explicitly acknowledged in the submitted work, and the relevant prompts and responses should be included in a text file in the repo. All code, regardless of how it is generated must be thoroughly commented and explained. Failure to do so may result in penalties.
+-   Written work: Using generative AI tools to generate written answers to assignment questions of text contained in the final research project is prohibited in this course. Representing as one's own an idea, or expression of an idea, that was AI-generated may be considered an academic offense in this course. However, you are welcome to use it to generate a first draft, which you then completely edit. Again, if you use such tools, it should be explicitly acknowledged in the submitted work, and the relevant prompts and responses should be included in a text file in the repo.
 
 This course policy is designed to promote your learning and intellectual development and to help you reach course learning outcomes.
