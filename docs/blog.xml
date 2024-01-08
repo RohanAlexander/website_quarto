@@ -2999,11 +2999,11 @@ background-color: null;
 font-style: inherit;">library</span>(tidyverse)</span></code></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>── Attaching core tidyverse packages ──── tidyverse 2.0.0 ──
-✔ dplyr     1.1.2     ✔ readr     2.1.4
+✔ dplyr     1.1.4     ✔ readr     2.1.4
 ✔ forcats   1.0.0     ✔ stringr   1.5.0
-✔ ggplot2   3.4.2     ✔ tibble    3.2.1
-✔ lubridate 1.9.2     ✔ tidyr     1.3.0
-✔ purrr     1.0.1     
+✔ ggplot2   3.4.4     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.0
+✔ purrr     1.0.2     
 ── Conflicts ────────────────────── tidyverse_conflicts() ──
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
@@ -7715,13 +7715,13 @@ font-style: inherit;">0.975</span>))</span></code></pre></div>
 <pre><code># A tibble: 8 × 4
   state  mean lower upper
   &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-1 ACT   0.528 0.243 0.791
-2 NSW   0.497 0.214 0.759
-3 NT    0.539 0.253 0.852
-4 QLD   0.495 0.215 0.767
-5 SA    0.479 0.201 0.761
-6 TAS   0.466 0.183 0.758
-7 VIC   0.503 0.224 0.766
+1 ACT   0.526 0.245 0.791
+2 NSW   0.496 0.214 0.767
+3 NT    0.535 0.253 0.852
+4 QLD   0.498 0.215 0.769
+5 SA    0.485 0.201 0.762
+6 TAS   0.465 0.183 0.756
+7 VIC   0.504 0.224 0.760
 8 WA    0.501 0.219 0.765</code></pre>
 </div>
 </div>
@@ -8331,1308 +8331,6 @@ font-style: inherit;">"bottom"</span>)</span></code></pre></div>
  ]]></description>
   <guid>https://rohanalexander.com/posts/2019-12-04-getting_started_with_mrp/getting-started-with-mrp.html</guid>
   <pubDate>Tue, 03 Dec 2019 05:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Gathering and analysing text data</title>
-  <dc:creator>Rohan Alexander</dc:creator>
-  <link>https://rohanalexander.com/posts/2019-01-03-gathering-and-analysing-text-data/gathering-and-analysing-text-data.html</link>
-  <description><![CDATA[ 
-
-
-
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
-<p>Text modelling is an exciting area of research. But many guides assume that you already have a nice dataset. Similarly, web scraping is an exciting way to get information, but not many explanations go on to explain what you could do with it. This post attempts to go from scraping text from a website through to modelling the topics. It’s not meant to be an exhaustive post, but should hopefully provide enough that you can get started with your own project and know where to go for more information.</p>
-<p>The example that I’m going to use is getting data from the minutes of the RBA board meeting.</p>
-</section>
-<section id="gathering-data" class="level1">
-<h1>Gathering data</h1>
-<p>The first step is to get some data. I’m going to use the rvest package to do the web scraping. When you are scraping data you should try to be polite - slow down your requests as much as possible, avoid times you know they’ll have a lot of traffic, and check if the website has an API or a robots.txt file (usually access that at domain.com/robots.txt) that provides guidance.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># install.packages("rvest")</span></span>
-<span id="cb1-2"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(rvest)</span>
-<span id="cb1-3"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># install.packages("tidyverse")</span></span>
-<span id="cb1-4"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(tidyverse)</span>
-<span id="cb1-5"></span>
-<span id="cb1-6"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Read in the list of the website addresses</span></span>
-<span id="cb1-7">data_to_scrape <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"inputs/addresses.csv"</span>) <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Just a list of the URLs </span></span>
-<span id="cb1-8"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># and dates for each minutes.</span></span>
-<span id="cb1-9">address_to_visit <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> data_to_scrape<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>address</span>
-<span id="cb1-10">save_name <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> data_to_scrape<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>save_name</span>
-<span id="cb1-11"></span>
-<span id="cb1-12"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Create the function that will visit address_to_visit and save to save_name files</span></span>
-<span id="cb1-13">visit_address_and_save_content <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span></span>
-<span id="cb1-14">  <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">function</span>(name_of_address_to_visit,</span>
-<span id="cb1-15">           name_of_file_to_save_as) {</span>
-<span id="cb1-16">    <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># The function takes two inputs</span></span>
-<span id="cb1-17">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_html</span>(name_of_address_to_visit) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span> <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Go to the website and read the html</span></span>
-<span id="cb1-18">      <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">html_node</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"#content"</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span> <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Find the content part</span></span>
-<span id="cb1-19">      <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">html_text</span>() <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span> <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Extract the text of the content part</span></span>
-<span id="cb1-20">      <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">write_lines</span>(name_of_file_to_save_as) <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Save as a text file</span></span>
-<span id="cb1-21">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">print</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">paste</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Done with"</span>, name_of_address_to_visit, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"at"</span>, <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">Sys.time</span>()))  </span>
-<span id="cb1-22">    <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Helpful so that you know progress when running it on all the records</span></span>
-<span id="cb1-23">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">Sys.sleep</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">sample</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">30</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">60</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>)) <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Space out each request by somewhere between </span></span>
-<span id="cb1-24">    <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># 30 and 60 seconds each so that we don't overwhelm their server</span></span>
-<span id="cb1-25">  }</span>
-<span id="cb1-26"></span>
-<span id="cb1-27"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># If there is an error then ignore it and move to the next one</span></span>
-<span id="cb1-28">visit_address_and_save_content <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span></span>
-<span id="cb1-29">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">safely</span>(visit_address_and_save_content)</span>
-<span id="cb1-30"></span>
-<span id="cb1-31"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Walk through the addresses and apply the function to each</span></span>
-<span id="cb1-32"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">walk2</span>(address_to_visit,</span>
-<span id="cb1-33">      save_name,</span>
-<span id="cb1-34">      <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">~</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">visit_address_and_save_content</span>(.x, .y)) </span></code></pre></div>
-</div>
-<p>The CSV with the addresses and save names that we use looks something like this:</p>
-<div class="cell">
-<div class="cell-output-display">
-<table class="table table-sm table-striped small">
-<colgroup>
-<col style="width: 72%">
-<col style="width: 27%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">address</th>
-<th style="text-align: left;">save_name</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">https://www.rba.gov.au/monetary-policy/rba-board-minutes/2018/2018-11-06.html</td>
-<td style="text-align: left;">inputs/minutes/2018-11-06.txt</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">https://www.rba.gov.au/monetary-policy/rba-board-minutes/2018/2018-10-02.html</td>
-<td style="text-align: left;">inputs/minutes/2018-10-02.txt</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">https://www.rba.gov.au/monetary-policy/rba-board-minutes/2018/2018-09-04.html</td>
-<td style="text-align: left;">inputs/minutes/2018-09-04.txt</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">https://www.rba.gov.au/monetary-policy/rba-board-minutes/2018/2018-08-07.html</td>
-<td style="text-align: left;">inputs/minutes/2018-08-07.txt</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">https://www.rba.gov.au/monetary-policy/rba-board-minutes/2018/2018-07-03.html</td>
-<td style="text-align: left;">inputs/minutes/2018-07-03.txt</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</section>
-<section id="analysing-data" class="level1">
-<h1>Analysing data</h1>
-<p>In this example we’ll use a whole bunch of packages so that you can see what’s available. In general probably stringr, quanteda and stm are the workhorse packages with others used as needed.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="do" style="color: #5E5E5E;
-background-color: null;
-font-style: italic;">#### Workspace set-up ####</span></span>
-<span id="cb2-2"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># install.packages("broom")</span></span>
-<span id="cb2-3"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(broom) <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Used to clean up results</span></span>
-<span id="cb2-4"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># install.packages("devtools")</span></span>
-<span id="cb2-5"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(devtools)</span>
-<span id="cb2-6"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># devtools::install_github("DavisVaughan/furrr")</span></span>
-<span id="cb2-7"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(furrr) <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Used to do parallel processing with the topic models</span></span>
-<span id="cb2-8"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">plan</span>(multiprocess)</span>
-<span id="cb2-9"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># install.packages("quanteda")</span></span>
-<span id="cb2-10"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(quanteda) <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Used for data cleaning</span></span>
-<span id="cb2-11"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># install.packages("readtext")</span></span>
-<span id="cb2-12"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(readtext) <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Used to read in the txt files that were scraped</span></span>
-<span id="cb2-13"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># install.packages("stm")</span></span>
-<span id="cb2-14"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(stm) <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Used for more interesting topic models</span></span>
-<span id="cb2-15"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># install.packages("tictoc")</span></span>
-<span id="cb2-16"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(tictoc) <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Used for timing</span></span>
-<span id="cb2-17"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># install.packages("tidytext")</span></span>
-<span id="cb2-18"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(tidytext)</span>
-<span id="cb2-19"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># install.packages("tidyverse")</span></span>
-<span id="cb2-20"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(tidyverse) <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Used for everything</span></span>
-<span id="cb2-21"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># install.packages('topicmodels')</span></span>
-<span id="cb2-22"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(topicmodels) <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Used to make basic topic models</span></span>
-<span id="cb2-23"></span>
-<span id="cb2-24"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Read in the text that we scraped earlier</span></span>
-<span id="cb2-25">text <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> readtext<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">readtext</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"inputs/minutes/*.txt"</span>) <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># readtext makes this easy, </span></span>
-<span id="cb2-26"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># but could also use the usual base approach of listing files that end in txt etc.</span></span></code></pre></div>
-</div>
-<p>In general you’ll often need to do a lot of cleaning before you can do the stats bit and get results. Here, I’ll just show two example steps. I’ve found that cleaning the dataset seems to take about 80 per cent of the time.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="do" style="color: #5E5E5E;
-background-color: null;
-font-style: italic;">#### Clean data ####</span></span>
-<span id="cb3-2"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Do some basic cleaning - remove puncuation and change everything to lower case</span></span>
-<span id="cb3-3">text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">str_to_lower</span>(text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text)</span>
-<span id="cb3-4">text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">str_replace_all</span>(text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"[:punct:]"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">" "</span>)</span></code></pre></div>
-</div>
-<p>Now that we have a plausibly clean dataset (of course you’d want to come back and clean it more if you were actually interested in analysing the RBA minutes), we can try a topic model. Topic models are essentially just summaries. Instead of a document becoming a collection of words, they become a collection of topics with some probability associated with each topic.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="do" style="color: #5E5E5E;
-background-color: null;
-font-style: italic;">#### First topic modelling ####</span></span>
-<span id="cb4-2"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Convert the corpus to a form that the topic model can work with</span></span>
-<span id="cb4-3">rba_minutes <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> quanteda<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">corpus</span>(text) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span> <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Minimum viable conversion</span></span>
-<span id="cb4-4">  quanteda<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">dfm</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">remove_punct =</span> <span class="cn" style="color: #8f5902;
-background-color: null;
-font-style: inherit;">TRUE</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">remove =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">stopwords</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'en'</span>)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span> <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Get rid of</span></span>
-<span id="cb4-5">  <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># punctuation (in case you didn't already do that) and stop words - check </span></span>
-<span id="cb4-6">  <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># those stop words assumptions</span></span>
-<span id="cb4-7">  quanteda<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">dfm_trim</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">min_termfreq =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>, <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Remove any word that doesn't occur at </span></span>
-<span id="cb4-8">                     <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># least twice</span></span>
-<span id="cb4-9">           <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">min_docfreq =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>) <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Get rid of any word that isn't in at least two documents</span></span>
-<span id="cb4-10"></span>
-<span id="cb4-11"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Run the topic model with 10 topics</span></span>
-<span id="cb4-12">dtm <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> quanteda<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">convert</span>(rba_minutes, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">to =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"topicmodels"</span>) <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Getting the dfm </span></span>
-<span id="cb4-13"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># into a form that topicmodels can deal with</span></span>
-<span id="cb4-14">lda_topics <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> topicmodels<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">LDA</span>(dtm, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">k =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">10</span>) <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># The k is the number of topics - </span></span>
-<span id="cb4-15"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># this decision has a big impact</span></span>
-<span id="cb4-16"></span>
-<span id="cb4-17"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Have a look at the terms</span></span>
-<span id="cb4-18"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">terms</span>(lda_topics, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">10</span>) <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Top 10 words for each topic. Topics are just </span></span>
-<span id="cb4-19"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># probability distributions over words so you should look at different numbers of words</span></span></code></pre></div>
-</div>
-<p>Looking at the words in the topics, it seems as though “per” and “cent” are being treated as separate words. The RBA is proud that it separates “per” and “cent”, and if you’re a grad there that’ll stick with you for a while (see earlier paragraphs), but for our purposes they are one word and we need to combine them.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><span class="do" style="color: #5E5E5E;
-background-color: null;
-font-style: italic;">#### Clean data ####</span></span>
-<span id="cb5-2"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Let's deal with the first issue first.</span></span>
-<span id="cb5-3">text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> stringr<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">str_replace_all</span>(text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"per&nbsp;cent"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"per_cent"</span>)</span>
-<span id="cb5-4">text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> stringr<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">str_replace_all</span>(text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"per cent"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"per_cent"</span>)</span>
-<span id="cb5-5"></span>
-<span id="cb5-6"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># You could run the topic model again if you wanted.</span></span></code></pre></div>
-</div>
-<p>Right, that issue of per cent has been fixed, but what if there are combinations of words like this that don’t show up very high in the topics? To identify these we need to construct n-grams. Earlier with ‘per’ ‘cent’, we generated a 2-gram. Quanteda and the tidyverse makes it easy to identify popular n-grams (if your dataset is large then I’d work with a sample of it because these can get a little unwieldy, and we only really care about the popular ones anyway). Our text is in sentences, paragraphs, etc, and we first need to break it down into tokens (essentially separate words). There’s a wonderful set of tutorials put together by the quanteda team here: https://tutorials.quanteda.io and the code for this section is from: https://tutorials.quanteda.io/basic-operations/tokens/tokens_ngrams/.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="do" style="color: #5E5E5E;
-background-color: null;
-font-style: italic;">#### Adjusting for common co-location ####</span></span>
-<span id="cb6-2">toks <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">tokens</span>(text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text)</span>
-<span id="cb6-3"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># First generate 2-grams</span></span>
-<span id="cb6-4">ngrams <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">tokens_ngrams</span>(toks, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">n =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">4</span>)</span>
-<span id="cb6-5"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Somewhat annoyingly for our purposes (although understandably given the broader </span></span>
-<span id="cb6-6"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># picture) quanteda puts tokens into its own class, so we need ot convert in </span></span>
-<span id="cb6-7"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># order to use the usual tidyverse tools that we may be more familiar with.</span></span>
-<span id="cb6-8"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># As a side note, I often find it worthwhile to checking class in R when there's </span></span>
-<span id="cb6-9"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># an issue because often that's part of the issue, in this case: class(ngrams).</span></span>
-<span id="cb6-10"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># The tokens class seems to just be a list, so we can unlist it and then put it </span></span>
-<span id="cb6-11"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># into a more-friendly tibble.</span></span>
-<span id="cb6-12">ngram_counts <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">tibble</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">ngrams =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">unlist</span>(ngrams)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span> </span>
-<span id="cb6-13">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">count</span>(ngrams, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">sort =</span> <span class="cn" style="color: #8f5902;
-background-color: null;
-font-style: inherit;">TRUE</span>)</span>
-<span id="cb6-14"></span>
-<span id="cb6-15"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># We can identify a bunch of obvious replacements. If we start getting a long </span></span>
-<span id="cb6-16"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># list then we can create a file that holds the replacement.</span></span>
-<span id="cb6-17">text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> stringr<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">str_replace_all</span>(text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"assistant governor"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"assistant_governor"</span>)</span>
-<span id="cb6-18">text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> stringr<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">str_replace_all</span>(text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"reserve bank board"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"reserve_bank_board"</span>)</span>
-<span id="cb6-19">text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> stringr<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">str_replace_all</span>(text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"unemployment rate"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"unemployment_rate"</span>)</span>
-<span id="cb6-20">text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> stringr<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">str_replace_all</span>(text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"national accounts"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"national_accounts"</span>)</span>
-<span id="cb6-21">text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> stringr<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">str_replace_all</span>(text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"australian dollar"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"australian_dollar"</span>)</span>
-<span id="cb6-22">text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> stringr<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">str_replace_all</span>(text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"monetary policy"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"monetary_policy"</span>)</span>
-<span id="cb6-23">text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> stringr<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">str_replace_all</span>(text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"united states"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"united_states"</span>)</span>
-<span id="cb6-24">text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> stringr<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">str_replace_all</span>(text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"exchange rate"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"exchange_rate"</span>)</span>
-<span id="cb6-25">text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> stringr<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">str_replace_all</span>(text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"glenn stevens"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"glenn_stevens"</span>)</span>
-<span id="cb6-26">text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> stringr<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">str_replace_all</span>(text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"reserve bank"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"reserve_bank"</span>)</span>
-<span id="cb6-27">text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> stringr<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">str_replace_all</span>(text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"cash rate"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"cash_rate"</span>)</span>
-<span id="cb6-28">text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> stringr<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">str_replace_all</span>(text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"us dollar"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"us_dollar"</span>)</span>
-<span id="cb6-29">text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> stringr<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">str_replace_all</span>(text<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>text, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"iron ore"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"iron_ore"</span>)</span>
-<span id="cb6-30"></span>
-<span id="cb6-31"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">rm</span>(toks, ngrams, ngram_counts)</span></code></pre></div>
-</div>
-<p>Take a look at the topics again. Notice that ‘growth’ is in essentially every topic. So is ‘members’ and a couple of others. It’s not that growth isn’t important (insert standard economist joke here), but the fact that ‘members’ shows up suggests that these may just be due to the way that language is used at the RBA, rather than communicating topics. If you read these minutes, you’ll know that the RBA starts a LOT of sentences with ‘Members noted…’. What does this mean for our purposes? Essentially, if you look at each topic by itself they seem ‘coherent’, but taken as a group it seems as though the topics are too similar. Another way to say that is that the words lack ‘exclusivity’. This is a common tradeoff, and our results suggest that it may be worthwhile for us to reduce some of the coherence in order to increase the exclusivity. At this point, we’ll use a different package for creating topic models - the STM package - because it has a bunch of nice features that you might like to take advantage of in future work.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><span class="do" style="color: #5E5E5E;
-background-color: null;
-font-style: italic;">#### Introducing STM and quanteda ####</span></span>
-<span id="cb7-2">rba_minutes <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> quanteda<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">corpus</span>(text) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span> <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Minimum viable conversion</span></span>
-<span id="cb7-3">  quanteda<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">dfm</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">remove_punct =</span> <span class="cn" style="color: #8f5902;
-background-color: null;
-font-style: inherit;">TRUE</span>, </span>
-<span id="cb7-4">                 <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">remove_numbers =</span> <span class="cn" style="color: #8f5902;
-background-color: null;
-font-style: inherit;">TRUE</span>,</span>
-<span id="cb7-5">                 <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">remove =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">stopwords</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'en'</span>)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span> <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Get rid of punctuation (in </span></span>
-<span id="cb7-6">  <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># case you didn't already do that) and stop words - check those stop words assumptions</span></span>
-<span id="cb7-7">  quanteda<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">dfm_trim</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">min_termfreq =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>, <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Remove any word that doesn't occur at least twice</span></span>
-<span id="cb7-8">                     <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">min_docfreq =</span> <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.05</span>, <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Get rid of any word that isn't in at </span></span>
-<span id="cb7-9">                     <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># least 5 per cent of documents</span></span>
-<span id="cb7-10">                     <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">max_docfreq =</span> <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.90</span>, <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Get rid of any word that is in at </span></span>
-<span id="cb7-11">                     <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># least 90 per cent of documents</span></span>
-<span id="cb7-12">                     <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">docfreq_type =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"prop"</span> <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Above we specified percentages - you </span></span>
-<span id="cb7-13">                     <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># could specify counts or ranks</span></span>
-<span id="cb7-14">                     ) </span>
-<span id="cb7-15"></span>
-<span id="cb7-16"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># We can run the topic model using STM</span></span>
-<span id="cb7-17">topics_stm <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">stm</span>(rba_minutes, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">K =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">10</span>)</span>
-<span id="cb7-18"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Looking at the results you can see that the results are fairly similar to </span></span>
-<span id="cb7-19"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># those that we got from the topicmodels package, which is what we want. </span></span>
-<span id="cb7-20"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">labelTopics</span>(topics_stm)</span>
-<span id="cb7-21"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">rm</span>(topics_stm)</span>
-<span id="cb7-22"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># If we were interested in the results then we might like to pre-process the text </span></span>
-<span id="cb7-23"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># a little more, for instance removing the names of months.</span></span></code></pre></div>
-</div>
-<p>Other than pre-processing decisions, the other major determininat of the outputs of topic models is the number of topics specified. There are a bunch of diagnostic tests that have been developed to help with this decision and we can use some nice code from Julia Silge (https://juliasilge.com/blog/evaluating-stm/) to try a bunch of different values for the number of topics.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><span class="do" style="color: #5E5E5E;
-background-color: null;
-font-style: italic;">#### Deciding on the number of topics ####</span></span>
-<span id="cb8-2"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">tic</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"With parallel"</span>) <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># This allows us to time the code</span></span>
-<span id="cb8-3">many_models <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">data_frame</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">K =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">seq</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">5</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">20</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">by =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">5</span>)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span> <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Here we're running four </span></span>
-<span id="cb8-4">  <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># topic models: 5 topics, 10 topics, 15 topics and 20 topics</span></span>
-<span id="cb8-5">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">topic_model =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">future_map</span>(K, <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">~</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">stm</span>(rba_minutes, </span>
-<span id="cb8-6">                                          <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">K =</span> .,</span>
-<span id="cb8-7">                                          <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">verbose =</span> <span class="cn" style="color: #8f5902;
-background-color: null;
-font-style: inherit;">FALSE</span>)))</span>
-<span id="cb8-8"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">toc</span>()</span>
-<span id="cb8-9"></span>
-<span id="cb8-10"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># You can also try setting K to zero within STM and seeing the number of topics </span></span>
-<span id="cb8-11"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># that it recommends: e,g, choose_topic_num_for_me &lt;- stm(rba_minutes, K = 0, verbose = FALSE)</span></span>
-<span id="cb8-12"></span>
-<span id="cb8-13"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># We want to compare those models with different numbers of topics using various diagnostics.</span></span>
-<span id="cb8-14">heldout <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">make.heldout</span>(rba_minutes) <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># First create a test/training set</span></span>
-<span id="cb8-15"></span>
-<span id="cb8-16">k_result <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> many_models <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span></span>
-<span id="cb8-17">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">exclusivity =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">map</span>(topic_model, exclusivity), <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># How unique are words to the topics</span></span>
-<span id="cb8-18">         <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">semantic_coherence =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">map</span>(topic_model, semanticCoherence, rba_minutes), <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># How </span></span>
-<span id="cb8-19">         <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># much the topics tend to be coherent if we look at them (usually a </span></span>
-<span id="cb8-20">         <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># tradeoff with exclusivity)</span></span>
-<span id="cb8-21">         <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">eval_heldout =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">map</span>(topic_model, eval.heldout, heldout<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>missing),</span>
-<span id="cb8-22">         <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">residual =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">map</span>(topic_model, checkResiduals, rba_minutes),</span>
-<span id="cb8-23">         <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">bound =</span>  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">map_dbl</span>(topic_model, <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">function</span>(x) <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">max</span>(x<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>convergence<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>bound)),</span>
-<span id="cb8-24">         <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">lfact =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">map_dbl</span>(topic_model, <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">function</span>(x) <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">lfactorial</span>(x<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>settings<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>dim<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>K)),</span>
-<span id="cb8-25">         <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">lbound =</span> bound <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span> lfact,</span>
-<span id="cb8-26">         <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">iterations =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">map_dbl</span>(topic_model, <span class="cf" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">function</span>(x) <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">length</span>(x<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>convergence<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>bound)))</span></code></pre></div>
-</div>
-<p>Put these diagnostics into a nice summary graph (again code is Julia’s originally).</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1">k_result <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span></span>
-<span id="cb9-2">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">transmute</span>(K,</span>
-<span id="cb9-3">            <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">`</span><span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">Lower bound</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">`</span> <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">=</span> lbound,</span>
-<span id="cb9-4">            <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">Residuals =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">map_dbl</span>(residual, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"dispersion"</span>),</span>
-<span id="cb9-5">            <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">`</span><span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">Semantic coherence</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">`</span> <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">map_dbl</span>(semantic_coherence, mean),</span>
-<span id="cb9-6">            <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">`</span><span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">Held-out likelihood</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">`</span> <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">map_dbl</span>(eval_heldout, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"expected.heldout"</span>)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span></span>
-<span id="cb9-7">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">gather</span>(Metric, Value, <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-</span>K) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span></span>
-<span id="cb9-8">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">ggplot</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">aes</span>(K, Value, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">color =</span> Metric)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb9-9">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">geom_line</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">show.legend =</span> <span class="cn" style="color: #8f5902;
-background-color: null;
-font-style: inherit;">FALSE</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb9-10">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">facet_wrap</span>(<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">~</span>Metric, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">scales =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"free_y"</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb9-11">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">labs</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">x =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"K (number of topics)"</span>,</span>
-<span id="cb9-12">       <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">y =</span> <span class="cn" style="color: #8f5902;
-background-color: null;
-font-style: inherit;">NULL</span>,</span>
-<span id="cb9-13">       <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">title =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Model diagnostics by number of topics"</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb9-14">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">theme_minimal</span>()</span></code></pre></div>
-<div class="cell-output-display">
-<p><img src="https://rohanalexander.com/posts/2019-01-03-gathering-and-analysing-text-data/gathering-and-analysing-text-data_files/figure-html/diagnosticmeasuregraphs-1.png" class="img-fluid" width="672"></p>
-</div>
-</div>
-<p>In general we are looking for the max/min of parabolas, so our results suggest we may be best with some more topics (go to Julia’s post for to see another example: https://juliasilge.com/blog/evaluating-stm/.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb10" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Have a look at that exclusivity to coherence tradeoff</span></span>
-<span id="cb10-2">k_result <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span></span>
-<span id="cb10-3">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">select</span>(K, exclusivity, semantic_coherence) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span></span>
-<span id="cb10-4">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">unnest</span>() <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span></span>
-<span id="cb10-5">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">K =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">as.factor</span>(K)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span></span>
-<span id="cb10-6">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">ggplot</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">aes</span>(semantic_coherence, exclusivity)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb10-7">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">geom_point</span>() <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb10-8">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">facet_wrap</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">vars</span>(K)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb10-9">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">labs</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">x =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Semantic coherence"</span>,</span>
-<span id="cb10-10">       <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">y =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Exclusivity"</span>,</span>
-<span id="cb10-11">       <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">title =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Comparing exclusivity and semantic coherence"</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb10-12">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">theme_minimal</span>()</span></code></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: `cols` is now required when using `unnest()`.
-ℹ Please use `cols = c(exclusivity, semantic_coherence)`.</code></pre>
-</div>
-<div class="cell-output-display">
-<p><img src="https://rohanalexander.com/posts/2019-01-03-gathering-and-analysing-text-data/gathering-and-analysing-text-data_files/figure-html/exlusitivty-1.png" class="img-fluid" width="672"></p>
-</div>
-</div>
-<p>Although you’d probably want more, let’s just choose 10 topics for now. What we’re most interested in is getting the betas and gammas so that we can do our usual analysis.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb12" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1">topic_model <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> k_result <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span> </span>
-<span id="cb12-2">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">filter</span>(K <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">10</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span> </span>
-<span id="cb12-3">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">pull</span>(topic_model) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span> </span>
-<span id="cb12-4">  .[[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>]]</span>
-<span id="cb12-5"></span>
-<span id="cb12-6"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Grab the betas - these are the probability of each term in each topic</span></span>
-<span id="cb12-7">td_beta <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> broom<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">tidy</span>(topic_model, </span>
-<span id="cb12-8">                       <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">matrix =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"beta"</span>)</span>
-<span id="cb12-9"></span>
-<span id="cb12-10"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Grab the gammas - these are the probability of each word in each topic</span></span>
-<span id="cb12-11">td_gamma <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">tidy</span>(topic_model, </span>
-<span id="cb12-12">                 <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">matrix =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"gamma"</span>,</span>
-<span id="cb12-13">                 <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">document_names =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">rownames</span>(rba_minutes))</span></code></pre></div>
-</div>
-<p>From here you could look at how the gammas and betas evolve or change using a statistical model. Or even sometimes just looking at them is interesting. Julia Silge has a bunch of code that makes very nice graphs and tables. One of the advantages of the STM package is that it makes it easier to include specific types of additional information. For instance, we know that over our time period there have been two governors: GRS and Phil Lowe. We could associate each date with who the governor is and then allow that to affect the prevalence of certain topics.</p>
-<p>You can grab the files and folder set up from GitHub if you’d like.</p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://rohanalexander.com/posts/2019-01-03-gathering-and-analysing-text-data/gathering-and-analysing-text-data.html</guid>
-  <pubDate>Thu, 03 Jan 2019 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Cleaning Hansard: The pay’s not great but the work is hard</title>
@@ -12505,6 +11203,828 @@ font-style: inherit;">"DESCRIBE THE CHANGE YOU ARE ADDING"</span></span>
  ]]></description>
   <guid>https://rohanalexander.com/posts/2017-07-21-getting-started-with-blogdown/getting-started-with-blogdown.html</guid>
   <pubDate>Fri, 21 Jul 2017 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Mapping the 2016 Australian Election Polling Place Results</title>
+  <dc:creator>Rohan Alexander</dc:creator>
+  <link>https://rohanalexander.com/posts/2017-07-18-mapping-the-2016-australian-election-polling-place-results/mapping-the-2016-australian-election-polling-place-results.html</link>
+  <description><![CDATA[ 
+
+
+
+<div class="cell">
+<iframe src="https://rohanalexander.shinyapps.io/polling_place_firstpref_winner/?showcase=0" width="672" height="600px" data-external="1">
+</iframe>
+</div>
+<p>The note that follows introduces Australia’s political system, and then details the process of downloading and merging first-preference votes by polling place, and then plotting it on an interactive map.</p>
+<section id="australias-political-system" class="level1">
+<h1>Australia’s political system</h1>
+<p>In 2016 Australia’s federal government was determined by the outcomes of elections in 150 divisions which each elected one member to the lower house. The Liberal/National Coalition won 76 seats which allowed it to form a majority government; while the Labor party won 69 seats to form the Opposition; the Greens and the Nick Xenophon Team each won one seat; and there were two Independent members (Andrew Wilkie and Cathy McGowan).</p>
+<p>Votes are cast at polling places in each division. In general voters can go to any polling place within their registered division, but some polling places that are close to a boundary will allow voting from there and some major polling places (such as the city hall of a state capital) will allow voting in any division.</p>
+<p>Although there are some exceptions divisions are generally constructed so that they each have roughly the same number of people. However this is not the case for polling places – some are much larger than others. Nonetheless it is interesting to see the geographic distribution of which party received the most first-preference votes in each polling place, especially in the context of which party won the division.</p>
+</section>
+<section id="polling-place-data" class="level1">
+<h1>Polling place data</h1>
+<p>The main packages for the data manipulation are the tidyverse and magrittr. leaflet allows the creation of interactive maps, ggmap creates static maps, and rgdal assists with dealing with geographic data. rmapshaper is used to reduce the size of the shapefile of division boundaries so that it is faster to load.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(tidyverse)</span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(magrittr)</span>
+<span id="cb1-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(leaflet)</span>
+<span id="cb1-4"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(ggmap)</span>
+<span id="cb1-5"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(rgdal)</span>
+<span id="cb1-6"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(rmapshaper)</span></code></pre></div>
+</div>
+<p>The polling place results can be downloaded by state from the AEC website at http://results.aec.gov.au/20499/Website/HouseDownloadsMenu-20499-Csv.htm. There the AEC also makes available a dataset that contains geocodes for each of the polling places. The separate datasets for each state need to be merged, and then each polling place needs to be geocoded. Finally some minor changes are needed to make the party names easier to follow.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">#### Read in the polling place datasets (are state specific), and the geocodes for each polling place. Then put it all together to have one geocoded polling place dataset for all of Australia: Australia_booths. Finally, create a dataset that is filtered so that it just shows the winner of each booth: Australia_booths_winner. ####</span></span>
+<span id="cb2-2"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Data importing</span></span>
+<span id="cb2-3">geocodes <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"data/GeneralPollingPlacesDownload-20499.csv"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">skip =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb2-4">NSW_booths <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"data/HouseStateFirstPrefsByPollingPlaceDownload-20499-NSW.csv"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">skip =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb2-5">QLD_booths <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"data/HouseStateFirstPrefsByPollingPlaceDownload-20499-QLD.csv"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">skip =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb2-6">VIC_booths <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"data/HouseStateFirstPrefsByPollingPlaceDownload-20499-VIC.csv"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">skip =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb2-7">ACT_booths <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"data/HouseStateFirstPrefsByPollingPlaceDownload-20499-ACT.csv"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">skip =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb2-8">TAS_booths <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"data/HouseStateFirstPrefsByPollingPlaceDownload-20499-TAS.csv"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">skip =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb2-9">SA_booths <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"data/HouseStateFirstPrefsByPollingPlaceDownload-20499-SA.csv"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">skip =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb2-10">WA_booths <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"data/HouseStateFirstPrefsByPollingPlaceDownload-20499-WA.csv"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">skip =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb2-11">NT_booths <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"data/HouseStateFirstPrefsByPollingPlaceDownload-20499-NT.csv"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">skip =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb2-12"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Merge</span></span>
+<span id="cb2-13">Australia_booths <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rbind</span>(NSW_booths, QLD_booths, VIC_booths, ACT_booths, TAS_booths, SA_booths, WA_booths, NT_booths)</span>
+<span id="cb2-14"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Add the geocodes</span></span>
+<span id="cb2-15">Australia_booths <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> Australia_booths <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span> </span>
+<span id="cb2-16">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">left_join</span>(geocodes)</span>
+<span id="cb2-17"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Clean up</span></span>
+<span id="cb2-18"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rm</span>(NSW_booths, QLD_booths, VIC_booths, ACT_booths, TAS_booths, SA_booths, WA_booths, NT_booths)</span>
+<span id="cb2-19"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># If you need it use this to get a list of the parties, ordered by the number of first-preference votes</span></span>
+<span id="cb2-20"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># first_votes &lt;- Australia_booths %&gt;%</span></span>
+<span id="cb2-21"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#   group_by(PartyNm) %&gt;%</span></span>
+<span id="cb2-22"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#   summarise(votes = sum(OrdinaryVotes, na.rm = TRUE)) %&gt;%</span></span>
+<span id="cb2-23"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#   arrange(desc(votes))</span></span>
+<span id="cb2-24"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Combine some parties that are separate, but equivalent: Australian Labor Party &amp; Australian Labor Party (Northern Territory) Branch &amp; Labor, Country Liberals (NT) &amp; Liberal, The Greens &amp; The Greens (WA).</span></span>
+<span id="cb2-25">Australia_booths<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>PartyNm <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">recode</span>(Australia_booths<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>PartyNm, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Australian Labor Party (Northern Territory) Branch"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Australian Labor Party"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Labor"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Australian Labor Party"</span>)</span>
+<span id="cb2-26">Australia_booths<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>PartyNm <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">recode</span>(Australia_booths<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>PartyNm, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Country Liberals (NT)"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Liberal/LNP"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Liberal National Party of Queensland"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Liberal/LNP"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Liberal"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Liberal/LNP"</span>)</span>
+<span id="cb2-27">Australia_booths<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>PartyNm <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">recode</span>(Australia_booths<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>PartyNm, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"The Greens (WA)"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"The Greens"</span>)</span>
+<span id="cb2-28"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Create an indicator for who won the polling place then filter on that</span></span>
+<span id="cb2-29">Australia_booths_winner <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> Australia_booths <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span> </span>
+<span id="cb2-30">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">group_by</span>(PollingPlaceID) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span> </span>
+<span id="cb2-31">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">polling_place_winner =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ifelse</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">max</span>(OrdinaryVotes) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> OrdinaryVotes, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">max</span>(OrdinaryVotes), <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb2-32">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(polling_place_winner <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb2-33"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#table(Australia_booths_winner$PartyNm)</span></span>
+<span id="cb2-34"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># There are three parties that only win one booth, so combine all those into 'Other'</span></span>
+<span id="cb2-35">Australia_booths_winner<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>PartyNm <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">recode</span>(Australia_booths_winner<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>PartyNm, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Australian Recreational Fishers Party"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Other"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Christian Democratic Party (Fred Nile Group)"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Other"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Derryn Hinch's Justice Party"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Other"</span>)</span></code></pre></div>
+</div>
+</section>
+<section id="division-data" class="level1">
+<h1>Division data</h1>
+<p>The divisions can be coloured based on which party won overall. The map of the boundaries for each division can be downloaded from the AEC website here: http://www.aec.gov.au/Electorates/gis/gis_datadownload.htm. The shapefile doesn’t have winner of each division so this needs to be merged into it. It is important to put the shapefile dataset first when merging. Finally, the shapefile is quite a large file and this can be reduced for faster loading.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">#### Read in the shapefiles (maps) that show each of the boundaries of the divisions (electorates) then add the data to say who won that division. Result is a spatial dataframe called boundaries. ####</span></span>
+<span id="cb3-2"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Overall winner for each division, which will be used to color the division</span></span>
+<span id="cb3-3">Division_winner <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"data/HouseMembersElectedDownload-20499.csv"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">skip =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb3-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># The boundaries of the divisions (downloaded from: http://www.aec.gov.au/Electorates/gis/gis_datadownload.htm)</span></span>
+<span id="cb3-5">boundaries <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">readOGR</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">dsn =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"data/national-midmif-09052016/COM_ELB.TAB"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">layer =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"COM_ELB"</span>)</span>
+<span id="cb3-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Fix a couple - Mcmillan and Mcpherson - that have capitalisation issues</span></span>
+<span id="cb3-7">boundaries<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>Elect_div <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">recode</span>(boundaries<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>Elect_div, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Mcmillan"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"McMillan"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Mcpherson"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"McPherson"</span>)</span>
+<span id="cb3-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Add the overall division winner dataset into the boundaries dataset (thanks to http://www.nickeubank.com/wp-content/uploads/2015/10/RGIS2_MergingSpatialData_part1_Joins.html)</span></span>
+<span id="cb3-9">boundaries <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">merge</span>(boundaries, Division_winner, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">by.x =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Elect_div"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">by.y =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"DivisionNm"</span>)</span>
+<span id="cb3-10"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Simplify and reduce the size of the shapefile so that it loads better</span></span>
+<span id="cb3-11"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">object.size</span>(boundaries)</span>
+<span id="cb3-12">boundaries <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> rmapshaper<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ms_simplify</span>(boundaries)</span>
+<span id="cb3-13"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">object.size</span>(boundaries)</span>
+<span id="cb3-14"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Clean up</span></span>
+<span id="cb3-15"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rm</span>(Division_winner)</span></code></pre></div>
+</div>
+<p>Then colours need to be associated with each party.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">#### Specify the colour schemes that will be used. ####</span></span>
+<span id="cb4-2"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Set the color scheme for the booth coloring</span></span>
+<span id="cb4-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># pal &lt;- colorFactor(</span></span>
+<span id="cb4-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#   palette = "Dark2", </span></span>
+<span id="cb4-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#   domain = unique(Australia_booths$PartyNm)</span></span>
+<span id="cb4-6">pal <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">colorFactor</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">palette =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#c04745"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#616161"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"black"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"purple4"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#4776be"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#ff5800"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"cyan1"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"yellow"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#a8c832"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"brown4"</span>), </span>
+<span id="cb4-7">                          <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">domain =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Australian Labor Party"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Independent"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Informal"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Katter's Australian Party"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Liberal/LNP"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Nick Xenophon Team"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Other"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Pauline Hanson's One Nation"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"The Greens"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"The Nationals"</span>))</span>
+<span id="cb4-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Set the color scheme for the division coloring</span></span>
+<span id="cb4-9">pall <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">colorFactor</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">palette =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#c04745"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#616161"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"purple4"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#4776be"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#4776be"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#ff5800"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#a8c832"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"brown4"</span>), </span>
+<span id="cb4-10">                   <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">domain =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Australian Labor Party"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Independent"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Katter's Australian Party"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Liberal"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Liberal National Party"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Nick Xenophon Team"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"The Greens"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"The Nationals"</span>))</span></code></pre></div>
+</div>
+</section>
+<section id="interactive-map" class="level1">
+<h1>Interactive map</h1>
+<p>Finally, the map can be produced:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">#### Pull it all together to make the map ####</span></span>
+<span id="cb5-2"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Make the map</span></span>
+<span id="cb5-3">Australia_map <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> </span>
+<span id="cb5-4">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">leaflet</span>() <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb5-5">  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Base groups</span></span>
+<span id="cb5-6">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">addTiles</span>() <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span>  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Add default OpenStreetMap map tiles</span></span>
+<span id="cb5-7">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">addProviderTiles</span>(providers<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>Stamen.TonerLite, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">group =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Toner Lite"</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Add a black and white alternative</span></span>
+<span id="cb5-8">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">setView</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">lng =</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">133.7751</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">lat =</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">25.2744</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">zoom =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Specify where the map is initially focused</span></span>
+<span id="cb5-9">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">addPolygons</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">data =</span> boundaries, </span>
+<span id="cb5-10">              <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#444444"</span>, </span>
+<span id="cb5-11">              <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">weight =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, </span>
+<span id="cb5-12">              <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">smoothFactor =</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>,</span>
+<span id="cb5-13">              <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">opacity =</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1.0</span>, </span>
+<span id="cb5-14">              <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">fillColor =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pall</span>(boundaries<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>PartyNm),</span>
+<span id="cb5-15">              <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">highlightOptions =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">highlightOptions</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#666"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">weight =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">bringToFront =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">FALSE</span>)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Add the plot of the divisions, coloured by which party won it</span></span>
+<span id="cb5-16">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">addCircles</span>(</span>
+<span id="cb5-17">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">data =</span> Australia_booths_winner,</span>
+<span id="cb5-18">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">lng =</span> Australia_booths_winner<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>Longitude, </span>
+<span id="cb5-19">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">lat =</span> Australia_booths_winner<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>Latitude, </span>
+<span id="cb5-20">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">popup =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">paste</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"&lt;b&gt;Division:&lt;/b&gt;"</span>, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">as.character</span>(Australia_booths_winner<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>DivisionNm), <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"&lt;br&gt;"</span>,</span>
+<span id="cb5-21">                  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"&lt;b&gt;Polling place:&lt;/b&gt;"</span>, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">as.character</span>(Australia_booths_winner<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>PollingPlaceNm), <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"&lt;br&gt;"</span>,</span>
+<span id="cb5-22">                  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"&lt;b&gt;Address:&lt;/b&gt;"</span>, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">as.character</span>(Australia_booths_winner<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>PremisesAddress1), <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"&lt;br&gt;"</span>,</span>
+<span id="cb5-23">                  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"&lt;b&gt;Party with most first-pref votes:&lt;/b&gt;"</span>, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">as.character</span>(Australia_booths_winner<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>PartyNm), <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"&lt;br&gt;"</span>,</span>
+<span id="cb5-24">                  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"&lt;b&gt;First-pref votes:&lt;/b&gt;"</span>, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">as.character</span>(Australia_booths_winner<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>OrdinaryVotes), <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"&lt;br&gt;"</span>),</span>
+<span id="cb5-25">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">label =</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">~</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">as.character</span>(Australia_booths_winner<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>DivisionNm),</span>
+<span id="cb5-26">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#clusterOptions = markerClusterOptions(),</span></span>
+<span id="cb5-27">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pal</span>(Australia_booths_winner<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>PartyNm),</span>
+<span id="cb5-28">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">fillOpacity =</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot the booths, coloured by which party got the most first-preferences.</span></span>
+<span id="cb5-29">  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Layers control</span></span>
+<span id="cb5-30">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">addLayersControl</span>(</span>
+<span id="cb5-31">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">baseGroups =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"OSM (default)"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Toner Lite"</span>),</span>
+<span id="cb5-32">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">options =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">layersControlOptions</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">collapsed =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">FALSE</span>)</span>
+<span id="cb5-33">  ) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb5-34">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">addLegend</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"bottomright"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">pal =</span> pal, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">values =</span> Australia_booths_winner<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>PartyNm,</span>
+<span id="cb5-35">            <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">title =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Which party won"</span>,</span>
+<span id="cb5-36">            <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#labFormat = labelFormat(prefix = "$"),</span></span>
+<span id="cb5-37">            <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">opacity =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span></span>
+<span id="cb5-38">  )</span>
+<span id="cb5-39"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Call the map</span></span>
+<span id="cb5-40">Australia_map</span></code></pre></div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rohanalexander.com/posts/2017-07-18-mapping-the-2016-australian-election-polling-place-results/mapping-the-2016-australian-election-polling-place-results.html</guid>
+  <pubDate>Tue, 18 Jul 2017 04:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
