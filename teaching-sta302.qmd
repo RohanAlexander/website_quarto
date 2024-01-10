@@ -27,7 +27,7 @@ Essentially this course provides students with everything that they need to know
 -   Why is there so much assessment? The only way to learn this stuff is to actually do the work, and students only do the work when they are assessed. It is unfortunate, but there is no way around it.
 -   How difficult is the course? Of students that enrol, the median student drops the course. But the mode overall grade at the end of the course is an A+. The course is not difficult, but the hands-on-projects mean it is a great opporunity for you to do a lot of work. Past students have said that it set them up for success in grad school applications and job interviews.
 -   What is the format of the class? There are rarely lectures because those are not effective. You should read the relevant chapter and attempt the quiz before class. During class we will focus on examples, activities and discussion. We will also have industry guests discuss their experience.
--   You are asking about X, but you didn't teach that---what's up with that? A key skill is being able to teach yourself what you need. In general, I will probably have directed you to the materials that you should go over, but you're welcome to ask for more pointers if I've not been clear enough.
+-   You are asking about X, but you didn't explicitly teach that. In fact you're not teaching anything. We're just doing activities in class? A key skill is being able to teach yourself what you need. In general, I will probably have directed you to the materials that you should go over before class and then during class we will do activities that highlight aspects that are easy to over look, but you're welcome to ask for more pointers if I've not been clear enough.
 
 ### Learning objectives
 
@@ -57,18 +57,17 @@ Before class starts you should go through Chapter 1 "[Telling stories with data]
 ### Week 1
 
 -   [Drinking from a fire hose](https://tellingstorieswithdata.com/02-drinking_from_a_fire_hose.html)
--   Guest: TBD
 
 ### Week 2
 
 -   [Reproducible workflows](https://tellingstorieswithdata.com/03-workflow.html)
 -   [Writing research](https://tellingstorieswithdata.com/04-writing_research.html)
--   Guest: TBD
+-   Guest: Anna Li
 
 ### Week 3
 
 -   [Static communication](https://tellingstorieswithdata.com/05-static_communication.html)
--   Guest: TBD
+-   Guest: Annie Collins
 
 ### Week 4
 
@@ -143,7 +142,7 @@ Before class starts you should go through Chapter 1 "[Telling stories with data]
 |                                          |            |                                       |                                                                                                                                                                                                                                                                                                         |
 |                                          |            | Term Paper II: 13 February 2024       | Marking starts, noon, on the Thursday after submission, and you can update until then i.e. submissions made by noon, Tuesday, Week 3 can be updated until noon, Thursday, Week 3 (this is to allow you to incorporate peer review comments). Please do not make any changes after marking starts.       |
 |                                          |            |                                       |                                                                                                                                                                                                                                                                                                         |
-|                                          |            | Term Paper III: 13 March 2024         | Term Paper I: [Donaldson Paper](https://tellingstorieswithdata.com/23-assessment.html#sec-paper-one)                                                                                                                                                                                                    |
+|                                          |            | Term Paper III: 12 March 2024         | Term Paper I: [Donaldson Paper](https://tellingstorieswithdata.com/23-assessment.html#sec-paper-one)                                                                                                                                                                                                    |
 |                                          |            |                                       |                                                                                                                                                                                                                                                                                                         |
 |                                          |            |                                       | Term Paper II: [Mawson Paper](https://tellingstorieswithdata.com/23-assessment.html#sec-paper-two).                                                                                                                                                                                                     |
 |                                          |            |                                       |                                                                                                                                                                                                                                                                                                         |
@@ -151,7 +150,7 @@ Before class starts you should go through Chapter 1 "[Telling stories with data]
 +------------------------------------------+------------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Conduct peer review of Term/Final papers | 3          | Wednesdays, noon, Weeks 3, 6, 9, 12   | Conduct peer review for six other term/final papers, by creating a GitHub Issue or Pull Request. Papers will be distributed by a spreadsheet---add a link to the Issue/PR to a term paper that does not have four other entries. You will only have 24 hours to do this.                                |
 +------------------------------------------+------------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Final paper                              | 34         | Tuesday, noon, Week 12 (3 April 2024) | You must submit this paper.                                                                                                                                                                                                                                                                             |
+| Final paper                              | 34         | Tuesday, noon, Week 12 (2 April 2024) | You must submit this paper.                                                                                                                                                                                                                                                                             |
 |                                          |            |                                       |                                                                                                                                                                                                                                                                                                         |
 |                                          |            |                                       | Marking starts, noon, Friday 19 April and you can update update until then i.e. submissions made by noon, Tuesday, Week 12 can be updated until noon, Friday, 19 April (this is to allow you to incorporate peer review comments). Please do not make any changes after marking starts.                 |
 |                                          |            |                                       |                                                                                                                                                                                                                                                                                                         |
@@ -168,11 +167,11 @@ Additional details:
 -   Tutorial questions are drawn from those in the Tutorial section that follows each chapter of *Telling Stories with Data*. The general expectation (although this differs from week to week) is about two pages of written content. You should expect to know the mark within a few days of the tutorial.
 -   In general term papers require a considerable amount of work, and are due after the material has been covered in quizzes and tutorials (i.e. you would draw on knowledge tested in the quizzes, and potentially material could be re-used from the tutorial material). In general, they require original work to some extent. Papers are taken from the Papers appendix of *Telling Stories with Data* and students have access to the grading rubrics before submission.
 -   If you already have a website, please communicate with me about this early in the term so that I can let you know whether it can be used for the purposes of this submission.
--   Rubric for tutorial is:
-    -   0 - Any typos, major grammatical errors, other table stakes issues for this level. Too short.
-    -   0.25 - Grammatical errors, if relevant: tables/graphs not properly labeled, no references, other aspects that affect credibility.
-    -   0.6 - Makes some interesting and relevant points, related to course material (including required materials), but lacking in terms of structure and story/argument.
-    -   0.80 - Interesting paper that is well-structured, coherent, and credible.
+-   While they vary, a rough rubric for tutorial is:
+    -   0 - Any typos, grammatical errors, other table stakes issues for this level. Submission is too short. Other basic mistakes.
+    -   0.25 - Tables/graphs not properly labeled, no references, other aspects that affect credibility.
+    -   0.5 - Makes some interesting and relevant points, related to course material (including required materials), but lacking in terms of structure and story/argument.
+    -   0.80 - Interesting submission that is well-structured, coherent, and credible.
     -   1 - As with 0.80, but exceptional in some way.
 -   Only the best two of three term papers counts. This means each is worth 24 per cent.
 -   Peer review will occur for Term Paper I, but it is a just an optional 'practise'--students are typically not yet familiar enough with the expectations of the course so as to be able to provide valuable comments (other than noticing whether R has been cited!).

@@ -28,11 +28,13 @@ The TDW is a joint initiative between the Faculty of Information and the Departm
 	- **Gregory Zuckerman**, Wall Street Journal
 	- Gregory Zuckerman is a special writer at *The Wall Street Journal* and non-fiction author. His non-fiction books include *"The Greatest Trade Ever: The Behind-the-Scenes Story of How John Paulson Defied Wall Street and Made Financial History"*, *"The Frackers: The Outrageous Inside Story of the New Billionaire Wildcatters"*, two books for children, *"The Man Who Solved the Market: How Jim Simons Launched the Quant Revolution"* and *"A Shot to Save the World: The Inside Story of the Life-or-Death Race for a COVID-19 Vaccine"*. He has been awarded the Gerald Loeb Award, the highest honor in business journalism, three times.
 - Thursday 25 January 2024, noon - 1pm
-	- TBA
+	- **Kristina Gligorić**, Stanford University
+	- "In-class Data Analysis Replications: Teaching Students while Testing Science"
+	- Kristina Gligorić is a Postdoctoral Scholar at Stanford University Computer Science Department, advised by Dan Jurafsky at the NLP group. Previously she obtained her Ph.D. in Computer Science at EPFL, where she was advised by Robert West. Her research focuses on developing computational approaches to solve burning societal issues, understand and improve human well-being, and promote social good. She leverages large-scale textual data and digital behavioral traces and tailors computational methods drawn from AI, NLP, and causal inference. Her work has been published in top computer science conferences (such as *ACM CSCW*, *AAAI ICWSM*, and *TheWebConf*) and broad audience journals (*Nature Communications* and *Nature Medicine*). She is a Swiss National Science Foundation Fellow and University of Chicago Rising star in Data Science. She received awards for her work, including EPFL Thesis Distinction, CSCW 2021 Best Paper Honorable Mention Award, ICWSM 2021 and 2023 Best Reviewer Award, and EPFL Best Teaching Assistant Award.
 - Thursday 1 February 2024, noon - 1pm
 	- **Oliver Giesecke**, Stanford University
 	- "AI at the Frontiers of Economic Research"
-	- Oliver Giesecke is a research fellow at the Hoover Institution at Stanford University. Giesecke works on topics related to asset pricing and public finance. His recent work studies the finances of state and local governments across the United States. This includes the capital structure of state governments, the book and market equity position of city governments, and the status quo and trend of public pension obligations. For his work on city governments’ finances, he was awarded the NASDAQ OMX Award for the best paper on asset pricing. His work on pension obligations was instrumental to shaping state legislation. In addition, Giesecke has conducted a large-scale survey that elicits the retirement plan preferences of public sector employees across the United States. He is the author of the Stanford municipal finances dashboard which provides, for the first time, credit spreads and fiscal fundamentals for many state and local governments in the United States. The dashboard has received national media coverage in The Bond Buyer. Prior to his academic career, he has worked for Germany’s Federal Agency for Financial Market Stabilization (FMSA) and as a senior quantitative finance consultant. Giesecke received a Ph.D. in finance and economics from Columbia University, a Master’s in economics from the Graduate Institute in Geneva, Switzerland, and a BA from Frankfurt University, Germany.
+	- Oliver Giesecke is a research fellow at the Hoover Institution at Stanford University. Giesecke works on topics related to asset pricing and public finance. His recent work studies the finances of state and local governments across the United States. This includes the capital structure of state governments, the book and market equity position of city governments, and the status quo and trend of public pension obligations. For his work on city governments’ finances, he was awarded the NASDAQ OMX Award for the best paper on asset pricing. His work on pension obligations was instrumental to shaping state legislation. In addition, Giesecke has conducted a large-scale survey that elicits the retirement plan preferences of public sector employees across the United States. He is the author of the Stanford municipal finances dashboard which provides, for the first time, credit spreads and fiscal fundamentals for many state and local governments in the United States. The dashboard has received national media coverage in *The Bond Buyer*. Prior to his academic career, he has worked for Germany’s Federal Agency for Financial Market Stabilization (FMSA) and as a senior quantitative finance consultant. Giesecke received a Ph.D. in finance and economics from Columbia University, a Master’s in economics from the Graduate Institute in Geneva, Switzerland, and a BA from Frankfurt University, Germany.
 - Thursday 8 February 2024, noon - 1pm
 	- **Andreas Florath**, Deutsche Telekom
 	- "LLM Interactive Optimization of Open Source Python Libraries -- Case Studies and Generalization"
@@ -50,7 +52,15 @@ The TDW is a joint initiative between the Faculty of Information and the Departm
 - Thursday 14 March 2024, noon - 1pm
 	- **Tom Davidson**, Rutgers University
 - Thursday 21 March 2024, noon - 1pm
-	- TBA
+	- **Laura Plein**, University of Luxembourg
+- Thursday 28 March 2024, noon - 1pm
+	- **Cameron Buckner**, University of Houston
+	- "The philosophy of Large Language Models"
+	- Associate Professor of Philosophy at University of Houston, Author of *From Deep Learning to Rational Machines*.
+- Thursday 4 April 2024, noon - 1pm
+	- **Lenny Bronner**, The Washington Post
+	- "Election Modeling at The Washington Post"
+	- Lenny Bronner is a data scientist at *The Washington Post*, specializing in elections.
 
 ## Fall 2023
 
