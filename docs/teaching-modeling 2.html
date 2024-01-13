@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Rohan Alexander - Worlds become data</title>
+<title>Rohan Alexander - Introduction to Modeling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -212,10 +212,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#preamble" id="toc-preamble" class="nav-link active" data-scroll-target="#preamble">Preamble</a>
   <ul class="collapse">
   <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq">FAQ</a></li>
-  <li><a href="#past-iterations" id="toc-past-iterations" class="nav-link" data-scroll-target="#past-iterations">Past iterations</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
   <li><a href="#pre-requisites" id="toc-pre-requisites" class="nav-link" data-scroll-target="#pre-requisites">Pre-requisites</a></li>
-  <li><a href="#textbook" id="toc-textbook" class="nav-link" data-scroll-target="#textbook">Textbook</a></li>
+  <li><a href="#textbooks" id="toc-textbooks" class="nav-link" data-scroll-target="#textbooks">Textbooks</a></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
   </ul></li>
   <li><a href="#content" id="toc-content" class="nav-link" data-scroll-target="#content">Content</a>
   <ul class="collapse">
@@ -234,19 +234,11 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#assessment" id="toc-assessment" class="nav-link" data-scroll-target="#assessment">Assessment</a>
   <ul class="collapse">
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
-  </ul></li>
-  <li><a href="#other" id="toc-other" class="nav-link" data-scroll-target="#other">Other</a>
-  <ul class="collapse">
-  <li><a href="#children-in-the-classroom" id="toc-children-in-the-classroom" class="nav-link" data-scroll-target="#children-in-the-classroom">Children in the classroom</a></li>
-  <li><a href="#accommodations-with-regard-to-assessment" id="toc-accommodations-with-regard-to-assessment" class="nav-link" data-scroll-target="#accommodations-with-regard-to-assessment">Accommodations with regard to assessment</a></li>
-  <li><a href="#re-grading" id="toc-re-grading" class="nav-link" data-scroll-target="#re-grading">Re-grading</a></li>
-  <li><a href="#plagiarism-and-integrity" id="toc-plagiarism-and-integrity" class="nav-link" data-scroll-target="#plagiarism-and-integrity">Plagiarism and integrity</a></li>
-  <li><a href="#late-policy" id="toc-late-policy" class="nav-link" data-scroll-target="#late-policy">Late policy</a></li>
-  <li><a href="#writing" id="toc-writing" class="nav-link" data-scroll-target="#writing">Writing</a></li>
-  <li><a href="#minimum-submission-requirement" id="toc-minimum-submission-requirement" class="nav-link" data-scroll-target="#minimum-submission-requirement">Minimum submission requirement</a></li>
-  <li><a href="#letters-of-recommendation" id="toc-letters-of-recommendation" class="nav-link" data-scroll-target="#letters-of-recommendation">Letters of recommendation</a></li>
-  <li><a href="#use-of-generative-ai-in-assignments" id="toc-use-of-generative-ai-in-assignments" class="nav-link" data-scroll-target="#use-of-generative-ai-in-assignments">Use of Generative AI in assignments</a></li>
+  <li><a href="#notebook" id="toc-notebook" class="nav-link" data-scroll-target="#notebook">Notebook</a></li>
+  <li><a href="#paper-i" id="toc-paper-i" class="nav-link" data-scroll-target="#paper-i">Paper I</a></li>
+  <li><a href="#paper-ii" id="toc-paper-ii" class="nav-link" data-scroll-target="#paper-ii">Paper II</a></li>
+  <li><a href="#paper-iii" id="toc-paper-iii" class="nav-link" data-scroll-target="#paper-iii">Paper III</a></li>
+  <li><a href="#final-paper" id="toc-final-paper" class="nav-link" data-scroll-target="#final-paper">Final Paper</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -256,7 +248,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Worlds become data</h1>
+<h1 class="title">Introduction to Modeling</h1>
 </div>
 
 
@@ -275,271 +267,219 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="preamble">Preamble</h2>
 <section id="overview" class="level3">
 <h3 class="anchored" data-anchor-id="overview">Overview</h3>
-<p>To a certain extent we are wasting our time. We have a perfect model of the world—it is the world! But it is too complicated. Because of this we must simplify the world in order for it to become data. In this course we explore how we do this, and the implications.</p>
+<p>After developing comfort with the idea of how our world becomes data and everything that goes into creating a nice, tidy, analysis dataset, we may be interested to model it. This course builds on “Data science foundations” by developing the modeling side of things. Many of the results that we will obtain from our models are determined well before we ever contemplate regression, and the credibility of any conclusions relies on a robust workflow.</p>
+<p>This course takes those skills as given, and focuses on doing a good job of the modeling. The typical person completing this course is a PhD student who is looking to apply statistics to some other discipline.</p>
 </section>
-<section id="faq" class="level3">
-<h3 class="anchored" data-anchor-id="faq">FAQ</h3>
-<ul>
-<li>Can I audit this course? Sure, but it is pointless, because the only way to learn this stuff is to do the work.</li>
-<li>What is a tutorial? You write a short paper. Then you submit it. The next day, during class, we’ll discuss it.</li>
-<li>Why is there so much assessment? The only way to learn this stuff is to actually do the work, and students only do the work when they are assessed. It is unfortunate, but there is no way around it.</li>
-<li>How difficult is the course? The course is not difficult, but the hands-on-projects mean it is a lot of work.</li>
-<li>What is the format of the class? There are rarely old-school lectures because those are not effective. You should read the relevant chapter before class. During class we will focus on tutorials and discussion. We will also have industry guests discuss their experience.</li>
-</ul>
-</section>
-<section id="past-iterations" class="level3">
-<h3 class="anchored" data-anchor-id="past-iterations">Past iterations</h3>
-<ul>
-<li>2023
-<ul>
-<li><a href="pdfs/inf312-2023-syllabus.pdf">Syllabus</a></li>
-<li><a href="pdfs/inf312-2023-evals.pdf">Student evals</a></li>
-</ul></li>
-<li>2022
-<ul>
-<li><a href="pdfs/inf312-2022-syllabus.pdf">Syllabus</a></li>
-<li><a href="pdfs/inf312-2022-evals.pdf">Student evals</a></li>
-</ul></li>
-</ul>
+<section id="learning-objectives" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h3>
+<p>By the end of the course you should have three quantitative papers that can be submitted to a journal/conference. More generally you should be able to:</p>
+<ol type="1">
+<li>Engage critically with ideas and readings related to statistical modeling (demonstrated in all papers and the notebook).</li>
+<li>Conduct quantitative research in a high-quality, reproducible and ethical way (demonstrated in all papers).</li>
+<li>Clearly communicate what was done, what was found, and why in writing (demonstrated in all papers).</li>
+<li>Respectfully identify strengths and weaknesses in the data science research conducted by others (demonstrated in quizzes, and the peer review).</li>
+<li>Develop the ability to appropriately choose and apply statistical models to real-world situations (demonstrated in the final paper)</li>
+<li>Conduct all aspects of the typical data science workflow (demonstrated in all papers).</li>
+</ol>
 </section>
 <section id="pre-requisites" class="level3">
 <h3 class="anchored" data-anchor-id="pre-requisites">Pre-requisites</h3>
 <ul>
-<li>None.</li>
+<li>“Data science foundations”, or equivalent coverage of Chapters 1-13 of <a href="https://www.tellingstorieswithdata.com">Telling Stories with Data</a>.</li>
 </ul>
 </section>
-<section id="textbook" class="level3">
-<h3 class="anchored" data-anchor-id="textbook">Textbook</h3>
-<p><a href="https://www.tellingstorieswithdata.com">Telling Stories with Data</a></p>
+<section id="textbooks" class="level3">
+<h3 class="anchored" data-anchor-id="textbooks">Textbooks</h3>
+<ul>
+<li>McElreath, 2020, <em>Statistical Rethinking</em>, 2nd edition, Chapman &amp; Hall/CRC. Please purchase a print copy, which will be about about $70. The author provides a free set of lectures that we will go through, which make purchasing the book not unreasonable.</li>
+<li>Johnson, Ott, and Dogucu, 2021, <em>Bayes Rules!</em>, Chapman &amp; Hall/CRC. You are welcome to purchase a print copy, but there is also a free version online.</li>
+</ul>
+</section>
+<section id="acknowledgements" class="level3">
+<h3 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h3>
+<p>This course—especially the key feature of combining the two books—is largely based on Andrew Heiss’ ‘Bayesian Statistics’ <a href="https://bayesf22.classes.andrewheiss.com">course</a>. I have tweaked the order of content a little, added articles, and changed assessment. I am grateful for Andrew’s ideas, suggestions, and generosity.</p>
 </section>
 </section>
 <section id="content" class="level2">
 <h2 class="anchored" data-anchor-id="content">Content</h2>
+<p>Each week you should read the chapters, watch the relevant lecture, and attempt the exercises.</p>
 <section id="week-1" class="level3">
 <h3 class="anchored" data-anchor-id="week-1">Week 1</h3>
 <ul>
-<li><a href="https://tellingstorieswithdata.com/02-drinking_from_a_fire_hose.html">Drinking from a fire hose</a></li>
+<li>Read <em>Statistical Rethinking</em> Chapter 1, “The Golem of Prague”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 1, “The Golem of Prague”</li>
+<li>Read <em>Statistical Rethinking</em> Chapter 2, “Small Worlds and Large Worlds”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 1, “The (Big) Bayesian Picture”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 2, “Bayes’ Rule”</li>
+<li>Read Freedman, David, 1991, “Statistical Models and Shoe Leather” <em>Sociological Methodology</em>, Vol. 21, pp.&nbsp;291-313.</li>
 </ul>
 </section>
 <section id="week-2" class="level3">
 <h3 class="anchored" data-anchor-id="week-2">Week 2</h3>
 <ul>
-<li><a href="https://tellingstorieswithdata.com/03-workflow.html">Reproducible workflows</a></li>
-<li>Guest: Samita Prabhasavat</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 2, “The Garden of Forking Data”</li>
+<li>Read <em>Statistical Rethinking</em> Chapter 3, “Sampling the Imaginary”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 3, “The Beta-Binomial Bayesian Model”</li>
 </ul>
 </section>
 <section id="week-3" class="level3">
 <h3 class="anchored" data-anchor-id="week-3">Week 3</h3>
 <ul>
-<li><a href="https://tellingstorieswithdata.com/20-r_essentials.html">R essentials</a></li>
+<li>Read <em>Statistical Rethinking</em> Chapter 4, “Geocentric Models”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 3, “Geocentric Models”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 4, “Categories &amp; Curves”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 4, “Balance and Sequentiality in Bayesian Analyses”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 5, “Conjugate Families”</li>
 </ul>
 </section>
 <section id="week-4" class="level3">
 <h3 class="anchored" data-anchor-id="week-4">Week 4</h3>
 <ul>
-<li><a href="https://tellingstorieswithdata.com/04-writing_research.html">Writing research</a></li>
-<li>Guest: Steven Coyne - “Who Owns This? The Ethics of Copyright”</li>
+<li>Read <em>Statistical Rethinking</em> Chapter 5, “The Many Variables &amp; The Spurious Waffles”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 5, “Elemental Confounds”</li>
+<li>Read <em>Statistical Rethinking</em> Chapter 6, “The Haunted DAG &amp; The Causal Terror”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 6, “Good and Bad Controls”</li>
 </ul>
 </section>
 <section id="week-5" class="level3">
 <h3 class="anchored" data-anchor-id="week-5">Week 5</h3>
 <ul>
-<li><a href="https://tellingstorieswithdata.com/05-static_communication.html">Static communication</a></li>
+<li>Read <em>Statistical Rethinking</em> Chapter 7, “Ulysses’ Compass”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 7, “Fitting over and under”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 9, “Simple Normal Regression”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 10, “Evaluating Regression Models”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 11, “Extending the Normal Regression Model”</li>
 </ul>
 </section>
 <section id="week-6" class="level3">
 <h3 class="anchored" data-anchor-id="week-6">Week 6</h3>
 <ul>
-<li><a href="https://tellingstorieswithdata.com/06-farm.html">Farm data</a></li>
+<li>Read <em>Statistical Rethinking</em> Chapter 9, “Markov Chain Monte Carlo”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 8, “Markov Chain Monte Carlo”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 6, “Approximating the Posterior”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 7, “MCMC under the Hood”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 8, “Posterior Inference &amp; Prediction”</li>
 </ul>
 </section>
 <section id="week-7" class="level3">
 <h3 class="anchored" data-anchor-id="week-7">Week 7</h3>
 <ul>
-<li><a href="https://tellingstorieswithdata.com/07-gather.html">Gather data</a></li>
+<li>Read <em>Statistical Rethinking</em> Chapter 10, “Big Entropy and the Generalized Linear Model”</li>
+<li>Read <em>Statistical Rethinking</em> Chapter 11, “God Spiked the Integers”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 9, “Modeling events”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 10, “Counts and Hudden Confounds”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 12, “Poisson &amp; Negative Binomial Regression”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 13, “Logistic Regression”</li>
+<li>Read Burch, Tyler James, 2023, “<a href="https://tylerjamesburch.com/blog/misc/nhl-predictions">2023 NHL Playoff Predictions</a>”, April.</li>
 </ul>
 </section>
 <section id="week-8" class="level3">
 <h3 class="anchored" data-anchor-id="week-8">Week 8</h3>
 <ul>
-<li><a href="https://tellingstorieswithdata.com/08-hunt.html">Hunt data</a></li>
+<li>Read <em>Statistical Rethinking</em> Chapter 12, “Monsters and Mixtures”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 11, “Ordered Categories”</li>
 </ul>
 </section>
 <section id="week-9" class="level3">
 <h3 class="anchored" data-anchor-id="week-9">Week 9</h3>
 <ul>
-<li><a href="https://tellingstorieswithdata.com/09-clean_and_prepare.html">Clean and prepare</a></li>
+<li>Read <em>Statistical Rethinking</em> Chapter 13, “Models with Memory”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 12, “Multilevel Models”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 15, “Hierarchical Models are Exciting”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 16, “(Normal) Hierarchical Models without Predictors”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 17, “(Normal) Hierarchical Models with Predictors”</li>
 </ul>
 </section>
 <section id="week-10" class="level3">
 <h3 class="anchored" data-anchor-id="week-10">Week 10</h3>
 <ul>
-<li><a href="https://tellingstorieswithdata.com/10-store_and_share.html">Store and share</a></li>
+<li>Read <em>Statistical Rethinking</em> Chapter 14, “Adventures in Covariance”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 13, “Multilevel adventures”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 14, “Correlated features”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 18, “Non-Normal Hierarchical Regression &amp; Classification”</li>
+<li>Read <em>Bayes Rules!</em> Chapter 19, “Adding More Layers”</li>
 </ul>
 </section>
 <section id="week-11" class="level3">
 <h3 class="anchored" data-anchor-id="week-11">Week 11</h3>
 <ul>
-<li><a href="https://tellingstorieswithdata.com/11-eda.html">Exploratory data analysis</a></li>
+<li>Read <em>Statistical Rethinking</em> Chapter 15, “Missing Data and Other Opportunities”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 17, “Measurement and misclassification”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 18, “Missing Data”</li>
+<li>Read Rubin, D, 1976, “Inference and missing data”, <em>Biometrika</em>.</li>
 </ul>
 </section>
 <section id="week-12" class="level3">
 <h3 class="anchored" data-anchor-id="week-12">Week 12</h3>
 <ul>
-<li><a href="https://tellingstorieswithdata.com/12-ijalm.html">Linear models</a></li>
+<li>Read <em>Statistical Rethinking</em> Chapter 16, “Generalized Linear Madness”</li>
+<li>Read <em>Statistical Rethinking</em> Chapter 17, “Horoscopes”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 19, “Generalized Linear Madness”</li>
+<li>Watch <em>Statistical Rethinking</em> 2023 videos, Lecture 20, “Horoscopes”</li>
 </ul>
 </section>
 </section>
 <section id="assessment" class="level2">
 <h2 class="anchored" data-anchor-id="assessment">Assessment</h2>
-<section id="summary" class="level3">
-<h3 class="anchored" data-anchor-id="summary">Summary</h3>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Item</th>
-<th style="text-align: right;">Weight (%)</th>
-<th style="text-align: right;">Due date</th>
-<th style="text-align: right;">Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Quiz</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">Wednesdays, noon, Weeks 1-12</td>
-<td style="text-align: right;">Only best seven out of twelve count.</td>
-</tr>
-<tr class="even">
-<td>SQL quiz</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">Wednesday, noon, Week 6</td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="odd">
-<td>Personal website</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">Wednesday, noon, Week 9</td>
-<td style="text-align: right;">Create a personal website using Quarto and make it live via GitHub Pages. At a minimum, it must include a bio and a CV in PDF form.</td>
-</tr>
-<tr class="even">
-<td>Tutorials</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">Wednesdays, noon, Weeks 1-12</td>
-<td style="text-align: right;">Only best three out of twelve count.</td>
-</tr>
-<tr class="odd">
-<td>Term papers</td>
-<td style="text-align: right;">48</td>
-<td style="text-align: right;"><p>Wednesdays, noon, Weeks 3, 6, 9</p>
-<p>Term Paper I: 24 January 2024</p>
-<p>Term Paper II: 14 February 2024</p>
-<p>Term Paper III: 13 March 2024</p></td>
-<td style="text-align: right;"><p>You must submit Term Paper I in order to pass the course.</p>
-<p>Only best two of three term papers count.</p>
-<p>Marking starts, noon, on the Friday after submission, and you can update until then i.e.&nbsp;submissions made by noon, Wednesday, Week 3 can be updated until noon, Friday, Week 3 (this is to allow you to incorporate peer review comments). Please do not make any changes after marking starts.</p>
-<p>Term Paper I: <a href="https://tellingstorieswithdata.com/23-assessment.html#sec-paper-one">Donaldson Paper</a></p>
-<p>Term Paper II: <a href="https://tellingstorieswithdata.com/23-assessment.html#sec-paper-two">Mawson Paper</a>.</p>
-<p>Term paper III: <a href="https://tellingstorieswithdata.com/23-assessment.html#sec-paper-three">Howrah Paper</a>.</p></td>
-</tr>
-<tr class="even">
-<td>Conduct peer review of Term/Final papers</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">Thursdays, noon, Weeks 3, 6, 9, 12</td>
-<td style="text-align: right;">Conduct peer review for six other term/final papers, by creating a GitHub Issue or Pull Request. Papers will be distributed by a spreadsheet—add a link to the Issue/PR to a term paper that does not have four other entries. You will only have 24 hours to do this.</td>
-</tr>
-<tr class="odd">
-<td>Final paper</td>
-<td style="text-align: right;">34</td>
-<td style="text-align: right;">Wednesday, noon, Week 12 (3 April 2024)</td>
-<td style="text-align: right;"><p>You must submit this paper.</p>
-<p>Marking starts, noon, Monday 22 April and you can update until then i.e.&nbsp;submissions made by noon, Wednesday, Week 12 can be updated until noon, Monday, 22 April (this is to allow you to incorporate peer review comments). Please do not make any changes after marking starts. |</p>
-<p><a href="https://tellingstorieswithdata.com/23-assessment.html#sec-final-paper">Final paper</a>.</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>You must submit Term Paper 1. You must submit the Final Paper.</strong></p>
-<p>Beyond that, you have scope to pick an assessment schedule that works for you. I will take your best three of the twelve tutorials for that six per cent, and your best seven of twelve quizzes for that seven per cent. I take your two best papers from the three term papers for that 48 per cent (24 per cent for each). You get up to three percentage points for conducting peer review of other student papers, (half a percentage point per review). There is 34 per cent allocated for the Final Paper.</p>
-<p>Additional details:</p>
+<section id="notebook" class="level3">
+<h3 class="anchored" data-anchor-id="notebook">Notebook</h3>
 <ul>
-<li>Quiz questions are drawn from those in the Quiz section that follows each chapter of <em>Telling Stories with Data</em>. Some of them are multiple choice, and you should expect to know the mark within a few days of submission. Please do them before coming to class.</li>
-<li>Tutorial questions are drawn from those in the Tutorial section that follows each chapter of <em>Telling Stories with Data</em>. The general expectation (although this differs from week to week) is about two pages of written content. You should expect to know the mark within a few days of the tutorial.</li>
-<li>In general term papers require a considerable amount of work, and are due after the material has been covered in quizzes and tutorials (i.e.&nbsp;you would draw on knowledge tested in the quizzes, and potentially material could be re-used from the tutorial material). In general, they require original work to some extent. Papers are taken from the Papers appendix of <em>Telling Stories with Data</em> and students have access to the grading rubrics before submission.</li>
-<li>If you already have a website, please communicate with me about this early in the term so that I can let you know whether it can be used for the purposes of this submission.</li>
-<li>While they vary, a rough rubric for tutorial is:
+<li>Due date: Try to keep this updated weekly, on average, over the course of the term.</li>
+<li>Task: Use Quarto to keep a notebook of what you read in the style of <a href="https://bayesf22-notebook.classes.andrewheiss.com/bayes-rules/02-chapter.html">this one</a> by Andrew Heiss. In particular, please add notes as you read/watch, and attempt at least half the exercises.</li>
+<li>Weight: 20 per cent.</li>
+</ul>
+</section>
+<section id="paper-i" class="level3">
+<h3 class="anchored" data-anchor-id="paper-i">Paper I</h3>
 <ul>
-<li>0 - Any typos, grammatical errors, other table stakes issues for this level. Submission is too short. Other basic mistakes.</li>
-<li>0.25 - Tables/graphs not properly labeled, no references, other aspects that affect credibility.</li>
-<li>0.5 - Makes some interesting and relevant points, related to course material (including required materials), but lacking in terms of structure and story/argument.</li>
-<li>0.80 - Interesting submission that is well-structured, coherent, and credible.</li>
-<li>1 - As with 0.80, but exceptional in some way.</li>
+<li>Due date: Thursday, noon, Week 1.
+<ul>
+<li>Marking starts, noon, on the following Monday, and you can update until then to incorporate peer review comments. Please do not make any changes after marking starts.</li>
 </ul></li>
-<li>Only the best two of three term papers counts. This means each is worth 24 per cent.</li>
-<li>Peer review will occur for Term Paper I, but it is a just an optional ‘practise’–students are typically not yet familiar enough with the expectations of the course so as to be able to provide valuable comments (other than noticing whether R has been cited!).</li>
+<li>Task: <a href="https://tellingstorieswithdata.com/23-assessment.html#sec-paper-one">Donaldson Paper</a></li>
+<li>Weight: 10 per cent.</li>
+<li>You must do this individually.</li>
+<li>You do not need to do this again if you already did it as part of “Data science foundations”. In that case, the weight will be redistributed to Papers II and III.</li>
 </ul>
 </section>
-</section>
-<section id="other" class="level2">
-<h2 class="anchored" data-anchor-id="other">Other</h2>
-<section id="children-in-the-classroom" class="level3">
-<h3 class="anchored" data-anchor-id="children-in-the-classroom">Children in the classroom</h3>
-<p>Babies (bottle-feeding, nursing, etc) are welcome in class as often as necessary. You are welcome to take breaks to feed them or express milk as needed, either in the classroom or elsewhere including <a href="https://familycare.utoronto.ca/childcare/breastfeeding-at-u-of-t/">here</a>. A list of baby change stations is also available <a href="https://familycare.utoronto.ca/childcare/baby-change-stations-at-u-of-t/">here</a>. Please communicate with me so that I can make sure that we have regular breaks to accommodate this.</p>
-<p>For toddlers and older children, I understand that unexpected disruptions in childcare/school can happen. You are welcome to bring your child to class in order to cover unforeseen gaps.</p>
-</section>
-<section id="accommodations-with-regard-to-assessment" class="level3">
-<h3 class="anchored" data-anchor-id="accommodations-with-regard-to-assessment">Accommodations with regard to assessment</h3>
-<p>Please do <strong>not</strong> reveal your personal or medical information to me. I understand that illness or personal emergencies can happen from time to time. The following accommodations to assessment requirements exist to provide for those situations.</p>
-<p>Straight-forward (will automatically apply to all students—there is no need to ask for these):</p>
+<section id="paper-ii" class="level3">
+<h3 class="anchored" data-anchor-id="paper-ii">Paper II</h3>
 <ul>
-<li>Quiz: Only your best seven quizzes count.</li>
-<li>Tutorial: Only your best three tutorials count.</li>
-<li>Term Papers: Only your best two term papers count.</li>
-</ul>
-<p>So for those, if you have a situation, then just do not submit (or in the case of Term Paper I, just submit a blank page).</p>
-<p>Slightly more involved:</p>
+<li>Due date: Thursday, noon, Week 4.
 <ul>
-<li>Term Paper I: You must submit something for Term Paper I, even if it gets zero. If you have a medical emergency that makes it impossible for you to submit even a blank page for Term Paper I, then please email me. In that situation one of the remaining term papers must be done individually to ensure fairness with the rest of the class.</li>
-<li>Peer review: No accommodation or late submission is possible for this because it would hold up the rest of the class. That said, there are many opportunities to get the peer review marks, so if you cannot do any for a particular paper, then just do the others. If you have a medical emergency that makes this impossible, then please email me and cc your faculty/department/college advisor so that we can work out an alternative plan.</li>
-<li>Final paper: The final paper is a critical piece of assessment. It is also up against deadlines for submission of grades (especially for graduating students). If you have a medical emergency that makes it impossible for you to submit before marking begins, then I <strong>may</strong> be able to grant you an extension of up to three days. Email me and cc your faculty/department/college advisor so that we can work out a alternative plan.</li>
+<li>Marking starts, noon, on the following Monday, and you can update until then to incorporate peer review comments. Please do not make any changes after marking starts.</li>
+</ul></li>
+<li>Task: <a href="https://tellingstorieswithdata.com/23-assessment.html#sec-murrumbidgee">Murrumbidgee Paper</a></li>
+<li>You are welcome to work in teams up to size three.</li>
+<li>Weight: 20 per cent.</li>
+<li>The mark is conditional on the paper being submitted to a journal/conference within two weeks of marking (being rejected is fine—it just has to have been submitted).</li>
 </ul>
 </section>
-<section id="re-grading" class="level3">
-<h3 class="anchored" data-anchor-id="re-grading">Re-grading</h3>
-<p>Marking mistakes happen and I want to correct those. Requests to have your work re-graded will <strong>not</strong> be accepted within 24 hours of the release of grades. This is to give you a chance to reflect. Similarly, requests to have your work re-graded more than seven days after the release of the grades will not be accepted. This is to ensure the course runs smoothly.</p>
-<p>Inside that 1-7 day period if you would like to request a re-grade, please email rohan.alexander@utoronto.ca and use the subject line “STA302: re-grade request”. Please specify where the marking mistake was made in relation to the marking guide. The entire assessment will be re-marked and it is possible that your grade could reduce.</p>
-<p>Plenty of students get 0 on the first paper, but go on to get an A+ overall in the course. The nature of the work in this course requires students to adjust from what is expected in other courses, and the forgiving assessment weighting is designed to allow this.</p>
-</section>
-<section id="plagiarism-and-integrity" class="level3">
-<h3 class="anchored" data-anchor-id="plagiarism-and-integrity">Plagiarism and integrity</h3>
-<p>Please do not plagiarize. In particular, be careful to acknowledge the source of code—if it is extensive then through proper citation and if it is just a couple of lines from Stack Overflow then in a comment immediately next to the code.</p>
-<p>You are responsible for knowing the content of the University of Toronto’s Code of Behaviour on Academic Matters.</p>
-<p>Academic offenses include (but are not limited to) plagiarism, cheating, copying code without acknowledgement, purchasing labor for assessments (of any kind). Academic offenses will be taken seriously and dealt with accordingly. If you have any questions about what is or is not permitted in this course, please just email me.</p>
-<p>Please consult the University’s <a href="http://academicintegrity.utoronto.ca/">site</a> on Academic Integrity. Please also see the definition of plagiarism in section B.I.1.(d) of the University’s Code of Behaviour on Academic Matters available <a href="http://www.governingcouncil.utoronto.ca/Assets/Governing+Council+Digital+Assets/Policies/PDF/ppjun011995.pdf">here</a>. Please read the Code. Please review Cite it Right and if you require further clarification, consult the site <a href="http://advice.writing.utoronto.ca/wp-content/uploads/sites/2/how-not-to-plagiarize.pdf">How Not to Plagiarize</a>.</p>
-</section>
-<section id="late-policy" class="level3">
-<h3 class="anchored" data-anchor-id="late-policy">Late policy</h3>
-<p>If no extension has been granted and no accommodation applies, then late submissions will not be accepted.</p>
-</section>
-<section id="writing" class="level3">
-<h3 class="anchored" data-anchor-id="writing">Writing</h3>
-<p>Papers and reports should be well-written, well-organized, and easy to follow. They should flow easily from one point to the next. They should have proper sentence structure, spelling, vocabulary, and grammar. Each point should be articulated clearly and completely without being overly verbose. Papers should demonstrate your understanding of the topics you are studying in the course and your confidence in using the terms, techniques and issues you have learned. As always, references must be properly included and cited. If you have concerns about your ability to do any of this then please make use of the writing support provided to the faculty, colleges and the SGS Graduate Centre for Academic Communication.</p>
-</section>
-<section id="minimum-submission-requirement" class="level3">
-<h3 class="anchored" data-anchor-id="minimum-submission-requirement">Minimum submission requirement</h3>
-<p>If you are going to not be able to submit at least two term papers, and/or be unable to submit the final paper then it would be unfair on the other students to allow you to pass the course. But it is not a situation that I want to get into. Please ensure you and your college registrar or faculty/department advisor get in touch with me as early as possible if this may be the case for you so that we can work out a solution.</p>
-</section>
-<section id="letters-of-recommendation" class="level3">
-<h3 class="anchored" data-anchor-id="letters-of-recommendation">Letters of recommendation</h3>
-<p>I am happy to write letters for students who get both an A+ overall and an A+ in the final paper. This allows me to write a strong letter. If you are in this position after the class ends and want me to write a letter, please send me a request early.</p>
-</section>
-<section id="use-of-generative-ai-in-assignments" class="level3">
-<h3 class="anchored" data-anchor-id="use-of-generative-ai-in-assignments">Use of Generative AI in assignments</h3>
-<p>In general, students are encouraged to use generative AI tools as a starting point. Specific course policies are:</p>
+<section id="paper-iii" class="level3">
+<h3 class="anchored" data-anchor-id="paper-iii">Paper III</h3>
 <ul>
-<li>Code: Students may wish to use generative AI tools to aid in initial development and writing of code to answer assignment questions and carry out the research project analysis. If this is the case, the use of such tools should be explicitly acknowledged in the submitted work, and the relevant prompts and responses should be included in a text file in the repo. All code, regardless of how it is generated must be thoroughly commented and explained. Failure to do so may result in penalties.</li>
-<li>Written work: Using generative AI tools to generate written answers to assignment questions of text contained in the final research project is prohibited in this course. Representing as one’s own an idea, or expression of an idea, that was AI-generated may be considered an academic offense in this course. However, you are welcome to use it to generate a first draft, which you then completely edit. Again, if you use such tools, it should be explicitly acknowledged in the submitted work, and the relevant prompts and responses should be included in a text file in the repo.</li>
+<li>Due date: Thursday, noon, Week 8.
+<ul>
+<li>Marking starts, noon, on the following Monday, and you can update until then to incorporate peer review comments. Please do not make any changes after marking starts.</li>
+</ul></li>
+<li>Task: <a href="https://tellingstorieswithdata.com/23-assessment.html#sec-spadina">Spadina Paper</a> or <a href="https://tellingstorieswithdata.com/23-assessment.html#sec-paper-five">Spofforth Paper</a></li>
+<li>You are welcome to work in teams up to size three.</li>
+<li>Weight: 20 per cent.</li>
+<li>The mark is conditional on the paper being submitted to a journal/conference within two weeks of marking (being rejected is fine—it just has to have been submitted).</li>
 </ul>
-<p>This course policy is designed to promote your learning and intellectual development and to help you reach course learning outcomes.</p>
+</section>
+<section id="final-paper" class="level3">
+<h3 class="anchored" data-anchor-id="final-paper">Final Paper</h3>
+<ul>
+<li>Due date: Thursday, noon, Week 12.
+<ul>
+<li>Marking starts, noon, two weeks after this date, and you can update update until then to allow you to incorporate peer review comments. Please do not make any changes after marking starts.</li>
+</ul></li>
+<li>Task: <a href="https://tellingstorieswithdata.com/23-assessment.html#sec-final-paper">Final Paper</a></li>
+<li>You must do this individually.</li>
+<li>Weight: 30 per cent.</li>
+<li>The mark is conditional on the paper being submitted to a journal/conference within two weeks of marking (being rejected is fine—it just has to have been submitted).</li>
+</ul>
 
 
 </section>
