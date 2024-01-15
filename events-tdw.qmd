@@ -43,7 +43,9 @@ The TDW is a joint initiative between the Faculty of Information and the Departm
 	- "Using Great Tables to Make Presentable Tables in Python"
 	- Rich is a software engineer at Posit, PBC (formerly RStudio). He focuses on making useful R and (more lately) Python packages for data analysis and presentation workflows.
 - Thursday 22 February 2024, noon - 1pm
-	- No meeting
+	- **Jessica Otis**, George Mason University
+	- "By the Numbers: Numeracy, Religion, and the Quantitative Transformation of Early Modern England"
+	- Dr Jessica Marie Otis is Assistant Professor of History and Director of Public Projects at the Roy Rosenzweig Center for History and New Media at George Mason University. She is the author of the new book "By the Numbers: Numeracy, Religion, and the Quantitative Transformation of Early Modern England" published by Oxford University Press.
 - Thursday 29 February 2024, noon - 1pm
 	- **Sky CH-Wang**, Columbia University
 - Thursday 7 March 2024, noon - 1pm
