@@ -51,12 +51,12 @@ Before class starts you should go through Chapter 1 "[Telling stories with data]
 
 -   [Reproducible workflows](https://tellingstorieswithdata.com/03-workflow.html)
 -   [Writing research](https://tellingstorieswithdata.com/04-writing_research.html)
--   Guest: Anna Li
+-   Guest: Anna Li.
 
 ### Week 3
 
 -   [Static communication](https://tellingstorieswithdata.com/05-static_communication.html)
--   Guest: Annie Collins
+-   Guest: Annie Collins.
 
 ### Week 4
 
@@ -67,14 +67,14 @@ Before class starts you should go through Chapter 1 "[Telling stories with data]
 ### Week 5
 
 -   [Hunt data](https://tellingstorieswithdata.com/08-hunt.html)
--   Guest: TBD
+-   Guest: Bradley Congelio - "NFL Analytics"
 
 ### Week 6
 
 -   [Clean and prepare](https://tellingstorieswithdata.com/09-clean_and_prepare.html)
 -   [Store and share](https://tellingstorieswithdata.com/10-store_and_share.html)
 -   [Missing data](https://tellingstorieswithdata.com/11-eda.html#missing-data)
--   Guest: TBD
+-   Guest: Dory Abelman - "Writing masterclass"
 
 ### Reading Week
 
