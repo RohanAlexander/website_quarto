@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Rohan Alexander - Methods of Data Analysis I</title>
+<title>Rohan Alexander - Applications of LLMs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -209,15 +209,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#preamble" id="toc-preamble" class="nav-link active" data-scroll-target="#preamble">Preamble</a>
-  <ul class="collapse">
-  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#past-iterations" id="toc-past-iterations" class="nav-link" data-scroll-target="#past-iterations">Past iterations</a></li>
-  <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq">FAQ</a></li>
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
-  <li><a href="#textbook" id="toc-textbook" class="nav-link" data-scroll-target="#textbook">Textbook</a></li>
-  <li><a href="#languages" id="toc-languages" class="nav-link" data-scroll-target="#languages">Languages</a></li>
-  </ul></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#pre-requisites" id="toc-pre-requisites" class="nav-link" data-scroll-target="#pre-requisites">Pre-requisites</a></li>
   <li><a href="#content" id="toc-content" class="nav-link" data-scroll-target="#content">Content</a>
   <ul class="collapse">
   <li><a href="#week-1" id="toc-week-1" class="nav-link" data-scroll-target="#week-1">Week 1</a></li>
@@ -226,7 +219,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#week-4" id="toc-week-4" class="nav-link" data-scroll-target="#week-4">Week 4</a></li>
   <li><a href="#week-5" id="toc-week-5" class="nav-link" data-scroll-target="#week-5">Week 5</a></li>
   <li><a href="#week-6" id="toc-week-6" class="nav-link" data-scroll-target="#week-6">Week 6</a></li>
-  <li><a href="#reading-week" id="toc-reading-week" class="nav-link" data-scroll-target="#reading-week">Reading Week</a></li>
   <li><a href="#week-7" id="toc-week-7" class="nav-link" data-scroll-target="#week-7">Week 7</a></li>
   <li><a href="#week-8" id="toc-week-8" class="nav-link" data-scroll-target="#week-8">Week 8</a></li>
   <li><a href="#week-9" id="toc-week-9" class="nav-link" data-scroll-target="#week-9">Week 9</a></li>
@@ -236,9 +228,10 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#assessment" id="toc-assessment" class="nav-link" data-scroll-target="#assessment">Assessment</a>
   <ul class="collapse">
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#notebook" id="toc-notebook" class="nav-link" data-scroll-target="#notebook">Notebook</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">Application</a></li>
+  <li><a href="#final-paper" id="toc-final-paper" class="nav-link" data-scroll-target="#final-paper">Final Paper</a></li>
   </ul></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   </ul>
 </nav>
     </div>
@@ -247,7 +240,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Methods of Data Analysis I</h1>
+<h1 class="title">Applications of LLMs</h1>
 </div>
 
 
@@ -262,248 +255,160 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="preamble" class="level2">
-<h2 class="anchored" data-anchor-id="preamble">Preamble</h2>
-<section id="overview" class="level3">
-<h3 class="anchored" data-anchor-id="overview">Overview</h3>
-<p>“Methods”, “Data”, “Analysis”—we consider such loaded words in this course! What is data? What does it mean to do analysis? And what methods? The very core of statistical sciences!</p>
-<p>This course develops in students an appreciation for how our world becomes data, what to do in the face of overwhelming options for the analysis of that data, and how to do all this in a way that provides value to others. In addition, by the end of the course, students should be able to understand the mathematical aspects of linear regression and inference for regression models.</p>
-</section>
-<section id="past-iterations" class="level3">
-<h3 class="anchored" data-anchor-id="past-iterations">Past iterations</h3>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>The purpose of this course is to develop students who can:</p>
 <ul>
-<li>2024
+<li>understand Large Language Models (LLMs) sufficiently to be able to use them;</li>
+<li>work productively to develop and implement an LLM-based application; and</li>
+<li>attract users to that application, to an extent that they are able to conduct some evaluation and write a paper about it.</li>
+</ul>
+<p>To borrow the YCombinator motto - this course develops students who can build something (based on LLMs that) people want.</p>
+<p>Students are expected to develop:</p>
 <ul>
-<li><a href="pdfs/sta302-2024-syllabus.pdf">Syllabus</a></li>
-<li>Student evals - TBD</li>
-</ul></li>
+<li>an understanding of LLMs, and their evolving place in the world;</li>
+<li>a hacker mindset focused on building something;</li>
+<li>the ability to build an application</li>
+<li>exceptional written and verbal communication skills; and</li>
+<li>contribute in some small way to our understanding of something related to NLP, ideally LLMs.</li>
 </ul>
 </section>
-<section id="faq" class="level3">
-<h3 class="anchored" data-anchor-id="faq">FAQ</h3>
+<section id="pre-requisites" class="level2">
+<h2 class="anchored" data-anchor-id="pre-requisites">Pre-requisites</h2>
 <ul>
-<li>Can I audit this course? Sure, but it is pointless, because the only way to learn this stuff is to do the work.</li>
-<li>Why is there so much assessment? The only way to learn this stuff is to actually do the work, and students only do the work when they are assessed. It is unfortunate, but there is no way around it.</li>
-<li>How difficult is the course? Of students that enrol, the median student drops the course. But the mode overall grade at the end of the course is an A+. The course is not difficult, but the hands-on-projects mean it is a great opportunity for you to do a lot of work. Past students have said that it set them up for success in grad school applications and job interviews.</li>
-<li>What is the format of the class? There are rarely lectures because those are not effective. You should read the relevant chapter and attempt the quiz before class. During class we will focus on examples, activities and discussion. We will also have industry guests discuss their experience.</li>
-<li>You are asking about X, but you didn’t explicitly teach that. In fact you’re not teaching anything. We’re just doing activities in class? A key skill is being able to teach yourself what you need. In general, I will probably have directed you to the materials that you should go over before class and then during class we will do activities that highlight aspects that are easy to over look, but you’re welcome to ask for more pointers if I’ve not been clear enough.</li>
+<li>Comfortable with Python, GitHub, APIs, and data science fundamentals.</li>
 </ul>
-</section>
-<section id="learning-objectives" class="level3">
-<h3 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h3>
-<p>The purpose of the course is to develop the core skills to do with methods of data analysis that are applicable across academia and industry. By the end of the course, you should be able to:</p>
-<ol type="1">
-<li>Engage critically with ideas and readings in data analysis (demonstrated in all papers but also mini-essays and quizzes).</li>
-<li>Conduct data analysis research in a reproducible and ethical way (demonstrated in all papers).</li>
-<li>Clearly communicate what was done, what was found, and why in writing (demonstrated in all papers).</li>
-<li>Understand what constitutes ethical high-quality data analysis practice, especially reproducibility and respect for those that underpin our data (demonstrated in all papers and selected quizzes).</li>
-<li>Respectfully identify strengths and weaknesses in the data analysis research conducted by others (demonstrated in quizzes, and the peer review).</li>
-<li>Develop the ability to appropriately choose and apply statistical models to real-world situations (demonstrated in the final paper)</li>
-<li>Conduct all aspects of the typical data analysis workflow (demonstrated in all papers).</li>
-<li>Reflect effectively on your own learning and professional development (demonstrated in some mini-essays and quizzes).</li>
-</ol>
-</section>
-<section id="textbook" class="level3">
-<h3 class="anchored" data-anchor-id="textbook">Textbook</h3>
-<p><a href="https://www.tellingstorieswithdata.com">Telling Stories with Data</a></p>
-</section>
-<section id="languages" class="level3">
-<h3 class="anchored" data-anchor-id="languages">Languages</h3>
-<p>In this course you will use R, Git and GitHub, and a little bit of Python and SQL.</p>
-</section>
 </section>
 <section id="content" class="level2">
 <h2 class="anchored" data-anchor-id="content">Content</h2>
-<p>Before class starts you should go through Chapter 1 “<a href="https://tellingstorieswithdata.com/01-introduction.html">Telling stories with data</a>” and Appendix A “<a href="https://tellingstorieswithdata.com/20-r_essentials.html">R essentials</a>”.</p>
 <section id="week-1" class="level3">
 <h3 class="anchored" data-anchor-id="week-1">Week 1</h3>
 <ul>
-<li><a href="https://tellingstorieswithdata.com/02-drinking_from_a_fire_hose.html">Drinking from a fire hose</a></li>
+<li>Karpathy, Andrej, 2013, “Intro to Large Language Models”, YouTube, 22 November, https://youtu.be/zjkBMFhNj_g.</li>
+<li>Chollet, François, 2021, <em>Deep Learning with Python</em>, Chapters 1-3.</li>
+<li>Tunstall, von Werra and Wolf, 2022, <em>Natural Language Processing with Transformers</em>, Chapters 1 and 2.</li>
 </ul>
 </section>
 <section id="week-2" class="level3">
 <h3 class="anchored" data-anchor-id="week-2">Week 2</h3>
 <ul>
-<li><a href="https://tellingstorieswithdata.com/03-workflow.html">Reproducible workflows</a></li>
-<li><a href="https://tellingstorieswithdata.com/04-writing_research.html">Writing research</a></li>
-<li>Guest: Anna Li.</li>
+<li>Karpathy, Andrej, 2022, <em>Neural Networks: Zero to Hero</em>, “The spelled-out intro to neural networks and backpropagation: building micrograd”, https://youtu.be/VMj-3S1tku0.</li>
+<li>Chollet, François, 2021, <em>Deep Learning with Python</em>, Chapters 4 and 5.</li>
+<li>Tunstall, von Werra and Wolf, 2022, <em>Natural Language Processing with Transformers</em>, Chapter 3.</li>
+<li>Bolukbasi, Tolga, Kai-Wei Chang, James Y. Zou, Venkatesh Saligrama and Adam T. Kalai, 2016, ‘Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings’, <em>Advances in Neural Information Processing Systems</em>, 29 (NIPS 2016), http://papers.nips.cc/paper/6228-man-is-to-computer-programmer-as-woman-is-to-homemaker-d.</li>
 </ul>
 </section>
 <section id="week-3" class="level3">
 <h3 class="anchored" data-anchor-id="week-3">Week 3</h3>
 <ul>
-<li><a href="https://tellingstorieswithdata.com/05-static_communication.html">Static communication</a></li>
-<li>Guest: Annie Collins.</li>
+<li>Alammar, Jay, 2020, ‘How GPT3 Works - Visualizations and Animations’, 27 July, https://jalammar.github.io/how-gpt3-works-visualizations-animations/</li>
+<li>Karpathy, Andrej, 2022, <em>Neural Networks: Zero to Hero</em>, “The spelled-out intro to language modeling: building makemore”.</li>
+<li>Chollet, François, 2021, <em>Deep Learning with Python</em>, Chapters 6 and 7.</li>
+<li>Tunstall, von Werra and Wolf, 2022, <em>Natural Language Processing with Transformers</em>, Chapters 4 and 5.</li>
+<li>Hutchinson, Ben, Vinodkumar Prabhakaran, Emily Denton, Kellie Webster, Yu Zhong, and Stephen Denuyl, 2020, ‘Social Biases in NLP Models as Barriers forPersons with Disabilities’, <em>arXiv</em>, https://arxiv.org/abs/2005.00813.</li>
 </ul>
 </section>
 <section id="week-4" class="level3">
 <h3 class="anchored" data-anchor-id="week-4">Week 4</h3>
 <ul>
-<li><a href="https://tellingstorieswithdata.com/06-farm.html">Farm data</a></li>
-<li><a href="https://tellingstorieswithdata.com/07-gather.html">Gather data</a></li>
-<li>Guest: Steven Coyne - “Who Owns This? The Ethics of Copyright”</li>
+<li>Karpathy, Andrej, 2022, <em>Neural Networks: Zero to Hero</em>, “Building makemore Part 2: MLP”.</li>
+<li>Chollet, François, 2021, <em>Deep Learning with Python</em>, Chapter 11.</li>
+<li>Tunstall, von Werra and Wolf, 2022, <em>Natural Language Processing with Transformers</em>, Chapters 6 and 7.</li>
+<li>Solaiman, Irene, Miles Brundage, Jack Clark, Amanda Askell, ArielHerbert-Voss, Jeff Wu, Alec Radford, Gretchen Krueger, Jong Wook Kim, SarahKreps, Miles McCain, Alex Newhouse, Jason Blazakis, Kris McGuffie, Jasmine Wang, 2019, ‘Release Strategies and the Social Impacts of Language Models’,<em>arXiv</em>, https://arxiv.org/abs/1908.09203.</li>
 </ul>
 </section>
 <section id="week-5" class="level3">
 <h3 class="anchored" data-anchor-id="week-5">Week 5</h3>
 <ul>
-<li><a href="https://tellingstorieswithdata.com/08-hunt.html">Hunt data</a></li>
-<li>Guest: Bradley Congelio - “NFL Analytics”</li>
+<li>Karpathy, Andrej, 2022, <em>Neural Networks: Zero to Hero</em>, “Building makemore Part 3: Activations &amp; Gradients, BatchNorm”.</li>
+<li>Chollet, François, 2021, <em>Deep Learning with Python</em>, Chapters 12 and 13.</li>
+<li>Tunstall, von Werra and Wolf, 2022, <em>Natural Language Processing with Transformers</em>, Chapter 8.</li>
+<li>Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser and Illia Polosukhin, 2017, ‘Attention Is All You Need’, <em>arXiv</em>, http://arxiv.org/abs/1706.03762.</li>
+<li>Tatman, Rachel, 2020, ‘What I Won’t Build’, <em>Widening NLP Workshop 2020</em>, Keynote address, 5 July, https://slideslive.com/38929585/what-i-wont-build and http://www.rctatman.com/talks/what-i-wont-build.</li>
 </ul>
 </section>
 <section id="week-6" class="level3">
 <h3 class="anchored" data-anchor-id="week-6">Week 6</h3>
 <ul>
-<li><a href="https://tellingstorieswithdata.com/09-clean_and_prepare.html">Clean and prepare</a></li>
-<li><a href="https://tellingstorieswithdata.com/10-store_and_share.html">Store and share</a></li>
-<li><a href="https://tellingstorieswithdata.com/11-eda.html#missing-data">Missing data</a></li>
-<li>Guest: Dory Abelman - “Writing masterclass”</li>
+<li>Karpathy, Andrej, 2022, <em>Neural Networks: Zero to Hero</em>, “Building makemore Part 4: Becoming a Backprop Ninja”.</li>
+<li>Boykis, Vicky, <em>What are embeddings?</em>, https://vickiboykis.com/what_are_embeddings/</li>
+<li>Rush, Alexander, 2018, ‘The Annotated Transformer’, https://nlp.seas.harvard.edu/2018/04/03/attention.html</li>
+<li>Zhao, Jieyu, Tianlu Wang, Mark Yatskar, Vicente Ordonez and Kai-Wei Chang,2017, ‘Men Also Like Shopping: Reducing Gender Bias Amplification using Corpus-level Constraints’, <em>Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing</em>, pp.&nbsp;2979–2989, https://aclweb.org/anthology/D17-1323.pdf.</li>
 </ul>
-</section>
-<section id="reading-week" class="level3">
-<h3 class="anchored" data-anchor-id="reading-week">Reading Week</h3>
 </section>
 <section id="week-7" class="level3">
 <h3 class="anchored" data-anchor-id="week-7">Week 7</h3>
 <ul>
-<li><a href="https://tellingstorieswithdata.com/12-ijalm.html">Linear models</a></li>
-<li>Guest: TBD</li>
+<li>Karpathy, Andrej, 2022, <em>Neural Networks: Zero to Hero</em>, “Building makemore Part 5: Building a WaveNet”.</li>
+<li>Alammar, Jay, 2018, ‘The Illustrated Transformer’, http://jalammar.github.io/illustrated-transformer/.</li>
+<li>Manning, Vaswani and Huang, 2019, ‘Stanford CS224N: NLP with Deep Learning | Winter 2019 | Lecture 14 – Transformers and Self-Attention’, https://www.youtube.com/watch?v=5vcj8kSwBCY&amp;list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z&amp;index=14&amp;ab_channel=stanfordonline.</li>
+<li>Uszkoreit, Jakob, 2017, ‘Transformer: A Novel Neural Network Architecture for Language Understanding’, Google AI Blog, 31 August, https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html</li>
 </ul>
 </section>
 <section id="week-8" class="level3">
 <h3 class="anchored" data-anchor-id="week-8">Week 8</h3>
 <ul>
-<li><a href="https://tellingstorieswithdata.com/12-ijalm.html">Linear models</a></li>
-<li>Guest: TBD</li>
+<li>Karpathy, Andrej, 2022, <em>Neural Networks: Zero to Hero</em>, “Let’s build GPT: from scratch, in code, spelled out”.</li>
+<li>Bender, Emily M. and Koller, Alexander, 2020, ‘Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data’, *Proceedings of the 58th Annual Meeting of the</li>
+<li>Seibel Michael, “How to build an MVP”, https://www.youtube.com/watch?v=QRZ_l7cVzzU.</li>
 </ul>
 </section>
 <section id="week-9" class="level3">
 <h3 class="anchored" data-anchor-id="week-9">Week 9</h3>
 <ul>
-<li>Mid-term</li>
+<li>Seibel Michael, “Building product”, https://www.youtube.com/watch?v=C27RVio2rOs.</li>
+<li>Jacob Devlin and Ming-Wei Chang, 2018, ‘Open Sourcing BERT: State-of-the-Art Pre-training for Natural Language Processing’, 2 November, <em>Google AI Blog</em>, https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html.</li>
+<li>Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova, 2018, ‘BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding’, <em>arXiv</em>, https://arxiv.org/abs/1810.04805.</li>
 </ul>
 </section>
 <section id="week-10" class="level3">
 <h3 class="anchored" data-anchor-id="week-10">Week 10</h3>
 <ul>
-<li><a href="https://tellingstorieswithdata.com/13-ijaglm.html">Generalized linear models</a></li>
-<li>Guest: TBD</li>
+<li>Alströmer, Gustaf, “How to get your first customers”, https://www.youtube.com/watch?v=hyYCn_kAngI</li>
+<li>Tom B. Brown etc, 2020, ‘Language Models are Few-Shot Learners’, <em>arXiv</em>, https://arxiv.org/abs/2005.14165</li>
 </ul>
 </section>
 <section id="week-11" class="level3">
 <h3 class="anchored" data-anchor-id="week-11">Week 11</h3>
 <ul>
-<li><a href="https://tellingstorieswithdata.com/27-prediction.html">Prediction</a></li>
-<li>We will focus on trying to predict the upcoming US presidential election, with a view to students being able to write a final paper that could be submitted to the <a href="https://www.cambridge.org/core/journals/ps-political-science-and-politics/announcements/call-for-papers/special-issue-on-forecasting-the-2024-us-elections">PS: Political Science &amp; Politics special issue</a>.</li>
-<li>Guest: TBD</li>
+<li>None.</li>
 </ul>
 </section>
 <section id="week-12" class="level3">
 <h3 class="anchored" data-anchor-id="week-12">Week 12</h3>
 <ul>
-<li><a href="https://tellingstorieswithdata.com/15-mrp.html">MRP</a> and</li>
-<li>Guest: TBD</li>
+<li>None.</li>
 </ul>
 </section>
 </section>
 <section id="assessment" class="level2">
 <h2 class="anchored" data-anchor-id="assessment">Assessment</h2>
-<section id="summary" class="level3">
-<h3 class="anchored" data-anchor-id="summary">Summary</h3>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Item</th>
-<th style="text-align: right;">Weight (%)</th>
-<th style="text-align: right;">Due date</th>
-<th style="text-align: right;">Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Quiz</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">Tuesdays, noon, Weeks 1-12</td>
-<td style="text-align: right;">Only best seven out of twelve count.</td>
-</tr>
-<tr class="even">
-<td>SQL quiz</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">Tuesday, noon, Week 6</td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="odd">
-<td>Personal website</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">Tuesday, noon, Week 9</td>
-<td style="text-align: right;">Create a personal website using Quarto and make it live via GitHub Pages. At a minimum, it must include a bio and a CV in PDF form.</td>
-</tr>
-<tr class="even">
-<td>Mini-essays</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">Tuesdays, noon, Weeks 1-12</td>
-<td style="text-align: right;">Only best three out of twelve count.</td>
-</tr>
-<tr class="odd">
-<td>Term papers</td>
-<td style="text-align: right;">46</td>
-<td style="text-align: right;"><p>Tuesdays, noon, Weeks 3, 6, 9</p>
-<p>Term Paper I: 23 January 2024</p>
-<p>Term Paper II: 13 February 2024</p>
-<p>Term Paper III: 12 March 2024</p></td>
-<td style="text-align: right;"><p>You must submit Term Paper I in order to pass the course.</p>
-<p>Only best two of three term papers count.</p>
-<p>Marking starts, noon, on the Thursday after submission, and you can update until then i.e.&nbsp;submissions made by noon, Tuesday, Week 3 can be updated until noon, Thursday, Week 3 (this is to allow you to incorporate peer review comments). Please do not make any changes after marking starts.</p>
-<p>Term Paper I: <a href="https://tellingstorieswithdata.com/23-assessment.html#sec-paper-one">Donaldson Paper</a></p>
-<p>Term Paper II: <a href="https://tellingstorieswithdata.com/23-assessment.html#sec-paper-two">Mawson Paper</a>.</p>
-<p>Term paper III: Pick one of <a href="https://tellingstorieswithdata.com/23-assessment.html#sec-paper-three">Murrumbidgee Paper</a>, <a href="https://tellingstorieswithdata.com/23-assessment.html#sec-spadina">Spadina Paper</a>, or <a href="https://tellingstorieswithdata.com/23-assessment.html#sec-paper-five">Spofforth Paper</a></p></td>
-</tr>
-<tr class="even">
-<td>Conduct peer review of Term/Final papers</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">Wednesdays, noon, Weeks 3, 6, 9, 12</td>
-<td style="text-align: right;"><p>Conduct peer review for six other term/final papers, by creating a GitHub Issue or Pull Request. Papers will be distributed by a spreadsheet—add a link to the Issue/PR to a term paper that does not have four other entries. You will only have 24 hours to do this.</p>
-<p>Students are not assigning grades to other students, but are instead getting the mark based on the quality of the feedback they provide to other students.</p></td>
-</tr>
-<tr class="odd">
-<td>Mid-term</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">In-class, Tuesday, 12 March 2024</td>
-<td style="text-align: right;">A mid-term consisting of a few questions.</td>
-</tr>
-<tr class="even">
-<td>Final paper</td>
-<td style="text-align: right;">30</td>
-<td style="text-align: right;">Tuesday, noon, Week 12 (2 April 2024)</td>
-<td style="text-align: right;"><p>You must submit this paper.</p>
-<p>Marking starts, noon, Thursday 18 April and you can update until then i.e.&nbsp;submissions made by noon, Tuesday, Week 12 can be updated until noon, Thursday, 18 April (this is to allow you to incorporate peer review comments). Please do not make any changes after marking starts. |</p>
-<p><a href="https://tellingstorieswithdata.com/23-assessment.html#sec-final-paper">Final paper</a>.</p></td>
-</tr>
-</tbody>
-</table>
-<p>You must submit Term Paper 1. You must submit the Final Paper. Beyond that, you have scope to pick an assessment schedule that works for you. I will take your best three of the twelve insight mini-essays for that six per cent, and your best seven of twelve quizzes for that seven per cent. I take your two best papers from the three term papers for that 46 per cent (23 per cent for each). You get up to three percentage points for conducting peer review of other student papers, (half a percentage point per review). There is 30 per cent allocated for the Final Paper.</p>
-<p>Additional details:</p>
+<section id="notebook" class="level3">
+<h3 class="anchored" data-anchor-id="notebook">Notebook</h3>
 <ul>
-<li>Quiz questions are drawn from those in the Quiz section that follows each chapter of <em>Telling Stories with Data</em>. Some of them are multiple choice, and you should expect to know the mark within a few days of submission. Please do them before coming to class.</li>
-<li>Mini-essay questions are drawn from those in the Tutorial section that follows each chapter of <em>Telling Stories with Data</em>. The general expectation (although this differs from week to week) is about two pages of written content. You should expect to know the mark within a few days of submission.</li>
-<li>In general term papers require a considerable amount of work, and are due after the material has been covered in quizzes and mini-essays (i.e.&nbsp;you would draw on knowledge tested in the quizzes, and potentially material could be re-used from the mini-essay material). In general, they require original work to some extent. Papers are taken from the Papers appendix of <em>Telling Stories with Data</em> and students have access to the grading rubrics before submission.</li>
-<li>If you already have a website, please communicate with me about this early in the term so that I can let you know whether it can be used for the purposes of this submission.</li>
-<li>While they vary, a rough rubric for mini-essays is:
-<ul>
-<li>0 - Any typos, grammatical errors, other table stakes issues for this level. Submission is too short. Other basic mistakes.</li>
-<li>0.25 - Tables/graphs not properly labeled, no references, other aspects that affect credibility.</li>
-<li>0.5 - Makes some interesting and relevant points, related to course material (including required materials), but lacking in terms of structure and story/argument.</li>
-<li>0.80 - Interesting submission that is well-structured, coherent, and credible.</li>
-<li>1 - As with 0.80, but exceptional in some way.</li>
-</ul></li>
-<li>Only the best two of three term papers counts. This means each is worth 23 per cent.</li>
+<li>Due date: Updated this weekly.</li>
+<li>Task: Use Quarto to keep a notebook of what you have done the past week and what you want to do the coming week.</li>
+<li>Weight: 10 per cent.</li>
 </ul>
 </section>
+<section id="application" class="level3">
+<h3 class="anchored" data-anchor-id="application">Application</h3>
+<ul>
+<li>Due date: Week 10.</li>
+<li>Task: Create a web application based on LLMs that has paying users.</li>
+<li>Weight: 60 per cent.</li>
+</ul>
 </section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
+<section id="final-paper" class="level3">
+<h3 class="anchored" data-anchor-id="final-paper">Final Paper</h3>
+<ul>
+<li>Due date: Thursday, noon, Week 12 + two weeks.</li>
+<li>Task: Write a paper that involves evaluating some aspect of your application.</li>
+<li>Weight: 30 per cent.</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

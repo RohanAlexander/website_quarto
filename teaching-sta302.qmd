@@ -10,6 +10,12 @@ title: "Methods of Data Analysis I"
 
 This course develops in students an appreciation for how our world becomes data, what to do in the face of overwhelming options for the analysis of that data, and how to do all this in a way that provides value to others. In addition, by the end of the course, students should be able to understand the mathematical aspects of linear regression and inference for regression models.
 
+### Past iterations
+
+-   2024
+    -   [Syllabus](pdfs/sta302-2024-syllabus.pdf)
+    -   Student evals - TBD
+
 ### FAQ
 
 -   Can I audit this course? Sure, but it is pointless, because the only way to learn this stuff is to do the work.
@@ -37,7 +43,7 @@ The purpose of the course is to develop the core skills to do with methods of da
 
 ### Languages
 
-In this course you will use R, Python, Git and GitHub, and a little bit of SQL.
+In this course you will use R, Git and GitHub, and a little bit of Python and SQL.
 
 ## Content
 
@@ -148,9 +154,7 @@ Before class starts you should go through Chapter 1 "[Telling stories with data]
 |                                          |            |                                       | [Final paper](https://tellingstorieswithdata.com/23-assessment.html#sec-final-paper).                                                                                                                                                                                                                   |
 +------------------------------------------+------------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-**You must submit Term Paper 1. You must submit the Final Paper.**
-
-Beyond that, you have scope to pick an assessment schedule that works for you. I will take your best three of the twelve insight mini-essays for that six per cent, and your best seven of twelve quizzes for that seven per cent. I take your two best papers from the three term papers for that 46 per cent (23 per cent for each). You get up to three percentage points for conducting peer review of other student papers, (half a percentage point per review). There is 30 per cent allocated for the Final Paper.
+You must submit Term Paper 1. You must submit the Final Paper. Beyond that, you have scope to pick an assessment schedule that works for you. I will take your best three of the twelve insight mini-essays for that six per cent, and your best seven of twelve quizzes for that seven per cent. I take your two best papers from the three term papers for that 46 per cent (23 per cent for each). You get up to three percentage points for conducting peer review of other student papers, (half a percentage point per review). There is 30 per cent allocated for the Final Paper.
 
 Additional details:
 
@@ -165,74 +169,5 @@ Additional details:
     -   0.80 - Interesting submission that is well-structured, coherent, and credible.
     -   1 - As with 0.80, but exceptional in some way.
 -   Only the best two of three term papers counts. This means each is worth 23 per cent.
--   Peer review will occur for Term Paper I, but it is a just an optional 'practise'--students are typically not yet familiar enough with the expectations of the course so as to be able to provide valuable comments (other than noticing whether R has been cited!).
 
-## Other
-
-### Children in the classroom
-
-Babies (bottle-feeding, nursing, etc) are welcome in class as often as necessary. You are welcome to take breaks to feed them or express milk as needed, either in the classroom or elsewhere including [here](https://familycare.utoronto.ca/childcare/breastfeeding-at-u-of-t/). A list of baby change stations is also available [here](https://familycare.utoronto.ca/childcare/baby-change-stations-at-u-of-t/). Please communicate with me so that I can make sure that we have regular breaks to accommodate this.
-
-For toddlers and older children, I understand that unexpected disruptions in childcare/school can happen. You are welcome to bring your child to class in order to cover unforeseen gaps.
-
-### Accommodations with regard to assessment
-
-Please do **not** reveal your personal or medical information to me. I understand that illness or personal emergencies can happen from time to time. The following accommodations to assessment requirements exist to provide for those situations.
-
-Straight-forward (will automatically apply to all students---there is no need to ask for these):
-
--   Quiz: Only your best seven quizzes count.
--   Mini-essays: Only your best three mini-essays count.
--   Term Papers: Only your best two term papers count.
-
-So for those, if you have a situation, then just do not submit (or in the case of Term Paper I, just submit a blank page).
-
-Slightly more involved:
-
--   Term Paper I: You must submit something for Term Paper I, even if it gets zero. If you have a medical emergency that makes it impossible for you to submit even a blank page for Term Paper I, then please email me and cc your faculty/department/college advisor. In that situation one of the remaining term papers must be done individually to ensure fairness with the rest of the class.
--   Peer review: No accommodation or late submission is possible for this because it would hold up the rest of the class. That said, there are many opportunities to get the peer review marks, so if you cannot do any for a particular paper, then just do the others. If you have a medical emergency that makes this impossible, then please email me and cc your faculty/department/college advisor so that we can work out an alternative plan.
--   Mid-term: If you miss the mid-term in Week 9, then you will have the opportunity to do it in Week 10.
--   Final paper: The final paper is a critical piece of assessment. It is also up against deadlines for submission of grades (especially for graduating students). If you have a medical emergency that makes it impossible for you to submit before marking begins, then I **may** be able to grant you an extension of up to three days. Email me and cc your faculty/department/college advisor so that we can work out a alternative plan.
-
-### Re-grading
-
-Marking mistakes happen and I want to correct those. Requests to have your work re-graded will **not** be accepted within 24 hours of the release of grades. This is to give you a chance to reflect. Similarly, requests to have your work re-graded more than seven days after the release of the grades will not be accepted. This is to ensure the course runs smoothly.
-
-Inside that 1-7 day period if you would like to request a re-grade, please email rohan.alexander\@utoronto.ca and use the subject line "STA302: re-grade request". Please specify where the marking mistake was made in relation to the marking guide. The entire assessment will be re-marked and it is possible that your grade could reduce.
-
-Plenty of students get 0 on the first paper, but go on to get an A+ overall in the course. The nature of the work in this course requires students to adjust from what is expected in other courses, and the forgiving assessment weighting is designed to allow this.
-
-### Plagiarism and integrity
-
-Please do not plagiarize. In particular, be careful to acknowledge the source of code---if it is extensive then through proper citation and if it is just a couple of lines from Stack Overflow then in a comment immediately next to the code.
-
-You are responsible for knowing the content of the University of Toronto's Code of Behaviour on Academic Matters.
-
-Academic offenses include (but are not limited to) plagiarism, cheating, copying code without acknowledgement, purchasing labor for assessments (of any kind). Academic offenses will be taken seriously and dealt with accordingly. If you have any questions about what is or is not permitted in this course, please just email me.
-
-Please consult the University's [site](http://academicintegrity.utoronto.ca/) on Academic Integrity. Please also see the definition of plagiarism in section B.I.1.(d) of the University's Code of Behaviour on Academic Matters available [here](http://www.governingcouncil.utoronto.ca/Assets/Governing+Council+Digital+Assets/Policies/PDF/ppjun011995.pdf). Please read the Code. Please review Cite it Right and if you require further clarification, consult the site [How Not to Plagiarize](http://advice.writing.utoronto.ca/wp-content/uploads/sites/2/how-not-to-plagiarize.pdf).
-
-### Late policy
-
-If no extension has been granted and no accommodation applies, then late submissions will not be accepted.
-
-### Writing
-
-Papers and reports should be well-written, well-organized, and easy to follow. They should flow easily from one point to the next. They should have proper sentence structure, spelling, vocabulary, and grammar. Each point should be articulated clearly and completely without being overly verbose. Papers should demonstrate your understanding of the topics you are studying in the course and your confidence in using the terms, techniques and issues you have learned. As always, references must be properly included and cited. If you have concerns about your ability to do any of this then please make use of the writing support provided to the faculty, colleges and the SGS Graduate Centre for Academic Communication.
-
-### Minimum submission requirement
-
-If you are going to not be able to submit at least two term papers, and/or be unable to submit the final paper then it would be unfair on the other students to allow you to pass the course. Please ensure you and your college registrar or faculty/department advisor get in touch with me as early as possible if this may be the case for you so that we can work out a solution.
-
-### Letters of recommendation
-
-I am happy to write letters for students who get both an A+ overall and an A+ in the final paper. This allows me to write a strong letter. If you are in this position after the class ends and want me to write a letter, please send me a request early.
-
-### Use of Generative AI in assignments
-
-In general, students are encouraged to use generative AI tools as a starting point. Specific course policies are:
-
--   Code: Students may wish to use generative AI tools to aid in initial development and writing of code to answer assignment questions and carry out the research project analysis. If this is the case, the use of such tools should be explicitly acknowledged in the submitted work, and the relevant prompts and responses should be included in a text file in the repo. All code, regardless of how it is generated must be thoroughly commented and explained. Failure to do so may result in penalties.
--   Written work: Using generative AI tools to generate written answers to assignment questions of text contained in the final research project is prohibited in this course. Representing as one's own an idea, or expression of an idea, that was AI-generated may be considered an academic offense in this course. However, you are welcome to use it to generate a first draft, which you then completely edit. Again, if you use such tools, it should be explicitly acknowledged in the submitted work, and the relevant prompts and responses should be included in a text file in the repo.
-
-This course policy is designed to promote your learning and intellectual development and to help you reach course learning outcomes.
+## 
