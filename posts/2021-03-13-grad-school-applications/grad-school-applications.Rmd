@@ -1,0 +1,85 @@
+---
+title: "Saturday morning thoughts on grad school applications"
+description: |
+  There's a huge amount of luck involved. Worry as much, if not more, about letters and your personal statement as you do about your GPA. Have a clear reason for wanting to go to the school/program that you're applying for and communicate that throughout your application.
+author:
+  - name: Rohan Alexander
+    url:
+      rohanalexander.com: {}
+date: 2021-03-13
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 3
+draft: false
+collections:
+  posts:
+    citations: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Overview 
+
+Grad school application season is mostly done. I wanted to quickly put together some general thoughts in case they're helpful for undergraduates applying next year. Please keep in mind that I'm new and interested in applied statistics. This advice probably doesn't apply for more-experienced, or less-applied, folks. 
+
+The main takeaways:
+
+- There's a huge amount of luck involved, so don't tie your self-worth to any particular decision either way. 
+- Worry as much, if not more, about letters and your personal statement as you do about your GPA. There are three bits to the application --- transcript, letters, statement/CV. You're spending four years getting transcripts, so you should also spend a lot of time on the other two.
+- Communicate a clear reason for wanting to go to the school/program that you're applying for.
+- Create a narrative that runs through your entire application.
+
+**These thoughts are specific to me. You need to get advice from your own advisors, and in particular the faculty that are going to write you letters, but more on that later.**
+
+
+## CV and personal statement
+
+Be clear about why you're applying, show evidence of your work, and weave that into your narrative. When you do sales, the key to everything is identifying a ‘champion' in the firm that you want to sell to. Your job in sales is then to give that person the information they need to sell the rest of the firm on it. When you're applying to grad school, it's a similar situation. You don't need all the faculty to love your application - you just need at least one of the reviewers to love it and for no one to hate it enough to veto. Your personal statement is a sales opportunity and will be when the faculty reviewers work out who they advocate for. It's hard to recover from a bad personal statement. You should get your letter writers to review it before you send it.
+
+- Use the combination of your CV and personal statement to craft a narrative (which your letters and transcript support).
+- Articulate the reason that you want to attend the department/school that you're applying for.
+	- This is not a statement like ‘[insert school] is a top-ranked school'. 
+	- One way to do this is to find a faculty member that is of interest, look at their papers and website, and write about how your interests align with their work and you want to be involved in it. That said, don't fake interest, because it's usually obvious.
+	- Another way is to identify a clear link to your interests, for instance, if you're into public health then maybe the university is in a state/province that has universal healthcare and so you'd have great data.
+	- Yet another way is to look up the requirements of the program and weave in how you're really keen to learn about subject X taught by professor Y because of reason Z.
+- You don't need the world's greatest justification (and no one will hold you to it if you decide you're actually interested in something else), but the faculty reviewer needs to know why you want to attend their school/department when you could go to any number of other top ranked schools/departments. There's only a certain number of offers that can be made, so at the very least they need to have some idea of the likelihood that you'll accept.
+- Grades in undergrad tests don't necessarily correspond to doing well in graduate school. Much of graduate school is about learning how to learn, with the goal to eventually 'learn things that no one else knows' (i.e. do research) and so it is helpful for reviewing faculty to see evidence that points to your ability to do that. One way to do this is to create projects that show off what you can do publicly and link to them. Ideally your undergrad professors will integrate projects into their curriculum, but if not then you need to DIY. (BTW don't use Kaggle – hunt, gather, or farm your own data). 
+- For applied quantitative PhDs, it's great if you are already able to write code in R or Python, and even better if you can include a link to your GitHub account that shows this. Ideally, your GitHub should be in decent order. For instance, have your best projects pinned, and put a lot of effort into making sure these are commented, have READMEs, etc.
+- Make a website, even if it's very minimal. You need to control your online presence and having LinkedIn or whatever come up is not great (for the purposes of grad school applications).
+- One or two years of work experience is great (or even just a summer internship or similar), especially if it links into your overall narrative of why you want to go to that particular grad school. 
+- Don't have a long personal statement that begins with you as a child and culminates in your application. Instead, be succinct and clear, and weave your accomplishments into a narrative, rather than just list them (that's what your CV/transcript are for).
+
+## Letters
+
+The best letters are from folks that know you and your work. You need to spend a huge amount of effort getting decent letters. They're as important, if not more, as your GPA.
+
+- The strongest letters are from folks who know you well. Usually, this type of letter looks better than someone who doesn't know you well, even if they're a famous professor, and even if you got an A in their class.
+- If possible try to work for a professor, ideally a quantitative one, because it can be more difficult to understand the evidence that non-quantitative-professors bring. 
+	- How do you get a job with a professor so that they will write you a letter? The best way is to excel in a course that they teach and then ask to work for them. Or excel in a course and then ask that professor to recommend you to the professor you want to work for. 
+	- There's a language that good letters use. You need to be very thoughtful in your choice of letter writers because you can't control what is written about you, other than through your choice of letter writer. 
+- That said, not everyone can work for a professor. The main point is that you need to identify letter writers that really know your work, and you.
+- Be sure to ask the letter writer if they're comfortable recommending you to the programs that you're applying for before you ask them to write a letter for those programs.
+- There's a tendency to ask the most-famous-professor to write you a letter. If you've worked closely with them and they'll say nice things about you, then that's great. But the thing about famous professors is that they have seen a lot of strong students, and so it can be dangerous. Professor Big-Name saying you're the best student they've ever worked with is of course great. Professor Big-Name saying you were fine to work with is still good, but less clear-cut. Professor Big-Name saying you got an A in their class doesn't say much that isn't already in your transcript. 
+
+## Transcript
+
+Grades are important, but not everything. Your transcript needs to reflect the narrative that you're telling in the rest of the application.
+
+- If you are not a 4.0 student, then it's not the end of the world. But be aware of: 
+	- GPA minimums, and 
+	- That your grades at the end of your degree and/or relevant subjects weigh more heavily. 
+- Grades are important, but students seem to over-weight the importance of grades – all the components of the application are important, and grades are just one part of it. 
+
+## Concluding remarks
+
+Getting in anywhere requires a healthy dose of luck. It's not a reflection of your worth as an academic, and especially not as a person. You can't control who reviews your application, or who has funding to take students that year, or the other students applying that year. There's also just incredible competition for these spots. There's an awful lot of chance involved. There's nothing you can do about this other than not tie your self-worth to it.
+
+
+## Acknowledgments {.appendix}
+
+Without wanting to implicate her in anything said here, thanks to Monica Alexander for reading many drafts of this.

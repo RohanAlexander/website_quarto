@@ -1,0 +1,128 @@
+---
+title: "AB MVP"
+description: |
+  I run through getting minimal viable A/B testing up and running in 15 minutes or less based on Google analytics, distill postcards, GitHub branches and Netlify. I base this on the wonderful Alison Hill post about getting started wtih postcards.
+author:
+  - name: Rohan Alexander
+    url:
+      rohanalexander.com: {}
+date: 2021-03-01
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 3
+bibliography: references.bib
+draft: true
+collections:
+  posts:
+    citations: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction
+
+We live in an age where, likely, we are subject to more experiments than ever before. Any time that you use (many/most/all?) a major websites, they are tracking your every movement and click, comparing those with other users, and then making adjustments based on that. 
+
+The statistics that underpin A/B testing are well established and broadly relatively straight-forward, but the specifics of A/B testing complicate things. To get comfortable with it, it's important to do it yourself. But A/B testing can be difficult to learn because it's not really done by academics much, and there's very little incentive for industry to share their findings let alone their raw data, so there are very few datasets available (one notable exception that I'm very grateful for being [@upworthy]). 
+
+In this post, I'm going to walk through getting A/B testing set-up yourself so that you can play around with the details and come to understand it better. No aspect of this workflow is perfect, but having established the workflow, it's easier to go back back and improve pieces of it. First we're going to build two versions of the one website, then we're going to get them onto GitHub and Netlify, finally, we're going to add tracking.
+
+
+## Make a website, or two
+
+### Red font
+
+To get started, we need a website, or rather two version of a website that we can compare. I'm going to follow Alison Hill's blog post about creating 'postcards' fairly closely and to get the details, please see that write-up: https://alison.rbind.io/post/2020-12-22-postcards-distill/.
+
+We need the dev versions of a few packages that you may already have installed and we need to install the `postcards` package [@citepostcards]:
+
+```{r, eval = FALSE, echo=TRUE}
+remotes::install_github("rstudio/distill")
+remotes::install_github("rstudio/rmarkdown")
+install.packages("postcards")
+```
+
+Create a new project (File -> New Project -> New Directory -> New Project) with a obvious name such as 'red_vs_orange_font' (again, go to Alison's blog post for all the details) and then use distill [@citedistill] to make a new website:
+
+```{r, eval = FALSE, echo=TRUE}
+library(distill)
+distill::create_website(dir = ".", title = "Dogs rule", gh_pages = TRUE)
+```
+
+Close R Studio, then re-open the project that you just created. Click 'Build Website'. Now we need to make a postcard (to be clear we could do this with any website, but I really like the postcards idea and it keeps things simple).
+
+```{r, eval = FALSE, echo=TRUE}
+postcards::create_postcard(file = "tobi.Rmd")
+```
+
+Then open 'tobi.Rmd' and add 'site: distill::distill_website' into the yaml (on a new line just below the description). Then delete 'index.Rmd' and change 'tobi.Rmd' to 'index.Rmd' and finally rebuild the website. 
+
+Now we need to make our website change the color of the text. To do this we first create a theme using `distill::create_theme("postcards")`, add 'theme: postcards.css' to the YAML, and then change 'bkgd-color' to '#003049' and then 'text-color' to '#d62828'.
+
+We'll also change a few other things including:
+
+- Open '_site.yml' file and change the title to something that's relevant. 
+- And open 'index.Rmd', and change the paragraph to be, say, a paragraph about dogs. 
+- And finally, change the picture to be something, again, let's just add a photo about dogs.
+
+Re-build your site and you should have a page that's all about dogs, and more importantly, has red text.
+
+At this point we want to add it to GitHub. I'm going to assume that you've got GitHub setup on R Studio (if not, see the Jenny Bryan GitHub bible: http://happygitwithr.com) and so you can run:
+
+```{r, eval = FALSE, echo=TRUE}
+usethis::use_git()
+usethis::use_github()
+```
+
+We now have a perfectly good website about dogs. What we want is a second version of this website, this time with orange font, that we can use to compare.
+
+
+
+### Orange font
+
+We need a second version, but about cats. We're going to create a new branch: in R Studio, go to the 'Git' pane and then click 'New Branch'. You'll need to name the new branch, but it doesn't really matter what we call it, so let's just call it 'Toronto' to distinguish it. Then click 'Create'. You'll be moved over to the new branch. 
+
+You want to change the details that were about dogs, to be about cats, so that's the written content in 'index.Rmd', the title in '_site.yml', and change the picture.
+
+Then build the site and commit it to GitHub.
+
+
+
+## Host them
+
+We now have to versions of the one website - one focused on cats and another focused on dogs. I'm going to use Netlify to host them (GitHub pages would be a popular option here, but we're going to take advantage of Netlify's A/B options). So create a Netlify account, or log in, then link your Netlify account with your GitHub and create a new site.
+
+Now we need to look at A/B integration.
+
+HERE
+
+
+## Add tracking
+
+
+## Next steps
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

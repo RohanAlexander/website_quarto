@@ -1,0 +1,47 @@
+---
+title: "The Human Equation: An Interview With George Zachary"
+description: |
+  In an age when you can buy data-driven refrigerators and Moneyball is nominated for Academy Awards you may be surprised to hear there are investors who describe themselves as gut-driven. Frankly I thought such people would be too embarrassed to be out in public. Then I heard George Zachary talk.
+author:
+  - name: Rohan Alexander
+date: 2014-03-19
+output:
+  distill::distill_article:
+    self_contained: false
+preview: images/IMG_0277.jpg
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+> "Two bicyclists start twenty miles apart and head toward each other, each going at 10 mph. At the same time a fly that travels at 15 mph starts from the front wheel of the southbound bicycle and flies to the front wheel of the northbound one, then turns around and flies to the front wheel of the southbound one again, and continues in this manner till he is crushed between the two front wheels. What total distance did the fly cover?" One way to find the answer is to calculate the distance the fly covers on the first leg of the trip, then on the second, then on the third, etc., and, finally, to sum the infinite series. The quick way is to observe that the bicycles meet exactly one hour after their start, so that the fly had just an hour for his travels; the answer must therefore be 15 miles. When the question was put to John von Neumann, he solved it in an instant, and thereby disappointed the questioner: "Oh, you must have heard the trick before!" "What trick?" asked von Neumann, "All I did was sum the infinite series."
+
+> Paul Halmos on John von Neumann
+
+In an age when you can buy data-driven refrigerators and Moneyball is nominated for Academy Awards you may be surprised to hear there are investors who describe themselves as gut-driven. Frankly I thought such people would be too embarrassed to be out in public. Then I heard George Zachary talk.
+
+```{r fig.cap="Some people can just see the answer, the rest of us have to work at it."}
+knitr::include_graphics("images/IMG_0277.jpg")
+```
+
+Zachary is a self-described 'gut-driven investor'. But I didn't storm out of the talk muttering about negative-alpha because Zachary is a venture capitalist at Charles River Ventures (CRV). And he has an impressive record, mostly notably being the first institutional investor at Twitter and Yammer. Of course, this could be down to chance, but what are the chances of it happening twice? So I was curious to understand what made Zachary tick.
+
+Zachary is a first-generation American, whose parents were born in Greece. He made his initial money in the early '90s as a founder of Shutterfly, which is now a public company. For the past 18 years he's been an investor, and has invested over $160 million. He's funded 27 businesses at a 'venture level' (multiple millions of dollars) and focuses on early stage businesses. He's also funded 100-150 businesses at a 'seed level' (hundreds of thousands to a few million dollars). This is from a pool of 35,000 businesses that he's looked at.
+
+CRV is a collection of partners. A business that wants funding from CRV needs one of the partners to champion them. All businesses are put to a vote, and if the champion cannot get the other partners excited then it's unlikely the business will be funded. This means that usually a successful product pitch will not only be clear and concise, but also work just as well when it's not delivered by the founders. Zachary's one exception was Twitter, 'who had the worst presentation ever'.
+
+Successful businesses, Zachary believes, have 'founders that are maniacal, bipolar and slightly crazy'. Their need to win permeates every aspect of their life and although this drives them, it also means they are difficult to work with. Zachary's one exception was Twitter, 'who had three co-founders, none of whom wanted to confront each other'.
+
+Zachary believes that founders must have a clear vision of what they are trying to achieve. This means that the best pitches cause a binary reaction: love or hate. This is because if the audience shares the founder's vision then they will love the product, but otherwise they will hate it. A product that causes reactions such as 'oh cool' or 'nice' is unlikely to get VC funding at CRV -- they prefer a low probability of an enormous success over a high probability of moderate success. As you probably expect by now, Zachary's exception was Twitter, where he said the founders basically didn't understand why anyone would tweet for the first couple of years.
+
+Vision is even more important than a clear path to monetization to Zachary. When he evaluates businesses he asks himself whether people love the product and whether the founders are able to develop the product to take advantage of this. It's only then that he asks whether it seems that they can monetize. And a lack of an obvious plan to monetize isn't a deal-breaker.
+
+The implication of all this, which Zachary was very clear about, is that successful businesses don't need VC funding. Equally, a failure to get VC funding doesn't mean the business is necessarily a failure. Here capital is an accelerator, and a successful business will not be dependent on VC funding.
+
+Throughout the talk Zachary continually referred to the fact that he's a gut-instinct investor. But given his talk I'm not so sure it's true. For instance, during Q&A he was pitched to by a person whose business is Uber for motorcycles. So the guy pitches that, just that, no other information, with an accent so thick you can barely make out what he's saying, and then asks Zachary whether he thinks it'll be a billion dollar business! Straight away Zachary says 'no'. I'm expecting it to be over, but then Zachary continues for five minutes explaining why he thinks that way, applying some of the simple rules that he'd discussed earlier and references to data that he knew off-hand, and that I later verified to be correct.
+
+Zachary's gut just seemed to be able to do the calculations that data-driven investors require computers to do. So is he really gut-instinct investor? By now it was getting late and Zachary needed to get home to put his kids to sleep. But he left us all with his email address, and a plea to get in contact, 'but not all tonight, otherwise I won't be able to respond to you all'. So he mustn't be a computer after all.
+
+*San Francisco*

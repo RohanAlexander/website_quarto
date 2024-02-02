@@ -1,0 +1,55 @@
+---
+title: "Conference on statistical software"
+---
+
+Statistical software is an increasingly important aspect of the work of statisticians and data scientists. CANSSI Ontario and the Faculty of Information, at the University of Toronto (U of T), host the CANSSI Ontario Statistical Software Conference to bring together academic and industry participants to share best practices on developing statistical software, exchange ideas for what is needed, and show off their latest software advances.
+
+## 2022
+
+### 10 November
+
+- **Sameer Deshpande**, Assistant Professor, University of Wisconsin, Madison. 
+  - Title: ["A new BART prior for flexibly modeling with categorical inputs."](https://youtu.be/aFgyANKh5oc)
+- **Clara Risk**, Ph.D. Student, University of Toronto. 
+  - Title: ["An interactive operations research tool for field work site selection in forestry."](https://youtu.be/0mbM98KzZ8A)
+- **Monica Alexander**, Assistant Professor, University of Toronto. 
+  - Title: ["Lessons in knowing your audience: statistical software in quantitative social science."](https://youtu.be/sBZ1kMDwhDc)
+- **Lisa Lendway**, Principal Healthcare Data Scientist, Blue Cross Blue Shield Minnesota. 
+  - Title: ["Parameterized Reporting with RMarkdown."](https://youtu.be/sBZ1kMDwhDc)
+- **Vincent Arel-Bundock**, Associate Professor, Université de Montréal, 
+  - Title: ["How to interpret and report estimates from (almost) any `R` model? A post-estimation workflow with `marginaleffects` and `modelsummary`"](https://youtu.be/sBZ1kMDwhDc)
+- **Alex Stringer**, Assistant Professor, University of Waterloo. 
+  - Title: "Towards Implementing Approximate Inference via Adaptive Quadrature."
+- **Dirk Eddelbuettel**, Clinical Professor, University of Illinois Urbana-Champaign; Principal Software Engineer, TileDB. 
+  - Title: ["r2u: CRAN as Ubuntu Binaries."](https://youtu.be/R2bThq16v_M)
+- **Emily Riederer**, Senior Analytics Manager, Capital One. 
+  - Title: ["The Data (error) Generating Process."](https://youtu.be/9Gh4VmR0DRk)
+- **Hannah Frick**, Software Engineer and Statistician, RStudio. 
+  - Title: ["Censored: A tidymodels package for survival models"](https://youtu.be/DVSFpLJgldo)
+- **Zeny Feng**, Professor, University of Guelph. 
+  - Title: "A real data driven simulation strategy for selecting an imputation method for mixed-type trait data."
+- **Ariel Mundo Ortiz**, Postdoctoral Fellow, Université de Montréal. 
+  - Title: ["Reproducible papers in the life sciences using R."](https://youtu.be/4yRAR9fS3pg)
+- **Alison Presmanes Hill**, Director of Knowledge, Voltron Data. 
+  - Title: ["The Happiest Notebooks on Earth."](https://youtu.be/7nNB__jK9AY)
+- **John Fox**, Professor Emeritus, McMaster University. 
+  - Title: ["Regression Graphics: Added-Variable and Component+Residual Plots."](https://youtu.be/cY1n-s3qE3c)
+- **Jens Von Bergmann**, Founder, MountainMath. 
+  - Title: ["An ecosystem of R packages to access and process Canadian data."](https://youtu.be/-Z0sikR8STQ)
+- **Ana Trisovic**, Research Associate, Harvard University. ["Evidence-based practices for better research software."](https://youtu.be/zjtzgi6YZP4)
+- **Anjali Silva**, Data Analyst and Lecturer, University of Toronto. 
+  - Title: "A Software for Clustering Three-way Count Data Using Mixtures of Matrix Variate Distributions."
+- **Osvaldo Espin-Garcia**, Assistant Professor, Western University. 
+  - Title: ["Converting R code into C++, Is it worth it?"](https://youtu.be/G59IZa7RA14)
+- **Silvia Canelón**, Data Analyst, University of Pennsylvania. 
+  - Title: ["Thinking Big with Maps in R: Tips on Wrangling Large Vector Data into Interactive Maps."](https://youtu.be/wiAnmkbgcO8)
+- **Matthew Watson**, Developer/Programmer, Lunenfeld-Tanenbaum Research Institute. 
+  - Title: ["cytosel: Interactive cytometry panel design using single-cell RNA-seq."](https://youtu.be/aKaBRTdQREE)
+- **Michael Jongho Moon**, Ph.D. Student, University of Toronto. 
+  - Title: ["mverse: How the R package is designed to help students explore the multiverse."](https://youtu.be/lIl0CvrWQHY)
+- **Sherry Zhang**, Ph.D. Student, Monash University. 
+  - Title: ["Switching between space and time: Spatio-temporal analysis with cubble."](https://youtu.be/sDsierx_XL8)
+- **William Marshall**, Assistant Professor, Brock University. 
+  - Title: ["PyPhi: A toolbox for integrated information theory."](https://youtu.be/0dX3ROe5lzA)
+- **David Keyes**, Founder, R for the Rest of Us. 
+  - Title: ["No Designer Needed: How to Create Beautiful Reports Using Only R."](https://youtu.be/jiYVkyWGrbs)

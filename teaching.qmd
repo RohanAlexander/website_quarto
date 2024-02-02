@@ -1,0 +1,17 @@
+---
+title: "Teaching"
+---
+
+I enjoy [teaching](https://rohanalexander.com/teaching.html) and aim to help students from a wide range of backgrounds learn how to use data to tell convincing stories. My approach is best characterised as practical, research-based, and emphasizing reproducible workflow. I am a [RStudio Certified Tidyverse Trainer](https://education.rstudio.com/trainers) and an associate editor of the *Journal of Statistics and Data Science Education*. I co-lead the development of a package to help students learn R, available here: DoSS Toolkit. My book, Telling Stories with Data supports my teaching.
+
+
+I have designed and/or taught:
+
+- [Worlds Become Data](inf312.html)
+- [Surveys, Sampling and Observational Data](sta304.html)
+- [Experimental Design](inf2178.html)
+- [Ethics and Data Science](ethics-and-ds.html)
+- [Natural Language Processing](nlp.html)
+- [Data Sciences Foundations](data_science_foundations.html)
+- [The Other Course](the_other_course.html)
+- [History of Statistics and Data Sciences](history_of_statistics.html)

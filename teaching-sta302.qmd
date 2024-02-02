@@ -1,0 +1,173 @@
+---
+title: "Methods of Data Analysis I"
+---
+
+## Preamble
+
+### Overview
+
+"Methods", "Data", "Analysis"---we consider such loaded words in this course! What is data? What does it mean to do analysis? And what methods? The very core of statistical sciences!
+
+This course develops in students an appreciation for how our world becomes data, what to do in the face of overwhelming options for the analysis of that data, and how to do all this in a way that provides value to others. In addition, by the end of the course, students should be able to understand the mathematical aspects of linear regression and inference for regression models.
+
+### Past iterations
+
+-   2024
+    -   [Syllabus](pdfs/sta302-2024-syllabus.pdf)
+    -   Student evals - TBD
+
+### FAQ
+
+-   Can I audit this course? Sure, but it is pointless, because the only way to learn this stuff is to do the work.
+-   Why is there so much assessment? The only way to learn this stuff is to actually do the work, and students only do the work when they are assessed. It is unfortunate, but there is no way around it.
+-   How difficult is the course? Of students that enrol, the median student drops the course. But the mode overall grade at the end of the course is an A+. The course is not difficult, but the hands-on-projects mean it is a great opportunity for you to do a lot of work. Past students have said that it set them up for success in grad school applications and job interviews.
+-   What is the format of the class? There are rarely lectures because those are not effective. You should read the relevant chapter and attempt the quiz before class. During class we will focus on examples, activities and discussion. We will also have industry guests discuss their experience.
+-   You are asking about X, but you didn't explicitly teach that. In fact you're not teaching anything. We're just doing activities in class? A key skill is being able to teach yourself what you need. In general, I will probably have directed you to the materials that you should go over before class and then during class we will do activities that highlight aspects that are easy to over look, but you're welcome to ask for more pointers if I've not been clear enough.
+
+### Learning objectives
+
+The purpose of the course is to develop the core skills to do with methods of data analysis that are applicable across academia and industry. By the end of the course, you should be able to:
+
+1.  Engage critically with ideas and readings in data analysis (demonstrated in all papers but also mini-essays and quizzes).
+2.  Conduct data analysis research in a reproducible and ethical way (demonstrated in all papers).
+3.  Clearly communicate what was done, what was found, and why in writing (demonstrated in all papers).
+4.  Understand what constitutes ethical high-quality data analysis practice, especially reproducibility and respect for those that underpin our data (demonstrated in all papers and selected quizzes).
+5.  Respectfully identify strengths and weaknesses in the data analysis research conducted by others (demonstrated in quizzes, and the peer review).
+6.  Develop the ability to appropriately choose and apply statistical models to real-world situations (demonstrated in the final paper)
+7.  Conduct all aspects of the typical data analysis workflow (demonstrated in all papers).
+8.  Reflect effectively on your own learning and professional development (demonstrated in some mini-essays and quizzes).
+
+### Textbook
+
+[Telling Stories with Data](https://www.tellingstorieswithdata.com)
+
+### Languages
+
+In this course you will use R, Git and GitHub, and a little bit of Python and SQL.
+
+## Content
+
+Before class starts you should go through Chapter 1 "[Telling stories with data](https://tellingstorieswithdata.com/01-introduction.html)" and Appendix A "[R essentials](https://tellingstorieswithdata.com/20-r_essentials.html)".
+
+### Week 1
+
+-   [Drinking from a fire hose](https://tellingstorieswithdata.com/02-drinking_from_a_fire_hose.html)
+
+### Week 2
+
+-   [Reproducible workflows](https://tellingstorieswithdata.com/03-workflow.html)
+-   [Writing research](https://tellingstorieswithdata.com/04-writing_research.html)
+-   Guest: Anna Li.
+
+### Week 3
+
+-   [Static communication](https://tellingstorieswithdata.com/05-static_communication.html)
+-   Guest: Annie Collins.
+
+### Week 4
+
+-   [Farm data](https://tellingstorieswithdata.com/06-farm.html)
+-   [Gather data](https://tellingstorieswithdata.com/07-gather.html)
+-   Guest: Steven Coyne - "Who Owns This? The Ethics of Copyright"
+
+### Week 5
+
+-   [Hunt data](https://tellingstorieswithdata.com/08-hunt.html)
+-   Guest: Bradley Congelio - "NFL Analytics"
+
+### Week 6
+
+-   [Clean and prepare](https://tellingstorieswithdata.com/09-clean_and_prepare.html)
+-   [Store and share](https://tellingstorieswithdata.com/10-store_and_share.html)
+-   [Missing data](https://tellingstorieswithdata.com/11-eda.html#missing-data)
+-   Guest: Dory Abelman - "Writing masterclass"
+
+### Reading Week
+
+### Week 7
+
+-   [Linear models](https://tellingstorieswithdata.com/12-ijalm.html)
+-   Guest: TBD
+
+### Week 8
+
+-   [Linear models](https://tellingstorieswithdata.com/12-ijalm.html)
+-   Guest: TBD
+
+### Week 9
+
+-   Mid-term
+
+### Week 10
+
+-   [Generalized linear models](https://tellingstorieswithdata.com/13-ijaglm.html)
+-   Guest: TBD
+
+### Week 11
+
+-   [Prediction](https://tellingstorieswithdata.com/27-prediction.html)
+-   We will focus on trying to predict the upcoming US presidential election, with a view to students being able to write a final paper that could be submitted to the [PS: Political Science & Politics special issue](https://www.cambridge.org/core/journals/ps-political-science-and-politics/announcements/call-for-papers/special-issue-on-forecasting-the-2024-us-elections).
+-   Guest: TBD
+
+### Week 12
+
+-   [MRP](https://tellingstorieswithdata.com/15-mrp.html) and
+-   Guest: TBD
+
+## Assessment
+
+### Summary
+
++------------------------------------------+------------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Item                                     | Weight (%) | Due date                              | Notes                                                                                                                                                                                                                                                                                                   |
++==========================================+===========:+======================================:+========================================================================================================================================================================================================================================================================================================:+
+| Quiz                                     | 7          | Tuesdays, noon, Weeks 1-12            | Only best seven out of twelve count.                                                                                                                                                                                                                                                                    |
++------------------------------------------+------------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| SQL quiz                                 | 1          | Tuesday, noon, Week 6                 |                                                                                                                                                                                                                                                                                                         |
++------------------------------------------+------------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Personal website                         | 1          | Tuesday, noon, Week 9                 | Create a personal website using Quarto and make it live via GitHub Pages. At a minimum, it must include a bio and a CV in PDF form.                                                                                                                                                                     |
++------------------------------------------+------------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Mini-essays                              | 6          | Tuesdays, noon, Weeks 1-12            | Only best three out of twelve count.                                                                                                                                                                                                                                                                    |
++------------------------------------------+------------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Term papers                              | 46         | Tuesdays, noon, Weeks 3, 6, 9         | You must submit Term Paper I in order to pass the course.                                                                                                                                                                                                                                               |
+|                                          |            |                                       |                                                                                                                                                                                                                                                                                                         |
+|                                          |            | Term Paper I: 23 January 2024         | Only best two of three term papers count.                                                                                                                                                                                                                                                               |
+|                                          |            |                                       |                                                                                                                                                                                                                                                                                                         |
+|                                          |            | Term Paper II: 13 February 2024       | Marking starts, noon, on the Thursday after submission, and you can update until then i.e. submissions made by noon, Tuesday, Week 3 can be updated until noon, Thursday, Week 3 (this is to allow you to incorporate peer review comments). Please do not make any changes after marking starts.       |
+|                                          |            |                                       |                                                                                                                                                                                                                                                                                                         |
+|                                          |            | Term Paper III: 12 March 2024         | Term Paper I: [Donaldson Paper](https://tellingstorieswithdata.com/23-assessment.html#sec-paper-one)                                                                                                                                                                                                    |
+|                                          |            |                                       |                                                                                                                                                                                                                                                                                                         |
+|                                          |            |                                       | Term Paper II: [Mawson Paper](https://tellingstorieswithdata.com/23-assessment.html#sec-paper-two).                                                                                                                                                                                                     |
+|                                          |            |                                       |                                                                                                                                                                                                                                                                                                         |
+|                                          |            |                                       | Term paper III: Pick one of [Murrumbidgee Paper](https://tellingstorieswithdata.com/23-assessment.html#sec-paper-three), [Spadina Paper](https://tellingstorieswithdata.com/23-assessment.html#sec-spadina), or [Spofforth Paper](https://tellingstorieswithdata.com/23-assessment.html#sec-paper-five) |
++------------------------------------------+------------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Conduct peer review of Term/Final papers | 3          | Wednesdays, noon, Weeks 3, 6, 9, 12   | Conduct peer review for six other term/final papers, by creating a GitHub Issue or Pull Request. Papers will be distributed by a spreadsheet---add a link to the Issue/PR to a term paper that does not have four other entries. You will only have 24 hours to do this.                                |
+|                                          |            |                                       |                                                                                                                                                                                                                                                                                                         |
+|                                          |            |                                       | Students are not assigning grades to other students, but are instead getting the mark based on the quality of the feedback they provide to other students.                                                                                                                                              |
++------------------------------------------+------------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Mid-term                                 | 6          | In-class, Tuesday, 12 March 2024      | A mid-term consisting of a few questions.                                                                                                                                                                                                                                                               |
++------------------------------------------+------------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Final paper                              | 30         | Tuesday, noon, Week 12 (2 April 2024) | You must submit this paper.                                                                                                                                                                                                                                                                             |
+|                                          |            |                                       |                                                                                                                                                                                                                                                                                                         |
+|                                          |            |                                       | Marking starts, noon, Thursday 18 April and you can update until then i.e. submissions made by noon, Tuesday, Week 12 can be updated until noon, Thursday, 18 April (this is to allow you to incorporate peer review comments). Please do not make any changes after marking starts. \|                 |
+|                                          |            |                                       |                                                                                                                                                                                                                                                                                                         |
+|                                          |            |                                       | [Final paper](https://tellingstorieswithdata.com/23-assessment.html#sec-final-paper).                                                                                                                                                                                                                   |
++------------------------------------------+------------+---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+You must submit Term Paper 1. You must submit the Final Paper. Beyond that, you have scope to pick an assessment schedule that works for you. I will take your best three of the twelve insight mini-essays for that six per cent, and your best seven of twelve quizzes for that seven per cent. I take your two best papers from the three term papers for that 46 per cent (23 per cent for each). You get up to three percentage points for conducting peer review of other student papers, (half a percentage point per review). There is 30 per cent allocated for the Final Paper.
+
+Additional details:
+
+-   Quiz questions are drawn from those in the Quiz section that follows each chapter of *Telling Stories with Data*. Some of them are multiple choice, and you should expect to know the mark within a few days of submission. Please do them before coming to class.
+-   Mini-essay questions are drawn from those in the Tutorial section that follows each chapter of *Telling Stories with Data*. The general expectation (although this differs from week to week) is about two pages of written content. You should expect to know the mark within a few days of submission.
+-   In general term papers require a considerable amount of work, and are due after the material has been covered in quizzes and mini-essays (i.e. you would draw on knowledge tested in the quizzes, and potentially material could be re-used from the mini-essay material). In general, they require original work to some extent. Papers are taken from the Papers appendix of *Telling Stories with Data* and students have access to the grading rubrics before submission.
+-   If you already have a website, please communicate with me about this early in the term so that I can let you know whether it can be used for the purposes of this submission.
+-   While they vary, a rough rubric for mini-essays is:
+    -   0 - Any typos, grammatical errors, other table stakes issues for this level. Submission is too short. Other basic mistakes.
+    -   0.25 - Tables/graphs not properly labeled, no references, other aspects that affect credibility.
+    -   0.5 - Makes some interesting and relevant points, related to course material (including required materials), but lacking in terms of structure and story/argument.
+    -   0.80 - Interesting submission that is well-structured, coherent, and credible.
+    -   1 - As with 0.80, but exceptional in some way.
+-   Only the best two of three term papers counts. This means each is worth 23 per cent.
+
+## 

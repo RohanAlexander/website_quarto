@@ -1,0 +1,47 @@
+---
+title: "Broader Thinking Needed on the Australian Budget"
+description: |
+  The Treasury Secretary, and many others, bemoan the wasted years of the mining boom. Most agree that Australia should have more to show for what was the most significant boom since Federation. But the boom is over. And a fixation on budget surpluses means that we are missing an opportunity to make up for it. Australia’s credit rating is a strength that we should take advantage of. The Commonwealth should be borrowing to fund infrastructure investment.
+author:
+  - name: Rohan Alexander
+date: 2016-02-03
+output:
+  distill::distill_article:
+    self_contained: false
+preview: images/DSC_0599.jpg
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+The Treasury Secretary, and many others, bemoan the wasted years of the mining boom. Most agree that Australia should have more to show for what was the most significant boom since Federation. But the boom is over. And a fixation on budget surpluses means that we are missing an opportunity to make up for it. Australia's credit rating is a strength that we should take advantage of. The Commonwealth should be borrowing to fund infrastructure investment.
+
+```{r}
+knitr::include_graphics("images/DSC_0599.jpg")
+```
+
+Despite what many think, 'deficit' is not a dirty word, and like many other aspects of life, context matters. For instance, students are rarely chastised for taking a HELP loan. This is because that debt is being used to buy an education, which helps in the long term. It's the same for the economy.
+
+In a recent speech to the Sydney Institute the Treasury Secretary said that the Federal Government must exercise ‘expenditure restraint (that) will allow resources that would otherwise go to interest payments to be allocated to other priorities...’.[^1] But why should we lash expenditure restraint to interest payments? The Secretary explains that his rationale for this comes from the lessons of the late '80s and early '90s. But interest rates are no longer at such high levels. If the costs of borrowing have changed, then should we still dismiss its benefits?
+
+[^1]: https://treasury.gov.au/speech/the-australian-budget-some-context/
+
+Additionally, it is not clear why it should be the case, as the Secretary claims, that if the Commonwealth achieves surpluses then the states would ‘...run small(er) overall deficits that they can use to finance productive infrastructure investment’. Even if state governments were to identify and fund the best investments for their state, shouldn't the Commonwealth be concerned about what would be best for Australia overall?
+
+The Secretary implies that interest payments are wasted money and so we should do whatever it takes to reduce this. But to focus only on the cost of borrowing means to miss out on the benefits. For instance, many Australians choose to incur the cost of making interest payments so that they can enjoy the benefits of owning a house. Why should the Commonwealth be any different? If the Commonwealth were to issue bonds to fund projects in the public interest, it would be following in the footsteps of many governments since Federation.[^2] 
+
+[^2]: http://www.rba.gov.au/publications/rdp/2012/pdf/rdp2012-09.pdf.
+
+The current low interest rate environment is handy because it allows us to cheaply borrow money. This is especially true of the Commonwealth, which could issue bonds for a low cost at the moment. Even if there were no obvious efficient infrastructure projects available right now, locking in the money at these levels would be no bad thing even if it takes a year or two to identify appropriate projects.
+
+Taking on debt is actually what many large corporations are doing at the moment. For instance, Apple recently issued bonds and has now raised more than $55 billion since 2013.[^3] And Visa raised $16 billion via bond sales before Christmas.[^4] For what it is worth, the Commonwealth’s credit rating is better than either of those businesses.
+
+[^3]: http://www.bloomberg.com/news/articles/2015-09-10/apple-said-to-market-euro-bonds-adding-to-53-billion-debt-binge
+[^4]: http://www.bloomberg.com/news/articles/2015-12-09/visa-said-to-start-marketing-bonds-backing-visa-europe-takeover
+
+Interest payments are only inherently a waste of money if the principal is wasted. But if it is being used for national infrastructure projects then the question is more nuanced. The circumstances that the Australian economy faces are different to those of the early '90s, and our policy responses and public debate should remain up-to-date. 
+
+
+
+

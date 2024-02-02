@@ -1,0 +1,191 @@
+---
+title: "History of statistics and data sciences"
+---
+
+## Preamble 
+
+### Overview
+
+Statistics and the data sciences have a long and robust history. Understanding that history provides students with a better appreciation for the methods that they are applying today.
+
+Often students are taught, say, linear regression in such a way that they come to believe that statisticians simply stumbled upon it one day. In fact, the idea of combining different observations in this way, took the work of decades and even centuries to come to terms with. Understanding the history of statistics and data sciences, more generally, provides a more solid foundation for applying those skills today. We are interested in why certain methods were developed, and became popular, and the circumstances under which this occurred because that provides us with a nuanced knowledge of when we should apply them ourselves.
+
+We study history because we want to understand how our predecessors solved their problems. That means understanding, not just what they did, but the circumstances in which they did it, and the choices they faced. That knowledge allows us to better solve our own problems. At the very least, it helps us to avoid repeating mistakes; and, if fully accomplished, can even allow to improve our own approaches.
+
+The history of statistics and the data sciences is one of greatness, and we will cover that extensively. But it also one in which that greatness was sometimes developed for abhorrent purposes, and there were many contributors, actual or potential, who were overlooked. We will cover these aspects too.
+
+The hope is that having taken this course, you will understand what you have been studying in statistics and the data sciences with fresh eyes, and bring this deeper appreciation with you throughout the rest of your career.
+
+
+### Learning objectives
+
+The purpose of the course is to develop an appreciation of history of statistics and the data sciences to such an extent so as to provide a firmer foundation for your conduct of applied statistics and data science. By the end of the course, you should be able to:
+
+1. Engage critically with ideas and readings in the history of statistics and data sciences.
+2. Conduct research in the history of data science and statistics.
+3. Write and present your research.
+4. Understand why the methods and approaches developed when they did, and the circumstances under which they developed.
+5. Appreciate that much of the statistical machinery that we use today was developed with respect to eugenics.
+6. Respectfully identify strengths and weaknesses in the work of others.
+7. Reflect effectively on your own learning and professional development.
+
+### Prerequisites
+
+At least 1.0 FCE 300+ level STA courses with a minimum grade of 80 per cent in each course.
+
+
+### Textbooks
+
+- Stigler, S, 1986, *The History of Statistics: The Measurement of Uncertainty before 1900*, Harvard University Press.
+- Friendly, M, and Wainer, H, 2021, *A History of Data Visualization and Graphic Communication*, Harvard University Press.
+- Sheynin, 2017, *Theory of Probability. A Historical Essay*, https://arxiv.org/abs/1802.09966, 
+
+## Content
+
+### Week 1
+
+Overview. Also early astronomical and gambling underpinnings. Least squares, combining observations, and uncertainty. Legendre, Laplace, Bernoulli, De Moivre, Simpson.
+
+- Content:
+  - Stephen E. Fienberg, 1992, 'A Brief History of Statistics in Three and One-Half Chapters: A Review Essay', *Statistical Science*.
+  - M. G. Kendall, 1960, 'Studies in the History of Probability and Statistics. Where Shall the History of Statistics Begin?', *Biometrika*.
+  - Stigler, 1986, Chs 1-2.
+  - Ian Hacking, 2006, *The Emergence of Probability*.
+  
+
+
+### Week 2
+
+Focuses on the 1700s, especially inverse probability. Gauss, Laplace, Central Limit Theorem.
+
+- Content:
+  - Stigler, 1986, Chs 3-4
+  - Sheynin, 2017, Chs 1-7.
+
+### Week 3
+
+Early 1800s, and moves to the social sciences. Quetelet, Poisson, Cournot, Lexis, binomials and Law of Large Numbers.
+
+- Content: 
+  - Stigler, 1986, Chs 5-6.
+  - Sheynin, 2017, Chs 8-9.
+  
+
+### Week 4
+
+Late 1800s and heredity. Galton, Edgeworth, and Pearson. Regression and correlation.
+
+- Content: 
+  - Stigler, 1986, Chs 7-8.
+  - Sheynin, 2017, Chs 10-11.
+  - David Salsburg, 2002, *The Lady Tasting Tea*.
+  - Theodore M. Porter, 2020, *The Rise of Statistical Thinking, 1820–1900*.
+
+
+### Week 5
+
+Late 1800s and early 1900s. Edgeworth, Pearson, and Yule. Regression, and correlation.
+
+- Content: 
+  - Stigler, 1986, Chs 9-10.
+  - David Freedman, 1999, 'From association to causation: some remarks on the history of statistics'. 
+  - Donald MacKenzie, 1981, *Statistics in Britain, 1865-1930: The Social Construction of Scientific Knowledge*.
+  - Erich Lehmann, 2011, *Fisher, Neyman, and the Creation of Classical Statistics*, Springer.
+
+### Week 6
+
+Early 1900s
+
+  - Stephen M. Stigler, 1996, 'The History of Statistics in 1933', *Statistical Science*
+  - Sheynin, 2017, Chs 12-15.
+  - Stephen M. Stigler, 2016, *The Seven Pillars of Statistical Wisdom*.
+  - Jan von Plato, 1994, *Creating Modern Probability*.
+  - Erich Lehmann, 2007, *Reminiscences of a Statistician*.
+
+### Week 7
+
+Special topic: Data visualization
+
+- Content: 
+  - Friendly and Wainer, 2021, Chs 1-6 and 9.
+
+### Week 8
+
+Special topic: Bayesian methods
+
+- Content: 
+  - Stephen E. Fienberg, 2006, 'When Did Bayesian Inference Become "Bayesian"?', *Bayesian Analysis*.
+  - Thomas Hoskyns Leonard, 2014, 'A personal history of Bayesian statistics', *WIREs Computational Statistics*.
+  - Sharon Bertsch McGrayne, 2012, *The Theory That Would Not Die*.
+  - William D. Nordhaus, 'An Economic History of Computing'.
+  - Dennis V. Lindley, 2001, 'The Philosophy of Statistics', *Journal of the Royal Statistical Society: Series D*.
+  
+
+### Week 9
+
+Special topic: Causal inference
+
+
+- Content: 
+  - Judea Pearl and Dana Mackenzie, 2018, *Book of Why*, Ch 2.
+
+### Week 10
+
+Special topic: Whither statistics? The rise of data science
+
+- Content: 
+  - Leo Breiman, 2001, 'Statistical Modeling: The Two Cultures', *Statistical Sciences*.
+  - David J. Hand, 2015, 'Statistics and computing: the genesis of data science', *Statistics and Computing*.
+  - David Donoho, 2017, '50 Years of Data Science', *Journal of Computational and Graphical Statistics*.
+  
+### Week 11
+
+Special topic: Overlooked contributors
+
+- Content: 
+  - Margo Anderson, 1992, 'The History of Women and the History of Statistics', *Journal of Women's History*
+  - Katie Hafner, 2021, 'Arianna Rosenbluth Dies at 93; Pioneering Figure in Data Science', *New York Times*.
+  - Kitagawa–Blinder–Oaxaca decomposition.
+  - Mary E. Thompson, 'Reflections on women in statistics in Canada', in Xihong Lin, et al., eds, 2014, *Past, present, and future of statistical science*, CRC Press.
+  - Nancy M. Reid, 'The whole women thing', in Xihong Lin, et al., eds, 2014, *Past, present, and future of statistical science*, CRC Press.
+  - Louise M. Ryan, 'Reflections on diversity', in Xihong Lin, et al., eds, 2014, *Past, present, and future of statistical science*, CRC Press.
+
+
+### Week 12
+
+Special topic: Reckoning with the past and thinking about the future. Statistics and society.
+
+- Content: 
+  - How to consider our history?
+  - Alain Desrosières, 2002, *The Politics of Large Numbers*, Harvard University Press.
+  - Xihong Lin, et al., eds, 2014, *Past, present, and future of statistical science*, CRC Press.
+
+
+
+  
+  
+
+## Assessment
+
+### Summary
+
+
+| Item 								| Weight (%) | Due date |
+| ------------- | -------------:| -----:|
+| Tutorial 						| 60 		 | Fortnightly before the lecture |
+| Final Paper 				| 40 		 | Ten days after that |
+
+### Tutorial papers
+
+- Due date: Fortnightly before the lecture. 
+- Weight: Each is worth 10 per cent.
+- Task: Write a paper of 2-6 pages on a topic covered in the preceding two weeks. These will be circulated and discussed in class.
+
+
+### Final Paper
+
+- Due dates: Final day of exam block.
+- Weight: 40 per cent.
+- Task: Write an original paper on a topic covered in the class.
+
+

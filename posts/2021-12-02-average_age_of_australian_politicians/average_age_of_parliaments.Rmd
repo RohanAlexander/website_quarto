@@ -1,0 +1,417 @@
+---
+title: "The average age of politicians in the Australian Federal Parliament (1901-2021)"
+description: |
+  I examine the average age of politicians in the Australian Federal Parliament on a daily basis. Using a publicly available dataset I find that generally the Senate is older than the House of Representatives. The average age increased from Federation in 1901 through to 1949, when an expansion of the parliament's size likely brought many new politicians. I am unable to explain a sustained decline that occurred during the 1970s. From the 1980s onward there has been a gradual aging of both houses.
+author:
+  - name: Rohan Alexander
+    url: {rohanalexander.com}
+date: 2021-12-02
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 3
+bibliography: biblio.bib    
+draft: false
+collections:
+  posts:
+    citations: false
+---
+
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  R.options = list(width = 60)
+  )
+library(knitr)
+```
+
+## Overview
+
+Last week I had the opportunity to attend my first thesis defence at a French-language institution (just to clarify - the actual defence was nonetheless conducted in English). Congratulations to Florence Vallée-Dubois on a successful defence. Her thesis looks at population ageing and democratic representation in Canada and is absolutely brilliant. 
+
+Her work, and some earlier comments by Ben Readshaw, got me thinking about what the average age of a politician in Australia looks like. Thankfully, this is an example of a question that my new R package with Paul Hodgetts `AustralianPoliticians` makes easy to answer [@citeaustralianpoltiicaisn].
+
+The average age of politicians in a parliament may have implications for the types of issues that are emphasised and the policies that are put in place. I examine the average age of Australian politicians in the Senate and the House of Representatives. In general, the Senate tends to be slightly older than the House of Representatives. I find a gradual increase in the average age from Federation through to the 1940s. In 1949 there was an expansion of the parliament and the average age noticeably declined. After a period of relative stability in the 1950s and 1960s, there was another noticeable decrease in the 1970s, followed by a gradual aging.
+
+
+
+
+## Data preparation
+
+The dataset that I used in this note was primarily collected from records from the Australian Parliamentary Library, Wikipedia, and the Australian Dictionary of Biography. The dataset comprises biographical, political, and other information about every person elected to either the House of Representatives or the Senate. You can get the dataset in a series of CSVs on GitHub or as an R Package `AustralianPoliticians` available on CRAN.^[Monica Alexander uses an early version of this dataset to look at the average age of death of Australian politicians: https://www.monicaalexander.com/posts/2019-08-09-australian_politicians/.] 
+
+```{r, message = FALSE, warning = FALSE}
+# install.packages("AustralianPoliticians")
+library(AustralianPoliticians)
+library(lubridate)
+library(tidyverse)
+```
+
+The other packages that are required for the analysis are `lubridate` [@citeLubridate], the `tidyverse` [@citeTidyverse]. Additionally this note draws on the `knitr` [@citeKnitr] and `distill` [@citedistill] packages. All analysis is conducted in the statistical programming language R [@citeR]. 
+
+I'm not going to spend a lot of time on descriptives about the dataset here because that's needed for a paper, and this is meant to be fun. 
+
+```{r}
+all <- AustralianPoliticians::get_auspol("all")
+head(all)
+
+all$member %>% table()
+all$senator %>% table()
+```
+
+
+But briefly, there are 1,783 politicians in the dataset, with 1,205 having sat in the House of Representatives, which is the lower house, and 628 having sat in the Senate, which is the upper house. There is some overlap because there are people who sat in both houses.^[There are a handful of politicians who sat in the parliament, but were never elected - when the first parliament sat, there were initially some who were just appointed, and never went on to seek election. Conversely, there is one politician - Heather Hill - who was elected, but whose election was reversed before she could take her seat. While she never served in either house, she is included in the dataset for purposes of being able to link it to the elections dataset. However she is not included in the number of Australian politicians.]
+
+The `AustralianPoliticians` package contains a number of datasets that are related by the `uniqueID` variable. This note requires the main dataset - 'all' - as well as two supporting datasets that provide more detailed information about the members - 'mps' - and the senators - 'senators'.
+
+```{r}
+# Get the members and the dates they were in the house
+mps <- AustralianPoliticians::get_auspol("mps")
+
+australian_mps <- 
+  all %>% 
+  filter(member == 1) %>% 
+  left_join(mps, 
+            by = "uniqueID") %>% 
+  select(uniqueID, mpFrom, mpTo) %>% 
+  mutate(house = "reps") %>% 
+  rename(from = mpFrom,
+         to = mpTo)
+```
+
+
+```{r}
+# Get the senators and the dates they were in the senate
+senators <- AustralianPoliticians::get_auspol("senators")
+
+australian_senators <- 
+  all %>% 
+  filter(senator == 1) %>% 
+  left_join(senators, 
+            by = "uniqueID") %>% 
+  select(uniqueID, senatorFrom, senatorTo) %>% 
+  mutate(house = "senate") %>% 
+  rename(from = senatorFrom,
+         to = senatorTo)
+
+australian_politicians <- rbind(australian_mps, australian_senators)
+rm(australian_senators, australian_mps, mps, senators)
+
+# Change the names so that they print nicely in graphs/tables
+australian_politicians <- 
+  australian_politicians %>% 
+  mutate(house =
+           case_when(
+             house == "senate" ~ "Senate",
+             house == "reps" ~ "HoR",
+             TRUE ~ "OH NO")
+         )
+head(australian_politicians)
+
+# australian_politicians$house %>% table()
+```
+
+For each day, I would like to know the average age of everyone sitting in the parliament. There are a variety of ways to do this, but one is to create a dataset of two columns: `date` and `uniqueID.` Both of these are repeated, so that for every `date` there is every `uniqueID.` 
+
+```{r}
+start_date <- ymd("1901-01-01")
+end_date <- ymd("2021-12-31")
+
+politicians_by_date <- 
+  tibble(
+    uniqueID = rep(australian_politicians$uniqueID %>% unique(),
+                   end_date - start_date + 1),
+    date = rep(seq.Date(start_date, end_date, by = "day"),
+               australian_politicians$uniqueID %>% unique() %>% length()
+               )
+    )
+
+head(politicians_by_date)
+```
+
+Although the dataset is long at this point, it will be quite sparse as there are many combinations of `date` and `uniqueID` that are irrelevant. In the next step I check if each `uniqueID` was in parliament on each date, and filter away those that were not.
+
+```{r}
+# Add an explicit end date to the uniqueIDs that are still in parliament and
+# hence have NA in the date they left parliament.
+australian_politicians$to[is.na(australian_politicians$to)] <- end_date
+
+politicians_by_date <- 
+  politicians_by_date %>% 
+  left_join(australian_politicians,
+            by = "uniqueID"
+            )
+
+politicians_by_date <- 
+  politicians_by_date %>% 
+  mutate(in_parliament_interval = interval(from, to),
+         in_parliament_at_date = if_else(date %within% in_parliament_interval, 
+                                         1, 
+                                         0)
+         ) %>% 
+  filter(in_parliament_at_date == 1) %>% 
+  select(-in_parliament_interval,
+         -in_parliament_at_date,
+         -from,
+         -to)
+
+head(politicians_by_date)
+```
+
+Now that the dataset is a bit more tractable, I add the birthday of every uniqueID and then calculate their age, in days, for every date.
+
+```{r}
+politicians_by_house_and_birthday <- 
+  all %>% 
+  select(uniqueID, birthDate, member, senator) %>% 
+  pivot_longer(cols = c(member, senator), 
+               names_to = "house", 
+               values_to = "in_it"
+               ) %>% 
+  filter(in_it == 1) %>% 
+  select(-in_it) %>% 
+  mutate(house = 
+           case_when(
+             house == "senator" ~ "Senate",
+             house == "member" ~ "HoR",
+             TRUE ~ "OH NO")
+         )
+
+# Check if the catch-all has been invoked
+# politicians_by_house_and_birthday[politicians_by_house_and_birthday$house == "OH NO",]
+
+politicians_by_date <- 
+  politicians_by_date %>% 
+  left_join(politicians_by_house_and_birthday,
+            by = c("uniqueID", "house")
+            )
+
+politicians_by_date <- 
+  politicians_by_date %>% 
+  filter(!is.na(birthDate)) %>% # I can't find Trish Wortley's birthday and also
+  # we don't know the birthdates of some of the politicians from around Federation.
+  mutate(age_as_at_that_date = date - birthDate)
+
+head(politicians_by_date)
+```
+
+I need to work out the average age for each day. There are some politicians for whom we do not know their exact birthdate. Those have been removed in this calculation.
+
+```{r}
+average_age_by_date <- 
+  politicians_by_date %>%
+  mutate(age_as_at_that_date = age_as_at_that_date / ddays(1)) %>% # This just converts it into a days count
+  group_by(date, house) %>% 
+  summarise(average_age = median(age_as_at_that_date, na.rm = TRUE)) 
+
+
+average_age_by_date <- 
+  average_age_by_date %>% 
+  mutate(average_age_in_years = average_age/365) 
+
+head(average_age_by_date)
+```
+
+I'll do the same thing except to work out the average by election period. This requires grabbing the election periods (there's an R package coming soon about this)!
+
+```{r}
+elections <- read_csv("https://raw.githubusercontent.com/RohanAlexander/australian_federal_elections/master/outputs/elections.csv",
+                      col_types = "Dicc")
+
+average_age_by_election <- 
+  politicians_by_date %>%
+  left_join(elections %>% 
+              rename(date = electionDate) %>% 
+              select(-comment) %>% 
+              mutate(house = "HoR"),
+            by = c("date", "house")) %>% 
+  ungroup() %>% 
+  filter(house == "HoR") %>% 
+  arrange(date, uniqueID) %>% 
+  mutate(is_election = if_else(is.na(electionWinner), 0, 1),
+         is_election = if_else(is_election == lag(is_election, default = 0), 0, is_election),
+         election_counter = cumsum(is_election))
+
+average_age_by_election <- 
+  average_age_by_election %>%
+  ungroup() %>% 
+  mutate(age_as_at_that_date = age_as_at_that_date / ddays(1)) %>% # This just 
+  # converts it into a days count
+  group_by(election_counter) %>% 
+  summarise(average_age = median(age_as_at_that_date, na.rm = TRUE),
+            first_date = min(date)) %>% 
+  mutate(average_age_in_years = average_age/365) %>% 
+  ungroup() 
+```
+
+
+## Results
+
+### Over time
+
+There are considerable changes over time (Figure \@ref(fig:maingraph)).
+
+```{r maingraph, fig.cap="Average age in the Australian Federal Parliament on a daily basis"}
+average_age_by_date %>% 
+  # filter(year(date) == 1904) %>%
+  # filter(month(date) == 2) %>%
+  # filter(house == "HoR") %>%
+  ggplot(aes(x = date, y = average_age_in_years, colour = house)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Date",
+       y = "Average age (years)",
+       color = "House") +
+  theme_minimal() +
+  scale_color_brewer(palette = "Set1") 
+```
+
+I'll just separate each of the houses because there's a lot going on there (Figures \@ref(fig:justrepsthings) and \@ref(fig:justsenatethigns)).
+
+```{r justrepsthings, fig.cap="Average age in the lower house on a daily basis"}
+average_age_by_date %>% 
+  filter(house == "HoR") %>% 
+  ggplot(aes(x = date, y = average_age_in_years)) +
+  geom_point(alpha = 0.5, color = "#F90000") +
+  labs(x = "Date",
+       y = "Average age (years)") +
+  theme_minimal() +
+  scale_color_brewer(palette = "Set1") 
+```
+
+```{r justsenatethigns, fig.cap="Average age in the upper house on a daily basis"}
+average_age_by_date %>% 
+  filter(house == "Senate") %>% 
+  ggplot(aes(x = date, y = average_age_in_years)) +
+  geom_point(alpha = 0.5, color = "#0080BD") +
+  labs(x = "Date",
+       y = "Average age (years)") +
+  theme_minimal() +
+  scale_color_brewer(palette = "Set1") 
+```
+
+### Group by election period
+
+We can also look at a summary of the results, averaged across days, on the basis of each election period (Table \@ref(tab:maintable) and Figure \@ref(fig:othergraph)).
+
+```{r maintable}
+average_age_by_election %>% 
+  select(-average_age) %>% 
+  rename(`Election number` = election_counter,
+         `Period begins` = first_date,
+         `Average age (years)` = average_age_in_years) %>% 
+  kable(caption = "Average age by for each period between lower house elections",
+        digits = 1,
+        booktabs = TRUE)
+```
+
+
+```{r othergraph, fig.cap="Average age in the Australian Federal Parliament, by election period"}
+average_age_by_election %>% 
+  ggplot(aes(x = first_date, y = average_age_in_years)) +
+  geom_point() +
+  labs(x = "Date",
+       y = "Average age (years)") +
+  theme_minimal() +
+  scale_color_brewer(palette = "Set1") 
+```
+
+
+
+### Compare with average age
+
+To get a sense of whether the parliament is unusual we need know what is happening the broader population over this time. Fortunately, I know someone who is fairly handy when it comes to demography who can help.^[If you're interested in this sort of thing, then a PhD with [Monica Alexander](https://www.monicaalexander.com) is probably the way to go.]
+
+Although it's going to average over elections, which we've seen is a big source of variation, we can create an average age for each year, and then compare that against data from the Australian Bureau of Statistics (ABS). The ABS provides an estimate of historical population statistics in 3105.0.65.001 - Australian Historical Population Statistics, 2016, which was released in 2019. I want the second data cube - 2 - Population Age and Sex Structure - and within that I want Table 2.18 - Median age by sex, states and territories, 30 June, 1861 onwards.
+
+```{r}
+library(readxl)
+library(janitor)
+ABS_data <- read_excel("3105065001ds0002_2019.xls", 
+                       sheet = "Table 2.18",
+                       skip = 4) %>%
+  janitor::clean_names() %>% 
+  rename(area_and_type = x1,) %>% 
+  select(-x1861, -x1870, -x1871, -x1881, -x1891)
+
+ABS_data <- 
+  ABS_data %>% 
+  mutate(type = ifelse(area_and_type %in% c("Males", "Females", "Persons"), area_and_type, NA),
+         area_and_type = ifelse(is.na(type), area_and_type, NA)) %>% 
+  select(area_and_type, type, everything()) %>% 
+  fill(area_and_type, .direction = "down") %>% 
+  mutate(area_and_type = str_remove(area_and_type, "\\(f\\)\\(g\\)"))
+
+ABS_data <- 
+  ABS_data %>%  
+  filter(area_and_type == "Australia",
+         type == "Persons")
+
+ABS_data <- 
+  ABS_data %>%
+  pivot_longer(cols = starts_with("x"),
+               names_to = "year",
+               values_to = "median") %>% 
+  mutate(year = str_remove(year, "x"),
+         year = as.integer(year)) %>%
+  rename(area = area_and_type)
+
+```
+
+```{r}
+average_age_by_year <- 
+  politicians_by_date %>%
+  ungroup() %>% 
+  mutate(year = year(date)) %>% 
+  mutate(age_as_at_that_date = age_as_at_that_date / ddays(1)) %>% # This just 
+  # converts it into a days count
+  group_by(year) %>% 
+  summarise(average_age = median(age_as_at_that_date, na.rm = TRUE)) %>% 
+  mutate(average_age_in_years = average_age/365) %>% 
+  ungroup() 
+```
+
+```{r}
+average_age_by_year %>% 
+  left_join(ABS_data, by = "year") %>% 
+  select(year, average_age_in_years, median) %>% 
+  rename(Politicians = average_age_in_years,
+         Overall = median) %>% 
+  pivot_longer(cols = c(Politicians, Overall), 
+               names_to = "population",
+               values_to = "median") %>% 
+  ggplot(aes(x = year, y = median, color = population)) +
+  geom_point() +
+  # geom_smooth() +
+  theme_classic() +
+  scale_color_brewer(palette = "Set1") +
+  labs(x = "Year",
+         y = "Median age (years)",
+         color = "Population")
+```
+
+
+
+
+## Concluding remarks
+
+I've had a brief look at the average age of politicians in the Australian Parliament. In general, I've found that they're older than the general population, and that there's a lot of variation.
+
+More generally, I've shown one of the advantages of putting data onto GitHub, and wrapping that in an R Package where possible. If you don't like my analysis then you can grab the data yourself and play around with it!
+
+As I mentioned at the top, [Florence Vallée-Dubois](https://florencevdubois.github.io) does a lot more of this type of work in her thesis 'Growing old : Population ageing and democratic representation in Canada' where she looks at 'whether the social changes brought about by population ageing also have implications for electoral politics and democratic representation.' There's probably a lot of similar work that could be done for Australia.
+
+
+
+
+
+
+
+
+
+## Acknowledgments {.appendix}
+
+Thanks very much to Ben Readshaw and Florence Vallée-Dubois for motivating this note, and to Monica Alexander for her thoughtful comments.

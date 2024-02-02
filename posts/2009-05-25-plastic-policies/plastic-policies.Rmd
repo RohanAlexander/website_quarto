@@ -1,0 +1,34 @@
+---
+title: "Plastic Policies"
+description: |
+  There is broad agreement that Australian plastic bag consumption should be reduced. To this end, recent South Australian legislation has banned certain types of plastic bags. But other states wishing to reduce their plastic bag consumption may find a tax rather than a ban the more appropriate policy instrument.
+author:
+  - name: Rohan Alexander
+  - name: Flavio Menezes
+date: 2009-05-25
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+*Written with Professor Flavio Menezes and originally published at Australian Policy Online.*
+
+There is broad agreement that Australian plastic bag consumption should be reduced. To this end, recent South Australian legislation has banned certain types of plastic bags. But other states wishing to reduce their plastic bag consumption may find a tax rather than a ban the more appropriate policy instrument.
+
+In South Australia, one of the reasons for a ban rather than a tax was the belief that a tax would impose an additional cost on households. The implied corollary is that a ban on plastic bags would not impose these costs, and thus would presumably be paid for entirely by retailers. This claim is incorrect: not only does a ban on plastic bags impose costs on households, but they are greater than those imposed by a tax.
+
+To understand the impact of a tax on plastic bag consumption it is necessary to distinguish between the initial and final ‘incidence’ of the tax — in other words, between who is legally responsible for paying a tax, and whom the burden of paying the tax would be passed on to. It is the final incidence that matters from a policy perspective. Economic theory suggests that except under very special circumstances, final and initial incidences do not coincide. Indeed, evidence from Germany, Ireland and Switzerland suggest that plastic bag consumption decreases as a result of a tax; and that it is both retailers and households who bear the burden of paying the tax, regardless of the initial incidence.
+
+Under a ban on plastic bags, retailers must switch to other, more ex- pensive, options. Again the distinction between initial and final incidence is important. Although retailers would be legally responsible for providing the more expensive bags required to replace plastic bags, at least some of this additional cost would be passed onto households through higher prices or an explicit charge. Thus, regardless of whether a tax or a ban is used, households bear an additional cost.
+
+So is a tax or a ban the more appropriate instrument? A ban reduces the number of plastic bags to zero, whatever the cost. Bans on smoking in workplaces, for example, are considered desirable because the cost of even a small amount of smoking in the workplace is believed to be unacceptable. For this reason, society is prepared to pay any price to ensure a non-smoking work environment. Is the same true for plastic bags?
+
+In contrast, under a tax the reduction in the number of plastic bags is uncertain, but the additional cost imposed on households is known: it is the size of the tax. A tax more explicitly considers the cost of reduction. It allows households a choice that takes into account the cost and the ben- efit and results in plastic bag usage in cases where the benefit of doing so outweighs the cost.
+
+When the benefit of each additional unit of plastic bag reduction is small compared to the cost a tax is the better option; for should this cost be higher than anticipated, a tax rather than a ban would cost society less. And given that a ban supposes the cost of abatement to be entirely outweighed by the benefit for every level of abatement it is, in effect, not possible that a government advocating a ban has underestimated it.
+
+Although a number of factors must be considered when deciding between a tax or a ban, a ban on plastic bags is unlikely to be the best option for minimising the financial impact on households.

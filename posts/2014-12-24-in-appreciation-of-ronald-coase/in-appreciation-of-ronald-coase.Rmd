@@ -1,0 +1,40 @@
+---
+title: "In Appreciation of Ronald Coase"
+description: |
+  Ronald Coase, one of the most influential economists of the twentieth century, passed away in 2013 aged 102. Reading his papers today, I wonder whether he'd have become an economist if he were making that decision now.
+author:
+  - name: Rohan Alexander
+date: 2014-12-24
+output:
+  distill::distill_article:
+    self_contained: false
+preview: images/IMG_0145.jpg
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Ronald Coase, one of the most influential economists of the twentieth century, passed away in 2013 aged 102. Reading his papers today, I wonder whether he'd have become an economist if he were making that decision now.
+
+```{r fig.cap="Coase's article about lighthouses is brilliant. Which economist could write a paper like that today? Photo by Monica Alexander."}
+knitr::include_graphics("images/IMG_0145.jpg")
+```
+
+Coase began his career by publishing 'The Nature of the Firm' in 1937. That article reported the results of Coase's year-long study of American firms while he was an undergraduate at the London School of Economics (LSE). Until that article was published it was not clear why firms should do better when they are free to interact in a market, yet most individuals give up that freedom by tying themselves to a firm. Coase explained that it was due to transaction costs.
+
+At the time the article was published Coase was teaching at the LSE, but this was soon interrupted by World War II. As he describes, during the war Coase 'entered government service doing statistical work, first at the Forestry Commission and then at the Central Statistical Office, Offices of the War Cabinet'. He returned to the LSE after the war.
+
+In 1951 he moved to the US taking a position first at the University of Buffalo then at the University of Virginia. He studied issues such as the allocation of radio frequency spectrum, which lead to the publication of 'The Problem of Social Cost' in 1960.
+
+That article was concerned with externalities, that is, when an individual's decision affects others. Think of factory that pollutes a river thereby affecting the livelihood of downstream fishermen. Although our inclination may be to shut down the factory, Coase points out that perhaps it would be better for the factory to continue to pollute if it also compensates the fishermen. For Coase, it was important to compare the costs with the benefits.
+
+This article became one of the most cited articles in economics, and has been particularly influential in law. For instance, Michael Kirby describes a case where a decision would traditionally have been made by reference to cases '...decided long ago and in another country'. In contrast, the opinion of the NSW Court of Appeal, written by Kirby, referenced the costs and benefits of various options.
+
+In 1964 Coase moved to the University of Chicago, alongside economists such as Gary Becker, Milton Friedman, and George Stigler. Coase's influence was recognised in 1991 when he was awarded the Nobel Prize in Economics (now in 2014, formally the Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel). He remained active at an advanced age, publishing a book about the rise of China when he was 101.
+
+Coase was an economist in the style of Adam Smith and John Maynard Keynes. He used mathematics sparingly in publications, and he ensured that his analysis was grounded in reality. Unfortunately these traditions are now largely lost to the profession. How many undergraduates take a year to study how businesses actually work, as Coase did?
+
+In 2012 he published an article bemoaning how isolated economics was from 'the ordinary business of life'. He believed that the changed nature of economics had undermined the usefulness of the subject and argued the need for it to be 'firmly grounded in systematic empirical investigation of the working of the economy'.
+
+Coase's work reminds us that economics does not have to be about manipulating abstractions on a whiteboard. His passing was a loss, not only to his friends and family, but also to the entire economics profession.
