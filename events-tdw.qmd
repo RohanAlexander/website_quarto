@@ -20,30 +20,43 @@ Past committee members:
 - Lorena Almaraz De La Garza (2021-22)
 - Faria Khandaker (2020-21)
 
-The TDW is a joint initiative between the Faculty of Information and the Department of Statistical Sciences at the University of Toronto and we especially thank Wendy Duff and Radu Craiu for their support.
 
-## Winter 2024
+<!-- ```{r, out.width= "27%", echo = FALSE} -->
+<!-- knitr::include_graphics(c("images/tdw_100.png"))  -->
+<!-- ``` -->
 
-- Thursday 18 January 2024, noon - 1pm
-	- **Gregory Zuckerman**, Wall Street Journal
-	- ["Renaissance Technologies, data, and Wall Street"](https://youtu.be/Q2r-MfEUaP0)
-	- Gregory Zuckerman is a special writer at *The Wall Street Journal* and non-fiction author. His non-fiction books include *"The Greatest Trade Ever: The Behind-the-Scenes Story of How John Paulson Defied Wall Street and Made Financial History"*, *"The Frackers: The Outrageous Inside Story of the New Billionaire Wildcatters"*, two books for children, *"The Man Who Solved the Market: How Jim Simons Launched the Quant Revolution"* and *"A Shot to Save the World: The Inside Story of the Life-or-Death Race for a COVID-19 Vaccine"*. He has been awarded the Gerald Loeb Award, the highest honor in business journalism, three times.
-- Thursday 25 January 2024, noon - 1pm
-	- **Kristina Gligorić**, Stanford University
-	- ["In-class Data Analysis Replications: Teaching Students while Testing Science"](https://youtu.be/YxkaNNT6trE)
-	- Kristina Gligorić is a Postdoctoral Scholar at Stanford University Computer Science Department, advised by Dan Jurafsky at the NLP group. Previously she obtained her Ph.D. in Computer Science at EPFL, where she was advised by Robert West. Her research focuses on developing computational approaches to solve burning societal issues, understand and improve human well-being, and promote social good. She leverages large-scale textual data and digital behavioral traces and tailors computational methods drawn from AI, NLP, and causal inference. Her work has been published in top computer science conferences (such as *ACM CSCW*, *AAAI ICWSM*, and *TheWebConf*) and broad audience journals (*Nature Communications* and *Nature Medicine*). She is a Swiss National Science Foundation Fellow and University of Chicago Rising star in Data Science. She received awards for her work, including EPFL Thesis Distinction, CSCW 2021 Best Paper Honorable Mention Award, ICWSM 2021 and 2023 Best Reviewer Award, and EPFL Best Teaching Assistant Award.
-- Thursday 1 February 2024, noon - 1pm
-	- **Oliver Giesecke**, Stanford University
-	- ["AI at the Frontiers of Economic Research"](https://youtu.be/_TQqZQ2glhY)
-	- Oliver Giesecke is a research fellow at the Hoover Institution at Stanford University. Giesecke works on topics related to asset pricing and public finance. His recent work studies the finances of state and local governments across the United States. This includes the capital structure of state governments, the book and market equity position of city governments, and the status quo and trend of public pension obligations. For his work on city governments’ finances, he was awarded the NASDAQ OMX Award for the best paper on asset pricing. His work on pension obligations was instrumental to shaping state legislation. In addition, Giesecke has conducted a large-scale survey that elicits the retirement plan preferences of public sector employees across the United States. He is the author of the Stanford municipal finances dashboard which provides, for the first time, credit spreads and fiscal fundamentals for many state and local governments in the United States. The dashboard has received national media coverage in *The Bond Buyer*. Prior to his academic career, he has worked for Germany’s Federal Agency for Financial Market Stabilization (FMSA) and as a senior quantitative finance consultant. Giesecke received a Ph.D. in finance and economics from Columbia University, a Master’s in economics from the Graduate Institute in Geneva, Switzerland, and a BA from Frankfurt University, Germany.
-- Tuesday 6 February 2024, 6:10pm - 7pm
-	- **Bradley Congelio**, Kutztown University of Pennsylvania
-	- ["Introduction to NFL Analytics with R"](https://youtu.be/VU62ZuK4Kc4)
-	- Bradley Congelio is an Assistant Professor in the College of Business at Kutztown University of Pennsylvania. His main area of instruction & research is in Data Analytics and Sport Analytics. He is the author of [*Introduction to NFL Analytics with R*](https://www.routledge.com/Introduction-to-NFL-Analytics-with-R/Congelio/p/book/9781032427751), which was published by CRC Press in December 2023. His research focuses on using big data, the R programming language, and analytics to explore the impact of professional stadiums on neighboring communities. He uses the proprietary Zillow ZTRAX database as well as the U.S. Census and other forms of data to create robust, applied, and useful insight into how best to protect those livings in areas where stadiums are proposed for construction. His work in sport analytics, specifically the NFL, has been featured on numerous media outlets, including the *USA Today* and *Sports Illustrated*.
-- Thursday 8 February 2024, noon - 1pm
-	- **Andreas Florath**, Deutsche Telekom
-	- "LLM Interactive Optimization of Open Source Python Libraries -- Case Studies and Generalization"
-	- Andreas Florath is a Cloud Architect at Deutsche Telekom AG, with a focus on Edge-Cloud Continuum Architecture. His tenure of nearly 25 years at the company has seen him contribute significantly to the development of innovative technology solutions, particularly through his work with the Open Grid and EU Cloud Alliances. Andreas is proficient in complex system analysis and programming languages such as C, C++, and Python, which he leverages to directly implement and test architectures, especially in the realms of cloud federation and AI/ML applications within the telecommunications industry. His expertise is further underscored by his involvement in numerous projects and his commitment to advancing the field through research and collaboration.
+
+<!-- ```{r, out.width= "25%", echo = FALSE} -->
+<!-- knitr::include_graphics(c("images/tdw_dino.png"))  -->
+<!-- ``` -->
+<!-- *Thanks to Hidaya Ismail for the hex sticker.* -->
+
+
+
+
+<!-- ```{r, out.width= "15%", echo = FALSE} -->
+<!-- knitr::include_graphics(c("images/tdw_cn_tower.png", "images/tdw_dino.png", "images/TorontoDataWorkshopMapleLeafs.png", "images/tdw_bluejays_dataworkshop_hex.png", "images/tdw_100.png"))  -->
+<!-- ``` -->
+
+<!-- ```{r, out.width= "25%", echo = FALSE} -->
+<!-- knitr::include_graphics(c("images/TorontoDataWorkshopMapleLeafs.png")) -->
+
+<!-- knitr::include_graphics(c("images/TorontoDataWorkshopMapleLeafs.png"))  -->
+<!-- ``` -->
+
+
+<!-- ```{r, out.width= "25%", echo = FALSE} -->
+<!-- knitr::include_graphics(c("images/tdw_bluejays_dataworkshop_hex.png"))  -->
+<!-- ``` -->
+<!-- *Thanks to Paul Hodgetts for the Jays-inspired sticker.* -->
+
+
+
+
+## 2024
+
+### Upcoming
+
 - Thursday 15 February 2024, noon - 1pm
 	- **Richard Iannone**, Posit, PBC
 	- "Using Great Tables to Make Presentable Tables in Python"
@@ -63,6 +76,11 @@ The TDW is a joint initiative between the Faculty of Information and the Departm
 - Thursday 7 March 2024, noon - 1pm
 	- **Matheus Facure**, Nubank
 	- Matheus has a background in Economics and is a Staff Data Scientist at Nubank. He works mostly with credit underwriting and causal inference. He is the author of *Causal Inference in Python* (O'Reilly) and *Causal Inference for the Brave and True* (Online, Open Source).
+- Friday 8 March 2024, noon - 1pm
+	- **Jonathan Mellon**, West Point
+	- "Using LLMs to code open-text social survey responses at scale"
+	- We compare the accuracy of six LLMs using a few-shot approach, three supervised learning algorithms (SVM, DistilRoBERTa, and a neural network trained on BERT embeddings), and a second human coder on the task of categorizing "most important issue" responses from the British Election Study Internet Panel into 50 categories. For the scenario where a researcher lacks existing training data, the accuracy of the highest-performing LLM (Claude-1.3: 93.9%) neared human performance (94.7%) and exceeded the highest-performing supervised approach trained on 1000 randomly sampled cases (neural network: 93.5%). In a scenario where previous data has been labeled but a researcher wants to label novel text, the best LLM's (Claude-1.3: 80.9%) few-shot performance is only slightly behind the human (88.6%) and exceeds the best supervised model trained on 576,000 cases (DistilRoBERTa: 77.8%). PaLM-2, Llama-2, and the SVM all performed substantially worse than the best LLMs and supervised models across all metrics and scenarios. Our results suggest that LLMs may allow for greater use of open-ended survey questions in the future.
+	- [Jonathan Mellon](https://www.jonathanmellon.com/) is an Associate Professor at West Point's Department of Systems Engineering and co-director of the British Election Study. His research focuses on improving measurement and causal inference in social science. He studies electoral behavior, online citizen engagement, and measuring public opinion. He holds a DPhil in Sociology from Nuffield College, University of Oxford.
 - Thursday 14 March 2024, noon - 1pm
 	- **Tom Davidson**, Rutgers University
 - Thursday 21 March 2024, noon - 1pm
@@ -78,69 +96,92 @@ The TDW is a joint initiative between the Faculty of Information and the Departm
 	- "Election Modeling at The Washington Post"
 	- Lenny Bronner is a data scientist at *The Washington Post*, specializing in elections.
 
-## Fall 2023
 
-- Friday 22 September 2023, noon - 1pm
-	- **Saloni Dattani**, Our World in Data
-	- [*Missing data in global health*](https://youtu.be/cmm3Dw3dYBU)
-	- Saloni Dattani is a researcher on global health at Our World in Data, and an editor at *Works in Progress*. She's interested in everything related to global health, epidemiology and meta-science.
-- Friday 29 September 2023, noon - 1pm
-	- **Nima Sarajpoor**, Manulife 	
-	- [*STUMPY: A powerful tool for modern time series analysis*](https://youtu.be/eztIZVzhSzo)
-	- Nima Sarajpoor is a data scientist in Manulife, working in Fraud Detection. He has been contributing to the software STUMPY for about two years.
-- Friday 6 October 2023, noon - 1pm
-	- **Fabrizio Dell'Acqua**, Harvard Business School
-	- *Experimental evidence on the effect of access to GPT-4 on performance*
-	- Fabrizio Dell'Acqua is a postdoctoral research fellow and teaching fellow at Harvard Business School and the Laboratory for Innovation Science at Harvard (LISH). He received a Ph.D. in Management from Columbia Business School. His research focuses on the areas of automation, human/AI collaboration, and business ethics. 
-- Friday 13 October 2023, noon - 1pm
-	- **Tom Cardoso**, The Globe and Mail
-	- [*Secret Canada: An investigation into Canada’s freedom of information systems*](https://youtu.be/ZJbiPG-s8Fs)
-	- Tom Cardoso is a member of *The Globe and Mail's* investigations team based in Toronto. Since the fall of 2021, he has been investigating Canada's broken freedom of information systems.
-- Friday 20 October 2023
-  - 11am - noon
-    - **Yangjun Ruan**, University of Toronto
-    - [*Identifying the Risks of Language Model Agents with an Language Model Emulated Sandbox*](https://youtu.be/kdhv7RygGxc)
-    - Yangjun Ruan is a Ph.D. Candidate in Computer Science at the University of Toronto, where he is advised by Chris Maddison and Jimmy Ba. Previously, he was a student researcher at Google Research and a research intern at Microsoft Research. In summer 2019, he was a visiting student at UCLA, where he worked with Cho-Jui Hsieh. He obtained a Bachelor degree in Information Engineering from Zhejiang University.
-  - Noon - 1pm
-  	- **Marzieh Fadaee**, Cohere for AI
-  	- [*Aya: An Open Science Initiative to Accelerate Multilingual AI Progress*](https://youtu.be/kVOKtJ8ZTgI)	
-  	- Marzieh Fadaee is a Senior Research Scientist @ Cohere For AI. She holds a PhD from the Language Technology Lab at the University of Amsterdam, where she developed models to understand and utilize interesting phenomena in data, and was advised by Christof Monz and Arianna Bisazza. She received a B.Sc. from Sharif University majoring in Computer Engineering and M.Sc. from University of Tehran majoring in Artificial Intelligence.
-- Friday 27 October 2023, 11am - noon
-  - **James Zou**, Stanford University
-  - *Can large language models provide useful feedback on research papers? A large-scale empirical analysis*
-  - James Zou is an Assistant Professor of Biomedical Data Science and, by courtesy, of Computer Science and Electrical Engineering at Stanford University. He works on making machine learning more reliable, human-compatible and statistically rigorous, and am especially interested in applications in human disease and health. He is a two-time Chan-Zuckerberg Investigator and the faculty director of the university-wide Stanford Data4Health hub. His research is supported by the Sloan Fellowship, the NSF CAREER Award, and Google, Amazon and Adobe AI awards. 
-- Friday 3 November 2023
-  - 11am - noon
-    - **John Yang**, Princeton University
-    - [*SWE-bench: Can Language Models Resolve Real-World GitHub Issues?*](https://youtu.be/DrLdvbkgmeA)
-    - John Yang is a research assistant working at Princeton University, advised by Professor Karthik Narasimhan. He is interested in Language Grounding & Interaction, Benchmarks for LLMs, Software Engineering, and Code Generation. 
-  - Noon - 1pm
-  	- **Apoorva Lal**, Netflix
-  	- [*Modern balancing methods for causal inference*](https://youtu.be/CO9VnGy3esI)
-  	- Data scientist on the experimentation team at Netflix working on observational causal inference with spatial and panel data.
+### Past
+
+- Thursday 8 February 2024, noon - 1pm
+	- **Andreas Florath**, Deutsche Telekom
+	- "LLM Interactive Optimization of Open Source Python Libraries -- Case Studies and Generalization"
+	- Andreas Florath is a Cloud Architect at Deutsche Telekom AG, with a focus on Edge-Cloud Continuum Architecture. His tenure of nearly 25 years at the company has seen him contribute significantly to the development of innovative technology solutions, particularly through his work with the Open Grid and EU Cloud Alliances. Andreas is proficient in complex system analysis and programming languages such as C, C++, and Python, which he leverages to directly implement and test architectures, especially in the realms of cloud federation and AI/ML applications within the telecommunications industry. His expertise is further underscored by his involvement in numerous projects and his commitment to advancing the field through research and collaboration.
+- Tuesday 6 February 2024, 6:10pm - 7pm
+	- **Bradley Congelio**, Kutztown University of Pennsylvania
+	- "[Introduction to NFL Analytics](https://youtu.be/VU62ZuK4Kc4)"
+	- Bradley Congelio is an Assistant Professor in the College of Business at Kutztown University of Pennsylvania. His main area of instruction & research is in Data Analytics and Sport Analytics. He is the author of [*Introduction to NFL Analytics with R*](https://www.routledge.com/Introduction-to-NFL-Analytics-with-R/Congelio/p/book/9781032427751), which was published by CRC Press in December 2023. His research focuses on using big data, the R programming language, and analytics to explore the impact of professional stadiums on neighboring communities. He uses the proprietary Zillow ZTRAX database as well as the U.S. Census and other forms of data to create robust, applied, and useful insight into how best to protect those livings in areas where stadiums are proposed for construction. His work in sport analytics, specifically the NFL, has been featured on numerous media outlets, including the *USA Today* and *Sports Illustrated*.
+- Thursday 1 February 2024, noon - 1pm
+	- **Oliver Giesecke**, Stanford University
+	- "[AI at the Frontiers of Economic Research](https://youtu.be/_TQqZQ2glhY)"
+	- Oliver Giesecke is a research fellow at the Hoover Institution at Stanford University. Giesecke works on topics related to asset pricing and public finance. His recent work studies the finances of state and local governments across the United States. This includes the capital structure of state governments, the book and market equity position of city governments, and the status quo and trend of public pension obligations. For his work on city governments’ finances, he was awarded the NASDAQ OMX Award for the best paper on asset pricing. His work on pension obligations was instrumental to shaping state legislation. In addition, Giesecke has conducted a large-scale survey that elicits the retirement plan preferences of public sector employees across the United States. He is the author of the Stanford municipal finances dashboard which provides, for the first time, credit spreads and fiscal fundamentals for many state and local governments in the United States. The dashboard has received national media coverage in *The Bond Buyer*. Prior to his academic career, he has worked for Germany’s Federal Agency for Financial Market Stabilization (FMSA) and as a senior quantitative finance consultant. Giesecke received a Ph.D. in finance and economics from Columbia University, a Master’s in economics from the Graduate Institute in Geneva, Switzerland, and a BA from Frankfurt University, Germany.
+- Thursday 25 January 2024, noon - 1pm
+	- **Kristina Gligorić**, Stanford University
+	- "[In-class Data Analysis Replications: Teaching Students while Testing Science](https://youtu.be/YxkaNNT6trE)"
+	- Kristina Gligorić is a Postdoctoral Scholar at Stanford University Computer Science Department, advised by Dan Jurafsky at the NLP group. Previously she obtained her Ph.D. in Computer Science at EPFL, where she was advised by Robert West. Her research focuses on developing computational approaches to solve burning societal issues, understand and improve human well-being, and promote social good. She leverages large-scale textual data and digital behavioral traces and tailors computational methods drawn from AI, NLP, and causal inference. Her work has been published in top computer science conferences (such as *ACM CSCW*, *AAAI ICWSM*, and *TheWebConf*) and broad audience journals (*Nature Communications* and *Nature Medicine*). She is a Swiss National Science Foundation Fellow and University of Chicago Rising star in Data Science. She received awards for her work, including EPFL Thesis Distinction, CSCW 2021 Best Paper Honorable Mention Award, ICWSM 2021 and 2023 Best Reviewer Award, and EPFL Best Teaching Assistant Award.
+- Thursday 18 January 2024, noon - 1pm
+	- **Gregory Zuckerman**, Wall Street Journal
+	- "[Renaissance Technologies, data, and Wall Street](https://youtu.be/Q2r-MfEUaP0)"
+	- Gregory Zuckerman is a special writer at *The Wall Street Journal* and non-fiction author. His non-fiction books include *"The Greatest Trade Ever: The Behind-the-Scenes Story of How John Paulson Defied Wall Street and Made Financial History"*, *"The Frackers: The Outrageous Inside Story of the New Billionaire Wildcatters"*, two books for children, *"The Man Who Solved the Market: How Jim Simons Launched the Quant Revolution"* and *"A Shot to Save the World: The Inside Story of the Life-or-Death Race for a COVID-19 Vaccine"*. He has been awarded the Gerald Loeb Award, the highest honor in business journalism, three times.
+
+	
+
+
+## 2023
+
+- Friday 24 November 2023, noon - 1pm
+  - **Wendy Foster**, Shopify 
+  - [*Socio-technical processes for data integrity*](https://youtu.be/GQhLlGWMjRM)  
+  - Wendy Foster is Director of Engineering and Data, Optimize, at Shopify.
+- Friday 17 November 2023, 1pm - 2pm
+  - **Chiara Alcantara**, University of Waterloo
+  - **Franklin Ramirez**, University of Waterloo
+  - **Helena Xu**, University of Waterloo
+  - [*Exploring Alternatives to REST for Accessing Public Data Sets*](https://youtu.be/EvcnSDo5EPU)
+  - In the past decade, governments, non-profits, and other civic institutions have increasingly been sharing data on a wide range of topics, supporting various sectors of society from private enterprise to academic research. However, using this data in a programmatic and reproducible fashion is hampered by the myriad nature of the APIs provided to access it. In this talk, we explore one potential alternative to the predominant REST paradigm: storing tabular data in the open Parquet file format on publicly accessible endpoints. By using this standardized file format and a simple backing infrastructure, new tools based on Apache Arrow, such as DuckDB and Polars, can be used to build reusable front ends and other cost-effective solutions. We present a case study based on Statistics Canada’s library of public data sets, showcasing how such a system can simplify initial selection and filtering through common SQL queries.
+  - Chiara, Franklin, and Helena are second-year computer science students at the University of Waterloo who are interested in applying new software and data engineering tooling to increase the accessibility of public data sets.
 - Friday 10 November 2023, noon - 1pm
   - **Alexander Coppock**, Yale University
   - [*Research design in the social sciences*](https://youtu.be/ecuIVCB_TqQ)
   - Alex Coppock is an Associate Professor (on term) of Political Science at Yale University. He is the author of *Persuasion in Parallel: How Information Changes Minds about Politics* and a member of the DeclareDesign team. He is a co-author of the recently published book *Research Design in the Social Sciences: Declaration, Diagnosis, and Redesign*.
-- Friday 17 November 2023, 1pm - 2pm
-	- **Chiara Alcantara, Franklin Ramirez, Helena Xu**, University of Waterloo
-	- [*Exploring Alternatives to REST for Accessing Public Data Sets*](https://youtu.be/EvcnSDo5EPU)
-	- In the past decade, governments, non-profits, and other civic institutions have increasingly been sharing data on a wide range of topics, supporting various sectors of society from private enterprise to academic research. However, using this data in a programmatic and reproducible fashion is hampered by the myriad nature of the APIs provided to access it. In this talk, we explore one potential alternative to the predominant REST paradigm: storing tabular data in the open Parquet file format on publicly accessible endpoints. By using this standardized file format and a simple backing infrastructure, new tools based on Apache Arrow, such as DuckDB and Polars, can be used to build reusable front ends and other cost-effective solutions. We present a case study based on Statistics Canada’s library of public data sets, showcasing how such a system can simplify initial selection and filtering through common SQL queries.
-	- Chiara, Franklin, and Helena are second-year computer science students at the University of Waterloo who are interested in applying new software and data engineering tooling to increase the accessibility of public data sets.
-- Friday 24 November 2023, noon - 1pm
-	- **Wendy Foster**, Shopify	
-	- [*Socio-technical processes for data integrity*](https://youtu.be/GQhLlGWMjRM)	
-	- Wendy Foster is Director of Engineering and Data, Optimize, at Shopify.
+- Friday 3 November 2023, noon - 1pm
+  - **Apoorva Lal**, Netflix
+  - [*Modern balancing methods for causal inference*](https://youtu.be/CO9VnGy3esI)
+  - Data scientist on the experimentation team at Netflix working on observational causal inference with spatial and panel data.
+- Friday 3 November 2023, 11am - noon
+  - **John Yang**, Princeton University
+  - [*SWE-bench: Can Language Models Resolve Real-World GitHub Issues?*](https://youtu.be/DrLdvbkgmeA)
+  - John Yang is a research assistant working at Princeton University, advised by Professor Karthik Narasimhan. He is interested in Language Grounding & Interaction, Benchmarks for LLMs, Software Engineering, and Code Generation. 
+- Friday 27 October 2023, 11am - noon
+  - **James Zou**, Stanford University
+  - *Can large language models provide useful feedback on research papers? A large-scale empirical analysis*
+  - James Zou is an Assistant Professor of Biomedical Data Science and, by courtesy, of Computer Science and Electrical Engineering at Stanford University. He works on making machine learning more reliable, human-compatible and statistically rigorous, and am especially interested in applications in human disease and health. He is a two-time Chan-Zuckerberg Investigator and the faculty director of the university-wide Stanford Data4Health hub. His research is supported by the Sloan Fellowship, the NSF CAREER Award, and Google, Amazon and Adobe AI awards. 
+- Friday 20 October 2023, noon - 1pm
+  - **Marzieh Fadaee**, Cohere for AI
+  - [*Aya: An Open Science Initiative to Accelerate Multilingual AI Progress*](https://youtu.be/kVOKtJ8ZTgI)  
+  - Marzieh Fadaee is a Senior Research Scientist @ Cohere For AI. She holds a PhD from the Language Technology Lab at the University of Amsterdam, where she developed models to understand and utilize interesting phenomena in data, and was advised by Christof Monz and Arianna Bisazza. She received a B.Sc. from Sharif University majoring in Computer Engineering and M.Sc. from University of Tehran majoring in Artificial Intelligence.
+- Friday 20 October 2023, 11am - noon
+  - **Yangjun Ruan**, University of Toronto
+  - [*Identifying the Risks of Language Model Agents with an Language Model Emulated Sandbox*](https://youtu.be/kdhv7RygGxc)
+  - Yangjun Ruan is a Ph.D. Candidate in Computer Science at the University of Toronto, where he is advised by Chris Maddison and Jimmy Ba. Previously, he was a student researcher at Google Research and a research intern at Microsoft Research. In summer 2019, he was a visiting student at UCLA, where he worked with Cho-Jui Hsieh. He obtained a Bachelor degree in Information Engineering from Zhejiang University.
+- Friday 13 October 2023, noon - 1pm
+  - **Tom Cardoso**, The Globe and Mail
+  - [*Secret Canada: An investigation into Canada’s freedom of information systems*](https://youtu.be/ZJbiPG-s8Fs)
+  - Tom Cardoso is a member of *The Globe and Mail's* investigations team based in Toronto. Since the fall of 2021, he has been investigating Canada's broken freedom of information systems.
+- Friday 6 October 2023, noon - 1pm
+  - **Fabrizio Dell'Acqua**, Harvard Business School
+  - *Experimental evidence on the effect of access to GPT-4 on performance*
+  - Fabrizio Dell'Acqua is a postdoctoral research fellow and teaching fellow at Harvard Business School and the Laboratory for Innovation Science at Harvard (LISH). He received a Ph.D. in Management from Columbia Business School. His research focuses on the areas of automation, human/AI collaboration, and business ethics. 
+- Friday 29 September 2023, noon - 1pm
+  - **Nima Sarajpoor**, Manulife  
+  - [*STUMPY: A powerful tool for modern time series analysis*](https://youtu.be/eztIZVzhSzo)
+  - Nima Sarajpoor is a data scientist in Manulife, working in Fraud Detection. He has been contributing to the software STUMPY for about two years.
+- Friday 22 September 2023, noon - 1pm
+  - **Saloni Dattani**, Our World in Data
+  - [*Missing data in global health*](https://youtu.be/cmm3Dw3dYBU)
+  - Saloni Dattani is a researcher on global health at Our World in Data, and an editor at *Works in Progress*. She's interested in everything related to global health, epidemiology and meta-science.
 
 
 
-## Past talks
 
-### Fall 2022
 
-```{r, out.width= "27%", echo = FALSE}
-knitr::include_graphics(c("images/tdw_100.png")) 
-```
+## 2022
 
 * Friday 9 September 2022, noon - 1pm	
 	**Ryan Briggs**, University of Guelph    
@@ -187,12 +228,6 @@ knitr::include_graphics(c("images/tdw_100.png"))
 
 
 
-### Winter 2022
-
-```{r, out.width= "25%", echo = FALSE}
-knitr::include_graphics(c("images/tdw_cn_tower.png")) 
-```
-
 * Fri 28 Jan 2022, noon - 1pm  
 	**Ashok Chaurasia**, University of Waterloo  
 	[*Multiple Imputation: Old and New Combining Rules for Statistical Inference*](https://youtu.be/qFCHjNH9HLc)    
@@ -229,12 +264,10 @@ knitr::include_graphics(c("images/tdw_cn_tower.png"))
 	Originally from Melbourne, Australia, Brittany received her B.A. in International Studies from the University of Saskatchewan and started her career in economic development, equipping her with comprehensive knowledge of foreign direct investment and international business early in her career.  She went on to obtain an M.A. in European and Russian Affairs from the University of Toronto in 2018, where she first discovered the potential of programming for political science and became fascinated with artificial intelligence (AI). Over the past three years, Brittany has worked in many facets of the AI industry, from leading research and development of new AI products for video game developers to building automated data pipelines for business intelligence and managing software engineering and client engagement teams. In that time, she has honed technical skills in full-stack development, machine learning, and data engineering. She recently struck out on her own to launch an online global event monitoring tool and deliver novel solutions to clients in the political risk and social enterprise sectors. Brittany is a firm believer in the potential for data-driven technologies for geopolitics and is excited to contribute to the many discoveries to be made in this space.
 
 
-### Fall 2021
+## 2021
 
 
-```{r, out.width= "25%", echo = FALSE}
-knitr::include_graphics(c("images/tdw_cn_tower.png")) 
-```
+
 
 * Friday, 24 September 2021, noon - 1pm  
 	**Karen Chapple**, Department of Geography and Planning/School of Cities  
@@ -271,7 +304,7 @@ knitr::include_graphics(c("images/tdw_cn_tower.png"))
 	["Supporting Big Data Research at the University of California, Berkeley"](https://youtu.be/139xCz-e0tg)  
 	Dr Ann Glusker is Librarian for Sociology, Demography, Public Policy, Psychology (fall 2021) & Quantitative Research at the Doe Library, University of California, Berkeley. She will discuss a recently released [report](https://escholarship.org/uc/item/4403c0f4) 'Supporting Big Data Research at the University of California, Berkeley'. This report provides insights on researcher practices and challenges in six thematic areas: data collection & processing; analysis: methods, tools, infrastructure; research outputs; collaboration; training; and balancing domain vs data science expertise.	
 * Friday, 19 November 2021, noon - 1pm  
-	**Radu Craiu**, Statistical Sciences, Univeristy of Toronto  
+	**Radu Craiu**, Statistical Sciences, University of Toronto  
 	[Data science and statistical sciences](https://youtu.be/B7EKLFotknU)  
 	[Dr Radu V. Craiu](https://utstat.toronto.edu/craiu/) is Professor and Chair of Statistical Sciences at the University of Toronto.  His main research interests are in computational methods in statistics, especially, Markov chain Monte Carlo algorithms (MCMC), Bayesian inference, copula models, model selection procedures and statistical genetics.	
 * Friday, 26 November 2021, noon - 1pm  
@@ -289,11 +322,6 @@ knitr::include_graphics(c("images/tdw_cn_tower.png"))
 
 
 
-### Summer 2021
-
-```{r, out.width= "25%", echo = FALSE}
-knitr::include_graphics(c("images/TorontoDataWorkshopMapleLeafs.png")) 
-```
 
 * Friday, 21 May 2021, noon - 1pm  
 	**David Shor**, OpenLabs    
@@ -349,13 +377,6 @@ knitr::include_graphics(c("images/TorontoDataWorkshopMapleLeafs.png"))
   [*Using statistical model to analyzing shark, lizard, and basketball movement data*](https://youtu.be/p697exbcMZE)  
   Jessica Long, Simone Collier, Vinky Wang, Sophie Berkowitz, and Yun-Hsiang Chan are undergraduate students at the University of Toronto.  
   
-
-### Winter 2021
-
-```{r, out.width= "25%", echo = FALSE}
-knitr::include_graphics(c("images/tdw_bluejays_dataworkshop_hex.png")) 
-```
-*Thanks to Paul Hodgetts for the Jays-inspired sticker.*
 
 * Thursday, 14 January, 4:30-5:30pm  
 	**Andrew Miles**, University of Toronto  
@@ -431,175 +452,170 @@ knitr::include_graphics(c("images/tdw_bluejays_dataworkshop_hex.png"))
 	[Aimee Schwab-McCoy](https://aimeeschwab-mccoy.github.io) is an Assistant Professor of Statistics at Creighton University. [Ashley Juavinett](https://ashleyjuavinett.com) is a neuroscientist, an educator, and a writer, currently working as an Assistant Teaching Professor at UC San Diego. Chris Papalia is a Mathematics and Science Teacher and Head of House at St. Andrew's College. Samantha-Jo Caetano is an Assistant Professor, Teaching Stream, at the University of Toronto.  
 
 
-### Fall 2020
+## 2020
 
-```{r, out.width= "25%", echo = FALSE}
-knitr::include_graphics(c("images/tdw_dino.png")) 
-```
-*Thanks to Hidaya Ismail for the hex sticker.*
-
-* Thursday, 3 September 2020, 4-5pm  
-  *Using hospital data*  
-	**Erik Drysdale**, The Hospital for Sick Children  
-	[Erik](erikdrysdale.com) works as a Machine Learning Specialist at the Hospital for Sick Children (SickKids) for the Goldenberg Lab and AI in Medicine (AIM) initiative. His professional responsibilities include the development and training of the machine learning models for various pediatric data science projects. His research interests are focused on the intersection of statistics and machine learning methods such as high-dimensional inference, survival analysis, and optimization methods. Erik will talk about the challenges of applying ML in hospital data and why statistics still matters in ML.
-* Tuesday, 8 September 2020, 3:30-4:30pm  
-  *UK A levels algorithm issues*
-  *Jointly hosted with Gillian Hadfield and the [Schwartz Reisman Institute for Technology and Society](https://sr-institute.utoronto.ca/).*  
-	**Sophie Bennett**, Industry data scientist  
-	[Sophie Bennett](https://www.sophieheloisebennett.com/) holds an undergraduate degree in Experimental Psychology from the University of Oxford and a PhD in Neuroscience from King's College. She is the lead data scientist at Up Learn, a London-based online learning platform specialising in A levels. In this role, she conducts evaluations of course effectiveness and uses data to improve instruction and curriculum design. She is passionate about increasing the use of responsible evidence and statistics to guide social policy, and, in her spare time, enjoys working with publicly available datasets to explore London demographics, social issues and infrastructure. Sophie will discuss A Levels, Ofqual and algorithms. 	
-* Thursday, 10 September 2020, 4-5pm  
-  *Toronto Data Lab launch event.*  
-	**A Mahfouz**, University of Toronto  
-	**Diego Mamanche Castellanos**, University of Toronto  
-	**Hidaya Ismail**, University of Toronto  
-	**Ke-Li Chiu**, University of Toronto  
-	**Paul Hodgetts**, University of Toronto  
-	Various Toronto Data Lab projects will be presented including `arxivdl`, `aRianna`, `cesR`, and more!
-* Thursday, 17 September 2020, 4-5pm  
-  *Cancer and AI*  
-	**Amber Simpson**, Queen's University  
-	[Dr. Simpson](http://simpsonlab.org/) is the Canada Research Chair in Biomedical Computing and Informatics and Associate Professor in the School of Computing (Faculty of Arts and Science) and Department of Biomedical and Molecular Sciences (Faculty of Health Sciences). She specializes in biomedical data science and computer-aided surgery. Her research group is focused on developing novel computational strategies for improving human health. Dr Simpson will discuss cancer and AI.	
-* Thursday, 24 September 2020, 4-5pm  
-  *Talking to non-statisticians about statistics*  
-	**Chelsea Parlett-Pelleriti**, Chapman University  
-	[Chelsea](https://cmparlettpelleriti.github.io/) is a PhD candidate and full-time instructional faculty at Chapman University where her research focuses on using novel statistical and Machine Learning methods (mostly Bayesian statistics, IRT models, and clustering) to behavioral data. As an instructor she teaches Python, R and Data Science, and loves using novel technology (like TikTok, Twitch, and flipped classes) to better engage and inspire students. Chelsea will discuss talking to non-DS team members about DS topics.
-* Thursday, 1 October 2020, 4-5pm  
-  Canadian demographics by riding (1991-2015)  
-	**Florence Vallée-Dubois**, Université de Montréal  
-	[Florence Vallée-Dubois](https://florencevdubois.github.io/) is a Ph.D. candidate at the department of political science of the University of Montreal. She is also a member of the Centre for the Study of Democratic Citizenship and Canada Research Chair in Electoral Democracy. Her research interests focus on Quebec and Canadian politics, political behaviour and quantitative methods. Her doctoral project focuses on the political behaviour and democratic representation of seniors in Canada. Florence will discuss Canadian Demographics by Electoral Riding (1991-2015).
-* Thursday, 8 October 2020, 4-5pm  
-	**Yim Register**, University of Washington Data Lab  
-	*Self-advocacy within machine learning systems*  
-	[Yim Register](https://medium.com/@yimregister) (they/them) is a radical optimist, child advocate, and PhD student at the University of Washington Data Lab exploring what self-advocacy looks like within machine learning systems. They study how empowering novices with Data Science knowledge can impact their participation and joy in an AI-driven world! Their passion project right now is writing a book called Life Lessons from Algorithms, a book that  teaches how machine learning algorithms work through trauma recovery skills. Yim will discuss self-advocacy within machine learning systems.
-* Thursday, 22 October 2020, 4-5pm  
-  *Panel discussion on data-focused resources at the University of Toronto.*  
-  **Jeff Waldman**, University of Toronto  
-  **Leanne Trimble**, University of Toronto  
-	**Leslie Barnes**, University of Toronto  
-	**Lisa Strug**, University of Toronto  
-	Jeff Waldman is the Manager, Institutional Data Governance; Leslie Barnes is the Digital Scholarship Librarian at UTL; Leanne Trimble is the Data and Statistics Librarian at UTL; Lisa Strug is a Senior Scientist in the Program of Genetics and Genome Biology, Associate Director of The Centre for Applied Genomics, Professor of Statistical Sciences and Biostatistics at the University of Toronto, and Director of CANSSI Ontario. 
-* Thursday, 29 October 2020, 4-5pm  
-	**Fei Chiang**, McMaster University  
-	*Data currency and applications*  
-	[Fei Chiang](http://www.cas.mcmaster.ca/~fchiang/) is an Associate Professor in the Department of Computing and Software (Faculty of Engineering), the Director of the Data Science Research Group, and a Faculty Fellow at the IBM Centre for Advanced Studies. She served as an inaugural Associate Director of the MacData Institute. Her research interests and industrial experience is in data management, spanning data cleaning, data quality, data privacy, data fusion, and database systems. Professor Chiang will discuss data currency and its applications.
-* Thursday, 5 November 2020, 4-5pm  
-  **Andrew Whitby**, Industry data scientist  
-  *Censuses: The sum of the people*  
-	[Andrew](https://andrewwhitby.com) is a data scientist and economist currently looking for his next challenge. He is particularly interested in the economics of technology, creativity, innovation and growth. He wrote The Sum of the People: How the Census Has Shaped Nations from the Ancient World to the Modern Age which was published in March 2020. Previously, he worked as a Data Scientist at the World Bank, and at Nesta, the UK's innovation think tank. His academic background combines economics, statistics and computer science. He completed his doctoral research in the Department of Economics at the University of Oxford. Andrew will discuss censuses.  
-* Monday, 9 November 2020, 4-5pm  
-  **Tom Cardoso**, Globe and Mail  
-  *Bias Behind Bars*  
-  [Tom Cardoso](https://www.theglobeandmail.com/authors/tom-cardoso/) is a crime and justice reporter and data journalist for The Globe and Mail. Tom will discuss his [Bias Behind Bars](https://www.theglobeandmail.com/canada/article-investigation-racial-bias-in-canadian-prison-risk-assessments/) series of articles which show Black and Indigenous inmates in Canada are more likely to get worse scores than white inmates, based solely on their race.  
-* Thursday, 12 November 2020, 4-5pm  
-	**Kevin Armstrong**, University of Toronto  
-	*Measuring poverty for NGOs*  
-	Kevin Armstrong is a Masters of Information student at the University of Toronto, and a data consultant for 'Women's Integrated Sexual Health' ([WISH](https://www.ippf.org/our-approach/programmes/womens-integrated-sexual-health-wish)) - a three-year program delivering integrated health care in 16 countries in Africa and South Asia. Kevin will discuss methods for measuring poverty and use cases for NGOs.
-* Thursday, 19 November 2020, 4-5pm  
-	[High-throughput Bayesian modelling workflow](https://youtu.be/xM1vf_KT76g)  
-	**Michael Chong**, University of Toronto  
-	[Michael](https://michael-chong.github.io/) is a PhD student in the Department of Statistical Sciences at the University of Toronto building models for demographic estimation. Previously, he completed his BSc in Integrated Science at McMaster University. Michael will discuss lessons from a high-throughput Bayesian modelling workflow
-* Thursday, 3 December 2020, 5-6pm  
-	**Monica Alexander**, University of Toronto  
-	[Using Facebook advertising data to estimate migration](https://youtu.be/xM1vf_KT76g)
-	[Monica Alexander](https://www.monicaalexander.com/about/) is an Assistant Professor in Statistical Sciences and Sociology at the University of Toronto. She received her PhD in Demography from the University of California, Berkeley. Her research interests include statistical demography, mortality and health inequalities, and computational social science. Monica will talk about using Facebook advertising data to estimate migration. A recording of the talk is available here: https://youtu.be/xM1vf_KT76g.
-* Thursday, 10 December 2020, 4-5pm  
-  [Population data estimation](https://youtu.be/kfmKusnGDLI)  
-	**Shabrina Mardevi**, United Nations Population Fund and University of Toronto  
-	**Romesh Silva**, United Nations Population Fund  
-	Shabrina is a Masters of Information student at the University of Toronto and a Population Data Estimation and Analysis Intern at the United Nations Population Fund. Romesh holds a PhD in Demography from the University of California, Berkeley, and is a Technical Specialist, Health & Social Inequalities, at the United Nations Population Fund.  
-* Thursday, 17 December 2020, 4-5pm  
-	[*Panel discussion on teaching data-focused topics.*](https://youtu.be/c3R6pZisvm0)  
-	**Liza Bolton**, University of Toronto  
-	**Maria Tackett**, Duke University  
-	**Nathalie Moon**, University of Toronto  
-	**Teon Brooks**, Mozilla Firefox  
-	[Liza Bolton](https://www.statistics.utoronto.ca/people/directories/all-faculty/liza-bolton) is an Assistant Professor, Teaching Stream, at the University of Toronto. [Maria Tackett](https://www.mariatackett.net/) is an Assistant Professor of the Practice in the Department of Statistical Science at Duke University. [Nathalie Moon](https://www.statistics.utoronto.ca/people/directories/all-faculty/nathalie-moon) is an Assistant Professor, Teaching Stream, University of Toronto. [Teon L. Brooks](https://teonbrooks.com/), holds a PhD in experimental psychology from NYU, and now works as a data scientist for [Mozilla Firefox](https://mozilla.org). He also serves as the technical advisor and President of [BrainWaves](https://wp.nyu.edu/brainwaves), an NIH-funded project to teach experimentation and cognitive neuroscience to high school students in NYC, and has co-founded Computation in Education Labs ([CIEL](https://cielabs.org)), a nonprofit that aims to further the mission of the BrainWaves project while focusing on data science and computational thinking.
-
-
-
-### Summer 2020
-
-* *Thursday, 21 May 2020, 4-5pm*  
-	**Rohan Alexander**, University of Toronto, Faculty of Information  
-	Rohan Alexander is a post-doctoral fellow at the Faculty of Information, University of Toronto. He holds a PhD in Economics from the Australian National University. He will talk about getting data from PDFs into R, with an application to the Kenyan census.
-* *Thursday, 28 May 2020, 4-5pm*  
-	**Shiro Kuriwaki**, Harvard University, Government  
-	[Shiro](https://www.shirokuriwaki.com/) is a Ph.D. Candidate at the Department of Government, Harvard University. His research focuses on democratic representation in American Politics, for instance cast vote records, public opinion, survey methods, and applied statistics more generally. Shiro will bring together best practices for organizing data and code in the social sciences that experts have proposed with some of his own experience. He will propose a project-oriented workflow that adopts a minimal and consistent file organization structure within a single project, using RStudio Projects and GitHub. He will then discuss how to organize multiple projects that share common components, and propose the use of custom R packages to share code and Dataverse to share large datasets. He will use some of his own projects involving the Cooperative Congressional Election Study (CCES), one of the largest political surveys of American Politics, as a demonstration.  
-	Recording available [here](https://vimeo.com/424091492).
-* *Thursday, 4 June 2020, 4-5pm*  
-	**Marija Pejcinovska**, University of Toronto, Department of Statistical Sciences  
-	Marija is a second-year Ph.D. student in Statistics at the University of Toronto. Her research interests are in applied statistics, specifically the application of Bayesian methods to data and modeling challenges that arise in demography, public health, and certain areas of the social sciences. Marija will talk about a current project with the World Health Organization (WHO) focused on estimating global maternal mortality to share her R workflow and the different tools and packages she's found helpful in the data processing stage. More specifically, she'll be sharing a few ways of dealing with text and date data in R. 
-* *Thursday, 11 June 2020, 4-5pm*  
-	**Harrison Jones**, Deloitte  
-	[Harrison](https://ca.linkedin.com/in/harrison-jones-a9947b60) is a Manager at Deloitte in Toronto, where he focuses on data analytics and machine learning in the property & casualty insurance, life insurance, health insurance, pensions, and the public sector. Harrison will talk about using R with actuarial data.
-* *Thursday, 18 June 2020*  
-	**Cancelled** in support of the Black Lives Matter movement and to provide an opportunity for reflection and learning. We also [announced stipends](rohanalexander.com/toronto_data_workshop-stipends.html) in support of University of Toronto students or recent graduates who identify as a member of a visible minority group, racialized group, or as a person of colour.
-* *Thursday, 25 June 2020, 4-5pm*  
-	**A Mahfouz**, University of Toronto, Information  
-	A is a Master of Information student at the University of Toronto with a background in geography. Their prior work has been largely concerned with data pipelines. A will talk about geographic data cleaning, extracting mappable data from Google Directions API results in Python.  
-	Slides available [here](https://www.dropbox.com/s/ob1e7492180d6l0/amahfouz_toronto_data_workshop_deck.pdf?dl=0).
-* *Thursday, 2 July 2020, 4-5pm*  
-	**Heather McBrien**, University of Toronto, Department of Statistical Sciences  
-	Heather just graduated from the Statistics BSc program at the University of Toronto, and is interested in modelling in population health research, particularly using novel data sources to answer questions where traditional data is lacking. Heather will talk about how the data that we collect can bias the results that we obtain and our knowledge of the problem.  
-	Slides available [here](https://www.dropbox.com/s/59l1yeya8hz0iwp/heather_mcbrien-slides.pdf?dl=0).
-* *Thursday, 9 July 2020, 4-5pm*  
-	**Roxanne Chui**, University of Toronto, Faculty of Information  
-	Roxanne is an emerging anthropological data science professional. She did her BSc program in Forensic anthropology and worked in the pharmaceutical industry before doing her Masters in data science. She is passionate about excavating context from data for predicting future patterns of human behaviour. Roxanne will talk about an EDA approach to Tokyo AirBnB datasets and pattern discovery in listing prices using R - 'What do we have here among  millions of observations?'  
-	Slides available [here](https://www.dropbox.com/s/zx1dsx2fsm1hmya/roxanne_chui-TDW_presentation.pdf?dl=0).
-* *Thursday, 16 July 2020, 4-5pm*  
-	**Casey Breen**, University of California, Berkeley, Demography  
-	 Casey is a PhD student in the Demography Department at Berkeley. He previously worked at the Institute for Social Research and Data Innovation, home of IPUMS. Casey will talk about [CenSoc](https://censoc.berkeley.edu/), which is a project to link 1940 Census data with Social Security Administration mortality records in the US. 
-* *Thursday, 23 July 2020, 11am-noon*  
-	**Marta Kołczyńska**, Institute of Political Studies of the Polish Academy of Sciences  
-	[Marta](https://martakolczynska.com/) is an Assistant Professor at the Institute of Political Studies of the Polish Academy of Sciences and a visiting researcher in the Probabilistic Machine Learning Group, Department of Computer Science, Aalto University. Her research interests include comparative analyses of political attitudes and behavior across nations and over time, as well as the methodology of comparative research, in particular cross-national surveys. Marta will talk about cleaning survey data, in particular a project in which she gathers political trust items from different cross-national survey datasets to model time trends, and the tools she has developed to facilitate this work.
-* *Thursday, 30 July 2020, 4-5pm*  
-	**Alex Luscombe**, University of Toronto, Criminology and Sociolegal Studies  
-	**Alexander McClelland**, Carleton University, Criminology and Criminal Justice  
-	[Alex Luscombe](https://alexluscombe.ca/) is a PhD student in the Centre for Criminology & Sociolegal Studies at the University of Toronto and a Junior Fellow at Massey College. [Alexander McClelland](https://www.alexandermcclelland.ca/) is an Assistant Professor at the Institute of Criminology and Criminal Justice, Carleton University.	They will talk about [Policing the Pandemic](https://www.policingthepandemic.ca/), which is a project that was launched on 4 April, 2020, to track and visualize the massive and extraordinary expansions of police power in response to the COVID-19 Pandemic and the unequal patterns of enforcement that may arise as  a result.  
-	Slides available [here](https://alexluscombe.ca/post/policing-the-pandemic/).
-* *Thursday, 6 August 2020, 4-5pm*  
-	**Sharla Gelfand**, Freelance R Developer  
-	[Sharla](https://sharla.party/) is a freelance R developer specializing in enabling easy access to data and replacing manual, redundant processes with ones that are automated, reproducible, and repeatable. They will talk about creativity in R.  
-	Slides available [here](https://github.com/sharlagelfand/artstats).
-* *Thursday, 13 August 2020, 4-5pm*  
-	**Richard Iannone**, R Studio  
-	[Rich](https://randr.rocks/) is a Software Engineer at R Studio. Rich will talk about [`pointblank`](https://github.com/rich-iannone/pointblank), which is an R package that allows workflows involving nice and easy data validation in reproducible documents.
-* *Thursday, 20 August 2020, 4-5pm*  
-	**Aije Egwaikhide**, IBM  
-	Aije Egwaikhide holds an undergraduate degree in Economics and Statistics from the University of Manitoba, and a post-graduate degree in Business Analytics from St. Lawrence College, Kingston. She works at IBM where she is a Lead Data Scientist on the System Enablement group. Aije will talk about preparing data for optical character recognition (OCR).
-	
-
-
-### Winter 2020
-
-* *Friday, 24 January 2020, noon*  
-    **Steven Pimentel**, University of Toronto, business intelligence
-* *Friday, 31 January 2020, noon*  
-    **Arik Senderovich**, University of Toronto, Information  
-* *Friday, 7 February 2020, noon*  
-    **Kathy Chung**, University of Toronto, Records of Early English Drama
-* *Friday, 14 February 2020, noon*  
-    **Josh Harris**, KOHO
-* *Friday, 28 February 2020, noon*  
-    **Eugene Joh**, St. Michael's Hospital
-* *Friday, 6 March 2020, noon*  
-    **Fatemeh Nargesian**, University of Rochester, Computer Science
+- Thursday, 17 December 2020, 4-5pm
+    - **Liza Bolton**, University of Toronto
+    - **Maria Tackett**, Duke University
+    - **Nathalie Moon**, University of Toronto
+    - **Teon Brooks**, Mozilla Firefox
+    - "[Panel discussion on teaching data-focused topics](https://youtu.be/c3R6pZisvm0)"
+    - [Liza Bolton](https://www.statistics.utoronto.ca/people/directories/all-faculty/liza-bolton) is an Assistant Professor, Teaching Stream, at the University of Toronto. [Maria Tackett](https://www.mariatackett.net/) is an Assistant Professor of the Practice in the Department of Statistical Science at Duke University. [Nathalie Moon](https://www.statistics.utoronto.ca/people/directories/all-faculty/nathalie-moon) is an Assistant Professor, Teaching Stream, University of Toronto. [Teon L. Brooks](https://teonbrooks.com/), holds a PhD in experimental psychology from NYU, and now works as a data scientist for [Mozilla Firefox](https://mozilla.org). He also serves as the technical advisor and President of [BrainWaves](https://wp.nyu.edu/brainwaves), an NIH-funded project to teach experimentation and cognitive neuroscience to high school students in NYC, and has co-founded Computation in Education Labs ([CIEL](https://cielabs.org)), a nonprofit that aims to further the mission of the BrainWaves project while focusing on data science and computational thinking.
+- Thursday, 10 December 2020, 4-5pm
+    - **Shabrina Mardevi**, United Nations Population Fund and University of Toronto
+    - **Romesh Silva**, United Nations Population Fund
+    - "[Population data estimation](https://youtu.be/kfmKusnGDLI)"
+    - Shabrina is a Masters of Information student at the University of Toronto and a Population Data Estimation and Analysis Intern at the United Nations Population Fund. Romesh holds a PhD in Demography from the University of California, Berkeley, and is a Technical Specialist, Health & Social Inequalities, at the United Nations Population Fund.
+- Thursday, 3 December 2020, 5-6pm
+    - **Monica Alexander**, University of Toronto
+    - "[Using Facebook advertising data to estimate migration](https://youtu.be/xM1vf_KT76g)"
+    - [Monica Alexander](https://www.monicaalexander.com/about/) is an Assistant Professor in Statistical Sciences and Sociology at the University of Toronto. She received her PhD in Demography from the University of California, Berkeley. Her research interests include statistical demography, mortality and health inequalities, and computational social science. Monica will talk about using Facebook advertising data to estimate migration.
+- Thursday, 19 November 2020, 4-5pm
+    - **Michael Chong**, University of Toronto
+    - "[High-throughput Bayesian modelling workflow](https://youtu.be/xM1vf_KT76g)"
+    - [Michael](https://michael-chong.github.io/) is a PhD student in the Department of Statistical Sciences at the University of Toronto building models for demographic estimation. Previously, he completed his BSc in Integrated Science at McMaster University. 
+    - Michael will discuss lessons from a high-throughput Bayesian modelling workflow.
+- Thursday, 12 November 2020, 4-5pm
+    - **Kevin Armstrong**, University of Toronto
+    - "Measuring poverty for NGOs"
+    - Kevin Armstrong is a Masters of Information student at the University of Toronto, and a data consultant for 'Women's Integrated Sexual Health' ([WISH](https://www.ippf.org/our-approach/programmes/womens-integrated-sexual-health-wish)) - a three-year program delivering integrated health care in 16 countries in Africa and South Asia.
+* Monday, 9 November 2020, 4-5pm
+    - **Tom Cardoso**, Globe and Mail
+    - "Bias Behind Bars"
+    - [Tom Cardoso](https://www.theglobeandmail.com/authors/tom-cardoso/) is a crime and justice reporter and data journalist for The Globe and Mail. 
+    - Tom will discuss his [Bias Behind Bars](https://www.theglobeandmail.com/canada/article-investigation-racial-bias-in-canadian-prison-risk-assessments/) series of articles which show Black and Indigenous inmates in Canada are more likely to get worse scores than white inmates, based solely on their race.
+- Thursday, 5 November 2020, 4-5pm
+    - **Andrew Whitby**, Industry data scientist
+    - "Censuses: The sum of the people"
+    - [Andrew](https://andrewwhitby.com) is a data scientist and economist currently looking for his next challenge. He is particularly interested in the economics of technology, creativity, innovation and growth. He wrote *The Sum of the People: How the Census Has Shaped Nations from the Ancient World to the Modern Age* which was published in March 2020. Previously, he worked as a Data Scientist at the World Bank, and at Nesta, the UK's innovation think tank. His academic background combines economics, statistics and computer science. He completed his doctoral research in the Department of Economics at the University of Oxford.
+- Thursday, 29 October 2020, 4-5pm
+    - **Fei Chiang**, McMaster University
+    - "Data currency and applications"
+    - [Fei Chiang](http://www.cas.mcmaster.ca/~fchiang/) is an Associate Professor in the Department of Computing and Software (Faculty of Engineering), the Director of the Data Science Research Group, and a Faculty Fellow at the IBM Centre for Advanced Studies. She served as an inaugural Associate Director of the MacData Institute. Her research interests and industrial experience is in data management, spanning data cleaning, data quality, data privacy, data fusion, and database systems.
+- Thursday, 22 October 2020, 4-5pm
+    - **Jeff Waldman**, University of Toronto
+    - **Leanne Trimble**, University of Toronto
+    - **Leslie Barnes**, University of Toronto
+    - **Lisa Strug**, University of Toronto
+    - "Panel discussion on data-focused resources at the University of Toronto"
+    - Jeff Waldman is the Manager, Institutional Data Governance; Leslie Barnes is the Digital Scholarship Librarian at UTL; Leanne Trimble is the Data and Statistics Librarian at UTL; Lisa Strug is a Senior Scientist in the Program of Genetics and Genome Biology, Associate Director of The Centre for Applied Genomics, Professor of Statistical Sciences and Biostatistics at the University of Toronto, and Director of CANSSI Ontario. 
+- Thursday, 8 October 2020, 4-5pm
+    - **Yim Register**, University of Washington Data Lab
+    - "Self-advocacy within machine learning systems"
+    - [Yim Register](https://medium.com/@yimregister) (they/them) is a radical optimist, child advocate, and PhD student at the University of Washington Data Lab exploring what self-advocacy looks like within machine learning systems. They study how empowering novices with Data Science knowledge can impact their participation and joy in an AI-driven world! Their passion project right now is writing a book called Life Lessons from Algorithms, a book thatteaches how machine learning algorithms work through trauma recovery skills.
+- Thursday, 1 October 2020, 4-5pm
+    - **Florence Vallée-Dubois**, Université de Montréal
+    - "Canadian demographics by riding (1991-2015)"
+    - [Florence Vallée-Dubois](https://florencevdubois.github.io/) is a Ph.D. candidate at the department of political science of the University of Montreal. She is also a member of the Centre for the Study of Democratic Citizenship and Canada Research Chair in Electoral Democracy. Her research interests focus on Quebec and Canadian politics, political behaviour and quantitative methods. Her doctoral project focuses on the political behaviour and democratic representation of seniors in Canada.
+- Thursday, 24 September 2020, 4-5pm
+    - **Chelsea Parlett-Pelleriti**, Chapman University
+    - "Talking to non-statisticians about statistics"
+    - [Chelsea](https://cmparlettpelleriti.github.io/) is a PhD candidate and full-time instructional faculty at Chapman University where her research focuses on using novel statistical and Machine Learning methods (mostly Bayesian statistics, IRT models, and clustering) to behavioral data. As an instructor she teaches Python, R and Data Science, and loves using novel technology (like TikTok, Twitch, and flipped classes) to better engage and inspire students.
+- Thursday, 17 September 2020, 4-5pm
+    - **Amber Simpson**, Queen's University
+    - "Cancer and AI"
+    - [Dr. Simpson](http://simpsonlab.org/) is the Canada Research Chair in Biomedical Computing and Informatics and Associate Professor in the School of Computing (Faculty of Arts and Science) and Department of Biomedical and Molecular Sciences (Faculty of Health Sciences). She specializes in biomedical data science and computer-aided surgery. Her research group is focused on developing novel computational strategies for improving human health.
+- Thursday, 10 September 2020, 4-5pm
+    - **A Mahfouz**, University of Toronto
+    - **Diego Mamanche Castellanos**, University of Toronto
+    - **Hidaya Ismail**, University of Toronto
+    - **Ke-Li Chiu**, University of Toronto
+    - **Paul Hodgetts**, University of Toronto
+    - "`arxivdl`, `aRianna`, and `cesR`"
+- Tuesday, 8 September 2020, 3:30-4:30pm
+    - **Sophie Bennett**, Industry data scientist
+    - *UK A levels algorithm issues*
+    - (Jointly hosted with Gillian Hadfield and the [Schwartz Reisman Institute for Technology and Society](https://sr-institute.utoronto.ca/).)
+    - [Sophie Bennett](https://www.sophieheloisebennett.com/) holds an undergraduate degree in Experimental Psychology from the University of Oxford and a PhD in Neuroscience from King's College. She is the lead data scientist at Up Learn, a London-based online learning platform specialising in A levels. In this role, she conducts evaluations of course effectiveness and uses data to improve instruction and curriculum design. She is passionate about increasing the use of responsible evidence and statistics to guide social policy, and, in her spare time, enjoys working with publicly available datasets to explore London demographics, social issues and infrastructure.
+- Thursday, 3 September 2020, 4-5pm
+    - **Erik Drysdale**, The Hospital for Sick Children
+    - "Using hospital data"
+    - [Erik](erikdrysdale.com) works as a Machine Learning Specialist at the Hospital for Sick Children (SickKids) for the Goldenberg Lab and AI in Medicine (AIM) initiative. His professional responsibilities include the development and training of the machine learning models for various pediatric data science projects. His research interests are focused on the intersection of statistics and machine learning methods such as high-dimensional inference, survival analysis, and optimization methods.
+- Thursday, 20 August 2020, 4-5pm
+    - **Aije Egwaikhide**, IBM
+    - "Preparing data for optical character recognition (OCR)"
+    - Aije Egwaikhide holds an undergraduate degree in Economics and Statistics from the University of Manitoba, and a post-graduate degree in Business Analytics from St. Lawrence College, Kingston. She works at IBM where she is a Lead Data Scientist on the System Enablement group.
+- Thursday, 13 August 2020, 4-5pm
+    - **Richard Iannone**, R Studio
+    - "`pointblank`"
+    - [Rich](https://randr.rocks/) is a Software Engineer at R Studio. 
+    - Rich will talk about [`pointblank`](https://github.com/rich-iannone/pointblank), which is an R package that allows workflows involving nice and easy data validation in reproducible documents.
+- Thursday, 6 August 2020, 4-5pm
+    - **Sharla Gelfand**, Freelance R Developer
+    - "Creativity in R"
+    - [Sharla](https://sharla.party/) is a freelance R developer specializing in enabling easy access to data and replacing manual, redundant processes with ones that are automated, reproducible, and repeatable. 
+- Thursday, 30 July 2020, 4-5pm
+    - **Alex Luscombe**, University of Toronto, Criminology and Sociolegal Studies
+    - **Alexander McClelland**, Carleton University, Criminology and Criminal Justice
+    - "Policing the Pandemic"
+    - [Alex Luscombe](https://alexluscombe.ca/) is a PhD student in the Centre for Criminology & Sociolegal Studies at the University of Toronto and a Junior Fellow at Massey College. [Alexander McClelland](https://www.alexandermcclelland.ca/) is an Assistant Professor at the Institute of Criminology and Criminal Justice, Carleton University. 
+    - [Policing the Pandemic](https://www.policingthepandemic.ca/) is a project that was launched on 4 April, 2020, to track and visualize the massive and extraordinary expansions of police power in response to the COVID-19 Pandemic and the unequal patterns of enforcement that may arise as a result.
+- Thursday, 23 July 2020, 11am-noon
+    - **Marta Kołczyńska**, Institute of Political Studies of the Polish Academy of Sciences
+    - "Cleaning survey data to measure political trust"
+    - [Marta](https://martakolczynska.com/) is an Assistant Professor at the Institute of Political Studies of the Polish Academy of Sciences and a visiting researcher in the Probabilistic Machine Learning Group, Department of Computer Science, Aalto University. Her research interests include comparative analyses of political attitudes and behavior across nations and over time, as well as the methodology of comparative research, in particular cross-national surveys. 
+    - Marta will talk about cleaning survey data, in particular a project in which she gathers political trust items from different cross-national survey datasets to model time trends, and the tools she has developed to facilitate this work.
+- Thursday, 16 July 2020, 4-5pm
+    - **Casey Breen**, University of California, Berkeley, Demography
+    - "[CenSoc](https://censoc.berkeley.edu/): A project to link US 1940 Census data with Social Security Administration mortality records"
+    - Casey is a PhD student in the Demography Department at Berkeley. He previously worked at the Institute for Social Research and Data Innovation, home of IPUMS. 
+- Thursday, 9 July 2020, 4-5pm
+    - **Roxanne Chui**, University of Toronto, Faculty of Information
+    - "What do we have here among millions of observations? EDA for Tokyo AirBnB data and pattern discovery in listing prices using R"
+    - Roxanne is an emerging anthropological data science professional. She did her BSc program in Forensic anthropology and worked in the pharmaceutical industry before doing her Masters in data science. She is passionate about excavating context from data for predicting future patterns of human behaviour.
+- Thursday, 2 July 2020, 4-5pm
+    - **Heather McBrien**, University of Toronto, Department of Statistical Sciences
+    - "How the data that we collect can bias the results that we obtain and our knowledge of the problem"
+    - Heather just graduated from the Statistics BSc program at the University of Toronto, and is interested in modelling in population health research, particularly using novel data sources to answer questions where traditional data is lacking. 
+- Thursday, 25 June 2020, 4-5pm
+    - **A Mahfouz**, University of Toronto, Information
+    - "Geographic data cleaning, extracting mappable data from Google Directions API results in Python"
+    - A is a Master of Information student at the University of Toronto with a background in geography. Their prior work has been largely concerned with data pipelines. 
+- Thursday, 11 June 2020, 4-5pm
+    - **Harrison Jones**, Deloitte
+    - "Using R with actuarial data"
+    - [Harrison](https://ca.linkedin.com/in/harrison-jones-a9947b60) is a Manager at Deloitte in Toronto, where he focuses on data analytics and machine learning in the property & casualty insurance, life insurance, health insurance, pensions, and the public sector.
+- Thursday, 4 June 2020, 4-5pm
+    - **Marija Pejcinovska**, University of Toronto, Department of Statistical Sciences
+    - "Estimating global maternal mortality"
+    - Marija is a second-year Ph.D. student in Statistics at the University of Toronto. Her research interests are in applied statistics, specifically the application of Bayesian methods to data and modeling challenges that arise in demography, public health, and certain areas of the social sciences. 
+    - Marija will talk about a current project with the World Health Organization (WHO) focused on estimating global maternal mortality to share her R workflow and the different tools and packages she's found helpful in the data processing stage. More specifically, she'll be sharing a few ways of dealing with text and date data in R. 
+- Thursday, 28 May 2020, 4-5pm
+    - **Shiro Kuriwaki**, Harvard University, Government
+    - "[Project-oriented workflow](https://vimeo.com/424091492)"
+    - [Shiro](https://www.shirokuriwaki.com/) is a Ph.D. Candidate at the Department of Government, Harvard University. His research focuses on democratic representation in American Politics, for instance cast vote records, public opinion, survey methods, and applied statistics more generally. Shiro will bring together best practices for organizing data and code in the social sciences that experts have proposed with some of his own experience. He will propose a project-oriented workflow that adopts a minimal and consistent file organization structure within a single project, using RStudio Projects and GitHub. He will then discuss how to organize multiple projects that share common components, and propose the use of custom R packages to share code and Dataverse to share large datasets. He will use some of his own projects involving the Cooperative Congressional Election Study (CCES), one of the largest political surveys of American Politics, as a demonstration.
+- Thursday, 21 May 2020, 4-5pm
+    - **Rohan Alexander**, University of Toronto, Faculty of Information
+    - "OCR with applications to the Kenyan census"
+    - Rohan Alexander is a post-doctoral fellow at the Faculty of Information, University of Toronto. He holds a PhD in Economics from the Australian National University.
+- Friday, 6 March 2020, noon
+    - **Fatemeh Nargesian**, Computer Science, University of Rochester
+- Friday, 28 February 2020, noon
+    - **Eugene Joh**, St. Michael's Hospital
+- Friday, 14 February 2020, noon
+    - **Josh Harris**, KOHO
+- Friday, 7 February 2020, noon
+    - **Kathy Chung**, Records of Early English Drama, University of Toronto
+- Friday, 31 January 2020, noon
+    - **Arik Senderovich**, Information, University of Toronto
+- Friday, 24 January 2020, noon
+    - **Steven Pimentel**, Business intelligence, University of Toronto
 
 
-### Fall 2019
+## 2019
  
-* *Thursday, 26 September 2019, noon*  
-    **Periklis Andritsos**, ODAIA & University of Toronto, Information 
-* *Thursday, 10 October 2019, noon*  
-    **Hassan Teimoori**, Deloitte, Omnia AI  
-    **Ludovic Rheault**, University of Toronto, Political Science
-* *Wednesday, 16 October 2019, noon*  
-    **Lauren Kennedy**, Columbia University  
-* *Thursday, 24 October 2019, noon*  
-    **Sharla Gelfand**, Freelance R and Shiny developer  
-* *Thursday, 7 November 2019, noon*  
-    **Maria D'Angelo**, Delphia  
-    **Hareem Naveed**, Munich Re    
-* *Thursday, 21 November 2019, noon*  
-    **Michelle Alexopoulos**, University of Toronto, Economics  
-    **Paraskevi Massara**, University of Toronto, Medicine  
+- Thursday, 21 November 2019, noon
+    - **Michelle Alexopoulos**, University of Toronto, Economics
+    - **Paraskevi Massara**, University of Toronto, Medicine
+- Thursday, 7 November 2019, noon
+    - **Maria D'Angelo**, Delphia
+    - **Hareem Naveed**, Munich Re
+- Thursday, 24 October 2019, noon
+    - **Sharla Gelfand**, Freelance R and Shiny developer
+- Wednesday, 16 October 2019, noon
+    - **Lauren Kennedy**, Columbia University
+- Thursday, 10 October 2019, noon
+    - **Hassan Teimoori**, Deloitte, Omnia AI
+    - **Ludovic Rheault**, University of Toronto, Political Science
+- Thursday, 26 September 2019, noon
+    - **Periklis Andritsos**, ODAIA & University of Toronto, Information
