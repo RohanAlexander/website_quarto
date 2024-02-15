@@ -57,10 +57,6 @@ Past committee members:
 
 ### Upcoming
 
-- Thursday 15 February 2024, noon - 1pm
-	- **Richard Iannone**, Posit, PBC
-	- "Using Great Tables to Make Presentable Tables in Python"
-	- Rich is a software engineer at Posit, PBC (formerly RStudio). He focuses on making useful R and (more lately) Python packages for data analysis and presentation workflows.
 - Thursday 22 February 2024, noon - 1pm
 	- **Jessica Otis**, George Mason University
 	- "By the Numbers: Numeracy, Religion, and the Quantitative Transformation of Early Modern England"
@@ -99,6 +95,10 @@ Past committee members:
 
 ### Past
 
+- Thursday 15 February 2024, noon - 1pm
+	- **Richard Iannone**, Posit, PBC
+	- "[Using Great Tables to Make Presentable Tables in Python](https://youtu.be/p42Xc6dl3Ek)"
+	- Rich is a software engineer at Posit, PBC (formerly RStudio). He focuses on making useful R and (more lately) Python packages for data analysis and presentation workflows.
 - Thursday 8 February 2024, noon - 1pm
 	- **Andreas Florath**, Deutsche Telekom
 	- "LLM Interactive Optimization of Open Source Python Libraries -- Case Studies and Generalization"
@@ -183,273 +183,265 @@ Past committee members:
 
 ## 2022
 
-* Friday 9 September 2022, noon - 1pm	
-	**Ryan Briggs**, University of Guelph    
-	[*Statistical power in political science*](https://youtu.be/dyLtxZM89iE)    
-	[Ryan Briggs](www.ryancbriggs.net) is a social scientist at the University of Guelph
-* Thursday 22 September 2022, 5pm - 6pm  
-  **Melina Vidoni**, Australian National University    
-	[Dr Vidoni](https://melvidoni.rbind.io) is a Lecturer at the Australian National University in the CECS School of Computing, where she continues her domestic and international collaborations with Canada and Germany. Dr Vidoni's main research interests are mining software repositories, technical debt, software development, and empirical software engineering when applied to data science and scientific software.	
-* Friday 30 September 2022, noon - 1pm  
-	**Emily Giambalvo** and **Ence Morse**, The Washington Post    
-	*How the NFL blocks Black coaches*    
-	Emily Giambalvo covers University of Maryland athletics for The Washington Post, where she has worked since June 2018. Emily grew up in South Carolina and graduated from the University of Georgia.    
-	Clara Ence Morse is an Investigative Reporting Workshop intern with The Washington Post's data desk. She is a student at Columbia University and the editor in chief of the Columbia Daily Spectator.	
-* Friday 7 October 2022, noon - 1pm  
-	**Rohan Alexander**,	University of Toronto    
-	[*Rethinking data science*](https://youtu.be/omvXLYpcKEY)
-* Friday 14 October 2022, noon - 1pm  
-	**April Wang**, University of Michigan    
-	[*Reimagining Tools for Collaborative Data Science*](https://youtu.be/SD1Ofp0F5is)    
-	[April Wang](https://aprilwang.me/) is a Ph.D. candidate at University of Michigan School of Information, advised by Dr. Steve Oney and Dr. Christopher Brooks. Her research in human-computer interaction (HCI) explores barriers in real-world data science programming practices, and reimagines the workflow and interfaces for collaborative data science environments.	
-* Friday 21 October 2022, noon - 1pm	
-	**Meg Risdal**, Kaggle (Google)    
-	[Meg Risdal](twitter.com/meganrisdal) is a lead Product Manager for Kaggle (a Google company) where she works with software developers, designers, and researchers to create great experiences for people learning ML, ML practitioners, and ML researchers.	
-* Friday 4 November 2022, noon - 1pm	
-	**Maitreyee Sidhaye** and **Meggie Debnath**, St. Michael's Hospital, Unity Health Toronto    
-	[*The Things We Learned from Deploying AI in Healthcare*](https://youtu.be/ltA_vOwrIWc)    
-	Maitreyee and Meggie are data scientists in the Data Science & Advanced Analytics (DSAA) unit at St. Michael's Hospital in Toronto. DSAA is a multiteam unit in the hospital that provides data sciecne and machine learning solutions across a variety of problems: clinical prediction tools, staffing optimization, imaging, and more. DSAA works very closely with others in the hospital to collaborate on understanding problems and providing solutions. Maitreyee and Meggie will share their experiences and learnings from building and deploying machine learning tools in the hospital.	 
-* Friday 18 November 2022, noon - 1pm	
-	**Lindsay Katz**, University of Toronto		
-	[*A new, comprehensive database of all proceedings of the Australian Parliamentary Debates*](https://youtu.be/lYOdCNJOusg)    
-  Lindsay Katz holds a Masters of Statistics from the University of Toronto and a Bachelor of Arts and Science from the University of Guelph where she specialized in Mathematical Science and International Development. At Guelph she worked with Professor Ryan Briggs to explore lived poverty in Africa using Afrobarometer data. At Toronto she works with Professor Monica Alexander to research demographic variation in short-term migration patterns using Facebook data, and with Professor Rohan Alexander to digitize the Australian parliamentary debates from 1901 to present. As an interdisciplinary researcher, she is interested in using statistics to better understand social processes in the world.
-* Friday 25 November 2022, noon - 1pm	
-	**Marcel Fortin** and **Leanne Trimble**, U of T Map & Data Library    
-	[*Recent additions to the Map and Data Library*](https://youtu.be/_Ec40JPOxcA)    
-	The Map and Data Library's data collections, software & support, with a focus on recently acquired datasets.    
-  Leanne Trimble is a Data & Statistics Librarian, and Marcel Fortin is Head, Map and Data Library.
-* Friday 16 December 2022, noon - 1pm	
-	**Zane Schwartz**, Investigative Journalism Foundation    
-	Zane Schwartz is the editor-in-chief of the [Investigative Journalism Foundation](www.theijf.org).
-
-
-  
-
-
-
-
-* Fri 28 Jan 2022, noon - 1pm  
-	**Ashok Chaurasia**, University of Waterloo  
-	[*Multiple Imputation: Old and New Combining Rules for Statistical Inference*](https://youtu.be/qFCHjNH9HLc)    
-	Dr. Ashok Chaurasia is an Assistant Professor (of Statistics) in the School of Public Health Sciences at University of Waterloo. His background/training is in Statistics, with research interests in topics of Missing Data, Data Imputation, Model Selection, and Longitudinal Data Analysis Methodology.
-* Fri 4 Feb 2022, noon - 1pm  
-	**Nick Huntington-Klein**, Seattle University  
-	[The Influence of Hidden Researcher Decisions in Applied Microeconomics](https://youtu.be/dOJvE3C2KrY)    
-	I am an economics professor at Seattle University, with research that focuses on higher education, econometrics, and metascience. 
-* Fri 11 Feb 2022, noon - 1pm  
-  **Silvia Canelón**, University of Pennsylvania  
-	[*Lessons Learned from EHR Research*](https://youtu.be/4M8Op1oCN5U)  
-	Silvia Canelón is a postdoctoral research scientist in the Department of Biostatistics, Epidemiology, and Informatics at the University of Pennsylvania where she applies biomedical informatics to population health research. She uses R to work on projects that develop novel data mining methods to extract pregnancy-related information from Electronic Health Records (EHR) and that study the relationship between environment and disease.
-* Fri 18 Feb 2022, noon - 1pm  
-	**Vincent Arel-Bundock**, Université de Montréal  
-	[*What `modelsummary` taught me about R package development*](https://youtu.be/zrBhtXwZnB8)  
-	I am a political science professor at the Université de Montréal.
-* Fri 4 Mar 2022, noon - 1pm  
-	**Maria Kamenetsky**, University of Wisconsin-Madison  
-	[*Spatial clustering*](https://youtu.be/cjpoa59-obU)  
-	I am a PhD candidate in Epidemiology at the University of Wisconsin-Madison, where I also completed my MS in Statistics. My research focuses on methods in spatial epidemiology, specifically working on statistical methods and applications in spatial cluster detection.
-* Fri 11 Mar 2022, noon - 1pm  
-	**Irena Papst**, McMaster University  
-	[*Using models to help guide pandemic response*](https://youtu.be/Oxk5Dulhnpw)  
-	I'm a postdoctoral fellow in McMaster's Mathematics & Statistics department, where I work on mathematical modelling, especially of infectious disease dynamics. I did my PhD in Cornell's Center for Applied Mathematics. I care deeply about reproducible research, clear scientific communication, good teaching, and big salads.
-* Fri 18 Mar 2022, noon - 1pm  
-	**May Chan and Ramses Van Zon**     
-* Thu 24 Mar 2022, 5pm - 6pm  
-	**Emi Tanaka**, Monash University  
-	[*An anthology of experimental designs*](https://youtu.be/sFdZb89Th9g)  
-	Dr. Emi Tanaka is an assistant professor in statistics at Monash University whose primary interest is to develop impactful statistical methods and tools that can readily be used by practitioners. Her research area include data visualisation, mixed models and experimental designs, motivated primarily by problems in bioinformatics and agricultural sciences. She is currently the President of the Statistical Society of Australia Victorian Branch and the recipient of the Distinguished Presenter's Award from the Statistical Society of Australia for her delivery of a wide-range of R workshops.
-* Fri 1 Apr 2022, noon - 1pm  
-	**Brittany Witham**,	Geopolitica  
-	[*Data science at a startup*](https://youtu.be/x7ldixTA1aE)  
-	Originally from Melbourne, Australia, Brittany received her B.A. in International Studies from the University of Saskatchewan and started her career in economic development, equipping her with comprehensive knowledge of foreign direct investment and international business early in her career.  She went on to obtain an M.A. in European and Russian Affairs from the University of Toronto in 2018, where she first discovered the potential of programming for political science and became fascinated with artificial intelligence (AI). Over the past three years, Brittany has worked in many facets of the AI industry, from leading research and development of new AI products for video game developers to building automated data pipelines for business intelligence and managing software engineering and client engagement teams. In that time, she has honed technical skills in full-stack development, machine learning, and data engineering. She recently struck out on her own to launch an online global event monitoring tool and deliver novel solutions to clients in the political risk and social enterprise sectors. Brittany is a firm believer in the potential for data-driven technologies for geopolitics and is excited to contribute to the many discoveries to be made in this space.
+- Friday, 16 December 2022, noon - 1pm 
+  - **Zane Schwartz**, Investigative Journalism Foundation
+  - Zane Schwartz is the editor-in-chief of the [Investigative Journalism Foundation](www.theijf.org).
+- Friday, 25 November 2022, noon - 1pm 
+  - **Marcel Fortin**, U of T Map & Data Library
+  - **Leanne Trimble**, U of T Map & Data Library
+  - [*Recent additions to the Map and Data Library*](https://youtu.be/_Ec40JPOxcA)
+  - The Map and Data Library's data collections, software & support, with a focus on recently acquired datasets.
+  - Leanne Trimble is a Data & Statistics Librarian, and Marcel Fortin is Head, Map and Data Library.
+- Friday, 18 November 2022, noon - 1pm 
+  - **Lindsay Katz**, University of Toronto 
+  - [*A new, comprehensive database of all proceedings of the Australian Parliamentary Debates*](https://youtu.be/lYOdCNJOusg)
+  - Lindsay Katz holds a Masters of Statistics from the University of Toronto and a Bachelor of Arts and Science from the University of Guelph where she specialized in Mathematical Science and International Development. At Guelph she worked with Professor Ryan Briggs to explore lived poverty in Africa using Afrobarometer data. At Toronto she works with Professor Monica Alexander to research demographic variation in short-term migration patterns using Facebook data, and with Professor Rohan Alexander to digitize the Australian parliamentary debates from 1901 to present. As an interdisciplinary researcher, she is interested in using statistics to better understand social processes in the world.
+- Friday, 4 November 2022, noon - 1pm
+  - **Maitreyee Sidhaye** and **Meggie Debnath**, St. Michael's Hospital, Unity Health Toronto
+  - [*The Things We Learned from Deploying AI in Healthcare*](https://youtu.be/ltA_vOwrIWc)
+  - Maitreyee and Meggie are data scientists in the Data Science & Advanced Analytics (DSAA) unit at St. Michael's Hospital in Toronto. DSAA is a multiteam unit in the hospital that provides data sciecne and machine learning solutions across a variety of problems: clinical prediction tools, staffing optimization, imaging, and more. DSAA works very closely with others in the hospital to collaborate on understanding problems and providing solutions. Maitreyee and Meggie will share their experiences and learnings from building and deploying machine learning tools in the hospital.
+- Friday, 21 October 2022, noon - 1pm
+  - **Meg Risdal**, Kaggle (Google)
+  - [Meg Risdal](twitter.com/meganrisdal) is a lead Product Manager for Kaggle (a Google company) where she works with software developers, designers, and researchers to create great experiences for people learning ML, ML practitioners, and ML researchers.
+- Friday, 14 October 2022, noon - 1pm
+  - **April Wang**, University of Michigan
+  - [*Reimagining Tools for Collaborative Data Science*](https://youtu.be/SD1Ofp0F5is)
+  - [April Wang](https://aprilwang.me/) is a Ph.D. candidate at University of Michigan School of Information, advised by Dr. Steve Oney and Dr. Christopher Brooks. Her research in human-computer interaction (HCI) explores barriers in real-world data science programming practices, and reimagines the workflow and interfaces for collaborative data science environments.
+- Friday, 7 October 2022, noon - 1pm
+  - **Rohan Alexander**, University of Toronto
+  - [*Rethinking data science*](https://youtu.be/omvXLYpcKEY)
+- Friday, 30 September 2022, noon - 1pm
+  - **Emily Giambalvo**, The Washington Post
+  - **Ence Morse**, The Washington Post
+  - *How the NFL blocks Black coaches*
+  - Emily Giambalvo covers University of Maryland athletics for The Washington Post, where she has worked since June 2018. Emily grew up in South Carolina and graduated from the University of Georgia.
+  - Clara Ence Morse is an Investigative Reporting Workshop intern with The Washington Post's data desk. She is a student at Columbia University and the editor in chief of the Columbia Daily Spectator. 
+- Thursday, 22 September 2022, 5pm - 6pm
+  - **Melina Vidoni**, Australian National University
+  - [Dr Vidoni](https://melvidoni.rbind.io) is a Lecturer at the Australian National University in the CECS School of Computing, where she continues her domestic and international collaborations with Canada and Germany. Dr Vidoni's main research interests are mining software repositories, technical debt, software development, and empirical software engineering when applied to data science and scientific software.
+- Friday, 9 September 2022, noon - 1pm 
+  - **Ryan Briggs**, University of Guelph
+  - [*Statistical power in political science*](https://youtu.be/dyLtxZM89iE)
+  - [Ryan Briggs](www.ryancbriggs.net) is a social scientist at the University of Guelph
+- Friday, 1 Apr 2022, noon - 1pm
+  - **Brittany Witham**, Geopolitica
+  - [*Data science at a startup*](https://youtu.be/x7ldixTA1aE)
+  - Originally from Melbourne, Australia, Brittany received her B.A. in International Studies from the University of Saskatchewan and started her career in economic development, equipping her with comprehensive knowledge of foreign direct investment and international business early in her career.She went on to obtain an M.A. in European and Russian Affairs from the University of Toronto in 2018, where she first discovered the potential of programming for political science and became fascinated with artificial intelligence (AI). Over the past three years, Brittany has worked in many facets of the AI industry, from leading research and development of new AI products for video game developers to building automated data pipelines for business intelligence and managing software engineering and client engagement teams. In that time, she has honed technical skills in full-stack development, machine learning, and data engineering. She recently struck out on her own to launch an online global event monitoring tool and deliver novel solutions to clients in the political risk and social enterprise sectors. Brittany is a firm believer in the potential for data-driven technologies for geopolitics and is excited to contribute to the many discoveries to be made in this space.
+- Thursday, 24 March 2022, 5pm - 6pm
+  - **Emi Tanaka**, Monash University
+  - [*An anthology of experimental designs*](https://youtu.be/sFdZb89Th9g)
+  - Dr. Emi Tanaka is an assistant professor in statistics at Monash University whose primary interest is to develop impactful statistical methods and tools that can readily be used by practitioners. Her research area include data visualisation, mixed models and experimental designs, motivated primarily by problems in bioinformatics and agricultural sciences. She is currently the President of the Statistical Society of Australia Victorian Branch and the recipient of the Distinguished Presenter's Award from the Statistical Society of Australia for her delivery of a wide-range of R workshops.
+- Friday, 18 March 2022, noon - 1pm
+  - **May Chan**, University of Toronto, Library
+  - **Ramses Van Zon**, University of Toronto, SciNet
+- Friday, 11 March 2022, noon - 1pm
+  - **Irena Papst**, McMaster University
+  - [*Using models to help guide pandemic response*](https://youtu.be/Oxk5Dulhnpw)
+  - I'm a postdoctoral fellow in McMaster's Mathematics & Statistics department, where I work on mathematical modelling, especially of infectious disease dynamics. I did my PhD in Cornell's Center for Applied Mathematics. I care deeply about reproducible research, clear scientific communication, good teaching, and big salads.
+- Friday, 4 March 2022, noon - 1pm
+  - **Maria Kamenetsky**, University of Wisconsin-Madison
+  - [*Spatial clustering*](https://youtu.be/cjpoa59-obU)
+  - I am a PhD candidate in Epidemiology at the University of Wisconsin-Madison, where I also completed my MS in Statistics. My research focuses on methods in spatial epidemiology, specifically working on statistical methods and applications in spatial cluster detection.
+- Friday, 18 February 2022, noon - 1pm
+  - **Vincent Arel-Bundock**, Université de Montréal
+  - [*What `modelsummary` taught me about R package development*](https://youtu.be/zrBhtXwZnB8)
+  - I am a political science professor at the Université de Montréal.
+- Friday, 11 February 2022, noon - 1pm
+  - **Silvia Canelón**, University of Pennsylvania
+  - [*Lessons Learned from EHR Research*](https://youtu.be/4M8Op1oCN5U)
+  - Silvia Canelón is a postdoctoral research scientist in the Department of Biostatistics, Epidemiology, and Informatics at the University of Pennsylvania where she applies biomedical informatics to population health research. She uses R to work on projects that develop novel data mining methods to extract pregnancy-related information from Electronic Health Records (EHR) and that study the relationship between environment and disease.
+- Friday, 4 February 2022, noon - 1pm
+  - **Nick Huntington-Klein**, Seattle University
+  - [The Influence of Hidden Researcher Decisions in Applied Microeconomics](https://youtu.be/dOJvE3C2KrY)
+  - I am an economics professor at Seattle University, with research that focuses on higher education, econometrics, and metascience. 
+- Friday, 28 January 2022, noon - 1pm
+  - **Ashok Chaurasia**, University of Waterloo
+  - [*Multiple Imputation: Old and New Combining Rules for Statistical Inference*](https://youtu.be/qFCHjNH9HLc)
+  - Dr. Ashok Chaurasia is an Assistant Professor (of Statistics) in the School of Public Health Sciences at University of Waterloo. His background/training is in Statistics, with research interests in topics of Missing Data, Data Imputation, Model Selection, and Longitudinal Data Analysis Methodology.
 
 
 ## 2021
 
+- Friday, 10 December 2021, noon - 1pm
+  - **Nathan Taback**, Departments of Statistical Sciences
+  - [Teaching data science](https://youtu.be/99pOuO_TD5w)
+  - [Nathan Taback](https://utstat.toronto.edu/nathan/) is the director of Data Science programs and an Associate Professor, Teaching Stream in the Department of Statistical Sciences, and Computer Science (cross-appointed) at the University of Toronto. He currently serves as a Special Advisor to the Dean of Arts and Science on Computational and Data Science Education.
+- Friday, 3 December 2021, noon - 1pm
+  - **Leanne Trimble**, UofT Libraries
+  - [Data science and libraries](https://youtu.be/rxnShSHwBXU)
+  - Leanne Trimble is a data librarian at the Map & Data Library, University of Toronto Libraries.
+- Friday, 26 November 2021, noon - 1pm
+  - **Kieran Campbell**, Lunenfeld Tanenbaum Research Institute
+  - [Data science and Biomedicine](https://youtu.be/PuQhyGj3G3o)
+  - [Dr Kieran Campbell](https://www.camlab.ca) is an investigator at the Lunenfeld-Tanenbaum Research Institute and an assistant professor at the Departments of Molecular Genetics and Statistical Sciences, University of Toronto. His research focusses on Bayesian models and machine learning for high dimensional biomedical data, including single-cell and cancer genomics. Recently, he has led efforts to develop statistical machine learning methodology to integrate single-cell RNA and DNA sequencing data to uncover the effects of tumour clonal identity on gene expression, as well as methods to automatically delineate the tumour microenvironment from single-cell RNA-sequencing data. Such findings can improve our understanding of cancer progression and of why certain tumours are resistant to therapies, leading to relapse.
+- Friday, 19 November 2021, noon - 1pm
+  - **Radu Craiu**, Statistical Sciences, University of Toronto
+  - [Data science and statistical sciences](https://youtu.be/B7EKLFotknU)
+  - [Dr Radu V. Craiu](https://utstat.toronto.edu/craiu/) is Professor and Chair of Statistical Sciences at the University of Toronto. His main research interests are in computational methods in statistics, especially, Markov chain Monte Carlo algorithms (MCMC), Bayesian inference, copula models, model selection procedures and statistical genetics. 
+- Friday, 12 November 2021, noon - 1pm
+  - **Ann Glusker**, Doe Library, University of California Berkeley 
+  - ["Supporting Big Data Research at the University of California, Berkeley"](https://youtu.be/139xCz-e0tg)
+  - Dr Ann Glusker is Librarian for Sociology, Demography, Public Policy, Psychology (fall 2021) & Quantitative Research at the Doe Library, University of California, Berkeley. She will discuss a recently released [report](https://escholarship.org/uc/item/4403c0f4) 'Supporting Big Data Research at the University of California, Berkeley'. This report provides insights on researcher practices and challenges in six thematic areas: data collection & processing; analysis: methods, tools, infrastructure; research outputs; collaboration; training; and balancing domain vs data science expertise.
+- Friday, 5 November 2021, noon - 1pm
+  - **Yun William Yu**, Math Department, UofT; UTSC Computer & Mathematical Sciences
+  - [Data science and math](https://youtu.be/-1jpjM2nP2Y)
+  - [Yun William Yu](https://www.math.toronto.edu/cms/people/faculty/yu-yun-william/) is an assistant professor in the math department at UofT whose research focuses on algorithmic methods for computational biology and medical informatics. 
+- Friday, 29 October 2021, noon - 1pm
+  - **Josh Speagle**, Astronomy & Astrophysics, Dunlap Institute, Statistical Sciences
+  - [Data science and astronomy](https://youtu.be/fHk3Fy1TxQY)
+  - [Josh](https://joshspeagle.github.io) is a Banting & Dunlap Postdoctoral Fellow at the University of Toronto whose research focuses on using astrostatistics and "data science" to understand how galaxies like our own Milky Way form, behave, and evolve. 
+- Friday, 22 October 2021, noon - 1pm
+  - **Tegan Maharaj**, Faculty of Information
+  - [Data science and information](https://youtu.be/SP3bZ3uHyTg)
+  - I study AI systems and "what goes into" them, e.g. their real-world deployment context, and the effects that has on learning behaviour and generalization. I do that because I want to be able to use AI systems responsibly for problems I think are important, like impact and risk assessments for climate change, AI alignment, ecological management and other common-good problems. My website is: http://www.teganmaharaj.com/.
+- Friday, 15 October 2021, noon - 1pm
+  - **Drew Stommes**, Department of Political Science, Yale University
+  - *On the reliability of published findings using the regression discontinuity design in political science*
+  - [Drew Stommes](https://drew-stommes.github.io) is a doctoral candidate in the Department of Political Science at Yale University, where he researches democracy, political violence, and quantitative methods. He will talk about a recent [working paper](https://arxiv.org/abs/2109.14526).
+- Friday, 8 October 2021, noon - 1pm
+  - **Fedor Dokshin**, Department of Sociology
+  - [Data science and sociology](https://youtu.be/QjTsDbH6MxM)
+  - [Fedor Dokshin](http://www.fedordokshin.org/) is an Assistant Professor of Sociology at the University of Toronto. He is a computational social scientist with research interests in social networks, organizations, and energy and the environment. Across these domains, Fedor leverages data science methods and novel data sources to improve existing measurement strategies.
+- Friday, 1 October 2021, noon - 1pm
+  - [*The 2021 Canadian Election*](https://youtu.be/pCwJXgR7V5k)
+  - **David Andrews**
+  - **Daniel Rubenson**
+  - **Johnson Vo**
+  - **Eric Zhu**
+  - **Brian Diep**
+  - **Ashely (Jing Yuan) Zhang**
+  - **Kristin (Xi Yu) Huang**
+  - **Tanvir Hyder**
+- Friday, 24 September 2021, noon - 1pm
+  - **Karen Chapple**, Department of Geography and Planning/School of Cities
+  - [Data science and geography, planning, cities](https://youtu.be/rNRwOStrb9o)
+  - [Karen Chapple](http://karenchapple.com) is the inaugural Director of the School of Cities and Professor of Geography and Planning at the University of Toronto. Her research uses data science methods to identify and predict gentrification and displacement in cities. She is Professor Emerita at the University of California, Berkeley, where she helped to launch the undergraduate data science program.
+- Friday, 20 August 2021, noon - 1pm
+  - **Jessica Long**, **Simone Collier**, **Vinky Wang**, **Sophie Berkowitz**, and **Yun-Hsiang Chan**, University of Toronto
+  - [*Using statistical model to analyzing shark, lizard, and basketball movement data*](https://youtu.be/p697exbcMZE)
+  - Jessica Long, Simone Collier, Vinky Wang, Sophie Berkowitz, and Yun-Hsiang Chan are undergraduate students at the University of Toronto.
+- Friday, 13 August 2021, noon - 1pm
+  - [*Independent Summer Statistics Community projects*](https://youtu.be/zkuMedB23f8)
+  - 'Prospective Analytics': **Ashley Zhang**, **Eric Zhu**, **Muhammad Tsany** and **Sergio Zheng Zhou**.
+  - 'Statistically Significant': **Aliza Lakho**, **Chloris Jiang**, **Janhavi Agarwal**, and **José Casas** on whether young professionals should move to Toronto.
+  - 'Point Zero Five': **Pan Chen**, **Xiaoxuan Han**, **Yi Qin**, and **Yini Mao** on the livability of Toronto for newcomers.
+- Friday, 6 August 2021, 12:30pm - 1pm
+  - **Ijeamaka Anyene**, Kaiser Permanente Division of Research
+  - [*Taking the next step past standard charts*](https://youtu.be/LlVf8foXUmM)
+  - [Ijeamaka](https://ijeamaka-anyene.netlify.app) is a data analyst working in healthcare research. She specializes in using R and SAS for data analysis, epidemiological research, and data visualizations. She is also passionate about computational art, knowledge sharing / dissemination, and how to mix the two.
+- Friday, 30 July 2021, noon - 1pm
+  - **Keli Chiu**, University of Toronto
+  - [Detecting sexist and racist text contents with explanations accompanied with GPT-3](https://youtu.be/xmmoVD5zTOQ)
+  - [Keli Chiu](http://kelichiu.com/) is a recent graduate of master in Information at the University of Toronto with the concentration in Human-Centred Data Science. Prior to pursuing her master in the information fields, she worked as a web developer and fell in love with data. Her research interests are natural language processing applications, text analysis and ethics in AI and machine learning. She received rstudio::global Diversity Scholarships in the year of 2021.
+- Friday, 23 July 2021, noon - 1pm
+  - **Annie Collins** and **Rohan Alexander**, University of Toronto
+  - [*Reproducibility of COVID-19 pre-prints*](https://youtu.be/_ncpTbhe8qA)
+  - Annie Collins is an undergraduate student at the University of Toronto specializing in applied mathematics and statistics with a minor in history and philosophy of science. In her free time, she focusses her efforts on student governance, promoting women’s representation in STEM, and working with data in the non-profit and charitable sector.
+  - Rohan Alexander is an assistant professor at the University of Toronto in Information and Statistical Sciences, and a faculty affiliate at the Schwartz Reisman Institute for Technology and Society. He holds a PhD in Economics from the Australian National University.
+- Friday, 16 July 2021, noon - 1pm
+  - **Kamilah Ebrahim**, University of Toronto
+  - [*Trust in contact tracing apps*](https://youtu.be/f_3bpEeRdhI)
+  - Kamilah Ebrahim received a B.A. in Economics from the University of Waterloo in 2019 and is currently pursuing a Masters of Information in Human Centred Data Science at the University of Toronto. Kamilah is a 2020-21 Graduate Fellow at the University of Toronto Centre for Ethics focusing on the intersection between race, economics and data monopolies in Canada. Prior to joining the University of Toronto she held roles at the United Nation Economic and Social Commission for Asia and the Pacific (UN ESCAP), as well as the Canadian federal government.
+- Friday, 2 July 2021, noon - 1pm
+  - **Zachary McCaw**, Google
+  - Zachary McCaw is a data scientist at Google.
+- Friday, 25 June 2021, noon - 1pm
+  - **Laura Derksen**, University of Toronto Mississauga
+  - [*The impact of student access to Wikipedia*](https://youtu.be/Coz-HFesTsw)
+  - [Laura](https://sites.google.com/site/lauraderksen) is the Amgen Canada Professor in Health System Strategy at the University of Toronto Mississauga and assistant professor in Strategic Management at the Rotman School of Management. Her research interests are development and global health education, information and networks.
+- Friday, 18 June 2021, noon - 1pm
+  - **Jacob Matson**, Simetric
+  - [*From data ask to dashboard*](https://youtu.be/U8-6QKtWXCQ)
+  - [Jacob](https://www.linkedin.com/in/jacobmatson) is VP of Finance & Operations at [Simetric, Inc.](https://simetric.com).
+- Friday, 11 June 2021, noon - 1pm
+  - **Laura Bronner**, Data scientist
+  - [*Quantitative editing*](https://youtu.be/LI5m9RzJgWc)
+  - [Laura](https://www.laurabronner.com) is a data scientist, who most recently worked as the quantitative editor at FiveThirtyEight. More generally, she is a data scientist with an interest in causal inference, political science and quantitative text analysis. Before FiveThirtyEight, she was a Senior Analyst at the Analyst Institute, designing and analyzing field experiments for the 2018 election cycle. In September 2018, she completed a PhD in Political Science at the London School of Economics' Department of Government.
+- Friday, 4 June 2021, noon - 1pm
+  - **Heather Krause**, We All Count
+  - [*Equity in Data (or, how not to accidentally use data like a racist, sexist, colonialist, etc)*](https://youtu.be/Yu_l8MpKK-E)
+  - [Heather](https://weallcount.com) remains unconvinced. As a statistician with decades of global experience working on complex data problems and producing real-world knowledge, she has developed the Data Equity Framework to address the equity issues in data products and research projects. Her emphasis is on combining strong statistical analysis with clear and meaningful communication. She is currently working on implementing tools for equity and ethics in data. As the founder of two successful data science companies, she attacks the largest questions facing societies today, working with both civic and corporate organizations to improve outcomes and lives. Her relentless pursuit of clarity and realism in these projects pushed her beyond pure analysis to mastering the entire data ecosystem including award-winning work in data sourcing, modeling, and data storytelling, each incorporating bleeding edge theory and technologies. Heather is the founder of We All Count, a project for equity in data working with teams across the globe to embed a lens of ethics into their data products from funding to data collection to statistical analysis and algorithmic accountability. Her unique set of tools and contributions have been sought across a range of clients from MasterCard and Volkswagen to the United Nations, the Syrian Refugee Resettlement Secretariat, Airbnb, and the Bill and Melinda Gates Foundation. She is on the Data Advisory Board of the UNHCR. 
+- Friday, 28 May 2021, noon - 1pm
+  - **Samantha Pierre**, University of Toronto
+  - [*And The Nominees Are... An Empirical Study of the Effects of a Tony Award Win and Nomination on a Show's Success*](https://youtu.be/rFojvBN0qGk)
+  - Samantha is a fourth-year statistics student studying at the University of Toronto. Throughout the past year she has combined her love for theatre and statistics to analyze trends in the theatre community. She volunteers as a member of PAIR-CG to create a representational framework for the international theatre community. She currently works at WOMBO, an app developed by former U of T students, as head of music content.
+- Friday, 21 May 2021, noon - 1pm
+  - **David Shor**, OpenLabs
+  - [Political data science](https://youtu.be/_IEPKapa9_0). 
+  - [David](https://davidshor.io) is an American data scientist who tries to elect Democrats. He is known for analyzing political polls and currently serves as head of data science with OpenLabs, a progressive nonprofit, and also as a Senior Fellow with the Center for American Progress Action Fund.
+- Thursday, 22 April, 4:30-5:30pm
+  - *Panel on teaching data-focused topics*
+  - **Aimee Schwab-McCoy**, Creighton University
+  - **Ashley Juavinett**, UC San Diego
+  - **Chris Papalia**, St. Andrew's College
+  - **Samantha-Jo Caetano**, University of Toronto
+  - [Aimee Schwab-McCoy](https://aimeeschwab-mccoy.github.io) is an Assistant Professor of Statistics at Creighton University. [Ashley Juavinett](https://ashleyjuavinett.com) is a neuroscientist, an educator, and a writer, currently working as an Assistant Teaching Professor at UC San Diego. Chris Papalia is a Mathematics and Science Teacher and Head of House at St. Andrew's College. Samantha-Jo Caetano is an Assistant Professor, Teaching Stream, at the University of Toronto.
+- Thursday, 15 April, 4:30-5:30pm
+  - **Emily A. Sellars**, Yale University
+  - *Missing data and mis-measurement in Mexico's 1900 census and the Historical Archive of Localities (AHL)*
+  - [Emily A. Sellars](https://emilysellars.com) is an assistant professor in the Department of Political Science at Yale University. Before coming to Yale, she was an assistant professor in the Bush School of Government and Public Service at Texas A&M University and a postdoctoral scholar at the University of Chicago's Harris School of Public Policy. She received her Ph. D. in Political Science and Agricultural and Applied Economics from the University of Wisconsin–Madison in 2015. Her research interests are at the intersection of political economy and development economics. Her research examines the political economy of emigration and population.
+- Thursday, 8 April, 4:30-5:30pm
+  - [*Mining Process Models from Email Data*](https://youtu.be/2M32PbclTnE)
+  - **Faria Khandaker**, University of Toronto
+  - Faria is a 2nd year student of the Information Systems and Design Concentration at the Faculty of Information and is one of the co-hosts of the Toronto Data Workshop. She holds an Honour's Bachelor of Science Degree in Anthropology and Human Biology from the University of Toronto Scarborough. Since starting her masters, she became interested in research related to data-driven decision making within organizations. Under the supervision of Professor Arik Senderovich, she is researching topics related to the application of Machine Learning within the field of Process Mining and exploring various methodologies for gaining insights from email driven business processes.
+  - Faria will discuss mining process models from email data. 
+- Thursday, 1 April, 4:30-5:30pm
+  - **Vik Pant**, Natural Resources Canada
+  - *Supporting the Integration of Science and Policy through Data Science and Artificial Intelligence*
+  - Dr. Vik Pant is the Chief Scientist and Chief Science Advisor of Natural Resources Canada (NRCan). He leads the Office of the Chief Scientist at NRCan and reports directly to the Deputy Minister. His office oversees the development and implementation of evidence-based science policy across NRCan sectors and agencies. His office also manages NRCan's enterprise-wide technology strategy and portfolio of science products. He also runs the Digital Accelerator, which is an innovation platform for designing and launching AI-driven software products in NRCan. Vik is also the Founder of Synthetic Intelligence Forum, which is a leading community of practice focused on the industrial application of Artificial Intelligence (AI). He earned a doctorate from the Faculty of Information (iSchool) in the University of Toronto, a master's degree in business administration with distinction from the University of London, a master's degree in information technology from Harvard University, where he received the Dean’s List Academic Achievement Award, and an undergraduate degree in business administration from Villanova University. Vik serves as an Adjunct Professor in the Faculty of Information (iSchool) at the University of Toronto.
+- Thursday, 25 March, 4:30-5:30pm
+  - **Alex Cookson**, Muse
+  - [The power of great datasets](https://youtu.be/E2aRKZczqKY)
+  - [Alex Cookson](https://www.alexcookson.com/) is a Data Scientist at [Muse](https://choosemuse.com/), where he helps make the most of their data. In his spare time, you can find him participating in Tidy Tuesday or thinking up cool datasets to explore. And when he’s not doing that, he's probably cycling around Toronto or doting on his two cats, Tom Tom and Ruby.
+  - Alex will explore the power of great datasets, and discuss the importance of interesting, fun datasets as a way to guide and motivate learning R. 
+- Thursday, 18 March, 4:30-5:30pm
+  - **Sofia Ruiz-Suarez**, National University of Comahue
+  - [*Animal tracking data*](https://youtu.be/GMi5nLl4wos)
+  - [Sofia Ruiz-Suarez](https://twitter.com/sofiruizsuarez) holds an undergraduate degree in mathematics from the University of Buenos Aires and now is a PhD candidate at the institute for Research on Biodiversity and Environment. She also teaches mathematics at the University of Comahue and leads R-Ladies at her local city. Her research is focused on Bayesian statistics with applications in animal behaviour and movement.
+- Monday, 15 March, 4:00-5:00pm
+  - **Todd Feathers**, Freelance reporter
+  - [*Major Universities are Using Race as a "High Impact Predictor" of Student Success*](https://youtu.be/Hw5viOofnC0)
+  - Jointly hosted with [Maryclare Griffin](https://maryclare.github.io), University of Massachusetts Amherst.
+  - [Todd Feathers](https://www.toddfeathers.com) is a freelance journalist covering artificial intelligence, surveillance, and the technologies changing our world. He spent years at daily newspapers reporting on politics, criminal justice, and health care. On every beat, new tech is solving problems and creating them. His goal is to use data, scientific research, and inside sources to cut through the hype and examine what our gadgets and algorithms really do.Writing in Vice, OneZero, The Wall Street Journal, and others.
+- Thursday, 11 March, 4:30-5:30pm
+  - **Lucas Cherkewski**, Canadian Digital Service
+  - [*Using publicly-available data to better understand the government's operations*](https://youtu.be/6vDedpF0lfg)
+  - [Lucas Cherkewski](https://lucascherkewski.com) is a policy advisor at the Canadian Digital Service (CDS). He helps delivery teams improve government services. From that experience, he advises on structural changes to make better services the default. This work includes plenty of data-enabled research and analysis—Lucas is in a happy place when his work leads him to spend an afternoon poking around a dataset, trying to better understand government so he can help change it.
+- Thursday, 4 March, 4:30-5:30pm
+  - **Petros Pechlivanoglou**, The Hospital for Sick Children (SickKids) Research Institute
+  - [*Simulation and retrospective data for health economic decision making*](https://youtu.be/-aZjLCPsO_w)
+  - Petros Pechlivanoglou, PhD, is a Scientist at The Hospital for Sick Children (SickKids) Research Institute and an Assistant Professor at the University of Toronto, Institute of Health Policy Management and Evaluation. He studied economics in his native country, Greece, econometrics at the University of Groningen, the Netherlands and obtained a PhD in health econometrics from the same university. He completed a post-doctoral fellowship at the University of Toronto, within the Toronto Health Economics and Technology Assessment (THETA) Collaborative where he focused on methodological aspects around the application of decision analysis in health-care policy.
+- Thursday, 18 February, 4:30-5:30pm
+  - [*University of Toronto DoSS toolkit launch*](https://youtu.be/aeAXvW3K_wU)
+  - *Special guest Bethany White (Department of Statistical Sciences).*
+  - **Annie Collins, Haoluan Chen, Isaac Ehrlich, Mariam Walaa, Marija Pejcinovska, Mathew Wankiewicz, Michael Chong, Paul Hodgetts, Rohan Alexander, Samantha-Jo Caetano, Shirley Deng, and Yena Joo**, University of Toronto
+  - The DoSS toolkit is a series of self-paced lessons that students can go through ahead of class, to achieve badges for various levels of accomplishment with R. Instructors can use the badges to work out the level of the class and either direct students to the toolkit to address deficiencies or cover missing aspects themselves.
+- Monday, 15 February, Noon-1:00pm
+  - **Emily Riederer**, Capital One
+  - [*Causal design patterns for data analysts*](https://youtu.be/VP3BBZ7poc0)
+  - [Emily](https://emilyriederer.netlify.app) is a Senior Analytics Manager at Capital One. Emily's team focuses on reimagining analytical infrastructure by building data products, elevating business analysis with novel data sources and statistical methods, and providing consultation and training to partner teams. 
+- Thursday, 11 February, 4:30-5:30pm
+  - **Garrick Aden-Buie**, R Studio
+  - [*Using R Markdown in general and in some specific projects*](https://youtu.be/Hl798H6J-bg)
+  - [Garrick](https://www.garrickadenbuie.com) is a Data Science Educator at RStudio who lives in sunny St. Petersburg, Florida. His passion is combining creative coding with programming education, using code to build tools that teach coding to new and advanced R users alike. Like tidyexplain: a project that used ggplot2 and gganimate to reimagine database operations as colorful flying boxes instead of the typical Venn diagrams. Garrick has developed a number of open source addins and packages for RStudio—such regexplain, shrtcts and rsthemes—and is always easily distracted by projects that combine R Markdown and online learning or teaching. 
+- Thursday, 4 February, 4:30-5:30pm
+  - **Kathy Ge**, Uber
+  - [*How data insights and experimentation help drive product design and intelligent recommendations on the Uber Eats platform*](https://youtu.be/UYzXElJTovg)
+  - Kathy is a data scientist with Uber Eats primarily focused on the shopping experience including ranking and recommendations throughout the order flow. She received her M.Sc. in Computer Science and B.Sc in Computer Science and Statistics from the University of Toronto.
+- Thursday, 28 January, 4:30-5:30pm
+  - **Irene Duah-Kessie**, University of Toronto
+  - [*Exploring algorithmic bias and fairness and its impact on health outcomes faced by racialized communities*](https://youtu.be/xwWvOeSXu5o)
+  - Irene Duah-Kessie is a graduate of the University of Toronto's Master of Science in Sustainability Management program. Throughout her studies, Irene published her research on racial income inequality in Toronto with the Wellesley Institute and is currently a part of the Turtle Island Journal of Indigenous Health Editorial Team. Irene is a Project Manager at Across Boundaries leading an initiative to address food security and mental health challenges in Toronto's Black community. She is also the founder of Rise In STEM, a grassroots organization that aims to increase access to STEM learning opportunities in Black and marginalized communities.
+- Wednesday, 20 January, 4:30-5:30pm
+  - **Zia Babar**, University of Toronto
+  - [*Derivative data security*](https://youtu.be/fdVZqvECXXQ)
+  - Zia Babar obtained his PhD from the University of Toronto where his research studies focused on the analysis and design of data-centered information systems for enabling enterprise transformation. He is engaged in a multi-year research engagement with IBM Research Labs and is a startup technical mentor at WeWork Labs. He is the organizer of technology meetup groups in both Toronto and Waterloo, and a course instructor at the Faculty of Information, University of Toronto.
+- Thursday, 14 January, 4:30-5:30pm
+  - **Andrew Miles**, University of Toronto
+  - [*Code, plots, and values.*](https://youtu.be/mdjOoKT-f7E)
+  - *Jointly hosted with Elizabeth Parke and the UTM Collaborative Digital Research Space.*
+  - [Andrew Miles](http://www.andrewamiles.com) is Assistant Professor of Sociology at the University of Toronto and Director of the Morality, Action, and Cognition Lab.
 
-
-
-* Friday, 24 September 2021, noon - 1pm  
-	**Karen Chapple**, Department of Geography and Planning/School of Cities  
-	[Data science and geography, planning, cities](https://youtu.be/rNRwOStrb9o)  
-	[Karen Chapple](http://karenchapple.com) is the inaugural Director of the School of Cities and Professor of Geography and Planning at the University of Toronto. Her research uses data science methods to identify and predict gentrification and displacement in cities. She is Professor Emerita at the University of California, Berkeley, where she helped to launch the undergraduate data science program.
-* Friday, 1 October 2021, noon - 1pm  
-	[*The 2021 Canadian Election*](https://youtu.be/pCwJXgR7V5k)  
-	**David Andrews**  
-  **Daniel Rubenson**  
-  **Johnson Vo**  
-  **Eric Zhu**, **Brian Diep**, **Ashely (Jing Yuan) Zhang**, **Kristin (Xi Yu) Huang**, and **Tanvir Hyder**
-* Friday, 8 October 2021, noon - 1pm  
-	**Fedor Dokshin**, Department of Sociology    
-	[Data science and sociology](https://youtu.be/QjTsDbH6MxM)  
-	[Fedor Dokshin](http://www.fedordokshin.org/) is an Assistant Professor of Sociology at the University of Toronto. He is a computational social scientist with research interests in social networks, organizations, and energy and the environment. Across these domains, Fedor leverages data science methods and novel data sources to improve existing measurement strategies.	
-* Friday, 15 October 2021, noon - 1pm  
-	**Drew Stommes**, Department of Political Science, Yale University    
-	*On the reliability of published findings using the regression discontinuity design in political science*  
-	[Drew Stommes](https://drew-stommes.github.io) is a doctoral candidate in the Department of Political Science at Yale University, where he researches democracy, political violence, and quantitative methods. He will talk about a recent [working paper](https://arxiv.org/abs/2109.14526).
-* Friday, 22 October 2021, noon - 1pm  
-	**Tegan Maharaj**, Faculty of Information    
-	[Data science and information](https://youtu.be/SP3bZ3uHyTg)  
-	I study AI systems and "what goes into" them, e.g. their real-world deployment context, and the effects that has on learning behaviour and generalization. I do that because I want to be able to use AI systems responsibly for problems I think are important, like impact and risk assessments for climate change, AI alignment, ecological management and other common-good problems. My website is: http://www.teganmaharaj.com/.	
-* Friday, 29 October 2021, noon - 1pm  
-	**Josh Speagle**, Astronomy & Astrophysics, Dunlap Institute, Statistical Sciences    
-	[Data science and astronomy](https://youtu.be/fHk3Fy1TxQY)  
-	[Josh](https://joshspeagle.github.io) is a Banting & Dunlap Postdoctoral Fellow at the University of Toronto whose research focuses on using astrostatistics and "data science" to understand how galaxies like our own Milky Way form, behave, and evolve.	
-* Friday, 5 November 2021, noon - 1pm  
-	**Yun William Yu**,	Math Department, UofT; UTSC Computer & Mathematical Sciences    
-	[Data science and math](https://youtu.be/-1jpjM2nP2Y)  
-	[Yun William Yu](https://www.math.toronto.edu/cms/people/faculty/yu-yun-william/) is an assistant professor in the math department at UofT whose research focuses on algorithmic methods for computational biology and medical informatics.	
-* Friday, 12 November 2021, noon - 1pm  
-	**Ann Glusker**, Doe Library, University of California Berkeley     
-	["Supporting Big Data Research at the University of California, Berkeley"](https://youtu.be/139xCz-e0tg)  
-	Dr Ann Glusker is Librarian for Sociology, Demography, Public Policy, Psychology (fall 2021) & Quantitative Research at the Doe Library, University of California, Berkeley. She will discuss a recently released [report](https://escholarship.org/uc/item/4403c0f4) 'Supporting Big Data Research at the University of California, Berkeley'. This report provides insights on researcher practices and challenges in six thematic areas: data collection & processing; analysis: methods, tools, infrastructure; research outputs; collaboration; training; and balancing domain vs data science expertise.	
-* Friday, 19 November 2021, noon - 1pm  
-	**Radu Craiu**, Statistical Sciences, University of Toronto  
-	[Data science and statistical sciences](https://youtu.be/B7EKLFotknU)  
-	[Dr Radu V. Craiu](https://utstat.toronto.edu/craiu/) is Professor and Chair of Statistical Sciences at the University of Toronto.  His main research interests are in computational methods in statistics, especially, Markov chain Monte Carlo algorithms (MCMC), Bayesian inference, copula models, model selection procedures and statistical genetics.	
-* Friday, 26 November 2021, noon - 1pm  
-	**Kieran Campbell**, Lunenfeld Tanenbaum Research Institute  
-	[Data science and Biomedicine](https://youtu.be/PuQhyGj3G3o)  
-	[Dr Kieran Campbell](https://www.camlab.ca) is an investigator at the Lunenfeld-Tanenbaum Research Institute and an assistant professor at the Departments of Molecular Genetics and Statistical Sciences, University of Toronto. His research focusses on Bayesian models and machine learning for high dimensional biomedical data, including single-cell and cancer genomics. Recently, he has led efforts to develop statistical machine learning methodology to integrate single-cell RNA and DNA sequencing data to uncover the effects of tumour clonal identity on gene expression, as well as methods to automatically delineate the tumour microenvironment from single-cell RNA-sequencing data. Such findings can improve our understanding of cancer progression and of why certain tumours are resistant to therapies, leading to relapse.
-* Friday, 3 December 2021, noon - 1pm  
-	**Leanne Trimble**, UofT Libraries    
-	[Data science and libraries](https://youtu.be/rxnShSHwBXU)  
-	Leanne Trimble is a data librarian at the Map & Data Library, University of Toronto Libraries.
-* Friday, 10 December 2021, noon - 1pm  
-	**Nathan Taback**, Departments of Statistical Sciences    
-	[Teaching data science](https://youtu.be/99pOuO_TD5w)  
-	[Nathan Taback](https://utstat.toronto.edu/nathan/) is the director of Data Science programs and an Associate Professor, Teaching Stream in the Department of Statistical Sciences, and Computer Science (cross-appointed) at the University of Toronto. He currently serves as a Special Advisor to the Dean of Arts and Science on Computational and Data Science Education.	
-
-
-
-
-* Friday, 21 May 2021, noon - 1pm  
-	**David Shor**, OpenLabs    
-	[Political data science](https://youtu.be/_IEPKapa9_0). 
-	[David](https://davidshor.io) is an American data scientist who tries to elect Democrats. He is known for analyzing political polls and currently serves as head of data science with OpenLabs, a progressive nonprofit, and also as a Senior Fellow with the Center for American Progress Action Fund.    
-* Friday, 28 May 2021, noon - 1pm  
-	**Samantha Pierre**, University of Toronto    
-	[*And The Nominees Are... An Empirical Study of the Effects of a Tony Award Win and Nomination on a Show's Success*](https://youtu.be/rFojvBN0qGk)  
-	Samantha is a fourth-year statistics student studying at the University of Toronto. Throughout the past year she has combined her love for theatre and statistics to analyze trends in the theatre community. She volunteers as a member of PAIR-CG to create a representational framework for the international theatre community. She currently works at WOMBO, an app developed by former U of T students, as head of music content.  
-* Friday, 4 June 2021, noon - 1pm  
-	**Heather Krause**, We All Count    
-	[*Equity in Data (or, how not to accidentally use data like a racist, sexist, colonialist, etc)*](https://youtu.be/Yu_l8MpKK-E)  
-	[Heather](https://weallcount.com) remains unconvinced. As a statistician with decades of global experience working on complex data problems and producing real-world knowledge, she has developed the Data Equity Framework to address the equity issues in data products and research projects. Her emphasis is on combining strong statistical analysis with clear and meaningful communication. She is currently working on implementing tools for equity and ethics in data. As the founder of two successful data science companies, she attacks the largest questions facing societies today, working with both civic and corporate organizations to improve outcomes and lives. Her relentless pursuit of clarity and realism in these projects pushed her beyond pure analysis to mastering the entire data ecosystem including award-winning work in data sourcing, modeling, and data storytelling, each incorporating bleeding edge theory and technologies. Heather is the founder of We All Count, a project for equity in data working with teams across the globe to embed a lens of ethics into their data products from funding to data collection to statistical analysis and algorithmic accountability. Her unique set of tools and contributions have been sought across a range of clients from MasterCard and Volkswagen to the United Nations, the Syrian Refugee Resettlement Secretariat, Airbnb, and the Bill and Melinda Gates Foundation. She is on the Data Advisory Board of the UNHCR.   
-* Friday, 11 June 2021, noon - 1pm  
-	**Laura Bronner**, Data scientist    
-	[*Quantitative editing*](https://youtu.be/LI5m9RzJgWc)  
-	[Laura](https://www.laurabronner.com) is a data scientist, who most recently worked as the quantitative editor at FiveThirtyEight. More generally, she is a data scientist with an interest in causal inference, political science and quantitative text analysis. Before FiveThirtyEight, she was a Senior Analyst at the Analyst Institute, designing and analyzing field experiments for the 2018 election cycle. In September 2018, she completed a PhD in Political Science at the London School of Economics' Department of Government.    
-* Friday, 18 June 2021, noon - 1pm  
-	**Jacob Matson**, Simetric  
-	[*From data ask to dashboard*](https://youtu.be/U8-6QKtWXCQ)  
-	[Jacob](https://www.linkedin.com/in/jacobmatson) is VP of Finance & Operations at [Simetric, Inc.](https://simetric.com).  
-* Friday, 25 June 2021, noon - 1pm  
-	**Laura Derksen**, University of Toronto Mississauga    
-	[*The impact of student access to Wikipedia*](https://youtu.be/Coz-HFesTsw)  
-	[Laura](https://sites.google.com/site/lauraderksen) is the Amgen Canada Professor in Health System Strategy at the University of Toronto Mississauga and assistant professor in Strategic Management at the Rotman School of Management. Her research interests are development and global health education, information and networks.  
-* Friday, 2 July 2021, noon - 1pm  
-	**Zachary McCaw**, Google  
-	Zachary McCaw is a data scientist at Google.  
-* Friday, 16 July 2021, noon - 1pm  
-  **Kamilah Ebrahim**, University of Toronto    
-  [*Trust in contact tracing apps*](https://youtu.be/f_3bpEeRdhI)  
-  Kamilah Ebrahim received a B.A. in Economics from the University of Waterloo in 2019 and is currently pursuing a Masters of Information in Human Centred Data Science at the University of Toronto. Kamilah is a 2020-21 Graduate Fellow at the University of Toronto Centre for Ethics focusing on the intersection between race, economics and data monopolies in Canada. Prior to joining the University of Toronto she held roles at the United Nation Economic and Social Commission for Asia and the Pacific (UN ESCAP), as well as the Canadian federal government.  
-* Friday, 23 July 2021, noon - 1pm  
-  **Annie Collins** and **Rohan Alexander**, University of Toronto    
-  [*Reproducibility of COVID-19 pre-prints*](https://youtu.be/_ncpTbhe8qA)  
-  Annie Collins is an undergraduate student at the University of Toronto specializing in applied mathematics and statistics with a minor in history and philosophy of science. In her free time, she focusses her efforts on student governance, promoting women’s representation in STEM, and working with data in the non-profit and charitable sector.  
-  Rohan Alexander is an assistant professor at the University of Toronto in Information and Statistical Sciences, and a faculty affiliate at the Schwartz Reisman Institute for Technology and Society. He holds a PhD in Economics from the Australian National University.  
-* Friday, 30 July 2021, noon - 1pm  
-  **Keli Chiu**, University of Toronto    
-  [Detecting sexist and racist text contents with explanations accompanied with GPT-3](https://youtu.be/xmmoVD5zTOQ)  
-  [Keli Chiu](http://kelichiu.com/) is a recent graduate of master in Information at the University of Toronto with the concentration in Human-Centred Data Science. Prior to pursuing her master in the information fields, she worked as a web developer and fell in love with data. Her research interests are natural language processing applications, text analysis and ethics in AI and machine learning. She received rstudio::global Diversity Scholarships in the year of 2021.
-* Friday, 6 August 2021, 12:30pm - 1pm  
-	**Ijeamaka Anyene**, Kaiser Permanente Division of Research  
-	[*Taking the next step past standard charts*](https://youtu.be/LlVf8foXUmM)  
-	[Ijeamaka](https://ijeamaka-anyene.netlify.app) is a data analyst working in healthcare research. She specializes in using R and SAS for data analysis, epidemiological research, and data visualizations. She is also passionate about computational art, knowledge sharing / dissemination, and how to mix the two.    
-* Friday, 13 August 2021, noon - 1pm  
-  [*Independent Summer Statistics Community projects*](https://youtu.be/zkuMedB23f8)  
-  'Prospective Analytics': **Ashley Zhang**, **Eric Zhu**, **Muhammad Tsany** and **Sergio Zheng Zhou**.  
-  'Statistically Significant': **Aliza Lakho**, **Chloris Jiang**, **Janhavi Agarwal**, and **José Casas** on whether young professionals should move to Toronto.  
-  'Point Zero Five': **Pan Chen**, **Xiaoxuan Han**, **Yi Qin**, and **Yini Mao** on the livability of Toronto for newcomers.  
-* Friday, 20 August 2021, noon - 1pm  
-  **Jessica Long**, **Simone Collier**, **Vinky Wang**, **Sophie Berkowitz**, and **Yun-Hsiang Chan**, University of Toronto    
-  [*Using statistical model to analyzing shark, lizard, and basketball movement data*](https://youtu.be/p697exbcMZE)  
-  Jessica Long, Simone Collier, Vinky Wang, Sophie Berkowitz, and Yun-Hsiang Chan are undergraduate students at the University of Toronto.  
-  
-
-* Thursday, 14 January, 4:30-5:30pm  
-	**Andrew Miles**, University of Toronto  
-	[*Code, plots, and values.*](https://youtu.be/mdjOoKT-f7E)  
-	 *Jointly hosted with Elizabeth Parke and the UTM Collaborative Digital Research Space.*  
-	[Andrew Miles](http://www.andrewamiles.com) is Assistant Professor of Sociology at the University of Toronto and Director of the Morality, Action, and Cognition Lab.  
-* Wednesday, 20 January, 4:30-5:30pm  
-  **Zia Babar**, University of Toronto  
-	[*Derivative data security*](https://youtu.be/fdVZqvECXXQ)  
-	Zia Babar obtained his PhD from the University of Toronto where his research studies focused on the analysis and design of data-centered information systems for enabling enterprise transformation. He is engaged in a multi-year research engagement with IBM Research Labs and is a startup technical mentor at WeWork Labs. He is the organizer of technology meetup groups in both Toronto and Waterloo, and a course instructor at the Faculty of Information, University of Toronto.  
-* Thursday, 28 January, 4:30-5:30pm  
-	**Irene Duah-Kessie**, University of Toronto  
-	[*Exploring algorithmic bias and fairness and its impact on health outcomes faced by racialized communities*](https://youtu.be/xwWvOeSXu5o)  
-	Irene Duah-Kessie is a graduate of the University of Toronto's Master of Science in Sustainability Management program. Throughout her studies, Irene published her research on racial income inequality in Toronto with the Wellesley Institute and is currently a part of the Turtle Island Journal of Indigenous Health Editorial Team. Irene is a Project Manager at Across Boundaries leading an initiative to address food security and mental health challenges in Toronto's Black community. She is also the founder of Rise In STEM, a grassroots organization that aims to increase access to STEM learning opportunities in Black and marginalized communities.  
-* Thursday, 4 February, 4:30-5:30pm  
-	**Kathy Ge**, Uber  
-	[*How data insights and experimentation help drive product design and intelligent recommendations on the Uber Eats platform*](https://youtu.be/UYzXElJTovg)  
-	Kathy is a data scientist with Uber Eats primarily focused on the shopping experience including ranking and recommendations throughout the order flow. She received her M.Sc. in Computer Science and B.Sc in Computer Science and Statistics from the University of Toronto.  
-* Thursday, 11 February, 4:30-5:30pm  
-	**Garrick Aden-Buie**, R Studio  
-	[*Using R Markdown in general and in some specific projects*](https://youtu.be/Hl798H6J-bg)  
-	[Garrick](https://www.garrickadenbuie.com) is a Data Science Educator at RStudio who lives in sunny St. Petersburg, Florida. His passion is combining creative coding with programming education, using code to build tools that teach coding to new and advanced R users alike. Like tidyexplain: a project that used ggplot2 and gganimate to reimagine database operations as colorful flying boxes instead of the typical Venn diagrams. Garrick has developed a number of open source addins and packages for RStudio—such regexplain, shrtcts and rsthemes—and is always easily distracted by projects that combine R Markdown and online learning or teaching.   
-* Monday, 15 February, Noon-1:00pm  
-	**Emily Riederer**, Capital One  
-	[*Causal design patterns for data analysts*](https://youtu.be/VP3BBZ7poc0)  
-	[Emily](https://emilyriederer.netlify.app) is a Senior Analytics Manager at Capital One. Emily's team focuses on reimagining analytical infrastructure by building data products, elevating business analysis with novel data sources and statistical methods, and providing consultation and training to partner teams.   
-* Thursday, 18 February, 4:30-5:30pm  
-  [*University of Toronto DoSS toolkit launch*](https://youtu.be/aeAXvW3K_wU)  
-  *Special guest Bethany White (Department of Statistical Sciences).*  
-	**Annie Collins, Haoluan Chen, Isaac Ehrlich, Mariam Walaa, Marija Pejcinovska, Mathew Wankiewicz, Michael Chong, Paul Hodgetts, Rohan Alexander, Samantha-Jo Caetano, Shirley Deng, and Yena Joo**, University of Toronto  
-	The DoSS toolkit is a series of self-paced lessons that students can go through ahead of class, to achieve badges for various levels of accomplishment with R. Instructors can use the badges to work out the level of the class and either direct students to the toolkit to address deficiencies or cover missing aspects themselves.
-* Thursday, 4 March, 4:30-5:30pm  
-	**Petros Pechlivanoglou**, The Hospital for Sick Children (SickKids) Research Institute  
-	[*Simulation and retrospective data for health economic decision making*](https://youtu.be/-aZjLCPsO_w)  
-	Petros Pechlivanoglou, PhD, is a Scientist at The Hospital for Sick Children (SickKids) Research Institute and an Assistant Professor at the University of Toronto, Institute of Health Policy Management and Evaluation. He studied economics in his native country, Greece, econometrics at the University of Groningen, the Netherlands and obtained a PhD in health econometrics from the same university. He completed a post-doctoral fellowship at the University of Toronto, within the Toronto Health Economics and Technology Assessment (THETA) Collaborative where he focused on methodological aspects around the application of decision analysis in health-care policy.  
-* Thursday, 11 March, 4:30-5:30pm  
-	**Lucas Cherkewski**, Canadian Digital Service  
-	[*Using publicly-available data to better understand the government's operations*](https://youtu.be/6vDedpF0lfg)  
-	[Lucas Cherkewski](https://lucascherkewski.com) is a policy advisor at the Canadian Digital Service (CDS). He helps delivery teams improve government services. From that experience, he advises on structural changes to make better services the default. This work includes plenty of data-enabled research and analysis—Lucas is in a happy place when his work leads him to spend an afternoon poking around a dataset, trying to better understand government so he can help change it.  
-* Monday, 15 March, 4:00-5:00pm  
-	**Todd Feathers**, Freelance reporter  
-	[*Major Universities are Using Race as a "High Impact Predictor" of Student Success*](https://youtu.be/Hw5viOofnC0)  
-	Jointly hosted with [Maryclare Griffin](https://maryclare.github.io), University of Massachusetts Amherst.    
-	[Todd Feathers](https://www.toddfeathers.com) is a freelance journalist covering artificial intelligence, surveillance, and the technologies changing our world. He spent years at daily newspapers reporting on politics, criminal justice, and health care. On every beat, new tech is solving problems and creating them. His goal is to use data, scientific research, and inside sources to cut through the hype and examine what our gadgets and algorithms really do.  Writing in Vice, OneZero, The Wall Street Journal, and others.  
-* Thursday, 18 March, 4:30-5:30pm  
-	**Sofia Ruiz-Suarez**, National University of Comahue  
-	[*Animal tracking data*](https://youtu.be/GMi5nLl4wos)  
-	[Sofia Ruiz-Suarez](https://twitter.com/sofiruizsuarez) holds an undergraduate degree in mathematics from the University of Buenos Aires and now is a PhD candidate at the institute for Research on Biodiversity and Environment. She also teaches mathematics at the University of Comahue and leads R-Ladies at her local city. Her research is focused on Bayesian statistics with applications in animal behaviour and movement.  
-* Thursday, 25 March, 4:30-5:30pm  
-	**Alex Cookson**, Muse  
-	[The power of great datasets](https://youtu.be/E2aRKZczqKY)
-	[Alex Cookson](https://www.alexcookson.com/) is a Data Scientist at [Muse](https://choosemuse.com/), where he helps make the most of their data. In his spare time, you can find him participating in Tidy Tuesday or thinking up cool datasets to explore. And when he’s not doing that, he's probably cycling around Toronto or doting on his two cats, Tom Tom and Ruby.  
-	Alex will explore the power of great datasets, and discuss the importance of interesting, fun datasets as a way to guide and motivate learning R. 
-* Thursday, 1 April, 4:30-5:30pm  
-	**Vik Pant**, Natural Resources Canada  
-	*Supporting the Integration of Science and Policy through Data Science and Artificial Intelligence*  
-	Dr. Vik Pant is the Chief Scientist and Chief Science Advisor of Natural Resources Canada (NRCan). He leads the Office of the Chief Scientist at NRCan and reports directly to the Deputy Minister. His office oversees the development and implementation of evidence-based science policy across NRCan sectors and agencies. His office also manages NRCan's enterprise-wide technology strategy and portfolio of science products. He also runs the Digital Accelerator, which is an innovation platform for designing and launching AI-driven software products in NRCan. Vik is also the Founder of Synthetic Intelligence Forum, which is a leading community of practice focused on the industrial application of Artificial Intelligence (AI). He earned a doctorate from the Faculty of Information (iSchool) in the University of Toronto, a master's degree in business administration with distinction from the University of London, a master's degree in information technology from Harvard University, where he received the Dean’s List Academic Achievement Award, and an undergraduate degree in business administration from Villanova University. Vik serves as an Adjunct Professor in the Faculty of Information (iSchool) at the University of Toronto.  
-* Thursday, 8 April, 4:30-5:30pm  
-  [*Mining Process Models from Email Data*](https://youtu.be/2M32PbclTnE)  
-	**Faria Khandaker**, University of Toronto  
-	Faria is a 2nd year student of the Information Systems and Design Concentration at the Faculty of Information and is one of the co-hosts of the Toronto Data Workshop. She holds an Honour's Bachelor of Science Degree in Anthropology and Human Biology from the University of Toronto Scarborough. Since starting her masters, she became interested in research related to data-driven decision making within organizations. Under the supervision of Professor Arik Senderovich, she is researching topics related to the application of Machine Learning within the field of Process Mining and exploring various methodologies for gaining insights from email driven business processes.  
-	Faria will discuss mining process models from email data. 
-* Thursday, 15 April, 4:30-5:30pm  
-	**Emily A. Sellars**, Yale University  
-	*Missing data and mis-measurement in Mexico's 1900 census and the Historical Archive of Localities (AHL)*  
-	[Emily A. Sellars](https://emilysellars.com) is an assistant professor in the Department of Political Science at Yale University. Before coming to Yale, she was an assistant professor in the Bush School of Government and Public Service at Texas A&M University and a postdoctoral scholar at the University of Chicago's Harris School of Public Policy. She received her Ph. D. in Political Science and Agricultural and Applied Economics from the University of Wisconsin–Madison in 2015. Her research interests are at the intersection of political economy and development economics. Her research examines the political economy of emigration and population.  
-* Thursday, 22 April, 4:30-5:30pm  
-  *Panel on teaching data-focused topics*  
-	**Aimee Schwab-McCoy**, Creighton University  
-	**Ashley Juavinett**, UC San Diego  
-	**Chris Papalia**, St. Andrew's College  
-	**Samantha-Jo Caetano**, University of Toronto  
-	[Aimee Schwab-McCoy](https://aimeeschwab-mccoy.github.io) is an Assistant Professor of Statistics at Creighton University. [Ashley Juavinett](https://ashleyjuavinett.com) is a neuroscientist, an educator, and a writer, currently working as an Assistant Teaching Professor at UC San Diego. Chris Papalia is a Mathematics and Science Teacher and Head of House at St. Andrew's College. Samantha-Jo Caetano is an Assistant Professor, Teaching Stream, at the University of Toronto.  
 
 
 ## 2020
