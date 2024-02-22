@@ -57,21 +57,18 @@ Past committee members:
 
 ### Upcoming
 
-- Thursday 22 February 2024, noon - 1pm
-	- **Jessica Otis**, George Mason University
-	- "By the Numbers: Numeracy, Religion, and the Quantitative Transformation of Early Modern England"
-	- Dr Jessica Marie Otis is Assistant Professor of History and Director of Public Projects at the Roy Rosenzweig Center for History and New Media at George Mason University. She is the author of the new book *By the Numbers: Numeracy, Religion, and the Quantitative Transformation of Early Modern England* published by Oxford University Press.
 - Thursday 29 February 2024, noon - 1pm
 	- **Sky CH-Wang**, Columbia University
 	- "Do Androids Know They're Only Dreaming of Electric Sheep?"
+	- [Sky CH-Wang](https://skywang.me/) is a PhD Candidate in Computer Science at Columbia University advised by Zhou Yu and Smaranda Muresan. His research primarily revolves around Natural Language Processing (NLP). He is broadly interested in the area where NLP meets Computational Social Science (CSS). Here, his research primarily revolves around three major areas: (1) revealing and designing for social difference and inequality, (2) cross-cultural NLP, and (3) mechanistic interpretability. His research is supported by a NSF Graduate Research Fellowship. 
 - Friday 1 March 2024, noon - 1pm
 	- **Jacob Austin**, Google DeepMind
 	- "Resolving Code Review Comments with Machine Learning"
 	- Code reviews are a critical part of the software development process, taking a significant amount of the code authors' and the code reviewers' time. As part of this process, the reviewer inspects the proposed code and asks the author for code changes through comments written in natural language. With machine learning, we have an opportunity to automate and streamline the code-review process, e.g., by proposing code changes based on a comment’s text.
-	- Jacob Austin is a Senior Research Engineer at Google DeepMind, working on program synthesis and large language models. He was previously an AI Resident at Google Brain, and a Research Intern at NVIDIA with Anima Anandkumar. He holds a bachelor's degree in computer science and mathematics from Columbia University. He studied machine learning and robotics at the Columbia Creative Machines Lab. He is also a pianist who plays a lot of chamber music, and has performed at Carnegie Hall, Music Mountain, Apple Hill, and Kinhaven.
+	- [Jacob Austin](http://www.jacobaustin.org) is a Senior Research Engineer at Google DeepMind, working on program synthesis and large language models. He was previously an AI Resident at Google Brain, and a Research Intern at NVIDIA with Anima Anandkumar. He holds a bachelor's degree in computer science and mathematics from Columbia University. He studied machine learning and robotics at the Columbia Creative Machines Lab. He is also a pianist who plays a lot of chamber music, and has performed at Carnegie Hall, Music Mountain, Apple Hill, and Kinhaven.
 - Thursday 7 March 2024, noon - 1pm
 	- **Matheus Facure**, Nubank
-	- Matheus has a background in Economics and is a Staff Data Scientist at Nubank. He works mostly with credit underwriting and causal inference. He is the author of *Causal Inference in Python* (O'Reilly) and *Causal Inference for the Brave and True* (Online, Open Source).
+	- [Matheus Facure](https://matheusfacure.github.io) has a background in Economics and is a Staff Data Scientist at Nubank. He works mostly with credit underwriting and causal inference. He is the author of *Causal Inference in Python* (O'Reilly) and *Causal Inference for the Brave and True* (Online, Open Source).
 - Friday 8 March 2024, noon - 1pm
 	- **Jonathan Mellon**, West Point
 	- "Using LLMs to code open-text social survey responses at scale"
@@ -79,6 +76,7 @@ Past committee members:
 	- [Jonathan Mellon](https://www.jonathanmellon.com/) is an Associate Professor at West Point's Department of Systems Engineering and co-director of the British Election Study. His research focuses on improving measurement and causal inference in social science. He studies electoral behavior, online citizen engagement, and measuring public opinion. He holds a DPhil in Sociology from Nuffield College, University of Oxford.
 - Thursday 14 March 2024, noon - 1pm
 	- **Tom Davidson**, Rutgers University
+	- [Tom Davidson](https://www.thomasrdavidson.com/) is an Assistant Professor of Sociology at Rutgers University—New Brunswick. He specializes in using computational methods and data from social media to analyze online political discussions, far-right activism, and hate speech. His work has been published in venues including *Social Forces*, *Mobilization*, and *Socius*. 
 - Thursday 21 March 2024, noon - 1pm
 	- **Laura Plein**, University of Luxembourg
 	- "Can LLMs demystify Bug Reports and translate them into Test Cases?"
@@ -86,15 +84,19 @@ Past committee members:
 - Thursday 28 March 2024, noon - 1pm
 	- **Cameron Buckner**, University of Houston
 	- "The philosophy of Large Language Models"
-	- Associate Professor of Philosophy at University of Houston, Author of *From Deep Learning to Rational Machines*.
+	- [Cameron Buckner](http://cameronbuckner.net) is an Associate Professor of Philosophy at University of Houston, Author of *From Deep Learning to Rational Machines*.
 - Thursday 4 April 2024, noon - 1pm
 	- **Lenny Bronner**, The Washington Post
 	- "Election Modeling at The Washington Post"
-	- Lenny Bronner is a data scientist at *The Washington Post*, specializing in elections.
+	- [Lenny Bronner](https://lennybronner.com/) is a data scientist at *The Washington Post*, specializing in elections.
 
 
 ### Past
 
+- Thursday 22 February 2024, noon - 1pm
+	- **Jessica Otis**, George Mason University
+	- "By the Numbers: Numeracy, Religion, and the Quantitative Transformation of Early Modern England"
+	- [Dr Jessica Marie Otis](https://jessicaotis.com) is Assistant Professor of History and Director of Public Projects at the Roy Rosenzweig Center for History and New Media at George Mason University. She is the author of the new book *By the Numbers: Numeracy, Religion, and the Quantitative Transformation of Early Modern England* published by Oxford University Press.
 - Thursday 15 February 2024, noon - 1pm
 	- **Richard Iannone**, Posit, PBC
 	- "[Using Great Tables to Make Presentable Tables in Python](https://youtu.be/p42Xc6dl3Ek)"
@@ -106,15 +108,15 @@ Past committee members:
 - Tuesday 6 February 2024, 6:10pm - 7pm
 	- **Bradley Congelio**, Kutztown University of Pennsylvania
 	- "[Introduction to NFL Analytics](https://youtu.be/VU62ZuK4Kc4)"
-	- Bradley Congelio is an Assistant Professor in the College of Business at Kutztown University of Pennsylvania. His main area of instruction & research is in Data Analytics and Sport Analytics. He is the author of [*Introduction to NFL Analytics with R*](https://www.routledge.com/Introduction-to-NFL-Analytics-with-R/Congelio/p/book/9781032427751), which was published by CRC Press in December 2023. His research focuses on using big data, the R programming language, and analytics to explore the impact of professional stadiums on neighboring communities. He uses the proprietary Zillow ZTRAX database as well as the U.S. Census and other forms of data to create robust, applied, and useful insight into how best to protect those livings in areas where stadiums are proposed for construction. His work in sport analytics, specifically the NFL, has been featured on numerous media outlets, including the *USA Today* and *Sports Illustrated*.
+	- [Bradley Congelio](https://bradcongelio.com) is an Assistant Professor in the College of Business at Kutztown University of Pennsylvania. His main area of instruction & research is in Data Analytics and Sport Analytics. He is the author of [*Introduction to NFL Analytics with R*](https://www.routledge.com/Introduction-to-NFL-Analytics-with-R/Congelio/p/book/9781032427751), which was published by CRC Press in December 2023. His research focuses on using big data, the R programming language, and analytics to explore the impact of professional stadiums on neighboring communities. He uses the proprietary Zillow ZTRAX database as well as the U.S. Census and other forms of data to create robust, applied, and useful insight into how best to protect those livings in areas where stadiums are proposed for construction. His work in sport analytics, specifically the NFL, has been featured on numerous media outlets, including the *USA Today* and *Sports Illustrated*.
 - Thursday 1 February 2024, noon - 1pm
 	- **Oliver Giesecke**, Stanford University
 	- "[AI at the Frontiers of Economic Research](https://youtu.be/_TQqZQ2glhY)"
-	- Oliver Giesecke is a research fellow at the Hoover Institution at Stanford University. Giesecke works on topics related to asset pricing and public finance. His recent work studies the finances of state and local governments across the United States. This includes the capital structure of state governments, the book and market equity position of city governments, and the status quo and trend of public pension obligations. For his work on city governments’ finances, he was awarded the NASDAQ OMX Award for the best paper on asset pricing. His work on pension obligations was instrumental to shaping state legislation. In addition, Giesecke has conducted a large-scale survey that elicits the retirement plan preferences of public sector employees across the United States. He is the author of the Stanford municipal finances dashboard which provides, for the first time, credit spreads and fiscal fundamentals for many state and local governments in the United States. The dashboard has received national media coverage in *The Bond Buyer*. Prior to his academic career, he has worked for Germany’s Federal Agency for Financial Market Stabilization (FMSA) and as a senior quantitative finance consultant. Giesecke received a Ph.D. in finance and economics from Columbia University, a Master’s in economics from the Graduate Institute in Geneva, Switzerland, and a BA from Frankfurt University, Germany.
+	- [Oliver Giesecke](https://www.olivergiesecke.com) is a research fellow at the Hoover Institution at Stanford University. Giesecke works on topics related to asset pricing and public finance. His recent work studies the finances of state and local governments across the United States. This includes the capital structure of state governments, the book and market equity position of city governments, and the status quo and trend of public pension obligations. For his work on city governments’ finances, he was awarded the NASDAQ OMX Award for the best paper on asset pricing. His work on pension obligations was instrumental to shaping state legislation. In addition, Giesecke has conducted a large-scale survey that elicits the retirement plan preferences of public sector employees across the United States. He is the author of the Stanford municipal finances dashboard which provides, for the first time, credit spreads and fiscal fundamentals for many state and local governments in the United States. The dashboard has received national media coverage in *The Bond Buyer*. Prior to his academic career, he has worked for Germany’s Federal Agency for Financial Market Stabilization (FMSA) and as a senior quantitative finance consultant. Giesecke received a Ph.D. in finance and economics from Columbia University, a Master’s in economics from the Graduate Institute in Geneva, Switzerland, and a BA from Frankfurt University, Germany.
 - Thursday 25 January 2024, noon - 1pm
 	- **Kristina Gligorić**, Stanford University
 	- "[In-class Data Analysis Replications: Teaching Students while Testing Science](https://youtu.be/YxkaNNT6trE)"
-	- Kristina Gligorić is a Postdoctoral Scholar at Stanford University Computer Science Department, advised by Dan Jurafsky at the NLP group. Previously she obtained her Ph.D. in Computer Science at EPFL, where she was advised by Robert West. Her research focuses on developing computational approaches to solve burning societal issues, understand and improve human well-being, and promote social good. She leverages large-scale textual data and digital behavioral traces and tailors computational methods drawn from AI, NLP, and causal inference. Her work has been published in top computer science conferences (such as *ACM CSCW*, *AAAI ICWSM*, and *TheWebConf*) and broad audience journals (*Nature Communications* and *Nature Medicine*). She is a Swiss National Science Foundation Fellow and University of Chicago Rising star in Data Science. She received awards for her work, including EPFL Thesis Distinction, CSCW 2021 Best Paper Honorable Mention Award, ICWSM 2021 and 2023 Best Reviewer Award, and EPFL Best Teaching Assistant Award.
+	- [Kristina Gligorić](https://kristinagligoric.github.io) is a Postdoctoral Scholar at Stanford University Computer Science Department, advised by Dan Jurafsky at the NLP group. Previously she obtained her Ph.D. in Computer Science at EPFL, where she was advised by Robert West. Her research focuses on developing computational approaches to solve burning societal issues, understand and improve human well-being, and promote social good. She leverages large-scale textual data and digital behavioral traces and tailors computational methods drawn from AI, NLP, and causal inference. Her work has been published in top computer science conferences (such as *ACM CSCW*, *AAAI ICWSM*, and *TheWebConf*) and broad audience journals (*Nature Communications* and *Nature Medicine*). She is a Swiss National Science Foundation Fellow and University of Chicago Rising star in Data Science. She received awards for her work, including EPFL Thesis Distinction, CSCW 2021 Best Paper Honorable Mention Award, ICWSM 2021 and 2023 Best Reviewer Award, and EPFL Best Teaching Assistant Award.
 - Thursday 18 January 2024, noon - 1pm
 	- **Gregory Zuckerman**, Wall Street Journal
 	- "[Renaissance Technologies, data, and Wall Street](https://youtu.be/Q2r-MfEUaP0)"
