@@ -57,15 +57,6 @@ Past committee members:
 
 ### Upcoming
 
-- Thursday 29 February 2024, noon - 1pm
-	- **Sky CH-Wang**, Columbia University
-	- "Do Androids Know They're Only Dreaming of Electric Sheep?"
-	- [Sky CH-Wang](https://skywang.me/) is a PhD Candidate in Computer Science at Columbia University advised by Zhou Yu and Smaranda Muresan. His research primarily revolves around Natural Language Processing (NLP). He is broadly interested in the area where NLP meets Computational Social Science (CSS). Here, his research primarily revolves around three major areas: (1) revealing and designing for social difference and inequality, (2) cross-cultural NLP, and (3) mechanistic interpretability. His research is supported by a NSF Graduate Research Fellowship. 
-- Friday 1 March 2024, noon - 1pm
-	- **Jacob Austin**, Google DeepMind
-	- "Resolving Code Review Comments with Machine Learning"
-	- Code reviews are a critical part of the software development process, taking a significant amount of the code authors' and the code reviewers' time. As part of this process, the reviewer inspects the proposed code and asks the author for code changes through comments written in natural language. With machine learning, we have an opportunity to automate and streamline the code-review process, e.g., by proposing code changes based on a comment’s text.
-	- [Jacob Austin](http://www.jacobaustin.org) is a Senior Research Engineer at Google DeepMind, working on program synthesis and large language models. He was previously an AI Resident at Google Brain, and a Research Intern at NVIDIA with Anima Anandkumar. He holds a bachelor's degree in computer science and mathematics from Columbia University. He studied machine learning and robotics at the Columbia Creative Machines Lab. He is also a pianist who plays a lot of chamber music, and has performed at Carnegie Hall, Music Mountain, Apple Hill, and Kinhaven.
 - Thursday 7 March 2024, noon - 1pm
 	- **Matheus Facure**, Nubank
 	- [Matheus Facure](https://matheusfacure.github.io) has a background in Economics and is a Staff Data Scientist at Nubank. He works mostly with credit underwriting and causal inference. He is the author of *Causal Inference in Python* (O'Reilly) and *Causal Inference for the Brave and True* (Online, Open Source).
@@ -93,6 +84,15 @@ Past committee members:
 
 ### Past
 
+- Friday 1 March 2024, noon - 1pm
+	- **Jacob Austin**, Google DeepMind
+	- "Resolving Code Review Comments with Machine Learning"
+	- Code reviews are a critical part of the software development process, taking a significant amount of the code authors' and the code reviewers' time. As part of this process, the reviewer inspects the proposed code and asks the author for code changes through comments written in natural language. With machine learning, we have an opportunity to automate and streamline the code-review process, e.g., by proposing code changes based on a comment’s text.
+	- [Jacob Austin](http://www.jacobaustin.org) is a Senior Research Engineer at Google DeepMind, working on program synthesis and large language models. He was previously an AI Resident at Google Brain, and a Research Intern at NVIDIA with Anima Anandkumar. He holds a bachelor's degree in computer science and mathematics from Columbia University. He studied machine learning and robotics at the Columbia Creative Machines Lab. He is also a pianist who plays a lot of chamber music, and has performed at Carnegie Hall, Music Mountain, Apple Hill, and Kinhaven.
+- Thursday 29 February 2024, noon - 1pm
+	- **Sky CH-Wang**, Columbia University
+	- "[Do Androids Know They're Only Dreaming of Electric Sheep?](https://youtu.be/bkHsz50QeYE)"
+	- [Sky CH-Wang](https://skywang.me/) is a PhD Candidate in Computer Science at Columbia University advised by Zhou Yu and Smaranda Muresan. His research primarily revolves around Natural Language Processing (NLP). He is broadly interested in the area where NLP meets Computational Social Science (CSS). Here, his research primarily revolves around three major areas: (1) revealing and designing for social difference and inequality, (2) cross-cultural NLP, and (3) mechanistic interpretability. His research is supported by a NSF Graduate Research Fellowship. 
 - Thursday 22 February 2024, noon - 1pm
 	- **Jessica Otis**, George Mason University
 	- "By the Numbers: Numeracy, Religion, and the Quantitative Transformation of Early Modern England"
