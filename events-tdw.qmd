@@ -59,6 +59,7 @@ Past committee members:
 
 - Thursday 7 March 2024, noon - 1pm
 	- **Matheus Facure**, Nubank
+	- "Why Banking has the Coolest Stats/Data Science Problems"
 	- [Matheus Facure](https://matheusfacure.github.io) has a background in Economics and is a Staff Data Scientist at Nubank. He works mostly with credit underwriting and causal inference. He is the author of *Causal Inference in Python* (O'Reilly) and *Causal Inference for the Brave and True* (Online, Open Source).
 - Friday 8 March 2024, noon - 1pm
 	- **Jonathan Mellon**, West Point
