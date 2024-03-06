@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Rohan Alexander">
+<meta name="dcterms.date" content="2021-10-19">
+<meta name="description" content="Introductory remarks delivered at Trinity College High Table panel on data science at the University of Toronto on 19 October 2021.">
 
-<title>Rohan Alexander</title>
+<title>Rohan Alexander - Remarks at Trinity College</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,21 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,18 +70,47 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Rohan Alexander</span>
     </a>
   </div>
@@ -88,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -97,19 +130,19 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-events">    
         <li>
-    <a class="dropdown-item" href="./events-tdw.html">
+    <a class="dropdown-item" href="../../events-tdw.html">
  <span class="dropdown-text">Toronto Data Workshop</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./events-llms_colloquium.html">
+    <a class="dropdown-item" href="../../events-llms_colloquium.html">
  <span class="dropdown-text">Colloquium on Applications of LLMs</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./events-reproducibility.html">
+    <a class="dropdown-item" href="../../events-reproducibility.html">
  <span class="dropdown-text">Toronto Workshop on Reproducibility</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./events-software.html">
+    <a class="dropdown-item" href="../../events-software.html">
  <span class="dropdown-text">Conference on statistical software</span></a>
   </li>  
     </ul>
@@ -120,43 +153,43 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
         <li>
-    <a class="dropdown-item" href="./teaching-applications_of_llms.html">
+    <a class="dropdown-item" href="../../teaching-applications_of_llms.html">
  <span class="dropdown-text">Applications of LLMs</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-data_science_foundations.html">
+    <a class="dropdown-item" href="../../teaching-data_science_foundations.html">
  <span class="dropdown-text">Data science foundations</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-ethics_and_ds.html">
+    <a class="dropdown-item" href="../../teaching-ethics_and_ds.html">
  <span class="dropdown-text">Ethics and data science</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-inf2178.html">
+    <a class="dropdown-item" href="../../teaching-inf2178.html">
  <span class="dropdown-text">Experimental design for data science</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-history_of_statistics.html">
+    <a class="dropdown-item" href="../../teaching-history_of_statistics.html">
  <span class="dropdown-text">History of statistics and data sciences</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-sta302.html">
+    <a class="dropdown-item" href="../../teaching-sta302.html">
  <span class="dropdown-text">Methods of Data Analysis I</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-modeling.html">
+    <a class="dropdown-item" href="../../teaching-modeling.html">
  <span class="dropdown-text">Introduction to Modeling</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-nlp.html">
+    <a class="dropdown-item" href="../../teaching-nlp.html">
  <span class="dropdown-text">Natural Language Processing</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-sta304.html">
+    <a class="dropdown-item" href="../../teaching-sta304.html">
  <span class="dropdown-text">Surveys, sampling, and observational data</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-inf312.html">
+    <a class="dropdown-item" href="../../teaching-inf312.html">
  <span class="dropdown-text">Worlds become data</span></a>
   </li>  
     </ul>
@@ -167,21 +200,21 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-misc">    
         <li>
-    <a class="dropdown-item" href="./bookshelf.html">
+    <a class="dropdown-item" href="../../bookshelf.html">
  <span class="dropdown-text">Bookshelf</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./blog.html">
+    <a class="dropdown-item" href="../../blog.html">
  <span class="dropdown-text">Blog</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./recs.html">
+    <a class="dropdown-item" href="../../recs.html">
  <span class="dropdown-text">Recommendations</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./pdfs/cv-academic-Rohan_Alexander.pdf"> 
+    <a class="nav-link" href="../../pdfs/cv-academic-Rohan_Alexander.pdf"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item compact">
@@ -210,51 +243,101 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#what-i-do-in-data-science" id="toc-what-i-do-in-data-science" class="nav-link" data-scroll-target="#what-i-do-in-data-science">What I do in data science</a></li>
+  <li><a href="#some-steps-to-get-started-in-data-science" id="toc-some-steps-to-get-started-in-data-science" class="nav-link" data-scroll-target="#some-steps-to-get-started-in-data-science">Some steps to get started in data science</a></li>
+  <li><a href="#concluding-remarks" id="toc-concluding-remarks" class="nav-link" data-scroll-target="#concluding-remarks">Concluding remarks</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<div class="quarto-about-trestles content">
-  <div class="about-entity">
-    <img src="images/new_headshot.png" class="about-image
-  round " style="height: 15em; width: 15em;">
+<main class="content" id="quarto-document-content">
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Rohan Alexander</h1>
+<h1 class="title">Remarks at Trinity College</h1>
 </div>
+
+<div>
+  <div class="description">
+    <p>Introductory remarks delivered at Trinity College High Table panel on data science at the University of Toronto on 19 October 2021.</p>
+  </div>
+</div>
+
+
 <div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p><a href="true">Rohan Alexander</a> </p>
+          </div>
   </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 19, 2021</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="/pdfs/cv-academic-Rohan_Alexander.pdf" class="about-link" rel="" target="">
-     <span class="about-link-text">CV</span>
-  </a>
-  <a href="mailto:rohan.alexander@utoronto.ca" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-  <a href="https://github.com/RohanAlexander" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="https://twitter.com/RohanAlexander" class="about-link" rel="" target="">
-    <i class="bi bi-twitter"></i>
-     <span class="about-link-text">Twitter</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
-<p><em>Updates: 2024-03-06: I recently gave a talk at SRI. The slides are <a href="pdfs/2024-03-06-sri.pdf">here</a>.</em></p>
-<p>I am an assistant professor at the University of Toronto, jointly appointed in the <a href="https://ischool.utoronto.ca/profile/rohan-alexander/">Faculty of Information</a> and the <a href="https://www.statistics.utoronto.ca/people/directories/all-faculty/rohan-alexander">Department of Statistical Sciences</a>. I am also the assistant director of <a href="https://canssiontario.utoronto.ca">CANSSI Ontario</a>, a senior fellow at <a href="https://www.masseycollege.ca">Massey College</a>, a faculty affiliate at the <a href="https://sr-institute.utoronto.ca/">Schwartz Reisman Institute for Technology and Society</a>, and a co-lead of the <a href="https://datasciences.utoronto.ca">DSI</a> Thematic Program in Reproducibility.</p>
-<p><img style="float:right; max-width: 50%; position: relative; padding: 10px; top: 0px;" src="images/tellingstorieswithdatapainting.png"></p>
-<p>My book, <em><a href="https://www.tellingstorieswithdata.com/">Telling Stories With Data</a></em>, argues that a trustworthiness revolution is needed in data science, and I propose a view of what it could look like. It has been strongly endorsed, including: Andrew Gelman <em>“I absolutely love this book”</em>, Kosuke Imai <em>“I highly recommend this unique book!”</em>, Sir David Spiegelhalter <em>“[A]n extraordinary, wonderful, book…”</em>, Daniela Witten <em>“An excellent book”</em>, and Richard McElreath <em>“This is not another statistics book. It is much better than that.”</em> You can buy a print copy <a href="https://www.routledge.com/Telling-Stories-with-Data-With-Applications-in-R/Alexander/p/book/9781032134772">here</a> and you can access the free online version <a href="https://www.tellingstorieswithdata.com/">here</a>.</p>
-<p>My research investigates how we can develop workflows that improve the trustworthiness of data science. I am particularly interested in the role of testing in data science.</p>
-<p>My teaching helps students from a wide range of backgrounds learn how to use data to tell convincing stories. I am an associate editor of the <em>Journal of Statistics and Data Science Education</em>.</p>
-<p>I hold a PhD in Economics from the Australian National University where I focused on economic history and was supervised by <a href="https://sites.google.com/view/john-tang/home">John Tang</a> (chair), <a href="https://researchers.anu.edu.au/researchers/mariotti-m">Martine Mariotti</a>, <a href="https://researchers.anu.edu.au/researchers/hatton-tj">Tim Hatton</a>, and <a href="https://sites.google.com/site/zachaward/">Zach Ward</a>.</p>
-<p>I am married to <a href="https://www.monicaalexander.com">Monica Alexander</a>, and we have two young children.</p>
 
 
-</main></div>
-</div>
- <!-- /main -->
+<p>The slides are <a href="https://rohanalexander.com/pdfs/trinity_college_remarks.pdf">here</a>.</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Hi, my name is Rohan Alexander. I’m an assistant professor in the Faculty of Information and the Department of Statistical Sciences at the University of Toronto. I’d like to thank Academic Don, Statistics, Manmeet Sangha for the invitation to talk today at Trinity College.</p>
+<p>When I asked the undergraduate students that I work with who was associated with ‘Trin’, it was no surprise to me that the college was well represented among the strongest ones. ‘Trinnies’ have a well-deserved reputation for academic excellence and the number of people that have shown up for this event speaks to how that tradition continues even under trying circumstances.</p>
+<p>I’ve only got 5 minutes, so I’d like to touch on just two aspects:</p>
+<ul>
+<li>An example of what I do in data science.</li>
+<li>Some steps to get started in data science.</li>
+</ul>
+</section>
+<section id="what-i-do-in-data-science" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-do-in-data-science">What I do in data science</h2>
+<p>There is no agreed definition of data science, but an informal one is: ‘humans measuring stuff, typically related to other humans, and using sophisticated averaging to explain and predict’.</p>
+<p>I like that definition because it does not treat data as terra nullius, or nobody’s land. Data must be gathered, cleaned, and prepared, and these decisions matter. Every dataset is sui generis, or a class by itself.</p>
+<p>A lot of what my research does is try to understand the specific nuances of specific datasets, especially in terms of who is included in them, and who is not, and understand how this affects inference.</p>
+<p>One example of this is natural language processing. There we use really big models, built on a lot of data, to generate text. To make sure everyone knows what that means, here’s a model that has two parameters: <span class="math inline">\(y = x1 + x2\)</span>. And is trained on 5 rows of data.</p>
+<p>OpenAI’s GPT-3 has 175 billion parameters and was trained on essentially the whole internet. I’ll do a quick demonstration of asking it: “What is Trinity College, Toronto?”, “Which famous person went to Trinity College, Toronto?”</p>
+<p>[Live demo]</p>
+<p>GPT-3, like any language model, can generate racist/sexist text. With a student I recently used it to see whether its ability to generate racist/sexist text, also meant that it could recognize racist/sexist text and explain what made it racist/sexist. The results were disappointing and lead to a variety of conclusions, including the fact that we need to do a better job of putting together the enormous datasets that underpin these models.</p>
+</section>
+<section id="some-steps-to-get-started-in-data-science" class="level2">
+<h2 class="anchored" data-anchor-id="some-steps-to-get-started-in-data-science">Some steps to get started in data science</h2>
+<p>One way to contribute in data science is to be at the intersection of two areas. Typically statistics and something else. Then you need to immerse yourself in the data. One of the most successful ‘Trinnies’ - Michael Ignatieff (IG-NAH-TEE-UHF) - says about politics that</p>
+<blockquote class="blockquote">
+<p>The grind of politics, the endless travel, the meetings, the impossible schedule, the constant being on show are all in search of an authority that can be acquired in no other way. You have to learn the country.</p>
+</blockquote>
+<p>And it’s the same in data science - you need to become an expert in some dataset by doing the grinding, endless, impossible schlep to understand it. Only then can you even begin to consider inference and prediction.</p>
+<p>A lot of what you do in class is play house; when what you need to do is actually build something. One thing that helped me in this regard was getting to work with professors.</p>
+<p>So how do you get to work with a professor? There’s an easy answer, which I expect is relevant for many ‘Trinnies’, and that’s to just to get an A+ in their class. But more generally, you should send an email that demonstrates that you’ve got:</p>
+<ul>
+<li>an interest; and</li>
+<li>some skills.</li>
+</ul>
+<p>For instance, these days a lot of papers in the fields that I’m interested in need some type of R package to go alongside them, and it can be hard to find students who can do this. If a student emailed having made an R package, that would demonstrate a lot of interest and skills, and it would be clear how I could involve them. There’s an enormous difference between a student who emails claiming to know R, and a student who emails a link to a GitHub repo that demonstrates it.</p>
+</section>
+<section id="concluding-remarks" class="level2">
+<h2 class="anchored" data-anchor-id="concluding-remarks">Concluding remarks</h2>
+<p>Thank you very much to Manmeet for the invitation to be on this panel. It’s a great honour to be here, alongside my colleagues - Sam, Emma, and Morris - and one of my bosses - Helen! Very much looking forward to the discussion.</p>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -275,6 +358,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

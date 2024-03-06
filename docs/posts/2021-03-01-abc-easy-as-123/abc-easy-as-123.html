@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Rohan Alexander">
+<meta name="dcterms.date" content="2021-03-01">
+<meta name="description" content="I run through getting minimal viable A/B testing up and running in 15 minutes or less based on Google analytics, distill postcards, GitHub branches and Netlify. I base this on the wonderful Alison Hill post about getting started wtih postcards.">
 
-<title>Rohan Alexander</title>
+<title>Rohan Alexander - AB MVP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,24 +23,79 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,17 +125,17 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Rohan Alexander</span>
     </a>
   </div>
@@ -88,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -97,19 +155,19 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-events">    
         <li>
-    <a class="dropdown-item" href="./events-tdw.html">
+    <a class="dropdown-item" href="../../events-tdw.html">
  <span class="dropdown-text">Toronto Data Workshop</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./events-llms_colloquium.html">
+    <a class="dropdown-item" href="../../events-llms_colloquium.html">
  <span class="dropdown-text">Colloquium on Applications of LLMs</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./events-reproducibility.html">
+    <a class="dropdown-item" href="../../events-reproducibility.html">
  <span class="dropdown-text">Toronto Workshop on Reproducibility</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./events-software.html">
+    <a class="dropdown-item" href="../../events-software.html">
  <span class="dropdown-text">Conference on statistical software</span></a>
   </li>  
     </ul>
@@ -120,43 +178,43 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
         <li>
-    <a class="dropdown-item" href="./teaching-applications_of_llms.html">
+    <a class="dropdown-item" href="../../teaching-applications_of_llms.html">
  <span class="dropdown-text">Applications of LLMs</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-data_science_foundations.html">
+    <a class="dropdown-item" href="../../teaching-data_science_foundations.html">
  <span class="dropdown-text">Data science foundations</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-ethics_and_ds.html">
+    <a class="dropdown-item" href="../../teaching-ethics_and_ds.html">
  <span class="dropdown-text">Ethics and data science</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-inf2178.html">
+    <a class="dropdown-item" href="../../teaching-inf2178.html">
  <span class="dropdown-text">Experimental design for data science</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-history_of_statistics.html">
+    <a class="dropdown-item" href="../../teaching-history_of_statistics.html">
  <span class="dropdown-text">History of statistics and data sciences</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-sta302.html">
+    <a class="dropdown-item" href="../../teaching-sta302.html">
  <span class="dropdown-text">Methods of Data Analysis I</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-modeling.html">
+    <a class="dropdown-item" href="../../teaching-modeling.html">
  <span class="dropdown-text">Introduction to Modeling</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-nlp.html">
+    <a class="dropdown-item" href="../../teaching-nlp.html">
  <span class="dropdown-text">Natural Language Processing</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-sta304.html">
+    <a class="dropdown-item" href="../../teaching-sta304.html">
  <span class="dropdown-text">Surveys, sampling, and observational data</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-inf312.html">
+    <a class="dropdown-item" href="../../teaching-inf312.html">
  <span class="dropdown-text">Worlds become data</span></a>
   </li>  
     </ul>
@@ -167,21 +225,21 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-misc">    
         <li>
-    <a class="dropdown-item" href="./bookshelf.html">
+    <a class="dropdown-item" href="../../bookshelf.html">
  <span class="dropdown-text">Bookshelf</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./blog.html">
+    <a class="dropdown-item" href="../../blog.html">
  <span class="dropdown-text">Blog</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./recs.html">
+    <a class="dropdown-item" href="../../recs.html">
  <span class="dropdown-text">Recommendations</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./pdfs/cv-academic-Rohan_Alexander.pdf"> 
+    <a class="nav-link" href="../../pdfs/cv-academic-Rohan_Alexander.pdf"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item compact">
@@ -210,51 +268,138 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#make-a-website-or-two" id="toc-make-a-website-or-two" class="nav-link" data-scroll-target="#make-a-website-or-two">Make a website, or two</a>
+  <ul class="collapse">
+  <li><a href="#red-font" id="toc-red-font" class="nav-link" data-scroll-target="#red-font">Red font</a></li>
+  <li><a href="#orange-font" id="toc-orange-font" class="nav-link" data-scroll-target="#orange-font">Orange font</a></li>
+  </ul></li>
+  <li><a href="#host-them" id="toc-host-them" class="nav-link" data-scroll-target="#host-them">Host them</a></li>
+  <li><a href="#add-tracking" id="toc-add-tracking" class="nav-link" data-scroll-target="#add-tracking">Add tracking</a></li>
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next steps</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<div class="quarto-about-trestles content">
-  <div class="about-entity">
-    <img src="images/new_headshot.png" class="about-image
-  round " style="height: 15em; width: 15em;">
+<main class="content" id="quarto-document-content">
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Rohan Alexander</h1>
+<h1 class="title">AB MVP</h1>
 </div>
+
+<div>
+  <div class="description">
+    <p>I run through getting minimal viable A/B testing up and running in 15 minutes or less based on Google analytics, distill postcards, GitHub branches and Netlify. I base this on the wonderful Alison Hill post about getting started wtih postcards.</p>
+  </div>
+</div>
+
+
 <div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p><a href="true">Rohan Alexander</a> </p>
+          </div>
   </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 1, 2021</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="/pdfs/cv-academic-Rohan_Alexander.pdf" class="about-link" rel="" target="">
-     <span class="about-link-text">CV</span>
-  </a>
-  <a href="mailto:rohan.alexander@utoronto.ca" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-  <a href="https://github.com/RohanAlexander" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="https://twitter.com/RohanAlexander" class="about-link" rel="" target="">
-    <i class="bi bi-twitter"></i>
-     <span class="about-link-text">Twitter</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
-<p><em>Updates: 2024-03-06: I recently gave a talk at SRI. The slides are <a href="pdfs/2024-03-06-sri.pdf">here</a>.</em></p>
-<p>I am an assistant professor at the University of Toronto, jointly appointed in the <a href="https://ischool.utoronto.ca/profile/rohan-alexander/">Faculty of Information</a> and the <a href="https://www.statistics.utoronto.ca/people/directories/all-faculty/rohan-alexander">Department of Statistical Sciences</a>. I am also the assistant director of <a href="https://canssiontario.utoronto.ca">CANSSI Ontario</a>, a senior fellow at <a href="https://www.masseycollege.ca">Massey College</a>, a faculty affiliate at the <a href="https://sr-institute.utoronto.ca/">Schwartz Reisman Institute for Technology and Society</a>, and a co-lead of the <a href="https://datasciences.utoronto.ca">DSI</a> Thematic Program in Reproducibility.</p>
-<p><img style="float:right; max-width: 50%; position: relative; padding: 10px; top: 0px;" src="images/tellingstorieswithdatapainting.png"></p>
-<p>My book, <em><a href="https://www.tellingstorieswithdata.com/">Telling Stories With Data</a></em>, argues that a trustworthiness revolution is needed in data science, and I propose a view of what it could look like. It has been strongly endorsed, including: Andrew Gelman <em>“I absolutely love this book”</em>, Kosuke Imai <em>“I highly recommend this unique book!”</em>, Sir David Spiegelhalter <em>“[A]n extraordinary, wonderful, book…”</em>, Daniela Witten <em>“An excellent book”</em>, and Richard McElreath <em>“This is not another statistics book. It is much better than that.”</em> You can buy a print copy <a href="https://www.routledge.com/Telling-Stories-with-Data-With-Applications-in-R/Alexander/p/book/9781032134772">here</a> and you can access the free online version <a href="https://www.tellingstorieswithdata.com/">here</a>.</p>
-<p>My research investigates how we can develop workflows that improve the trustworthiness of data science. I am particularly interested in the role of testing in data science.</p>
-<p>My teaching helps students from a wide range of backgrounds learn how to use data to tell convincing stories. I am an associate editor of the <em>Journal of Statistics and Data Science Education</em>.</p>
-<p>I hold a PhD in Economics from the Australian National University where I focused on economic history and was supervised by <a href="https://sites.google.com/view/john-tang/home">John Tang</a> (chair), <a href="https://researchers.anu.edu.au/researchers/mariotti-m">Martine Mariotti</a>, <a href="https://researchers.anu.edu.au/researchers/hatton-tj">Tim Hatton</a>, and <a href="https://sites.google.com/site/zachaward/">Zach Ward</a>.</p>
-<p>I am married to <a href="https://www.monicaalexander.com">Monica Alexander</a>, and we have two young children.</p>
 
 
-</main></div>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>We live in an age where, likely, we are subject to more experiments than ever before. Any time that you use (many/most/all?) a major websites, they are tracking your every movement and click, comparing those with other users, and then making adjustments based on that.</p>
+<p>The statistics that underpin A/B testing are well established and broadly relatively straight-forward, but the specifics of A/B testing complicate things. To get comfortable with it, it’s important to do it yourself. But A/B testing can be difficult to learn because it’s not really done by academics much, and there’s very little incentive for industry to share their findings let alone their raw data, so there are very few datasets available (one notable exception that I’m very grateful for being <span class="citation" data-cites="upworthy">(<a href="#ref-upworthy" role="doc-biblioref">Matias et al. 2019</a>)</span>).</p>
+<p>In this post, I’m going to walk through getting A/B testing set-up yourself so that you can play around with the details and come to understand it better. No aspect of this workflow is perfect, but having established the workflow, it’s easier to go back back and improve pieces of it. First we’re going to build two versions of the one website, then we’re going to get them onto GitHub and Netlify, finally, we’re going to add tracking.</p>
+</section>
+<section id="make-a-website-or-two" class="level2">
+<h2 class="anchored" data-anchor-id="make-a-website-or-two">Make a website, or two</h2>
+<section id="red-font" class="level3">
+<h3 class="anchored" data-anchor-id="red-font">Red font</h3>
+<p>To get started, we need a website, or rather two version of a website that we can compare. I’m going to follow Alison Hill’s blog post about creating ‘postcards’ fairly closely and to get the details, please see that write-up: https://alison.rbind.io/post/2020-12-22-postcards-distill/.</p>
+<p>We need the dev versions of a few packages that you may already have installed and we need to install the <code>postcards</code> package <span class="citation" data-cites="citepostcards">(<a href="#ref-citepostcards" role="doc-biblioref">Kross 2021</a>)</span>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"rstudio/distill"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"rstudio/rmarkdown"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"postcards"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
- <!-- /main -->
+<p>Create a new project (File -&gt; New Project -&gt; New Directory -&gt; New Project) with a obvious name such as ‘red_vs_orange_font’ (again, go to Alison’s blog post for all the details) and then use distill <span class="citation" data-cites="citedistill">(<a href="#ref-citedistill" role="doc-biblioref">Allaire et al. 2021</a>)</span> to make a new website:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(distill)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>distill<span class="sc">::</span><span class="fu">create_website</span>(<span class="at">dir =</span> <span class="st">"."</span>, <span class="at">title =</span> <span class="st">"Dogs rule"</span>, <span class="at">gh_pages =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Close R Studio, then re-open the project that you just created. Click ‘Build Website’. Now we need to make a postcard (to be clear we could do this with any website, but I really like the postcards idea and it keeps things simple).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>postcards<span class="sc">::</span><span class="fu">create_postcard</span>(<span class="at">file =</span> <span class="st">"tobi.Rmd"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Then open ‘tobi.Rmd’ and add ‘site: distill::distill_website’ into the yaml (on a new line just below the description). Then delete ‘index.Rmd’ and change ‘tobi.Rmd’ to ‘index.Rmd’ and finally rebuild the website.</p>
+<p>Now we need to make our website change the color of the text. To do this we first create a theme using <code>distill::create_theme("postcards")</code>, add ‘theme: postcards.css’ to the YAML, and then change ‘bkgd-color’ to ‘#003049’ and then ‘text-color’ to ‘#d62828’.</p>
+<p>We’ll also change a few other things including:</p>
+<ul>
+<li>Open ’_site.yml’ file and change the title to something that’s relevant.</li>
+<li>And open ‘index.Rmd’, and change the paragraph to be, say, a paragraph about dogs.</li>
+<li>And finally, change the picture to be something, again, let’s just add a photo about dogs.</li>
+</ul>
+<p>Re-build your site and you should have a page that’s all about dogs, and more importantly, has red text.</p>
+<p>At this point we want to add it to GitHub. I’m going to assume that you’ve got GitHub setup on R Studio (if not, see the Jenny Bryan GitHub bible: http://happygitwithr.com) and so you can run:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_git</span>()</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_github</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We now have a perfectly good website about dogs. What we want is a second version of this website, this time with orange font, that we can use to compare.</p>
+</section>
+<section id="orange-font" class="level3">
+<h3 class="anchored" data-anchor-id="orange-font">Orange font</h3>
+<p>We need a second version, but about cats. We’re going to create a new branch: in R Studio, go to the ‘Git’ pane and then click ‘New Branch’. You’ll need to name the new branch, but it doesn’t really matter what we call it, so let’s just call it ‘Toronto’ to distinguish it. Then click ‘Create’. You’ll be moved over to the new branch.</p>
+<p>You want to change the details that were about dogs, to be about cats, so that’s the written content in ‘index.Rmd’, the title in ’_site.yml’, and change the picture.</p>
+<p>Then build the site and commit it to GitHub.</p>
+</section>
+</section>
+<section id="host-them" class="level2">
+<h2 class="anchored" data-anchor-id="host-them">Host them</h2>
+<p>We now have to versions of the one website - one focused on cats and another focused on dogs. I’m going to use Netlify to host them (GitHub pages would be a popular option here, but we’re going to take advantage of Netlify’s A/B options). So create a Netlify account, or log in, then link your Netlify account with your GitHub and create a new site.</p>
+<p>Now we need to look at A/B integration.</p>
+<p>HERE</p>
+</section>
+<section id="add-tracking" class="level2">
+<h2 class="anchored" data-anchor-id="add-tracking">Add tracking</h2>
+</section>
+<section id="next-steps" class="level2">
+
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Next steps</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-citedistill" class="csl-entry" role="listitem">
+Allaire, JJ, Rich Iannone, Alison Presmanes Hill, and Yihui Xie. 2021. <em>Distill: ’R Markdown’ Format for Scientific and Technical Writing</em>. <a href="https://CRAN.R-project.org/package=distill">https://CRAN.R-project.org/package=distill</a>.
+</div>
+<div id="ref-citepostcards" class="csl-entry" role="listitem">
+Kross, Sean. 2021. <em>Postcards: Create Beautiful, Simple Personal Websites</em>. <a href="https://CRAN.R-project.org/package=postcards">https://CRAN.R-project.org/package=postcards</a>.
+</div>
+<div id="ref-upworthy" class="csl-entry" role="listitem">
+Matias, J. Nathan, Kevin Munger, Marianne Aubin Le Quere, and Charles Ebersole. 2019. <span>“The Upworthy Research Archive.”</span> <a href="https://upworthy.natematias.com">https://upworthy.natematias.com</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -275,6 +420,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

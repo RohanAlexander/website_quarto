@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Rohan Alexander">
+<meta name="dcterms.date" content="2021-09-17">
+<meta name="description" content="Introductory remarks about Andrew Gelman delivered at the University of Toronto Data Sciences Institute (DSI) launch on 17 September 2021.">
 
-<title>Rohan Alexander</title>
+<title>Rohan Alexander - Introduction to Andrew Gelman</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,21 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,17 +71,17 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Rohan Alexander</span>
     </a>
   </div>
@@ -88,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -97,19 +101,19 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-events">    
         <li>
-    <a class="dropdown-item" href="./events-tdw.html">
+    <a class="dropdown-item" href="../../events-tdw.html">
  <span class="dropdown-text">Toronto Data Workshop</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./events-llms_colloquium.html">
+    <a class="dropdown-item" href="../../events-llms_colloquium.html">
  <span class="dropdown-text">Colloquium on Applications of LLMs</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./events-reproducibility.html">
+    <a class="dropdown-item" href="../../events-reproducibility.html">
  <span class="dropdown-text">Toronto Workshop on Reproducibility</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./events-software.html">
+    <a class="dropdown-item" href="../../events-software.html">
  <span class="dropdown-text">Conference on statistical software</span></a>
   </li>  
     </ul>
@@ -120,43 +124,43 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
         <li>
-    <a class="dropdown-item" href="./teaching-applications_of_llms.html">
+    <a class="dropdown-item" href="../../teaching-applications_of_llms.html">
  <span class="dropdown-text">Applications of LLMs</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-data_science_foundations.html">
+    <a class="dropdown-item" href="../../teaching-data_science_foundations.html">
  <span class="dropdown-text">Data science foundations</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-ethics_and_ds.html">
+    <a class="dropdown-item" href="../../teaching-ethics_and_ds.html">
  <span class="dropdown-text">Ethics and data science</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-inf2178.html">
+    <a class="dropdown-item" href="../../teaching-inf2178.html">
  <span class="dropdown-text">Experimental design for data science</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-history_of_statistics.html">
+    <a class="dropdown-item" href="../../teaching-history_of_statistics.html">
  <span class="dropdown-text">History of statistics and data sciences</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-sta302.html">
+    <a class="dropdown-item" href="../../teaching-sta302.html">
  <span class="dropdown-text">Methods of Data Analysis I</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-modeling.html">
+    <a class="dropdown-item" href="../../teaching-modeling.html">
  <span class="dropdown-text">Introduction to Modeling</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-nlp.html">
+    <a class="dropdown-item" href="../../teaching-nlp.html">
  <span class="dropdown-text">Natural Language Processing</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-sta304.html">
+    <a class="dropdown-item" href="../../teaching-sta304.html">
  <span class="dropdown-text">Surveys, sampling, and observational data</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-inf312.html">
+    <a class="dropdown-item" href="../../teaching-inf312.html">
  <span class="dropdown-text">Worlds become data</span></a>
   </li>  
     </ul>
@@ -167,21 +171,21 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-misc">    
         <li>
-    <a class="dropdown-item" href="./bookshelf.html">
+    <a class="dropdown-item" href="../../bookshelf.html">
  <span class="dropdown-text">Bookshelf</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./blog.html">
+    <a class="dropdown-item" href="../../blog.html">
  <span class="dropdown-text">Blog</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./recs.html">
+    <a class="dropdown-item" href="../../recs.html">
  <span class="dropdown-text">Recommendations</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./pdfs/cv-academic-Rohan_Alexander.pdf"> 
+    <a class="nav-link" href="../../pdfs/cv-academic-Rohan_Alexander.pdf"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item compact">
@@ -210,51 +214,150 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#andrew-gelman" id="toc-andrew-gelman" class="nav-link" data-scroll-target="#andrew-gelman">Andrew Gelman</a></li>
+  <li><a href="#rent" id="toc-rent" class="nav-link" data-scroll-target="#rent">Rent</a></li>
+  <li><a href="#books" id="toc-books" class="nav-link" data-scroll-target="#books">Books</a></li>
+  <li><a href="#blog" id="toc-blog" class="nav-link" data-scroll-target="#blog">Blog</a></li>
+  <li><a href="#reproducibility" id="toc-reproducibility" class="nav-link" data-scroll-target="#reproducibility">Reproducibility</a></li>
+  <li><a href="#papers" id="toc-papers" class="nav-link" data-scroll-target="#papers">Papers</a></li>
+  <li><a href="#stan" id="toc-stan" class="nav-link" data-scroll-target="#stan">Stan</a></li>
+  <li><a href="#impact-on-others" id="toc-impact-on-others" class="nav-link" data-scroll-target="#impact-on-others">Impact on others</a></li>
+  
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<div class="quarto-about-trestles content">
-  <div class="about-entity">
-    <img src="images/new_headshot.png" class="about-image
-  round " style="height: 15em; width: 15em;">
+<main class="content" id="quarto-document-content">
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Rohan Alexander</h1>
+<h1 class="title">Introduction to Andrew Gelman</h1>
 </div>
+
+<div>
+  <div class="description">
+    <p>Introductory remarks about Andrew Gelman delivered at the University of Toronto Data Sciences Institute (DSI) launch on 17 September 2021.</p>
+  </div>
+</div>
+
+
 <div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p><a href="true">Rohan Alexander</a> </p>
+          </div>
   </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 17, 2021</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="/pdfs/cv-academic-Rohan_Alexander.pdf" class="about-link" rel="" target="">
-     <span class="about-link-text">CV</span>
-  </a>
-  <a href="mailto:rohan.alexander@utoronto.ca" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-  <a href="https://github.com/RohanAlexander" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="https://twitter.com/RohanAlexander" class="about-link" rel="" target="">
-    <i class="bi bi-twitter"></i>
-     <span class="about-link-text">Twitter</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
-<p><em>Updates: 2024-03-06: I recently gave a talk at SRI. The slides are <a href="pdfs/2024-03-06-sri.pdf">here</a>.</em></p>
-<p>I am an assistant professor at the University of Toronto, jointly appointed in the <a href="https://ischool.utoronto.ca/profile/rohan-alexander/">Faculty of Information</a> and the <a href="https://www.statistics.utoronto.ca/people/directories/all-faculty/rohan-alexander">Department of Statistical Sciences</a>. I am also the assistant director of <a href="https://canssiontario.utoronto.ca">CANSSI Ontario</a>, a senior fellow at <a href="https://www.masseycollege.ca">Massey College</a>, a faculty affiliate at the <a href="https://sr-institute.utoronto.ca/">Schwartz Reisman Institute for Technology and Society</a>, and a co-lead of the <a href="https://datasciences.utoronto.ca">DSI</a> Thematic Program in Reproducibility.</p>
-<p><img style="float:right; max-width: 50%; position: relative; padding: 10px; top: 0px;" src="images/tellingstorieswithdatapainting.png"></p>
-<p>My book, <em><a href="https://www.tellingstorieswithdata.com/">Telling Stories With Data</a></em>, argues that a trustworthiness revolution is needed in data science, and I propose a view of what it could look like. It has been strongly endorsed, including: Andrew Gelman <em>“I absolutely love this book”</em>, Kosuke Imai <em>“I highly recommend this unique book!”</em>, Sir David Spiegelhalter <em>“[A]n extraordinary, wonderful, book…”</em>, Daniela Witten <em>“An excellent book”</em>, and Richard McElreath <em>“This is not another statistics book. It is much better than that.”</em> You can buy a print copy <a href="https://www.routledge.com/Telling-Stories-with-Data-With-Applications-in-R/Alexander/p/book/9781032134772">here</a> and you can access the free online version <a href="https://www.tellingstorieswithdata.com/">here</a>.</p>
-<p>My research investigates how we can develop workflows that improve the trustworthiness of data science. I am particularly interested in the role of testing in data science.</p>
-<p>My teaching helps students from a wide range of backgrounds learn how to use data to tell convincing stories. I am an associate editor of the <em>Journal of Statistics and Data Science Education</em>.</p>
-<p>I hold a PhD in Economics from the Australian National University where I focused on economic history and was supervised by <a href="https://sites.google.com/view/john-tang/home">John Tang</a> (chair), <a href="https://researchers.anu.edu.au/researchers/mariotti-m">Martine Mariotti</a>, <a href="https://researchers.anu.edu.au/researchers/hatton-tj">Tim Hatton</a>, and <a href="https://sites.google.com/site/zachaward/">Zach Ward</a>.</p>
-<p>I am married to <a href="https://www.monicaalexander.com">Monica Alexander</a>, and we have two young children.</p>
 
 
-</main></div>
-</div>
- <!-- /main -->
+<p>The slides are <a href="https://rohanalexander.com/pdfs/dsi_gelman_intro.pdf">here</a>.</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Hi, my name is Rohan Alexander. I’m an assistant professor jointly across Information and Statistical Sciences. I’m also the Assistant Director of the Canadian Statistical Sciences Institute (CANSSI), Ontario, which strengthens research and training in data science. And in that capacity it is a pleasure to introduce our next speaker, Andrew Gelman.</p>
+</section>
+<section id="andrew-gelman" class="level2">
+<h2 class="anchored" data-anchor-id="andrew-gelman">Andrew Gelman</h2>
+<p>Andrew Gelman is Higgins Professor of Statistics and Professor of Political Science at Columbia University. He believes ‘the #1 neglected topic in statistics is measurement’</p>
+</section>
+<section id="rent" class="level2">
+<h2 class="anchored" data-anchor-id="rent">Rent</h2>
+<p>And so, with apologies to Rent, how should we measure his career? With blog posts? With papers? With software? With cups of coffee? With books? Or by the others who relied?</p>
+<p>I’ve been unable to verify his coffee consumption, but by any other measure, Andrew Gelman, puts most to shame.</p>
+</section>
+<section id="books" class="level2">
+<h2 class="anchored" data-anchor-id="books">Books</h2>
+<p>He has published many books and I’ll just touch on two.</p>
+<p>With co-authors, his foundational Bayesian statistics textbook—<em>Bayesian Data Analysis</em>—was first published in 1995. It has been cited something like 30,000 times. And now on its 3rd edition, it is the basis for many foundational courses on Bayesian statistics.</p>
+<p>A more applied textbook, co-authored with Jennifer Hill—<em>Data Analysis using Regression and Multilevel Models</em>—was published in 2006. That book has been cited something like 14,000 times, and forms the foundation for many applied statistics courses.</p>
+<p>My wife, Monica, is an assistant professor jointly in statistical sciences and sociology, and in my household these are known, respectively, as the Old and New Testament.</p>
+</section>
+<section id="blog" class="level2">
+<h2 class="anchored" data-anchor-id="blog">Blog</h2>
+<p>Gelman’s blog—Statistical Modeling, Causal Inference, and Social Science—launched in 2004—is the go-to place for a fun mix of somewhat-nerdy statistics-focused content. The very first post promised to ‘…report on recent research and ongoing half-baked ideas, including … Bayesian statistics, multilevel modeling, causal inference, and political science.’ 17 years on, the site has very much kept its promise.</p>
+</section>
+<section id="reproducibility" class="level2">
+<h2 class="anchored" data-anchor-id="reproducibility">Reproducibility</h2>
+<p>One thing the blog does is enable Gelman to make contributions and influence debate in a way that isn’t possible in papers or books. For instance, it enables him to share short snippets of code, explain how he approaches problems, and sketch solutions.</p>
+<p>Gelman’s blog is where he’s done a lot of writing about reproducibility—one of the DSI’s Thematic Programs. Arguably Andrew’s blog posts brought the replication crisis that enveloped social sciences to the fore. A lot of my colleagues now push reproducibility; both in their teaching and in their research. And that’s in large part because we intellectually grew up reading Gelman’s blog posts about it.</p>
+</section>
+<section id="papers" class="level2">
+<h2 class="anchored" data-anchor-id="papers">Papers</h2>
+<p>By any measure, Andrew Gelman is a prolific author of papers, with something like 400 based on a recent count. My favourite of these is affectionately known as ‘the XBox paper’ which was published in 2015.</p>
+<p>These days the statistical approach that underpinned that paper—multilevel regression with post-stratification or MRP—is used by almost every major polling company to some extent. And teams of undergraduates at the UofT used MRP to correctly forecast a Biden victory last year. If you’re interested in learning more about MRP, Andrew Gelman, Lauren Kennedy and I are putting together a book about MRP that is forthcoming with Cambridge University Press next year.</p>
+</section>
+<section id="stan" class="level2">
+<h2 class="anchored" data-anchor-id="stan">Stan</h2>
+<p>Andrew was foundational in the development of Stan - a probabilistic programming language, which has become the predominant way to implement Bayesian models.</p>
+<p>Funnily enough the origin of Stan is that Gelman was trying to expand on some of the models in his book with Jennifer Hill that I mentioned earlier. He found that the software was struggling to do it. With co-authors he found that a change in the way random samples were obtained worked well, especially when combined with a few other innovations. One thing led to another, and a revolution in scientific computing ensued.</p>
+</section>
+<section id="impact-on-others" class="level2">
+<h2 class="anchored" data-anchor-id="impact-on-others">Impact on others</h2>
+<p>Andrew Gelman is someone who has made incredible contributions in a range of data science and perfectly characterises what we’re trying to do with this Data Sciences Institute. To this point, I’ve stuck with things that are relatively easy to measure. Following the spirit of our guest, I’d like to close with something less easy to measure; and that is, the impact on others.</p>
+<p>In my own case, I wouldn’t be speaking here today if it weren’t for Andrew: I learnt statistics from his books, his XBox paper gave my career purpose, I copy-paste his code most days, his blog provided me with a community, and from his example I learnt the type of academic I wanted to be.</p>
+<p>And when I asked a few others it seems that feeling was unanimous.</p>
+<blockquote class="blockquote">
+<p>His blog made me realise that there is a place for people like me, that is, people who want to do good applied stats on interesting social problems. This and reading Gelman Hill influenced my decision to go to grad school.</p>
+<p>Monica Alexander</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Andrew provided a voice that cut through the often confusing and rule based interpretation of statistics to instead provide an interpretation that is reason based. This represented a turning point for me in the way I understood existing statistical problems and rationalised about new challenges.</p>
+<p>Lauren Kennedy</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>His class (and writing) showed me the connections between statistics, science, and philosophy and gave me a language through which to express my frustrations with the ways that data is tortured. I particularly appreciated his emphasis that “stats is hard” and it’s OK to make mistakes as long as you learn from them!</p>
+<p>James Doss-Gollin</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Working in government and politics, I channel Andy, both as a statistician and as a teammate. I quote insights from his books, papers, and blog posts. I learn from his humor, openness about being confused, and commitment to doing the right thing.</p>
+<p>Shira Mitchell</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Andrew’s my Obi-Wan-Kenobi.</p>
+<p>Bob Carpenter</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Andrew’s blog made me aware of the shortcomings in my training and research, and gave me motivation to improve. It also gave me the motivation to get out of projects that could become posts in the Zombies category.</p>
+<p>Marta Kołczyńska</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Here’s something that I really appreciate about Andrew and isn’t common enough in academia: if you do good work Andrew will want to work with you (even hire you) regardless of your credentials.</p>
+<p>Jonah S Gabry</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>My conception of what good research was - what kind of research I wanted to be doing - completely changed when I read Andrew’s paper on the garden of forking paths. It was one of the main reasons I decided to go back to school for a degree in statistics, and it’s deeply influenced the way I try to do research and the research practices I advocate for at my workplace. Since that paper came out in 2013 I’ve been a dedicated reader of his blog, and his posts have made me fundamentally rethink the way I do research an embarrassing number of times - and they continue to motivate me to try to do careful and thoughtful work.</p>
+<p>Isaac Maddow-Zimet</p>
+</blockquote>
+<p>So it’s a very warm virtual welcome to Toronto, Professor Andrew Gelman. Thank you for everything you’ve done for data science, and thank you for helping us to launch our Data Sciences Institute.</p>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="acknowledgments" class="level2 appendix"><h2 class="anchored quarto-appendix-heading">Acknowledgments</h2><div class="quarto-appendix-contents">
+
+<p>Thank you very much to Monica Alexander, and members of my research group, for reading a draft of this. And to Jonah Gabry for the Stan historical background. And thank you to Isaac, Jonah, Marta, Bob, Shira, James, Lauren, and Monica for providing quotes.</p>
+
+
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -275,6 +378,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
