@@ -57,11 +57,6 @@ Past committee members:
 
 ### Upcoming
 
-
-- Thursday 21 March 2024, noon - 1pm
-	- **Laura Plein**, University of Luxembourg
-	- "Can LLMs demystify Bug Reports and translate them into Test Cases?"
-	- Laura Plein conducted this research as an intern in the TruX (Trustworthy Software Engineering) Team at the SnT, University of Luxembourg. Her research focuses on leveraging Large Language models to automate Software Engineering processes such as automatic test case generation and test input extraction in the context of automated program repair. She is currently affiliated to the Saarland University.
 - Thursday 28 March 2024, noon - 1pm
 	- **Cameron Buckner**, University of Houston
 	- "The philosophy of Large Language Models"
@@ -74,6 +69,10 @@ Past committee members:
 
 ### Past
 
+- Thursday 21 March 2024, noon - 1pm
+	- **Laura Plein**, University of Luxembourg
+	- [Can LLMs demystify Bug Reports and translate them into Test Cases?](https://youtu.be/M-9Il_1uruk)
+	- Laura Plein conducted this research as an intern in the TruX (Trustworthy Software Engineering) Team at the SnT, University of Luxembourg. Her research focuses on leveraging Large Language models to automate Software Engineering processes such as automatic test case generation and test input extraction in the context of automated program repair. She is currently affiliated to the Saarland University.
 - Thursday 14 March 2024, noon - 1pm
 	- **Tom Davidson**, Rutgers University
 	- [Start Generating: Harnessing Generative Artificial Intelligence for Sociological Research](https://youtu.be/feza5g3lAP4)
