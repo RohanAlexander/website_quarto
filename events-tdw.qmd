@@ -57,10 +57,6 @@ Past committee members:
 
 ### Upcoming
 
-- Thursday 28 March 2024, noon - 1pm
-	- **Cameron Buckner**, University of Houston
-	- "The philosophy of Large Language Models"
-	- [Cameron Buckner](http://cameronbuckner.net) is an Associate Professor of Philosophy at University of Houston, Author of *From Deep Learning to Rational Machines*.
 - Thursday 4 April 2024, noon - 1pm
 	- **Lenny Bronner**, The Washington Post
 	- "Election Modeling at The Washington Post"
@@ -69,6 +65,10 @@ Past committee members:
 
 ### Past
 
+- Thursday 28 March 2024, noon - 1pm
+	- **Cameron Buckner**, University of Houston
+	- [The philosophy of Large Language Models](https://youtu.be/cl_qFYShnt0)
+	- [Cameron Buckner](http://cameronbuckner.net) is an Associate Professor of Philosophy at University of Houston, and author of *From Deep Learning to Rational Machines*.
 - Thursday 21 March 2024, noon - 1pm
 	- **Laura Plein**, University of Luxembourg
 	- [Can LLMs demystify Bug Reports and translate them into Test Cases?](https://youtu.be/M-9Il_1uruk)
