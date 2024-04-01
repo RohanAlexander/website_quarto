@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.549">
+<meta name="generator" content="quarto-1.4.552">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -221,7 +241,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
   <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
-  <li><a href="#textbooks" id="toc-textbooks" class="nav-link" data-scroll-target="#textbooks">Textbooks</a></li>
   </ul></li>
   <li><a href="#content" id="toc-content" class="nav-link" data-scroll-target="#content">Content</a>
   <ul class="collapse">
@@ -231,12 +250,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#week-4" id="toc-week-4" class="nav-link" data-scroll-target="#week-4">Week 4</a></li>
   <li><a href="#week-5" id="toc-week-5" class="nav-link" data-scroll-target="#week-5">Week 5</a></li>
   <li><a href="#week-6" id="toc-week-6" class="nav-link" data-scroll-target="#week-6">Week 6</a></li>
-  <li><a href="#week-7" id="toc-week-7" class="nav-link" data-scroll-target="#week-7">Week 7</a></li>
-  <li><a href="#week-8" id="toc-week-8" class="nav-link" data-scroll-target="#week-8">Week 8</a></li>
-  <li><a href="#week-9" id="toc-week-9" class="nav-link" data-scroll-target="#week-9">Week 9</a></li>
-  <li><a href="#week-10" id="toc-week-10" class="nav-link" data-scroll-target="#week-10">Week 10</a></li>
-  <li><a href="#week-11" id="toc-week-11" class="nav-link" data-scroll-target="#week-11">Week 11</a></li>
-  <li><a href="#week-12" id="toc-week-12" class="nav-link" data-scroll-target="#week-12">Week 12</a></li>
+  <li><a href="#week-7-data-visualization" id="toc-week-7-data-visualization" class="nav-link" data-scroll-target="#week-7-data-visualization">Week 7 “Data visualization”</a></li>
+  <li><a href="#week-8-the-rise-of-bayesian-methods" id="toc-week-8-the-rise-of-bayesian-methods" class="nav-link" data-scroll-target="#week-8-the-rise-of-bayesian-methods">Week 8 “The rise of Bayesian methods”</a></li>
+  <li><a href="#week-9-causal-inference" id="toc-week-9-causal-inference" class="nav-link" data-scroll-target="#week-9-causal-inference">Week 9 “Causal inference”</a></li>
+  <li><a href="#week-10-whither-statistics-the-rise-of-data-science" id="toc-week-10-whither-statistics-the-rise-of-data-science" class="nav-link" data-scroll-target="#week-10-whither-statistics-the-rise-of-data-science">Week 10 “Whither statistics? The rise of data science”</a></li>
+  <li><a href="#week-11-overlooked-contributors" id="toc-week-11-overlooked-contributors" class="nav-link" data-scroll-target="#week-11-overlooked-contributors">Week 11 “Overlooked contributors”</a></li>
+  <li><a href="#week-12-reckoning-with-the-past-and-thinking-about-the-future-statistics-and-society" id="toc-week-12-reckoning-with-the-past-and-thinking-about-the-future-statistics-and-society" class="nav-link" data-scroll-target="#week-12-reckoning-with-the-past-and-thinking-about-the-future-statistics-and-society">Week 12 “Reckoning with the past and thinking about the future: Statistics and society”</a></li>
   </ul></li>
   <li><a href="#assessment" id="toc-assessment" class="nav-link" data-scroll-target="#assessment">Assessment</a>
   <ul class="collapse">
@@ -294,14 +313,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="prerequisites" class="level3">
 <h3 class="anchored" data-anchor-id="prerequisites">Prerequisites</h3>
-<p>At least 1.0 FCE 300+ level STA courses with a minimum grade of 80 per cent in each course.</p>
-</section>
-<section id="textbooks" class="level3">
-<h3 class="anchored" data-anchor-id="textbooks">Textbooks</h3>
 <ul>
-<li>Stigler, S, 1986, <em>The History of Statistics: The Measurement of Uncertainty before 1900</em>, Harvard University Press.</li>
-<li>Friendly, M, and Wainer, H, 2021, <em>A History of Data Visualization and Graphic Communication</em>, Harvard University Press.</li>
-<li>Sheynin, 2017, <em>Theory of Probability. A Historical Essay</em>, https://arxiv.org/abs/1802.09966,</li>
+<li>At least 1.0 FCE 300+ level STA courses with a minimum grade of 80 per cent in each course.</li>
 </ul>
 </section>
 </section>
@@ -311,23 +324,23 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="week-1">Week 1</h3>
 <p>Overview. Also early astronomical and gambling underpinnings. Least squares, combining observations, and uncertainty. Legendre, Laplace, Bernoulli, De Moivre, Simpson.</p>
 <ul>
-<li>Content:
-<ul>
-<li>Stephen E. Fienberg, 1992, ‘A Brief History of Statistics in Three and One-Half Chapters: A Review Essay’, <em>Statistical Science</em>.</li>
-<li>M. G. Kendall, 1960, ‘Studies in the History of Probability and Statistics. Where Shall the History of Statistics Begin?’, <em>Biometrika</em>.</li>
-<li>Stigler, 1986, Chs 1-2.</li>
-<li>Ian Hacking, 2006, <em>The Emergence of Probability</em>.</li>
-</ul></li>
+<li><span class="citation" data-cites="Fienberg1992">Fienberg (<a href="#ref-Fienberg1992" role="doc-biblioref">1992</a>)</span></li>
+<li><span class="citation" data-cites="Kendall1960">Kendall (<a href="#ref-Kendall1960" role="doc-biblioref">1960</a>)</span></li>
+<li><span class="citation" data-cites="stigler">Stigler (<a href="#ref-stigler" role="doc-biblioref">1986</a>, Chs 1-2)</span></li>
+<li><span class="citation" data-cites="Hacking2006">Hacking (<a href="#ref-Hacking2006" role="doc-biblioref">2006</a>, “Introduction”)</span></li>
 </ul>
 </section>
 <section id="week-2" class="level3">
 <h3 class="anchored" data-anchor-id="week-2">Week 2</h3>
-<p>Focuses on the 1700s, especially inverse probability. Gauss, Laplace, Central Limit Theorem.</p>
+<p>The 1700s, especially inverse probability. Gauss, Laplace, Central Limit Theorem.</p>
 <ul>
-<li>Content:
+<li><span class="citation" data-cites="stigler">Stigler (<a href="#ref-stigler" role="doc-biblioref">1986</a>, Chs 3-4)</span></li>
+<li><span class="citation" data-cites="sheynin2018theory">Sheynin (<a href="#ref-sheynin2018theory" role="doc-biblioref">2018</a>, Chs 1-7)</span></li>
+<li><span class="citation" data-cites="Miller2020">Miller and Gelman (<a href="#ref-Miller2020" role="doc-biblioref">2020a</a>)</span>
 <ul>
-<li>Stigler, 1986, Chs 3-4</li>
-<li>Sheynin, 2017, Chs 1-7.</li>
+<li><span class="citation" data-cites="Kahneman2020">Kahneman and Bar-Hillel (<a href="#ref-Kahneman2020" role="doc-biblioref">2020</a>)</span></li>
+<li><span class="citation" data-cites="Shafer2020">Shafer (<a href="#ref-Shafer2020" role="doc-biblioref">2020</a>)</span></li>
+<li><span class="citation" data-cites="Miller2020rejoinder">Miller and Gelman (<a href="#ref-Miller2020rejoinder" role="doc-biblioref">2020b</a>)</span></li>
 </ul></li>
 </ul>
 </section>
@@ -335,11 +348,8 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="week-3">Week 3</h3>
 <p>Early 1800s, and moves to the social sciences. Quetelet, Poisson, Cournot, Lexis, binomials and Law of Large Numbers.</p>
 <ul>
-<li>Content:
-<ul>
-<li>Stigler, 1986, Chs 5-6.</li>
-<li>Sheynin, 2017, Chs 8-9.</li>
-</ul></li>
+<li><span class="citation" data-cites="stigler">Stigler (<a href="#ref-stigler" role="doc-biblioref">1986</a>, Chs 5-6)</span></li>
+<li><span class="citation" data-cites="sheynin2018theory">Sheynin (<a href="#ref-sheynin2018theory" role="doc-biblioref">2018</a>, Chs 8-9)</span></li>
 </ul>
 </section>
 <section id="week-4" class="level3">
@@ -348,8 +358,8 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Content:
 <ul>
-<li>Stigler, 1986, Chs 7-8.</li>
-<li>Sheynin, 2017, Chs 10-11.</li>
+<li><span class="citation" data-cites="stigler">Stigler (<a href="#ref-stigler" role="doc-biblioref">1986</a>, Chs 7-8)</span></li>
+<li><span class="citation" data-cites="sheynin2018theory">Sheynin (<a href="#ref-sheynin2018theory" role="doc-biblioref">2018</a>, Chs 10-11)</span></li>
 <li>David Salsburg, 2002, <em>The Lady Tasting Tea</em>.</li>
 <li>Theodore M. Porter, 2020, <em>The Rise of Statistical Thinking, 1820–1900</em>.</li>
 </ul></li>
@@ -361,7 +371,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Content:
 <ul>
-<li>Stigler, 1986, Chs 9-10.</li>
+<li><span class="citation" data-cites="stigler">Stigler (<a href="#ref-stigler" role="doc-biblioref">1986</a>, Chs 9-10)</span></li>
 <li>David Freedman, 1999, ‘From association to causation: some remarks on the history of statistics’.</li>
 <li>Donald MacKenzie, 1981, <em>Statistics in Britain, 1865-1930: The Social Construction of Scientific Knowledge</em>.</li>
 <li>Erich Lehmann, 2011, <em>Fisher, Neyman, and the Creation of Classical Statistics</em>, Springer.</li>
@@ -373,61 +383,53 @@ ul.task-list li input[type="checkbox"] {
 <p>Early 1900s</p>
 <ul>
 <li>Stephen M. Stigler, 1996, ‘The History of Statistics in 1933’, <em>Statistical Science</em></li>
-<li>Sheynin, 2017, Chs 12-15.</li>
+<li><span class="citation" data-cites="sheynin2018theory">Sheynin (<a href="#ref-sheynin2018theory" role="doc-biblioref">2018</a>, Chs 12-15)</span></li>
 <li>Stephen M. Stigler, 2016, <em>The Seven Pillars of Statistical Wisdom</em>.</li>
 <li>Jan von Plato, 1994, <em>Creating Modern Probability</em>.</li>
 <li>Erich Lehmann, 2007, <em>Reminiscences of a Statistician</em>.</li>
 </ul>
 </section>
-<section id="week-7" class="level3">
-<h3 class="anchored" data-anchor-id="week-7">Week 7</h3>
-<p>Special topic: Data visualization</p>
+<section id="week-7-data-visualization" class="level3">
+<h3 class="anchored" data-anchor-id="week-7-data-visualization">Week 7 “Data visualization”</h3>
 <ul>
-<li>Content:
+<li><span class="citation" data-cites="historyofdataviz">Friendly and Wainer (<a href="#ref-historyofdataviz" role="doc-biblioref">2021</a>, Chs 1-6 and 9)</span></li>
+</ul>
+</section>
+<section id="week-8-the-rise-of-bayesian-methods" class="level3">
+<h3 class="anchored" data-anchor-id="week-8-the-rise-of-bayesian-methods">Week 8 “The rise of Bayesian methods”</h3>
+<p>Special topic</p>
 <ul>
-<li>Friendly and Wainer, 2021, Chs 1-6 and 9.</li>
+<li><span class="citation" data-cites="Fienberg2006">Fienberg (<a href="#ref-Fienberg2006" role="doc-biblioref">2003</a>)</span></li>
+<li><span class="citation" data-cites="Leonard2014">Leonard (<a href="#ref-Leonard2014" role="doc-biblioref">2014</a>)</span></li>
+<li><span class="citation" data-cites="McGrayne2012">McGrayne (<a href="#ref-McGrayne2012" role="doc-biblioref">2012</a>)</span></li>
+<li><span class="citation" data-cites="Nordhaus2007">Nordhaus (<a href="#ref-Nordhaus2007" role="doc-biblioref">2007</a>)</span></li>
+<li><span class="citation" data-cites="Lindley2001">Lindley (<a href="#ref-Lindley2001" role="doc-biblioref">2000</a>)</span></li>
+<li><span class="citation" data-cites="Gelman2013">Gelman and Robert (<a href="#ref-Gelman2013" role="doc-biblioref">2013a</a>)</span>
+<ul>
+<li><span class="citation" data-cites="Gelman2013rejoinder">Gelman and Robert (<a href="#ref-Gelman2013rejoinder" role="doc-biblioref">2013b</a>)</span></li>
 </ul></li>
 </ul>
 </section>
-<section id="week-8" class="level3">
-<h3 class="anchored" data-anchor-id="week-8">Week 8</h3>
-<p>Special topic: Bayesian methods</p>
+<section id="week-9-causal-inference" class="level3">
+<h3 class="anchored" data-anchor-id="week-9-causal-inference">Week 9 “Causal inference”</h3>
 <ul>
-<li>Content:
-<ul>
-<li>Stephen E. Fienberg, 2006, ‘When Did Bayesian Inference Become “Bayesian”?’, <em>Bayesian Analysis</em>.</li>
-<li>Thomas Hoskyns Leonard, 2014, ‘A personal history of Bayesian statistics’, <em>WIREs Computational Statistics</em>.</li>
-<li>Sharon Bertsch McGrayne, 2012, <em>The Theory That Would Not Die</em>.</li>
-<li>William D. Nordhaus, ‘An Economic History of Computing’.</li>
-<li>Dennis V. Lindley, 2001, ‘The Philosophy of Statistics’, <em>Journal of the Royal Statistical Society: Series D</em>.</li>
-</ul></li>
+<li><span class="citation" data-cites="pearl">Pearl and Mackenzie (<a href="#ref-pearl" role="doc-biblioref">2018</a>, Ch 2)</span></li>
 </ul>
 </section>
-<section id="week-9" class="level3">
-<h3 class="anchored" data-anchor-id="week-9">Week 9</h3>
-<p>Special topic: Causal inference</p>
-<ul>
-<li>Content:
-<ul>
-<li>Judea Pearl and Dana Mackenzie, 2018, <em>Book of Why</em>, Ch 2.</li>
-</ul></li>
-</ul>
-</section>
-<section id="week-10" class="level3">
-<h3 class="anchored" data-anchor-id="week-10">Week 10</h3>
-<p>Special topic: Whither statistics? The rise of data science</p>
+<section id="week-10-whither-statistics-the-rise-of-data-science" class="level3">
+<h3 class="anchored" data-anchor-id="week-10-whither-statistics-the-rise-of-data-science">Week 10 “Whither statistics? The rise of data science”</h3>
 <ul>
 <li>Content:
 <ul>
 <li>Leo Breiman, 2001, ‘Statistical Modeling: The Two Cultures’, <em>Statistical Sciences</em>.</li>
 <li>David J. Hand, 2015, ‘Statistics and computing: the genesis of data science’, <em>Statistics and Computing</em>.</li>
 <li>David Donoho, 2017, ‘50 Years of Data Science’, <em>Journal of Computational and Graphical Statistics</em>.</li>
+<li><span class="citation" data-cites="Gelman2021">Gelman and Vehtari (<a href="#ref-Gelman2021" role="doc-biblioref">2021</a>)</span></li>
 </ul></li>
 </ul>
 </section>
-<section id="week-11" class="level3">
-<h3 class="anchored" data-anchor-id="week-11">Week 11</h3>
-<p>Special topic: Overlooked contributors</p>
+<section id="week-11-overlooked-contributors" class="level3">
+<h3 class="anchored" data-anchor-id="week-11-overlooked-contributors">Week 11 “Overlooked contributors”</h3>
 <ul>
 <li>Content:
 <ul>
@@ -440,9 +442,8 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 </section>
-<section id="week-12" class="level3">
-<h3 class="anchored" data-anchor-id="week-12">Week 12</h3>
-<p>Special topic: Reckoning with the past and thinking about the future. Statistics and society.</p>
+<section id="week-12-reckoning-with-the-past-and-thinking-about-the-future-statistics-and-society" class="level3">
+<h3 class="anchored" data-anchor-id="week-12-reckoning-with-the-past-and-thinking-about-the-future-statistics-and-society">Week 12 “Reckoning with the past and thinking about the future: Statistics and society”</h3>
 <ul>
 <li>Content:
 <ul>
@@ -501,10 +502,69 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 
 
+
 </section>
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Fienberg1992" class="csl-entry" role="listitem">
+Fienberg, Stephen E. 1992. <span>“A Brief History of Statistics in Three and One-Half Chapters: A Review Essay.”</span> <em>Statistical Science</em> 7 (2). <a href="https://doi.org/10.1214/ss/1177011360">https://doi.org/10.1214/ss/1177011360</a>.
+</div>
+<div id="ref-Fienberg2006" class="csl-entry" role="listitem">
+———. 2003. <span>“When Did Bayesian Inference Become "Bayesian"?”</span> <em>Bayesian Analysis</em> 1 (1): 1–37. <a href="https://doi.org/10.1214/06-BA101">https://doi.org/10.1214/06-BA101</a>.
+</div>
+<div id="ref-historyofdataviz" class="csl-entry" role="listitem">
+Friendly, Michael, and Howard Wainer. 2021. <em>A History of Data Visualization and Graphic Communication</em>. 1st ed. Massachusetts: Harvard University Press.
+</div>
+<div id="ref-Gelman2013" class="csl-entry" role="listitem">
+Gelman, Andrew, and Christian Robert. 2013a. <span>“Not Only Defended but Also Applied: The Perceived Absurdity of Bayesian Inference.”</span> <em>American Statistician</em> 67 (1): 1–5. <a href="https://doi.org/10.1080/00031305.2013.760987">https://doi.org/10.1080/00031305.2013.760987</a>.
+</div>
+<div id="ref-Gelman2013rejoinder" class="csl-entry" role="listitem">
+Gelman, Andrew, and Christian P. Robert. 2013b. <span>“Rejoinder: The Anti-Bayesian Moment and Its Passing.”</span> <em>The American Statistician</em> 67 (1): 16–17. <a href="https://doi.org/10.1080/00031305.2012.752409">https://doi.org/10.1080/00031305.2012.752409</a>.
+</div>
+<div id="ref-Gelman2021" class="csl-entry" role="listitem">
+Gelman, Andrew, and Aki Vehtari. 2021. <span>“What Are the Most Important Statistical Ideas of the Past 50 Years?”</span> <em>Journal of the American Statistical Association</em> 116 (536): 2087–97. <a href="https://doi.org/10.1080/01621459.2021.1938081">https://doi.org/10.1080/01621459.2021.1938081</a>.
+</div>
+<div id="ref-Hacking2006" class="csl-entry" role="listitem">
+Hacking, Ian. 2006. <em>The Emergence of Probability: A Philosophical Study of Early Ideas about Probability, Induction and Statistical Inference</em>. Cambridge University Press. <a href="https://doi.org/10.1017/cbo9780511817557">https://doi.org/10.1017/cbo9780511817557</a>.
+</div>
+<div id="ref-Kahneman2020" class="csl-entry" role="listitem">
+Kahneman, Daniel, and Maya Bar-Hillel. 2020. <span>“Comment: Laplace and Cognitive Illusions.”</span> <em>Statistical Science</em> 35 (2). <a href="https://doi.org/10.1214/19-sts750">https://doi.org/10.1214/19-sts750</a>.
+</div>
+<div id="ref-Kendall1960" class="csl-entry" role="listitem">
+Kendall, Maurice. 1960. <span>“Studies in the History of Probability and Statistics. X. Where Shall the History of Statistics Begin?”</span> <em>Biometrika</em> 47 (3–4): 447–49. <a href="https://doi.org/10.1093/biomet/47.3-4.447">https://doi.org/10.1093/biomet/47.3-4.447</a>.
+</div>
+<div id="ref-Leonard2014" class="csl-entry" role="listitem">
+Leonard, Thomas Hoskyns. 2014. <span>“A Personal History of Bayesian Statistics.”</span> <em>WIREs Computational Statistics</em> 6 (2): 80–115. <a href="https://doi.org/10.1002/wics.1293">https://doi.org/10.1002/wics.1293</a>.
+</div>
+<div id="ref-Lindley2001" class="csl-entry" role="listitem">
+Lindley, Dennis V. 2000. <span>“The Philosophy of Statistics.”</span> <em>Journal of the Royal Statistical Society: Series D (The Statistician)</em> 49 (3): 293–337. <a href="https://doi.org/10.1111/1467-9884.00238">https://doi.org/10.1111/1467-9884.00238</a>.
+</div>
+<div id="ref-McGrayne2012" class="csl-entry" role="listitem">
+McGrayne, Sharon Bertsch. 2012. <em>The Theory That Would Not Die</em>. Yale University Press.
+</div>
+<div id="ref-Miller2020" class="csl-entry" role="listitem">
+Miller, Joshua B., and Andrew Gelman. 2020a. <span>“Laplace’s Theories of Cognitive Illusions, Heuristics and Biases.”</span> <em>Statistical Science</em> 35 (2). <a href="https://doi.org/10.1214/19-sts696">https://doi.org/10.1214/19-sts696</a>.
+</div>
+<div id="ref-Miller2020rejoinder" class="csl-entry" role="listitem">
+———. 2020b. <span>“Rejoinder: Laplace’s Theories of Cognitive Illusions, Heuristics and Biases.”</span> <em>Statistical Science</em> 35 (2). <a href="https://doi.org/10.1214/20-sts779">https://doi.org/10.1214/20-sts779</a>.
+</div>
+<div id="ref-Nordhaus2007" class="csl-entry" role="listitem">
+Nordhaus, William D. 2007. <span>“Two Centuries of Productivity Growth in Computing.”</span> <em>The Journal of Economic History</em> 67 (1): 128–59. <a href="https://doi.org/10.1017/s0022050707000058">https://doi.org/10.1017/s0022050707000058</a>.
+</div>
+<div id="ref-pearl" class="csl-entry" role="listitem">
+Pearl, Judea, and Dana Mackenzie. 2018. <em>The Book of Why: The New Science of Cause and Effect</em>. Basic Books.
+</div>
+<div id="ref-Shafer2020" class="csl-entry" role="listitem">
+Shafer, Glenn. 2020. <span>“Comment: Illusions, Then and Now.”</span> <em>Statistical Science</em> 35 (2). <a href="https://doi.org/10.1214/19-sts751">https://doi.org/10.1214/19-sts751</a>.
+</div>
+<div id="ref-sheynin2018theory" class="csl-entry" role="listitem">
+Sheynin, Oscar. 2018. <span>“Theory of Probability. A Historical Essay.”</span> <a href="https://arxiv.org/abs/1802.09966">https://arxiv.org/abs/1802.09966</a>.
+</div>
+<div id="ref-stigler" class="csl-entry" role="listitem">
+Stigler, Stephen. 1986. <em>The History of Statistics</em>. Massachusetts: Belknap Harvard.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -584,6 +644,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/rohanalexander\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -618,7 +696,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

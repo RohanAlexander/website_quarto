@@ -9,7 +9,7 @@
 <link>https://rohanalexander.com/blog.html</link>
 <atom:link href="https://rohanalexander.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.4.549</generator>
+<generator>quarto-1.4.552</generator>
 <lastBuildDate>Fri, 17 Dec 2021 05:00:00 GMT</lastBuildDate>
 <item>
   <title>What data science can learn from the James Webb Space Telescope</title>
@@ -3396,6 +3396,7 @@ font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">kable_styling</span>()</span></code></pre></div>
 <div class="cell-output-display">
+<div>
 <table class="table table-sm table-striped small" data-quarto-postprocess="true">
 <caption>Count of entries by year for 2017-2019</caption>
 <thead>
@@ -3421,6 +3422,7 @@ font-style: inherit;">kable_styling</span>()</span></code></pre></div>
 </table>
 
 
+</div>
 </div>
 </div>
 <div class="cell">
@@ -3473,6 +3475,7 @@ font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">kable_styling</span>()</span></code></pre></div>
 <div class="cell-output-display">
+<div>
 <table class="table table-sm table-striped small" data-quarto-postprocess="true">
 <caption>Count of entries by month for 2017-2019</caption>
 <thead>
@@ -3534,6 +3537,7 @@ font-style: inherit;">kable_styling</span>()</span></code></pre></div>
 </table>
 
 
+</div>
 </div>
 </div>
 <div class="cell">
@@ -3647,6 +3651,7 @@ font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">kable_styling</span>()</span></code></pre></div>
 <div class="cell-output-display">
+<div>
 <table class="table table-sm table-striped small" data-quarto-postprocess="true">
 <caption>Count of entries by month for 2020</caption>
 <thead>
@@ -3708,6 +3713,7 @@ font-style: inherit;">kable_styling</span>()</span></code></pre></div>
 </table>
 
 
+</div>
 </div>
 </div>
 <div class="cell">
@@ -3814,6 +3820,7 @@ font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">kable_styling</span>()</span></code></pre></div>
 <div class="cell-output-display">
+<div>
 <table class="table table-sm table-striped small" data-quarto-postprocess="true">
 <caption>Count of entries by year for 2020</caption>
 <thead>
@@ -3831,6 +3838,7 @@ font-style: inherit;">kable_styling</span>()</span></code></pre></div>
 </table>
 
 
+</div>
 </div>
 </div>
 <p>That’s all looking fine. We’d know that we have issues if the distribution of the days wasn’t roughly uniform, or if we have values other than [1-12] in the month.</p>
@@ -5912,6 +5920,7 @@ font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">kable_styling</span>()</span></code></pre></div>
 <div class="cell-output-display">
+<div>
 <table class="table table-sm table-striped small" data-quarto-postprocess="true">
 <caption>Comparison of shelter usage in January 2021 with January 2020 by day</caption>
 <thead>
@@ -6735,6 +6744,7 @@ font-style: inherit;">kable_styling</span>()</span></code></pre></div>
 
 </div>
 </div>
+</div>
 <p>Let’s get some average statistics for January by sector (Table @ref(tab:janaverage)).</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb43" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1">january_average <span class="ot" style="color: #003B4F;
@@ -6801,6 +6811,7 @@ font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">kable_styling</span>()</span></code></pre></div>
 <div class="cell-output-display">
+<div>
 <table class="table table-sm table-striped small" data-quarto-postprocess="true">
 <caption>Overall comparison of shelter usage in January 2021 with January 2020</caption>
 <thead>
@@ -6834,6 +6845,7 @@ font-style: inherit;">kable_styling</span>()</span></code></pre></div>
 </table>
 
 
+</div>
 </div>
 </div>
 <p>Let’s look at a comparison graph (Figure @ref(fig:finalgraph)).</p>
