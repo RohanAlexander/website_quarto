@@ -3,9 +3,8 @@ title: "History of statistics and data sciences"
 bibliography: references.bib
 ---
 
-## Preamble 
 
-### Overview
+## Overview
 
 Statistics and the data sciences have a long and robust history. Understanding that history provides students with a better appreciation for the methods that they are applying today.
 
@@ -18,7 +17,7 @@ The history of statistics and the data sciences is one of greatness, and we will
 The hope is that having taken this course, you will understand what you have been studying in statistics and the data sciences with fresh eyes, and bring this deeper appreciation with you throughout the rest of your career.
 
 
-### Learning objectives
+## Learning objectives
 
 The purpose of the course is to develop an appreciation of history of statistics and the data sciences to such an extent so as to provide a firmer foundation for your conduct of applied statistics and data science. By the end of the course, you should be able to:
 
@@ -30,7 +29,7 @@ The purpose of the course is to develop an appreciation of history of statistics
 6. Respectfully identify strengths and weaknesses in the work of others.
 7. Reflect effectively on your own learning and professional development.
 
-### Prerequisites
+## Prerequisites
 
 - At least 1.0 FCE 300+ level STA courses with a minimum grade of 80 per cent in each course.
 
@@ -71,11 +70,10 @@ Early 1800s, and moves to the social sciences. Quetelet, Poisson, Cournot, Lexis
 
 Late 1800s and heredity. Galton, Edgeworth, and Pearson. Regression and correlation.
 
-- Content: 
-  - @stigler [Chs 7-8]
-  - @sheynin2018theory [Chs 10-11]
-  - David Salsburg, 2002, *The Lady Tasting Tea*.
-  - Theodore M. Porter, 2020, *The Rise of Statistical Thinking, 1820–1900*.
+- @stigler [Chs 7-8]
+- @sheynin2018theory [Chs 10-11]
+- @salsburg
+- @porter
 
 
 ### Week 5

@@ -57,14 +57,48 @@ Past committee members:
 
 ### Upcoming
 
-- Thursday 4 April 2024, noon - 1pm
-	- **Lenny Bronner**, The Washington Post
-	- "Election Modeling at The Washington Post"
-	- [Lenny Bronner](https://lennybronner.com/) is a data scientist at *The Washington Post*, specializing in elections.
+- Friday 3 May 2024, noon
+	- **Kosuke Imai**, Harvard
+	- "Does AI help humans make better decisions? A methodological framework for experimental evaluation"
+	- [Kosuke Imai](https://imai.fas.harvard.edu/) is Professor in the Department of Government and the Department of Statistics at Harvard University. He is also an affiliate of the Institute for Quantitative Social Science where his office is located. Before moving to Harvard in 2018, Imai taught at Princeton University for 15 years where he was the founding director of the Program in Statistics and Machine Learning. Imai specializes in the development of statistical methods and machine learning algorithms and their applications to social science research. His areas of expertise include causal inference, computational social science, and survey methodology. Imai leads the Algorithm-Assisted Redistricting Methodology Project (ALARM) and served as an expert witness for several high-profile legislative redistricting cases. In addition, he is the author of *Quantitative Social Science: An Introduction* (Princeton University Press, 2017). Outside of Harvard, Imai served as the President of the Society for Political Methodology from 2017 to 2019. His current research interests include: data-driven policy learning and evaluation, causal inference with high-dimensional and unstructured treatments (e.g., texts, images, videos, and maps), fairness and racial disparity analysis, algorithmic redistricting analysis, data fusion and record linkage, census and privacy.
+- Friday 10 May 2024, noon
+	- **Amanda Coston**, Microsoft, Berkeley
+	- "TBD"
+	- [Amanda Coston](https://mandycoston.github.io)
+- Friday 17 May 2024, noon (not recorded)
+	- **Victoria Angelova**, Harvard
+	- "Algorithmic Recommendations and Human Discretion"
+	- [Victoria Angelova](https://sites.google.com/view/victoriaangelova) is a fourth-year PhD student in Economics at Harvard University interested in Applied Microeconomics. She received a AB in Economics from Wellesley College in 2018. Prior to starting her PhD, she was a Research Assistant at the Industrial Relations Section at Princeton University. 
+- Friday 24 May 2024, noon
+	- **Belinda Li**, MIT
+	- "TBD"
+	- [Belinda Li](https://belindal.github.io/)
+- Friday 31 May 2024, noon
+	- **Ethan Busby**, BYU
+	- "TBD"
+	- [Ethan Busby](ethanbusby.com) is an Assistant Professor of Political Science at Brigham Young University, specializing in political psychology, extremism, artificial intelligence, and computational social science. His research relies on various methods, using lab experiments, quasi-experiments, survey experiments, text-as-data, surveys, artificial intelligence, and large-language models. He studies extremism in democracies, including what extremism is, who people blame for extremism, and what encourages and discourages extremism.
+- Friday 7 June 2024, noon
+	- **Lars Vilhuber**, Cornell
+	- "Privacy protection in RCTs: The challenge of privacy protection in the field"
+	- [Lars Vilhuber](https://www.vilhuber.com/lars/academia/cv/) holds a Ph.D. in Economics from Université de Montréal, Canada, and is currently on the faculty of the Cornell University Economics Department. He has interests in labor economics, statistical disclosure limitation and data dissemination, and reproducibility and replicability in the social sciences. He is the Data Editor of the American Economic Association, and Managing Editor of the *Journal of Privacy and Confidentiality*.
+- Friday 14 June 2024, noon
+	- TBA
+- Friday 21 June 2024, noon
+	- **Chris Bail**, Duke
+	- "Can Generative AI Improve Social Science"
+	- [Chris Bail](https://www.chrisbail.net/bio) is Professor of Sociology, Political Science, and Public Policy at Duke University, where he founded the Polarization Lab. He studies how artificial intelligence shapes human behavior in a range of different settings—and social media platforms in particular.
+- Friday 28 June 2024, noon
+	- **Sasha Issenberg**, 
+	- "The Lie Detectives: In Search of a Playbook for Winning Elections in the Disinformation Age"
+	- [Sasha Issenberg](https://www.sashaissenberg.com/) is a journalist and author of *"The Lie Detectives: In Search of a Playbook for Winning Elections in the Disinformation Age"* and four previous books, most recently *"The Engagement: America’s Quarter-Century Struggle Over Same-Sex Marriage."* He teaches in the UCLA Department of Political Science and is a correspondent for *Monocle*. His work has also appeared in *New York*, *The New York Times Magazine* and *George*, where he was a contributing editor. 
 
 
 ### Past
 
+- Thursday 4 April 2024, noon - 1pm
+	- **Lenny Bronner**, The Washington Post
+	- ["Election Modeling at The Washington Post"](https://youtu.be/qVdrw9hE2Gw)
+	- [Lenny Bronner](https://lennybronner.com/) is a data scientist at *The Washington Post*, specializing in elections.
 - Thursday 28 March 2024, noon - 1pm
 	- **Cameron Buckner**, University of Houston
 	- [The philosophy of Large Language Models](https://youtu.be/cl_qFYShnt0)
