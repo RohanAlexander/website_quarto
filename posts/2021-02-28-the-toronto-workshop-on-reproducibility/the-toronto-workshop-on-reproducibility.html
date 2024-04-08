@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Rohan Alexander">
+<meta name="dcterms.date" content="2021-02-28">
+<meta name="description" content="Notes and reflections on a workshop about reproducibility in applied statistics.">
+
+<title>Rohan Alexander - The Toronto Workshop on Reproducibility</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Rohan Alexander</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-events" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Events</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-events">    
+        <li>
+    <a class="dropdown-item" href="../../events-tdw.html" rel="" target="">
+ <span class="dropdown-text">Toronto Data Workshop</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../events-llms_colloquium.html" rel="" target="">
+ <span class="dropdown-text">Colloquium on Applications of LLMs</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../events-reproducibility.html" rel="" target="">
+ <span class="dropdown-text">Toronto Workshop on Reproducibility</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../events-software.html" rel="" target="">
+ <span class="dropdown-text">Conference on statistical software</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Teaching</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
+        <li>
+    <a class="dropdown-item" href="../../teaching-applications_of_llms.html" rel="" target="">
+ <span class="dropdown-text">Applications of LLMs</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../teaching-data_science_foundations.html" rel="" target="">
+ <span class="dropdown-text">Data science foundations</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../teaching-ethics_and_ds.html" rel="" target="">
+ <span class="dropdown-text">Ethics and data science</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../teaching-inf2178.html" rel="" target="">
+ <span class="dropdown-text">Experimental design for data science</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../teaching-history_of_statistics.html" rel="" target="">
+ <span class="dropdown-text">History of statistics and data sciences</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../teaching-sta302.html" rel="" target="">
+ <span class="dropdown-text">Methods of Data Analysis I</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../teaching-modeling.html" rel="" target="">
+ <span class="dropdown-text">Introduction to Modeling</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../teaching-nlp.html" rel="" target="">
+ <span class="dropdown-text">Natural Language Processing</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../teaching-sta304.html" rel="" target="">
+ <span class="dropdown-text">Surveys, sampling, and observational data</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../teaching-inf312.html" rel="" target="">
+ <span class="dropdown-text">Worlds become data</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-misc" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Misc</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-misc">    
+        <li>
+    <a class="dropdown-item" href="../../bookshelf.html" rel="" target="">
+ <span class="dropdown-text">Bookshelf</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../blog.html" rel="" target="">
+ <span class="dropdown-text">Blog</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../recs.html" rel="" target="">
+ <span class="dropdown-text">Recommendations</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../pdfs/cv-academic-Rohan_Alexander.pdf" rel="" target="">
+ <span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/RohanAlexander" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/RohanAlexander" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:rohan.alexander@utoronto.ca" rel="" target=""><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#talks" id="toc-talks" class="nav-link" data-scroll-target="#talks">Talks</a>
+  <ul class="collapse">
+  <li><a href="#keynotes" id="toc-keynotes" class="nav-link" data-scroll-target="#keynotes">Keynotes</a></li>
+  <li><a href="#invited-talks" id="toc-invited-talks" class="nav-link" data-scroll-target="#invited-talks">Invited talks</a></li>
+  </ul></li>
+  <li><a href="#attendance" id="toc-attendance" class="nav-link" data-scroll-target="#attendance">Attendance</a></li>
+  <li><a href="#what-worked" id="toc-what-worked" class="nav-link" data-scroll-target="#what-worked">What worked</a></li>
+  <li><a href="#what-didnt" id="toc-what-didnt" class="nav-link" data-scroll-target="#what-didnt">What didn’t</a></li>
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next steps</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">The Toronto Workshop on Reproducibility</h1>
+</div>
+
+<div>
+  <div class="description">
+    <p>Notes and reflections on a workshop about reproducibility in applied statistics.</p>
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p><a href="true">Rohan Alexander</a> </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 28, 2021</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>On 25 and 26 February 2021, I hosted the Toronto Workshop on Reproducibility. This was an online event with 35 speakers that 1,284 people signed up for. In the end we averaged around 50 attendees at any one time in the Zoom room, with another 20 on the YouTube live-stream. Talks were recorded and posted to YouTube, and as of today (two days after) the most popular one has been viewed 73 times.</p>
+<p>In this post I will first provide a brief summary of the talks, then discuss attendance. I will provide my view on aspects that were good and bad. And finally detail next steps.</p>
+</section>
+<section id="talks" class="level2">
+<h2 class="anchored" data-anchor-id="talks">Talks</h2>
+<p>I first invited keynote speakers and then invited talks from folks that were known to me. I put out a call on Twitter for recommendations of folks that were traditionally overlooked in applied statistics. After establishing that core, I then opened invited applications to speak more generally. A few speakers contacted me asking if they could speak and finally, I specifically invited two undergrads to speak.</p>
+<p>There was a wide variety of talks, including some that would not be out of place at JSM, through to collections of personal anecdotes. The standard of the talks was uniformly high, however the order was dictated more by timezone of the presenter, rather than topic and so there were considerable differences between neighbouring talks.</p>
+<section id="keynotes" class="level3">
+<h3 class="anchored" data-anchor-id="keynotes">Keynotes</h3>
+<p>The keynotes were given by Eva Vivalt, Mine Çetinkaya-Rundel, and Riana Minocher.</p>
+<ul>
+<li>Eva <a href="https://youtu.be/0WZUzf2oSGY">discussed</a> a platform that she created for gathering forecasts of the results of work that will be conducted. For instance, if a survey is being sent to understand the effect of education on income, one could use Eva’s platform to first understand expectations of what that survey will find.</li>
+<li>Mine <a href="https://youtu.be/ANH2tv2vkew">discussed</a> the evolution of R Markdown, and her use of it in teaching. She showed how R Markdown has become indispensable and highlighted ways in which this would continue to evolve in the future.</li>
+<li>Riana <a href="https://youtu.be/O3t8TwWeli0">discussed</a> a recent paper of hers in which she evaluated the extent to which papers in social learning are able to be reproduced.</li>
+</ul>
+</section>
+<section id="invited-talks" class="level3">
+<h3 class="anchored" data-anchor-id="invited-talks">Invited talks</h3>
+<ul>
+<li>Amber Simpson discussed the repeatability and reproducibility of imaging biomarkers.</li>
+<li>Andrés Cruz discussed an RStudio addin to supervise fuzzy joins.</li>
+<li>Annie Collins discussed the extent of markers of open code and open data in medRxiv.</li>
+<li>Emily Riederer discussed <code>convo</code> R package, which aids in the creation, upkeep, and application of controlled vocabularies.</li>
+<li>Florencia D’Andrea discussed ReproHack, which is a hackathon-style event focused on the reproducibility of research results.</li>
+<li>Garret Christensen discussed a recent paper looking at survey evidence on attitudes, norms and behavior in the social sciences towards open science.</li>
+<li>Jake Bowers discussed proposals to adjust scientific norms of reproducibility and pre-registration to the policy context.</li>
+<li>John Blischak discussed the <code>workflowr</code> R package</li>
+<li>Julia Schulte-Cloos introduced a template package in R that allows users without any prior knowledge of R Markdown to implement reproducible research practices in their scientific workflows.</li>
+<li>Lauren Kennedy discussed case studies of how and where challenges with preparing survey data appear in practice.</li>
+<li>Larry Fenn and Meghan Hoyer discussed AP DataKit, which is an open-source command-line tool designed to better structure and manage projects, and more generally, talk about creating sane, reproducible workflows.</li>
+<li>Mauricio Vargas Sepúlveda and Nicolas Didier discussed an attempt to analyze the nature and quality of civil society organizations’ contributions to develop evidence for policymaking process from reproducibility perspective.<br>
+</li>
+<li>Monica Alexander discussed some brief reflections from research, consulting, and teaching experiences that have led to overcoming barriers to sharing code and to help others do the same.<br>
+</li>
+<li>Nancy Reid discussed whether p-values are contributing to a crisis in replicability and reproducibility, with emphasis on the role of inferential theory in helping to clarify the arguments.</li>
+<li>Nick Radcliffe discussed an approach to the challenges of ensuring the correctness and robustness of results in an environment where neither code nor input data can be opened up for review and even outputs need to be subject to disclosure control to reduce further any risks to privacy.</li>
+<li>Radu Craiu discussed reproducibility in the context of statistical sciences.</li>
+<li>Ryan Briggs discussed how ‘o-ring’ production functions work and draws out lessons for applied researchers.</li>
+<li>Sharla Gelfand discussed what components are needed to make a good reproducible example to maximize your ability to get help (and to help yourself!), strategies for coming up with an example and testing its reproducibility, and why you should care about making one.</li>
+<li>Shemra Rizzo shared her experience working towards reliable, replicable and reproducible studies using EHR licensed data.</li>
+<li>Shiro Kuriwaki showed how new features of the <a href="https://github.com/IQSS/dataverse-client-r">dataverse</a> R package facilitate reproducibility in empirical, substantive projects.</li>
+<li>Simeon Carstens gave an introduction to Nix, show in a live demo how to set up a fully reproducible software environment and compare Nix to existing solutions such as virtual environments and Docker.</li>
+<li>Tiffany Timbers presented examples of how UBC deeply motivate, effectively instruct and provide ample practice opportunities to our Master of Data Science students to effectively engage them in learning about reproducibility.</li>
+<li>Tom Barton reproduced Surridge, 2016, ‘Education and liberalism: pursuing the link’, <em>Oxford Review of Education</em>, 42:2, pp.&nbsp;146-164, using the 1970 British Cohort Study (BCS70), instead using a difference-in-difference regression approach with more waves of data.</li>
+<li>Tyler Girard discussed how individual and group exercises centered around the replication of existing datasets and analyses offer a flexible tool for experiential learning.</li>
+<li>Wendy Duff discussed reproducibility in the context of information.</li>
+<li>Wijdan Tariq undertook a narrow replication of Caicedo, 2019, ‘The Mission: Human Capital Transmission, Economic Persistence, and Culture in South America’, <em>Quarterly Journal of Economics</em></li>
+<li>Yanbo Tang showed that commonly held beliefs regarding the distribution of p-values are misleading when the variance or location of the test statistic are not well-calibrated or when the higher order cumulants of the test statistic are not negligible.</li>
+</ul>
+</section>
+</section>
+<section id="attendance" class="level2">
+<h2 class="anchored" data-anchor-id="attendance">Attendance</h2>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="the-toronto-workshop-on-reproducibility_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="what-worked" class="level2">
+<h2 class="anchored" data-anchor-id="what-worked">What worked</h2>
+<ul>
+<li>Undergraduate participation. I integrated two undergrad presentations into the main content. Both were exceptional and received very well by the audience.</li>
+<li>YouTube livestream. I only added this at the last minute because I was worried we might go over the 300-person limit in Zoom. In the end we didn’t have a worry about that, but the livestream was very popular. Some people said it was because that way they could keep it on in the background while doing other things (YouTube has better volume control than Zoom).</li>
+<li>Questions. There was some concern about a lack of time for questions, but in general folks were hesitant to ask questions.</li>
+</ul>
+</section>
+<section id="what-didnt" class="level2">
+<h2 class="anchored" data-anchor-id="what-didnt">What didn’t</h2>
+<ul>
+<li>I needed more chairs.</li>
+<li>More organization.</li>
+<li>Slack was okay.</li>
+<li>We didn’t really do any ‘networking’ type events.</li>
+<li>Funding.s</li>
+<li>We needed more time.</li>
+</ul>
+</section>
+<section id="next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="next-steps">Next steps</h2>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
