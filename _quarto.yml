@@ -18,7 +18,7 @@ website:
       - text: "Teaching"
         menu: 
         - teaching-applications_of_llms.qmd
-        - teaching-data_science_foundations.qmd
+        - teaching-inf3104.qmd
         - teaching-ethics_and_ds.qmd
         - teaching-inf2178.qmd
         - teaching-history_of_statistics.qmd

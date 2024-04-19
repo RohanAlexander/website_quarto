@@ -1,0 +1,236 @@
+---
+title: "Data science foundations"
+---
+
+## Preamble 
+
+### Overview
+
+Quantitative approaches have a common concern: How can others be confident that our statistical models have been brought to bear on appropriate datasets? This course focuses on the 'data' of data science. It develops in students an appreciation for the many ways in which dealing with a dataset can get out-of-hand, and establishes approaches to ensure data science is conducted in ways that engenders trusted findings. It touches on statistical modelling, but focuses on everything that comes before and after modelling, and in doing so ensures modelling and analysis are placed on a firmer foundation. In assessment, students will conduct end-to-end data science projects using real-world data, enabling them to fully understand potential pitfalls, and build a portfolio.
+
+The purpose of this course is to develop students who appreciate, and can iterate on, the foundations of data science.
+
+The focus of the learning will be on:
+
+1.	actively reading and consider relevant literature;
+2.	actively using the statistical programming language R in real-world conditions;
+3.	gathering, cleaning, and preparing datasets; and
+4.	choosing and implementing statistical models and evaluating their estimates.
+
+Essentially this course provides students with everything that they need to know to be able to do the most exciting thing in the world: use data to tell convincing stories.
+
+### FAQ
+
+- Can I audit this course? Sure, but it is pointless, because the only way to learn this stuff is to do the work.
+- What is a tutorial? You write a paper. Then you send it to your tutor. The next day you have a meeting, 'tutorial', where you discuss it with them.
+- Why is there so much assessment? The only way to learn this stuff is to actually do the work, and students only do the work when they are assessed. It is unfortunate, but there is no way around it.
+- How difficult is the course? Of students that enrol, the median student drops the course. But the mode overall grade at the end of the course is an A+. The course is not difficult, but the hands-on-projects mean it is a lot of work. 
+- What is the format of the class? There are rarely old-school lectures because those are not effective. You should read the relevant chapter before class. During class we will focus on tutorials and discussion. We will also have industry guests discuss their experience.
+- How mature is the course? This is the fifth iteration of this course. A lot of the materials are well-developed but there is still a long way to go. Your feedback is appreciated.
+
+
+### Learning objectives
+
+The purpose of the course is to develop the core skills of data science that are applicable across academia and industry. By the end of the course, you should be able to:
+
+1.  Engage critically with ideas and readings in data science (demonstrated in all papers but also tutorials and quizzes).
+2.  Conduct research in data science in a reproducible and ethical way (demonstrated in all papers).
+3.  Clearly communicate what was done, what was found, and why in writing (demonstrated in all papers).
+4.  Understand what constitutes ethical high-quality data science practice, especially reproducibility and respect for those that underpin our data (demonstrated in all papers and selected quizzes).
+5.  Respectfully identify strengths and weaknesses in the data science research conducted by others (demonstrated in quizzes, and the peer review).
+6.  Develop the ability to appropriately choose and apply statistical models to real-world situations (demonstrated in the final paper)
+7.  Conduct all aspects of the typical data science workflow (demonstrated in all papers).
+8.  Reflect effectively on your own learning and professional development (demonstrated in some tutorials and quizzes).
+
+
+### Pre-requisites
+
+- None.
+
+### Past iterations
+
+- 2023
+  - [Syllabus](pdfs/inf3104-2023-syllabus.pdf)
+  - [Student evals](pdfs/inf3104-2023-evals.pdf)
+
+### Textbook
+
+[Telling Stories with Data](https://www.tellingstorieswithdata.com)
+
+
+## Content
+
+Before class starts you should go through Chapter 1 and Appendix A of *Telling Stories with Data*.
+
+### Week 1
+
+- [Drinking from a fire hose](https://tellingstorieswithdata.com/02-drinking_from_a_fire_hose.html)
+
+### Week 2
+
+- [Reproducible workflows](https://tellingstorieswithdata.com/03-workflow.html)
+- [Writing research](https://tellingstorieswithdata.com/04-writing_research.html)
+
+### Week 3
+
+- [Static communication](https://tellingstorieswithdata.com/05-static_communication.html)
+- [Farm data](https://tellingstorieswithdata.com/06-farm.html)
+
+### Week 4
+
+- [Gather data](https://tellingstorieswithdata.com/07-gather.html)
+- [Hunt data](https://tellingstorieswithdata.com/08-hunt.html)
+
+### Week 5
+
+- [Clean and prepare](https://tellingstorieswithdata.com/09-clean_and_prepare.html)
+- [Store and share](https://tellingstorieswithdata.com/10-store_and_share.html)
+
+### Week 6
+
+- Technical skills exam
+
+### Week 7
+
+- [Linear models](https://tellingstorieswithdata.com/12-ijalm.html)
+
+### Week 8
+
+- [Linear models](https://tellingstorieswithdata.com/12-ijalm.html)
+
+### Week 9
+
+- [Generalized linear models](https://tellingstorieswithdata.com/13-ijaglm.html)
+
+### Week 10
+
+- [Generalized linear models](https://tellingstorieswithdata.com/13-ijaglm.html)
+
+### Week 11
+
+- [Prediction](https://tellingstorieswithdata.com/13-prediction.html)
+
+### Week 12
+
+- TBD
+
+
+
+
+## Assessment
+
+| Item 								| Weight (%) | Due date |
+| -------- | -----:| -----:|
+| Quiz 						| 6 		 | Wednesdays, noon, Weeks 1-3, 5, 7, 8, 10, 11 |
+| Essay 						| 6 		 | Wednesday, noon, Weeks 1-3, 5, 7 |
+| Website			| 2 		 | Wednesday, noon, Week 2 |
+| Peer review 						| 6 		 | Thursdays, noon, Weeks 1-5, 7, 9, 12 |
+| Term Paper 1 ([Donaldson](https://tellingstorieswithdata.com/23-assessment.html#sec-paper-one)) 							| 20 		 | Wednesday, noon, Week 4 |
+| Technical skills exam  | 10  | Wednesday, noon, Week 6 |
+| Term Paper 2 ([Howrah](https://tellingstorieswithdata.com/23-assessment.html#sec-paper-three)) 							| 20 		 | Wednesday, noon, Week 9 |
+| [Final Paper](https://tellingstorieswithdata.com/23-assessment.html#sec-final-paper) 						| 30 		 | Wednesday, noon, Week 12 |
+
+Quizzes are done individually and encourage you to engage with the material. Only the best five count. Quiz questions are drawn from those in the Quiz section that follows each chapter of *Telling Stories with Data*.
+
+Essays provide a chance to adjust to the expectations of the course in a forgivable way. Only the best three count. Essays are done in groups, which are randomly set, each week, by the instructor. You may not change groups, but the groups will be different every week. Everyone in the group gets the same mark, unless there is something egregious (as evidenced by essentially having made no GitHub contributions). Essays are drawn from those in the Tutorial section that follows each chapter of *Telling Stories with Data*. The general expectation (although this differs from week to week) is about two pages of written content.
+
+Essays rubric: An essay will receive with 0 or 1. You must have a well-organized GitHub repo based on the starter folder. You must follow the example Quarto document and have a relevant title, date, authors, abstract, link to the supporting GitHub repo, introduction, other relevant sections, cross-referenced and captioned table/s and graph/s, and references. There must not be any typos, grammatical errors, poor writing. Essays must make interesting and relevant points, grounded in the course material, and building off them in some way. Essays must be well-structured, coherent, and credible. 
+
+The website is designed to make sure that you have set-up GitHub correctly and are comfortable with basic commands.
+
+Essays, the website, and all papers have "peer review". You submit by the deadline, then (complete and) receive peer review feedback within 24 hours. You then have through to the following Monday, 9am, to update and re-submit the underlying assessment if you'd like. 
+
+The technical exam will cover R, SQL, Git and GitHub, and Python. It will be in class.
+
+Term Paper 1 is done individually.
+
+Term Paper 2 may be done in groups of 1-3 people.
+
+The Final Paper is done individually.
+
+
+Summary: 
+
+- Week 1: Quiz, essay
+- Week 2: Quiz, essay
+- Week 3: Quiz, essay
+- Week 4: Term paper
+- Week 5: Quiz, essay
+- Week 6: Exam
+- Week 7: Quiz, essay
+- Week 8: Quiz
+- Reading Week: -
+- Week 9: Term paper
+- Week 10: Quiz
+- Week 11: Quiz
+- Week 12: Final paper
+- Exam Block: Final paper updated
+
+
+
+
+
+## Other
+
+### Children in the classroom
+
+Babies (bottle-feeding, nursing, etc) are welcome in class as often as necessary. You are welcome to take breaks to feed your infant or express milk as needed, either in the classroom or elsewhere including [here](https://familycare.utoronto.ca/childcare/breastfeeding-at-u-of-t/). A list of baby change stations is also available [here](https://familycare.utoronto.ca/childcare/baby-change-stations-at-u-of-t/). Please communicate with me so that I can make sure that we have regular breaks to accommodate this. 
+
+For older children, I understand that unexpected disruptions in childcare can happen. You are welcome to bring your child to class in order to cover unforeseeable gaps in childcare.
+
+### Accommodations with regard to assessment
+
+Please do **not** reveal your personal or medical information to me. I understand that illness or personal emergencies can happen from time to time. The following accommodations to assessment requirements exist to provide for those situations. 
+
+Straight-forward (will automatically apply to all students - there's no need to ask for these):
+
+- Quiz: Only best five quizzes count.
+- Tutorial: Only best three tutorials count.
+- Papers #1-#4: Worst two are dropped.
+
+So for those (with the exception of Paper #1), if you have a situation, then just don't submit.
+
+Slightly more involved: 
+
+- Paper #1: You must submit something for Paper #1, even if it gets zero. If you have a medical reason that makes it impossible for you to submit Paper #1, then you are welcome to continue with the class, but then one of the remaining term papers (Papers #2 - #4), must be done individually to ensure fairness with the rest of the class.
+- Peer review: No accommodation or late submission is possible for this because it would hold up the rest of the class. If you cannot submit then email me before the deadline and the weight will be shifted to the final paper.
+- Final paper: The final paper is a critical piece of assessment. It is also up against deadlines for submission of grades. Extensions for valid reasons may be granted for a maximum of three days, however this isn't possible for all students (i.e. there are restrictions around graduating students). This means the exact extension needs to be at my discretion. To be considered, an extension request must be sent to rohan.alexander@utoronto.ca by the business day before the due date so there is time to get advice from a faculty/department/college advisor about your particular circumstance.
+
+### Re-grading
+
+Requests to have your work re-graded will not be accepted within 24 hours of the release of grades. This is to give you a chance to reflect. Similarly, requests to have your work re-graded more than seven days after the release of the grades will not be accepted. This is to ensure the course runs smoothly.
+
+Inside that 1-7 day period if you would like to request a re-grade, please email rohan.alexander@utoronto.ca. Please specify where the marking error was made in relation to the marking guide. The entire assessment will be re-marked and it is possible that your grade could reduce.
+
+Plenty of students get 0 on the first paper, but go on to get an A+ overall in the course. The nature of the work in this course requires students to adjust from what is expected in other courses, and the forgiving assessment weighting is designed to allow this.
+
+### Plagiarism and integrity
+
+Please do not plagiarize. In particular, be careful to acknowledge the source of code - if it is extensive then through proper citation and if it is just a couple of lines from Stack Overflow then in a comment immediately next to the code.
+
+You are responsible for knowing the content of the University of Toronto's Code of Behaviour on Academic Matters. 
+
+Academic offenses includes (but is not limited to) plagiarism, cheating, copying R code, communication/extra resources during closed book assessments, purchasing labor for assessments (of any kind). Academic offenses will be taken seriously and dealt with accordingly. If you have any questions about what is or is not permitted in this course, please contact me.
+
+Please consult the University's [site](http://academicintegrity.utoronto.ca/) on Academic Integrity. Please also see the definition of plagiarism in section B.I.1.(d) of the University's Code of Behaviour on Academic Matters available [here](http://www.governingcouncil.utoronto.ca/Assets/Governing+Council+Digital+Assets/Policies/PDF/ppjun011995.pdf). Please read the Code. Please review Cite it Right and if you require further clarification, consult the site [How Not to Plagiarize](http://advice.writing.utoronto.ca/wp-content/uploads/sites/2/how-not-to-plagiarize.pdf). 
+
+### Late policy
+
+You are expected to manage your time effectively. If no extension has been granted and no accommodation applies, then the late submission of an assessment item carries a penalty of 10 percentage points per day to a maximum of one week after which it will no longer be accepted, e.g. a problem set submitted a day late that would have otherwise received 8/10 will receive 7/10, if that same problem set was submitted two days late then it would receive 6/10. 
+
+### Writing
+
+Papers and reports should be well-written, well-organized, and easy to follow. They should flow easily from one point to the next. They should have proper sentence structure, spelling, vocabulary, and grammar. Each point should be articulated clearly and completely without being overly verbose. Papers should demonstrate your understanding of the topics you are studying in the course and your confidence in using the terms, techniques and issues you have learned. As always, references must be properly included and cited. If you have concerns about your ability to do any of this then please make use of the writing support provided to the faculty, colleges and the SGS Graduate Centre for Academic Communication. 
+
+### Minimum submission requirement
+
+If you are going to not be able to submit at least two term papers, and/or be unable to submit the final paper then it would be unfair on the other students to allow you to pass the course. Please ensure you and your college registrar or faculty/department advisor get in touch with me as early as possible if this may be the case for you.
+
+### Relationship to PhD Student Learning Outcomes
+
+- Read broadly across data science to understand the extent of knowledge
+- Conduct original research
+- Work in an independent way
+- Communicate work and findings in written form
+- Be especially aware of the limitations of the data, and methods, they are using.
+
