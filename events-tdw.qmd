@@ -57,11 +57,6 @@ Past committee members:
 
 ### Upcoming
 
-- Friday 26 April 2024, noon (EDT)
-  - **Abel Brodeur**, University of Ottawa
-  - "Mass Reproducibility and Replicability: A New Hope"
-  - [Abel Brodeur](https://sites.google.com/site/abelbrodeur/) is an Associate Professor in the Department of Economics at the University of Ottawa. He earned a Ph.D. from the Paris School of Economics in 2015, and participated in the European Doctoral Program at the London School of Economics. His research interests include applied microeconomics, with a focus on reproductions and replications in economic research. He has served as a guest editor for special issues dedicated to these topics in *Economic Inquiry* and *Research & Politics*. Brodeur is also the founder and chair of the Institute for Replication (I4R) and co-directs the Ottawa Applied Microeconomics Lab.
-  - The talk will be based on a recent paper available [here](https://econpapers.repec.org/paper/zbwi4rdps/107.htm).
 - Friday 3 May 2024, noon (EDT)
 	- **Kosuke Imai**, Harvard University
 	- "Does AI help humans make better decisions? A methodological framework for experimental evaluation"
@@ -102,6 +97,11 @@ Past committee members:
 
 ### Past
 
+- Friday 26 April 2024, noon (EDT)
+  - **Abel Brodeur**, University of Ottawa
+  - "[Mass Reproducibility and Replicability: A New Hope](https://youtu.be/7Gw-Wmq0byU)"
+  - [Abel Brodeur](https://sites.google.com/site/abelbrodeur/) is an Associate Professor in the Department of Economics at the University of Ottawa. He earned a Ph.D. from the Paris School of Economics in 2015, and participated in the European Doctoral Program at the London School of Economics. His research interests include applied microeconomics, with a focus on reproductions and replications in economic research. He has served as a guest editor for special issues dedicated to these topics in *Economic Inquiry* and *Research & Politics*. Brodeur is also the founder and chair of the Institute for Replication (I4R) and co-directs the Ottawa Applied Microeconomics Lab.
+  - The talk will be based on a recent paper available [here](https://econpapers.repec.org/paper/zbwi4rdps/107.htm).
 - Thursday 4 April 2024, noon - 1pm
 	- **Lenny Bronner**, The Washington Post
 	- ["Election Modeling at The Washington Post"](https://youtu.be/qVdrw9hE2Gw)
