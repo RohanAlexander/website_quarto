@@ -57,10 +57,6 @@ Past committee members:
 
 ### Upcoming
 
-- Friday 3 May 2024, noon (EDT)
-	- **Kosuke Imai**, Harvard University
-	- "Does AI help humans make better decisions? A methodological framework for experimental evaluation"
-	- [Kosuke Imai](https://imai.fas.harvard.edu/) is Professor in the Department of Government and the Department of Statistics at Harvard University. He is also an affiliate of the Institute for Quantitative Social Science where his office is located. Before moving to Harvard in 2018, Imai taught at Princeton University for 15 years where he was the founding director of the Program in Statistics and Machine Learning. Imai specializes in the development of statistical methods and machine learning algorithms and their applications to social science research. His areas of expertise include causal inference, computational social science, and survey methodology. Imai leads the Algorithm-Assisted Redistricting Methodology Project (ALARM) and served as an expert witness for several high-profile legislative redistricting cases. In addition, he is the author of *Quantitative Social Science: An Introduction* (Princeton University Press, 2017). Outside of Harvard, Imai served as the President of the Society for Political Methodology from 2017 to 2019. His current research interests include: data-driven policy learning and evaluation, causal inference with high-dimensional and unstructured treatments (e.g., texts, images, videos, and maps), fairness and racial disparity analysis, algorithmic redistricting analysis, data fusion and record linkage, census and privacy.
 - Friday 10 May 2024, noon (EDT)
 	- **Amanda Coston**, Microsoft Research and Berkeley
 	- "TBD"
@@ -97,6 +93,10 @@ Past committee members:
 
 ### Past
 
+- Friday 3 May 2024, noon (EDT)
+	- **Kosuke Imai**, Harvard University
+	- "[Does AI help humans make better decisions? A methodological framework for experimental evaluation](https://youtu.be/8_kuU4sNuwA)"
+	- [Kosuke Imai](https://imai.fas.harvard.edu/) is Professor in the Department of Government and the Department of Statistics at Harvard University. He is also an affiliate of the Institute for Quantitative Social Science where his office is located. Before moving to Harvard in 2018, Imai taught at Princeton University for 15 years where he was the founding director of the Program in Statistics and Machine Learning. Imai specializes in the development of statistical methods and machine learning algorithms and their applications to social science research. His areas of expertise include causal inference, computational social science, and survey methodology. Imai leads the Algorithm-Assisted Redistricting Methodology Project (ALARM) and served as an expert witness for several high-profile legislative redistricting cases. In addition, he is the author of *Quantitative Social Science: An Introduction* (Princeton University Press, 2017). Outside of Harvard, Imai served as the President of the Society for Political Methodology from 2017 to 2019. His current research interests include: data-driven policy learning and evaluation, causal inference with high-dimensional and unstructured treatments (e.g., texts, images, videos, and maps), fairness and racial disparity analysis, algorithmic redistricting analysis, data fusion and record linkage, census and privacy.
 - Friday 26 April 2024, noon (EDT)
   - **Abel Brodeur**, University of Ottawa
   - "[Mass Reproducibility and Replicability: A New Hope](https://youtu.be/7Gw-Wmq0byU)"
