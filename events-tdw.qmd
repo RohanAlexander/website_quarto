@@ -57,10 +57,6 @@ Past committee members:
 
 ### Upcoming
 
-- Friday 10 May 2024, noon (EDT)
-	- **Amanda Coston**, Microsoft Research and Berkeley
-	- "TBD"
-	- [Amanda Coston](https://mandycoston.github.io) is a Postdoc at Microsoft Research in the Machine Learning and Statistics Team. In fall 2024 she will join the Department of Statistics at UC Berkeley as an Assistant Professor. Her work considers how -- and when -- machine learning and causal inference can improve decision-making in societally high-stakes settings. Her research addresses real-world data problems that challenge the validity, equity, and reliability of algorithmic decision support systems and data-driven policy-making. A central focus of her research is identifying when algorithms, data used for policy-making, and human decisions disproportionately impact marginalized groups. Amanda earned her PhD in Machine Learning and Public Policy at Carnegie Mellon University (CMU) where she was advised by Alexandra Chouldechova and Edward H. Kennedy. Amanda is a Rising Star in EECS, Machine Learning and Data Science, Meta Research PhD Fellow, NSF GRFP Fellow, K & L Gates Presidential Fellow in Ethics and Computational Technologies, and Tata Consultancy Services Presidential Fellow. Her work has been recognized by best paper awards and featured in *The Wall Street Journal* and *VentureBeat*.
 - Friday 17 May 2024, noon (EDT) (not recorded)
 	- **Victoria Angelova**, Harvard University
 	- "Algorithmic Recommendations and Human Discretion"
@@ -93,6 +89,10 @@ Past committee members:
 
 ### Past
 
+- Friday 10 May 2024, noon (EDT)
+	- **Amanda Coston**, Microsoft Research and Berkeley
+	- "[Addressing validity in decision-making algorithms](https://youtu.be/Px7rIZlQo_s)"
+	- [Amanda Coston](https://mandycoston.github.io) is a Postdoc at Microsoft Research in the Machine Learning and Statistics Team. In fall 2024 she will join the Department of Statistics at UC Berkeley as an Assistant Professor. Her work considers how -- and when -- machine learning and causal inference can improve decision-making in societally high-stakes settings. Her research addresses real-world data problems that challenge the validity, equity, and reliability of algorithmic decision support systems and data-driven policy-making. A central focus of her research is identifying when algorithms, data used for policy-making, and human decisions disproportionately impact marginalized groups. Amanda earned her PhD in Machine Learning and Public Policy at Carnegie Mellon University (CMU) where she was advised by Alexandra Chouldechova and Edward H. Kennedy. Amanda is a Rising Star in EECS, Machine Learning and Data Science, Meta Research PhD Fellow, NSF GRFP Fellow, K & L Gates Presidential Fellow in Ethics and Computational Technologies, and Tata Consultancy Services Presidential Fellow. Her work has been recognized by best paper awards and featured in *The Wall Street Journal* and *VentureBeat*.
 - Friday 3 May 2024, noon (EDT)
 	- **Kosuke Imai**, Harvard University
 	- "[Does AI help humans make better decisions? A methodological framework for experimental evaluation](https://youtu.be/8_kuU4sNuwA)"
