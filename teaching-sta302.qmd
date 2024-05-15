@@ -14,7 +14,7 @@ This course develops in students an appreciation for how our world becomes data,
 
 -   2024
     -   [Syllabus](pdfs/sta302-2024-syllabus.pdf)
-    -   Student evals - TBD
+    -   [Student evals](pdfs/sta302-2024-evals.pdf)
 
 ### FAQ
 

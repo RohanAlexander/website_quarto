@@ -4,21 +4,11 @@ title: "Toronto Data Workshop"
 
 ## Overview
 
-The Toronto Data Workshop (TDW) brings together academia and industry to share data science best practice. We are broadly interested, but especially in the code- and data-centric aspects of a data science project typically otherwise glossed over. We meet weekly for an hour, mostly online via Zoom, with most talks recorded and shared. 
+The Toronto Data Workshop (TDW) brings together academia and industry to share data science best practice. We are broadly interested, but especially in the code- and data-centric aspects of a data science project typically otherwise glossed over. We meet weekly for an hour, mostly via Zoom, with most talks recorded and shared. 
 
 If you would like to attend, please sign up [here](https://forms.gle/sXbEixoa1iJR4Q7A8). Everyone is welcome---it is free and you do not need to be affiliated with the university.
 
-Current organizing committee:
-
-- [Kelly Lyons](http://individual.utoronto.ca/klyons/), 
-- [Michaela Drouillard](https://ca.linkedin.com/in/michaela-drouillard-b29172164),
-- Rohan Alexander. 
-
-Past committee members: 
-
-- Amy Farrow (2021-22)
-- Lorena Almaraz De La Garza (2021-22)
-- Faria Khandaker (2020-21)
+The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca/klyons/), [Michaela Drouillard](https://ca.linkedin.com/in/michaela-drouillard-b29172164), and Rohan Alexander. Past committee members: Amy Farrow (2021-22), Lorena Almaraz De La Garza (2021-22), and Faria Khandaker (2020-21).
 
 
 <!-- ```{r, out.width= "27%", echo = FALSE} -->

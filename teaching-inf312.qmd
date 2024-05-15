@@ -18,6 +18,9 @@ To a certain extent we are wasting our time. We have a perfect model of the worl
 
 ### Past iterations
 
+-   2024
+    -   [Syllabus](pdfs/inf312-2023-syllabus.pdf)
+    -   [Student evals](pdfs/inf312-2024-evals.pdf)
 -   2023
     -   [Syllabus](pdfs/inf312-2023-syllabus.pdf)
     -   [Student evals](pdfs/inf312-2023-evals.pdf)
