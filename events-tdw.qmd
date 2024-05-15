@@ -53,8 +53,8 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 	- [Victoria Angelova](https://sites.google.com/view/victoriaangelova) is a fourth-year PhD student in Economics at Harvard University interested in Applied Microeconomics. She received a AB in Economics from Wellesley College in 2018. Prior to starting her PhD, she was a Research Assistant at the Industrial Relations Section at Princeton University. 
 - Friday 24 May 2024, noon (EDT)
 	- **Belinda Li**, MIT
-	- "TBD"
-	- [Belinda Li](https://belindal.github.io/) is a third-year PhD student at MIT CSAIL, affiliated with the language & intelligence (LINGO) lab @ MIT. Her advisor is Jacob Andreas. She has broad interests within natural language processing, but some high-level themes of recent work include: 1) Probing for representations of meaning in language models 2) Using language models for various natural-language tasks and grounded tasks. (What characterizes the space of tasks humans may be interested in? How do we transfer linguistic knowledge to grounded tasks? How do we best specify human intent to a language model?) 3) Improving the coherence and faithfulness of machine generations. She is funded by an NDSEG Fellowship and Clare Boothe Luce Graduate Fellowship. Previously, she spent a year at Facebook AI Applied Research, and before that, she obtained a B.S. in Computer Science at the University of Washington, where she worked with Luke Zettlemoyer.
+	- "Eliciting Human Preferences with Language Models"
+	- [Belinda Li](https://belindal.github.io/) a PhD candidate at MIT CSAIL, affiliated with the language & intelligence (LINGO) lab @ MIT. Her work focuses on improving the human-interpretability, reliability, and usability of language models: examining and improving representations of both (objective) world states and (subjective) human preferences in language models. She is funded by an NDSEG Fellowship and Clare Boothe Luce Graduate Fellowship. Previously, she spent a year at Facebook AI Applied Research, and before that, obtained her B.S. in Computer Science at the University of Washington.
 - Friday 31 May 2024, noon (EDT)
 	- **Ethan Busby**, Brigham Young University
 	- "TBD"
@@ -71,6 +71,11 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 	- **Chris Bail**, Duke University
 	- "Can Generative AI Improve Social Science"
 	- [Chris Bail](https://www.chrisbail.net/bio) is Professor of Sociology, Political Science, and Public Policy at Duke University, where he founded the Polarization Lab. He studies how artificial intelligence shapes human behavior in a range of different settings—and social media platforms in particular.
+- Wednesday 26 June 2024, 1pm (EDT)
+	- **Matthew Gentzkow**, Stanford University
+	- "The effects of Facebook and Instagram on the 2020 election: A deactivation experiment"
+	- The talk will be based on [this paper](https://www.pnas.org/doi/10.1073/pnas.2321584121) which studies the effect of Facebook and Instagram access on political beliefs, attitudes, and behavior by randomizing a subset of 19,857 Facebook users and 15,585 Instagram users to deactivate their accounts for 6 weeks before the 2020 U.S. election.
+	- [Matthew Gentzkow](https://www.matthewgentzkow.com) is the Landau Professor of Technology and the Economy at Stanford University. He studies applied microeconomics with a focus on media and technology industries. He received the 2014 John Bates Clark Medal, given by the American Economic Association to the American economist under the age of forty who has made the most significant contribution to economic thought and knowledge. He is a member of the National Academy of Sciences, a fellow of the American Academy of Arts and Sciences, a fellow of the Econometric Society, a senior fellow at the Stanford Institute for Economic Policy Research, and the Editor of *American Economic Review: Insights*.
 - Friday 28 June 2024, noon (EDT)
 	- **Sasha Issenberg**
 	- "The Lie Detectives: In Search of a Playbook for Winning Elections in the Disinformation Age"
