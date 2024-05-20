@@ -47,11 +47,7 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 ### Upcoming
 
-- Friday 17 May 2024, noon (EDT) (not recorded)
-	- **Victoria Angelova**, Harvard University
-	- "Algorithmic Recommendations and Human Discretion"
-	- [Victoria Angelova](https://sites.google.com/view/victoriaangelova) is a fourth-year PhD student in Economics at Harvard University interested in Applied Microeconomics. She received a AB in Economics from Wellesley College in 2018. Prior to starting her PhD, she was a Research Assistant at the Industrial Relations Section at Princeton University. 
-- Friday 24 May 2024, noon (EDT)
+- Friday 24 May 2024, 10am (EDT)
 	- **Belinda Li**, MIT
 	- "Eliciting Human Preferences with Language Models"
 	- [Belinda Li](https://belindal.github.io/) a PhD candidate at MIT CSAIL, affiliated with the language & intelligence (LINGO) lab @ MIT. Her work focuses on improving the human-interpretability, reliability, and usability of language models: examining and improving representations of both (objective) world states and (subjective) human preferences in language models. She is funded by an NDSEG Fellowship and Clare Boothe Luce Graduate Fellowship. Previously, she spent a year at Facebook AI Applied Research, and before that, obtained her B.S. in Computer Science at the University of Washington.
@@ -84,6 +80,10 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 ### Past
 
+- Friday 17 May 2024, noon (EDT)
+	- **Victoria Angelova**, Harvard University
+	- "Algorithmic Recommendations and Human Discretion"
+	- [Victoria Angelova](https://sites.google.com/view/victoriaangelova) is a fourth-year PhD student in Economics at Harvard University interested in Applied Microeconomics. She received a AB in Economics from Wellesley College in 2018. Prior to starting her PhD, she was a Research Assistant at the Industrial Relations Section at Princeton University. 
 - Friday 10 May 2024, noon (EDT)
 	- **Amanda Coston**, Microsoft Research and Berkeley
 	- "[Addressing validity in decision-making algorithms](https://youtu.be/Px7rIZlQo_s)"
