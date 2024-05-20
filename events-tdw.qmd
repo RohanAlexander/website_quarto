@@ -4,7 +4,7 @@ title: "Toronto Data Workshop"
 
 ## Overview
 
-The Toronto Data Workshop (TDW) brings together academia and industry to share data science best practice. We are broadly interested, but especially in the code- and data-centric aspects of a data science project typically otherwise glossed over. We meet weekly for an hour, mostly via Zoom, with most talks recorded and shared. 
+The Toronto Data Workshop brings together academia and industry to share data science best practice. We are broadly interested, but especially in the code- and data-centric aspects of a project that are often glossed over. We meet weekly for an hour and most talks are recorded.
 
 If you would like to attend, please sign up [here](https://forms.gle/sXbEixoa1iJR4Q7A8). Everyone is welcome---it is free and you do not need to be affiliated with the university.
 
