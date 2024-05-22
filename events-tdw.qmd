@@ -53,7 +53,7 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 	- [Belinda Li](https://belindal.github.io/) a PhD candidate at MIT CSAIL, affiliated with the language & intelligence (LINGO) lab @ MIT. Her work focuses on improving the human-interpretability, reliability, and usability of language models: examining and improving representations of both (objective) world states and (subjective) human preferences in language models. She is funded by an NDSEG Fellowship and Clare Boothe Luce Graduate Fellowship. Previously, she spent a year at Facebook AI Applied Research, and before that, obtained her B.S. in Computer Science at the University of Washington.
 - Friday 31 May 2024, noon (EDT)
 	- **Ethan Busby**, Brigham Young University
-	- "TBD"
+	- "Leveraging Generative AI for Political Persuasion: Experimental Insights into Message Effectiveness and Democratic Reciprocity"
 	- [Ethan Busby](ethanbusby.com) is an Assistant Professor of Political Science at Brigham Young University, specializing in political psychology, extremism, artificial intelligence, and computational social science. His research relies on various methods, using lab experiments, quasi-experiments, survey experiments, text-as-data, surveys, artificial intelligence, and large-language models. He studies extremism in democracies, including what extremism is, who people blame for extremism, and what encourages and discourages extremism.
 - Friday 7 June 2024, noon (EDT)
 	- **Lars Vilhuber**, Cornell University
