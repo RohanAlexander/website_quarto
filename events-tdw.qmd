@@ -47,10 +47,6 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 ### Upcoming
 
-- Friday 31 May 2024, noon (EDT)
-	- **Ethan Busby**, Brigham Young University
-	- "Leveraging Generative AI for Political Persuasion: Experimental Insights into Message Effectiveness and Democratic Reciprocity"
-	- [Ethan Busby](ethanbusby.com) is an Assistant Professor of Political Science at Brigham Young University, specializing in political psychology, extremism, artificial intelligence, and computational social science. His research relies on various methods, using lab experiments, quasi-experiments, survey experiments, text-as-data, surveys, artificial intelligence, and large-language models. He studies extremism in democracies, including what extremism is, who people blame for extremism, and what encourages and discourages extremism.
 - Friday 7 June 2024, noon (EDT)
 	- **Lars Vilhuber**, Cornell University
 	- "Privacy protection in RCTs: The challenge of privacy protection in the field"
@@ -76,6 +72,10 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 ### Past
 
+- Friday 31 May 2024, noon (EDT)
+	- **Ethan Busby**, Brigham Young University
+	- "[AI-Enabled Persuasion Research: Experimenting with Effective Political Messaging](https://youtu.be/-I0TuD9WdNE)"
+	- [Ethan Busby](ethanbusby.com) is an Assistant Professor of Political Science at Brigham Young University, specializing in political psychology, extremism, artificial intelligence, and computational social science. His research relies on various methods, using lab experiments, quasi-experiments, survey experiments, text-as-data, surveys, artificial intelligence, and large-language models. He studies extremism in democracies, including what extremism is, who people blame for extremism, and what encourages and discourages extremism.
 - Friday 24 May 2024, 10am (EDT)
 	- **Belinda Li**, MIT
 	- "[Eliciting Human Preferences with Language Models](https://youtu.be/xFwiqBU4_dI)"
