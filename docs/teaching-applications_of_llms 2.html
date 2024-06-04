@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Rohan Alexander</title>
+<title>Rohan Alexander - Applications of LLMs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,6 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -70,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -88,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -210,50 +211,216 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#pre-requisites" id="toc-pre-requisites" class="nav-link" data-scroll-target="#pre-requisites">Pre-requisites</a></li>
+  <li><a href="#content" id="toc-content" class="nav-link" data-scroll-target="#content">Content</a>
+  <ul class="collapse">
+  <li><a href="#week-1" id="toc-week-1" class="nav-link" data-scroll-target="#week-1">Week 1</a></li>
+  <li><a href="#week-2" id="toc-week-2" class="nav-link" data-scroll-target="#week-2">Week 2</a></li>
+  <li><a href="#week-3" id="toc-week-3" class="nav-link" data-scroll-target="#week-3">Week 3</a></li>
+  <li><a href="#week-4" id="toc-week-4" class="nav-link" data-scroll-target="#week-4">Week 4</a></li>
+  <li><a href="#week-5" id="toc-week-5" class="nav-link" data-scroll-target="#week-5">Week 5</a></li>
+  <li><a href="#week-6" id="toc-week-6" class="nav-link" data-scroll-target="#week-6">Week 6</a></li>
+  <li><a href="#week-7" id="toc-week-7" class="nav-link" data-scroll-target="#week-7">Week 7</a></li>
+  <li><a href="#week-8" id="toc-week-8" class="nav-link" data-scroll-target="#week-8">Week 8</a></li>
+  <li><a href="#week-9" id="toc-week-9" class="nav-link" data-scroll-target="#week-9">Week 9</a></li>
+  <li><a href="#week-10" id="toc-week-10" class="nav-link" data-scroll-target="#week-10">Week 10</a></li>
+  <li><a href="#week-11" id="toc-week-11" class="nav-link" data-scroll-target="#week-11">Week 11</a></li>
+  <li><a href="#week-12" id="toc-week-12" class="nav-link" data-scroll-target="#week-12">Week 12</a></li>
+  </ul></li>
+  <li><a href="#assessment" id="toc-assessment" class="nav-link" data-scroll-target="#assessment">Assessment</a>
+  <ul class="collapse">
+  <li><a href="#notebook" id="toc-notebook" class="nav-link" data-scroll-target="#notebook">Notebook</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">Application</a></li>
+  <li><a href="#final-paper" id="toc-final-paper" class="nav-link" data-scroll-target="#final-paper">Final Paper</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<div class="quarto-about-trestles content">
-  <div class="about-entity">
-    <img src="images/new_headshot.png" class="about-image
-  round " style="height: 15em; width: 15em;">
+<main class="content" id="quarto-document-content">
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Rohan Alexander</h1>
+<h1 class="title">Applications of LLMs</h1>
 </div>
+
+
+
 <div class="quarto-title-meta">
+
+    
+  
+    
   </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="/pdfs/cv-academic-Rohan_Alexander.pdf" class="about-link" rel="" target="">
-     <span class="about-link-text">CV</span>
-  </a>
-  <a href="mailto:rohan.alexander@utoronto.ca" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-  <a href="https://github.com/RohanAlexander" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="https://twitter.com/RohanAlexander" class="about-link" rel="" target="">
-    <i class="bi bi-twitter"></i>
-     <span class="about-link-text">Twitter</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
-<p>I am an assistant professor at the University of Toronto, jointly appointed in the <a href="https://ischool.utoronto.ca/profile/rohan-alexander/">Faculty of Information</a> and the <a href="https://www.statistics.utoronto.ca/people/directories/all-faculty/rohan-alexander">Department of Statistical Sciences</a>. I am interested in developing workflows that improve the trustworthiness of data science. I am particularly interested in the role of code and testing in data science.</p>
-<p>I am the Assistant Director of <a href="https://canssiontario.utoronto.ca">CANSSI Ontario</a>; the Director, Technical Skills Curriculum &amp; Instruction, for the Data Sciences Institute’s <a href="https://github.com/UofT-DSI">Data Science and Machine Learning Certificates</a>; a Senior Fellow at <a href="https://www.masseycollege.ca">Massey College</a>; a faculty affiliate at the <a href="https://sr-institute.utoronto.ca/">Schwartz Reisman Institute for Technology and Society</a>; and a co-lead of the <a href="https://datasciences.utoronto.ca">DSI</a> Thematic Program in Reproducibility.</p>
-<p><img style="float:right; max-width: 50%; position: relative; padding: 10px; top: 0px;" src="images/tellingstorieswithdatapainting.png"></p>
-<p>My book, <em><a href="https://www.tellingstorieswithdata.com/">Telling Stories With Data</a></em>, argues that a trustworthiness revolution is needed in data science, and I propose a view of what it could look like. It has been strongly endorsed, including: Andrew Gelman <em>“I absolutely love this book”</em>, Kosuke Imai <em>“I highly recommend this unique book!”</em>, Sir David Spiegelhalter <em>“[A]n extraordinary, wonderful, book…”</em>, Daniela Witten <em>“An excellent book”</em>, and Richard McElreath <em>“This is not another statistics book. It is much better than that.”</em> You can buy a print copy <a href="https://www.routledge.com/Telling-Stories-with-Data-With-Applications-in-R/Alexander/p/book/9781032134772">here</a> and you can access the free online version <a href="https://www.tellingstorieswithdata.com/">here</a>.</p>
-<p>My teaching helps students from a wide range of backgrounds learn how to use data to tell convincing stories. I am an associate editor of the <em>Journal of Statistics and Data Science Education</em>.</p>
-<p>I hold a PhD in Economics from the Australian National University where I focused on economic history and was supervised by <a href="https://sites.google.com/view/john-tang/home">John Tang</a> (chair), <a href="https://researchers.anu.edu.au/researchers/mariotti-m">Martine Mariotti</a>, <a href="https://researchers.anu.edu.au/researchers/hatton-tj">Tim Hatton</a>, and <a href="https://sites.google.com/site/zachaward/">Zach Ward</a>.</p>
-<p>I am married to <a href="https://www.monicaalexander.com">Monica Alexander</a>, and we have two young children.</p>
 
 
-</main></div>
-</div>
- <!-- /main -->
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>The purpose of this course is to develop students who can:</p>
+<ul>
+<li>understand Large Language Models (LLMs) sufficiently to be able to use them;</li>
+<li>work productively to develop and implement an LLM-based application; and</li>
+<li>attract users to that application, to an extent that they are able to conduct some evaluation and write a paper about it.</li>
+</ul>
+<p>To borrow the YCombinator motto - this course develops students who can build something (based on LLMs that) people want.</p>
+<p>Students are expected to develop:</p>
+<ul>
+<li>an understanding of LLMs, and their evolving place in the world;</li>
+<li>a hacker mindset focused on building something;</li>
+<li>the ability to build an application</li>
+<li>exceptional written and verbal communication skills; and</li>
+<li>contribute in some small way to our understanding of something related to NLP, ideally LLMs.</li>
+</ul>
+</section>
+<section id="pre-requisites" class="level2">
+<h2 class="anchored" data-anchor-id="pre-requisites">Pre-requisites</h2>
+<ul>
+<li>Comfortable with Python, GitHub, APIs, and data science fundamentals.</li>
+</ul>
+</section>
+<section id="content" class="level2">
+<h2 class="anchored" data-anchor-id="content">Content</h2>
+<section id="week-1" class="level3">
+<h3 class="anchored" data-anchor-id="week-1">Week 1</h3>
+<ul>
+<li>Karpathy, Andrej, 2013, “Intro to Large Language Models”, YouTube, 22 November, https://youtu.be/zjkBMFhNj_g.</li>
+<li>Chollet, François, 2021, <em>Deep Learning with Python</em>, Chapters 1-3.</li>
+<li>Tunstall, von Werra and Wolf, 2022, <em>Natural Language Processing with Transformers</em>, Chapters 1 and 2.</li>
+</ul>
+</section>
+<section id="week-2" class="level3">
+<h3 class="anchored" data-anchor-id="week-2">Week 2</h3>
+<ul>
+<li>Karpathy, Andrej, 2022, <em>Neural Networks: Zero to Hero</em>, “The spelled-out intro to neural networks and backpropagation: building micrograd”, https://youtu.be/VMj-3S1tku0.</li>
+<li>Chollet, François, 2021, <em>Deep Learning with Python</em>, Chapters 4 and 5.</li>
+<li>Tunstall, von Werra and Wolf, 2022, <em>Natural Language Processing with Transformers</em>, Chapter 3.</li>
+<li>Bolukbasi, Tolga, Kai-Wei Chang, James Y. Zou, Venkatesh Saligrama and Adam T. Kalai, 2016, ‘Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings’, <em>Advances in Neural Information Processing Systems</em>, 29 (NIPS 2016), http://papers.nips.cc/paper/6228-man-is-to-computer-programmer-as-woman-is-to-homemaker-d.</li>
+</ul>
+</section>
+<section id="week-3" class="level3">
+<h3 class="anchored" data-anchor-id="week-3">Week 3</h3>
+<ul>
+<li>Alammar, Jay, 2020, ‘How GPT3 Works - Visualizations and Animations’, 27 July, https://jalammar.github.io/how-gpt3-works-visualizations-animations/</li>
+<li>Karpathy, Andrej, 2022, <em>Neural Networks: Zero to Hero</em>, “The spelled-out intro to language modeling: building makemore”.</li>
+<li>Chollet, François, 2021, <em>Deep Learning with Python</em>, Chapters 6 and 7.</li>
+<li>Tunstall, von Werra and Wolf, 2022, <em>Natural Language Processing with Transformers</em>, Chapters 4 and 5.</li>
+<li>Hutchinson, Ben, Vinodkumar Prabhakaran, Emily Denton, Kellie Webster, Yu Zhong, and Stephen Denuyl, 2020, ‘Social Biases in NLP Models as Barriers forPersons with Disabilities’, <em>arXiv</em>, https://arxiv.org/abs/2005.00813.</li>
+</ul>
+</section>
+<section id="week-4" class="level3">
+<h3 class="anchored" data-anchor-id="week-4">Week 4</h3>
+<ul>
+<li>Karpathy, Andrej, 2022, <em>Neural Networks: Zero to Hero</em>, “Building makemore Part 2: MLP”.</li>
+<li>Chollet, François, 2021, <em>Deep Learning with Python</em>, Chapter 11.</li>
+<li>Tunstall, von Werra and Wolf, 2022, <em>Natural Language Processing with Transformers</em>, Chapters 6 and 7.</li>
+<li>Solaiman, Irene, Miles Brundage, Jack Clark, Amanda Askell, ArielHerbert-Voss, Jeff Wu, Alec Radford, Gretchen Krueger, Jong Wook Kim, SarahKreps, Miles McCain, Alex Newhouse, Jason Blazakis, Kris McGuffie, Jasmine Wang, 2019, ‘Release Strategies and the Social Impacts of Language Models’,<em>arXiv</em>, https://arxiv.org/abs/1908.09203.</li>
+</ul>
+</section>
+<section id="week-5" class="level3">
+<h3 class="anchored" data-anchor-id="week-5">Week 5</h3>
+<ul>
+<li>Karpathy, Andrej, 2022, <em>Neural Networks: Zero to Hero</em>, “Building makemore Part 3: Activations &amp; Gradients, BatchNorm”.</li>
+<li>Chollet, François, 2021, <em>Deep Learning with Python</em>, Chapters 12 and 13.</li>
+<li>Tunstall, von Werra and Wolf, 2022, <em>Natural Language Processing with Transformers</em>, Chapter 8.</li>
+<li>Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser and Illia Polosukhin, 2017, ‘Attention Is All You Need’, <em>arXiv</em>, http://arxiv.org/abs/1706.03762.</li>
+<li>Tatman, Rachel, 2020, ‘What I Won’t Build’, <em>Widening NLP Workshop 2020</em>, Keynote address, 5 July, https://slideslive.com/38929585/what-i-wont-build and http://www.rctatman.com/talks/what-i-wont-build.</li>
+</ul>
+</section>
+<section id="week-6" class="level3">
+<h3 class="anchored" data-anchor-id="week-6">Week 6</h3>
+<ul>
+<li>Karpathy, Andrej, 2022, <em>Neural Networks: Zero to Hero</em>, “Building makemore Part 4: Becoming a Backprop Ninja”.</li>
+<li>Boykis, Vicky, <em>What are embeddings?</em>, https://vickiboykis.com/what_are_embeddings/</li>
+<li>Rush, Alexander, 2018, ‘The Annotated Transformer’, https://nlp.seas.harvard.edu/2018/04/03/attention.html</li>
+<li>Zhao, Jieyu, Tianlu Wang, Mark Yatskar, Vicente Ordonez and Kai-Wei Chang,2017, ‘Men Also Like Shopping: Reducing Gender Bias Amplification using Corpus-level Constraints’, <em>Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing</em>, pp.&nbsp;2979–2989, https://aclweb.org/anthology/D17-1323.pdf.</li>
+</ul>
+</section>
+<section id="week-7" class="level3">
+<h3 class="anchored" data-anchor-id="week-7">Week 7</h3>
+<ul>
+<li>Karpathy, Andrej, 2022, <em>Neural Networks: Zero to Hero</em>, “Building makemore Part 5: Building a WaveNet”.</li>
+<li>Alammar, Jay, 2018, ‘The Illustrated Transformer’, http://jalammar.github.io/illustrated-transformer/.</li>
+<li>Manning, Vaswani and Huang, 2019, ‘Stanford CS224N: NLP with Deep Learning | Winter 2019 | Lecture 14 – Transformers and Self-Attention’, https://www.youtube.com/watch?v=5vcj8kSwBCY&amp;list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z&amp;index=14&amp;ab_channel=stanfordonline.</li>
+<li>Uszkoreit, Jakob, 2017, ‘Transformer: A Novel Neural Network Architecture for Language Understanding’, Google AI Blog, 31 August, https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html</li>
+</ul>
+</section>
+<section id="week-8" class="level3">
+<h3 class="anchored" data-anchor-id="week-8">Week 8</h3>
+<ul>
+<li>Karpathy, Andrej, 2022, <em>Neural Networks: Zero to Hero</em>, “Let’s build GPT: from scratch, in code, spelled out”.</li>
+<li>Bender, Emily M. and Koller, Alexander, 2020, ‘Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data’, *Proceedings of the 58th Annual Meeting of the</li>
+<li>Seibel Michael, “How to build an MVP”, https://www.youtube.com/watch?v=QRZ_l7cVzzU.</li>
+</ul>
+</section>
+<section id="week-9" class="level3">
+<h3 class="anchored" data-anchor-id="week-9">Week 9</h3>
+<ul>
+<li>Seibel Michael, “Building product”, https://www.youtube.com/watch?v=C27RVio2rOs.</li>
+<li>Jacob Devlin and Ming-Wei Chang, 2018, ‘Open Sourcing BERT: State-of-the-Art Pre-training for Natural Language Processing’, 2 November, <em>Google AI Blog</em>, https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html.</li>
+<li>Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova, 2018, ‘BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding’, <em>arXiv</em>, https://arxiv.org/abs/1810.04805.</li>
+</ul>
+</section>
+<section id="week-10" class="level3">
+<h3 class="anchored" data-anchor-id="week-10">Week 10</h3>
+<ul>
+<li>Alströmer, Gustaf, “How to get your first customers”, https://www.youtube.com/watch?v=hyYCn_kAngI</li>
+<li>Tom B. Brown etc, 2020, ‘Language Models are Few-Shot Learners’, <em>arXiv</em>, https://arxiv.org/abs/2005.14165</li>
+</ul>
+</section>
+<section id="week-11" class="level3">
+<h3 class="anchored" data-anchor-id="week-11">Week 11</h3>
+<ul>
+<li>None.</li>
+</ul>
+</section>
+<section id="week-12" class="level3">
+<h3 class="anchored" data-anchor-id="week-12">Week 12</h3>
+<ul>
+<li>None.</li>
+</ul>
+</section>
+</section>
+<section id="assessment" class="level2">
+<h2 class="anchored" data-anchor-id="assessment">Assessment</h2>
+<section id="notebook" class="level3">
+<h3 class="anchored" data-anchor-id="notebook">Notebook</h3>
+<ul>
+<li>Due date: Updated this weekly.</li>
+<li>Task: Use Quarto to keep a notebook of what you have done the past week and what you want to do the coming week.</li>
+<li>Weight: 10 per cent.</li>
+</ul>
+</section>
+<section id="application" class="level3">
+<h3 class="anchored" data-anchor-id="application">Application</h3>
+<ul>
+<li>Due date: Week 10.</li>
+<li>Task: Create a web application based on LLMs that has paying users.</li>
+<li>Weight: 60 per cent.</li>
+</ul>
+</section>
+<section id="final-paper" class="level3">
+<h3 class="anchored" data-anchor-id="final-paper">Final Paper</h3>
+<ul>
+<li>Due date: Thursday, noon, Week 12 + two weeks.</li>
+<li>Task: Write a paper that involves evaluating some aspect of your application.</li>
+<li>Weight: 30 per cent.</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -274,6 +441,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
