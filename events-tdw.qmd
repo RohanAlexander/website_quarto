@@ -47,10 +47,6 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 ### Upcoming
 
-- Friday 7 June 2024, noon (EDT)
-	- **Lars Vilhuber**, Cornell University
-	- "Privacy protection in RCTs: The challenge of privacy protection in the field"
-	- [Lars Vilhuber](https://www.vilhuber.com/lars/academia/cv/) holds a Ph.D. in Economics from Université de Montréal, Canada, and is currently on the faculty of the Cornell University Economics Department. He has interests in labor economics, statistical disclosure limitation and data dissemination, and reproducibility and replicability in the social sciences. He is the Data Editor of the American Economic Association, and Managing Editor of the *Journal of Privacy and Confidentiality*.
 - Friday 14 June 2024, noon (EDT)
 	- **Jae Yeon Kim**, Code for America
 	- "Field experimentation in the U.S. safety net"
@@ -72,6 +68,10 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 ### Past
 
+- Friday 7 June 2024, noon (EDT)
+	- **Lars Vilhuber**, Cornell University
+	- "[Privacy protection in RCTs: The challenge of privacy protection in the field](https://youtu.be/EcWNR_rJ3-8)"
+	- [Lars Vilhuber](https://www.vilhuber.com/lars/academia/cv/) holds a Ph.D. in Economics from Université de Montréal, Canada, and is currently on the faculty of the Cornell University Economics Department. He has interests in labor economics, statistical disclosure limitation and data dissemination, and reproducibility and replicability in the social sciences. He is the Data Editor of the American Economic Association, and Managing Editor of the *Journal of Privacy and Confidentiality*.
 - Friday 31 May 2024, noon (EDT)
 	- **Ethan Busby**, Brigham Young University
 	- "[AI-Enabled Persuasion Research: Experimenting with Effective Political Messaging](https://youtu.be/-I0TuD9WdNE)"
