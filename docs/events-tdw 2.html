@@ -1,0 +1,1672 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.552">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Rohan Alexander - Toronto Data Workshop</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Rohan Alexander</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-events" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Events</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-events">    
+        <li>
+    <a class="dropdown-item" href="./events-tdw.html">
+ <span class="dropdown-text">Toronto Data Workshop</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./events-llms_colloquium.html">
+ <span class="dropdown-text">Colloquium on Applications of LLMs</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./events-reproducibility.html">
+ <span class="dropdown-text">Toronto Workshop on Reproducibility</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./events-software.html">
+ <span class="dropdown-text">Conference on statistical software</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Teaching</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
+        <li>
+    <a class="dropdown-item" href="./teaching-applications_of_llms.html">
+ <span class="dropdown-text">Applications of LLMs</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./teaching-inf3104.html">
+ <span class="dropdown-text">Data science foundations</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./teaching-ethics_and_ds.html">
+ <span class="dropdown-text">Ethics and data science</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./teaching-inf2178.html">
+ <span class="dropdown-text">Experimental design for data science</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./teaching-history_of_statistics.html">
+ <span class="dropdown-text">History of statistics and data sciences</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./teaching-sta302.html">
+ <span class="dropdown-text">Methods of Data Analysis I</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./teaching-modeling.html">
+ <span class="dropdown-text">Introduction to Modeling</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./teaching-nlp.html">
+ <span class="dropdown-text">Natural Language Processing</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./teaching-sta304.html">
+ <span class="dropdown-text">Surveys, sampling, and observational data</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./teaching-inf312.html">
+ <span class="dropdown-text">Worlds become data</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-misc" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Misc</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-misc">    
+        <li>
+    <a class="dropdown-item" href="./bookshelf.html">
+ <span class="dropdown-text">Bookshelf</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./blog.html">
+ <span class="dropdown-text">Blog</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./recs.html">
+ <span class="dropdown-text">Recommendations</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./pdfs/cv-academic-Rohan_Alexander.pdf"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/RohanAlexander"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/RohanAlexander"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:rohan.alexander@utoronto.ca"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">2024</a>
+  <ul class="collapse">
+  <li><a href="#upcoming" id="toc-upcoming" class="nav-link" data-scroll-target="#upcoming">Upcoming</a></li>
+  <li><a href="#past" id="toc-past" class="nav-link" data-scroll-target="#past">Past</a></li>
+  </ul></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2023</a></li>
+  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2022</a></li>
+  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">2021</a></li>
+  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4">2020</a></li>
+  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5">2019</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Toronto Data Workshop</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>The Toronto Data Workshop brings together academia and industry to share data science and AI best practice. We are broadly interested, but especially in the code- and data-centric aspects of a project that are often glossed over. We meet weekly for an hour and most talks are recorded.</p>
+<p>If you would like to attend, please sign up <a href="https://forms.gle/sXbEixoa1iJR4Q7A8">here</a>. Everyone is welcome—it is free and you do not need to be affiliated with the university.</p>
+<p>The current organizing committee is: <a href="http://individual.utoronto.ca/klyons/">Kelly Lyons</a>, <a href="https://ca.linkedin.com/in/michaela-drouillard-b29172164">Michaela Drouillard</a>, and Rohan Alexander. Past committee members: Amy Farrow (2021-22), Lorena Almaraz De La Garza (2021-22), and Faria Khandaker (2020-21).</p>
+<!-- ```{r, out.width= "27%", echo = FALSE} -->
+<!-- knitr::include_graphics(c("images/tdw_100.png"))  -->
+<!-- ``` -->
+<!-- ```{r, out.width= "25%", echo = FALSE} -->
+<!-- knitr::include_graphics(c("images/tdw_dino.png"))  -->
+<!-- ``` -->
+<!-- *Thanks to Hidaya Ismail for the hex sticker.* -->
+<!-- ```{r, out.width= "15%", echo = FALSE} -->
+<!-- knitr::include_graphics(c("images/tdw_cn_tower.png", "images/tdw_dino.png", "images/TorontoDataWorkshopMapleLeafs.png", "images/tdw_bluejays_dataworkshop_hex.png", "images/tdw_100.png"))  -->
+<!-- ``` -->
+<!-- ```{r, out.width= "25%", echo = FALSE} -->
+<!-- knitr::include_graphics(c("images/TorontoDataWorkshopMapleLeafs.png")) -->
+<!-- knitr::include_graphics(c("images/TorontoDataWorkshopMapleLeafs.png"))  -->
+<!-- ``` -->
+<!-- ```{r, out.width= "25%", echo = FALSE} -->
+<!-- knitr::include_graphics(c("images/tdw_bluejays_dataworkshop_hex.png"))  -->
+<!-- ``` -->
+<!-- *Thanks to Paul Hodgetts for the Jays-inspired sticker.* -->
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section">2024</h2>
+<section id="upcoming" class="level3">
+<h3 class="anchored" data-anchor-id="upcoming">Upcoming</h3>
+<ul>
+<li>Friday 14 June 2024, noon (EDT)
+<ul>
+<li><strong>Jae Yeon Kim</strong>, SNF Agora Institute at Johns Hopkins University</li>
+<li>“Field experimentation in the U.S. safety net”</li>
+<li><a href="https://jaeyk.github.io">Jae Yeon Kim</a> is an incoming assistant research scientist at the SNF Agora Institute at Johns Hopkins University and a research fellow at the Center for Public Leadership at Harvard Kennedy School. Previously, he worked as a senior data scientist at Code for America, where he collaborated with all levels of the U.S. government to improve access to safety net programs. He completed his PhD in Political Science from the University of California, Berkeley in 2021.</li>
+</ul></li>
+<li>Friday 21 June 2024, noon (EDT)
+<ul>
+<li><strong>Chris Bail</strong>, Duke University</li>
+<li>“Can Generative AI Improve Social Science”</li>
+<li><a href="https://www.chrisbail.net/bio">Chris Bail</a> is Professor of Sociology, Political Science, and Public Policy at Duke University, where he founded the Polarization Lab. He studies how artificial intelligence shapes human behavior in a range of different settings—and social media platforms in particular.</li>
+</ul></li>
+<li>Wednesday 26 June 2024, 1pm (EDT)
+<ul>
+<li><strong>Matthew Gentzkow</strong>, Stanford University</li>
+<li>“The effects of Facebook and Instagram on the 2020 election: A deactivation experiment”</li>
+<li>The talk will be based on <a href="https://www.pnas.org/doi/10.1073/pnas.2321584121">this paper</a> which studies the effect of Facebook and Instagram access on political beliefs, attitudes, and behavior by randomizing a subset of 19,857 Facebook users and 15,585 Instagram users to deactivate their accounts for 6 weeks before the 2020 U.S. election.</li>
+<li><a href="https://www.matthewgentzkow.com">Matthew Gentzkow</a> is the Landau Professor of Technology and the Economy at Stanford University. He studies applied microeconomics with a focus on media and technology industries. He received the 2014 John Bates Clark Medal, given by the American Economic Association to the American economist under the age of forty who has made the most significant contribution to economic thought and knowledge. He is a member of the National Academy of Sciences, a fellow of the American Academy of Arts and Sciences, a fellow of the Econometric Society, a senior fellow at the Stanford Institute for Economic Policy Research, and the Editor of <em>American Economic Review: Insights</em>.</li>
+</ul></li>
+<li>Friday 28 June 2024, noon (EDT)
+<ul>
+<li><strong>Sasha Issenberg</strong></li>
+<li>“The Lie Detectives: In Search of a Playbook for Winning Elections in the Disinformation Age”</li>
+<li><a href="https://www.sashaissenberg.com/">Sasha Issenberg</a> is a journalist and author of <em>“The Lie Detectives: In Search of a Playbook for Winning Elections in the Disinformation Age”</em> and four previous books, most recently <em>“The Engagement: America’s Quarter-Century Struggle Over Same-Sex Marriage.”</em> He teaches in the UCLA Department of Political Science and is a correspondent for <em>Monocle</em>. His work has also appeared in <em>New York</em>, <em>The New York Times Magazine</em> and <em>George</em>, where he was a contributing editor.</li>
+</ul></li>
+<li>Friday 5 July 2024, noon (EDT)
+<ul>
+<li><strong>Kobi Hackenburg</strong>, Oxford Internet Institute, University of Oxford</li>
+<li>“Evaluating the persuasive influence of political microtargeting with large language models”</li>
+<li>Advances in LLMs have raised concerns over scalable, personalized political persuasion. In this talk, based on a <a href="https://www.pnas.org/doi/10.1073/pnas.2403116121">paper recently published in PNAS</a>, we integrate user data into GPT-4 prompts in real-time, facilitating the live creation of messages tailored to persuade individual users on political issues. We then deploy this application at scale to test whether personalized, microtargeted messaging offers a persuasive advantage compared to nontargeted messaging. We find that while messages generated by GPT-4 were persuasive, in aggregate, the persuasive impact of microtargeted messages was not statistically different from that of nontargeted messages. These findings suggest—contrary to widespread speculation—that the influence of current LLMs may reside not in their ability to tailor messages to individuals but rather in the persuasiveness of their generic, nontargeted messages.</li>
+<li><a href="https://www.kobihackenburg.com">Kobi Hackenburg</a> is a PhD candidate in Social Data Science at the Oxford Internet Institute, University of Oxford. His doctoral research, funded by a Clarendon Scholarship and supervised by Helen Margetts and Scott Hale, investigates the persuasive influence of personalized AI systems. More broadly, his work lies at the intersection of computation, language, and society. Alongside his PhD, he works as a Doctoral Researcher in the Public Policy Programme at The Alan Turing Institute, the UK’s national institute for AI and data science.</li>
+</ul></li>
+<li>Friday 12 July 2024, noon (EDT)
+<ul>
+<li><strong>Naman Jain</strong>, UC Berkeley</li>
+<li>“LiveCodeBench: Holistic and contamination free evaluation of large language models for code”</li>
+<li>In this talk we introduce <a href="https://livecodebench.github.io">LiveCodeBench</a>, a comprehensive and contamination-free benchmark for LLMs in code, which continuously collects new problems from LeetCode, AtCoder, and CodeForces. LiveCodeBench evaluates a wide range of capabilities, including self-repair, code execution, and test output prediction. It currently hosts 400 coding problems published between May 2023 and May 2024. We evaluated 18 base LLMs and 34 instruction-tuned LLMs, presenting findings on contamination, performance comparisons, and potential overfitting.</li>
+<li><a href="https://naman-ntc.github.io">Naman Jain</a> is a CS Ph.D.&nbsp;student at UC Berkeley, focusing on using machine learning to enhance developer productivity tools like program analysis, synthesis, and repair. He also explores how synthesis and verification can improve algorithm generalizability and explainability. He holds an undergraduate degree from IIT Bombay, where he researched NLP robustness and computer vision. Before his Ph.D., he was a predoctoral research fellow at Microsoft Research India, working on program repair, improving large language models, and learning decision trees.</li>
+</ul></li>
+<li>Friday 19 July 2024, noon (EDT) (in-person and online)
+<ul>
+<li><strong>Majeed Kazemitabaar</strong>, University of Toronto</li>
+<li>“Improving Steering and Verification in AI-Assisted Data Analysis”</li>
+<li><a href="https://www.majeed.cc">Majeed Kazemitabaar</a> is a fourth-year Ph.D.&nbsp;student in Computer Science at the University of Toronto, working with Professor Tovi Grossman. His research in Human-Computer Interaction and Computer Science Education focuses on creating engaging computational learning experiences and has been published in CHI, UIST, and IDC, and earned Best Paper and Best Late-Breaking Work awards.</li>
+</ul></li>
+<li>Friday 26 July 2024, noon (EDT)
+<ul>
+<li>TBA</li>
+</ul></li>
+<li>August: No talks</li>
+<li>Friday 6 September 2024, noon (EDT)
+<ul>
+<li>TBA</li>
+</ul></li>
+<li>Friday 13 September 2024, noon (EDT)
+<ul>
+<li><strong>Caroline Weis</strong>, gsk.ai</li>
+<li><a href="https://cvweis.github.io/">Caroline Weis</a> is a senior machine learning engineer and team lead at gsk.ai. In 2021, she completed her PhD in Machine Learning for Computational Biology and Healthcare at ETH Zurich.</li>
+</ul></li>
+<li>Friday 20 September 2024, noon (EDT)
+<ul>
+<li>TBA</li>
+</ul></li>
+<li>Friday 27 September 2024, noon (EDT)
+<ul>
+<li><strong>Annie Collins</strong>, GivingTuesday</li>
+</ul></li>
+<li>Friday 4 October 2024, noon (EDT)
+<ul>
+<li><strong>Sean Taylor</strong>, Motif</li>
+<li><a href="https://seanjtaylor.com/">Sean Taylor</a> is a data scientist, social scientist, statistician, and software developer. He mostly specializes in methods for solving causal inference and business decision problems, and is particularly interested in building tools for practitioners working on real-world problems. He is a co-founder and chief scientist at <a href="https://www.motifanalytics.com/">Motif</a>.</li>
+</ul></li>
+<li>Friday 11 October 2024, noon (EDT)
+<ul>
+<li>TBA</li>
+</ul></li>
+<li>Friday 18 October 2024, noon (EDT)
+<ul>
+<li><strong>Xiaojun Su</strong>, Unilever</li>
+<li><a href="https://www.linkedin.com/in/xiaojunsu/">Xiaojun Su</a> is the Machine Learning Lead, Horizon 3 Labs, at Unilever.</li>
+</ul></li>
+<li>Friday 25 October 2024, noon (EDT)
+<ul>
+<li>TBA</li>
+</ul></li>
+<li>Friday 1 November 2024, noon (EDT)
+<ul>
+<li>TBA</li>
+</ul></li>
+<li>Friday 8 November 2024, noon (EDT)
+<ul>
+<li><strong>Jacob Baldwin</strong>, Pro Football Focus (PFF)</li>
+</ul></li>
+<li>Friday 15 November 2024, noon (EDT)
+<ul>
+<li><strong>Crystal Lewis</strong>, Crystal Lewis Consulting LLC</li>
+<li><a href="https://cghlewis.com/">Crystal Lewis</a> is a freelance consultant and trainer with over 10 years of experience as a data manager in the field of education research. She is also the author of the book <em>Data Management in Large-Scale Education Research</em>, which provides a holistic overview of how to manage research data throughout a project life cycle. It is available <a href="https://datamgmtinedresearch.com/">freely online</a> and a hard copy is <a href="https://www.routledge.com/Data-Management-in-Large-Scale-Education-Research/Lewis/p/book/9781032622798">available for purchase</a> from Taylor and Francis CRC Press.</li>
+</ul></li>
+<li>Friday 22 November 2024, noon (EDT)
+<ul>
+<li>TBA</li>
+</ul></li>
+<li>Friday 29 November 2024, noon (EDT)
+<ul>
+<li><strong>Claire Le Barbenchon</strong>, McKinsey &amp; Company</li>
+</ul></li>
+</ul>
+</section>
+<section id="past" class="level3">
+<h3 class="anchored" data-anchor-id="past">Past</h3>
+<ul>
+<li>Friday 7 June 2024, noon (EDT)
+<ul>
+<li><strong>Lars Vilhuber</strong>, Cornell University</li>
+<li>“<a href="https://youtu.be/EcWNR_rJ3-8">Privacy protection in RCTs: The challenge of privacy protection in the field</a>”</li>
+<li><a href="https://www.vilhuber.com/lars/academia/cv/">Lars Vilhuber</a> holds a Ph.D.&nbsp;in Economics from Université de Montréal, Canada, and is currently on the faculty of the Cornell University Economics Department. He has interests in labor economics, statistical disclosure limitation and data dissemination, and reproducibility and replicability in the social sciences. He is the Data Editor of the American Economic Association, and Managing Editor of the <em>Journal of Privacy and Confidentiality</em>.</li>
+</ul></li>
+<li>Friday 31 May 2024, noon (EDT)
+<ul>
+<li><strong>Ethan Busby</strong>, Brigham Young University</li>
+<li>“<a href="https://youtu.be/-I0TuD9WdNE">AI-Enabled Persuasion Research: Experimenting with Effective Political Messaging</a>”</li>
+<li><a href="ethanbusby.com">Ethan Busby</a> is an Assistant Professor of Political Science at Brigham Young University, specializing in political psychology, extremism, artificial intelligence, and computational social science. His research relies on various methods, using lab experiments, quasi-experiments, survey experiments, text-as-data, surveys, artificial intelligence, and large-language models. He studies extremism in democracies, including what extremism is, who people blame for extremism, and what encourages and discourages extremism.</li>
+</ul></li>
+<li>Friday 24 May 2024, 10am (EDT)
+<ul>
+<li><strong>Belinda Li</strong>, MIT</li>
+<li>“<a href="https://youtu.be/xFwiqBU4_dI">Eliciting Human Preferences with Language Models</a>”</li>
+<li><a href="https://belindal.github.io/">Belinda Li</a> a PhD candidate at MIT CSAIL, affiliated with the language &amp; intelligence (LINGO) lab @ MIT. Her work focuses on improving the human-interpretability, reliability, and usability of language models: examining and improving representations of both (objective) world states and (subjective) human preferences in language models. She is funded by an NDSEG Fellowship and Clare Boothe Luce Graduate Fellowship. Previously, she spent a year at Facebook AI Applied Research, and before that, obtained her B.S. in Computer Science at the University of Washington.</li>
+</ul></li>
+<li>Friday 17 May 2024, noon (EDT)
+<ul>
+<li><strong>Victoria Angelova</strong>, Harvard University</li>
+<li>“Algorithmic Recommendations and Human Discretion”</li>
+<li><a href="https://sites.google.com/view/victoriaangelova">Victoria Angelova</a> is a fourth-year PhD student in Economics at Harvard University interested in Applied Microeconomics. She received a AB in Economics from Wellesley College in 2018. Prior to starting her PhD, she was a Research Assistant at the Industrial Relations Section at Princeton University.</li>
+</ul></li>
+<li>Friday 10 May 2024, noon (EDT)
+<ul>
+<li><strong>Amanda Coston</strong>, Microsoft Research and Berkeley</li>
+<li>“<a href="https://youtu.be/Px7rIZlQo_s">Addressing validity in decision-making algorithms</a>”</li>
+<li><a href="https://mandycoston.github.io">Amanda Coston</a> is a Postdoc at Microsoft Research in the Machine Learning and Statistics Team. In fall 2024 she will join the Department of Statistics at UC Berkeley as an Assistant Professor. Her work considers how – and when – machine learning and causal inference can improve decision-making in societally high-stakes settings. Her research addresses real-world data problems that challenge the validity, equity, and reliability of algorithmic decision support systems and data-driven policy-making. A central focus of her research is identifying when algorithms, data used for policy-making, and human decisions disproportionately impact marginalized groups. Amanda earned her PhD in Machine Learning and Public Policy at Carnegie Mellon University (CMU) where she was advised by Alexandra Chouldechova and Edward H. Kennedy. Amanda is a Rising Star in EECS, Machine Learning and Data Science, Meta Research PhD Fellow, NSF GRFP Fellow, K &amp; L Gates Presidential Fellow in Ethics and Computational Technologies, and Tata Consultancy Services Presidential Fellow. Her work has been recognized by best paper awards and featured in <em>The Wall Street Journal</em> and <em>VentureBeat</em>.</li>
+</ul></li>
+<li>Friday 3 May 2024, noon (EDT)
+<ul>
+<li><strong>Kosuke Imai</strong>, Harvard University</li>
+<li>“<a href="https://youtu.be/8_kuU4sNuwA">Does AI help humans make better decisions? A methodological framework for experimental evaluation</a>”</li>
+<li><a href="https://imai.fas.harvard.edu/">Kosuke Imai</a> is Professor in the Department of Government and the Department of Statistics at Harvard University. He is also an affiliate of the Institute for Quantitative Social Science where his office is located. Before moving to Harvard in 2018, Imai taught at Princeton University for 15 years where he was the founding director of the Program in Statistics and Machine Learning. Imai specializes in the development of statistical methods and machine learning algorithms and their applications to social science research. His areas of expertise include causal inference, computational social science, and survey methodology. Imai leads the Algorithm-Assisted Redistricting Methodology Project (ALARM) and served as an expert witness for several high-profile legislative redistricting cases. In addition, he is the author of <em>Quantitative Social Science: An Introduction</em> (Princeton University Press, 2017). Outside of Harvard, Imai served as the President of the Society for Political Methodology from 2017 to 2019. His current research interests include: data-driven policy learning and evaluation, causal inference with high-dimensional and unstructured treatments (e.g., texts, images, videos, and maps), fairness and racial disparity analysis, algorithmic redistricting analysis, data fusion and record linkage, census and privacy.</li>
+</ul></li>
+<li>Friday 26 April 2024, noon (EDT)
+<ul>
+<li><strong>Abel Brodeur</strong>, University of Ottawa</li>
+<li>“<a href="https://youtu.be/7Gw-Wmq0byU">Mass Reproducibility and Replicability: A New Hope</a>”</li>
+<li><a href="https://sites.google.com/site/abelbrodeur/">Abel Brodeur</a> is an Associate Professor in the Department of Economics at the University of Ottawa. He earned a Ph.D.&nbsp;from the Paris School of Economics in 2015, and participated in the European Doctoral Program at the London School of Economics. His research interests include applied microeconomics, with a focus on reproductions and replications in economic research. He has served as a guest editor for special issues dedicated to these topics in <em>Economic Inquiry</em> and <em>Research &amp; Politics</em>. Brodeur is also the founder and chair of the Institute for Replication (I4R) and co-directs the Ottawa Applied Microeconomics Lab.</li>
+<li>The talk will be based on a recent paper available <a href="https://econpapers.repec.org/paper/zbwi4rdps/107.htm">here</a>.</li>
+</ul></li>
+<li>Thursday 4 April 2024, noon - 1pm
+<ul>
+<li><strong>Lenny Bronner</strong>, The Washington Post</li>
+<li><a href="https://youtu.be/qVdrw9hE2Gw">“Election Modeling at The Washington Post”</a></li>
+<li><a href="https://lennybronner.com/">Lenny Bronner</a> is a data scientist at <em>The Washington Post</em>, specializing in elections.</li>
+</ul></li>
+<li>Thursday 28 March 2024, noon - 1pm
+<ul>
+<li><strong>Cameron Buckner</strong>, University of Houston</li>
+<li><a href="https://youtu.be/cl_qFYShnt0">The philosophy of Large Language Models</a></li>
+<li><a href="http://cameronbuckner.net">Cameron Buckner</a> is an Associate Professor of Philosophy at University of Houston, and author of <em>From Deep Learning to Rational Machines</em>.</li>
+</ul></li>
+<li>Thursday 21 March 2024, noon - 1pm
+<ul>
+<li><strong>Laura Plein</strong>, University of Luxembourg</li>
+<li><a href="https://youtu.be/M-9Il_1uruk">Can LLMs demystify Bug Reports and translate them into Test Cases?</a></li>
+<li>Laura Plein conducted this research as an intern in the TruX (Trustworthy Software Engineering) Team at the SnT, University of Luxembourg. Her research focuses on leveraging Large Language models to automate Software Engineering processes such as automatic test case generation and test input extraction in the context of automated program repair. She is currently affiliated to the Saarland University.</li>
+</ul></li>
+<li>Thursday 14 March 2024, noon - 1pm
+<ul>
+<li><strong>Tom Davidson</strong>, Rutgers University</li>
+<li><a href="https://youtu.be/feza5g3lAP4">Start Generating: Harnessing Generative Artificial Intelligence for Sociological Research</a></li>
+<li>How can generative artificial intelligence (GAI) be used for sociological research? This talk explores applications to the study of text and images across multiple domains, including computational, qualitative, and experimental research. Drawing upon recent research and stylized experiments with DALL-E and GPT-4, discuss the potential applications of text-to-text, image-to-text, and text-to-image models for sociological research. Across these areas, GAI can make advanced computational methods more efficient, flexible, and accessible. The paper also emphasizes several challenges raised by these technologies, including interpretability, transparency, reliability, reproducibility, ethics, and privacy, as well as the implications of bias and bias mitigation efforts and the trade-offs between proprietary models and open-source alternatives. When used with care, these technologies can help advance many different areas of sociological methodology, complementing and enhancing our existing toolkits. See: https://osf.io/preprints/socarxiv/u9nft.</li>
+<li><a href="https://www.thomasrdavidson.com/">Thomas Davidson</a> is an Assistant Professor of Sociology at Rutgers University—New Brunswick. He specializes in using computational methods and data from social media to analyze far-right activism, populism, and hate speech. He is currently researching the relationship between ranking and recommendation algorithms and activism, the applications of generative AI to sociological research, and the social context of content moderation. His work has been published in venues including <em>Social Forces</em>, <em>Mobilization</em>, and <em>Socius</em>.</li>
+</ul></li>
+<li>Friday 8 March 2024, noon - 1pm
+<ul>
+<li><strong>Jonathan Mellon</strong>, West Point</li>
+<li><a href="https://youtu.be/oN-FG6XfDUk">Using LLMs to code open-text social survey responses at scale</a></li>
+<li>We compare the accuracy of six LLMs using a few-shot approach, three supervised learning algorithms (SVM, DistilRoBERTa, and a neural network trained on BERT embeddings), and a second human coder on the task of categorizing “most important issue” responses from the British Election Study Internet Panel into 50 categories. For the scenario where a researcher lacks existing training data, the accuracy of the highest-performing LLM (Claude-1.3: 93.9%) neared human performance (94.7%) and exceeded the highest-performing supervised approach trained on 1000 randomly sampled cases (neural network: 93.5%). In a scenario where previous data has been labeled but a researcher wants to label novel text, the best LLM’s (Claude-1.3: 80.9%) few-shot performance is only slightly behind the human (88.6%) and exceeds the best supervised model trained on 576,000 cases (DistilRoBERTa: 77.8%). PaLM-2, Llama-2, and the SVM all performed substantially worse than the best LLMs and supervised models across all metrics and scenarios. Our results suggest that LLMs may allow for greater use of open-ended survey questions in the future. <a href="https://journals.sagepub.com/doi/full/10.1177/20531680241231468">Open access paper</a> published in <em>Research &amp; Politics</em> by Jonathan Mellon, Jack Bailey, Ralph Scott, James Breckwoldt, Marta Miori, Phillip Schmedeman and <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/8H0WTT">replication code/data</a> (includes all prompts/API calls/local models etc).</li>
+<li><a href="https://www.jonathanmellon.com/">Jonathan Mellon</a> is an Associate Professor at West Point’s Department of Systems Engineering and co-director of the British Election Study. His research focuses on improving measurement and causal inference in social science. He studies electoral behavior, online citizen engagement, and measuring public opinion. He holds a DPhil in Sociology from Nuffield College, University of Oxford.</li>
+</ul></li>
+<li>Thursday 7 March 2024, noon - 1pm
+<ul>
+<li><strong>Matheus Facure</strong>, Nubank</li>
+<li><a href="https://youtu.be/Mk2pRvUPB-U">Why Banking has the Coolest Stats/Data Science Problems</a></li>
+<li><a href="https://matheusfacure.github.io">Matheus Facure</a> has a background in Economics and is a Staff Data Scientist at Nubank. He works mostly with credit underwriting and causal inference. He is the author of <em>Causal Inference in Python</em> (O’Reilly) and <em>Causal Inference for the Brave and True</em> (Online, Open Source).</li>
+</ul></li>
+<li>Friday 1 March 2024, noon - 1pm
+<ul>
+<li><strong>Jacob Austin</strong>, Google DeepMind</li>
+<li>“Resolving Code Review Comments with Machine Learning”</li>
+<li>Code reviews are a critical part of the software development process, taking a significant amount of the code authors’ and the code reviewers’ time. As part of this process, the reviewer inspects the proposed code and asks the author for code changes through comments written in natural language. With machine learning, we have an opportunity to automate and streamline the code-review process, e.g., by proposing code changes based on a comment’s text.</li>
+<li><a href="http://www.jacobaustin.org">Jacob Austin</a> is a Senior Research Engineer at Google DeepMind, working on program synthesis and large language models. He was previously an AI Resident at Google Brain, and a Research Intern at NVIDIA with Anima Anandkumar. He holds a bachelor’s degree in computer science and mathematics from Columbia University. He studied machine learning and robotics at the Columbia Creative Machines Lab. He is also a pianist who plays a lot of chamber music, and has performed at Carnegie Hall, Music Mountain, Apple Hill, and Kinhaven.</li>
+</ul></li>
+<li>Thursday 29 February 2024, noon - 1pm
+<ul>
+<li><strong>Sky CH-Wang</strong>, Columbia University</li>
+<li><a href="https://youtu.be/bkHsz50QeYE">Do Androids Know They’re Only Dreaming of Electric Sheep?</a></li>
+<li><a href="https://skywang.me/">Sky CH-Wang</a> is a PhD Candidate in Computer Science at Columbia University advised by Zhou Yu and Smaranda Muresan. His research primarily revolves around Natural Language Processing (NLP). He is broadly interested in the area where NLP meets Computational Social Science (CSS). Here, his research primarily revolves around three major areas: (1) revealing and designing for social difference and inequality, (2) cross-cultural NLP, and (3) mechanistic interpretability. His research is supported by a NSF Graduate Research Fellowship.</li>
+</ul></li>
+<li>Thursday 22 February 2024, noon - 1pm
+<ul>
+<li><strong>Jessica Otis</strong>, George Mason University</li>
+<li>“By the Numbers: Numeracy, Religion, and the Quantitative Transformation of Early Modern England”</li>
+<li><a href="https://jessicaotis.com">Dr Jessica Marie Otis</a> is Assistant Professor of History and Director of Public Projects at the Roy Rosenzweig Center for History and New Media at George Mason University. She is the author of the new book <em>By the Numbers: Numeracy, Religion, and the Quantitative Transformation of Early Modern England</em> published by Oxford University Press.</li>
+</ul></li>
+<li>Thursday 15 February 2024, noon - 1pm
+<ul>
+<li><strong>Richard Iannone</strong>, Posit, PBC</li>
+<li>“<a href="https://youtu.be/p42Xc6dl3Ek">Using Great Tables to Make Presentable Tables in Python</a>”</li>
+<li>Rich is a software engineer at Posit, PBC (formerly RStudio). He focuses on making useful R and (more lately) Python packages for data analysis and presentation workflows.</li>
+</ul></li>
+<li>Thursday 8 February 2024, noon - 1pm
+<ul>
+<li><strong>Andreas Florath</strong>, Deutsche Telekom</li>
+<li>“LLM Interactive Optimization of Open Source Python Libraries – Case Studies and Generalization”</li>
+<li>Andreas Florath is a Cloud Architect at Deutsche Telekom AG, with a focus on Edge-Cloud Continuum Architecture. His tenure of nearly 25 years at the company has seen him contribute significantly to the development of innovative technology solutions, particularly through his work with the Open Grid and EU Cloud Alliances. Andreas is proficient in complex system analysis and programming languages such as C, C++, and Python, which he leverages to directly implement and test architectures, especially in the realms of cloud federation and AI/ML applications within the telecommunications industry. His expertise is further underscored by his involvement in numerous projects and his commitment to advancing the field through research and collaboration.</li>
+</ul></li>
+<li>Tuesday 6 February 2024, 6:10pm - 7pm
+<ul>
+<li><strong>Bradley Congelio</strong>, Kutztown University of Pennsylvania</li>
+<li>“<a href="https://youtu.be/VU62ZuK4Kc4">Introduction to NFL Analytics</a>”</li>
+<li><a href="https://bradcongelio.com">Bradley Congelio</a> is an Assistant Professor in the College of Business at Kutztown University of Pennsylvania. His main area of instruction &amp; research is in Data Analytics and Sport Analytics. He is the author of <a href="https://www.routledge.com/Introduction-to-NFL-Analytics-with-R/Congelio/p/book/9781032427751"><em>Introduction to NFL Analytics with R</em></a>, which was published by CRC Press in December 2023. His research focuses on using big data, the R programming language, and analytics to explore the impact of professional stadiums on neighboring communities. He uses the proprietary Zillow ZTRAX database as well as the U.S. Census and other forms of data to create robust, applied, and useful insight into how best to protect those livings in areas where stadiums are proposed for construction. His work in sport analytics, specifically the NFL, has been featured on numerous media outlets, including the <em>USA Today</em> and <em>Sports Illustrated</em>.</li>
+</ul></li>
+<li>Thursday 1 February 2024, noon - 1pm
+<ul>
+<li><strong>Oliver Giesecke</strong>, Stanford University</li>
+<li>“<a href="https://youtu.be/_TQqZQ2glhY">AI at the Frontiers of Economic Research</a>”</li>
+<li><a href="https://www.olivergiesecke.com">Oliver Giesecke</a> is a research fellow at the Hoover Institution at Stanford University. Giesecke works on topics related to asset pricing and public finance. His recent work studies the finances of state and local governments across the United States. This includes the capital structure of state governments, the book and market equity position of city governments, and the status quo and trend of public pension obligations. For his work on city governments’ finances, he was awarded the NASDAQ OMX Award for the best paper on asset pricing. His work on pension obligations was instrumental to shaping state legislation. In addition, Giesecke has conducted a large-scale survey that elicits the retirement plan preferences of public sector employees across the United States. He is the author of the Stanford municipal finances dashboard which provides, for the first time, credit spreads and fiscal fundamentals for many state and local governments in the United States. The dashboard has received national media coverage in <em>The Bond Buyer</em>. Prior to his academic career, he has worked for Germany’s Federal Agency for Financial Market Stabilization (FMSA) and as a senior quantitative finance consultant. Giesecke received a Ph.D.&nbsp;in finance and economics from Columbia University, a Master’s in economics from the Graduate Institute in Geneva, Switzerland, and a BA from Frankfurt University, Germany.</li>
+</ul></li>
+<li>Thursday 25 January 2024, noon - 1pm
+<ul>
+<li><strong>Kristina Gligorić</strong>, Stanford University</li>
+<li>“<a href="https://youtu.be/YxkaNNT6trE">In-class Data Analysis Replications: Teaching Students while Testing Science</a>”</li>
+<li><a href="https://kristinagligoric.github.io">Kristina Gligorić</a> is a Postdoctoral Scholar at Stanford University Computer Science Department, advised by Dan Jurafsky at the NLP group. Previously she obtained her Ph.D.&nbsp;in Computer Science at EPFL, where she was advised by Robert West. Her research focuses on developing computational approaches to solve burning societal issues, understand and improve human well-being, and promote social good. She leverages large-scale textual data and digital behavioral traces and tailors computational methods drawn from AI, NLP, and causal inference. Her work has been published in top computer science conferences (such as <em>ACM CSCW</em>, <em>AAAI ICWSM</em>, and <em>TheWebConf</em>) and broad audience journals (<em>Nature Communications</em> and <em>Nature Medicine</em>). She is a Swiss National Science Foundation Fellow and University of Chicago Rising star in Data Science. She received awards for her work, including EPFL Thesis Distinction, CSCW 2021 Best Paper Honorable Mention Award, ICWSM 2021 and 2023 Best Reviewer Award, and EPFL Best Teaching Assistant Award.</li>
+</ul></li>
+<li>Thursday 18 January 2024, noon - 1pm
+<ul>
+<li><strong>Gregory Zuckerman</strong>, Wall Street Journal</li>
+<li>“<a href="https://youtu.be/Q2r-MfEUaP0">Renaissance Technologies, data, and Wall Street</a>”</li>
+<li>Gregory Zuckerman is a special writer at <em>The Wall Street Journal</em> and non-fiction author. His non-fiction books include <em>“The Greatest Trade Ever: The Behind-the-Scenes Story of How John Paulson Defied Wall Street and Made Financial History”</em>, <em>“The Frackers: The Outrageous Inside Story of the New Billionaire Wildcatters”</em>, two books for children, <em>“The Man Who Solved the Market: How Jim Simons Launched the Quant Revolution”</em> and <em>“A Shot to Save the World: The Inside Story of the Life-or-Death Race for a COVID-19 Vaccine”</em>. He has been awarded the Gerald Loeb Award, the highest honor in business journalism, three times.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="section-1" class="level2">
+<h2 class="anchored" data-anchor-id="section-1">2023</h2>
+<ul>
+<li>Friday 24 November 2023, noon - 1pm
+<ul>
+<li><strong>Wendy Foster</strong>, Shopify</li>
+<li><a href="https://youtu.be/GQhLlGWMjRM"><em>Socio-technical processes for data integrity</em></a><br>
+</li>
+<li>Wendy Foster is Director of Engineering and Data, Optimize, at Shopify.</li>
+</ul></li>
+<li>Friday 17 November 2023, 1pm - 2pm
+<ul>
+<li><strong>Chiara Alcantara</strong>, University of Waterloo</li>
+<li><strong>Franklin Ramirez</strong>, University of Waterloo</li>
+<li><strong>Helena Xu</strong>, University of Waterloo</li>
+<li><a href="https://youtu.be/EvcnSDo5EPU"><em>Exploring Alternatives to REST for Accessing Public Data Sets</em></a></li>
+<li>In the past decade, governments, non-profits, and other civic institutions have increasingly been sharing data on a wide range of topics, supporting various sectors of society from private enterprise to academic research. However, using this data in a programmatic and reproducible fashion is hampered by the myriad nature of the APIs provided to access it. In this talk, we explore one potential alternative to the predominant REST paradigm: storing tabular data in the open Parquet file format on publicly accessible endpoints. By using this standardized file format and a simple backing infrastructure, new tools based on Apache Arrow, such as DuckDB and Polars, can be used to build reusable front ends and other cost-effective solutions. We present a case study based on Statistics Canada’s library of public data sets, showcasing how such a system can simplify initial selection and filtering through common SQL queries.</li>
+<li>Chiara, Franklin, and Helena are second-year computer science students at the University of Waterloo who are interested in applying new software and data engineering tooling to increase the accessibility of public data sets.</li>
+</ul></li>
+<li>Friday 10 November 2023, noon - 1pm
+<ul>
+<li><strong>Alexander Coppock</strong>, Yale University</li>
+<li><a href="https://youtu.be/ecuIVCB_TqQ"><em>Research design in the social sciences</em></a></li>
+<li>Alex Coppock is an Associate Professor (on term) of Political Science at Yale University. He is the author of <em>Persuasion in Parallel: How Information Changes Minds about Politics</em> and a member of the DeclareDesign team. He is a co-author of the recently published book <em>Research Design in the Social Sciences: Declaration, Diagnosis, and Redesign</em>.</li>
+</ul></li>
+<li>Friday 3 November 2023, noon - 1pm
+<ul>
+<li><strong>Apoorva Lal</strong>, Netflix</li>
+<li><a href="https://youtu.be/CO9VnGy3esI"><em>Modern balancing methods for causal inference</em></a></li>
+<li>Data scientist on the experimentation team at Netflix working on observational causal inference with spatial and panel data.</li>
+</ul></li>
+<li>Friday 3 November 2023, 11am - noon
+<ul>
+<li><strong>John Yang</strong>, Princeton University</li>
+<li><a href="https://youtu.be/DrLdvbkgmeA"><em>SWE-bench: Can Language Models Resolve Real-World GitHub Issues?</em></a></li>
+<li>John Yang is a research assistant working at Princeton University, advised by Professor Karthik Narasimhan. He is interested in Language Grounding &amp; Interaction, Benchmarks for LLMs, Software Engineering, and Code Generation.</li>
+</ul></li>
+<li>Friday 27 October 2023, 11am - noon
+<ul>
+<li><strong>James Zou</strong>, Stanford University</li>
+<li><em>Can large language models provide useful feedback on research papers? A large-scale empirical analysis</em></li>
+<li>James Zou is an Assistant Professor of Biomedical Data Science and, by courtesy, of Computer Science and Electrical Engineering at Stanford University. He works on making machine learning more reliable, human-compatible and statistically rigorous, and am especially interested in applications in human disease and health. He is a two-time Chan-Zuckerberg Investigator and the faculty director of the university-wide Stanford Data4Health hub. His research is supported by the Sloan Fellowship, the NSF CAREER Award, and Google, Amazon and Adobe AI awards.</li>
+</ul></li>
+<li>Friday 20 October 2023, noon - 1pm
+<ul>
+<li><strong>Marzieh Fadaee</strong>, Cohere for AI</li>
+<li><a href="https://youtu.be/kVOKtJ8ZTgI"><em>Aya: An Open Science Initiative to Accelerate Multilingual AI Progress</em></a><br>
+</li>
+<li>Marzieh Fadaee is a Senior Research Scientist @ Cohere For AI. She holds a PhD from the Language Technology Lab at the University of Amsterdam, where she developed models to understand and utilize interesting phenomena in data, and was advised by Christof Monz and Arianna Bisazza. She received a B.Sc. from Sharif University majoring in Computer Engineering and M.Sc. from University of Tehran majoring in Artificial Intelligence.</li>
+</ul></li>
+<li>Friday 20 October 2023, 11am - noon
+<ul>
+<li><strong>Yangjun Ruan</strong>, University of Toronto</li>
+<li><a href="https://youtu.be/kdhv7RygGxc"><em>Identifying the Risks of Language Model Agents with an Language Model Emulated Sandbox</em></a></li>
+<li>Yangjun Ruan is a Ph.D.&nbsp;Candidate in Computer Science at the University of Toronto, where he is advised by Chris Maddison and Jimmy Ba. Previously, he was a student researcher at Google Research and a research intern at Microsoft Research. In summer 2019, he was a visiting student at UCLA, where he worked with Cho-Jui Hsieh. He obtained a Bachelor degree in Information Engineering from Zhejiang University.</li>
+</ul></li>
+<li>Friday 13 October 2023, noon - 1pm
+<ul>
+<li><strong>Tom Cardoso</strong>, The Globe and Mail</li>
+<li><a href="https://youtu.be/ZJbiPG-s8Fs"><em>Secret Canada: An investigation into Canada’s freedom of information systems</em></a></li>
+<li>Tom Cardoso is a member of <em>The Globe and Mail’s</em> investigations team based in Toronto. Since the fall of 2021, he has been investigating Canada’s broken freedom of information systems.</li>
+</ul></li>
+<li>Friday 6 October 2023, noon - 1pm
+<ul>
+<li><strong>Fabrizio Dell’Acqua</strong>, Harvard Business School</li>
+<li><em>Experimental evidence on the effect of access to GPT-4 on performance</em></li>
+<li>Fabrizio Dell’Acqua is a postdoctoral research fellow and teaching fellow at Harvard Business School and the Laboratory for Innovation Science at Harvard (LISH). He received a Ph.D.&nbsp;in Management from Columbia Business School. His research focuses on the areas of automation, human/AI collaboration, and business ethics.</li>
+</ul></li>
+<li>Friday 29 September 2023, noon - 1pm
+<ul>
+<li><strong>Nima Sarajpoor</strong>, Manulife<br>
+</li>
+<li><a href="https://youtu.be/eztIZVzhSzo"><em>STUMPY: A powerful tool for modern time series analysis</em></a></li>
+<li>Nima Sarajpoor is a data scientist in Manulife, working in Fraud Detection. He has been contributing to the software STUMPY for about two years.</li>
+</ul></li>
+<li>Friday 22 September 2023, noon - 1pm
+<ul>
+<li><strong>Saloni Dattani</strong>, Our World in Data</li>
+<li><a href="https://youtu.be/cmm3Dw3dYBU"><em>Missing data in global health</em></a></li>
+<li>Saloni Dattani is a researcher on global health at Our World in Data, and an editor at <em>Works in Progress</em>. She’s interested in everything related to global health, epidemiology and meta-science.</li>
+</ul></li>
+</ul>
+</section>
+<section id="section-2" class="level2">
+<h2 class="anchored" data-anchor-id="section-2">2022</h2>
+<ul>
+<li>Friday, 16 December 2022, noon - 1pm
+<ul>
+<li><strong>Zane Schwartz</strong>, Investigative Journalism Foundation</li>
+<li>Zane Schwartz is the editor-in-chief of the <a href="www.theijf.org">Investigative Journalism Foundation</a>.</li>
+</ul></li>
+<li>Friday, 25 November 2022, noon - 1pm
+<ul>
+<li><strong>Marcel Fortin</strong>, U of T Map &amp; Data Library</li>
+<li><strong>Leanne Trimble</strong>, U of T Map &amp; Data Library</li>
+<li><a href="https://youtu.be/_Ec40JPOxcA"><em>Recent additions to the Map and Data Library</em></a></li>
+<li>The Map and Data Library’s data collections, software &amp; support, with a focus on recently acquired datasets.</li>
+<li>Leanne Trimble is a Data &amp; Statistics Librarian, and Marcel Fortin is Head, Map and Data Library.</li>
+</ul></li>
+<li>Friday, 18 November 2022, noon - 1pm
+<ul>
+<li><strong>Lindsay Katz</strong>, University of Toronto</li>
+<li><a href="https://youtu.be/lYOdCNJOusg"><em>A new, comprehensive database of all proceedings of the Australian Parliamentary Debates</em></a></li>
+<li>Lindsay Katz holds a Masters of Statistics from the University of Toronto and a Bachelor of Arts and Science from the University of Guelph where she specialized in Mathematical Science and International Development. At Guelph she worked with Professor Ryan Briggs to explore lived poverty in Africa using Afrobarometer data. At Toronto she works with Professor Monica Alexander to research demographic variation in short-term migration patterns using Facebook data, and with Professor Rohan Alexander to digitize the Australian parliamentary debates from 1901 to present. As an interdisciplinary researcher, she is interested in using statistics to better understand social processes in the world.</li>
+</ul></li>
+<li>Friday, 4 November 2022, noon - 1pm
+<ul>
+<li><strong>Maitreyee Sidhaye</strong> and <strong>Meggie Debnath</strong>, St.&nbsp;Michael’s Hospital, Unity Health Toronto</li>
+<li><a href="https://youtu.be/ltA_vOwrIWc"><em>The Things We Learned from Deploying AI in Healthcare</em></a></li>
+<li>Maitreyee and Meggie are data scientists in the Data Science &amp; Advanced Analytics (DSAA) unit at St.&nbsp;Michael’s Hospital in Toronto. DSAA is a multiteam unit in the hospital that provides data sciecne and machine learning solutions across a variety of problems: clinical prediction tools, staffing optimization, imaging, and more. DSAA works very closely with others in the hospital to collaborate on understanding problems and providing solutions. Maitreyee and Meggie will share their experiences and learnings from building and deploying machine learning tools in the hospital.</li>
+</ul></li>
+<li>Friday, 21 October 2022, noon - 1pm
+<ul>
+<li><strong>Meg Risdal</strong>, Kaggle (Google)</li>
+<li><a href="twitter.com/meganrisdal">Meg Risdal</a> is a lead Product Manager for Kaggle (a Google company) where she works with software developers, designers, and researchers to create great experiences for people learning ML, ML practitioners, and ML researchers.</li>
+</ul></li>
+<li>Friday, 14 October 2022, noon - 1pm
+<ul>
+<li><strong>April Wang</strong>, University of Michigan</li>
+<li><a href="https://youtu.be/SD1Ofp0F5is"><em>Reimagining Tools for Collaborative Data Science</em></a></li>
+<li><a href="https://aprilwang.me/">April Wang</a> is a Ph.D.&nbsp;candidate at University of Michigan School of Information, advised by Dr.&nbsp;Steve Oney and Dr.&nbsp;Christopher Brooks. Her research in human-computer interaction (HCI) explores barriers in real-world data science programming practices, and reimagines the workflow and interfaces for collaborative data science environments.</li>
+</ul></li>
+<li>Friday, 7 October 2022, noon - 1pm
+<ul>
+<li><strong>Rohan Alexander</strong>, University of Toronto</li>
+<li><a href="https://youtu.be/omvXLYpcKEY"><em>Rethinking data science</em></a></li>
+</ul></li>
+<li>Friday, 30 September 2022, noon - 1pm
+<ul>
+<li><strong>Emily Giambalvo</strong>, The Washington Post</li>
+<li><strong>Ence Morse</strong>, The Washington Post</li>
+<li><em>How the NFL blocks Black coaches</em></li>
+<li>Emily Giambalvo covers University of Maryland athletics for The Washington Post, where she has worked since June 2018. Emily grew up in South Carolina and graduated from the University of Georgia.</li>
+<li>Clara Ence Morse is an Investigative Reporting Workshop intern with The Washington Post’s data desk. She is a student at Columbia University and the editor in chief of the Columbia Daily Spectator.</li>
+</ul></li>
+<li>Thursday, 22 September 2022, 5pm - 6pm
+<ul>
+<li><strong>Melina Vidoni</strong>, Australian National University</li>
+<li><a href="https://melvidoni.rbind.io">Dr Vidoni</a> is a Lecturer at the Australian National University in the CECS School of Computing, where she continues her domestic and international collaborations with Canada and Germany. Dr Vidoni’s main research interests are mining software repositories, technical debt, software development, and empirical software engineering when applied to data science and scientific software.</li>
+</ul></li>
+<li>Friday, 9 September 2022, noon - 1pm
+<ul>
+<li><strong>Ryan Briggs</strong>, University of Guelph</li>
+<li><a href="https://youtu.be/dyLtxZM89iE"><em>Statistical power in political science</em></a></li>
+<li><a href="www.ryancbriggs.net">Ryan Briggs</a> is a social scientist at the University of Guelph</li>
+</ul></li>
+<li>Friday, 1 Apr 2022, noon - 1pm
+<ul>
+<li><strong>Brittany Witham</strong>, Geopolitica</li>
+<li><a href="https://youtu.be/x7ldixTA1aE"><em>Data science at a startup</em></a></li>
+<li>Originally from Melbourne, Australia, Brittany received her B.A. in International Studies from the University of Saskatchewan and started her career in economic development, equipping her with comprehensive knowledge of foreign direct investment and international business early in her career.She went on to obtain an M.A.&nbsp;in European and Russian Affairs from the University of Toronto in 2018, where she first discovered the potential of programming for political science and became fascinated with artificial intelligence (AI). Over the past three years, Brittany has worked in many facets of the AI industry, from leading research and development of new AI products for video game developers to building automated data pipelines for business intelligence and managing software engineering and client engagement teams. In that time, she has honed technical skills in full-stack development, machine learning, and data engineering. She recently struck out on her own to launch an online global event monitoring tool and deliver novel solutions to clients in the political risk and social enterprise sectors. Brittany is a firm believer in the potential for data-driven technologies for geopolitics and is excited to contribute to the many discoveries to be made in this space.</li>
+</ul></li>
+<li>Thursday, 24 March 2022, 5pm - 6pm
+<ul>
+<li><strong>Emi Tanaka</strong>, Monash University</li>
+<li><a href="https://youtu.be/sFdZb89Th9g"><em>An anthology of experimental designs</em></a></li>
+<li>Dr.&nbsp;Emi Tanaka is an assistant professor in statistics at Monash University whose primary interest is to develop impactful statistical methods and tools that can readily be used by practitioners. Her research area include data visualisation, mixed models and experimental designs, motivated primarily by problems in bioinformatics and agricultural sciences. She is currently the President of the Statistical Society of Australia Victorian Branch and the recipient of the Distinguished Presenter’s Award from the Statistical Society of Australia for her delivery of a wide-range of R workshops.</li>
+</ul></li>
+<li>Friday, 18 March 2022, noon - 1pm
+<ul>
+<li><strong>May Chan</strong>, University of Toronto, Library</li>
+<li><strong>Ramses Van Zon</strong>, University of Toronto, SciNet</li>
+</ul></li>
+<li>Friday, 11 March 2022, noon - 1pm
+<ul>
+<li><strong>Irena Papst</strong>, McMaster University</li>
+<li><a href="https://youtu.be/Oxk5Dulhnpw"><em>Using models to help guide pandemic response</em></a></li>
+<li>I’m a postdoctoral fellow in McMaster’s Mathematics &amp; Statistics department, where I work on mathematical modelling, especially of infectious disease dynamics. I did my PhD in Cornell’s Center for Applied Mathematics. I care deeply about reproducible research, clear scientific communication, good teaching, and big salads.</li>
+</ul></li>
+<li>Friday, 4 March 2022, noon - 1pm
+<ul>
+<li><strong>Maria Kamenetsky</strong>, University of Wisconsin-Madison</li>
+<li><a href="https://youtu.be/cjpoa59-obU"><em>Spatial clustering</em></a></li>
+<li>I am a PhD candidate in Epidemiology at the University of Wisconsin-Madison, where I also completed my MS in Statistics. My research focuses on methods in spatial epidemiology, specifically working on statistical methods and applications in spatial cluster detection.</li>
+</ul></li>
+<li>Friday, 18 February 2022, noon - 1pm
+<ul>
+<li><strong>Vincent Arel-Bundock</strong>, Université de Montréal</li>
+<li><a href="https://youtu.be/zrBhtXwZnB8"><em>What <code>modelsummary</code> taught me about R package development</em></a></li>
+<li>I am a political science professor at the Université de Montréal.</li>
+</ul></li>
+<li>Friday, 11 February 2022, noon - 1pm
+<ul>
+<li><strong>Silvia Canelón</strong>, University of Pennsylvania</li>
+<li><a href="https://youtu.be/4M8Op1oCN5U"><em>Lessons Learned from EHR Research</em></a></li>
+<li>Silvia Canelón is a postdoctoral research scientist in the Department of Biostatistics, Epidemiology, and Informatics at the University of Pennsylvania where she applies biomedical informatics to population health research. She uses R to work on projects that develop novel data mining methods to extract pregnancy-related information from Electronic Health Records (EHR) and that study the relationship between environment and disease.</li>
+</ul></li>
+<li>Friday, 4 February 2022, noon - 1pm
+<ul>
+<li><strong>Nick Huntington-Klein</strong>, Seattle University</li>
+<li><a href="https://youtu.be/dOJvE3C2KrY">The Influence of Hidden Researcher Decisions in Applied Microeconomics</a></li>
+<li>I am an economics professor at Seattle University, with research that focuses on higher education, econometrics, and metascience.</li>
+</ul></li>
+<li>Friday, 28 January 2022, noon - 1pm
+<ul>
+<li><strong>Ashok Chaurasia</strong>, University of Waterloo</li>
+<li><a href="https://youtu.be/qFCHjNH9HLc"><em>Multiple Imputation: Old and New Combining Rules for Statistical Inference</em></a></li>
+<li>Dr.&nbsp;Ashok Chaurasia is an Assistant Professor (of Statistics) in the School of Public Health Sciences at University of Waterloo. His background/training is in Statistics, with research interests in topics of Missing Data, Data Imputation, Model Selection, and Longitudinal Data Analysis Methodology.</li>
+</ul></li>
+</ul>
+</section>
+<section id="section-3" class="level2">
+<h2 class="anchored" data-anchor-id="section-3">2021</h2>
+<ul>
+<li>Friday, 10 December 2021, noon - 1pm
+<ul>
+<li><strong>Nathan Taback</strong>, Departments of Statistical Sciences</li>
+<li><a href="https://youtu.be/99pOuO_TD5w">Teaching data science</a></li>
+<li><a href="https://utstat.toronto.edu/nathan/">Nathan Taback</a> is the director of Data Science programs and an Associate Professor, Teaching Stream in the Department of Statistical Sciences, and Computer Science (cross-appointed) at the University of Toronto. He currently serves as a Special Advisor to the Dean of Arts and Science on Computational and Data Science Education.</li>
+</ul></li>
+<li>Friday, 3 December 2021, noon - 1pm
+<ul>
+<li><strong>Leanne Trimble</strong>, UofT Libraries</li>
+<li><a href="https://youtu.be/rxnShSHwBXU">Data science and libraries</a></li>
+<li>Leanne Trimble is a data librarian at the Map &amp; Data Library, University of Toronto Libraries.</li>
+</ul></li>
+<li>Friday, 26 November 2021, noon - 1pm
+<ul>
+<li><strong>Kieran Campbell</strong>, Lunenfeld Tanenbaum Research Institute</li>
+<li><a href="https://youtu.be/PuQhyGj3G3o">Data science and Biomedicine</a></li>
+<li><a href="https://www.camlab.ca">Dr Kieran Campbell</a> is an investigator at the Lunenfeld-Tanenbaum Research Institute and an assistant professor at the Departments of Molecular Genetics and Statistical Sciences, University of Toronto. His research focusses on Bayesian models and machine learning for high dimensional biomedical data, including single-cell and cancer genomics. Recently, he has led efforts to develop statistical machine learning methodology to integrate single-cell RNA and DNA sequencing data to uncover the effects of tumour clonal identity on gene expression, as well as methods to automatically delineate the tumour microenvironment from single-cell RNA-sequencing data. Such findings can improve our understanding of cancer progression and of why certain tumours are resistant to therapies, leading to relapse.</li>
+</ul></li>
+<li>Friday, 19 November 2021, noon - 1pm
+<ul>
+<li><strong>Radu Craiu</strong>, Statistical Sciences, University of Toronto</li>
+<li><a href="https://youtu.be/B7EKLFotknU">Data science and statistical sciences</a></li>
+<li><a href="https://utstat.toronto.edu/craiu/">Dr Radu V. Craiu</a> is Professor and Chair of Statistical Sciences at the University of Toronto. His main research interests are in computational methods in statistics, especially, Markov chain Monte Carlo algorithms (MCMC), Bayesian inference, copula models, model selection procedures and statistical genetics.</li>
+</ul></li>
+<li>Friday, 12 November 2021, noon - 1pm
+<ul>
+<li><strong>Ann Glusker</strong>, Doe Library, University of California Berkeley</li>
+<li><a href="https://youtu.be/139xCz-e0tg">“Supporting Big Data Research at the University of California, Berkeley”</a></li>
+<li>Dr Ann Glusker is Librarian for Sociology, Demography, Public Policy, Psychology (fall 2021) &amp; Quantitative Research at the Doe Library, University of California, Berkeley. She will discuss a recently released <a href="https://escholarship.org/uc/item/4403c0f4">report</a> ‘Supporting Big Data Research at the University of California, Berkeley’. This report provides insights on researcher practices and challenges in six thematic areas: data collection &amp; processing; analysis: methods, tools, infrastructure; research outputs; collaboration; training; and balancing domain vs data science expertise.</li>
+</ul></li>
+<li>Friday, 5 November 2021, noon - 1pm
+<ul>
+<li><strong>Yun William Yu</strong>, Math Department, UofT; UTSC Computer &amp; Mathematical Sciences</li>
+<li><a href="https://youtu.be/-1jpjM2nP2Y">Data science and math</a></li>
+<li><a href="https://www.math.toronto.edu/cms/people/faculty/yu-yun-william/">Yun William Yu</a> is an assistant professor in the math department at UofT whose research focuses on algorithmic methods for computational biology and medical informatics.</li>
+</ul></li>
+<li>Friday, 29 October 2021, noon - 1pm
+<ul>
+<li><strong>Josh Speagle</strong>, Astronomy &amp; Astrophysics, Dunlap Institute, Statistical Sciences</li>
+<li><a href="https://youtu.be/fHk3Fy1TxQY">Data science and astronomy</a></li>
+<li><a href="https://joshspeagle.github.io">Josh</a> is a Banting &amp; Dunlap Postdoctoral Fellow at the University of Toronto whose research focuses on using astrostatistics and “data science” to understand how galaxies like our own Milky Way form, behave, and evolve.</li>
+</ul></li>
+<li>Friday, 22 October 2021, noon - 1pm
+<ul>
+<li><strong>Tegan Maharaj</strong>, Faculty of Information</li>
+<li><a href="https://youtu.be/SP3bZ3uHyTg">Data science and information</a></li>
+<li>I study AI systems and “what goes into” them, e.g.&nbsp;their real-world deployment context, and the effects that has on learning behaviour and generalization. I do that because I want to be able to use AI systems responsibly for problems I think are important, like impact and risk assessments for climate change, AI alignment, ecological management and other common-good problems. My website is: http://www.teganmaharaj.com/.</li>
+</ul></li>
+<li>Friday, 15 October 2021, noon - 1pm
+<ul>
+<li><strong>Drew Stommes</strong>, Department of Political Science, Yale University</li>
+<li><em>On the reliability of published findings using the regression discontinuity design in political science</em></li>
+<li><a href="https://drew-stommes.github.io">Drew Stommes</a> is a doctoral candidate in the Department of Political Science at Yale University, where he researches democracy, political violence, and quantitative methods. He will talk about a recent <a href="https://arxiv.org/abs/2109.14526">working paper</a>.</li>
+</ul></li>
+<li>Friday, 8 October 2021, noon - 1pm
+<ul>
+<li><strong>Fedor Dokshin</strong>, Department of Sociology</li>
+<li><a href="https://youtu.be/QjTsDbH6MxM">Data science and sociology</a></li>
+<li><a href="http://www.fedordokshin.org/">Fedor Dokshin</a> is an Assistant Professor of Sociology at the University of Toronto. He is a computational social scientist with research interests in social networks, organizations, and energy and the environment. Across these domains, Fedor leverages data science methods and novel data sources to improve existing measurement strategies.</li>
+</ul></li>
+<li>Friday, 1 October 2021, noon - 1pm
+<ul>
+<li><a href="https://youtu.be/pCwJXgR7V5k"><em>The 2021 Canadian Election</em></a></li>
+<li><strong>David Andrews</strong></li>
+<li><strong>Daniel Rubenson</strong></li>
+<li><strong>Johnson Vo</strong></li>
+<li><strong>Eric Zhu</strong></li>
+<li><strong>Brian Diep</strong></li>
+<li><strong>Ashely (Jing Yuan) Zhang</strong></li>
+<li><strong>Kristin (Xi Yu) Huang</strong></li>
+<li><strong>Tanvir Hyder</strong></li>
+</ul></li>
+<li>Friday, 24 September 2021, noon - 1pm
+<ul>
+<li><strong>Karen Chapple</strong>, Department of Geography and Planning/School of Cities</li>
+<li><a href="https://youtu.be/rNRwOStrb9o">Data science and geography, planning, cities</a></li>
+<li><a href="http://karenchapple.com">Karen Chapple</a> is the inaugural Director of the School of Cities and Professor of Geography and Planning at the University of Toronto. Her research uses data science methods to identify and predict gentrification and displacement in cities. She is Professor Emerita at the University of California, Berkeley, where she helped to launch the undergraduate data science program.</li>
+</ul></li>
+<li>Friday, 20 August 2021, noon - 1pm
+<ul>
+<li><strong>Jessica Long</strong>, <strong>Simone Collier</strong>, <strong>Vinky Wang</strong>, <strong>Sophie Berkowitz</strong>, and <strong>Yun-Hsiang Chan</strong>, University of Toronto</li>
+<li><a href="https://youtu.be/p697exbcMZE"><em>Using statistical model to analyzing shark, lizard, and basketball movement data</em></a></li>
+<li>Jessica Long, Simone Collier, Vinky Wang, Sophie Berkowitz, and Yun-Hsiang Chan are undergraduate students at the University of Toronto.</li>
+</ul></li>
+<li>Friday, 13 August 2021, noon - 1pm
+<ul>
+<li><a href="https://youtu.be/zkuMedB23f8"><em>Independent Summer Statistics Community projects</em></a></li>
+<li>‘Prospective Analytics’: <strong>Ashley Zhang</strong>, <strong>Eric Zhu</strong>, <strong>Muhammad Tsany</strong> and <strong>Sergio Zheng Zhou</strong>.</li>
+<li>‘Statistically Significant’: <strong>Aliza Lakho</strong>, <strong>Chloris Jiang</strong>, <strong>Janhavi Agarwal</strong>, and <strong>José Casas</strong> on whether young professionals should move to Toronto.</li>
+<li>‘Point Zero Five’: <strong>Pan Chen</strong>, <strong>Xiaoxuan Han</strong>, <strong>Yi Qin</strong>, and <strong>Yini Mao</strong> on the livability of Toronto for newcomers.</li>
+</ul></li>
+<li>Friday, 6 August 2021, 12:30pm - 1pm
+<ul>
+<li><strong>Ijeamaka Anyene</strong>, Kaiser Permanente Division of Research</li>
+<li><a href="https://youtu.be/LlVf8foXUmM"><em>Taking the next step past standard charts</em></a></li>
+<li><a href="https://ijeamaka-anyene.netlify.app">Ijeamaka</a> is a data analyst working in healthcare research. She specializes in using R and SAS for data analysis, epidemiological research, and data visualizations. She is also passionate about computational art, knowledge sharing / dissemination, and how to mix the two.</li>
+</ul></li>
+<li>Friday, 30 July 2021, noon - 1pm
+<ul>
+<li><strong>Keli Chiu</strong>, University of Toronto</li>
+<li><a href="https://youtu.be/xmmoVD5zTOQ">Detecting sexist and racist text contents with explanations accompanied with GPT-3</a></li>
+<li><a href="http://kelichiu.com/">Keli Chiu</a> is a recent graduate of master in Information at the University of Toronto with the concentration in Human-Centred Data Science. Prior to pursuing her master in the information fields, she worked as a web developer and fell in love with data. Her research interests are natural language processing applications, text analysis and ethics in AI and machine learning. She received rstudio::global Diversity Scholarships in the year of 2021.</li>
+</ul></li>
+<li>Friday, 23 July 2021, noon - 1pm
+<ul>
+<li><strong>Annie Collins</strong> and <strong>Rohan Alexander</strong>, University of Toronto</li>
+<li><a href="https://youtu.be/_ncpTbhe8qA"><em>Reproducibility of COVID-19 pre-prints</em></a></li>
+<li>Annie Collins is an undergraduate student at the University of Toronto specializing in applied mathematics and statistics with a minor in history and philosophy of science. In her free time, she focusses her efforts on student governance, promoting women’s representation in STEM, and working with data in the non-profit and charitable sector.</li>
+<li>Rohan Alexander is an assistant professor at the University of Toronto in Information and Statistical Sciences, and a faculty affiliate at the Schwartz Reisman Institute for Technology and Society. He holds a PhD in Economics from the Australian National University.</li>
+</ul></li>
+<li>Friday, 16 July 2021, noon - 1pm
+<ul>
+<li><strong>Kamilah Ebrahim</strong>, University of Toronto</li>
+<li><a href="https://youtu.be/f_3bpEeRdhI"><em>Trust in contact tracing apps</em></a></li>
+<li>Kamilah Ebrahim received a B.A. in Economics from the University of Waterloo in 2019 and is currently pursuing a Masters of Information in Human Centred Data Science at the University of Toronto. Kamilah is a 2020-21 Graduate Fellow at the University of Toronto Centre for Ethics focusing on the intersection between race, economics and data monopolies in Canada. Prior to joining the University of Toronto she held roles at the United Nation Economic and Social Commission for Asia and the Pacific (UN ESCAP), as well as the Canadian federal government.</li>
+</ul></li>
+<li>Friday, 2 July 2021, noon - 1pm
+<ul>
+<li><strong>Zachary McCaw</strong>, Google</li>
+<li>Zachary McCaw is a data scientist at Google.</li>
+</ul></li>
+<li>Friday, 25 June 2021, noon - 1pm
+<ul>
+<li><strong>Laura Derksen</strong>, University of Toronto Mississauga</li>
+<li><a href="https://youtu.be/Coz-HFesTsw"><em>The impact of student access to Wikipedia</em></a></li>
+<li><a href="https://sites.google.com/site/lauraderksen">Laura</a> is the Amgen Canada Professor in Health System Strategy at the University of Toronto Mississauga and assistant professor in Strategic Management at the Rotman School of Management. Her research interests are development and global health education, information and networks.</li>
+</ul></li>
+<li>Friday, 18 June 2021, noon - 1pm
+<ul>
+<li><strong>Jacob Matson</strong>, Simetric</li>
+<li><a href="https://youtu.be/U8-6QKtWXCQ"><em>From data ask to dashboard</em></a></li>
+<li><a href="https://www.linkedin.com/in/jacobmatson">Jacob</a> is VP of Finance &amp; Operations at <a href="https://simetric.com">Simetric, Inc.</a>.</li>
+</ul></li>
+<li>Friday, 11 June 2021, noon - 1pm
+<ul>
+<li><strong>Laura Bronner</strong>, Data scientist</li>
+<li><a href="https://youtu.be/LI5m9RzJgWc"><em>Quantitative editing</em></a></li>
+<li><a href="https://www.laurabronner.com">Laura</a> is a data scientist, who most recently worked as the quantitative editor at FiveThirtyEight. More generally, she is a data scientist with an interest in causal inference, political science and quantitative text analysis. Before FiveThirtyEight, she was a Senior Analyst at the Analyst Institute, designing and analyzing field experiments for the 2018 election cycle. In September 2018, she completed a PhD in Political Science at the London School of Economics’ Department of Government.</li>
+</ul></li>
+<li>Friday, 4 June 2021, noon - 1pm
+<ul>
+<li><strong>Heather Krause</strong>, We All Count</li>
+<li><a href="https://youtu.be/Yu_l8MpKK-E"><em>Equity in Data (or, how not to accidentally use data like a racist, sexist, colonialist, etc)</em></a></li>
+<li><a href="https://weallcount.com">Heather</a> remains unconvinced. As a statistician with decades of global experience working on complex data problems and producing real-world knowledge, she has developed the Data Equity Framework to address the equity issues in data products and research projects. Her emphasis is on combining strong statistical analysis with clear and meaningful communication. She is currently working on implementing tools for equity and ethics in data. As the founder of two successful data science companies, she attacks the largest questions facing societies today, working with both civic and corporate organizations to improve outcomes and lives. Her relentless pursuit of clarity and realism in these projects pushed her beyond pure analysis to mastering the entire data ecosystem including award-winning work in data sourcing, modeling, and data storytelling, each incorporating bleeding edge theory and technologies. Heather is the founder of We All Count, a project for equity in data working with teams across the globe to embed a lens of ethics into their data products from funding to data collection to statistical analysis and algorithmic accountability. Her unique set of tools and contributions have been sought across a range of clients from MasterCard and Volkswagen to the United Nations, the Syrian Refugee Resettlement Secretariat, Airbnb, and the Bill and Melinda Gates Foundation. She is on the Data Advisory Board of the UNHCR.</li>
+</ul></li>
+<li>Friday, 28 May 2021, noon - 1pm
+<ul>
+<li><strong>Samantha Pierre</strong>, University of Toronto</li>
+<li><a href="https://youtu.be/rFojvBN0qGk"><em>And The Nominees Are… An Empirical Study of the Effects of a Tony Award Win and Nomination on a Show’s Success</em></a></li>
+<li>Samantha is a fourth-year statistics student studying at the University of Toronto. Throughout the past year she has combined her love for theatre and statistics to analyze trends in the theatre community. She volunteers as a member of PAIR-CG to create a representational framework for the international theatre community. She currently works at WOMBO, an app developed by former U of T students, as head of music content.</li>
+</ul></li>
+<li>Friday, 21 May 2021, noon - 1pm
+<ul>
+<li><strong>David Shor</strong>, OpenLabs</li>
+<li><a href="https://youtu.be/_IEPKapa9_0">Political data science</a>.</li>
+<li><a href="https://davidshor.io">David</a> is an American data scientist who tries to elect Democrats. He is known for analyzing political polls and currently serves as head of data science with OpenLabs, a progressive nonprofit, and also as a Senior Fellow with the Center for American Progress Action Fund.</li>
+</ul></li>
+<li>Thursday, 22 April, 4:30-5:30pm
+<ul>
+<li><em>Panel on teaching data-focused topics</em></li>
+<li><strong>Aimee Schwab-McCoy</strong>, Creighton University</li>
+<li><strong>Ashley Juavinett</strong>, UC San Diego</li>
+<li><strong>Chris Papalia</strong>, St.&nbsp;Andrew’s College</li>
+<li><strong>Samantha-Jo Caetano</strong>, University of Toronto</li>
+<li><a href="https://aimeeschwab-mccoy.github.io">Aimee Schwab-McCoy</a> is an Assistant Professor of Statistics at Creighton University. <a href="https://ashleyjuavinett.com">Ashley Juavinett</a> is a neuroscientist, an educator, and a writer, currently working as an Assistant Teaching Professor at UC San Diego. Chris Papalia is a Mathematics and Science Teacher and Head of House at St.&nbsp;Andrew’s College. Samantha-Jo Caetano is an Assistant Professor, Teaching Stream, at the University of Toronto.</li>
+</ul></li>
+<li>Thursday, 15 April, 4:30-5:30pm
+<ul>
+<li><strong>Emily A. Sellars</strong>, Yale University</li>
+<li><em>Missing data and mis-measurement in Mexico’s 1900 census and the Historical Archive of Localities (AHL)</em></li>
+<li><a href="https://emilysellars.com">Emily A. Sellars</a> is an assistant professor in the Department of Political Science at Yale University. Before coming to Yale, she was an assistant professor in the Bush School of Government and Public Service at Texas A&amp;M University and a postdoctoral scholar at the University of Chicago’s Harris School of Public Policy. She received her Ph. D. in Political Science and Agricultural and Applied Economics from the University of Wisconsin–Madison in 2015. Her research interests are at the intersection of political economy and development economics. Her research examines the political economy of emigration and population.</li>
+</ul></li>
+<li>Thursday, 8 April, 4:30-5:30pm
+<ul>
+<li><a href="https://youtu.be/2M32PbclTnE"><em>Mining Process Models from Email Data</em></a></li>
+<li><strong>Faria Khandaker</strong>, University of Toronto</li>
+<li>Faria is a 2nd year student of the Information Systems and Design Concentration at the Faculty of Information and is one of the co-hosts of the Toronto Data Workshop. She holds an Honour’s Bachelor of Science Degree in Anthropology and Human Biology from the University of Toronto Scarborough. Since starting her masters, she became interested in research related to data-driven decision making within organizations. Under the supervision of Professor Arik Senderovich, she is researching topics related to the application of Machine Learning within the field of Process Mining and exploring various methodologies for gaining insights from email driven business processes.</li>
+<li>Faria will discuss mining process models from email data.</li>
+</ul></li>
+<li>Thursday, 1 April, 4:30-5:30pm
+<ul>
+<li><strong>Vik Pant</strong>, Natural Resources Canada</li>
+<li><em>Supporting the Integration of Science and Policy through Data Science and Artificial Intelligence</em></li>
+<li>Dr.&nbsp;Vik Pant is the Chief Scientist and Chief Science Advisor of Natural Resources Canada (NRCan). He leads the Office of the Chief Scientist at NRCan and reports directly to the Deputy Minister. His office oversees the development and implementation of evidence-based science policy across NRCan sectors and agencies. His office also manages NRCan’s enterprise-wide technology strategy and portfolio of science products. He also runs the Digital Accelerator, which is an innovation platform for designing and launching AI-driven software products in NRCan. Vik is also the Founder of Synthetic Intelligence Forum, which is a leading community of practice focused on the industrial application of Artificial Intelligence (AI). He earned a doctorate from the Faculty of Information (iSchool) in the University of Toronto, a master’s degree in business administration with distinction from the University of London, a master’s degree in information technology from Harvard University, where he received the Dean’s List Academic Achievement Award, and an undergraduate degree in business administration from Villanova University. Vik serves as an Adjunct Professor in the Faculty of Information (iSchool) at the University of Toronto.</li>
+</ul></li>
+<li>Thursday, 25 March, 4:30-5:30pm
+<ul>
+<li><strong>Alex Cookson</strong>, Muse</li>
+<li><a href="https://youtu.be/E2aRKZczqKY">The power of great datasets</a></li>
+<li><a href="https://www.alexcookson.com/">Alex Cookson</a> is a Data Scientist at <a href="https://choosemuse.com/">Muse</a>, where he helps make the most of their data. In his spare time, you can find him participating in Tidy Tuesday or thinking up cool datasets to explore. And when he’s not doing that, he’s probably cycling around Toronto or doting on his two cats, Tom Tom and Ruby.</li>
+<li>Alex will explore the power of great datasets, and discuss the importance of interesting, fun datasets as a way to guide and motivate learning R.</li>
+</ul></li>
+<li>Thursday, 18 March, 4:30-5:30pm
+<ul>
+<li><strong>Sofia Ruiz-Suarez</strong>, National University of Comahue</li>
+<li><a href="https://youtu.be/GMi5nLl4wos"><em>Animal tracking data</em></a></li>
+<li><a href="https://twitter.com/sofiruizsuarez">Sofia Ruiz-Suarez</a> holds an undergraduate degree in mathematics from the University of Buenos Aires and now is a PhD candidate at the institute for Research on Biodiversity and Environment. She also teaches mathematics at the University of Comahue and leads R-Ladies at her local city. Her research is focused on Bayesian statistics with applications in animal behaviour and movement.</li>
+</ul></li>
+<li>Monday, 15 March, 4:00-5:00pm
+<ul>
+<li><strong>Todd Feathers</strong>, Freelance reporter</li>
+<li><a href="https://youtu.be/Hw5viOofnC0"><em>Major Universities are Using Race as a “High Impact Predictor” of Student Success</em></a></li>
+<li>Jointly hosted with <a href="https://maryclare.github.io">Maryclare Griffin</a>, University of Massachusetts Amherst.</li>
+<li><a href="https://www.toddfeathers.com">Todd Feathers</a> is a freelance journalist covering artificial intelligence, surveillance, and the technologies changing our world. He spent years at daily newspapers reporting on politics, criminal justice, and health care. On every beat, new tech is solving problems and creating them. His goal is to use data, scientific research, and inside sources to cut through the hype and examine what our gadgets and algorithms really do.Writing in Vice, OneZero, The Wall Street Journal, and others.</li>
+</ul></li>
+<li>Thursday, 11 March, 4:30-5:30pm
+<ul>
+<li><strong>Lucas Cherkewski</strong>, Canadian Digital Service</li>
+<li><a href="https://youtu.be/6vDedpF0lfg"><em>Using publicly-available data to better understand the government’s operations</em></a></li>
+<li><a href="https://lucascherkewski.com">Lucas Cherkewski</a> is a policy advisor at the Canadian Digital Service (CDS). He helps delivery teams improve government services. From that experience, he advises on structural changes to make better services the default. This work includes plenty of data-enabled research and analysis—Lucas is in a happy place when his work leads him to spend an afternoon poking around a dataset, trying to better understand government so he can help change it.</li>
+</ul></li>
+<li>Thursday, 4 March, 4:30-5:30pm
+<ul>
+<li><strong>Petros Pechlivanoglou</strong>, The Hospital for Sick Children (SickKids) Research Institute</li>
+<li><a href="https://youtu.be/-aZjLCPsO_w"><em>Simulation and retrospective data for health economic decision making</em></a></li>
+<li>Petros Pechlivanoglou, PhD, is a Scientist at The Hospital for Sick Children (SickKids) Research Institute and an Assistant Professor at the University of Toronto, Institute of Health Policy Management and Evaluation. He studied economics in his native country, Greece, econometrics at the University of Groningen, the Netherlands and obtained a PhD in health econometrics from the same university. He completed a post-doctoral fellowship at the University of Toronto, within the Toronto Health Economics and Technology Assessment (THETA) Collaborative where he focused on methodological aspects around the application of decision analysis in health-care policy.</li>
+</ul></li>
+<li>Thursday, 18 February, 4:30-5:30pm
+<ul>
+<li><a href="https://youtu.be/aeAXvW3K_wU"><em>University of Toronto DoSS toolkit launch</em></a></li>
+<li><em>Special guest Bethany White (Department of Statistical Sciences).</em></li>
+<li><strong>Annie Collins, Haoluan Chen, Isaac Ehrlich, Mariam Walaa, Marija Pejcinovska, Mathew Wankiewicz, Michael Chong, Paul Hodgetts, Rohan Alexander, Samantha-Jo Caetano, Shirley Deng, and Yena Joo</strong>, University of Toronto</li>
+<li>The DoSS toolkit is a series of self-paced lessons that students can go through ahead of class, to achieve badges for various levels of accomplishment with R. Instructors can use the badges to work out the level of the class and either direct students to the toolkit to address deficiencies or cover missing aspects themselves.</li>
+</ul></li>
+<li>Monday, 15 February, Noon-1:00pm
+<ul>
+<li><strong>Emily Riederer</strong>, Capital One</li>
+<li><a href="https://youtu.be/VP3BBZ7poc0"><em>Causal design patterns for data analysts</em></a></li>
+<li><a href="https://emilyriederer.netlify.app">Emily</a> is a Senior Analytics Manager at Capital One. Emily’s team focuses on reimagining analytical infrastructure by building data products, elevating business analysis with novel data sources and statistical methods, and providing consultation and training to partner teams.</li>
+</ul></li>
+<li>Thursday, 11 February, 4:30-5:30pm
+<ul>
+<li><strong>Garrick Aden-Buie</strong>, R Studio</li>
+<li><a href="https://youtu.be/Hl798H6J-bg"><em>Using R Markdown in general and in some specific projects</em></a></li>
+<li><a href="https://www.garrickadenbuie.com">Garrick</a> is a Data Science Educator at RStudio who lives in sunny St.&nbsp;Petersburg, Florida. His passion is combining creative coding with programming education, using code to build tools that teach coding to new and advanced R users alike. Like tidyexplain: a project that used ggplot2 and gganimate to reimagine database operations as colorful flying boxes instead of the typical Venn diagrams. Garrick has developed a number of open source addins and packages for RStudio—such regexplain, shrtcts and rsthemes—and is always easily distracted by projects that combine R Markdown and online learning or teaching.</li>
+</ul></li>
+<li>Thursday, 4 February, 4:30-5:30pm
+<ul>
+<li><strong>Kathy Ge</strong>, Uber</li>
+<li><a href="https://youtu.be/UYzXElJTovg"><em>How data insights and experimentation help drive product design and intelligent recommendations on the Uber Eats platform</em></a></li>
+<li>Kathy is a data scientist with Uber Eats primarily focused on the shopping experience including ranking and recommendations throughout the order flow. She received her M.Sc. in Computer Science and B.Sc in Computer Science and Statistics from the University of Toronto.</li>
+</ul></li>
+<li>Thursday, 28 January, 4:30-5:30pm
+<ul>
+<li><strong>Irene Duah-Kessie</strong>, University of Toronto</li>
+<li><a href="https://youtu.be/xwWvOeSXu5o"><em>Exploring algorithmic bias and fairness and its impact on health outcomes faced by racialized communities</em></a></li>
+<li>Irene Duah-Kessie is a graduate of the University of Toronto’s Master of Science in Sustainability Management program. Throughout her studies, Irene published her research on racial income inequality in Toronto with the Wellesley Institute and is currently a part of the Turtle Island Journal of Indigenous Health Editorial Team. Irene is a Project Manager at Across Boundaries leading an initiative to address food security and mental health challenges in Toronto’s Black community. She is also the founder of Rise In STEM, a grassroots organization that aims to increase access to STEM learning opportunities in Black and marginalized communities.</li>
+</ul></li>
+<li>Wednesday, 20 January, 4:30-5:30pm
+<ul>
+<li><strong>Zia Babar</strong>, University of Toronto</li>
+<li><a href="https://youtu.be/fdVZqvECXXQ"><em>Derivative data security</em></a></li>
+<li>Zia Babar obtained his PhD from the University of Toronto where his research studies focused on the analysis and design of data-centered information systems for enabling enterprise transformation. He is engaged in a multi-year research engagement with IBM Research Labs and is a startup technical mentor at WeWork Labs. He is the organizer of technology meetup groups in both Toronto and Waterloo, and a course instructor at the Faculty of Information, University of Toronto.</li>
+</ul></li>
+<li>Thursday, 14 January, 4:30-5:30pm
+<ul>
+<li><strong>Andrew Miles</strong>, University of Toronto</li>
+<li><a href="https://youtu.be/mdjOoKT-f7E"><em>Code, plots, and values.</em></a></li>
+<li><em>Jointly hosted with Elizabeth Parke and the UTM Collaborative Digital Research Space.</em></li>
+<li><a href="http://www.andrewamiles.com">Andrew Miles</a> is Assistant Professor of Sociology at the University of Toronto and Director of the Morality, Action, and Cognition Lab.</li>
+</ul></li>
+</ul>
+</section>
+<section id="section-4" class="level2">
+<h2 class="anchored" data-anchor-id="section-4">2020</h2>
+<ul>
+<li>Thursday, 17 December 2020, 4-5pm
+<ul>
+<li><strong>Liza Bolton</strong>, University of Toronto</li>
+<li><strong>Maria Tackett</strong>, Duke University</li>
+<li><strong>Nathalie Moon</strong>, University of Toronto</li>
+<li><strong>Teon Brooks</strong>, Mozilla Firefox</li>
+<li>“<a href="https://youtu.be/c3R6pZisvm0">Panel discussion on teaching data-focused topics</a>”</li>
+<li><a href="https://www.statistics.utoronto.ca/people/directories/all-faculty/liza-bolton">Liza Bolton</a> is an Assistant Professor, Teaching Stream, at the University of Toronto. <a href="https://www.mariatackett.net/">Maria Tackett</a> is an Assistant Professor of the Practice in the Department of Statistical Science at Duke University. <a href="https://www.statistics.utoronto.ca/people/directories/all-faculty/nathalie-moon">Nathalie Moon</a> is an Assistant Professor, Teaching Stream, University of Toronto. <a href="https://teonbrooks.com/">Teon L. Brooks</a>, holds a PhD in experimental psychology from NYU, and now works as a data scientist for <a href="https://mozilla.org">Mozilla Firefox</a>. He also serves as the technical advisor and President of <a href="https://wp.nyu.edu/brainwaves">BrainWaves</a>, an NIH-funded project to teach experimentation and cognitive neuroscience to high school students in NYC, and has co-founded Computation in Education Labs (<a href="https://cielabs.org">CIEL</a>), a nonprofit that aims to further the mission of the BrainWaves project while focusing on data science and computational thinking.</li>
+</ul></li>
+<li>Thursday, 10 December 2020, 4-5pm
+<ul>
+<li><strong>Shabrina Mardevi</strong>, United Nations Population Fund and University of Toronto</li>
+<li><strong>Romesh Silva</strong>, United Nations Population Fund</li>
+<li>“<a href="https://youtu.be/kfmKusnGDLI">Population data estimation</a>”</li>
+<li>Shabrina is a Masters of Information student at the University of Toronto and a Population Data Estimation and Analysis Intern at the United Nations Population Fund. Romesh holds a PhD in Demography from the University of California, Berkeley, and is a Technical Specialist, Health &amp; Social Inequalities, at the United Nations Population Fund.</li>
+</ul></li>
+<li>Thursday, 3 December 2020, 5-6pm
+<ul>
+<li><strong>Monica Alexander</strong>, University of Toronto</li>
+<li>“<a href="https://youtu.be/xM1vf_KT76g">Using Facebook advertising data to estimate migration</a>”</li>
+<li><a href="https://www.monicaalexander.com/about/">Monica Alexander</a> is an Assistant Professor in Statistical Sciences and Sociology at the University of Toronto. She received her PhD in Demography from the University of California, Berkeley. Her research interests include statistical demography, mortality and health inequalities, and computational social science. Monica will talk about using Facebook advertising data to estimate migration.</li>
+</ul></li>
+<li>Thursday, 19 November 2020, 4-5pm
+<ul>
+<li><strong>Michael Chong</strong>, University of Toronto</li>
+<li>“<a href="https://youtu.be/xM1vf_KT76g">High-throughput Bayesian modelling workflow</a>”</li>
+<li><a href="https://michael-chong.github.io/">Michael</a> is a PhD student in the Department of Statistical Sciences at the University of Toronto building models for demographic estimation. Previously, he completed his BSc in Integrated Science at McMaster University.</li>
+<li>Michael will discuss lessons from a high-throughput Bayesian modelling workflow.</li>
+</ul></li>
+<li>Thursday, 12 November 2020, 4-5pm
+<ul>
+<li><strong>Kevin Armstrong</strong>, University of Toronto</li>
+<li>“Measuring poverty for NGOs”</li>
+<li>Kevin Armstrong is a Masters of Information student at the University of Toronto, and a data consultant for ‘Women’s Integrated Sexual Health’ (<a href="https://www.ippf.org/our-approach/programmes/womens-integrated-sexual-health-wish">WISH</a>) - a three-year program delivering integrated health care in 16 countries in Africa and South Asia.</li>
+</ul></li>
+<li>Monday, 9 November 2020, 4-5pm
+<ul>
+<li><strong>Tom Cardoso</strong>, Globe and Mail</li>
+<li>“Bias Behind Bars”</li>
+<li><a href="https://www.theglobeandmail.com/authors/tom-cardoso/">Tom Cardoso</a> is a crime and justice reporter and data journalist for The Globe and Mail.</li>
+<li>Tom will discuss his <a href="https://www.theglobeandmail.com/canada/article-investigation-racial-bias-in-canadian-prison-risk-assessments/">Bias Behind Bars</a> series of articles which show Black and Indigenous inmates in Canada are more likely to get worse scores than white inmates, based solely on their race.</li>
+</ul></li>
+<li>Thursday, 5 November 2020, 4-5pm
+<ul>
+<li><strong>Andrew Whitby</strong>, Industry data scientist</li>
+<li>“Censuses: The sum of the people”</li>
+<li><a href="https://andrewwhitby.com">Andrew</a> is a data scientist and economist currently looking for his next challenge. He is particularly interested in the economics of technology, creativity, innovation and growth. He wrote <em>The Sum of the People: How the Census Has Shaped Nations from the Ancient World to the Modern Age</em> which was published in March 2020. Previously, he worked as a Data Scientist at the World Bank, and at Nesta, the UK’s innovation think tank. His academic background combines economics, statistics and computer science. He completed his doctoral research in the Department of Economics at the University of Oxford.</li>
+</ul></li>
+<li>Thursday, 29 October 2020, 4-5pm
+<ul>
+<li><strong>Fei Chiang</strong>, McMaster University</li>
+<li>“Data currency and applications”</li>
+<li><a href="http://www.cas.mcmaster.ca/~fchiang/">Fei Chiang</a> is an Associate Professor in the Department of Computing and Software (Faculty of Engineering), the Director of the Data Science Research Group, and a Faculty Fellow at the IBM Centre for Advanced Studies. She served as an inaugural Associate Director of the MacData Institute. Her research interests and industrial experience is in data management, spanning data cleaning, data quality, data privacy, data fusion, and database systems.</li>
+</ul></li>
+<li>Thursday, 22 October 2020, 4-5pm
+<ul>
+<li><strong>Jeff Waldman</strong>, University of Toronto</li>
+<li><strong>Leanne Trimble</strong>, University of Toronto</li>
+<li><strong>Leslie Barnes</strong>, University of Toronto</li>
+<li><strong>Lisa Strug</strong>, University of Toronto</li>
+<li>“Panel discussion on data-focused resources at the University of Toronto”</li>
+<li>Jeff Waldman is the Manager, Institutional Data Governance; Leslie Barnes is the Digital Scholarship Librarian at UTL; Leanne Trimble is the Data and Statistics Librarian at UTL; Lisa Strug is a Senior Scientist in the Program of Genetics and Genome Biology, Associate Director of The Centre for Applied Genomics, Professor of Statistical Sciences and Biostatistics at the University of Toronto, and Director of CANSSI Ontario.</li>
+</ul></li>
+<li>Thursday, 8 October 2020, 4-5pm
+<ul>
+<li><strong>Yim Register</strong>, University of Washington Data Lab</li>
+<li>“Self-advocacy within machine learning systems”</li>
+<li><a href="https://medium.com/@yimregister">Yim Register</a> (they/them) is a radical optimist, child advocate, and PhD student at the University of Washington Data Lab exploring what self-advocacy looks like within machine learning systems. They study how empowering novices with Data Science knowledge can impact their participation and joy in an AI-driven world! Their passion project right now is writing a book called Life Lessons from Algorithms, a book thatteaches how machine learning algorithms work through trauma recovery skills.</li>
+</ul></li>
+<li>Thursday, 1 October 2020, 4-5pm
+<ul>
+<li><strong>Florence Vallée-Dubois</strong>, Université de Montréal</li>
+<li>“Canadian demographics by riding (1991-2015)”</li>
+<li><a href="https://florencevdubois.github.io/">Florence Vallée-Dubois</a> is a Ph.D.&nbsp;candidate at the department of political science of the University of Montreal. She is also a member of the Centre for the Study of Democratic Citizenship and Canada Research Chair in Electoral Democracy. Her research interests focus on Quebec and Canadian politics, political behaviour and quantitative methods. Her doctoral project focuses on the political behaviour and democratic representation of seniors in Canada.</li>
+</ul></li>
+<li>Thursday, 24 September 2020, 4-5pm
+<ul>
+<li><strong>Chelsea Parlett-Pelleriti</strong>, Chapman University</li>
+<li>“Talking to non-statisticians about statistics”</li>
+<li><a href="https://cmparlettpelleriti.github.io/">Chelsea</a> is a PhD candidate and full-time instructional faculty at Chapman University where her research focuses on using novel statistical and Machine Learning methods (mostly Bayesian statistics, IRT models, and clustering) to behavioral data. As an instructor she teaches Python, R and Data Science, and loves using novel technology (like TikTok, Twitch, and flipped classes) to better engage and inspire students.</li>
+</ul></li>
+<li>Thursday, 17 September 2020, 4-5pm
+<ul>
+<li><strong>Amber Simpson</strong>, Queen’s University</li>
+<li>“Cancer and AI”</li>
+<li><a href="http://simpsonlab.org/">Dr.&nbsp;Simpson</a> is the Canada Research Chair in Biomedical Computing and Informatics and Associate Professor in the School of Computing (Faculty of Arts and Science) and Department of Biomedical and Molecular Sciences (Faculty of Health Sciences). She specializes in biomedical data science and computer-aided surgery. Her research group is focused on developing novel computational strategies for improving human health.</li>
+</ul></li>
+<li>Thursday, 10 September 2020, 4-5pm
+<ul>
+<li><strong>A Mahfouz</strong>, University of Toronto</li>
+<li><strong>Diego Mamanche Castellanos</strong>, University of Toronto</li>
+<li><strong>Hidaya Ismail</strong>, University of Toronto</li>
+<li><strong>Ke-Li Chiu</strong>, University of Toronto</li>
+<li><strong>Paul Hodgetts</strong>, University of Toronto</li>
+<li>“<code>arxivdl</code>, <code>aRianna</code>, and <code>cesR</code>”</li>
+</ul></li>
+<li>Tuesday, 8 September 2020, 3:30-4:30pm
+<ul>
+<li><strong>Sophie Bennett</strong>, Industry data scientist</li>
+<li><em>UK A levels algorithm issues</em></li>
+<li>(Jointly hosted with Gillian Hadfield and the <a href="https://sr-institute.utoronto.ca/">Schwartz Reisman Institute for Technology and Society</a>.)</li>
+<li><a href="https://www.sophieheloisebennett.com/">Sophie Bennett</a> holds an undergraduate degree in Experimental Psychology from the University of Oxford and a PhD in Neuroscience from King’s College. She is the lead data scientist at Up Learn, a London-based online learning platform specialising in A levels. In this role, she conducts evaluations of course effectiveness and uses data to improve instruction and curriculum design. She is passionate about increasing the use of responsible evidence and statistics to guide social policy, and, in her spare time, enjoys working with publicly available datasets to explore London demographics, social issues and infrastructure.</li>
+</ul></li>
+<li>Thursday, 3 September 2020, 4-5pm
+<ul>
+<li><strong>Erik Drysdale</strong>, The Hospital for Sick Children</li>
+<li>“Using hospital data”</li>
+<li><a href="erikdrysdale.com">Erik</a> works as a Machine Learning Specialist at the Hospital for Sick Children (SickKids) for the Goldenberg Lab and AI in Medicine (AIM) initiative. His professional responsibilities include the development and training of the machine learning models for various pediatric data science projects. His research interests are focused on the intersection of statistics and machine learning methods such as high-dimensional inference, survival analysis, and optimization methods.</li>
+</ul></li>
+<li>Thursday, 20 August 2020, 4-5pm
+<ul>
+<li><strong>Aije Egwaikhide</strong>, IBM</li>
+<li>“Preparing data for optical character recognition (OCR)”</li>
+<li>Aije Egwaikhide holds an undergraduate degree in Economics and Statistics from the University of Manitoba, and a post-graduate degree in Business Analytics from St.&nbsp;Lawrence College, Kingston. She works at IBM where she is a Lead Data Scientist on the System Enablement group.</li>
+</ul></li>
+<li>Thursday, 13 August 2020, 4-5pm
+<ul>
+<li><strong>Richard Iannone</strong>, R Studio</li>
+<li>“<code>pointblank</code>”</li>
+<li><a href="https://randr.rocks/">Rich</a> is a Software Engineer at R Studio.</li>
+<li>Rich will talk about <a href="https://github.com/rich-iannone/pointblank"><code>pointblank</code></a>, which is an R package that allows workflows involving nice and easy data validation in reproducible documents.</li>
+</ul></li>
+<li>Thursday, 6 August 2020, 4-5pm
+<ul>
+<li><strong>Sharla Gelfand</strong>, Freelance R Developer</li>
+<li>“Creativity in R”</li>
+<li><a href="https://sharla.party/">Sharla</a> is a freelance R developer specializing in enabling easy access to data and replacing manual, redundant processes with ones that are automated, reproducible, and repeatable.</li>
+</ul></li>
+<li>Thursday, 30 July 2020, 4-5pm
+<ul>
+<li><strong>Alex Luscombe</strong>, University of Toronto, Criminology and Sociolegal Studies</li>
+<li><strong>Alexander McClelland</strong>, Carleton University, Criminology and Criminal Justice</li>
+<li>“Policing the Pandemic”</li>
+<li><a href="https://alexluscombe.ca/">Alex Luscombe</a> is a PhD student in the Centre for Criminology &amp; Sociolegal Studies at the University of Toronto and a Junior Fellow at Massey College. <a href="https://www.alexandermcclelland.ca/">Alexander McClelland</a> is an Assistant Professor at the Institute of Criminology and Criminal Justice, Carleton University.</li>
+<li><a href="https://www.policingthepandemic.ca/">Policing the Pandemic</a> is a project that was launched on 4 April, 2020, to track and visualize the massive and extraordinary expansions of police power in response to the COVID-19 Pandemic and the unequal patterns of enforcement that may arise as a result.</li>
+</ul></li>
+<li>Thursday, 23 July 2020, 11am-noon
+<ul>
+<li><strong>Marta Kołczyńska</strong>, Institute of Political Studies of the Polish Academy of Sciences</li>
+<li>“Cleaning survey data to measure political trust”</li>
+<li><a href="https://martakolczynska.com/">Marta</a> is an Assistant Professor at the Institute of Political Studies of the Polish Academy of Sciences and a visiting researcher in the Probabilistic Machine Learning Group, Department of Computer Science, Aalto University. Her research interests include comparative analyses of political attitudes and behavior across nations and over time, as well as the methodology of comparative research, in particular cross-national surveys.</li>
+<li>Marta will talk about cleaning survey data, in particular a project in which she gathers political trust items from different cross-national survey datasets to model time trends, and the tools she has developed to facilitate this work.</li>
+</ul></li>
+<li>Thursday, 16 July 2020, 4-5pm
+<ul>
+<li><strong>Casey Breen</strong>, University of California, Berkeley, Demography</li>
+<li>“<a href="https://censoc.berkeley.edu/">CenSoc</a>: A project to link US 1940 Census data with Social Security Administration mortality records”</li>
+<li>Casey is a PhD student in the Demography Department at Berkeley. He previously worked at the Institute for Social Research and Data Innovation, home of IPUMS.</li>
+</ul></li>
+<li>Thursday, 9 July 2020, 4-5pm
+<ul>
+<li><strong>Roxanne Chui</strong>, University of Toronto, Faculty of Information</li>
+<li>“What do we have here among millions of observations? EDA for Tokyo AirBnB data and pattern discovery in listing prices using R”</li>
+<li>Roxanne is an emerging anthropological data science professional. She did her BSc program in Forensic anthropology and worked in the pharmaceutical industry before doing her Masters in data science. She is passionate about excavating context from data for predicting future patterns of human behaviour.</li>
+</ul></li>
+<li>Thursday, 2 July 2020, 4-5pm
+<ul>
+<li><strong>Heather McBrien</strong>, University of Toronto, Department of Statistical Sciences</li>
+<li>“How the data that we collect can bias the results that we obtain and our knowledge of the problem”</li>
+<li>Heather just graduated from the Statistics BSc program at the University of Toronto, and is interested in modelling in population health research, particularly using novel data sources to answer questions where traditional data is lacking.</li>
+</ul></li>
+<li>Thursday, 25 June 2020, 4-5pm
+<ul>
+<li><strong>A Mahfouz</strong>, University of Toronto, Information</li>
+<li>“Geographic data cleaning, extracting mappable data from Google Directions API results in Python”</li>
+<li>A is a Master of Information student at the University of Toronto with a background in geography. Their prior work has been largely concerned with data pipelines.</li>
+</ul></li>
+<li>Thursday, 11 June 2020, 4-5pm
+<ul>
+<li><strong>Harrison Jones</strong>, Deloitte</li>
+<li>“Using R with actuarial data”</li>
+<li><a href="https://ca.linkedin.com/in/harrison-jones-a9947b60">Harrison</a> is a Manager at Deloitte in Toronto, where he focuses on data analytics and machine learning in the property &amp; casualty insurance, life insurance, health insurance, pensions, and the public sector.</li>
+</ul></li>
+<li>Thursday, 4 June 2020, 4-5pm
+<ul>
+<li><strong>Marija Pejcinovska</strong>, University of Toronto, Department of Statistical Sciences</li>
+<li>“Estimating global maternal mortality”</li>
+<li>Marija is a second-year Ph.D.&nbsp;student in Statistics at the University of Toronto. Her research interests are in applied statistics, specifically the application of Bayesian methods to data and modeling challenges that arise in demography, public health, and certain areas of the social sciences.</li>
+<li>Marija will talk about a current project with the World Health Organization (WHO) focused on estimating global maternal mortality to share her R workflow and the different tools and packages she’s found helpful in the data processing stage. More specifically, she’ll be sharing a few ways of dealing with text and date data in R.</li>
+</ul></li>
+<li>Thursday, 28 May 2020, 4-5pm
+<ul>
+<li><strong>Shiro Kuriwaki</strong>, Harvard University, Government</li>
+<li>“<a href="https://vimeo.com/424091492">Project-oriented workflow</a>”</li>
+<li><a href="https://www.shirokuriwaki.com/">Shiro</a> is a Ph.D.&nbsp;Candidate at the Department of Government, Harvard University. His research focuses on democratic representation in American Politics, for instance cast vote records, public opinion, survey methods, and applied statistics more generally. Shiro will bring together best practices for organizing data and code in the social sciences that experts have proposed with some of his own experience. He will propose a project-oriented workflow that adopts a minimal and consistent file organization structure within a single project, using RStudio Projects and GitHub. He will then discuss how to organize multiple projects that share common components, and propose the use of custom R packages to share code and Dataverse to share large datasets. He will use some of his own projects involving the Cooperative Congressional Election Study (CCES), one of the largest political surveys of American Politics, as a demonstration.</li>
+</ul></li>
+<li>Thursday, 21 May 2020, 4-5pm
+<ul>
+<li><strong>Rohan Alexander</strong>, University of Toronto, Faculty of Information</li>
+<li>“OCR with applications to the Kenyan census”</li>
+<li>Rohan Alexander is a post-doctoral fellow at the Faculty of Information, University of Toronto. He holds a PhD in Economics from the Australian National University.</li>
+</ul></li>
+<li>Friday, 6 March 2020, noon
+<ul>
+<li><strong>Fatemeh Nargesian</strong>, Computer Science, University of Rochester</li>
+</ul></li>
+<li>Friday, 28 February 2020, noon
+<ul>
+<li><strong>Eugene Joh</strong>, St.&nbsp;Michael’s Hospital</li>
+</ul></li>
+<li>Friday, 14 February 2020, noon
+<ul>
+<li><strong>Josh Harris</strong>, KOHO</li>
+</ul></li>
+<li>Friday, 7 February 2020, noon
+<ul>
+<li><strong>Kathy Chung</strong>, Records of Early English Drama, University of Toronto</li>
+</ul></li>
+<li>Friday, 31 January 2020, noon
+<ul>
+<li><strong>Arik Senderovich</strong>, Information, University of Toronto</li>
+</ul></li>
+<li>Friday, 24 January 2020, noon
+<ul>
+<li><strong>Steven Pimentel</strong>, Business intelligence, University of Toronto</li>
+</ul></li>
+</ul>
+</section>
+<section id="section-5" class="level2">
+<h2 class="anchored" data-anchor-id="section-5">2019</h2>
+<ul>
+<li>Thursday, 21 November 2019, noon
+<ul>
+<li><strong>Michelle Alexopoulos</strong>, University of Toronto, Economics</li>
+<li><strong>Paraskevi Massara</strong>, University of Toronto, Medicine</li>
+</ul></li>
+<li>Thursday, 7 November 2019, noon
+<ul>
+<li><strong>Maria D’Angelo</strong>, Delphia</li>
+<li><strong>Hareem Naveed</strong>, Munich Re</li>
+</ul></li>
+<li>Thursday, 24 October 2019, noon
+<ul>
+<li><strong>Sharla Gelfand</strong>, Freelance R and Shiny developer</li>
+</ul></li>
+<li>Wednesday, 16 October 2019, noon
+<ul>
+<li><strong>Lauren Kennedy</strong>, Columbia University</li>
+</ul></li>
+<li>Thursday, 10 October 2019, noon
+<ul>
+<li><strong>Hassan Teimoori</strong>, Deloitte, Omnia AI</li>
+<li><strong>Ludovic Rheault</strong>, University of Toronto, Political Science</li>
+</ul></li>
+<li>Thursday, 26 September 2019, noon
+<ul>
+<li><strong>Periklis Andritsos</strong>, ODAIA &amp; University of Toronto, Information</li>
+</ul></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/rohanalexander\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
