@@ -4,7 +4,7 @@ title: "Toronto Data Workshop"
 
 ## Overview
 
-The Toronto Data Workshop brings together academia and industry to share data science best practice. We are broadly interested, but especially in the code- and data-centric aspects of a project that are often glossed over. We meet weekly for an hour and most talks are recorded.
+The Toronto Data Workshop brings together academia and industry to share data science and AI best practice. We are broadly interested, but especially in the code- and data-centric aspects of a project that are often glossed over. We meet weekly for an hour and most talks are recorded.
 
 If you would like to attend, please sign up [here](https://forms.gle/sXbEixoa1iJR4Q7A8). Everyone is welcome---it is free and you do not need to be affiliated with the university.
 
@@ -74,8 +74,43 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 	- "LiveCodeBench: Holistic and contamination free evaluation of large language models for code"
 	- In this talk we introduce [LiveCodeBench](https://livecodebench.github.io), a comprehensive and contamination-free benchmark for LLMs in code, which continuously collects new problems from LeetCode, AtCoder, and CodeForces. LiveCodeBench evaluates a wide range of capabilities, including self-repair, code execution, and test output prediction. It currently hosts 400 coding problems published between May 2023 and May 2024. We evaluated 18 base LLMs and 34 instruction-tuned LLMs, presenting findings on contamination, performance comparisons, and potential overfitting.
 	- [Naman Jain](https://naman-ntc.github.io) is a CS Ph.D. student at UC Berkeley, focusing on using machine learning to enhance developer productivity tools like program analysis, synthesis, and repair. He also explores how synthesis and verification can improve algorithm generalizability and explainability. He holds an undergraduate degree from IIT Bombay, where he researched NLP robustness and computer vision. Before his Ph.D., he was a predoctoral research fellow at Microsoft Research India, working on program repair, improving large language models, and learning decision trees.
-
-
+- Friday 19 July 2024, noon (EDT) (in-person and online)
+  - **Majeed Kazemitabaar**, University of Toronto
+  - "Improving Steering and Verification in AI-Assisted Data Analysis"
+  - [Majeed Kazemitabaar](https://www.majeed.cc) is a fourth-year Ph.D. student in Computer Science at the University of Toronto, working with Professor Tovi Grossman. His research in Human-Computer Interaction and Computer Science Education focuses on creating engaging computational learning experiences and has been published in CHI, UIST, and IDC, and earned Best Paper and Best Late-Breaking Work awards.
+- Friday 26 July 2024, noon (EDT)
+  - TBA
+- August: No talks
+- Friday 6 September 2024, noon (EDT)
+  - TBA
+- Friday 13 September 2024, noon (EDT)
+	- **Caroline Weis**, gsk.ai
+	- [Caroline Weis](https://cvweis.github.io/) is a senior machine learning engineer and team lead at gsk.ai. In 2021, she completed her PhD in Machine Learning for Computational Biology and Healthcare at ETH Zurich.
+- Friday 20 September 2024, noon (EDT)
+	- TBA
+- Friday 27 September 2024, noon (EDT)
+	- **Annie Collins**, GivingTuesday
+- Friday 4 October 2024, noon (EDT)
+	- **Sean Taylor**, Motif
+	- [Sean Taylor](https://seanjtaylor.com/) is a data scientist, social scientist, statistician, and software developer. He mostly specializes in methods for solving causal inference and business decision problems, and is particularly interested in building tools for practitioners working on real-world problems. He is a co-founder and chief scientist at [Motif](https://www.motifanalytics.com/).
+- Friday 11 October 2024, noon (EDT)
+	- TBA
+- Friday 18 October 2024, noon (EDT)
+	- **Xiaojun Su**, Unilever
+	- [Xiaojun Su](https://www.linkedin.com/in/xiaojunsu/) is the Machine Learning Lead, Horizon 3 Labs, at Unilever.
+- Friday 25 October 2024, noon (EDT)
+	- TBA
+- Friday 1 November 2024, noon (EDT)
+	- TBA
+- Friday 8 November 2024, noon (EDT)
+	- **Jacob Baldwin**, Pro Football Focus	(PFF)
+- Friday 15 November 2024, noon (EDT)
+	- **Crystal Lewis**, Crystal Lewis Consulting LLC
+	- [Crystal Lewis](https://cghlewis.com/) is a freelance consultant and trainer with over 10 years of experience as a data manager in the field of education research. She is also the author of the book *Data Management in Large-Scale Education Research*, which provides a holistic overview of how to manage research data throughout a project life cycle. It is available [freely online](https://datamgmtinedresearch.com/) and a hard copy is [available for purchase](https://www.routledge.com/Data-Management-in-Large-Scale-Education-Research/Lewis/p/book/9781032622798) from Taylor and Francis CRC Press.
+- Friday 22 November 2024, noon (EDT)
+	- TBA
+- Friday 29 November 2024, noon (EDT)
+  - **Claire Le Barbenchon**, McKinsey & Company
 
 
 ### Past
