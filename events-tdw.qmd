@@ -85,11 +85,12 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
   - TBA
 - Friday 13 September 2024, noon (EDT)
 	- **Caroline Weis**, gsk.ai
-	- [Caroline Weis](https://cvweis.github.io/) is a senior machine learning engineer and team lead at gsk.ai. In 2021, she completed her PhD in Machine Learning for Computational Biology and Healthcare at ETH Zurich.
+	- [Caroline Weis](https://cvweis.github.io/) is a Senior AI/ML Engineer and team lead at gsk.ai. In 2021, she completed her PhD in Machine Learning for Computational Biology and Healthcare at ETH Zurich. Her research interests lie in the development of personalized healthcare through data analysis and machine learning on medical and biological data. 
 - Friday 20 September 2024, noon (EDT)
 	- TBA
 - Friday 27 September 2024, noon (EDT)
 	- **Annie Collins**, GivingTuesday
+	- [Annie Collins](https://www.linkedin.com/in/annie-a-collins/) is a Data Scientist at GivingTuesday, a US-based nonprofit focused on researching generosity and charitable giving behaviours. Beyond GivingTuesday, Annie has spent several years in data management and research roles within the Canadian nonprofit sector. She holds a Bachelors of Science in applied mathematics and statistics from the University of Toronto, and uses her experience to provide data for the public good and support a more data-driven social sector worldwide.
 - Friday 4 October 2024, noon (EDT)
 	- **Sean Taylor**, Motif
 	- [Sean Taylor](https://seanjtaylor.com/) is a data scientist, social scientist, statistician, and software developer. He mostly specializes in methods for solving causal inference and business decision problems, and is particularly interested in building tools for practitioners working on real-world problems. He is a co-founder and chief scientist at [Motif](https://www.motifanalytics.com/).
@@ -97,13 +98,14 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 	- TBA
 - Friday 18 October 2024, noon (EDT)
 	- **Xiaojun Su**, Unilever
-	- [Xiaojun Su](https://www.linkedin.com/in/xiaojunsu/) is the Machine Learning Lead, Horizon 3 Labs, at Unilever.
+	- [Xiaojun Su](https://www.linkedin.com/in/xiaojunsu/) is a Machine Learning Lead, Horizon 3 Labs, Unilever where she leads cross-functional teams of data engineers, software developer, data scientists, postgraduate researchers, and 3rd party vendors to launch in-house models to drive significant ROIs. She holds a M.Sc from the University of Toronto.
 - Friday 25 October 2024, noon (EDT)
 	- TBA
 - Friday 1 November 2024, noon (EDT)
 	- TBA
 - Friday 8 November 2024, noon (EDT)
 	- **Jacob Baldwin**, Pro Football Focus	(PFF)
+	- [Jacob Baldwin](https://www.linkedin.com/in/jacob-baldwin-51849b106/) is a Senior Data Scientist at PFF. He holds an online M.S. degree in Applied Mathematics from the University of Washington, and graduated from Clarkson University with a B.S. in Physics, a B.S. in Applied Mathematics, and a minor in Computer Science.
 - Friday 15 November 2024, noon (EDT)
 	- **Crystal Lewis**, Crystal Lewis Consulting LLC
 	- [Crystal Lewis](https://cghlewis.com/) is a freelance consultant and trainer with over 10 years of experience as a data manager in the field of education research. She is also the author of the book *Data Management in Large-Scale Education Research*, which provides a holistic overview of how to manage research data throughout a project life cycle. It is available [freely online](https://datamgmtinedresearch.com/) and a hard copy is [available for purchase](https://www.routledge.com/Data-Management-in-Large-Scale-Education-Research/Lewis/p/book/9781032622798) from Taylor and Francis CRC Press.
@@ -111,6 +113,7 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 	- TBA
 - Friday 29 November 2024, noon (EDT)
   - **Claire Le Barbenchon**, McKinsey & Company
+  - [Claire Le Barbenchon](https://www.linkedin.com/in/clairelebarbenchon/) is an Associate at McKinsey & Company. She is passionate about turning evidence into impact. As a management consultant with a specialty in quantitative and financial analysis, she has supported large-scale transformations across multiple Fortune 500 companies in the consumer/retail sector. She has also drawn on 8 years of experience in the public, nonprofit and research sectors to support strategy development and the generation of evidence for programming across social sector clients. She holds a PhD in Public Policy and an MS in Statistical Science.
 
 
 ### Past
@@ -285,7 +288,8 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
   - [*A new, comprehensive database of all proceedings of the Australian Parliamentary Debates*](https://youtu.be/lYOdCNJOusg)
   - Lindsay Katz holds a Masters of Statistics from the University of Toronto and a Bachelor of Arts and Science from the University of Guelph where she specialized in Mathematical Science and International Development. At Guelph she worked with Professor Ryan Briggs to explore lived poverty in Africa using Afrobarometer data. At Toronto she works with Professor Monica Alexander to research demographic variation in short-term migration patterns using Facebook data, and with Professor Rohan Alexander to digitize the Australian parliamentary debates from 1901 to present. As an interdisciplinary researcher, she is interested in using statistics to better understand social processes in the world.
 - Friday, 4 November 2022, noon - 1pm
-  - **Maitreyee Sidhaye** and **Meggie Debnath**, St. Michael's Hospital, Unity Health Toronto
+  - **Maitreyee Sidhaye**, St. Michael's Hospital, Unity Health Toronto
+  - **Meggie Debnath**, St. Michael's Hospital, Unity Health Toronto
   - [*The Things We Learned from Deploying AI in Healthcare*](https://youtu.be/ltA_vOwrIWc)
   - Maitreyee and Meggie are data scientists in the Data Science & Advanced Analytics (DSAA) unit at St. Michael's Hospital in Toronto. DSAA is a multiteam unit in the hospital that provides data sciecne and machine learning solutions across a variety of problems: clinical prediction tools, staffing optimization, imaging, and more. DSAA works very closely with others in the hospital to collaborate on understanding problems and providing solutions. Maitreyee and Meggie will share their experiences and learnings from building and deploying machine learning tools in the hospital.
 - Friday, 21 October 2022, noon - 1pm
