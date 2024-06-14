@@ -47,10 +47,6 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 ### Upcoming
 
-- Friday 14 June 2024, noon (EDT)
-	- **Jae Yeon Kim**, SNF Agora Institute at Johns Hopkins University
-	- "Field experimentation in the U.S. safety net"
-	- [Jae Yeon Kim](https://jaeyk.github.io) is an incoming assistant research scientist at the SNF Agora Institute at Johns Hopkins University and a research fellow at the Center for Public Leadership at Harvard Kennedy School. Previously, he worked as a senior data scientist at Code for America, where he collaborated with all levels of the U.S. government to improve access to safety net programs. He completed his PhD in Political Science from the University of California, Berkeley in 2021.
 - Friday 21 June 2024, noon (EDT)
 	- **Chris Bail**, Duke University
 	- "Can Generative AI Improve Social Science"
@@ -118,6 +114,10 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 ### Past
 
+- Friday 14 June 2024, noon (EDT)
+	- **Jae Yeon Kim**, SNF Agora Institute at Johns Hopkins University
+	- "[Field experimentation in the U.S. safety net](https://youtu.be/bwd5ypg4nxw)"
+	- [Jae Yeon Kim](https://jaeyk.github.io) is an incoming assistant research scientist at the SNF Agora Institute at Johns Hopkins University and a research fellow at the Center for Public Leadership at Harvard Kennedy School. Previously, he worked as a senior data scientist at Code for America, where he collaborated with all levels of the U.S. government to improve access to safety net programs. He completed his PhD in Political Science from the University of California, Berkeley in 2021.
 - Friday 7 June 2024, noon (EDT)
 	- **Lars Vilhuber**, Cornell University
 	- "[Privacy protection in RCTs: The challenge of privacy protection in the field](https://youtu.be/EcWNR_rJ3-8)"
@@ -149,29 +149,29 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
   - The talk will be based on a recent paper available [here](https://econpapers.repec.org/paper/zbwi4rdps/107.htm).
 - Thursday 4 April 2024, noon - 1pm
 	- **Lenny Bronner**, The Washington Post
-	- ["Election Modeling at The Washington Post"](https://youtu.be/qVdrw9hE2Gw)
+	- "[Election Modeling at The Washington Post](https://youtu.be/qVdrw9hE2Gw)"
 	- [Lenny Bronner](https://lennybronner.com/) is a data scientist at *The Washington Post*, specializing in elections.
 - Thursday 28 March 2024, noon - 1pm
 	- **Cameron Buckner**, University of Houston
-	- [The philosophy of Large Language Models](https://youtu.be/cl_qFYShnt0)
+	- "[The philosophy of Large Language Models](https://youtu.be/cl_qFYShnt0)"
 	- [Cameron Buckner](http://cameronbuckner.net) is an Associate Professor of Philosophy at University of Houston, and author of *From Deep Learning to Rational Machines*.
 - Thursday 21 March 2024, noon - 1pm
 	- **Laura Plein**, University of Luxembourg
-	- [Can LLMs demystify Bug Reports and translate them into Test Cases?](https://youtu.be/M-9Il_1uruk)
+	- "[Can LLMs demystify Bug Reports and translate them into Test Cases?](https://youtu.be/M-9Il_1uruk)"
 	- Laura Plein conducted this research as an intern in the TruX (Trustworthy Software Engineering) Team at the SnT, University of Luxembourg. Her research focuses on leveraging Large Language models to automate Software Engineering processes such as automatic test case generation and test input extraction in the context of automated program repair. She is currently affiliated to the Saarland University.
 - Thursday 14 March 2024, noon - 1pm
 	- **Tom Davidson**, Rutgers University
-	- [Start Generating: Harnessing Generative Artificial Intelligence for Sociological Research](https://youtu.be/feza5g3lAP4)
+	- "[Start Generating: Harnessing Generative Artificial Intelligence for Sociological Research](https://youtu.be/feza5g3lAP4)"
 	- How can generative artificial intelligence (GAI) be used for sociological research? This talk explores applications to the study of text and images across multiple domains, including computational, qualitative, and experimental research. Drawing upon recent research and stylized experiments with DALL-E and GPT-4, discuss the potential applications of text-to-text, image-to-text, and text-to-image models for sociological research. Across these areas, GAI can make advanced computational methods more efficient, flexible, and accessible. The paper also emphasizes several challenges raised by these technologies, including interpretability, transparency, reliability, reproducibility, ethics, and privacy, as well as the implications of bias and bias mitigation efforts and the trade-offs between proprietary models and open-source alternatives. When used with care, these technologies can help advance many different areas of sociological methodology, complementing and enhancing our existing toolkits. See: https://osf.io/preprints/socarxiv/u9nft. 
 	- [Thomas Davidson](https://www.thomasrdavidson.com/) is an Assistant Professor of Sociology at Rutgers University—New Brunswick. He specializes in using computational methods and data from social media to analyze far-right activism, populism, and hate speech. He is currently researching the relationship between ranking and recommendation algorithms and activism, the applications of generative AI to sociological research, and the social context of content moderation. His work has been published in venues including *Social Forces*, *Mobilization*, and *Socius*. 
 - Friday 8 March 2024, noon - 1pm
 	- **Jonathan Mellon**, West Point
-	- [Using LLMs to code open-text social survey responses at scale](https://youtu.be/oN-FG6XfDUk)
+	- "[Using LLMs to code open-text social survey responses at scale](https://youtu.be/oN-FG6XfDUk)"
 	- We compare the accuracy of six LLMs using a few-shot approach, three supervised learning algorithms (SVM, DistilRoBERTa, and a neural network trained on BERT embeddings), and a second human coder on the task of categorizing "most important issue" responses from the British Election Study Internet Panel into 50 categories. For the scenario where a researcher lacks existing training data, the accuracy of the highest-performing LLM (Claude-1.3: 93.9%) neared human performance (94.7%) and exceeded the highest-performing supervised approach trained on 1000 randomly sampled cases (neural network: 93.5%). In a scenario where previous data has been labeled but a researcher wants to label novel text, the best LLM's (Claude-1.3: 80.9%) few-shot performance is only slightly behind the human (88.6%) and exceeds the best supervised model trained on 576,000 cases (DistilRoBERTa: 77.8%). PaLM-2, Llama-2, and the SVM all performed substantially worse than the best LLMs and supervised models across all metrics and scenarios. Our results suggest that LLMs may allow for greater use of open-ended survey questions in the future. [Open access paper](https://journals.sagepub.com/doi/full/10.1177/20531680241231468) published in *Research & Politics* by Jonathan Mellon, Jack Bailey, Ralph Scott, James Breckwoldt, Marta Miori, Phillip Schmedeman and [replication code/data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/8H0WTT) (includes all prompts/API calls/local models etc).
 	- [Jonathan Mellon](https://www.jonathanmellon.com/) is an Associate Professor at West Point's Department of Systems Engineering and co-director of the British Election Study. His research focuses on improving measurement and causal inference in social science. He studies electoral behavior, online citizen engagement, and measuring public opinion. He holds a DPhil in Sociology from Nuffield College, University of Oxford.
 - Thursday 7 March 2024, noon - 1pm
 	- **Matheus Facure**, Nubank
-	- [Why Banking has the Coolest Stats/Data Science Problems](https://youtu.be/Mk2pRvUPB-U)
+	- "[Why Banking has the Coolest Stats/Data Science Problems](https://youtu.be/Mk2pRvUPB-U)"
 	- [Matheus Facure](https://matheusfacure.github.io) has a background in Economics and is a Staff Data Scientist at Nubank. He works mostly with credit underwriting and causal inference. He is the author of *Causal Inference in Python* (O'Reilly) and *Causal Inference for the Brave and True* (Online, Open Source).
 - Friday 1 March 2024, noon - 1pm
 	- **Jacob Austin**, Google DeepMind
@@ -180,7 +180,7 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 	- [Jacob Austin](http://www.jacobaustin.org) is a Senior Research Engineer at Google DeepMind, working on program synthesis and large language models. He was previously an AI Resident at Google Brain, and a Research Intern at NVIDIA with Anima Anandkumar. He holds a bachelor's degree in computer science and mathematics from Columbia University. He studied machine learning and robotics at the Columbia Creative Machines Lab. He is also a pianist who plays a lot of chamber music, and has performed at Carnegie Hall, Music Mountain, Apple Hill, and Kinhaven.
 - Thursday 29 February 2024, noon - 1pm
 	- **Sky CH-Wang**, Columbia University
-	- [Do Androids Know They're Only Dreaming of Electric Sheep?](https://youtu.be/bkHsz50QeYE)
+	- "[Do Androids Know They're Only Dreaming of Electric Sheep?](https://youtu.be/bkHsz50QeYE)"
 	- [Sky CH-Wang](https://skywang.me/) is a PhD Candidate in Computer Science at Columbia University advised by Zhou Yu and Smaranda Muresan. His research primarily revolves around Natural Language Processing (NLP). He is broadly interested in the area where NLP meets Computational Social Science (CSS). Here, his research primarily revolves around three major areas: (1) revealing and designing for social difference and inequality, (2) cross-cultural NLP, and (3) mechanistic interpretability. His research is supported by a NSF Graduate Research Fellowship. 
 - Thursday 22 February 2024, noon - 1pm
 	- **Jessica Otis**, George Mason University
@@ -218,13 +218,13 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 - Friday 24 November 2023, noon - 1pm
   - **Wendy Foster**, Shopify 
-  - [*Socio-technical processes for data integrity*](https://youtu.be/GQhLlGWMjRM)  
+  - "[*Socio-technical processes for data integrity*](https://youtu.be/GQhLlGWMjRM)"  
   - Wendy Foster is Director of Engineering and Data, Optimize, at Shopify.
 - Friday 17 November 2023, 1pm - 2pm
   - **Chiara Alcantara**, University of Waterloo
   - **Franklin Ramirez**, University of Waterloo
   - **Helena Xu**, University of Waterloo
-  - [*Exploring Alternatives to REST for Accessing Public Data Sets*](https://youtu.be/EvcnSDo5EPU)
+  - "[*Exploring Alternatives to REST for Accessing Public Data Sets*](https://youtu.be/EvcnSDo5EPU)"
   - In the past decade, governments, non-profits, and other civic institutions have increasingly been sharing data on a wide range of topics, supporting various sectors of society from private enterprise to academic research. However, using this data in a programmatic and reproducible fashion is hampered by the myriad nature of the APIs provided to access it. In this talk, we explore one potential alternative to the predominant REST paradigm: storing tabular data in the open Parquet file format on publicly accessible endpoints. By using this standardized file format and a simple backing infrastructure, new tools based on Apache Arrow, such as DuckDB and Polars, can be used to build reusable front ends and other cost-effective solutions. We present a case study based on Statistics Canada’s library of public data sets, showcasing how such a system can simplify initial selection and filtering through common SQL queries.
   - Chiara, Franklin, and Helena are second-year computer science students at the University of Waterloo who are interested in applying new software and data engineering tooling to increase the accessibility of public data sets.
 - Friday 10 November 2023, noon - 1pm
