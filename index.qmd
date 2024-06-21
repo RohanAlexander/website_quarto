@@ -22,6 +22,8 @@ about:
 
 I am an assistant professor at the University of Toronto, jointly appointed in the [Faculty of Information](https://ischool.utoronto.ca/profile/rohan-alexander/) and the [Department of Statistical Sciences](https://www.statistics.utoronto.ca/people/directories/all-faculty/rohan-alexander). I am interested in developing workflows that improve the trustworthiness of data science. I am particularly interested in the role of code and testing in data science.
 
+I am co-founder of the [Toronto Data Workshop](https://rohanalexander.com/events-tdw.html), a weekly, online, seminar series that brings together academia and industry to share data science and AI best practice. You can sign up [here](https://forms.gle/sXbEixoa1iJR4Q7A8).
+
 I am the Assistant Director of [CANSSI Ontario](https://canssiontario.utoronto.ca); the Director, Technical Skills Curriculum & Instruction, for the Data Sciences Institute's [Data Science and Machine Learning Certificates](https://github.com/UofT-DSI); a Senior Fellow at [Massey College](https://www.masseycollege.ca); a faculty affiliate at the [Schwartz Reisman Institute for Technology and Society](https://sr-institute.utoronto.ca/); and a co-lead of the [DSI](https://datasciences.utoronto.ca) Thematic Program in Reproducibility.
 
 <img style="float:right; max-width: 50%; position: relative; padding: 10px; top: 0px;" src="images/tellingstorieswithdatapainting.png">
