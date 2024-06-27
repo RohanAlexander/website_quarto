@@ -47,11 +47,6 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 ### Upcoming
 
-- Wednesday 26 June 2024, 1pm (EDT)
-	- **Matthew Gentzkow**, Stanford University
-	- "The effects of Facebook and Instagram on the 2020 election: A deactivation experiment"
-	- The talk will be based on [this paper](https://www.pnas.org/doi/10.1073/pnas.2321584121) which studies the effect of Facebook and Instagram access on political beliefs, attitudes, and behavior by randomizing a subset of 19,857 Facebook users and 15,585 Instagram users to deactivate their accounts for 6 weeks before the 2020 U.S. election.
-	- [Matthew Gentzkow](https://www.matthewgentzkow.com) is the Landau Professor of Technology and the Economy at Stanford University. He studies applied microeconomics with a focus on media and technology industries. He received the 2014 John Bates Clark Medal, given by the American Economic Association to the American economist under the age of forty who has made the most significant contribution to economic thought and knowledge. He is a member of the National Academy of Sciences, a fellow of the American Academy of Arts and Sciences, a fellow of the Econometric Society, a senior fellow at the Stanford Institute for Economic Policy Research, and the Editor of *American Economic Review: Insights*.
 - Friday 28 June 2024, noon (EDT)
 	- **Sasha Issenberg**
 	- "The Lie Detectives: In Search of a Playbook for Winning Elections in the Disinformation Age"
@@ -122,6 +117,11 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 ### Past
 
+- Wednesday 26 June 2024, 1pm (EDT)
+	- **Matthew Gentzkow**, Stanford University
+	- "The effects of Facebook and Instagram on the 2020 election: A deactivation experiment"
+	- The talk will be based on [this paper](https://www.pnas.org/doi/10.1073/pnas.2321584121) which studies the effect of Facebook and Instagram access on political beliefs, attitudes, and behavior by randomizing a subset of 19,857 Facebook users and 15,585 Instagram users to deactivate their accounts for 6 weeks before the 2020 U.S. election.
+	- [Matthew Gentzkow](https://www.matthewgentzkow.com) is the Landau Professor of Technology and the Economy at Stanford University. He studies applied microeconomics with a focus on media and technology industries. He received the 2014 John Bates Clark Medal, given by the American Economic Association to the American economist under the age of forty who has made the most significant contribution to economic thought and knowledge. He is a member of the National Academy of Sciences, a fellow of the American Academy of Arts and Sciences, a fellow of the Econometric Society, a senior fellow at the Stanford Institute for Economic Policy Research, and the Editor of *American Economic Review: Insights*.
 - Friday 14 June 2024, noon (EDT)
 	- **Jae Yeon Kim**, SNF Agora Institute at Johns Hopkins University
 	- "[Field experimentation in the U.S. safety net](https://youtu.be/bwd5ypg4nxw)"
