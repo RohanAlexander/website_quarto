@@ -47,10 +47,6 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 ### Upcoming
 
-- Friday 28 June 2024, noon (EDT)
-	- **Sasha Issenberg**
-	- "The Lie Detectives: In Search of a Playbook for Winning Elections in the Disinformation Age"
-	- [Sasha Issenberg](https://www.sashaissenberg.com/) is a journalist and author of *"The Lie Detectives: In Search of a Playbook for Winning Elections in the Disinformation Age"* and four previous books, most recently *"The Engagement: America’s Quarter-Century Struggle Over Same-Sex Marriage."* He teaches in the UCLA Department of Political Science and is a correspondent for *Monocle*. His work has also appeared in *New York*, *The New York Times Magazine* and *George*, where he was a contributing editor. 
 - Friday 5 July 2024, noon (EDT)
 	- **Kobi Hackenburg**, Oxford Internet Institute, University of Oxford
 	- "Evaluating the persuasive influence of political microtargeting with large language models"
@@ -117,6 +113,10 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 ### Past
 
+- Friday 28 June 2024, noon (EDT)
+	- **Sasha Issenberg**
+	- "[The Lie Detectives: In Search of a Playbook for Winning Elections in the Disinformation Age](https://youtu.be/DcbTjrwfoZE)"
+	- [Sasha Issenberg](https://www.sashaissenberg.com/) is a journalist and author of *"The Lie Detectives: In Search of a Playbook for Winning Elections in the Disinformation Age"* and four previous books, most recently *"The Engagement: America’s Quarter-Century Struggle Over Same-Sex Marriage."* He teaches in the UCLA Department of Political Science and is a correspondent for *Monocle*. His work has also appeared in *New York*, *The New York Times Magazine* and *George*, where he was a contributing editor. 
 - Wednesday 26 June 2024, 1pm (EDT)
 	- **Matthew Gentzkow**, Stanford University
 	- "The effects of Facebook and Instagram on the 2020 election: A deactivation experiment"
