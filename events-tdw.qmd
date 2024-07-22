@@ -47,17 +47,6 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 ### Upcoming
 
-- Thursday 18 July 2024, noon (EDT)
-  - **Hannah Rose Kirk**, Oxford Internet Institute, University of Oxford
-  - "What does it mean for AI to be “aligned”?"
-  - Alignment has become a buzzword that frequently surfaces throughout the AI ecosystem. But what does it mean to align LLMs to the hundreds of millions of people who now interact with their outputs, each with different preferences for language, conversational norms, value systems, and political beliefs? This talk will explore the gnarly concept of alignment, specifically for large language models (LLMs). Using insights from the recently released [PRISM Alignment Dataset](https://hannahkirk.github.io/prism-alignment/), we'll cover key questions around empirical alignment efforts, such as how to collect human feedback using various scales and signals, where to focus human labour, who to ask for feedback, and whether to target objectives of personalised or collective alignment. Through more comprehensive and representative data, PRISM highlights the challenges of aligning LLMs to meet the diverse expectations and beliefs of a global audience.
-  - [Hannah Rose Kirk](https://www.hannahrosekirk.com) is a PhD student at the University of Oxford, UK. Hannah's research centres on the role of granular and diverse human feedback for aligning large language models. Her body of published work spans computational linguistics, computer vision, ethics and sociology, addressing a broad range of issues such as AI safety, bias, fairness, and hate speech from a multidisciplinary perspective. Hannah holds degrees from the University of Oxford, the University of Cambridge and Peking University. Alongside academia, she collaborates often with industry projects at Google, OpenAI and MetaAI, and previously worked as a Data Scientist in the Public Policy Team at The Alan Turing Institute.
-- Friday 19 July 2024, noon (EDT)
-  - **Majeed Kazemitabaar**, University of Toronto
-  - "Improving Steering and Verification in AI-Assisted Data Analysis"
-  - [Majeed Kazemitabaar](https://www.majeed.cc) is a fourth-year Ph.D. student in Computer Science at the University of Toronto, working with Professor Tovi Grossman. His research in Human-Computer Interaction and Computer Science Education focuses on creating engaging computational learning experiences and has been published in CHI, UIST, and IDC, and earned Best Paper and Best Late-Breaking Work awards.
-
--------------
 
 - Friday 6 September 2024, noon (EDT)
   - TBA
@@ -96,6 +85,15 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 ### Past
 
+- Friday 19 July 2024, noon (EDT)
+  - **Majeed Kazemitabaar**, University of Toronto
+  - "Improving Steering and Verification in AI-Assisted Data Analysis"
+  - [Majeed Kazemitabaar](https://www.majeed.cc) is a fourth-year Ph.D. student in Computer Science at the University of Toronto, working with Professor Tovi Grossman. His research in Human-Computer Interaction and Computer Science Education focuses on creating engaging computational learning experiences and has been published in CHI, UIST, and IDC, and earned Best Paper and Best Late-Breaking Work awards.
+- Thursday 18 July 2024, noon (EDT)
+  - **Hannah Rose Kirk**, Oxford Internet Institute, University of Oxford
+  - "What does it mean for AI to be “aligned”?"
+  - Alignment has become a buzzword that frequently surfaces throughout the AI ecosystem. But what does it mean to align LLMs to the hundreds of millions of people who now interact with their outputs, each with different preferences for language, conversational norms, value systems, and political beliefs? This talk will explore the gnarly concept of alignment, specifically for large language models (LLMs). Using insights from the recently released [PRISM Alignment Dataset](https://hannahkirk.github.io/prism-alignment/), we'll cover key questions around empirical alignment efforts, such as how to collect human feedback using various scales and signals, where to focus human labour, who to ask for feedback, and whether to target objectives of personalised or collective alignment. Through more comprehensive and representative data, PRISM highlights the challenges of aligning LLMs to meet the diverse expectations and beliefs of a global audience.
+  - [Hannah Rose Kirk](https://www.hannahrosekirk.com) is a PhD student at the University of Oxford, UK. Hannah's research centres on the role of granular and diverse human feedback for aligning large language models. Her body of published work spans computational linguistics, computer vision, ethics and sociology, addressing a broad range of issues such as AI safety, bias, fairness, and hate speech from a multidisciplinary perspective. Hannah holds degrees from the University of Oxford, the University of Cambridge and Peking University. Alongside academia, she collaborates often with industry projects at Google, OpenAI and MetaAI, and previously worked as a Data Scientist in the Public Policy Team at The Alan Turing Institute.
 - Friday 12 July 2024, noon (EDT)
 	- **Naman Jain**, UC Berkeley
 	- "[LiveCodeBench: Holistic and contamination free evaluation of large language models for code](https://youtu.be/HGqhS9-rnQM)"
