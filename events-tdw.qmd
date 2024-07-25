@@ -69,7 +69,9 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 	- **Xiaojun Su**, Unilever
 	- [Xiaojun Su](https://www.linkedin.com/in/xiaojunsu/) is a Machine Learning Lead, Horizon 3 Labs, Unilever where she leads cross-functional teams of data engineers, software developer, data scientists, postgraduate researchers, and 3rd party vendors to launch in-house models to drive significant ROIs. She holds a M.Sc from the University of Toronto.
 - Friday 25 October 2024, noon (EDT)
-	- TBA
+	- **Jay Alammar**, Cohere
+	- "Hands-On Large Language Models: Language Understanding and Generation"
+	- [Jay Alammar](https://jalammar.github.io) is Director and Engineering Fellow at Cohere (pioneering provider of large language models as an API). In this role, he advises and educates enterprises and the developer community on using language models for practical use cases). 
 - Friday 1 November 2024, noon (EDT)
 	- TBA
 - Friday 8 November 2024, noon (EST)
