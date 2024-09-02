@@ -48,9 +48,7 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 ### Upcoming
 
 
-<!-- - Friday 13 September 2024, noon (EDT) -->
-<!-- 	- **Caroline Weis**, gsk.ai -->
-<!-- 	- [Caroline Weis](https://cvweis.github.io/) is a Senior AI/ML Engineer and team lead at gsk.ai. In 2021, she completed her PhD in Machine Learning for Computational Biology and Healthcare at ETH Zurich. Her research interests lie in the development of personalized healthcare through data analysis and machine learning on medical and biological data.  -->
+
 - Friday 20 September 2024, noon (EDT)
 	- **Kim Tran**, University of British Columbia
 	    - Kim is an undergraduate computer science student and research fellow at the University of British Columbia’s Data Science Institute.  She is passionate about interdisciplinary applications of technology and aims to develop software to create positive social impact. As a research fellow this past summer, she worked towards improving the accessibility of the IJF’s Open By Default Database.
@@ -88,6 +86,10 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 - Friday 22 November 2024, noon (EST)
 	- **Yiqin Fu**, Stanford University
 	- Born and raised in China, [Yiqin](https://yiqinfu.github.io/) Fu spent many of her formative years in the U.S. and the U.K. Yiqin (pronounced ee-ching) is studying towards a Ph.D. in political science at Stanford University, after having worked as a research associate at Yale Law School's Paul Tsai China Center in New Haven, Connecticut and Beijing, China. She holds a B.A. in Philosophy, Politics, and Economics from the University of Oxford and is broadly interested in innovation, U.S.-China relations, and comparative political and electoral systems.
+- Friday 29 November 2024, noon (EST)
+	- **Caroline Weis**, gsk.ai
+	- [Caroline Weis](https://cvweis.github.io/) is a Senior AI/ML Engineer and team lead at gsk.ai. In 2021, she completed her PhD in Machine Learning for Computational Biology and Healthcare at ETH Zurich. Her research interests lie in the development of personalized healthcare through data analysis and machine learning on medical and biological data.
+
 
 
 ### Past
