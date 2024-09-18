@@ -6,9 +6,11 @@ title: "Toronto Data Workshop"
 
 The Toronto Data Workshop brings together academia and industry to share data science and AI best practice. We are broadly interested, but especially in the code- and data-centric aspects of a project that are often glossed over. We meet weekly for an hour and most talks are recorded.
 
-If you would like to attend, please sign up [here](https://forms.gle/sXbEixoa1iJR4Q7A8). Everyone is welcome---it is free and you do not need to be affiliated with the university.
+If you would like to attend, please sign up here: [https://rohanalexander.substack.com](https://rohanalexander.substack.com)
 
-The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca/klyons/), [Michaela Drouillard](https://ca.linkedin.com/in/michaela-drouillard-b29172164), and Rohan Alexander. Past committee members: Amy Farrow (2021-22), Lorena Almaraz De La Garza (2021-22), and Faria Khandaker (2020-21).
+Everyone is welcome---it is free and you do not need to be affiliated with the university.
+
+The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca/klyons/), and Rohan Alexander. Past committee members: Michaela Drouillard (2022-24), Amy Farrow (2021-22), Lorena Almaraz De La Garza (2021-22), and Faria Khandaker (2020-21).
 
 
 <!-- ```{r, out.width= "27%", echo = FALSE} -->
