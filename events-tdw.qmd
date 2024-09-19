@@ -64,7 +64,9 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 	- **Sean Taylor**, Motif
 	- [Sean Taylor](https://seanjtaylor.com/) is a data scientist, social scientist, statistician, and software developer. He mostly specializes in methods for solving causal inference and business decision problems, and is particularly interested in building tools for practitioners working on real-world problems. He is a co-founder and chief scientist at [Motif](https://www.motifanalytics.com/).
 - Friday 11 October 2024, noon (EDT)
-	- TBA
+  - **Rona Fang-Yu Hu**, University of Michigan
+  - "Predicting the Unobserved: Integrating 'Something Else' Sexual Identity Responses in Health Disparity Studies Using Machine Learning and Resampling Techniques"
+  - Rona Hu is a second-year Master’s student in the Michigan Program in Survey and Data Science. She graduated from National Chengchi University with a B.S. in Psychology. Before coming to the United States for her graduate studies, she was a Research Associate and Chief Operating Officer at Quanthon Corporation in Taiwan. She has presented papers at the conference of the American Association of Public Opinion Research and the Joint Statistical Meetings since 2022.
 - Friday 18 October 2024, noon (EDT)
 	- **Xiaojun Su**, Unilever
 	- [Xiaojun Su](https://www.linkedin.com/in/xiaojunsu/) is a Machine Learning Lead, Horizon 3 Labs, Unilever where she leads cross-functional teams of data engineers, software developer, data scientists, postgraduate researchers, and 3rd party vendors to launch in-house models to drive significant ROIs. She holds a M.Sc from the University of Toronto.
