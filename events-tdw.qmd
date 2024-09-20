@@ -49,14 +49,6 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 ### Upcoming
 
-
-
-- Friday 20 September 2024, noon (EDT)
-	- **Sana Shams**, University of British Columbia
-	- **Waris Bhatia**, University of British Columbia
-	- "Accessible Investigative Journalism: Navigating Canada's Largest Corpus of Government Documents"
-	- **Sana** is a research fellow through UBC's Data Science for Social Good Program. She is currently pursuing a BSc in cognitive systems with a minor in data science and is passionate about the intersection of technological development and ethical compliance, particularly in the fields of data science and machine learning. **Waris** is a Data Science Intern with the University of British Columbia’s (UBC) Data Science Institute. He is a senior undergraduate studying Computer Science at UBC. 
-	- "Open By Default" (OBD) is a dataset from the Investigative Journalism Foundation which is Canada’s largest collection of government documents, comprising over 4.5 million pages of Access To Information and Privacy (ATIP) requests and corresponding government documentation. This project enhanced data capture using optical character recognition (OCR), improved search performance through Large Language Model (LLM) vectorization, and topic modelling to reveal the high-level subject matter represented in the OBD dataset. The final development of the project was a Retrieval Augmented Generation (RAG) LLM pipeline, which enables a chatbot to provide tailored, context-rich responses to user queries, paired with follow-up research directions.
 - Friday 27 September 2024, noon (EDT)
 	- **Annie Collins**, GivingTuesday
 	- [Annie Collins](https://www.linkedin.com/in/annie-a-collins/) is a Data Scientist at GivingTuesday, a US-based nonprofit focused on researching generosity and charitable giving behaviours. Beyond GivingTuesday, Annie has spent several years in data management and research roles within the Canadian nonprofit sector. She holds a Bachelors of Science in applied mathematics and statistics from the University of Toronto, and uses her experience to provide data for the public good and support a more data-driven social sector worldwide.
@@ -92,6 +84,12 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 ### Past
 
+- Friday 20 September 2024, noon (EDT)
+	- **Sana Shams**, University of British Columbia
+	- **Waris Bhatia**, University of British Columbia
+	- ["Accessible Investigative Journalism: Navigating Canada's Largest Corpus of Government Documents"](https://youtu.be/6I-_2-xhyIw)
+	- **Sana** is a research fellow through UBC's Data Science for Social Good Program. She is currently pursuing a BSc in cognitive systems with a minor in data science and is passionate about the intersection of technological development and ethical compliance, particularly in the fields of data science and machine learning. **Waris** is a Data Science Intern with the University of British Columbia’s (UBC) Data Science Institute. He is a senior undergraduate studying Computer Science at UBC. 
+	- "Open By Default" (OBD) is a dataset from the Investigative Journalism Foundation which is Canada’s largest collection of government documents, comprising over 4.5 million pages of Access To Information and Privacy (ATIP) requests and corresponding government documentation. This project enhanced data capture using optical character recognition (OCR), improved search performance through Large Language Model (LLM) vectorization, and topic modelling to reveal the high-level subject matter represented in the OBD dataset. The final development of the project was a Retrieval Augmented Generation (RAG) LLM pipeline, which enables a chatbot to provide tailored, context-rich responses to user queries, paired with follow-up research directions.
 - Friday 19 July 2024, noon (EDT)
   - **Majeed Kazemitabaar**, University of Toronto
   - "Improving Steering and Verification in AI-Assisted Data Analysis"
