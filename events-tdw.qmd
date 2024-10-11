@@ -49,17 +49,6 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 ### Upcoming
 
-- Friday 4 October 2024, noon (EDT)
-	- **Sean Taylor**, Motif
-	- "Casual Discovery for Product Analytics"
-	- I will discuss leveraging causal discovery in product analytics to uncover new insights and improve product development. First, I introduce a framework for categorizing causal questions, highlighting common challenges in product analytics, and emphasizing the need for discovering new causes that drive outcomes. I will present a process for generating hypotheses about causal relationships that are likely to lead to successful ideas for product improvements that can be validated through experiments. The key methodological insight is to model event data before they are aggregated, which helps us isolate causal relationships between events and allows for bias reduction to be automated under certain assumptions.
-	- [Sean Taylor](https://seanjtaylor.com/) is a data scientist, social scientist, statistician, and software developer. He mostly specializes in methods for solving causal inference and business decision problems, and is particularly interested in building tools for practitioners working on real-world problems. He is a co-founder and chief scientist at [Motif](https://www.motifanalytics.com/).
-- Friday 11 October 2024, noon (EDT)
-  - **Rona Fang-Yu Hu**, University of Michigan
-  - "Predicting the Unobserved: Integrating 'Something Else' Sexual Identity Responses in Health Disparity Studies Using Machine Learning and Resampling Techniques"
-  - Rona Hu is a second-year Master’s student in the Michigan Program in Survey and Data Science. She graduated from National Chengchi University with a B.S. in Psychology. Before coming to the United States for her graduate studies, she was a Research Associate and Chief Operating Officer at Quanthon Corporation in Taiwan. She has presented papers at the conference of the American Association of Public Opinion Research and the Joint Statistical Meetings since 2022.
-- Friday 18 October 2024, noon (EDT)
-	- TBA
 - Friday 25 October 2024, noon (EDT)
 	- **Jay Alammar**, Cohere
 	- "Hands-On Large Language Models: Language Understanding and Generation"
@@ -86,6 +75,15 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 ### Past
 
+- Friday 11 October 2024, noon (EDT)
+  - **Rona Fang-Yu Hu**, University of Michigan
+  - "[Predicting the Unobserved: Integrating 'Something Else' Sexual Identity Responses in Health Disparity Studies Using Machine Learning and Resampling Techniques](https://youtu.be/8T1C3Bx-Cp8)"
+  - Rona Hu is a second-year Master’s student in the Michigan Program in Survey and Data Science. She graduated from National Chengchi University with a B.S. in Psychology. Before coming to the United States for her graduate studies, she was a Research Associate and Chief Operating Officer at Quanthon Corporation in Taiwan. She has presented papers at the conference of the American Association of Public Opinion Research and the Joint Statistical Meetings since 2022.
+- Friday 4 October 2024, noon (EDT)
+	- **Sean Taylor**, Motif
+	- "[Casual Discovery for Product Analytics](https://youtu.be/YFnqi4srcKc)"
+	- I will discuss leveraging causal discovery in product analytics to uncover new insights and improve product development. First, I introduce a framework for categorizing causal questions, highlighting common challenges in product analytics, and emphasizing the need for discovering new causes that drive outcomes. I will present a process for generating hypotheses about causal relationships that are likely to lead to successful ideas for product improvements that can be validated through experiments. The key methodological insight is to model event data before they are aggregated, which helps us isolate causal relationships between events and allows for bias reduction to be automated under certain assumptions.
+	- [Sean Taylor](https://seanjtaylor.com/) is a data scientist, social scientist, statistician, and software developer. He mostly specializes in methods for solving causal inference and business decision problems, and is particularly interested in building tools for practitioners working on real-world problems. He is a co-founder and chief scientist at [Motif](https://www.motifanalytics.com/).
 - Friday 27 September 2024, noon (EDT)
 	- **Annie Collins**, GivingTuesday
 	- ["Leveraging Data for Generosity: GivingPulse and the GivingTuesday Data Commons"](https://youtu.be/8yxVJ240xK0)
