@@ -49,10 +49,6 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 ### Upcoming
 
-- Friday 25 October 2024, noon (EDT)
-	- **Jay Alammar**, Cohere
-	- "Hands-On Large Language Models: Language Understanding and Generation"
-	- [Jay Alammar](https://jalammar.github.io) is Director and Engineering Fellow at Cohere (pioneering provider of large language models as an API). In this role, he advises and educates enterprises and the developer community on using language models for practical use cases. 
 - Friday 1 November 2024, noon (EDT)
 	- **Xiaojun Su**, Unilever
 	- "Unlocking Business Value through Machine Learning Innovation"
@@ -75,6 +71,10 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 ### Past
 
+- Friday 25 October 2024, noon (EDT)
+	- **Jay Alammar**, Cohere
+	- "[Hands-On Large Language Models: Language Understanding and Generation](https://youtu.be/RVxl9u7rt9w?si=rZ8koMMg_Hv6loa5&t=103)"
+	- [Jay Alammar](https://jalammar.github.io) is Director and Engineering Fellow at Cohere (pioneering provider of large language models as an API). In this role, he advises and educates enterprises and the developer community on using language models for practical use cases. 
 - Friday 11 October 2024, noon (EDT)
   - **Rona Fang-Yu Hu**, University of Michigan
   - "[Predicting the Unobserved: Integrating 'Something Else' Sexual Identity Responses in Health Disparity Studies Using Machine Learning and Resampling Techniques](https://youtu.be/8T1C3Bx-Cp8)"
