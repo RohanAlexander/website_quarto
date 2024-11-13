@@ -62,7 +62,7 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 - Wednesday 13 November 2024, noon (EST)
 	- **Sayash Kapoor**, Princeton
-	- "Five surprises in evaluating AI agents(https://youtu.be/rokTPN4w51c)"
+	- "[Five surprises in evaluating AI agents](https://youtu.be/rokTPN4w51c)"
   - [Sayash Kapoor](https://www.cs.princeton.edu/~sayashk/#) is a computer science Ph.D. candidate at Princeton University's Center for Information Technology Policy. His research focuses on the societal impact of AI. He has previously worked on AI in industry and academia, including Facebook, Columbia University, and EPFL Switzerland. He received a best paper award at ACM FAccT, an impact recognition award at ACM CSCW, and was included in TIME's inaugural list of the 100 most influential people in AI. His recently released book with Arvind Narayanan, [AI Snake Oil](https://www.aisnakeoil.com/), looks critically at what AI can and cannot do.
 - Friday 8 November 2024, noon (EST)
 	- **Jacob Baldwin**, Pro Football Focus	(PFF)
