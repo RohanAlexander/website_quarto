@@ -49,10 +49,6 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 ### Upcoming
 
-- Wednesday 13 November 2024, noon (EST)
-	- **Sayash Kapoor**, Princeton
-	- "CORE-Bench and other AI agent use cases"
-  - [Sayash Kapoor](https://www.cs.princeton.edu/~sayashk/#) is a computer science Ph.D. candidate at Princeton University's Center for Information Technology Policy. His research focuses on the societal impact of AI. He has previously worked on AI in industry and academia, including Facebook, Columbia University, and EPFL Switzerland. He received a best paper award at ACM FAccT, an impact recognition award at ACM CSCW, and was included in TIME's inaugural list of the 100 most influential people in AI. His recently released book with Arvind Narayanan, [AI Snake Oil](https://www.aisnakeoil.com/), looks critically at what AI can and cannot do.
 - Friday 22 November 2024, noon (EST)
 	- **Yiqin Fu**, Stanford University
 	- Born and raised in China, [Yiqin](https://yiqinfu.github.io/) Fu spent many of her formative years in the U.S. and the U.K. Yiqin (pronounced ee-ching) is studying towards a Ph.D. in political science at Stanford University, after having worked as a research associate at Yale Law School's Paul Tsai China Center in New Haven, Connecticut and Beijing, China. She holds a B.A. in Philosophy, Politics, and Economics from the University of Oxford and is broadly interested in innovation, U.S.-China relations, and comparative political and electoral systems.
@@ -64,6 +60,10 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 ### Past
 
+- Wednesday 13 November 2024, noon (EST)
+	- **Sayash Kapoor**, Princeton
+	- "Five surprises in evaluating AI agents(https://youtu.be/rokTPN4w51c)"
+  - [Sayash Kapoor](https://www.cs.princeton.edu/~sayashk/#) is a computer science Ph.D. candidate at Princeton University's Center for Information Technology Policy. His research focuses on the societal impact of AI. He has previously worked on AI in industry and academia, including Facebook, Columbia University, and EPFL Switzerland. He received a best paper award at ACM FAccT, an impact recognition award at ACM CSCW, and was included in TIME's inaugural list of the 100 most influential people in AI. His recently released book with Arvind Narayanan, [AI Snake Oil](https://www.aisnakeoil.com/), looks critically at what AI can and cannot do.
 - Friday 8 November 2024, noon (EST)
 	- **Jacob Baldwin**, Pro Football Focus	(PFF)
   - "[Pass Coverage Metrics in the NFL](https://youtu.be/-fQehSo-sGI)"
