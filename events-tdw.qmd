@@ -47,16 +47,12 @@ The current organizing committee is: [Kelly Lyons](http://individual.utoronto.ca
 
 ## 2024
 
-### Upcoming
+### Past
 
 - Friday 29 November 2024, noon (EST)
 	- **Caroline Weis**, gsk.ai
+	- "[MALDI-TOF MS based clinical antimicrobial resistance prediction with machine learning](https://youtu.be/FMXcO2htNmQ)"
 	- [Caroline Weis](https://cvweis.github.io/) is a Senior AI/ML Engineer and team lead at gsk.ai. In 2021, she completed her PhD in Machine Learning for Computational Biology and Healthcare at ETH Zurich. Her research interests lie in the development of personalized healthcare through data analysis and machine learning on medical and biological data.
-
-
-
-### Past
-
 - Friday 22 November 2024, noon (EST)
 	- **Yiqin Fu**, Stanford University
 	- "Understanding Chinese Industrial Policy Through Government Investments and Patents"
